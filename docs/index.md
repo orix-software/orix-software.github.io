@@ -1,6 +1,6 @@
 # Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos
 
-* Stratos : [Stratos](stratos/stratos).
+* Stratos : [Stratos](stratos/).
 
 * Twilighte board : [Twilighte Board](twilighte_board/twilighteboard).
 

@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Orix, Stratos</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Fonctionnement - Orix, Stratos</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Orix, Stratos</a>
+                <a class="navbar-brand" href="..">Orix, Stratos</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -33,15 +33,15 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Basic11 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="basic11/" class="dropdown-item">Fonctionnement</a>
+    <a href="./" class="dropdown-item active">Fonctionnement</a>
 </li>
                                 </ul>
                             </li>
@@ -50,7 +50,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="orix8bits/" class="dropdown-item">Index</a>
+    <a href="../orix8bits/" class="dropdown-item">Index</a>
 </li>
                                 </ul>
                             </li>
@@ -59,7 +59,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="stratos/" class="dropdown-item">Stratos</a>
+    <a href="../stratos/" class="dropdown-item">Stratos</a>
 </li>
                                 </ul>
                             </li>
@@ -68,7 +68,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="twilighteboard/twilighteboard/" class="dropdown-item">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
+    <a href="../twilighteboard/twilighteboard/" class="dropdown-item">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
 </li>
                                 </ul>
                             </li>
@@ -81,12 +81,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="basic11/" class="nav-link">
+                                <a rel="next" href="../orix8bits/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -108,7 +108,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#documentation-for-orix8-bits-and-16-bits-twilighte-board-and-stratos" class="nav-link">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
+            <li class="nav-item" data-level="1"><a href="#fonctionnement" class="nav-link">Fonctionnement</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -117,15 +117,15 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="documentation-for-orix8-bits-and-16-bits-twilighte-board-and-stratos">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</h1>
-<ul>
-<li><a href="stratos/">Stratos</a>.</li>
-<li><a href="twilighte_board/twilighteboard">Twilighte Board</a>.</li>
-<li><a href="kernelorix8bits/">Orix 8 bits - Kernel </a></li>
-<li><a href="orix16bits/orix16bits">Orix 16 bits</a></li>
-<li><a href="basic11/basic11">Basic11 command and rom ch376</a></li>
-<li>Doxygen for <a href="doxygen/kernel">kernel</a>.</li>
-</ul></div>
+<h1 id="fonctionnement">Fonctionnement</h1>
+<p>Si on tape : /# basic11</p>
+<p>Cela lance la ROM</p>
+<p>Si on tape : /#basic11 "TAPEFILE"
+* Cela va chercher la présence d'un fichier db dans /var/cache/basic11/TAPEFILE.db
+* Si TAPEFILE.db est présent, il va lire les 1er octets du fichiers pour poker en $F4 les I/O des joysticks</p>
+<p>Si on tape : /#basic11 -l</p>
+<p>Cela va ouvrir le fichier /var/cache/basic11/basic11.db</p>
+<p>Et cela va lire la clé du .tap et le nom du soft tronqué à 29 chars.</p></div>
             </div>
         </div>
 
@@ -134,11 +134,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -206,8 +206,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2020-09-14 14:47:04.460235+00:00
--->

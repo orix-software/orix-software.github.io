@@ -2,7 +2,7 @@
 
 * Stratos : [Stratos](stratos/).
 * Twilighte board : [Twilighte Board](twilighte_board/twilighteboard).
-* Orix 8 bits : [Orix 8 bits](orix8bits/orix8bits)
+* [Orix 8 bits](orix8bits/)
 * Orix 16 bits : [Orix 16 bits](orix16bits/orix16bits)
 * [Rom basic atmos version ch376] (basic11/basic11)
 * Doxygen for  [kernel](doxygen/kernel).

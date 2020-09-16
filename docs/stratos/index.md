@@ -10,6 +10,7 @@
 * port USB, port sdcard (stockage principal)
 * Os : Orix 
 * langage : forth, basic atmos etc ...
+* Peut être placé dans le boitier atmos. Il reste néanmoins la question des ports joysticks qu'il faut arriver à faire sortir du boitier
 
 ## Fonctionnement atmos compatible
 * La rom atmos est prête pour lire des .tap directement
@@ -33,3 +34,10 @@
 ## EEprom 
 * kernel et tout ce qui se met en rom tel que shell, forth etc.
 * Programmation : orixcfg
+
+#Kernel Orix 16bits
+
+appels via jsr avec un paramètre de primitive ?
+
+
+

@@ -18,4 +18,8 @@ Cela va ouvrir le fichier /var/cache/basic11/basic11.db
 
 Et cela va lire la clé du .tap et le nom du soft tronqué à 29 chars.
 
-## 
+## Fonctionnement global
+
+Si la rom est lancée sans .tap ou avec un .tap, systématiquement, les valeurs de RND seront écrites en dur en RAM de $FA à $FF. Cela interfera à terme avec la ROM basic oric-1
+
+

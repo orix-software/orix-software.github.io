@@ -110,6 +110,22 @@
             
             <li class="nav-item" data-level="1"><a href="#fonctionnement" class="nav-link">Fonctionnement</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#si-on-tape-basic11" class="nav-link">Si on tape : /# basic11</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#si-on-tape-basic11-tapefile" class="nav-link">Si on tape : /#basic11 "TAPEFILE"</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#si-on-tape-basic11-l" class="nav-link">Si on tape : /#basic11 -l</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -118,14 +134,22 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="fonctionnement">Fonctionnement</h1>
-<p>Si on tape : /# basic11</p>
+<p>Dans tous les cas, les valeurs de RND en $FA ont été copiées en avance</p>
+<h2 id="si-on-tape-basic11">Si on tape : /# basic11</h2>
 <p>Cela lance la ROM</p>
-<p>Si on tape : /#basic11 "TAPEFILE"
-* Cela va chercher la présence d'un fichier db dans /var/cache/basic11/TAPEFILE.db
-* Si TAPEFILE.db est présent, il va lire les 1er octets du fichiers pour poker en $F4 les I/O des joysticks</p>
-<p>Si on tape : /#basic11 -l</p>
+<h2 id="si-on-tape-basic11-tapefile">Si on tape : /#basic11 "TAPEFILE"</h2>
+<ul>
+<li>
+<p>Cela va chercher la présence d'un fichier db dans /var/cache/basic11/TAPEFILE.db</p>
+</li>
+<li>
+<p>Si TAPEFILE.db est présent, il va lire les 1er octets du fichiers pour poker en $F1 les I/O des joysticks</p>
+</li>
+</ul>
+<h2 id="si-on-tape-basic11-l">Si on tape : /#basic11 -l</h2>
 <p>Cela va ouvrir le fichier /var/cache/basic11/basic11.db</p>
-<p>Et cela va lire la clé du .tap et le nom du soft tronqué à 29 chars.</p></div>
+<p>Et cela va lire la clé du .tap et le nom du soft tronqué à 29 chars.</p>
+<h2 id="_1"></h2></div>
             </div>
         </div>
 

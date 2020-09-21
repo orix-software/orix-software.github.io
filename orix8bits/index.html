@@ -123,12 +123,50 @@
 
 <h1 id="_1"></h1>
 <h2 id="samples-for-kernel-calls">Samples for kernel calls</h2>
+<h3 id="get-ctrlc-hook">Get ctrl+c hook</h3>
+<pre><code class="ca65">   .include &quot;telestrat.inc&quot;
+    asl     KBDCTC
+    bcc     @no_ctrl
+    ; here is ctrl management
+@no_ctrl:
+      rts
+
+</code></pre>
+
+<h3 id="stop-output-when-spacebar-is-pressed-for-example">Stop output when spacebar is pressed (for example)</h3>
+<pre><code class="ca65">   .include &quot;telestrat.inc&quot;
+@L12:
+   BRK_KERNEL XRD0
+   bcs     @no_char_action
+   cmp     #' ' ; Space pressed ?
+   bne     @no_char ; no continue
+
+   lda     myOffsetToManageSwitch ; One byte
+   beq     @inv_to_1
+
+   lda     #$00
+   sta     myOffsetToManageSwitch
+   jmp     @L12
+
+@inv_to_1:
+   inc     myOffsetToManageSwitch
+   jmp     @L12
+
+@no_char_action:
+   lda     myOffsetToManageSwitch
+   beq     @L12
+
+@no_char:
+   ; No keypressed
+</code></pre>
+
 <h3 id="displays-a-string">Displays a string</h3>
-<p>lda #<mystr
-   ldy #>mystr
+<pre><code class="ca65">   lda #&lt;mystr
+   ldy #&gt;mystr
    BRK_KERNEL XWRSTR0
    rts
-   mys</p></div>
+   mysstr
+</code></pre></div>
             </div>
         </div>
 

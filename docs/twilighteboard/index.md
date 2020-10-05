@@ -1,22 +1,23 @@
 # Twilighte board
 
-
-fdcWifiEsp.md
-
 * [FDC, RTC WIFI controller ](fdcWifiEsp)
 
 
 # firmware version 1
 
-$342 : b0,b1,b2 version number is equal to 1, but can be overwritten
-$343 : Banking register
+## $342 : twilighte board register
 
-Working board version : 
+* b0,b1,b2 version number is equal to 1, but can be overwritten (There is not read only protection
+* b5 : if it's equal to 0 if we are on eeprom set, 1 if it's ram set
+
+## $343 : Banking register
+
+Working board version with this firmware: 
 * v0.6
 * v0.65
 
 # firmware version 2
-Pending
+Reserved for twilighte board v0.6 & v0.65 upgrades
 
 # firmware version 3
 
@@ -24,7 +25,6 @@ $342 : b0,b1,b2 version number is equal to 1, but can be overwritten
 $343 : Banking register
 
 Port A of via 65C22, b0,b1,b2 are managed by cpld
-
 
 Working board version
 

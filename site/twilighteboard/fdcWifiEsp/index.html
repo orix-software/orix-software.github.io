@@ -7,15 +7,15 @@
         
         
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Orix, Stratos</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>fdcWifiEsp - Orix, Stratos</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">Orix, Stratos</a>
+                <a class="navbar-brand" href="../..">Orix, Stratos</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,14 +34,14 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="/." class="nav-link">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
+                                <a href="../.." class="nav-link">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Basic11 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/basic11/" class="dropdown-item">Fonctionnement</a>
+    <a href="../../basic11/" class="dropdown-item">Fonctionnement</a>
 </li>
                                 </ul>
                             </li>
@@ -50,7 +50,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/orix8bits/" class="dropdown-item">Index</a>
+    <a href="../../orix8bits/" class="dropdown-item">Index</a>
 </li>
                                 </ul>
                             </li>
@@ -59,20 +59,20 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/stratos/" class="dropdown-item">Stratos</a>
+    <a href="../../stratos/" class="dropdown-item">Stratos</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Twilighteboard <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/twilighteboard/" class="dropdown-item">Twilighte board</a>
+    <a href="../" class="dropdown-item">Twilighte board</a>
 </li>
                                     
 <li>
-    <a href="/twilighteboard/fdcWifiEsp/" class="dropdown-item">fdcWifiEsp</a>
+    <a href="./" class="dropdown-item active">fdcWifiEsp</a>
 </li>
                                 </ul>
                             </li>
@@ -84,6 +84,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -91,15 +101,106 @@
 
         <div class="container">
             <div class="row">
-
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link"></a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#esp32_check_exist" class="nav-link">ESP32_CHECK_EXIST</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#esp32_get_ic_ver" class="nav-link">ESP32_GET_IC_VER</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#esp32_set_mode" class="nav-link">ESP32_SET_MODE</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#esp2_set_mode_code_fdc" class="nav-link">ESP2_SET_MODE_CODE_FDC</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
+<h1 id="_1"></h1>
+<h2 id="esp32_check_exist">ESP32_CHECK_EXIST</h2>
+<p>ESP32_CHECK_EXIST     = $06</p>
+<p>Return data inverted bit</p>
+<h2 id="esp32_get_ic_ver">ESP32_GET_IC_VER</h2>
+<p>ESP32_GET_IC_VER      = $01</p>
+<p>Return version</p>
+<h2 id="esp32_set_mode">ESP32_SET_MODE</h2>
+<p>CH376_SET_MODE    = $15</p>
+<p>Set mode </p>
+<h2 id="esp2_set_mode_code_fdc">ESP2_SET_MODE_CODE_FDC</h2>
+<p>ESP32_DETECTED        = $AA</p>
+<p>CH376_CMD_NONE        = $00</p>
+<p>CH376_SET_BAUDRATE    = $02
+CH376_GET_ENTER_SLEEP = $03
+CH276_SET_USB_SPEED   = $04 
+CH376_RESET_ALL       = $05
+CH376_GET_FILE_SIZE   = $0C ; Get the current file length
+CH376_SET_USB_MODE    = $15
+CH376_GET_STATUS      = $22
+CH376_RD_USB_DATA0    = $27
+CH376_WR_USB_DATA     = $2C
+CH376_CMD_WR_REQ_DATA = $2D
+CH376_SET_FILE_NAME   = $2F
+CH376_DISK_CONNECT    = $30 ; check the disk connection status
+CH376_DISK_MOUNT      = $31
+CH376_FILE_OPEN       = $32
+CH376_FILE_ENUM_GO    = $33
+CH376_CMD_FILE_CREATE = $34
+CH376_FILE_ERASE      = $35
+CH376_FILE_CLOSE      = $36
+CH376_BYTE_LOCATE     = $39
+CH376_BYTE_READ       = $3A
+CH376_BYTE_RD_GO      = $3B
+CH376_BYTE_WRITE      = $3C
+CH376_BYTE_WR_GO      = $3D
+CH376_DISK_CAPACITY   = $3E
+CH376_DISK_QUERY      = $3F
+CH376_DIR_CREATE      = $40
+CH376_SET_ADRESS      = $45
+CH376_GET_DESCR       = $46
+CH376_DISK_RD_GO      = $55</p>
+<p>; CODE FOR CH376_SET_USB_MODE </p>
+<p>CH376_SET_USB_MODE_CODE_SDCARD                              = $03
+; The code of 06H means switch to valid USB-HOST, produce SOF package automatically. 
+CH376_SET_USB_MODE_CODE_USB_HOST_SOF_PACKAGE_AUTOMATICALLY  = $06</p>
+<p>CH376_USB_INT_SUCCESS       = $14
+CH376_USB_INT_CONNECT       = $15
+CH376_USB_INT_DISCONNECT    = $16
+CH376_USB_INT_BUF_OVER      = $17
+CH376_USB_INT_USB_READY     = $18
+CH376_USB_INT_DISK_READ     = $1d
+CH376_USB_INT_DISK_WRITE    = $1e
+CH376_USB_INT_DISK_ERR      = $1f</p>
+<p>CH376_ERR_OPEN_DIR          = $41
+CH376_ERR_MISS_FILE         = $42
+CH376_ERR_FOUND_NAME        = $43
+CH376_ERR_DISK_DISCON       = $82
+CH376_ERR_LARGE_SECTOR      = $84
+CH376_ERR_TYPE_ERROR        = $92
+CH376_ERR_BPB_ERROR         = $A1
+CH376_ERR_DISK_FULL         = $B1
+CH376_ERR_FDT_OVER          = $B2
+CH376_ERR_FILE_CLOSE        = $B4</p></div>
             </div>
         </div>
 
@@ -108,11 +209,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

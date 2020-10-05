@@ -1,5 +1,11 @@
 #
 
+
+## Kernel primitives
+
+* Doxygen for [kernel](doxygen/kernel).
+
+
 ## Samples for kernel calls
 
 ### Get ctrl+c hook

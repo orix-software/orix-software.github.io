@@ -2,13 +2,13 @@
 
 Dans tous les cas, les valeurs de RND en $FA ont été copiées en avance
 
-## Si on tape : /# basic11
+## Si on tape : /#basic11
 
 Cela lance la ROM
 
 ## Si on tape : /#basic11 "TAPEFILE"
 
-* Cela va chercher la présence d'un fichier db dans /var/cache/basic11/TAPEFILE.db
+* Cela va chercher la présence d'un fichier db dans /var/cache/basic11/[FIRSTLETTEROFTAPEFILE]/TAPEFILE.db
 
 * Si TAPEFILE.db est présent, il va lire les 1er octets du fichiers pour poker en $F1 les I/O des joysticks
 

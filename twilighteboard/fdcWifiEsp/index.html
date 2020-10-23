@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>fdcWifiEsp - Orix, Stratos</title>
+  <title>fdcsd - Orix, Stratos</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "fdcWifiEsp";
+    var mkdocs_page_name = "fdcsd";
     var mkdocs_page_input_path = "twilighteboard/fdcWifiEsp.md";
     var mkdocs_page_url = null;
   </script>
@@ -70,7 +70,7 @@
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../">Twilighte board</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">fdcWifiEsp</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">fdcsd</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#esp32_check_exist">ESP32_CHECK_EXIST</a>
     </li>
@@ -78,7 +78,9 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#esp32_set_mode">ESP32_SET_MODE</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#esp2_set_mode_code_fdc">ESP2_SET_MODE_CODE_FDC</a>
+    <li class="toctree-l2"><a class="reference internal" href="#esp32_set_mode_code_fdc">ESP32_SET_MODE_CODE_FDC</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#esp32_launch_wifi_scan-02">ESP32_LAUNCH_WIFI_SCAN $02</a>
     </li>
     </ul>
                     </li>
@@ -108,7 +110,7 @@
         
       
     
-    <li>fdcWifiEsp</li>
+    <li>fdcsd</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -119,7 +121,10 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="_1"></h1>
+                <h1 id="fdcsd">fdcsd</h1>
+<p>I/O : 
+* $315 : command port
+* $316 : data port</p>
 <h2 id="esp32_check_exist">ESP32_CHECK_EXIST</h2>
 <p>ESP32_CHECK_EXIST     = $06</p>
 <p>Return data inverted bit</p>
@@ -129,11 +134,15 @@
 <h2 id="esp32_set_mode">ESP32_SET_MODE</h2>
 <p>CH376_SET_MODE    = $15</p>
 <p>Set mode </p>
-<h2 id="esp2_set_mode_code_fdc">ESP2_SET_MODE_CODE_FDC</h2>
+<h2 id="esp32_set_mode_code_fdc">ESP32_SET_MODE_CODE_FDC</h2>
+<h2 id="esp32_launch_wifi_scan-02">ESP32_LAUNCH_WIFI_SCAN $02</h2>
+<ul>
+<li>interrupt  </li>
+<li>return a struct : 2 bytes for the length of all ssid, and all sid</li>
+</ul>
 <p>ESP32_DETECTED        = $AA</p>
 <p>CH376_CMD_NONE        = $00</p>
-<p>CH376_SET_BAUDRATE    = $02
-CH376_GET_ENTER_SLEEP = $03
+<p>CH376_GET_ENTER_SLEEP = $03
 CH276_SET_USB_SPEED   = $04 
 CH376_RESET_ALL       = $05
 CH376_GET_FILE_SIZE   = $0C ; Get the current file length

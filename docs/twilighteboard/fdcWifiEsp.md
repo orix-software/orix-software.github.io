@@ -1,4 +1,11 @@
-#
+# fdcsd
+
+I/O : 
+* $315 : command port
+* $316 : data port
+
+
+
 
 
 ## ESP32_CHECK_EXIST 
@@ -20,10 +27,12 @@ CH376_SET_MODE    = $15
 Set mode 
 
 
-## ESP2_SET_MODE_CODE_FDC
+## ESP32_SET_MODE_CODE_FDC
 
+## ESP32_LAUNCH_WIFI_SCAN $02
 
-
+* interrupt  
+* return a struct : 2 bytes for the length of all ssid, and all sid
 
 
 
@@ -34,7 +43,6 @@ ESP32_DETECTED        = $AA
 CH376_CMD_NONE        = $00
 
 
-CH376_SET_BAUDRATE    = $02
 CH376_GET_ENTER_SLEEP = $03
 CH276_SET_USB_SPEED   = $04 
 CH376_RESET_ALL       = $05

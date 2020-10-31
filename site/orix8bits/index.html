@@ -66,6 +66,8 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#get-ctrlc-hook">Get ctrl+c hook</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#test-kernel-error-when-fopen-failed">Test kernel Error when fopen failed</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#stop-output-when-spacebar-is-pressed-for-example">Stop output when spacebar is pressed (for example)</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#displays-a-string">Displays a string</a>
@@ -137,6 +139,32 @@
 @no_ctrl:
       rts
 
+</code></pre>
+
+<h3 id="test-kernel-error-when-fopen-failed">Test kernel Error when fopen failed</h3>
+<pre><code class="ca65">    ; Open
+    ... 
+    BRK_KERNEL XOPEN 
+    cpy     #$00
+    bne     @read_rom 
+    cmp     #$00
+    bne     @read_rom 
+
+    ldx     #$04 ; Get kernel ERRNO
+    BRK_KERNEL XVARS
+    sta     userzp
+    sty     userzp+1
+
+    ldy     #$00
+    lda     (userzp),y ; get ERRNO from kernel
+    cmp     #ENOMEM
+    bne     @no_enomem_kernel_error
+    PRINT   str_enomem
+
+@no_enomem_kernel_error:
+    cmp     #ENOENT
+    bne     @no_enoent_kernel_error
+    PRINT   str_not_found
 </code></pre>
 
 <h3 id="stop-output-when-spacebar-is-pressed-for-example">Stop output when spacebar is pressed (for example)</h3>

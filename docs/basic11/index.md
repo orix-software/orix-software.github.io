@@ -23,3 +23,14 @@ Et cela va lire la clé du .tap et le nom du soft tronqué à 29 chars.
 Si la rom est lancée sans .tap ou avec un .tap, systématiquement, les valeurs de RND seront écrites en dur en RAM de $FA à $FF. Cela interfera à terme avec la ROM basic oric-1
 
 
+# Format du fichier .db
+
+version_bin : 1 byte (binary)
+rombasic11 : 1 byte, id of the rom
+fire2_joy : keyboard fire2 matrix
+fire3_joy
+down_joy
+right_joy
+left_joy
+fire1_joy
+up_joy

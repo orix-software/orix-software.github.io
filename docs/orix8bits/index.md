@@ -5,7 +5,6 @@
 
 * Doxygen for [kernel](doxygen/kernel).
 
-
 ## Samples for kernel calls
 
 ### Get ctrl+c hook
@@ -19,6 +18,35 @@
       rts
 
 ```
+
+### Test kernel Error when fopen failed
+
+``` ca65
+    ; Open
+    ... 
+    BRK_KERNEL XOPEN 
+    cpy     #$00
+    bne     @read_rom 
+    cmp     #$00
+    bne     @read_rom 
+
+    ldx     #$04 ; Get kernel ERRNO
+    BRK_KERNEL XVARS
+    sta     userzp
+    sty     userzp+1
+
+    ldy     #$00
+    lda     (userzp),y ; get ERRNO from kernel
+    cmp     #ENOMEM
+    bne     @no_enomem_kernel_error
+    PRINT   str_enomem
+
+@no_enomem_kernel_error:
+    cmp     #ENOENT
+    bne     @no_enoent_kernel_error
+    PRINT   str_not_found
+```
+
 
 ### Stop output when spacebar is pressed (for example)
 

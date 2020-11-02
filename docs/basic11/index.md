@@ -40,12 +40,21 @@ Si la rom est lancée sans .tap ou avec un .tap, systématiquement, les valeurs 
 
 # Format du fichier .db
 
-version_bin : 1 byte (binary)
-rombasic11 : 1 byte, id of the rom
-fire2_joy : keyboard fire2 matrix
-fire3_joy
-down_joy
-right_joy
-left_joy
-fire1_joy
-up_joy
+* version_bin : 1 byte (binary)
+
+* rombasic11 : 1 byte, id of the rom
+
+* fire2_joy : keyboard fire2 matrix
+
+* fire3_joy : keyboard fire2 matrix
+
+* down_joy : keyboard fire2 matrix
+
+* right_joy : keyboard fire2 matrix
+
+* left_joy : keyboard fire2 matrix
+
+* fire1_joy : keyboard fire2 matrix
+
+* up_joy : keyboard fire2 matrix
+

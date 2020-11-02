@@ -199,7 +199,8 @@
    ldy #&gt;mystr
    BRK_KERNEL XWRSTR0
    rts
-   mysstr
+   mysstr:
+      .asciiz &quot;hello&quot; 
 </code></pre>
               
             </div>

@@ -84,6 +84,7 @@
    ldy #>mystr
    BRK_KERNEL XWRSTR0
    rts
-   mysstr
+   mysstr:
+      .asciiz "hello" 
 ```   
 

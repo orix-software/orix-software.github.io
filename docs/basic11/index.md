@@ -39,8 +39,20 @@ L'espace et le ctrl+c fonctionne ici
 
 Si la rom est lancée sans .tap ou avec un .tap, systématiquement, les valeurs de RND seront écrites en dur en RAM de $FA à $FF. Cela interfera à terme avec la ROM basic oric-1
 
+# Format du fichier "maindb" (basic11.db)
 
-# Format du fichier .db
+## Version 1
+
+* 1er octet : numero de version du fichier db (actuel : 1)
+
+* puis la liste des noms de fichiers puis le titre tels que :
+filenametap8bytesLength ;  name_software '\0'
+
+* en dernier octet à la fin du fichier, nous avons l'octet $ff qui signale la fin du fichier (ceci permettant de simplifier le code de lecture)
+
+
+
+# Format du fichier .db d'un soft
 
 * version_bin : 1 byte (binary)
 

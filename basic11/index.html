@@ -156,7 +156,21 @@
 <p>L'espace et le ctrl+c fonctionne ici</p>
 <h2 id="fonctionnement-global">Fonctionnement global</h2>
 <p>Si la rom est lancée sans .tap ou avec un .tap, systématiquement, les valeurs de RND seront écrites en dur en RAM de $FA à $FF. Cela interfera à terme avec la ROM basic oric-1</p>
-<h1 id="format-du-fichier-db">Format du fichier .db</h1>
+<h1 id="format-du-fichier-maindb-basic11db">Format du fichier "maindb" (basic11.db)</h1>
+<h2 id="version-1">Version 1</h2>
+<ul>
+<li>
+<p>1er octet : numero de version du fichier db (actuel : 1)</p>
+</li>
+<li>
+<p>puis la liste des noms de fichiers puis le titre tels que :
+filenametap8bytesLength ;  name_software '\0'</p>
+</li>
+<li>
+<p>en dernier octet à la fin du fichier, nous avons l'octet $ff qui signale la fin du fichier (ceci permettant de simplifier le code de lecture)</p>
+</li>
+</ul>
+<h1 id="format-du-fichier-db-dun-soft">Format du fichier .db d'un soft</h1>
 <ul>
 <li>
 <p>version_bin : 1 byte (binary)</p>

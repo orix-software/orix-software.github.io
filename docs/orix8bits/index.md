@@ -1,9 +1,9 @@
-#
+# Orix 8 BIts
 
 
 ## Kernel primitives
 
-[Primitives] (orix8bits/primitives)
+* [Primitives](orix8bits/primitives)
 
 
 * Doxygen for [kernel](doxygen/kernel).

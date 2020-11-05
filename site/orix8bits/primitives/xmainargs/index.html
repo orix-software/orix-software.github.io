@@ -68,6 +68,12 @@
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#input">Input</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#output">Output</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a>
+    </li>
     </ul>
                 </li>
     </ul>
@@ -126,8 +132,20 @@
             <div class="section">
               
                 <h1 id="xmainargs">XMAINARGS</h1>
+<p>ID primitive : $2C</p>
 <h2 id="description">Description</h2>
 <p>Return argc and argv</p>
+<h2 id="input">Input</h2>
+<p>Nothing</p>
+<h2 id="output">Output</h2>
+<p>A &amp; Y contains ptr to XMAINARGS Struct
+X: number of args</p>
+<h2 id="usage">Usage</h2>
+<p>XMAINARGS = $2C</p>
+<p>brk_kernel XMAINARGS</p>
+<p>stx save_argc
+sta save_argvlow
+sty save_argvhigh</p>
               
             </div>
           </div>

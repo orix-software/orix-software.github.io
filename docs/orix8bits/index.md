@@ -3,7 +3,7 @@
 
 ## Kernel primitives
 
-* [Primitives](orix8bits/primitives)
+* [Primitives](primitives)
 
 
 * Doxygen for [kernel](doxygen/kernel).

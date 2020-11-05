@@ -3,6 +3,9 @@
 
 ## Kernel primitives
 
+[Primitives] (orix8bits/primitives)
+
+
 * Doxygen for [kernel](doxygen/kernel).
 
 ## Samples for kernel calls

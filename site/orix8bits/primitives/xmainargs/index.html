@@ -141,11 +141,14 @@
 <p>A &amp; Y contains ptr to XMAINARGS Struct
 X: number of args</p>
 <h2 id="usage">Usage</h2>
-<p>XMAINARGS = $2C</p>
-<p>brk_kernel XMAINARGS</p>
-<p>stx save_argc
+<pre><code class="ca65">XMAINARGS = $2C
+
+brk_kernel XMAINARGS
+
+stx save_argc
 sta save_argvlow
-sty save_argvhigh</p>
+sty save_argvhigh
+</code></pre>
               
             </div>
           </div>

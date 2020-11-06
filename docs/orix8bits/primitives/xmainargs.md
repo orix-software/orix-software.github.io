@@ -17,6 +17,7 @@ X: number of args
 
 ## Usage
 
+``` ca65
 XMAINARGS = $2C
 
 brk_kernel XMAINARGS
@@ -24,6 +25,6 @@ brk_kernel XMAINARGS
 stx save_argc
 sta save_argvlow
 sty save_argvhigh
-
+``` 
 
 

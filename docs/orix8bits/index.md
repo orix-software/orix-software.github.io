@@ -4,7 +4,7 @@
 ## Kernel primitives
 
 * [Primitives](primitives)
-
+* [Mount Management](mount)
 
 * Doxygen for [kernel](doxygen/kernel).
 

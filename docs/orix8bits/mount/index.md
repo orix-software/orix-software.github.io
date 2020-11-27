@@ -16,4 +16,11 @@ X=1 : FREAD
 X=2 : FWRITE
 X=3 : XCLOSE
 
+## ls case
+
+ls should do a FOPEN call. It should return a fp. When we need to displays the external path, we need to know which command we need to launch to kernel
+
+## cp/mv case
+
+don't know
 

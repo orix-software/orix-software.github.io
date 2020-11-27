@@ -68,6 +68,10 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#when-a-freadfwrite-is-done-if-extbank-is-different-to-0-then-kernel-will-launch-external-vector-with-a-and-y-contains-the-string-of-the-path-and-x-contains-the-action">When a FREAD/FWRITE is done, if extbank is different to 0, then, Kernel will launch external vector with A and Y contains the string of the path, and X contains the action :</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ls-case">ls case</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cpmv-case">cp/mv case</a>
+    </li>
     </ul>
                 </li>
     </ul>
@@ -146,6 +150,10 @@ vectorbank (2 bytes)</p>
 <p>X=1 : FREAD
 X=2 : FWRITE
 X=3 : XCLOSE</p>
+<h2 id="ls-case">ls case</h2>
+<p>ls should do a FOPEN call. It should return a fp. When we need to displays the external path, we need to know which command we need to launch to kernel</p>
+<h2 id="cpmv-case">cp/mv case</h2>
+<p>don't know</p>
               
             </div>
           </div>

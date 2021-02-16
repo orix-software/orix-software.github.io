@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>XGETARGV - Orix, Stratos</title>
+  <title>XBINX - Orix, Stratos</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "XGETARGV";
-    var mkdocs_page_input_path = "orix8bits/primitives/xgetargv.md";
+    var mkdocs_page_name = "XBINX";
+    var mkdocs_page_input_path = "orix8bits/primitives/xbindx.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -70,9 +70,7 @@
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../xbindx/">XBINX</a>
-                </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">XGETARGV</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">XBINX</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
     </li>
@@ -83,6 +81,8 @@
     <li class="toctree-l3"><a class="reference internal" href="#example">Example</a>
     </li>
     </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xgetargv/">XGETARGV</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../xmainargs/">XMAINARGS</a>
                 </li>
@@ -130,7 +130,7 @@
         
       
     
-    <li>XGETARGV</li>
+    <li>XBINX</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -141,26 +141,17 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="xgetargv">XGETARGV</h1>
+                <h1 id="xbinx">XBINX</h1>
 <h2 id="description">Description</h2>
-<p>Get argv. X register contains the number of the arg search</p>
+<p>convert A &amp; Y number into decimal</p>
 <h2 id="input">Input</h2>
-<p>A &amp; Y the ptr of struct from XMAINARGS</p>
-<p>X the number of arg to get</p>
+<p>A &amp; Y the 16 bits values</p>
+<p>X : xxx</p>
 <h2 id="output">Output</h2>
-<p>A &amp; Y contains argv ptr from xmainargs struct. It returns a copy of the command line with args parsed</p>
+<p>A &amp; TR5</p>
 <h2 id="example">Example</h2>
-<pre><code class="ca65">    XMAINARGS = $2C
-    XGETARGV = $2E
-    BRK_KERNEL XMAINARGS
-    sta   debug_mainargs_ptr
-    sty   debug_mainargs_ptr+1
-
-    ldx   #$02 ; get arg 2
-    lda   debug_mainargs_ptr
-    ldy   debug_mainargs_ptr+1
-
-    BRK_KERNEL XGETARGV
+<pre><code class="ca65">    lda        #$10
+    BRK_KERNEL XBINX
 </code></pre>
               
             </div>
@@ -169,10 +160,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../xmainargs/" class="btn btn-neutral float-right" title="XMAINARGS">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../xgetargv/" class="btn btn-neutral float-right" title="XGETARGV">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../xbindx/" class="btn btn-neutral" title="XBINX"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../" class="btn btn-neutral" title="Index"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -198,10 +189,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../xbindx/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../xmainargs/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../xgetargv/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

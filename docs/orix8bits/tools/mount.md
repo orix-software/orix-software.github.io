@@ -1,5 +1,4 @@
-# Mount management :
-
+# Mount (not developed yet)
 
 ## FP
 Each FP has a struct with with string, flag and others 3 bytes : 
@@ -23,4 +22,3 @@ ls should do a FOPEN call. It should return a fp. When we need to displays the e
 ## cp/mv case
 
 don't know
-

@@ -1,4 +1,4 @@
-# XBINX
+# XBINDX
 
 ## Description
 
@@ -7,8 +7,11 @@ convert A & Y number into decimal
 ## Input
 
 A & Y the 16 bits values
+
 TR5 the pointer of the address to put decimal number
+
 DEFAFF : space before the number
+
 X : xxx
 
 ## Output

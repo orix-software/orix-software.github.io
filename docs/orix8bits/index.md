@@ -8,7 +8,7 @@
 ## Kernel primitives
 
 * [Primitives](primitives)
-* [Mount Management](mount)
+* [Tools](mount)
 
 * Doxygen for [kernel](doxygen/kernel).
 

@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>XBINX - Orix, Stratos</title>
+  <title>XBINDX - Orix, Stratos</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "XBINX";
+    var mkdocs_page_name = "XBINDX";
     var mkdocs_page_input_path = "orix8bits/primitives/xbindx.md";
     var mkdocs_page_url = null;
   </script>
@@ -51,32 +51,41 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../..">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Basic11</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../basic11/">Fonctionnement</a>
-                    </li>
-                </ul>
                 <p class="caption"><span class="caption-text">Orix8bits</span></p>
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../../">Orix 8 Bits</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="#">Getting started</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/">Getting started</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/">Install</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/kernel/">Kernel</a>
                 </li>
     </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Mount</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Informations</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../mount/">Mount management :</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/buildman/">Build manual pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/buildrom/">Build a rom</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/cc65/">Use of cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/firmware/">Firmwares available</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/header/">Header</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/memory/">Memory management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/orixsdk/">Orix SDK</a>
                 </li>
     </ul>
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="#">Primitives</a>
     <ul class="current">
-                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                <li class="toctree-l2"><a class="reference internal" href="../">Summary</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">XBINX</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">XBINDX</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
     </li>
@@ -91,6 +100,18 @@
                 <li class="toctree-l2"><a class="reference internal" href="../xgetargv/">XGETARGV</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../xmainargs/">XMAINARGS</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Tools</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../tools/mount/">Mount (not developed yet)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Basic11</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../tools/basic11/">Fonctionnement</a>
+                </li>
+    </ul>
                 </li>
     </ul>
                     </li>
@@ -136,7 +157,7 @@
         
       
     
-    <li>XBINX</li>
+    <li>XBINDX</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -147,14 +168,14 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="xbinx">XBINX</h1>
+                <h1 id="xbindx">XBINDX</h1>
 <h2 id="description">Description</h2>
 <p>convert A &amp; Y number into decimal</p>
 <h2 id="input">Input</h2>
-<p>A &amp; Y the 16 bits values
-TR5 the pointer of the address to put decimal number
-DEFAFF : space before the number
-X : xxx</p>
+<p>A &amp; Y the 16 bits values</p>
+<p>TR5 the pointer of the address to put decimal number</p>
+<p>DEFAFF : space before the number</p>
+<p>X : xxx</p>
 <h2 id="output">Output</h2>
 <p>A &amp; TR5</p>
 <h2 id="example">Example</h2>
@@ -181,7 +202,7 @@ X : xxx</p>
         <a href="../xgetargv/" class="btn btn-neutral float-right" title="XGETARGV">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../" class="btn btn-neutral" title="Index"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../" class="btn btn-neutral" title="Summary"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   

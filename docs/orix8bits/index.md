@@ -1,4 +1,8 @@
-# Orix 8 BIts
+# Orix 8 Bits
+
+# Install environment development for developers
+
+* [Getting-started](getting-started)
 
 
 ## Kernel primitives
@@ -18,7 +22,7 @@
     bcc     @no_ctrl
     ; here is ctrl management
 @no_ctrl:
-      rts
+    rts
 
 ```
 

@@ -145,12 +145,24 @@
 <h2 id="description">Description</h2>
 <p>convert A &amp; Y number into decimal</p>
 <h2 id="input">Input</h2>
-<p>A &amp; Y the 16 bits values</p>
-<p>X : xxx</p>
+<p>A &amp; Y the 16 bits values
+TR5 the pointer of the address to put decimal number
+DEFAFF : space before the number
+X : xxx</p>
 <h2 id="output">Output</h2>
 <p>A &amp; TR5</p>
 <h2 id="example">Example</h2>
-<pre><code class="ca65">    lda        #$10
+<pre><code class="ca65">    lda        #&lt;$bb80
+    sta        TR5
+    lda        #&gt;$bb80
+    sta        TR5+1
+
+    lda        #$20
+    sta        DEFAFF
+
+    ldx        #$01
+    ldy        #$00
+    lda        #$10
     BRK_KERNEL XBINX
 </code></pre>
               

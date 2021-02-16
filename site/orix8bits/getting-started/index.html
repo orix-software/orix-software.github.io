@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Configure and start oricutron with twilighte board - Orix, Stratos</title>
+  <title>Getting started - Orix, Stratos</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Configure and start oricutron with twilighte board";
+    var mkdocs_page_name = "Getting started";
     var mkdocs_page_input_path = "orix8bits/getting-started/index.md";
     var mkdocs_page_url = null;
   </script>
@@ -62,8 +62,18 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="#">Getting started</a>
     <ul class="current">
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Configure and start oricutron with twilighte board</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Getting started</a>
     <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-configure-and-start-oricutron-with-twilighte-board">Step 1 : Configure and start oricutron with twilighte board</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-start-oricutron">Step 2 : start oricutron</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-downloadbuild-cc65">Step 3 : Download/build cc65</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-4-download-sdk-mainly-for-assembly">Step 4 : Download SDK  (mainly for assembly)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#some-informations-banking-management">Some informations : Banking management</a>
+    </li>
     </ul>
                 </li>
     </ul>
@@ -128,7 +138,7 @@
         
       
     
-    <li>Configure and start oricutron with twilighte board</li>
+    <li>Getting started</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -139,14 +149,24 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="configure-and-start-oricutron-with-twilighte-board">Configure and start oricutron with twilighte board</h1>
+                <h1 id="getting-started">Getting started</h1>
+<h2 id="step-1-configure-and-start-oricutron-with-twilighte-board">Step 1 : Configure and start oricutron with twilighte board</h2>
 <p>Build from source code oricutron : https://github.com/pete-gordon/oricutron</p>
 <p>In oricutron.cfg, you have just to set the right parameter to start oric with the board emulated</p>
-<p>``` ca65
-ch376 = yes
-twilighte_board=yes</p>
-<pre><code>    and in https://github.com/pete-gordon/oricutron/blob/master/plugins/twilighte_board/twilighte.cfg you can put any rom you want.
+<pre><code class="ca65">ch376 = yes
+twilighte_board=yes
 </code></pre>
+
+<p>plugins/twilighte_board/twilighte.cfg you can put any rom you want.</p>
+<h2 id="step-2-start-oricutron">Step 2 : start oricutron</h2>
+<p>Starts oricutron, if everything is OK, Orix starts, if you have missing rom at boot, modify plugins/twilighte_board/twilighte.cfg in order to replace wrong ROM.</p>
+<p>there is 2 folders on oricutron: sdcard and usbdrive, in orix type "/#mount", if usb is shown, then usbdrive/ folder is the main folder.</p>
+<p>Under Linux, all filenames must be uppercases (folder and files), it's mainly because emulation rescpect FAT32 specs in the sdcard/usbdrive chip</p>
+<h2 id="step-3-downloadbuild-cc65">Step 3 : Download/build cc65</h2>
+<p>Build it from cc65</p>
+<h2 id="step-4-download-sdk-mainly-for-assembly">Step 4 : Download SDK  (mainly for assembly)</h2>
+<p>Clone https://github.com/assinie/orix-sdk in your project folder </p>
+<h2 id="some-informations-banking-management">Some informations : Banking management</h2>
 <p>firmware version 1</p>
 <p>$342 : twilighte board register</p>
 <pre><code>b0,b1,b2 version number is equal to 1, but can be overwritten (There is not read only protection

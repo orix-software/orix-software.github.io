@@ -33,6 +33,7 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 ;----------------------------------------------------------------------
 ```
 
+```ca65
 ## Mfree (free pointer)
 
 ;----------------------------------------------------------------------
@@ -42,3 +43,4 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 ;
 ; Call XFREE function
 ;----------------------------------------------------------------------
+```ca65

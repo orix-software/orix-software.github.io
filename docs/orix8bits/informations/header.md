@@ -33,9 +33,7 @@ type_of_file
         .byt <start_adress,>start_adress ; loading adress
         .byt <endofmemory,>EndOfMemory   ; end of loading adress
         .byt <start_adress,>start_adress ; starting adress
- ```
 
-``` ca65
 start_adress:
  
 	*=$1000

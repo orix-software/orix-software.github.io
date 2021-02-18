@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Summary - Orix, Stratos</title>
+  <title>Samples in Assembly - Orix, Stratos</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Summary";
-    var mkdocs_page_input_path = "orix8bits/primitives/index.md";
+    var mkdocs_page_name = "Samples in Assembly";
+    var mkdocs_page_input_path = "orix8bits/samples/index.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -83,31 +83,25 @@
                 </li>
     </ul>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Primitives</a>
-    <ul class="current">
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Summary</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#args-from-commandline">Args from commandline</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#numbers">Numbers</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#memory">Memory</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#files">Files</a>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Primitives</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../primitives/">Summary</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="xbindx/">XBINDX</a>
+                <li class="toctree-l2"><a class="reference internal" href="../primitives/xbindx/">XBINDX</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="xgetargv/">XGETARGV</a>
+                <li class="toctree-l2"><a class="reference internal" href="../primitives/xgetargv/">XGETARGV</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="xmainargs/">XMAINARGS</a>
+                <li class="toctree-l2"><a class="reference internal" href="../primitives/xmainargs/">XMAINARGS</a>
                 </li>
     </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Samples</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../samples/">Samples in Assembly</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Samples</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Samples in Assembly</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#malloc">Malloc</a>
+    </li>
+    </ul>
                 </li>
     </ul>
                     </li>
@@ -157,7 +151,7 @@
     
       
         
-          <li>Primitives &raquo;</li>
+          <li>Samples &raquo;</li>
         
       
         
@@ -165,7 +159,7 @@
         
       
     
-    <li>Summary</li>
+    <li>Samples in Assembly</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -176,25 +170,21 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="summary">Summary</h1>
-<h2 id="args-from-commandline">Args from commandline</h2>
-<ul>
-<li><a href="xmainargs">XMAINARGS</a> : get command line and build argv/argc</li>
-<li><a href="xgetargv">XGETARGV</a> : get an argv from xmainargs struct</li>
-</ul>
-<h2 id="numbers">Numbers</h2>
-<ul>
-<li><a href="xbindx">XBINDX</a> : convert a number to decimal</li>
-</ul>
-<h2 id="memory">Memory</h2>
-<ul>
-<li>XMALLOC</li>
-<li>XFREE</li>
-</ul>
-<h2 id="files">Files</h2>
-<ul>
-<li><a href="xopen">XOPEN</a> : Open a file</li>
-</ul>
+                <h1 id="samples-in-assembly">Samples in Assembly</h1>
+<h2 id="malloc">Malloc</h2>
+<p>Allocate 4000 bytes and displays a message if the 4000 bytes can't be allocated, else store ptr to myptr3</p>
+<p>malloc is done with Orix-sdk</p>
+<pre><code class="ca65">.include &quot;telestrat.inc&quot;
+.include &quot;macros/SDK.mac&quot;
+
+myptr3 := userzp
+
+malloc 4000,myptr3,str_enomem ; Index ptr
+rts
+str_enoemem:
+ .asciiz &quot;Out of memory&quot;
+
+</code></pre>
               
             </div>
           </div>
@@ -202,10 +192,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="xbindx/" class="btn btn-neutral float-right" title="XBINDX">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../tools/mount/" class="btn btn-neutral float-right" title="Mount (not developed yet)">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../informations/orixsdk/" class="btn btn-neutral" title="Orix SDK"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../primitives/xmainargs/" class="btn btn-neutral" title="XMAINARGS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -231,10 +221,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../informations/orixsdk/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../primitives/xmainargs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="xbindx/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../tools/mount/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

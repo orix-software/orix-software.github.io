@@ -2,7 +2,7 @@
 
 ## Step 1 : Configure and start oricutron with twilighte board
 
-Build from source code oricutron : https://github.com/pete-gordon/oricutron
+Build from source code oricutron : [https://github.com/pete-gordon/oricutron](https://github.com/pete-gordon/oricutron)
 
 In oricutron.cfg, you have just to set the right parameter to start oric with the board emulated
 
@@ -27,4 +27,4 @@ Build it from cc65. You can build your first program in C with cc65 and telestra
 
 ## Step 4 : Download SDK  (mainly for assembly)
 
-Clone https://github.com/assinie/orix-sdk in your project folder
+Clone [https://github.com/assinie/orix-sdk](https://github.com/assinie/orix-sdk) in your project folder

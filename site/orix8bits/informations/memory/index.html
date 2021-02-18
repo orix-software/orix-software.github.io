@@ -65,6 +65,8 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="#">Informations</a>
     <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../binary_starts/">Binary start sequence</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../buildman/">Build manual pages</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../buildrom/">Build a rom</a>
@@ -100,6 +102,12 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../primitives/xgetargv/">XGETARGV</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../primitives/xmainargs/">XMAINARGS</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Samples</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../samples/">Samples in Assembly</a>
                 </li>
     </ul>
                     </li>
@@ -169,6 +177,8 @@
             <div class="section">
               
                 <h1 id="memory-management">Memory management</h1>
+<p>Kernel has XMALLOC and XFREE primitives to allocate memory dynamictly. But theses primitives only returns pointer from main memory.</p>
+<p>For instance, extra memory can be accessed without kernel primitive with simple code</p>
 <h2 id="banking-management">Banking management</h2>
 <p>The banking management is a bit special, because it keeps telestrat compatibility (7 banks available + 1 bank for Overlay RAM), that is why twilighte board adds others registers to keep telestrat compatibility</p>
 <h2 id="342-twilighte-board-register">$342 : twilighte board register</h2>

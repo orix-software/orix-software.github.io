@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Kernel - Orix, Stratos</title>
+  <title>Binary start sequence - Orix, Stratos</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Kernel";
-    var mkdocs_page_input_path = "orix8bits/getting-started/kernel.md";
+    var mkdocs_page_name = "Binary start sequence";
+    var mkdocs_page_input_path = "orix8bits/informations/binary_starts.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -55,33 +55,39 @@
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../../">Orix 8 Bits</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Getting started</a>
-    <ul class="current">
-                <li class="toctree-l2"><a class="reference internal" href="../">Install</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Getting started</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/">Install</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Kernel</a>
-    <ul class="current">
-    </ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/kernel/">Kernel</a>
                 </li>
     </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Informations</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../informations/binary_starts/">Binary start sequence</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Informations</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Binary start sequence</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-check-if-binary-in-a-bank">Step 1 : check if binary in a bank</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-check-if-the-binary-is-on-the-device">Step 2 : Check if the binary is on the device.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-binary-on-device-is-found">Step 3 : binary on device is found</a>
+    </li>
+    </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../informations/buildman/">Build manual pages</a>
+                <li class="toctree-l2"><a class="reference internal" href="../buildman/">Build manual pages</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../informations/buildrom/">Build a rom</a>
+                <li class="toctree-l2"><a class="reference internal" href="../buildrom/">Build a rom</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../informations/cc65/">Use of cc65</a>
+                <li class="toctree-l2"><a class="reference internal" href="../cc65/">Use of cc65</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../informations/firmware/">Firmwares available</a>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmwares available</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../informations/header/">Header</a>
+                <li class="toctree-l2"><a class="reference internal" href="../header/">Header</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../informations/memory/">Memory management</a>
+                <li class="toctree-l2"><a class="reference internal" href="../memory/">Memory management</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../informations/orixsdk/">Orix SDK</a>
+                <li class="toctree-l2"><a class="reference internal" href="../orixsdk/">Orix SDK</a>
                 </li>
     </ul>
                     </li>
@@ -149,7 +155,7 @@
     
       
         
-          <li>Getting started &raquo;</li>
+          <li>Informations &raquo;</li>
         
       
         
@@ -157,7 +163,7 @@
         
       
     
-    <li>Kernel</li>
+    <li>Binary start sequence</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -168,11 +174,17 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="kernel">Kernel</h1>
-<p>Kernel is located in bank 7.</p>
-<p>Each primitives are called with "brk" instruction with a value after it.</p>
-<p>We can pass args to AXY or others memory location and the primitive can be called.</p>
-<p>Orix SDK manages some kernel calls, and it's better to use macro set to call some primitives</p>
+                <h1 id="binary-start-sequence">Binary start sequence</h1>
+<p>All commands are started with XEXEC kernel primitive. For example, when something is typed into shell, shell calls xexec kernel primitive (except for shell internal commands like echo, pwd ...). </p>
+<p>When a binary is executed, kernel fork a new process with its PID, PPID, CWD</p>
+<h2 id="step-1-check-if-binary-in-a-bank">Step 1 : check if binary in a bank</h2>
+<p>Xexec reads all banks from 4 to 1 and tries to check if the program if in a ROM (that is why ROM needs to have a kind of header)</p>
+<p>If the commands is in a bank, it switches to the right bank and launch command vector (and it forks)</p>
+<p>That is why commands located in bank are quicker to start</p>
+<h2 id="step-2-check-if-the-binary-is-on-the-device">Step 2 : Check if the binary is on the device.</h2>
+<p>If the binary is not in a bank, kernel will try to open "/bin/BINARY_FILE". If open fails, it returns command not found or impossible to mount if device is not present.</p>
+<h2 id="step-3-binary-on-device-is-found">Step 3 : binary on device is found</h2>
+<p>Kernel opens the file, reads the header, and load contains of the binary on the right address. When it's OK, the binary is started (and a fork occurs.)</p>
               
             </div>
           </div>
@@ -180,10 +192,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../informations/binary_starts/" class="btn btn-neutral float-right" title="Binary start sequence">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../buildman/" class="btn btn-neutral float-right" title="Build manual pages">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../" class="btn btn-neutral" title="Install"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../getting-started/kernel/" class="btn btn-neutral" title="Kernel"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -209,10 +221,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../getting-started/kernel/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../informations/binary_starts/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../buildman/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

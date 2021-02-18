@@ -6,7 +6,11 @@
 * [XGETARGV](xgetargv) : get an argv from xmainargs struct
 
 ## Numbers
-* [XBINX](xbindx) : convert a number to decimal
+* [XBINDX](xbindx) : convert a number to decimal
+
+## Memory
+* XMALLOC
+* XFREE
 
 ## Files
 

@@ -1,5 +1,9 @@
 # Memory management
 
+Kernel has XMALLOC and XFREE primitives to allocate memory dynamictly. But theses primitives only returns pointer from main memory.
+
+For instance, extra memory can be accessed without kernel primitive with simple code
+
 ## Banking management
 
 The banking management is a bit special, because it keeps telestrat compatibility (7 banks available + 1 bank for Overlay RAM), that is why twilighte board adds others registers to keep telestrat compatibility

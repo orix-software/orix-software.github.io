@@ -19,7 +19,7 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Samples in Assembly";
-    var mkdocs_page_input_path = "orix8bits/samples/index.md";
+    var mkdocs_page_input_path = "orix8bits/samples_asm/index.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -51,6 +51,13 @@
                     <li class="toctree-l1"><a class="reference internal" href="../..">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Ch376</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../ch376/">ch376</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../ch376/vars8/">CH376 extra vars</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Orix8bits</span></p>
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../">Orix 8 Bits</a>
@@ -77,9 +84,13 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../informations/header/">Header</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../informations/joysticks/">Joysticks development</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../informations/memory/">Memory management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../informations/orixsdk/">Orix SDK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../informations/pizero_connection/">Pi zero connection</a>
                 </li>
     </ul>
                     </li>
@@ -95,13 +106,19 @@
                 </li>
     </ul>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Samples</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Samples asm</a>
     <ul class="current">
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Samples in Assembly</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#malloc">Malloc</a>
     </li>
     </ul>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Samples c</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../samples_c/">Samples in C</a>
                 </li>
     </ul>
                     </li>
@@ -151,7 +168,7 @@
     
       
         
-          <li>Samples &raquo;</li>
+          <li>Samples asm &raquo;</li>
         
       
         
@@ -192,7 +209,7 @@ str_enoemem:
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../tools/mount/" class="btn btn-neutral float-right" title="Mount (not developed yet)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../samples_c/" class="btn btn-neutral float-right" title="Samples in C">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../primitives/xmainargs/" class="btn btn-neutral" title="XMAINARGS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -224,7 +241,7 @@ str_enoemem:
         <span><a href="../primitives/xmainargs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../tools/mount/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../samples_c/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

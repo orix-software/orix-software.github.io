@@ -1,4 +1,4 @@
-# Samples in C
+# Open and read files with cc65
 
 ```c
 
@@ -19,4 +19,3 @@ main (){
 }
 
 ```
-

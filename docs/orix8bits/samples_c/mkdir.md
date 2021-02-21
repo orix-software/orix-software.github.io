@@ -20,7 +20,7 @@ mkdir kernel primitive does not support absolute path, and it can only create fo
 .endproc
 ```
 
-And now, you C code, you can do :
+And now, you C code, you can do (don't forget to add _omkdir.s to your command line to build _omkdir.s when you launch cl65):
 
 ```c
 extern void omkdir(unsigned char *path);

@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>XMAINARGS - Orix, Stratos</title>
+  <title>XMAINARGS (argmains) - Orix, Stratos</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "XMAINARGS";
+    var mkdocs_page_name = "XMAINARGS (argmains)";
     var mkdocs_page_input_path = "orix8bits/primitives/xmainargs.md";
     var mkdocs_page_url = null;
   </script>
@@ -116,11 +116,15 @@
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../">Summary</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../xbindx/">XBINDX</a>
+                <li class="toctree-l2"><a class="reference internal" href="../xbindx/">XBINDX (16 bytes to decimal)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xexec/">XEXEC</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../xgetargv/">XGETARGV</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">XMAINARGS</a>
+                <li class="toctree-l2"><a class="reference internal" href="../xgetcwd/">XGETTCWD (getcwd)</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">XMAINARGS (argmains)</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
     </li>
@@ -132,7 +136,9 @@
     </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../xmkdir/">XMKDIR</a>
+                <li class="toctree-l2"><a class="reference internal" href="../xmkdir/">XMKDIR (mkdir)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xputcwd/">XPUTCWD (chdir)</a>
                 </li>
     </ul>
                     </li>
@@ -151,6 +157,8 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../samples_c/mkdir/">Create a folder with cc65</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../samples_c/putcwd/">chdir in cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../samples_c/writefile/">Write a file</a>
                 </li>
     </ul>
                     </li>
@@ -196,7 +204,7 @@
         
       
     
-    <li>XMAINARGS</li>
+    <li>XMAINARGS (argmains)</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -207,7 +215,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="xmainargs">XMAINARGS</h1>
+                <h1 id="xmainargs-argmains">XMAINARGS (argmains)</h1>
 <p>ID primitive : $2C</p>
 <h2 id="description">Description</h2>
 <p>Return argc and argv</p>
@@ -232,10 +240,10 @@ sty save_argvhigh
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../xmkdir/" class="btn btn-neutral float-right" title="XMKDIR">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../xmkdir/" class="btn btn-neutral float-right" title="XMKDIR (mkdir)">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../xgetargv/" class="btn btn-neutral" title="XGETARGV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../xgetcwd/" class="btn btn-neutral" title="XGETTCWD (getcwd)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -261,7 +269,7 @@ sty save_argvhigh
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../xgetargv/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../xgetcwd/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../xmkdir/" style="color: #fcfcfc">Next &raquo;</a></span>

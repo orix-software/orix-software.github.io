@@ -1,4 +1,4 @@
-# XBINDX
+# XBINDX (16 bytes to decimal)
 
 ## Description
 
@@ -16,7 +16,7 @@ X : xxx
 
 ## Output
 
-A & TR5
+A,TR4, TR5
 
 ## Example
 
@@ -32,6 +32,7 @@ A & TR5
 	ldx		   #$01
 	ldy        #$00
 	lda        #$10
-    BRK_KERNEL XBINX
+    BRK_KERNEL XBINDX
+	rts
 ```
 

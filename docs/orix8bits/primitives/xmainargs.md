@@ -1,4 +1,4 @@
-# XMAINARGS
+# XMAINARGS (argmains)
 
 ID primitive : $2C
 
@@ -26,5 +26,4 @@ stx save_argc
 sta save_argvlow
 sty save_argvhigh
 ``` 
-
 

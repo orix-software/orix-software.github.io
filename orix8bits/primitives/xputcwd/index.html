@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>XPUTCWD (chdir) - Orix, Stratos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "XPUTCWD (chdir)";
+    var mkdocs_page_input_path = "orix8bits/primitives/xputcwd.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Orix, Stratos</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Hardware</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Ch376</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../hardware/ch376/">ch376</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../hardware/ch376/vars8/">CH376 extra vars</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Stratos</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../hardware/stratos/">Stratos</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Twilighteboard</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../hardware/twilighteboard/">Twilighte board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../hardware/twilighteboard/fdcWifiEsp/">fdcsd</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Orix8bits</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../../">Orix 8 Bits</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Getting started</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/">Install</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/kernel/">Kernel</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Informations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/binary_starts/">Binary start sequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/buildman/">Build manual pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/buildrom/">Build a rom</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/cc65/">Use of cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/firmware/">Firmwares available</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/header/">Header</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/joysticks/">Joysticks development</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/memory/">Memory management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/orixsdk/">Orix SDK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../informations/pizero_connection/">Pi zero connection</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Primitives</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Summary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xbindx/">XBINDX (16 bytes to decimal)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xexec/">XEXEC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xgetargv/">XGETARGV</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xgetcwd/">XGETTCWD (getcwd)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xmainargs/">XMAINARGS (argmains)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xmkdir/">XMKDIR (mkdir)</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">XPUTCWD (chdir)</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#input">Input</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#output">Output</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#example">Example</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Samples asm</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../samples_asm/">Samples in Assembly</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Samples c</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../samples_c/">Open and read files with cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../samples_c/getcwd/">Get CWD in cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../samples_c/mkdir/">Create a folder with cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../samples_c/putcwd/">chdir in cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../samples_c/writefile/">Write a file</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Tools</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../tools/mount/">Mount (not developed yet)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Basic11</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../tools/basic11/">Fonctionnement</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Orix, Stratos</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Primitives &raquo;</li>
+        
+      
+        
+          <li>Orix8bits &raquo;</li>
+        
+      
+    
+    <li>XPUTCWD (chdir)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="xputcwd-chdir">XPUTCWD (chdir)</h1>
+<h2 id="description">Description</h2>
+<p>Change current process directory</p>
+<h2 id="input">Input</h2>
+<p>A &amp; Y the 16 bits values (string with \0)</p>
+<h2 id="output">Output</h2>
+<p>N/A</p>
+<h2 id="example">Example</h2>
+<pre><code class="ca65">    lda        #&lt;str
+    ldy        #&gt;str
+    BRK_KERNEL XPUTCWD
+    rts
+str:
+    .asciiz &quot;/etc&quot;
+
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../samples_asm/" class="btn btn-neutral float-right" title="Samples in Assembly">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../xmkdir/" class="btn btn-neutral" title="XMKDIR (mkdir)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../xmkdir/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../samples_asm/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

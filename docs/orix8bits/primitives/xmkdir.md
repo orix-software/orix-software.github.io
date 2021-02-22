@@ -1,4 +1,4 @@
-# XMKDIR
+# XMKDIR (mkdir)
 
 ID primitive : $4B
 

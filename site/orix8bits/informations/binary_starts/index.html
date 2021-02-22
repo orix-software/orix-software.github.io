@@ -94,7 +94,7 @@
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#step-1-check-if-binary-in-a-bank">Step 1 : check if binary in a bank</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#step-2-check-if-the-binary-is-on-the-device">Step 2 : Check if the binary is on the device.</a>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-check-if-the-binary-is-on-the-device">Step 2 : Check if the binary is on the device</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#step-3-binary-on-device-is-found">Step 3 : binary on device is found</a>
     </li>
@@ -124,13 +124,19 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../primitives/">Summary</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../primitives/xbindx/">XBINDX</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../primitives/xbindx/">XBINDX (16 bytes to decimal)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../primitives/xexec/">XEXEC</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../primitives/xgetargv/">XGETARGV</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../primitives/xmainargs/">XMAINARGS</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../primitives/xgetcwd/">XGETTCWD (getcwd)</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../primitives/xmkdir/">XMKDIR</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../primitives/xmainargs/">XMAINARGS (argmains)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../primitives/xmkdir/">XMKDIR (mkdir)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../primitives/xputcwd/">XPUTCWD (chdir)</a>
                 </li>
     </ul>
                     </li>
@@ -149,6 +155,8 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../samples_c/mkdir/">Create a folder with cc65</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../samples_c/putcwd/">chdir in cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../samples_c/writefile/">Write a file</a>
                 </li>
     </ul>
                     </li>
@@ -206,16 +214,16 @@
             <div class="section">
               
                 <h1 id="binary-start-sequence">Binary start sequence</h1>
-<p>All commands are started with XEXEC kernel primitive. For example, when something is typed into shell, shell calls xexec kernel primitive (except for shell internal commands like echo, pwd ...). </p>
+<p>All commands are started with XEXEC kernel primitive. For example, when something is typed into shell, shell calls XEXEC kernel primitive (except for shell internal commands like echo, pwd ...).</p>
 <p>When a binary is executed, kernel fork a new process with its PID, PPID, CWD</p>
 <h2 id="step-1-check-if-binary-in-a-bank">Step 1 : check if binary in a bank</h2>
-<p>Xexec reads all banks from 4 to 1 and tries to check if the program if in a ROM (that is why ROM needs to have a kind of header)</p>
+<p>Xexec reads all banks from 4 to 1 and tries to check if the program is in a ROM (that is why ROM needs to have a kind of header)</p>
 <p>If the commands is in a bank, it switches to the right bank and launch command vector (and it forks)</p>
 <p>That is why commands located in bank are quicker to start</p>
-<h2 id="step-2-check-if-the-binary-is-on-the-device">Step 2 : Check if the binary is on the device.</h2>
-<p>If the binary is not in a bank, kernel will try to open "/bin/BINARY_FILE". If open fails, it returns command not found or impossible to mount if device is not present.</p>
+<h2 id="step-2-check-if-the-binary-is-on-the-device">Step 2 : Check if the binary is on the device</h2>
+<p>If the binary is not in a bank, kernel will try to open "/bin/BINARY_FILE". If open fails, it returns "command not found" or impossible to mount if device is not present.</p>
 <h2 id="step-3-binary-on-device-is-found">Step 3 : binary on device is found</h2>
-<p>Kernel opens the file, reads the header, and load contains of the binary on the right address. When it's OK, the binary is started (and a fork occurs.)</p>
+<p>Kernel opens the file, reads the header, and loads the content of the binary on the right address. When it's OK, the binary is started (and a fork occurs.)</p>
               
             </div>
           </div>

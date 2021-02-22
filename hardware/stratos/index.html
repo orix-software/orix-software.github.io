@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>fdcsd - Orix, Stratos</title>
+  <title>Stratos - Orix, Stratos</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "fdcsd";
-    var mkdocs_page_input_path = "twilighteboard/fdcWifiEsp.md";
+    var mkdocs_page_name = "Stratos";
+    var mkdocs_page_input_path = "hardware/stratos/index.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -51,11 +51,43 @@
                     <li class="toctree-l1"><a class="reference internal" href="../..">Documentation for Orix(8 bits and 16 bits), twilighte board, and Stratos</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Ch376</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../ch376/">ch376</a>
+                <p class="caption"><span class="caption-text">Hardware</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="#">Ch376</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../ch376/">ch376</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ch376/vars8/">CH376 extra vars</a>
+                </li>
+    </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../ch376/vars8/">CH376 extra vars</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Stratos</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Stratos</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#specs-generales">Specs Générales</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fonctionnement-atmos-compatible">Fonctionnement atmos compatible</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cas-non-geres">Cas non gérés</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#controleur-usb-sdcard-clavier-souris">Controleur usb, sdcard, clavier, souris</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#port-ethernet">Port ethernet</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#eeprom">EEprom</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Twilighteboard</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../twilighteboard/">Twilighte board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../twilighteboard/fdcWifiEsp/">fdcsd</a>
+                </li>
+    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Orix8bits</span></p>
@@ -139,30 +171,6 @@
     </ul>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Stratos</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../stratos/">Stratos</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Twilighteboard</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../">Twilighte board</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">fdcsd</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#esp32_check_exist">ESP32_CHECK_EXIST</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#esp32_get_ic_ver">ESP32_GET_IC_VER</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#esp32_set_mode">ESP32_SET_MODE</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#esp32_set_mode_code_fdc">ESP32_SET_MODE_CODE_FDC</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#esp32_launch_wifi_scan-02">ESP32_LAUNCH_WIFI_SCAN $02</a>
-    </li>
-    </ul>
-                    </li>
-                </ul>
       </div>
     </div>
     </nav>
@@ -184,11 +192,15 @@
     
       
         
-          <li>Twilighteboard &raquo;</li>
+          <li>Stratos &raquo;</li>
+        
+      
+        
+          <li>Hardware &raquo;</li>
         
       
     
-    <li>fdcsd</li>
+    <li>Stratos</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -199,77 +211,47 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="fdcsd">fdcsd</h1>
-<p>I/O : 
-* $315 : command port
-* $316 : data port</p>
-<h2 id="esp32_check_exist">ESP32_CHECK_EXIST</h2>
-<p>ESP32_CHECK_EXIST     = $06</p>
-<p>Return data inverted bit</p>
-<h2 id="esp32_get_ic_ver">ESP32_GET_IC_VER</h2>
-<p>ESP32_GET_IC_VER      = $01</p>
-<p>Return version</p>
-<h2 id="esp32_set_mode">ESP32_SET_MODE</h2>
-<p>CH376_SET_MODE    = $15</p>
-<p>Set mode </p>
-<h2 id="esp32_set_mode_code_fdc">ESP32_SET_MODE_CODE_FDC</h2>
-<h2 id="esp32_launch_wifi_scan-02">ESP32_LAUNCH_WIFI_SCAN $02</h2>
+                <h1 id="stratos">Stratos</h1>
+<h2 id="specs-generales">Specs Générales</h2>
 <ul>
-<li>interrupt  </li>
-<li>return a struct : 2 bytes for the length of all ssid, and all sid</li>
+<li>15 Mo de SRAM</li>
+<li>1 mo d'eeprom</li>
+<li>Voir s'il faut faire une SRAM séparée pour la vidéo à terme (mais passer en QFP 144 car pas assez de pinout pour séparer les bus)</li>
+<li>ULA 2 améliorée</li>
+<li>65c816 à 14Mhz</li>
+<li>port USB, port sdcard (stockage principal)</li>
+<li>Os : Orix </li>
+<li>langage : forth, basic atmos etc ...</li>
+<li>Peut être placé dans le boitier atmos. Il reste néanmoins la question des ports joysticks qu'il faut arriver à faire sortir du boitier</li>
 </ul>
-<p>ESP32_DETECTED        = $AA</p>
-<p>CH376_CMD_NONE        = $00</p>
-<p>CH376_GET_ENTER_SLEEP = $03
-CH276_SET_USB_SPEED   = $04 
-CH376_RESET_ALL       = $05
-CH376_GET_FILE_SIZE   = $0C ; Get the current file length
-CH376_SET_USB_MODE    = $15
-CH376_GET_STATUS      = $22
-CH376_RD_USB_DATA0    = $27
-CH376_WR_USB_DATA     = $2C
-CH376_CMD_WR_REQ_DATA = $2D
-CH376_SET_FILE_NAME   = $2F
-CH376_DISK_CONNECT    = $30 ; check the disk connection status
-CH376_DISK_MOUNT      = $31
-CH376_FILE_OPEN       = $32
-CH376_FILE_ENUM_GO    = $33
-CH376_CMD_FILE_CREATE = $34
-CH376_FILE_ERASE      = $35
-CH376_FILE_CLOSE      = $36
-CH376_BYTE_LOCATE     = $39
-CH376_BYTE_READ       = $3A
-CH376_BYTE_RD_GO      = $3B
-CH376_BYTE_WRITE      = $3C
-CH376_BYTE_WR_GO      = $3D
-CH376_DISK_CAPACITY   = $3E
-CH376_DISK_QUERY      = $3F
-CH376_DIR_CREATE      = $40
-CH376_SET_ADRESS      = $45
-CH376_GET_DESCR       = $46
-CH376_DISK_RD_GO      = $55</p>
-<p>; CODE FOR CH376_SET_USB_MODE </p>
-<p>CH376_SET_USB_MODE_CODE_SDCARD                              = $03
-; The code of 06H means switch to valid USB-HOST, produce SOF package automatically. 
-CH376_SET_USB_MODE_CODE_USB_HOST_SOF_PACKAGE_AUTOMATICALLY  = $06</p>
-<p>CH376_USB_INT_SUCCESS       = $14
-CH376_USB_INT_CONNECT       = $15
-CH376_USB_INT_DISCONNECT    = $16
-CH376_USB_INT_BUF_OVER      = $17
-CH376_USB_INT_USB_READY     = $18
-CH376_USB_INT_DISK_READ     = $1d
-CH376_USB_INT_DISK_WRITE    = $1e
-CH376_USB_INT_DISK_ERR      = $1f</p>
-<p>CH376_ERR_OPEN_DIR          = $41
-CH376_ERR_MISS_FILE         = $42
-CH376_ERR_FOUND_NAME        = $43
-CH376_ERR_DISK_DISCON       = $82
-CH376_ERR_LARGE_SECTOR      = $84
-CH376_ERR_TYPE_ERROR        = $92
-CH376_ERR_BPB_ERROR         = $A1
-CH376_ERR_DISK_FULL         = $B1
-CH376_ERR_FDT_OVER          = $B2
-CH376_ERR_FILE_CLOSE        = $B4</p>
+<h2 id="fonctionnement-atmos-compatible">Fonctionnement atmos compatible</h2>
+<ul>
+<li>La rom atmos est prête pour lire des .tap directement</li>
+<li>sedoric version sdcard est en cours d'écriture</li>
+<li>ftdos en cours d'écriture</li>
+<li>Detection du mode en fonction de la broche E du cpu ? Si émulation = mode atmos ?</li>
+<li>Lancement de basic11 : chargement en RAM de la rom associée dans les 16 Mo par malloc, puis virtualisation des adresses dans le cpld avec un registre ?</li>
+</ul>
+<h2 id="cas-non-geres">Cas non gérés</h2>
+<ul>
+<li>WIFI : pour l'instant port ethernet avec stack tcp/ip hardware (voir port ethernet), voir s'il faut un ESP32</li>
+<li>Réel FDC </li>
+</ul>
+<h2 id="controleur-usb-sdcard-clavier-souris">Controleur usb, sdcard, clavier, souris</h2>
+<ul>
+<li>Ch376 : fat 32, port USB, HID, drivers écrits (émulation aussi)</li>
+</ul>
+<h2 id="port-ethernet">Port ethernet</h2>
+<ul>
+<li>ch395 : stack tcp/ip, socket gérés : 8, icmp ...</li>
+</ul>
+<h2 id="eeprom">EEprom</h2>
+<ul>
+<li>kernel et tout ce qui se met en rom tel que shell, forth etc.</li>
+<li>Programmation : orixcfg</li>
+</ul>
+<h1 id="kernel-orix-16bits">Kernel Orix 16bits</h1>
+<p>appels via jsr avec un paramètre de primitive ?</p>
               
             </div>
           </div>
@@ -277,8 +259,10 @@ CH376_ERR_FILE_CLOSE        = $B4</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../twilighteboard/" class="btn btn-neutral float-right" title="Twilighte board">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../" class="btn btn-neutral" title="Twilighte board"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../ch376/vars8/" class="btn btn-neutral" title="CH376 extra vars"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -304,8 +288,10 @@ CH376_ERR_FILE_CLOSE        = $B4</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../ch376/vars8/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../twilighteboard/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

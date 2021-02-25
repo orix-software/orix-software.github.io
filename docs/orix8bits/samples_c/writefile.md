@@ -9,7 +9,7 @@ int main() {
   FILE* fp;
 
   unsigned int nb_write;
-9  static unsigned char destfilename[9]="myfile.txt";    
+  static unsigned char destfilename[9]="myfile.txt";    
 
   fp = fopen(destfilename, "wb");
   if (!fp) {

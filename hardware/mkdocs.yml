@@ -1,0 +1,4 @@
+site_name: Twilighte board
+theme:
+    name: readthedocs
+    highlightjs: true

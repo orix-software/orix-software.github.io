@@ -1,4 +1,4 @@
-site_name: Orix, Stratos
+site_name: Orix
 theme:
     name: readthedocs
     highlightjs: true

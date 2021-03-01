@@ -28,6 +28,8 @@ A & Y contains argv ptr from xmainargs struct. It returns a copy of the command 
     ldy   debug_mainargs_ptr+1
 
     BRK_KERNEL XGETARGV
+
+    ; A & Y contains ptr
 ```
 
 

@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Fonctionnement - Orix</title>
+  <title>basic11 rom - Orix</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Fonctionnement";
+    var mkdocs_page_name = "basic11 rom";
     var mkdocs_page_input_path = "how-it-work/index.md";
     var mkdocs_page_url = null;
   </script>
@@ -55,9 +55,19 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../home/buildrom/">Rom Structure</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../home/cc65/">Cc65 use</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../home/firmware/">Firmwares</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../home/hardware/">Hardware</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../home/header/">Header</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../home/joysticks/">Joysticks management</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../home/kernel/">Kernel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../home/memory/">Memory management</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../home/orixsdk/">Orix SDK</a>
                     </li>
@@ -66,7 +76,7 @@
                 </ul>
                 <p class="caption"><span class="caption-text">How it work</span></p>
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Fonctionnement</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">basic11 rom</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#si-on-tape-basic11">Si on tape : /#basic11</a>
     </li>
@@ -80,38 +90,33 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="binary_starts/">Binary start sequence</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="cc65/">Use of cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="firmware/">Firmwares</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="header/">Header</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="joysticks/">Joysticks (and development)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="memory/">Memory management</a>
-                    </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Libs</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../libs/twillib/">Twil libs</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Samples asm</span></p>
+                <p class="caption"><span class="caption-text">Samples</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_asm/">Samples in Assembly</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Asm samples</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/asm_samples/">Samples in Assembly</a>
+                </li>
+    </ul>
                     </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Samples c</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/">Open and read files with cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/getcwd/">Get CWD in cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/mkdir/">Create a folder with cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/putcwd/">chdir in cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/writefile/">Write a file</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">C samples</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/">Open and read files with cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/getcwd/">Get CWD in cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/mkdir/">Create a folder with cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/putcwd/">chdir in cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/writefile/">Write a file</a>
+                </li>
+    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Tools</span></p>
@@ -144,7 +149,7 @@
         
       
     
-    <li>Fonctionnement</li>
+    <li>basic11 rom</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -155,7 +160,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="fonctionnement">Fonctionnement</h1>
+                <h1 id="basic11-rom">basic11 rom</h1>
 <p>Dans tous les cas, les valeurs de RND en $FA ont été copiées en avance</p>
 <h2 id="si-on-tape-basic11">Si on tape : /#basic11</h2>
 <p>Cela lance la ROM</p>

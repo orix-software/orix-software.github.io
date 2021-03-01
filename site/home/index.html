@@ -53,11 +53,13 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#step-1-configure-and-start-oricutron-with-twilighte-board">Step 1 : Configure and start oricutron with twilighte board</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#step-2-start-oricutron">Step 2 : start oricutron</a>
+    <li class="toctree-l2"><a class="reference internal" href="#step-2-get-main-rom-kernel-and-shell">Step 2 : get main rom (kernel and shell)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#step-3-downloadbuild-cc65">Step 3 : Download/build cc65</a>
+    <li class="toctree-l2"><a class="reference internal" href="#step-3-start-oricutron">Step 3 : start oricutron</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#step-4-download-sdk-mainly-for-assembly">Step 4 : Download SDK  (mainly for assembly)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#step-4-downloadbuild-cc65">Step 4 : Download/build cc65</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-5-download-sdk-mainly-for-assembly">Step 5 : Download SDK  (mainly for assembly)</a>
     </li>
     </ul>
                     </li>
@@ -65,9 +67,19 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="buildrom/">Rom Structure</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="cc65/">Cc65 use</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="firmware/">Firmwares</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="hardware/">Hardware</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="header/">Header</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="joysticks/">Joysticks management</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="kernel/">Kernel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="memory/">Memory management</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="orixsdk/">Orix SDK</a>
                     </li>
@@ -76,19 +88,9 @@
                 </ul>
                 <p class="caption"><span class="caption-text">How it work</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../how-it-work/">Fonctionnement</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../how-it-work/">basic11 rom</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../how-it-work/binary_starts/">Binary start sequence</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../how-it-work/cc65/">Use of cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../how-it-work/firmware/">Firmwares</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../how-it-work/header/">Header</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../how-it-work/joysticks/">Joysticks (and development)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../how-it-work/memory/">Memory management</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Libs</span></p>
@@ -96,22 +98,27 @@
                     <li class="toctree-l1"><a class="reference internal" href="../libs/twillib/">Twil libs</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Samples asm</span></p>
+                <p class="caption"><span class="caption-text">Samples</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_asm/">Samples in Assembly</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Asm samples</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/asm_samples/">Samples in Assembly</a>
+                </li>
+    </ul>
                     </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Samples c</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/">Open and read files with cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/getcwd/">Get CWD in cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/mkdir/">Create a folder with cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/putcwd/">chdir in cc65</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../samples_c/writefile/">Write a file</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">C samples</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/">Open and read files with cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/getcwd/">Get CWD in cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/mkdir/">Create a folder with cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/putcwd/">chdir in cc65</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../samples/c_samples/writefile/">Write a file</a>
+                </li>
+    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Tools</span></p>
@@ -164,13 +171,14 @@ twilighte_board=yes
 </code></pre>
 
 <p>plugins/twilighte_board/twilighte.cfg you can put any rom you want.</p>
-<h2 id="step-2-start-oricutron">Step 2 : start oricutron</h2>
+<h2 id="step-2-get-main-rom-kernel-and-shell">Step 2 : get main rom (kernel and shell)</h2>
+<h2 id="step-3-start-oricutron">Step 3 : start oricutron</h2>
 <p>Starts oricutron, if everything is OK, Orix starts, if you have missing rom at boot, modify plugins/twilighte_board/twilighte.cfg in order to replace wrong ROM.</p>
 <p>there is 2 folders on oricutron: sdcard and usbdrive, in orix type "/#mount", if usb is shown, then usbdrive/ folder is the main folder.</p>
 <p>Under Linux, all filenames must be uppercases (folder and files), it's mainly because emulation rescpect FAT32 specs in the sdcard/usbdrive chip</p>
-<h2 id="step-3-downloadbuild-cc65">Step 3 : Download/build cc65</h2>
+<h2 id="step-4-downloadbuild-cc65">Step 4 : Download/build cc65</h2>
 <p>Build it from cc65. You can build your first program in C with cc65 and telestrat target. It builds an Orix binary. This binary can be put in bin/ folder of the device (for oricutron : usbdrive or sdcard folder)</p>
-<h2 id="step-4-download-sdk-mainly-for-assembly">Step 4 : Download SDK  (mainly for assembly)</h2>
+<h2 id="step-5-download-sdk-mainly-for-assembly">Step 5 : Download SDK  (mainly for assembly)</h2>
 <p>Clone <a href="https://github.com/assinie/orix-sdk">https://github.com/assinie/orix-sdk</a> in your project folder</p>
               
             </div>

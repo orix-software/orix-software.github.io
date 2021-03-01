@@ -1,4 +1,4 @@
-# Fonctionnement
+# basic11 rom 
 
 Dans tous les cas, les valeurs de RND en $FA ont été copiées en avance
 

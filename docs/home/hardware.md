@@ -1,4 +1,3 @@
 # Hardware
 
 * [Twilighte Board](/hardware/).
-

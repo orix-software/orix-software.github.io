@@ -13,7 +13,9 @@ twilighte_board=yes
 
 plugins/twilighte_board/twilighte.cfg you can put any rom you want.
 
-## Step 2 : start oricutron
+## Step 2 : get main rom (kernel and shell)
+
+## Step 3 : start oricutron
 
 Starts oricutron, if everything is OK, Orix starts, if you have missing rom at boot, modify plugins/twilighte_board/twilighte.cfg in order to replace wrong ROM.
 
@@ -21,10 +23,10 @@ there is 2 folders on oricutron: sdcard and usbdrive, in orix type "/#mount", if
 
 Under Linux, all filenames must be uppercases (folder and files), it's mainly because emulation rescpect FAT32 specs in the sdcard/usbdrive chip
 
-## Step 3 : Download/build cc65
+## Step 4 : Download/build cc65
 
 Build it from cc65. You can build your first program in C with cc65 and telestrat target. It builds an Orix binary. This binary can be put in bin/ folder of the device (for oricutron : usbdrive or sdcard folder)
 
-## Step 4 : Download SDK  (mainly for assembly)
+## Step 5 : Download SDK  (mainly for assembly)
 
 Clone [https://github.com/assinie/orix-sdk](https://github.com/assinie/orix-sdk) in your project folder

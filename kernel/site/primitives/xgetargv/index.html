@@ -129,9 +129,18 @@
                 <h1 id="xgetargv">XGETARGV</h1>
 <h2 id="description">Description</h2>
 <p>Get argv. X register contains the number of the arg search</p>
+<p>Kernel handle a struct with XMAINARGS. This struct is handled by Kernel, and no action are required in external code, but here is how struct works :</p>
+<pre><code class="ca65">.struct XMAINARGS_STRUCT
+argv_ptr          .res     KERNEL_MAX_ARGS_COMMAND_LINE
+argv_value_ptr    .res     KERNEL_LENGTH_MAX_CMDLINE+KERNEL_MAX_ARGS_COMMAND_LINE ; add 0 to string
+.endstruct
+</code></pre>
+
+<p>argv_ptr contains an offset of each param. It means that we can't have a length of args greater than 256.</p>
+<p>XMAINARGS and XGETARGV does not handle "" yet and "\ "</p>
 <h2 id="input">Input</h2>
 <p>A &amp; Y the ptr of struct from XMAINARGS</p>
-<p>X the number of arg to get</p>
+<p>X the number of arg to get, first param is 0 not 1 !</p>
 <h2 id="output">Output</h2>
 <p>A &amp; Y contains argv ptr from xmainargs struct. It returns a copy of the command line with args parsed</p>
 <h2 id="example">Example</h2>
@@ -141,7 +150,7 @@
     sta   debug_mainargs_ptr
     sty   debug_mainargs_ptr+1
 
-    ldx   #$02 ; get arg 2
+    ldx   #$02 ; get arg 2 ; Get the third param
     lda   debug_mainargs_ptr
     ldy   debug_mainargs_ptr+1
 

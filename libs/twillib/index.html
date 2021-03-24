@@ -57,7 +57,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../home/buildman/">Manual pages</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../home/buildrom/">Rom Structure</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../home/buildrom/">Bank Structure</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../home/cc65/">Cc65 use</a>
                     </li>
@@ -115,6 +115,15 @@
     </ul>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Tasks</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tasks/cc65/">Task for cc65</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tasks/kernel/">Kernel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tasks/orixcfg/">Orixcfg</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Tools</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../tools/mount/">Mount (not developed yet)</a>
@@ -158,6 +167,10 @@
               
                 <h1 id="twil-libs">Twil libs</h1>
 <p>Manage rom/ram banks</p>
+<pre><code class="c">unsigned char twil_program_rambank(unsigned char bank, char *file, unsigned char set); 
+unsigned char twil_clear_rambank(unsigned char bank, unsigned char set);
+unsigned char twil_lib_version(void);
+</code></pre>
               
             </div>
           </div>

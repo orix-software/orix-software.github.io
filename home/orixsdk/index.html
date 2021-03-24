@@ -57,7 +57,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../buildman/">Manual pages</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../buildrom/">Rom Structure</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../buildrom/">Bank Structure</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../cc65/">Cc65 use</a>
                     </li>
@@ -76,6 +76,8 @@
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Orix SDK</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#load-it">Load it</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fopen">fopen</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#malloc">Malloc</a>
     </li>
@@ -121,6 +123,15 @@
     </ul>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Tasks</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tasks/cc65/">Task for cc65</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tasks/kernel/">Kernel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tasks/orixcfg/">Orixcfg</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Tools</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../tools/mount/">Mount (not developed yet)</a>
@@ -163,11 +174,28 @@
             <div class="section">
               
                 <h1 id="orix-sdk">Orix SDK</h1>
-<p>It provides macro to help assembly coding for Orix.</p>
+<p>It provides macro to help assembly coding for Orix : </p>
+<p>https://github.com/assinie/orix-sdk/</p>
 <h2 id="load-it">Load it</h2>
 <p>you just need to load macro file in your code (and telestrat.inc from cc65):</p>
 <pre><code class="ca65">.include &quot;telestrat.inc&quot;
 .include &quot;macros/SDK.mac&quot;
+</code></pre>
+
+<h2 id="fopen">fopen</h2>
+<pre><code class="ca65">;----------------------------------------------------------------------
+;
+; usage:
+;   fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]
+;
+; note:
+;   - file may be: (ptr), address
+;   - if parameter 'ptr' is present, store resulting AX in ptr &amp; ptr+1
+;   - if parameter 'oom_msg_ptr' is present, emit string pointed by
+;       'oom_msg_ptr' and return if AX is $FFFF (ie XOPEN error)
+;
+; Call XOPEN function
+;----------------------------------------------------------------------
 </code></pre>
 
 <h2 id="malloc">Malloc</h2>
@@ -190,16 +218,34 @@
 ;----------------------------------------------------------------------
 </code></pre>
 
-<p>```ca65</p>
+<p>ex : </p>
+<pre><code class="ca65">    fopen (basic11_ptr2), O_RDONLY
+    cpx     #$FF
+    bne     @read_maindb ; not null then  start because we did not found a conf
+    cmp     #$FF
+    bne     @read_maindb ; not null then  start because we did not found a conf
+
+    PRINT   str_basic11_missing
+    BRK_KERNEL XCRLF
+    lda     #$FF
+    ldx     #$FF
+    rts
+@read_maindb:
+    bla
+
+</code></pre>
+
 <h2 id="mfree-free-pointer">Mfree (free pointer)</h2>
-<p>;----------------------------------------------------------------------
+<pre><code class="ca65">
+
+;----------------------------------------------------------------------
 ;
 ; usage:
 ;   mfree (ptr)
 ;
 ; Call XFREE function
 ;----------------------------------------------------------------------
-```ca65</p>
+</code></pre>
               
             </div>
           </div>

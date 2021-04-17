@@ -13,7 +13,7 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 .include "macros/SDK.mac"
 ```
 
-## fopen 
+## fopen
 
 ```ca65
 ;----------------------------------------------------------------------
@@ -30,6 +30,26 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 ; Call XOPEN function
 ;----------------------------------------------------------------------
 ```
+
+ex :
+
+```ca65
+    fopen (basic11_ptr2), O_RDONLY
+    cpx     #$FF
+    bne     @read_maindb ; not null then  start because we did not found a conf
+    cmp     #$FF
+    bne     @read_maindb ; not null then  start because we did not found a conf
+    
+    PRINT   str_basic11_missing
+    BRK_KERNEL XCRLF
+    lda     #$FF
+    ldx     #$FF
+    rts
+@read_maindb:
+    bla
+
+```
+
 
 ## Malloc
 
@@ -52,25 +72,6 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 ;
 ;----------------------------------------------------------------------
 ```
-
-ex : 
-
-```ca65
-    fopen (basic11_ptr2), O_RDONLY
-    cpx     #$FF
-    bne     @read_maindb ; not null then  start because we did not found a conf
-    cmp     #$FF
-    bne     @read_maindb ; not null then  start because we did not found a conf
-    
-    PRINT   str_basic11_missing
-    BRK_KERNEL XCRLF
-    lda     #$FF
-    ldx     #$FF
-    rts
-@read_maindb:
-    bla
-
-```    
 
 ## Mfree (free pointer)
 

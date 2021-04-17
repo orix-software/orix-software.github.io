@@ -198,6 +198,23 @@
 ;----------------------------------------------------------------------
 </code></pre>
 
+<p>ex :</p>
+<pre><code class="ca65">    fopen (basic11_ptr2), O_RDONLY
+    cpx     #$FF
+    bne     @read_maindb ; not null then  start because we did not found a conf
+    cmp     #$FF
+    bne     @read_maindb ; not null then  start because we did not found a conf
+
+    PRINT   str_basic11_missing
+    BRK_KERNEL XCRLF
+    lda     #$FF
+    ldx     #$FF
+    rts
+@read_maindb:
+    bla
+
+</code></pre>
+
 <h2 id="malloc">Malloc</h2>
 <pre><code class="ca65">;----------------------------------------------------------------------
 ;
@@ -216,23 +233,6 @@
 ; Call XMALLOC function
 ;
 ;----------------------------------------------------------------------
-</code></pre>
-
-<p>ex : </p>
-<pre><code class="ca65">    fopen (basic11_ptr2), O_RDONLY
-    cpx     #$FF
-    bne     @read_maindb ; not null then  start because we did not found a conf
-    cmp     #$FF
-    bne     @read_maindb ; not null then  start because we did not found a conf
-
-    PRINT   str_basic11_missing
-    BRK_KERNEL XCRLF
-    lda     #$FF
-    ldx     #$FF
-    rts
-@read_maindb:
-    bla
-
 </code></pre>
 
 <h2 id="mfree-free-pointer">Mfree (free pointer)</h2>

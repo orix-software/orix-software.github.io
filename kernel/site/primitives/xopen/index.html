@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>XGETARGV - Kernel</title>
+  <title>XOPEN - Kernel</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "XGETARGV";
-    var mkdocs_page_input_path = "primitives/xgetargv.md";
+    var mkdocs_page_name = "XOPEN";
+    var mkdocs_page_input_path = "primitives/xopen.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -63,17 +63,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../xexec/">XEXEC</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">XGETARGV</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#description">Description</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#input">Input</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#output">Output</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#example">Example</a>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../xgetargv/">XGETARGV</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../xgetcwd/">XGETTCWD (getcwd)</a>
                     </li>
@@ -83,7 +73,9 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../xmkdir/">XMKDIR (mkdir)</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../xopen/">XOPEN</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">XOPEN</a>
+    <ul class="current">
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../xputcwd/">XPUTCWD (chdir)</a>
                     </li>
@@ -117,7 +109,7 @@
         
       
     
-    <li>XGETARGV</li>
+    <li>XOPEN</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -128,38 +120,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="xgetargv">XGETARGV</h1>
-<h2 id="description">Description</h2>
-<p>Get argv. X register contains the number of the arg search</p>
-<p>Kernel handle a struct with XMAINARGS. This struct is handled by Kernel, and no action are required in external code, but here is how struct works :</p>
-<pre><code class="ca65">.struct XMAINARGS_STRUCT
-argv_ptr          .res     KERNEL_MAX_ARGS_COMMAND_LINE
-argv_value_ptr    .res     KERNEL_LENGTH_MAX_CMDLINE+KERNEL_MAX_ARGS_COMMAND_LINE ; add 0 to string
-.endstruct
-</code></pre>
-
-<p>argv_ptr contains an offset of each param. It means that we can't have a length of args greater than 256.</p>
-<p>XMAINARGS and XGETARGV does not handle "" yet and "\ "</p>
-<h2 id="input">Input</h2>
-<p>A &amp; Y the ptr of struct from XMAINARGS</p>
-<p>X the number of arg to get, first param is 0 not 1 !</p>
-<h2 id="output">Output</h2>
-<p>A &amp; Y contains argv ptr from xmainargs struct. It returns a copy of the command line with args parsed</p>
-<h2 id="example">Example</h2>
-<pre><code class="ca65">    XMAINARGS = $2C
-    XGETARGV = $2E
-    BRK_KERNEL XMAINARGS
-    sta   debug_mainargs_ptr
-    sty   debug_mainargs_ptr+1
-
-    ldx   #$02 ; get arg 2 ; Get the third param
-    lda   debug_mainargs_ptr
-    ldy   debug_mainargs_ptr+1
-
-    BRK_KERNEL XGETARGV
-
-    ; A &amp; Y contains ptr
-</code></pre>
+                <h1 id="xopen">XOPEN</h1>
               
             </div>
           </div>
@@ -167,10 +128,10 @@ argv_value_ptr    .res     KERNEL_LENGTH_MAX_CMDLINE+KERNEL_MAX_ARGS_COMMAND_LIN
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../xgetcwd/" class="btn btn-neutral float-right" title="XGETTCWD (getcwd)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../xputcwd/" class="btn btn-neutral float-right" title="XPUTCWD (chdir)">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../xexec/" class="btn btn-neutral" title="XEXEC"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../xmkdir/" class="btn btn-neutral" title="XMKDIR (mkdir)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -196,10 +157,10 @@ argv_value_ptr    .res     KERNEL_LENGTH_MAX_CMDLINE+KERNEL_MAX_ARGS_COMMAND_LIN
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../xexec/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../xmkdir/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../xgetcwd/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../xputcwd/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

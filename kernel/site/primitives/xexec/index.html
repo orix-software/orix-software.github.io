@@ -69,8 +69,6 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#output">Output</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#example">Example</a>
-    </li>
     </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../xgetargv/">XGETARGV</a>
@@ -82,6 +80,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="../xmalloc/">XMALLOC (malloc)</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../xmkdir/">XMKDIR (mkdir)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../xopen/">XOPEN</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../xputcwd/">XPUTCWD (chdir)</a>
                     </li>
@@ -133,6 +133,13 @@
 <p>A &amp; Y the ptr of the string.</p>
 <h2 id="output">Output</h2>
 <p>Returns an error if the binary is not found</p>
+<h1 id="modification">Modification :</h1>
+<ul>
+<li>RES, RESB (kernel_create_process), TR0, TR1, TR4 (kernel_create_process), TR5 (kernel_create_process)</li>
+<li>KERNEL_ERRNO (kernel_create_process), KERNEL_XKERNEL_CREATE_PROCESS_TMP (kernel_create_process),kernel_process_struct::kernel_pid_list  (kernel_create_process)</li>
+<li>DECDEB, DECFIN, DECCIB,DECTRV,ACC1M</li>
+<li>VEXBNK, BUFEDT, BNKOLD, KERNEL_TMP_XEXEC, BNK_TO_SWITCH, KERNEL_KERNEL_XEXEC_BNKOLD</li>
+</ul>
 <h2 id="example">Example</h2>
 <pre><code class="ca65">    lda #&lt;str
     ldy #&gt;str

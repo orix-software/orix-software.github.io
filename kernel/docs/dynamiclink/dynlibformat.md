@@ -1,7 +1,7 @@
 # Dynamic lib format
 
 Relocatable format.
-
+``` ca65
  name_lib
 .res 14
 version_lib ; ascii
@@ -15,3 +15,4 @@ entry_1
 .res 4 ; offset dans le fichier
 entry_2
 .res 4 ; offset dans le fichier
+```

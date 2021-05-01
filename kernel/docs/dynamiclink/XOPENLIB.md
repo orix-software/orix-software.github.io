@@ -9,15 +9,13 @@ rts
 lib_sdl:
   .asciiz "sdl.so"
 
-``` 
+```
 
 ``` ca65
-
-
-; X contains the id of the lib
+; RES contains the id of the lib
 ; A & Y contains maybe the struct
+; X contains others thing
 ; RES contains the id of the function
 BRK_KERNEL XCALL
-
 
 ```

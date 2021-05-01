@@ -10,6 +10,4 @@ Orix SDK manages some kernel calls, and it's better to use macro set to call som
 
 ## Kernel doc for developpers
 
-* [Orix 8 bits - Kernel ](kernel/)
-
-
+* [Orix 8 bits - Kernel ](/kernel/)

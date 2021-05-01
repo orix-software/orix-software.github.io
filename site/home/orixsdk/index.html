@@ -83,9 +83,13 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#mfree-free-pointer">Mfree (free pointer)</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#strncpy">strncpy</a>
+    </li>
     </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../pizero_connection/">Pi zero connection</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../relocbin/">Relocation format.</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">How it work</span></p>
@@ -246,6 +250,16 @@
 ; Call XFREE function
 ;----------------------------------------------------------------------
 </code></pre>
+
+<h2 id="strncpy">strncpy</h2>
+<p>;----------------------------------------------------------------------
+; strncpy(src, dest, n)
+;
+; Sortie:
+;        A: 0 et Z=1 si copie effectuée, inchangé si non
+;        X: 0
+;        Y: Longueur réellement copiée
+;----------------------------------------------------------------------</p>
               
             </div>
           </div>

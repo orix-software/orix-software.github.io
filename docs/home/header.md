@@ -9,7 +9,7 @@ You don't need to know this format except if you use others assembler than ca65 
 ``` ca65
         .byt $01,$00            ; non-C64 marker like o65 format
         .byt "o", "r", "i"      ; "ori" MAGIC number :$6f, $36, $35 like o65 format
-        .byt $01                ; version of this header (can't be relocated)
+        .byt $01                ; version of this header (can not be relocated)
 cpu_mode:
         .byt $00                ; CPU see below for description
         .byt $00                ; reserved
@@ -37,7 +37,7 @@ EndOfMemory:
 ``` ca65
         .byt $01,$00            ; non-C64 marker like o65 format
         .byt "o", "r", "i"      ; "ori" MAGIC number :$6f, $36, $35 like o65 format
-        .byt $01                ; version of this header (can't be relocated)
+        .byt $01                ; version of this header (can not be relocated)
 cpu_mode:
         .byt $00                ; CPU see below for description
 ;7
@@ -58,8 +58,8 @@ cpu_mode:
 ;16        
         .byt <endofmemory,>EndOfMemory   ; end of loading adress
 ; 18        
-        .byt $00                ; size of the bitfield map in the file low 
-        .byt $00                ; size of the bitfield map in the file high 
+        .byt $00                ; Offset of the bitfield map in the file low 
+        .byt $00                ; Offset of the bitfield map in the file high 
 ; end of header
 start_adress:
         lda  $00
@@ -67,7 +67,6 @@ start_adress:
 
 EndOfMemory:
 ```
-
 
 ## Description
 

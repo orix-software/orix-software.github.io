@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>XGETTCWD (getcwd) - Kernel</title>
+  <title>XGETCWD (getcwd) - Kernel</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "XGETTCWD (getcwd)";
+    var mkdocs_page_name = "XGETCWD (getcwd)";
     var mkdocs_page_input_path = "primitives/xgetcwd.md";
     var mkdocs_page_url = null;
   </script>
@@ -55,6 +55,15 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../return/">Return to main documentation</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Dynamiclink</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dynamiclink/XCALLFUNCTLIB/">XCALLFUNCTILIB</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dynamiclink/XOPENLIB/">XOPENLIB</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dynamiclink/dynlibformat/">Dynamic lib format</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Primitives</span></p>
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../">Summary</a>
@@ -65,7 +74,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../xgetargv/">XGETARGV</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">XGETTCWD (getcwd)</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">XGETCWD (getcwd)</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#description">Description</a>
     </li>
@@ -117,7 +126,7 @@
         
       
     
-    <li>XGETTCWD (getcwd)</li>
+    <li>XGETCWD (getcwd)</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -128,17 +137,17 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="xgettcwd-getcwd">XGETTCWD (getcwd)</h1>
+                <h1 id="xgetcwd-getcwd">XGETCWD (getcwd)</h1>
 <h2 id="description">Description</h2>
 <p>Return current directory of the process</p>
 <h2 id="input">Input</h2>
 <h2 id="output">Output</h2>
 <p>A/Y returns a string</p>
 <h2 id="example">Example</h2>
-<p>``` ca65
-    BRK_KERNEL XGETCWD
+<pre><code class="ca65">    BRK_KERNEL XGETCWD
     BRK_KERNEL XWSTR0
-    rts</p>
+    rts
+</code></pre>
               
             </div>
           </div>

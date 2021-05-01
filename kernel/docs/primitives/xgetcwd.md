@@ -1,4 +1,4 @@
-# XGETTCWD (getcwd)
+# XGETCWD (getcwd)
 
 ## Description
 
@@ -16,4 +16,4 @@ A/Y returns a string
     BRK_KERNEL XGETCWD
     BRK_KERNEL XWSTR0
     rts
-
+```   

@@ -71,4 +71,3 @@ filenametap8bytesLength ;  name_software '\0'
 * fire1_joy : keyboard fire2 matrix
 
 * up_joy : keyboard fire2 matrix
-

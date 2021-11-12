@@ -18,6 +18,8 @@ nav:
     - Developper guide : 
         - Installation: home/index.md
         - Memory management : home/memory.md
+        - Build an Orix rom : home/buildrom.md
+        - SDK for Assembly : home/orixsdk.md
     - Hardware guide :
         - I/O : hardware/i_o.md
 

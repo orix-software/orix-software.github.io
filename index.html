@@ -397,9 +397,23 @@
                 
                 <h1 id="definitions">Definitions</h1>
 <h2 id="twilighte-board">Twilighte board</h2>
-<p>The Twilighte board is an extra hardware connected on the the oric (Atmos or Oric-1), it improves default Oric with hardware feature as eeprom (in system update), RAM, joysticks, usb controler</p>
+<p>The Twilighte board is an extra hardware connected on the the oric (Atmos or Oric-1), it improves default Oric with hardware feature as eeprom (in system update), RAM, joysticks, usb controler.</p>
+<p>It handles 32 Banks of 16KB of eeprom and 32 Banks of 16KB for RAM.</p>
 <h2 id="orix">Orix</h2>
 <p>Orix is the default (D)OS of the board when it plugged into the oric. Orix is a linux/unix style OS. It's the main OS which can help to start every others systems as oric-1 ROM, atmos ROM etc</p>
+<p>Orix must have at least 2 banks to boot : Kernel and shell.</p>
+<p>Kernel is a bank inserted in the 7th slot and it's the first start to boot. Shell is the 5th bank and contains sh binary.</p>
+<p>When system starts, kernel forks "sh" commands at the end of the kernel initialisation. Shell is available and can starts any commands.</p>
+<p>There is 2 kind of rom :</p>
+<ul>
+<li>
+<p>Standalone ROM : it does not need to call kernel primitive, and manage all the main memory (for example : atmos ROM)</p>
+</li>
+<li>
+<p>Orix Roms : in that case, rom does not manage the main memory, and calls kernel to do tasks (for example : Shell roms).</p>
+</li>
+</ul>
+<p>In Orix roms, the rom declares commands to an offset in the bank and can be accessed from command line. If any command are typed from prompt, kernel will launch "XEXEC" primitive to find in any rom where the command is. </p>
                 
               
               

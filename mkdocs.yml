@@ -29,4 +29,8 @@ nav:
         - SDK for Assembly : home/orixsdk.md
     - Hardware guide :
         - I/O : hardware/i_o.md
+    - Kernel guide : 
+        - Kernel : home/kernel.md
+    - Extra Libs :
+        - Twilighte librairy : home/twillib.md
 

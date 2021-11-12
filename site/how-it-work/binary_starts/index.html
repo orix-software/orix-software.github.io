@@ -596,8 +596,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-check-if-binary-in-a-bank" class="md-nav__link">
-    Step 1 : check if binary in a bank
+  <a href="#step-1-check-if-binary-is-in-a-bank" class="md-nav__link">
+    Step 1 : check if binary is in a bank
   </a>
   
 </li>
@@ -728,8 +728,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-check-if-binary-in-a-bank" class="md-nav__link">
-    Step 1 : check if binary in a bank
+  <a href="#step-1-check-if-binary-is-in-a-bank" class="md-nav__link">
+    Step 1 : check if binary is in a bank
   </a>
   
 </li>
@@ -764,10 +764,10 @@
                 <h1 id="binary-start-sequence">Binary start sequence</h1>
 <p>All commands are started with XEXEC kernel primitive. For example, when something is typed into shell, shell calls XEXEC kernel primitive (except for shell internal commands like echo, pwd ...).</p>
 <p>When a binary is executed, kernel fork a new process with its PID, PPID, CWD</p>
-<h2 id="step-1-check-if-binary-in-a-bank">Step 1 : check if binary in a bank</h2>
+<h2 id="step-1-check-if-binary-is-in-a-bank">Step 1 : check if binary is in a bank</h2>
 <p>Xexec reads all banks from 4 to 1 and tries to check if the program is in a ROM (that is why ROM needs to have a kind of header)</p>
-<p>If the commands is in a bank, it switches to the right bank and launch command vector (and it forks)</p>
-<p>That is why commands located in bank are quicker to start</p>
+<p>If the commands is in a bank, it switches to the right bank and launch command vector (and it forks). If the commands is not found, it swaps "Twilighte banking register" to provide others 65KB of bank, kernel checks banks again. When kernel reached the 32 banks of rom, it swap to ram set, and reads all theses 32 banks of RAM. If the command is not found, kernel send error code, and shell will display error message according to kernel error code.</p>
+<p>That is why commands located in bank (eeprom and after RAM) are quicker to start. EEPROM banks are quicker to launch because kernel starts with eeprom set.</p>
 <h2 id="step-2-check-if-the-binary-is-on-the-device">Step 2 : Check if the binary is on the device</h2>
 <p>If the binary is not in a bank, kernel will try to open "/bin/BINARY_FILE". If open fails, it returns "command not found" or impossible to mount if device is not present.</p>
 <h2 id="step-3-binary-on-device-is-found">Step 3 : binary on device is found</h2>

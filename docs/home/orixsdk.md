@@ -1,10 +1,12 @@
 # Orix SDK
 
-It provides macro to help assembly coding for Orix : 
+It provides macro to help assembly coding for Orix :
 
 https://github.com/assinie/orix-sdk/
 
-## Load it
+The main way to handle orix-sdk is to add it as gitmodules (for example in a "dependencies folder")
+
+## Load Orix SDK
 
 you just need to load macro file in your code (and telestrat.inc from cc65):
 
@@ -89,6 +91,8 @@ ex :
 
 ## strncpy
 
+```ca65
+
 ;----------------------------------------------------------------------
 ; strncpy(src, dest, n)
 ;
@@ -97,3 +101,4 @@ ex :
 ;        X: 0
 ;        Y: Longueur réellement copiée
 ;----------------------------------------------------------------------
+```

@@ -4,13 +4,13 @@ All commands are started with XEXEC kernel primitive. For example, when somethin
 
 When a binary is executed, kernel fork a new process with its PID, PPID, CWD
 
-## Step 1 : check if binary in a bank
+## Step 1 : check if binary is in a bank
 
 Xexec reads all banks from 4 to 1 and tries to check if the program is in a ROM (that is why ROM needs to have a kind of header)
 
-If the commands is in a bank, it switches to the right bank and launch command vector (and it forks)
+If the commands is in a bank, it switches to the right bank and launch command vector (and it forks). If the commands is not found, it swaps "Twilighte banking register" to provide others 65KB of bank, kernel checks banks again. When kernel reached the 32 banks of rom, it swap to ram set, and reads all theses 32 banks of RAM. If the command is not found, kernel send error code, and shell will display error message according to kernel error code.
 
-That is why commands located in bank are quicker to start
+That is why commands located in bank (eeprom and after RAM) are quicker to start. EEPROM banks are quicker to launch because kernel starts with eeprom set.
 
 ## Step 2 : Check if the binary is on the device
 

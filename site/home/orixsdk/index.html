@@ -412,8 +412,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#load-it" class="md-nav__link">
-    Load it
+  <a href="#load-orix-sdk" class="md-nav__link">
+    Load Orix SDK
   </a>
   
 </li>
@@ -742,8 +742,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#load-it" class="md-nav__link">
-    Load it
+  <a href="#load-orix-sdk" class="md-nav__link">
+    Load Orix SDK
   </a>
   
 </li>
@@ -790,9 +790,10 @@
                 
                 
                 <h1 id="orix-sdk">Orix SDK</h1>
-<p>It provides macro to help assembly coding for Orix : </p>
+<p>It provides macro to help assembly coding for Orix :</p>
 <p>https://github.com/assinie/orix-sdk/</p>
-<h2 id="load-it">Load it</h2>
+<p>The main way to handle orix-sdk is to add it as gitmodules (for example in a "dependencies folder")</p>
+<h2 id="load-orix-sdk">Load Orix SDK</h2>
 <p>you just need to load macro file in your code (and telestrat.inc from cc65):</p>
 <div class="highlight"><pre><span></span><code><span class="kp">.include</span> <span class="s">&quot;telestrat.inc&quot;</span>
 <span class="kp">.include</span> <span class="s">&quot;macros/SDK.mac&quot;</span>
@@ -861,14 +862,15 @@
 </code></pre></div>
 
 <h2 id="strncpy">strncpy</h2>
-<p>;----------------------------------------------------------------------
-; strncpy(src, dest, n)
-;
-; Sortie:
-;        A: 0 et Z=1 si copie effectuée, inchangé si non
-;        X: 0
-;        Y: Longueur réellement copiée
-;----------------------------------------------------------------------</p>
+<div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>
+<span class="c1">; strncpy(src, dest, n)</span>
+<span class="c1">;</span>
+<span class="c1">; Sortie:</span>
+<span class="c1">;        A: 0 et Z=1 si copie effectuée, inchangé si non</span>
+<span class="c1">;        X: 0</span>
+<span class="c1">;        Y: Longueur réellement copiée</span>
+<span class="c1">;----------------------------------------------------------------------</span>
+</code></pre></div>
                 
               
               

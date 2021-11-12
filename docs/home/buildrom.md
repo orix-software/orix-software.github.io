@@ -20,6 +20,8 @@ In order to have multitasking in the future, commands must use malloc and free f
 
 The limit is 16KB for a ROM for instance. But, it's maybe enough because many operations are done with kernel calls (fopen for example).
 
+Kernel is always **available** when "set" banking is RAM or EEPROM, or are changed. Bank 7 (kernel is always available even when there is swapping between banks)
+
 ## Bank Structure
 
 If you want to build an orix compatible rom, a special format is used for Orix bank.
@@ -29,6 +31,14 @@ You can download rom template here : [https://github.com/orix-software/empty-rom
 ### Rom definition
 
 * $fff0 : 1 byte, rom type (Value 0 : empty bank, value 1 : command bank)
+
+## Zero page
+
+Kernel uses some address in zero page. But $80 to $FF offset are reserved for binary, Orix banks. Address below $80 can be used, but kernel could erase it when IRQ or Kernels calls occurs.
+
+Mainly, in some orix rom, userzp is a label for $80 offset.
+
+Kernel saves 16 bytes when a binary is forked. It means that a XEXEC calls in a binary will save PPID offset from $80 to $80+16, and kernel will restore theses offsets when the PID has finished. In the future, multitasking will work in the same ways, and there is no guarantee that a binary will have its values restores when offset are greater than $80+16
 
 ## Launch the ROM
 

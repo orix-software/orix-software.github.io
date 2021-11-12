@@ -2,7 +2,7 @@ site_name: Orix
 
 
 theme:
-    name: readthedocs
+    name: material
     highlightjs: true
 
 

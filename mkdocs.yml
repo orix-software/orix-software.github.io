@@ -17,4 +17,5 @@ nav:
         - Installation: home/index.md
     - Developper guide : 
         - Installation: home/index.md
+        - Memory management : home/memory.md
 

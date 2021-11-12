@@ -15,5 +15,6 @@ nav:
     - Home: index.md
     - Getting started:
         - Installation: home/index.md
-        - Developper guide : home/index.md
+    - Developper guide : 
+        - Installation: home/index.md
 

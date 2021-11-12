@@ -180,7 +180,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../docs/hardware/i_o.md" class="md-tabs__link">
+        <a href="../hardware/i_o.md" class="md-tabs__link">
           Hardware guide
         </a>
       
@@ -350,34 +350,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#banking-management" class="md-nav__link">
-    Banking management
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#342-twilighte-board-register" class="md-nav__link">
-    $342 : twilighte board register
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#321-register-for-the-id-of-the-bank-to-switch" class="md-nav__link">
-    $321 register for the id of the bank to switch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#343-twilighte-board-banking-register" class="md-nav__link">
-    $343 : twilighte board banking register
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -417,7 +389,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../docs/hardware/i_o.md" class="md-nav__link">
+    <a href="../hardware/i_o.md" class="md-nav__link">
       I/O
     </a>
   </li>
@@ -465,34 +437,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#banking-management" class="md-nav__link">
-    Banking management
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#342-twilighte-board-register" class="md-nav__link">
-    $342 : twilighte board register
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#321-register-for-the-id-of-the-bank-to-switch" class="md-nav__link">
-    $321 register for the id of the bank to switch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#343-twilighte-board-banking-register" class="md-nav__link">
-    $343 : twilighte board banking register
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -511,13 +455,7 @@
 <p>Kernel has XMALLOC and XFREE primitives to allocate memory dynamictly. But theses primitives only returns pointer from main memory.</p>
 <h2 id="standalone-rom">Standalone ROM</h2>
 <p>Extra memory can be accessed without kernel primitive with simple code</p>
-<h2 id="banking-management">Banking management</h2>
 <p>The banking management is a bit special, because it keeps telestrat compatibility (7 banks available + 1 bank for Overlay RAM), that is why twilighte board adds others registers to keep telestrat compatibility</p>
-<h2 id="342-twilighte-board-register">$342 : twilighte board register</h2>
-<p>Bit 5 : if it's equal to 0 if we are on eeprom set, 1 if it's ram set</p>
-<h2 id="321-register-for-the-id-of-the-bank-to-switch">$321 register for the id of the bank to switch</h2>
-<p>b0,b1, b2 which can select the id of the bank wanted.</p>
-<h2 id="343-twilighte-board-banking-register">$343 : twilighte board banking register</h2>
 <p>It selects bank set ($343).</p>
 <p>When you start Orix</p>
 <p>you have only 7 banks available :</p>

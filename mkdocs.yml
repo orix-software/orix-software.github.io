@@ -19,5 +19,5 @@ nav:
         - Installation: home/index.md
         - Memory management : home/memory.md
     - Hardware guide :
-        - I/O : docs/hardware/i_o.md
+        - I/O : home/hardware/i_o.md
 

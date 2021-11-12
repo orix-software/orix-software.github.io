@@ -1,8 +1,13 @@
 # Memory management
 
+## Orix Roms
+
+
 Kernel has XMALLOC and XFREE primitives to allocate memory dynamictly. But theses primitives only returns pointer from main memory.
 
-For instance, extra memory can be accessed without kernel primitive with simple code
+## Standalone ROM
+
+Extra memory can be accessed without kernel primitive with simple code
 
 ## Banking management
 

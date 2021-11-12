@@ -8,19 +8,19 @@
       
       
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.2">
     
     
       
-        <title>Get CWD in cc65 - Orix</title>
+        <title>I/O - Orix</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.19190aaf.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.19190aaf.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.24b84193.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.24b84193.min.css">
         
       
     
@@ -56,7 +56,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#get-cwd-in-cc65" class="md-skip">
+        <a href="#io" class="md-skip">
           Skip to content
         </a>
       
@@ -69,7 +69,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../../.." title="Orix" class="md-header-nav__button md-logo" aria-label="Orix">
+    <a href="../.." title="Orix" class="md-header-nav__button md-logo" aria-label="Orix">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Get CWD in cc65
+              I/O
             
           </span>
         </div>
@@ -140,7 +140,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="../../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -152,7 +152,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../home/" class="md-tabs__link">
+        <a href="../../home/" class="md-tabs__link">
           Getting started
         </a>
       
@@ -165,7 +165,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../home/" class="md-tabs__link">
+        <a href="../../home/" class="md-tabs__link">
           Developper guide
         </a>
       
@@ -178,7 +178,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../docs/hardware/i_o.md" class="md-tabs__link">
+        <a href="../../docs/hardware/i_o.md" class="md-tabs__link">
           Hardware guide
         </a>
       
@@ -202,7 +202,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Orix" class="md-nav__button md-logo" aria-label="Orix">
+    <a href="../.." title="Orix" class="md-nav__button md-logo" aria-label="Orix">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -219,7 +219,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." class="md-nav__link">
+    <a href="../.." class="md-nav__link">
       Home
     </a>
   </li>
@@ -252,7 +252,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../home/" class="md-nav__link">
+    <a href="../../home/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -290,7 +290,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../home/" class="md-nav__link">
+    <a href="../../home/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -302,7 +302,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../home/memory/" class="md-nav__link">
+    <a href="../../home/memory/" class="md-nav__link">
       Memory management
     </a>
   </li>
@@ -340,7 +340,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../docs/hardware/i_o.md" class="md-nav__link">
+    <a href="../../docs/hardware/i_o.md" class="md-nav__link">
       I/O
     </a>
   </li>
@@ -379,34 +379,7 @@
               
                 
                 
-                <h1 id="get-cwd-in-cc65">Get CWD in cc65</h1>
-<p>For instance chdir, is not manage in cc65, then here is a workaround.</p>
-<p>Create a file _ogetcwd.s. It must contains : </p>
-<pre><code class="ca65">.include &quot;telestrat.inc&quot;
-
-XGETCWD=$48
-
-.export _ogetcwd
-
-.importzp tmp1
-
-.proc _ogetcwd
-    BRK_TELEMON XGETCWD
-    sty tmp1
-    ldx tmp1
-    rts
-.endproc
-</code></pre>
-
-<p>And now, you C code, you can do (don't forget to add _ogetcwd.s to your command line to build _ogetcwd.s when you launch cl65):</p>
-<pre><code class="c">extern unsigned char ogetcwd();
-
-
-int main() {
-    printf(&quot;Cwd : %s&quot;,ogetcwd());
-    return 0;
-}
-</code></pre>
+                <h1 id="io">I/O</h1>
                 
               
               
@@ -438,15 +411,15 @@ int main() {
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "../../..",
+          base: "../..",
           features: ['navigation.tabs', 'navigation.top'],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

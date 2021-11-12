@@ -175,6 +175,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../docs/hardware/i_o.md" class="md-tabs__link">
+          Hardware guide
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -324,6 +337,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#orix-roms" class="md-nav__link">
+    Orix Roms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standalone-rom" class="md-nav__link">
+    Standalone ROM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#banking-management" class="md-nav__link">
     Banking management
   </a>
@@ -363,6 +390,44 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Hardware guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Hardware guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Hardware guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/hardware/i_o.md" class="md-nav__link">
+      I/O
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -385,6 +450,20 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#orix-roms" class="md-nav__link">
+    Orix Roms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standalone-rom" class="md-nav__link">
+    Standalone ROM
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#banking-management" class="md-nav__link">
@@ -428,8 +507,10 @@
                 
                 
                 <h1 id="memory-management">Memory management</h1>
+<h2 id="orix-roms">Orix Roms</h2>
 <p>Kernel has XMALLOC and XFREE primitives to allocate memory dynamictly. But theses primitives only returns pointer from main memory.</p>
-<p>For instance, extra memory can be accessed without kernel primitive with simple code</p>
+<h2 id="standalone-rom">Standalone ROM</h2>
+<p>Extra memory can be accessed without kernel primitive with simple code</p>
 <h2 id="banking-management">Banking management</h2>
 <p>The banking management is a bit special, because it keeps telestrat compatibility (7 banks available + 1 bank for Overlay RAM), that is why twilighte board adds others registers to keep telestrat compatibility</p>
 <h2 id="342-twilighte-board-register">$342 : twilighte board register</h2>

@@ -18,4 +18,6 @@ nav:
     - Developper guide : 
         - Installation: home/index.md
         - Memory management : home/memory.md
+    - Hardware guide :
+        - I/O : docs/hardware/i_o.md
 

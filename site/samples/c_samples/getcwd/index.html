@@ -204,7 +204,20 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../home/twillib.md" class="md-tabs__link">
+        <a href="../../../how-it-work/" class="md-tabs__link">
+          Shell guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../libs/twillib/" class="md-tabs__link">
           Extra Libs
         </a>
       
@@ -352,8 +365,92 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../home/buildstandalonerom/" class="md-nav__link">
+      Build standalone Rom
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../home/orixsdk/" class="md-nav__link">
       SDK for Assembly
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../home/buildman/" class="md-nav__link">
+      Generate man pages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../home/cc65/" class="md-nav__link">
+      cc65
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../home/header/" class="md-nav__link">
+      Binary header format
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../home/joysticks/" class="md-nav__link">
+      Joysticks management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../home/pizero_connection/" class="md-nav__link">
+      Cross dev on real hardware
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../home/oricutronvsreal/" class="md-nav__link">
+      Oricutron VS real hardware
     </a>
   </li>
 
@@ -396,6 +493,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../home/firmware/" class="md-nav__link">
+      Firmware informations
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -434,6 +543,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../kernel/primitives/" class="md-nav__link">
+      Primitives
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../how-it-work/binary_starts/" class="md-nav__link">
+      Boot sequence
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -449,11 +582,49 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
+      Shell guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Shell guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Shell guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../how-it-work/" class="md-nav__link">
+      Basic 11 commands
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
       Extra Libs
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Extra Libs" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         Extra Libs
       </label>
@@ -466,7 +637,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../home/twillib.md" class="md-nav__link">
+    <a href="../../../libs/twillib/" class="md-nav__link">
       Twilighte librairy
     </a>
   </li>
@@ -507,7 +678,7 @@
                 
                 <h1 id="get-cwd-in-cc65">Get CWD in cc65</h1>
 <p>For instance chdir, is not manage in cc65, then here is a workaround.</p>
-<p>Create a file _ogetcwd.s. It must contains : </p>
+<p>Create a file _ogetcwd.s. It must contains :</p>
 <div class="highlight"><pre><span></span><code><span class="kp">.include</span> <span class="s">&quot;telestrat.inc&quot;</span>
 
 <span class="n">XGETCWD</span><span class="o">=</span><span class="mh">$48</span>

@@ -51,8 +51,6 @@
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../ch376/">ch376</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../ch376/vars8/">CH376 extra vars</a>
-                    </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Stratos</span></p>
                 <ul>
@@ -107,46 +105,6 @@
                 <h1 id="twilighte-board">Twilighte board</h1>
 <ul>
 <li><a href="fdcWifiEsp">FDC, RTC WIFI controller </a></li>
-</ul>
-<h1 id="firmware-version-1">firmware version 1</h1>
-<h2 id="342-twilighte-board-register">$342 : twilighte board register</h2>
-<ul>
-<li>b0,b1,b2 version number is equal to 1, but can be overwritten (There is not read only protection</li>
-<li>b5 : if it's equal to 0 if we are on eeprom set, 1 if it's ram set</li>
-</ul>
-<h2 id="343-banking-register">$343 : Banking register</h2>
-<p>Working board version with this firmware: </p>
-<ul>
-<li>v0.6</li>
-<li>v0.65</li>
-</ul>
-<h1 id="firmware-version-2">firmware version 2</h1>
-<p>Reserved for twilighte board v0.6 &amp; v0.65 upgrades</p>
-<h1 id="firmware-version-3">firmware version 3</h1>
-<h2 id="342">$342</h2>
-<ul>
-<li>b0,b1,b2 version number is equal to 1, but can be overwritten</li>
-<li>b5 : if it's equal to 0 if we are on eeprom set, 1 if it's ram set</li>
-<li>b6 : allow ftdos I/O </li>
-<li>b7 : allow microdisc I/O : $314 $310, $311 ...</li>
-</ul>
-<h2 id="343">$343</h2>
-<p>Banking register</p>
-<h2 id="notes">Notes</h2>
-<p>Port A of via 65C22, b0,b1,b2 are managed by cpld</p>
-<p>Working board version</p>
-<h1 id="twilighte-board-version-06">Twilighte board version 0.6</h1>
-<ul>
-<li>dirty hack for ca3083 replacement</li>
-</ul>
-<h1 id="twilighte-board-version-065">Twilighte board version 0.65</h1>
-<ul>
-<li>ca3083 removed and are replaced with BC547</li>
-</ul>
-<h1 id="twilighte-board-version-07">Twilighte board version 0.7</h1>
-<ul>
-<li>Level shifters for esp32</li>
-<li>esp32 can be on the card (WROOM 32) but maybe it's not useful</li>
 </ul>
               
             </div>

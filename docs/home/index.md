@@ -6,7 +6,6 @@ There is two way to develop : Oricutron and cross dev with test on real computer
 
 Build from source code oricutron : [https://github.com/pete-gordon/oricutron](https://github.com/pete-gordon/oricutron) or download last windows binaries : https://iss.sandacite.com/iss/oricutron/
 
-
 In oricutron.cfg, you have just to set the right parameter to start oric with the board emulated
 
 ``` ca65

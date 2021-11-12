@@ -2,7 +2,7 @@
 
 For instance chdir, is not manage in cc65, then here is a workaround.
 
-Create a file _ogetcwd.s. It must contains : 
+Create a file _ogetcwd.s. It must contains :
 
 ```ca65
 .include "telestrat.inc"

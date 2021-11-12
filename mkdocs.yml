@@ -6,7 +6,7 @@ markdown_extensions:
     - pymdownx.superfences
     - pymdownx.snippets
 
-
+dev_addr: '192.168.1.103:8001'
 
 theme:
     name: material
@@ -26,11 +26,23 @@ nav:
         - Installation: home/index.md
         - Memory management : home/memory.md
         - Build an Orix rom : home/buildrom.md
+        - Build standalone Rom : home/buildstandalonerom.md
         - SDK for Assembly : home/orixsdk.md
+        - Generate man pages : home/buildman.md
+        - cc65 : home/cc65.md
+        - Binary header format : home/header.md
+        - Joysticks management : home/joysticks.md
+        - Cross dev on real hardware : home/pizero_connection.md
+        - Oricutron VS real hardware : home/oricutronvsreal.md
     - Hardware guide :
         - I/O : hardware/i_o.md
+        - Firmware informations : home/firmware.md
     - Kernel guide : 
         - Kernel : home/kernel.md
+        - Primitives : kernel/primitives/index.md 
+        - Boot sequence: how-it-work/binary_starts.md
+    - Shell guide : 
+        - Basic 11 commands: how-it-work/index.md        
     - Extra Libs :
-        - Twilighte librairy : home/twillib.md
+        - Twilighte librairy : libs/twillib.md
 

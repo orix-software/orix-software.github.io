@@ -1,4 +1,12 @@
 site_name: Orix
+
+
 theme:
     name: readthedocs
     highlightjs: true
+
+
+
+    features:
+        - navigation.tabs
+        - navigation.top

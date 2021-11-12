@@ -1,8 +1,11 @@
-# Install envs for developpers
+# Installation for developpers
+
+There is two way to develop : Oricutron and cross dev with test on real computer
 
 ## Step 1 : Configure and start oricutron with twilighte board
 
-Build from source code oricutron : [https://github.com/pete-gordon/oricutron](https://github.com/pete-gordon/oricutron)
+Build from source code oricutron : [https://github.com/pete-gordon/oricutron](https://github.com/pete-gordon/oricutron) or download last windows binaries : https://iss.sandacite.com/iss/oricutron/
+
 
 In oricutron.cfg, you have just to set the right parameter to start oric with the board emulated
 
@@ -30,3 +33,7 @@ Build it from cc65. You can build your first program in C with cc65 and telestra
 ## Step 5 : Download SDK  (mainly for assembly)
 
 Clone [https://github.com/assinie/orix-sdk](https://github.com/assinie/orix-sdk) in your project folder
+
+
+
+

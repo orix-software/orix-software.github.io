@@ -436,64 +436,64 @@
 <h2 id="orix-binary-v1-format-not-relocated">Orix binary v1 format (not relocated)</h2>
 <p>Orix binary v1 is not a relocated format. The binary must be never under $800. In the future, a relocated binary format could be used</p>
 <p>You don't need to know this format except if you use others assembler than ca65 (or cc65 with C). Orix-sdk provide .cfg file to add header to your code in assembly</p>
-<pre><code class="ca65">        .byt $01,$00            ; non-C64 marker like o65 format
-        .byt &quot;o&quot;, &quot;r&quot;, &quot;i&quot;      ; &quot;ori&quot; MAGIC number :$6f, $36, $35 like o65 format
-        .byt $01                ; version of this header (can not be relocated)
-cpu_mode:
-        .byt $00                ; CPU see below for description
-        .byt $00                ; reserved
-        .byt $00                ; reserved
-        .byt $00                ; reserved
-        .byt $00                ; reserved
-        .byt $00                ; reserved
-        .byt $00                ; reserved
-        .byt $00                ; reserved
-        .byt &lt;start_adress,&gt;start_adress ; loading adress
-        .byt &lt;endofmemory,&gt;EndOfMemory   ; end of loading adress
-        .byt &lt;start_adress,&gt;start_adress ; starting adress
+<div class="highlight"><pre><span></span><code>        <span class="kp">.byt</span> <span class="mh">$01</span><span class="p">,</span><span class="mh">$00</span>            <span class="c1">; non-C64 marker like o65 format</span>
+        <span class="kp">.byt</span> <span class="s">&quot;o&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="s">&quot;i&quot;</span>      <span class="c1">; &quot;ori&quot; MAGIC number :$6f, $36, $35 like o65 format</span>
+        <span class="kp">.byt</span> <span class="mh">$01</span>                <span class="c1">; version of this header (can not be relocated)</span>
+<span class="nl">cpu_mode:</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; CPU see below for description</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+        <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">start_adress</span><span class="p">,</span><span class="o">&gt;</span><span class="n">start_adress</span> <span class="c1">; loading adress</span>
+        <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">endofmemory</span><span class="p">,</span><span class="o">&gt;</span><span class="n">EndOfMemory</span>   <span class="c1">; end of loading adress</span>
+        <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">start_adress</span><span class="p">,</span><span class="o">&gt;</span><span class="n">start_adress</span> <span class="c1">; starting adress</span>
 
-start_adress:
+<span class="nl">start_adress:</span>
 
-  *=$1000
-  lda #$41
-  sta $bb80
-  rts
-EndOfMemory:
-</code></pre>
+  <span class="o">*=</span><span class="mh">$1000</span>
+  <span class="k">lda</span> <span class="p">#</span><span class="mh">$41</span>
+  <span class="k">sta</span> <span class="mh">$bb80</span>
+  <span class="k">rts</span>
+<span class="nl">EndOfMemory:</span>
+</code></pre></div>
 
 <h2 id="orix-binary-v3-format-relocated-by-bitfield">Orix binary v3 format (relocated by bitfield)</h2>
-<pre><code class="ca65">        .byt $01,$00            ; non-C64 marker like o65 format
-        .byt &quot;o&quot;, &quot;r&quot;, &quot;i&quot;      ; &quot;ori&quot; MAGIC number :$6f, $36, $35 like o65 format
-        .byt $01                ; version of this header (can not be relocated)
-cpu_mode:
-        .byt $00                ; CPU see below for description
-;7
-        .byt $00                ; size of the bitfield map low 
-        .byt $00                ; size of the bitfield map high
-;9        
-        .byt $00                ; reserved
-;10        
-        .byt $00                ; reserved
-;11        
-        .byt $00                ; reserved
-;12        
-        .byt $00                ; reserved
-;13        
-        .byt $00                ; reserved
-;14        
-        .byt &lt;start_adress,&gt;start_adress ; loading adress
-;16        
-        .byt &lt;endofmemory,&gt;EndOfMemory   ; end of loading adress
-; 18        
-        .byt $00                ; Offset of the bitfield map in the file low 
-        .byt $00                ; Offset of the bitfield map in the file high 
-; end of header
-start_adress:
-        lda  $00
-        rts
+<div class="highlight"><pre><span></span><code>        <span class="kp">.byt</span> <span class="mh">$01</span><span class="p">,</span><span class="mh">$00</span>            <span class="c1">; non-C64 marker like o65 format</span>
+        <span class="kp">.byt</span> <span class="s">&quot;o&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="s">&quot;i&quot;</span>      <span class="c1">; &quot;ori&quot; MAGIC number :$6f, $36, $35 like o65 format</span>
+        <span class="kp">.byt</span> <span class="mh">$01</span>                <span class="c1">; version of this header (can not be relocated)</span>
+<span class="nl">cpu_mode:</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; CPU see below for description</span>
+<span class="c1">;7</span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; size of the bitfield map low </span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; size of the bitfield map high</span>
+<span class="c1">;9        </span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+<span class="c1">;10        </span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+<span class="c1">;11        </span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+<span class="c1">;12        </span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+<span class="c1">;13        </span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+<span class="c1">;14        </span>
+        <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">start_adress</span><span class="p">,</span><span class="o">&gt;</span><span class="n">start_adress</span> <span class="c1">; loading adress</span>
+<span class="c1">;16        </span>
+        <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">endofmemory</span><span class="p">,</span><span class="o">&gt;</span><span class="n">EndOfMemory</span>   <span class="c1">; end of loading adress</span>
+<span class="c1">; 18        </span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; Offset of the bitfield map in the file low </span>
+        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; Offset of the bitfield map in the file high </span>
+<span class="c1">; end of header</span>
+<span class="nl">start_adress:</span>
+        <span class="k">lda</span>  <span class="mh">$00</span>
+        <span class="k">rts</span>
 
-EndOfMemory:
-</code></pre>
+<span class="nl">EndOfMemory:</span>
+</code></pre></div>
 
 <h2 id="description">Description</h2>
 <p>cpu_mode

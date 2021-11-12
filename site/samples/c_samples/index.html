@@ -404,24 +404,22 @@
                 
                 
                 <h1 id="open-and-read-files-with-cc65">Open and read files with cc65</h1>
-<pre><code class="c">
-#include &lt;stdio.h&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
 
-unsigned char chars[255];
+<span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">chars</span><span class="p">[</span><span class="mi">255</span><span class="p">];</span>
 
-main (){
- fp=fopen(&quot;/myfile&quot;,&quot;r&quot;);
-  if (fp==NULL)
-  {
-    printf(&quot;Can't open %s\n&quot;,argv[1]);
-    return (1);
-  }   
+<span class="n">main</span> <span class="p">(){</span>
+ <span class="n">fp</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="s">&quot;/myfile&quot;</span><span class="p">,</span><span class="s">&quot;r&quot;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fp</span><span class="o">==</span><span class="nb">NULL</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Can&#39;t open %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>   
 
-  nb=fread(chars,255,1,fp);
-  fclose(fp);
-}
-
-</code></pre>
+  <span class="n">nb</span><span class="o">=</span><span class="n">fread</span><span class="p">(</span><span class="n">chars</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">fp</span><span class="p">);</span>
+  <span class="n">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
                 
               
               

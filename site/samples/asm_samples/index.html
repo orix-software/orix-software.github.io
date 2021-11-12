@@ -422,17 +422,16 @@
 <h2 id="malloc">Malloc</h2>
 <p>Allocate 4000 bytes and displays a message if the 4000 bytes can't be allocated, else store ptr to myptr3</p>
 <p>malloc is done with Orix-sdk</p>
-<pre><code class="ca65">.include &quot;telestrat.inc&quot;
-.include &quot;macros/SDK.mac&quot;
+<div class="highlight"><pre><span></span><code><span class="kp">.include</span> <span class="s">&quot;telestrat.inc&quot;</span>
+<span class="kp">.include</span> <span class="s">&quot;macros/SDK.mac&quot;</span>
 
-myptr3 := userzp
+<span class="n">myptr3</span> <span class="p">:</span><span class="o">=</span> <span class="n">userzp</span>
 
-malloc 4000,myptr3,str_enomem ; Index ptr
-rts
-str_enoemem:
- .asciiz &quot;Out of memory&quot;
-
-</code></pre>
+<span class="n">malloc</span> <span class="mi">4000</span><span class="p">,</span><span class="n">myptr3</span><span class="p">,</span><span class="n">str_enomem</span> <span class="c1">; Index ptr</span>
+<span class="k">rts</span>
+<span class="nl">str_enoemem:</span>
+ <span class="kp">.asciiz</span> <span class="s">&quot;Out of memory&quot;</span>
+</code></pre></div>
                 
               
               

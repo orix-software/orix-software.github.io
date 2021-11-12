@@ -35,7 +35,7 @@ You should not use this code, because it's not necessary to use theses routines 
 
 If you want to switch to bank 4 (hardware) you have to do in main ram, but there is also vectors) :
 
-``` ca65
+```ca65
 sei
 lda #$04
 sta $321

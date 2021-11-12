@@ -406,31 +406,31 @@
                 <h1 id="get-cwd-in-cc65">Get CWD in cc65</h1>
 <p>For instance chdir, is not manage in cc65, then here is a workaround.</p>
 <p>Create a file _ogetcwd.s. It must contains : </p>
-<pre><code class="ca65">.include &quot;telestrat.inc&quot;
+<div class="highlight"><pre><span></span><code><span class="kp">.include</span> <span class="s">&quot;telestrat.inc&quot;</span>
 
-XGETCWD=$48
+<span class="n">XGETCWD</span><span class="o">=</span><span class="mh">$48</span>
 
-.export _ogetcwd
+<span class="kp">.export</span> <span class="n">_ogetcwd</span>
 
-.importzp tmp1
+<span class="kp">.importzp</span> <span class="n">tmp1</span>
 
-.proc _ogetcwd
-    BRK_TELEMON XGETCWD
-    sty tmp1
-    ldx tmp1
-    rts
-.endproc
-</code></pre>
+<span class="kp">.proc</span> <span class="n">_ogetcwd</span>
+    <span class="n">BRK_TELEMON</span> <span class="n">XGETCWD</span>
+    <span class="k">sty</span> <span class="n">tmp1</span>
+    <span class="k">ldx</span> <span class="n">tmp1</span>
+    <span class="k">rts</span>
+<span class="kp">.endproc</span>
+</code></pre></div>
 
 <p>And now, you C code, you can do (don't forget to add _ogetcwd.s to your command line to build _ogetcwd.s when you launch cl65):</p>
-<pre><code class="c">extern unsigned char ogetcwd();
+<div class="highlight"><pre><span></span><code><span class="k">extern</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">ogetcwd</span><span class="p">();</span>
 
 
-int main() {
-    printf(&quot;Cwd : %s&quot;,ogetcwd());
-    return 0;
-}
-</code></pre>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Cwd : %s&quot;</span><span class="p">,</span><span class="n">ogetcwd</span><span class="p">());</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
                 
               
               

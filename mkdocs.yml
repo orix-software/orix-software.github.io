@@ -1,5 +1,12 @@
 site_name: Orix
 
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+    - pymdownx.snippets
+
+
 
 theme:
     name: material

@@ -406,30 +406,30 @@
                 <h1 id="create-a-folder-with-cc65">Create a folder with cc65</h1>
 <p>For instance mkdir in cc65 telestrat target is bugged, here is a work around. Create a file _omkdir.s. It must contains : </p>
 <p>mkdir kernel primitive does not support absolute path, and it can only create folder in CWD.</p>
-<pre><code class="ca65">.include &quot;telestrat.inc&quot;
+<div class="highlight"><pre><span></span><code><span class="kp">.include</span> <span class="s">&quot;telestrat.inc&quot;</span>
 
-.export _omkdir
+<span class="kp">.export</span> <span class="n">_omkdir</span>
 
-.importzp tmp1
+<span class="kp">.importzp</span> <span class="n">tmp1</span>
 
-.proc _omkdir
-    stx tmp1
-    ldy tmp1
+<span class="kp">.proc</span> <span class="n">_omkdir</span>
+    <span class="k">stx</span> <span class="n">tmp1</span>
+    <span class="k">ldy</span> <span class="n">tmp1</span>
 
-    BRK_TELEMON XMKDIR
-    rts
-.endproc
-</code></pre>
+    <span class="n">BRK_TELEMON</span> <span class="n">XMKDIR</span>
+    <span class="k">rts</span>
+<span class="kp">.endproc</span>
+</code></pre></div>
 
 <p>And now, you C code, you can do (don't forget to add _omkdir.s to your command line to build _omkdir.s when you launch cl65):</p>
-<pre><code class="c">extern void omkdir(unsigned char *path);
+<div class="highlight"><pre><span></span><code><span class="k">extern</span> <span class="kt">void</span> <span class="n">omkdir</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="n">path</span><span class="p">);</span>
 
 
-int main() {
-    mkdir (&quot;myfolder&quot;);
-    return 0;
-}
-</code></pre>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">mkdir</span> <span class="p">(</span><span class="s">&quot;myfolder&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
                 
               
               

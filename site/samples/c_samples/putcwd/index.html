@@ -406,32 +406,32 @@
                 <h1 id="chdir-in-cc65">chdir in cc65</h1>
 <p>For instance chdir, is not manage in cc65, then here is a workaround.</p>
 <p>Create a file _oputcwd.s. It must contains :</p>
-<pre><code class="ca65">.include &quot;telestrat.inc&quot;
+<div class="highlight"><pre><span></span><code><span class="kp">.include</span> <span class="s">&quot;telestrat.inc&quot;</span>
 
-XPUTCWD=$49
+<span class="n">XPUTCWD</span><span class="o">=</span><span class="mh">$49</span>
 
-.export _oputcwd
+<span class="kp">.export</span> <span class="n">_oputcwd</span>
 
-.importzp tmp1
+<span class="kp">.importzp</span> <span class="n">tmp1</span>
 
-.proc _oputcwd
-    stx tmp1
-    ldy tmp1
+<span class="kp">.proc</span> <span class="n">_oputcwd</span>
+    <span class="k">stx</span> <span class="n">tmp1</span>
+    <span class="k">ldy</span> <span class="n">tmp1</span>
 
-    BRK_TELEMON XPUTCWD
-    rts
-.endproc
-</code></pre>
+    <span class="n">BRK_TELEMON</span> <span class="n">XPUTCWD</span>
+    <span class="k">rts</span>
+<span class="kp">.endproc</span>
+</code></pre></div>
 
 <p>And now, you C code, you can do (don't forget to add _oputcwd.s to your command line to build _oputcwd.s when you launch cl65):</p>
-<pre><code class="c">extern unsigned char oputcwd();
+<div class="highlight"><pre><span></span><code><span class="k">extern</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">oputcwd</span><span class="p">();</span>
 
 
-int main() {
-    oputcwd(&quot;/etc&quot;);
-    return 0;
-}
-</code></pre>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">oputcwd</span><span class="p">(</span><span class="s">&quot;/etc&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
                 
               
               

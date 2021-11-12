@@ -495,34 +495,34 @@ bank 1: what you want</p>
 <p>But theses banks can be switches to others set banking RAM or ROM</p>
 <p>You should not use this code, because it's not necessary to use theses routines (Kernel provides routines, or facility to call binaries in banks)</p>
 <p>If you want to switch to bank 4 (hardware) you have to do in main ram, but there is also vectors) :</p>
-<pre><code class="ca65">sei
-lda #$04
-sta $321
-cli
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">sei</span>
+<span class="k">lda</span> <span class="p">#</span><span class="mh">$04</span>
+<span class="k">sta</span> <span class="mh">$321</span>
+<span class="k">cli</span>
+</code></pre></div>
 
 <p>; $C000 to $FFFF will be on bank 4 on eeprom bank because we did not set any others registers)</p>
 <p>if you want to switch to RAM bank :</p>
-<pre><code class="ca65">sei
-lda $342
-ora #%00100000 ; switch to ram set
-sta $342
-lda #$04 ; switch to bank set of ram bank
-sta $321
-cli
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">sei</span>
+<span class="k">lda</span> <span class="mh">$342</span>
+<span class="k">ora</span> <span class="p">#</span><span class="mb">%00100000</span> <span class="c1">; switch to ram set</span>
+<span class="k">sta</span> <span class="mh">$342</span>
+<span class="k">lda</span> <span class="p">#</span><span class="mh">$04</span> <span class="c1">; switch to bank set of ram bank</span>
+<span class="k">sta</span> <span class="mh">$321</span>
+<span class="k">cli</span>
+</code></pre></div>
 
 <p>if you want to switch to antoher set RAM bank :</p>
-<pre><code class="ca65">sei
-lda #$01 ; set 1 instead of current set at boot (0)
-sta $343
-lda $342
-ora #%00100000 ; switch to ram set
-sta $342
-lda #$04 ; switch to bank set of ram bank
-sta $321
-cli
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">sei</span>
+<span class="k">lda</span> <span class="p">#</span><span class="mh">$01</span> <span class="c1">; set 1 instead of current set at boot (0)</span>
+<span class="k">sta</span> <span class="mh">$343</span>
+<span class="k">lda</span> <span class="mh">$342</span>
+<span class="k">ora</span> <span class="p">#</span><span class="mb">%00100000</span> <span class="c1">; switch to ram set</span>
+<span class="k">sta</span> <span class="mh">$342</span>
+<span class="k">lda</span> <span class="p">#</span><span class="mh">$04</span> <span class="c1">; switch to bank set of ram bank</span>
+<span class="k">sta</span> <span class="mh">$321</span>
+<span class="k">cli</span>
+</code></pre></div>
                 
               
               

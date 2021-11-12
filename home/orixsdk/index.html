@@ -521,74 +521,71 @@
 <p>https://github.com/assinie/orix-sdk/</p>
 <h2 id="load-it">Load it</h2>
 <p>you just need to load macro file in your code (and telestrat.inc from cc65):</p>
-<pre><code class="ca65">.include &quot;telestrat.inc&quot;
-.include &quot;macros/SDK.mac&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="kp">.include</span> <span class="s">&quot;telestrat.inc&quot;</span>
+<span class="kp">.include</span> <span class="s">&quot;macros/SDK.mac&quot;</span>
+</code></pre></div>
 
 <h2 id="fopen">fopen</h2>
-<pre><code class="ca65">;----------------------------------------------------------------------
-;
-; usage:
-;   fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]
-;
-; note:
-;   - file may be: (ptr), address
-;   - if parameter 'ptr' is present, store resulting AX in ptr &amp; ptr+1
-;   - if parameter 'oom_msg_ptr' is present, emit string pointed by
-;       'oom_msg_ptr' and return if AX is $FFFF (ie XOPEN error)
-;
-; Call XOPEN function
-;----------------------------------------------------------------------
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>
+<span class="c1">;</span>
+<span class="c1">; usage:</span>
+<span class="c1">;   fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]</span>
+<span class="c1">;</span>
+<span class="c1">; note:</span>
+<span class="c1">;   - file may be: (ptr), address</span>
+<span class="c1">;   - if parameter &#39;ptr&#39; is present, store resulting AX in ptr &amp; ptr+1</span>
+<span class="c1">;   - if parameter &#39;oom_msg_ptr&#39; is present, emit string pointed by</span>
+<span class="c1">;       &#39;oom_msg_ptr&#39; and return if AX is $FFFF (ie XOPEN error)</span>
+<span class="c1">;</span>
+<span class="c1">; Call XOPEN function</span>
+<span class="c1">;----------------------------------------------------------------------</span>
+</code></pre></div>
 
 <p>ex :</p>
-<pre><code class="ca65">    fopen (basic11_ptr2), O_RDONLY
-    cpx     #$FF
-    bne     @read_maindb ; not null then  start because we did not found a conf
-    cmp     #$FF
-    bne     @read_maindb ; not null then  start because we did not found a conf
+<div class="highlight"><pre><span></span><code>    <span class="n">fopen</span> <span class="p">(</span><span class="n">basic11_ptr2</span><span class="p">),</span> <span class="n">O_RDONLY</span>
+    <span class="k">cpx</span>     <span class="p">#</span><span class="mh">$FF</span>
+    <span class="k">bne</span>     <span class="n">@read_maindb</span> <span class="c1">; not null then  start because we did not found a conf</span>
+    <span class="k">cmp</span>     <span class="p">#</span><span class="mh">$FF</span>
+    <span class="k">bne</span>     <span class="n">@read_maindb</span> <span class="c1">; not null then  start because we did not found a conf</span>
 
-    PRINT   str_basic11_missing
-    BRK_KERNEL XCRLF
-    lda     #$FF
-    ldx     #$FF
-    rts
-@read_maindb:
-    bla
-
-</code></pre>
+    <span class="n">PRINT</span>   <span class="n">str_basic11_missing</span>
+    <span class="n">BRK_KERNEL</span> <span class="n">XCRLF</span>
+    <span class="k">lda</span>     <span class="p">#</span><span class="mh">$FF</span>
+    <span class="k">ldx</span>     <span class="p">#</span><span class="mh">$FF</span>
+    <span class="k">rts</span>
+<span class="nl">@read_maindb:</span>
+    <span class="n">bla</span>
+</code></pre></div>
 
 <h2 id="malloc">Malloc</h2>
-<pre><code class="ca65">;----------------------------------------------------------------------
-;
-; usage:
-;   malloc size [,ptr] [,oom_msg_ptr] [,fail_value]
-;
-;   malloc #$0100
-;   malloc (ptr)
-;   malloc value
-;
-; Note:
-;   - if parameter 'ptr' is present, store resulting AY in ptr &amp;ptr+1
-;   - if parameter 'oom_msg_ptr' is present, emit string pointed by
-;       'oom_msg_ptr' and return if AY is null (ie malloc error)
-;
-; Call XMALLOC function
-;
-;----------------------------------------------------------------------
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>
+<span class="c1">;</span>
+<span class="c1">; usage:</span>
+<span class="c1">;   malloc size [,ptr] [,oom_msg_ptr] [,fail_value]</span>
+<span class="c1">;</span>
+<span class="c1">;   malloc #$0100</span>
+<span class="c1">;   malloc (ptr)</span>
+<span class="c1">;   malloc value</span>
+<span class="c1">;</span>
+<span class="c1">; Note:</span>
+<span class="c1">;   - if parameter &#39;ptr&#39; is present, store resulting AY in ptr &amp;ptr+1</span>
+<span class="c1">;   - if parameter &#39;oom_msg_ptr&#39; is present, emit string pointed by</span>
+<span class="c1">;       &#39;oom_msg_ptr&#39; and return if AY is null (ie malloc error)</span>
+<span class="c1">;</span>
+<span class="c1">; Call XMALLOC function</span>
+<span class="c1">;</span>
+<span class="c1">;----------------------------------------------------------------------</span>
+</code></pre></div>
 
 <h2 id="mfree-free-pointer">Mfree (free pointer)</h2>
-<pre><code class="ca65">
-
-;----------------------------------------------------------------------
-;
-; usage:
-;   mfree (ptr)
-;
-; Call XFREE function
-;----------------------------------------------------------------------
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>
+<span class="c1">;</span>
+<span class="c1">; usage:</span>
+<span class="c1">;   mfree (ptr)</span>
+<span class="c1">;</span>
+<span class="c1">; Call XFREE function</span>
+<span class="c1">;----------------------------------------------------------------------</span>
+</code></pre></div>
 
 <h2 id="strncpy">strncpy</h2>
 <p>;----------------------------------------------------------------------

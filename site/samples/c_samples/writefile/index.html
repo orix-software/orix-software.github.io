@@ -404,25 +404,25 @@
                 
                 
                 <h1 id="write-a-file">Write a file</h1>
-<pre><code class="c">#include &lt;stdio.h&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
 
-static unsigned char buffer[4000];
+<span class="k">static</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">4000</span><span class="p">];</span>
 
-int main() {
-  FILE* fp;
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">FILE</span><span class="o">*</span> <span class="n">fp</span><span class="p">;</span>
 
-  unsigned int nb_write;
-  static unsigned char destfilename[9]=&quot;myfile.txt&quot;;    
+  <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">nb_write</span><span class="p">;</span>
+  <span class="k">static</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">destfilename</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;myfile.txt&quot;</span><span class="p">;</span>    
 
-  fp = fopen(destfilename, &quot;wb&quot;);
-  if (!fp) {
-    printf(&quot;Can't create output file\n&quot;);
-    return 1;
-  }
-  nb_write=fwrite(buffer, 1, 4000, fp);
-  fclose(fp);
-}        
-</code></pre>
+  <span class="n">fp</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="n">destfilename</span><span class="p">,</span> <span class="s">&quot;wb&quot;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">fp</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Can&#39;t create output file</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">nb_write</span><span class="o">=</span><span class="n">fwrite</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4000</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span>
+  <span class="n">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+<span class="p">}</span>        
+</code></pre></div>
                 
               
               

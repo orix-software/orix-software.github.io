@@ -2,7 +2,13 @@
 
 There is two way to develop : Oricutron and cross dev with test on real computer
 
-## Step 1 : Configure and start oricutron with twilighte board
+## Step 1 : Download the oricutron archive with all things set :
+
+{oricutron_twilighte_board_for_projects.zip](oricutron_twilighte_board_for_projects)
+
+or
+
+Configure and start oricutron with twilighte board
 
 Build from source code oricutron : [https://github.com/pete-gordon/oricutron](https://github.com/pete-gordon/oricutron) or download last windows binaries : https://iss.sandacite.com/iss/oricutron/
 
@@ -16,6 +22,8 @@ twilighte_board=yes
 plugins/twilighte_board/twilighte.cfg you can put any rom you want.
 
 ## Step 2 : get main rom (kernel and shell)
+
+Skip this step, if you downloaded "oricutron_twilighte_board_for_projects" arhive
 
 ## Step 3 : start oricutron
 

@@ -22,6 +22,10 @@
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.24b84193.min.css">
         
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
       
     
     
@@ -47,7 +51,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -322,8 +326,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-configure-and-start-oricutron-with-twilighte-board" class="md-nav__link">
-    Step 1 : Configure and start oricutron with twilighte board
+  <a href="#step-1-download-the-oricutron-archive-with-all-things-set" class="md-nav__link">
+    Step 1 : Download the oricutron archive with all things set :
   </a>
   
 </li>
@@ -428,8 +432,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-configure-and-start-oricutron-with-twilighte-board" class="md-nav__link">
-    Step 1 : Configure and start oricutron with twilighte board
+  <a href="#step-1-download-the-oricutron-archive-with-all-things-set" class="md-nav__link">
+    Step 1 : Download the oricutron archive with all things set :
   </a>
   
 </li>
@@ -639,6 +643,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="hardware/joysticks.md" class="md-nav__link">
+      Joysticks
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -806,8 +822,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-configure-and-start-oricutron-with-twilighte-board" class="md-nav__link">
-    Step 1 : Configure and start oricutron with twilighte board
+  <a href="#step-1-download-the-oricutron-archive-with-all-things-set" class="md-nav__link">
+    Step 1 : Download the oricutron archive with all things set :
   </a>
   
 </li>
@@ -855,7 +871,10 @@
                 
                 <h1 id="installation-for-developpers">Installation for developpers</h1>
 <p>There is two way to develop : Oricutron and cross dev with test on real computer</p>
-<h2 id="step-1-configure-and-start-oricutron-with-twilighte-board">Step 1 : Configure and start oricutron with twilighte board</h2>
+<h2 id="step-1-download-the-oricutron-archive-with-all-things-set">Step 1 : Download the oricutron archive with all things set :</h2>
+<p>{oricutron_twilighte_board_for_projects.zip](oricutron_twilighte_board_for_projects)</p>
+<p>or</p>
+<p>Configure and start oricutron with twilighte board</p>
 <p>Build from source code oricutron : <a href="https://github.com/pete-gordon/oricutron">https://github.com/pete-gordon/oricutron</a> or download last windows binaries : https://iss.sandacite.com/iss/oricutron/</p>
 <p>In oricutron.cfg, you have just to set the right parameter to start oric with the board emulated</p>
 <div class="highlight"><pre><span></span><code><span class="n">ch376</span> <span class="o">=</span> <span class="n">yes</span>
@@ -864,6 +883,7 @@
 
 <p>plugins/twilighte_board/twilighte.cfg you can put any rom you want.</p>
 <h2 id="step-2-get-main-rom-kernel-and-shell">Step 2 : get main rom (kernel and shell)</h2>
+<p>Skip this step, if you downloaded "oricutron_twilighte_board_for_projects" arhive</p>
 <h2 id="step-3-start-oricutron">Step 3 : start oricutron</h2>
 <p>Starts oricutron, if everything is OK, Orix starts, if you have missing rom at boot, modify plugins/twilighte_board/twilighte.cfg in order to replace wrong ROM.</p>
 <p>there is 2 folders on oricutron: sdcard and usbdrive, in orix type "/#mount", if usb is shown, then usbdrive/ folder is the main folder.</p>
@@ -944,7 +964,7 @@
       <script>
         app = initialize({
           base: "..",
-          features: ['navigation.tabs', 'navigation.top'],
+          features: ['navigation.tabs', 'navigation.top', 'content.tabs.link'],
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)

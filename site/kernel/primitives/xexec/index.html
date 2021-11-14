@@ -22,6 +22,10 @@
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.24b84193.min.css">
         
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
       
     
     
@@ -47,7 +51,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -505,6 +509,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../home/hardware/joysticks.md" class="md-nav__link">
+      Joysticks
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -727,6 +743,10 @@
 <span class="nl">str:</span>
     <span class="kp">.asciiz</span> <span class="s">&quot;mybin&quot;</span>    
 </code></pre></div>
+
+<div class="admonition fail">
+<p class="admonition-title">XEXEC does not manage './' calls</p>
+</div>
                 
               
               
@@ -764,7 +784,7 @@
       <script>
         app = initialize({
           base: "../../..",
-          features: ['navigation.tabs', 'navigation.top'],
+          features: ['navigation.tabs', 'navigation.top', 'content.tabs.link'],
           search: Object.assign({
             worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)

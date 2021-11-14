@@ -5,18 +5,29 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.superfences
     - pymdownx.snippets
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - tables
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
 
 dev_addr: '192.168.1.103:8001'
 
 theme:
     name: material
     highlightjs: true
+    icon:
+        admonition:
+            <type>: <icon> # 
 
-
-
+    palette:
+        primary: red
     features:
         - navigation.tabs
         - navigation.top
+        - content.tabs.link
 
 nav:
     - Home: index.md
@@ -37,6 +48,7 @@ nav:
     - Hardware guide :
         - I/O : hardware/i_o.md
         - Firmware informations : home/firmware.md
+        - Joysticks: home/hardware/joysticks.md
     - Kernel guide : 
         - Kernel : home/kernel.md
         - Primitives : kernel/primitives/index.md 

@@ -15,7 +15,30 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 .include "macros/SDK.mac"
 ```
 
-## fopen
+## Display operation
+
+### print string in text mode
+
+```ca65
+	;----------------------------------------------------------------------
+	;
+	; usage:
+	;	print #byte [,TELEMON|NOSAVE]
+	;	print (pointer) [,TELEMON|NOSAVE]
+	;	print address [,TELEMON|NOSAVE]
+	;
+	; Option:
+	;	- TELEMON: when used within TELEMON bank
+	;	- NOSAVE : does not preserve A,X,Y registers
+	;
+	; Call XWSTR0 function
+	;
+	;----------------------------------------------------------------------
+```
+
+## Files operation
+
+### fopen
 
 ```ca65
 ;----------------------------------------------------------------------
@@ -52,8 +75,107 @@ ex :
 
 ```
 
+!!! warning "The filename/path address must not be in the rom. If it's the case, the string must be copied into main memory because Kernel overlap the ROM. fopen macro from SDK will produce an error, if the 'address' is in a ROM range (eg : $c000-$FFFF). If you use a ptr, macro can not detect it, and XOPEN primitive won't be able to open your file"
 
-## Malloc
+### FREAD macro
+
+```ca65
+;----------------------------------------------------------------------
+	;
+	; usage:
+	;	fread ptr, size, count, fp
+	;
+	; note:
+	;	ptr may be : (ptr), address
+	;	size may be: (ptr), address
+	;	fp may be  : address, #value, {address,y}
+	;
+	; Call XFREAD function
+	;----------------------------------------------------------------------
+```
+
+Example :
+
+```ca65
+    fopen (MAN_SAVE_MALLOC_PTR), O_RDONLY
+    cpx     #$FF
+    bne     next
+
+    cmp     #$FF
+    bne     next
+    ; Not found
+    rts
+
+next:
+    ; Save FP
+    sta     MAN_FP
+    stx     MAN_FP+1
+    fread myptr, 1080, 1, MAN_FP
+    fclose(MAN_FP)
+```
+
+### FWRITE macro
+
+```ca65
+    ;----------------------------------------------------------------------
+	;
+	; usage:
+	;	fwrite ptr, size, count, fp
+	;
+	; note:
+	;	ptr may be : (ptr), address
+	;	size may be: (ptr), address
+	;	fp may be  : address, #value, {address,y}
+	;
+	; Call XFWRITE function
+	;----------------------------------------------------------------------
+```
+
+### FCLOSE macro
+
+```ca65
+	;----------------------------------------------------------------------
+	;
+	; usage:
+	;	fclose (fp) [,TELEMON]
+	;
+	; Call XCLOSE function
+	;----------------------------------------------------------------------
+```
+
+### MKDIR macro
+
+```ca65
+	;----------------------------------------------------------------------
+	;
+	; usage:
+	;	mkdir ptr [,TELEMON]
+	;
+	; note:
+	;	ptr may be: (ptr), address
+	;
+	; Call XMKDIR function
+	;----------------------------------------------------------------------
+```
+
+### CHDIR macro
+
+```ca65
+	;----------------------------------------------------------------------
+	;
+	; usage:
+	;	chdir ptr [,TELEMON]
+	;
+	; note:
+	;	ptr may be: (ptr), address
+	;
+	; Call XPUTCWD function
+	;----------------------------------------------------------------------
+```
+
+## Memory operations
+
+### Malloc
 
 ```ca65
 ;----------------------------------------------------------------------
@@ -75,10 +197,9 @@ ex :
 ;----------------------------------------------------------------------
 ```
 
-## Mfree (free pointer)
+### Mfree (free pointer)
 
 ```ca65
-
 
 ;----------------------------------------------------------------------
 ;
@@ -89,7 +210,9 @@ ex :
 ;----------------------------------------------------------------------
 ```
 
-## strncpy
+## Strings operation
+
+### strncpy
 
 ```ca65
 

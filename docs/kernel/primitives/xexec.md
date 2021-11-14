@@ -18,7 +18,6 @@ Returns an error if the binary is not found
 * DECDEB, DECFIN, DECCIB,DECTRV,ACC1M
 * VEXBNK, BUFEDT, BNKOLD, KERNEL_TMP_XEXEC, BNK_TO_SWITCH, KERNEL_KERNEL_XEXEC_BNKOLD
 
-
 ## Example
 
 ``` ca65
@@ -29,3 +28,5 @@ Returns an error if the binary is not found
 str:
     .asciiz "mybin"    
 ```
+
+!!! fail "XEXEC does not manage './' calls"

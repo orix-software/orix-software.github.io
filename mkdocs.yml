@@ -43,14 +43,14 @@ nav:
         - cc65 : home/cc65.md
         - Binary header format : home/header.md
         - Joysticks management : home/joysticks.md
-        - Cross dev on real hardware : home/pizero_connection.md
+        - Cross development on real hardware : home/pizero_connection.md
         - Oricutron VS real hardware : home/oricutronvsreal.md
     - Hardware guide :
         - I/O : hardware/i_o.md
         - Firmware informations : home/firmware.md
-        - Joysticks: home/hardware/joysticks.md
+        - Joysticks: hardware/joysticks.md
     - User guide :
-        - commands : commands/all.md
+        - Commands : commands/all.md
         - Shell guide : 
             - Basic 11 commands: how-it-work/index.md        
     - Kernel guide : 

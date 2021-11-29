@@ -12,4 +12,8 @@ Manage microdisc compatibility : it handes $314 register to switch on the right 
 
 ## Firmware 3
 
+Under development
+
+## Firmware 4
+
 It's under development but it will handles others hardware chips.

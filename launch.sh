@@ -1,6 +1,6 @@
 #! /bin/bash
 
-COMMAND_LIST="bank basic11 ls env"
+COMMAND_LIST="bank basic11 ioports ls mkdir touch viewhrs"
 
 #cd kernel && mkdocs build && cp site/* . -adpR && cd ..
 #cd hardware && mkdocs build && cp site/* . -adpR && cd ..
@@ -12,7 +12,7 @@ rm docs/commands/all.md
 
 for I in $COMMAND_LIST; do
 wget https://raw.githubusercontent.com/orix-software/shell/master/docs/$I.md -O docs/commands/$I.md
-echo "* [../$I]($I)" >> docs/commands/all.md
+echo "* [../$I](../$I)" >> docs/commands/all.md
 done 
 
 echo full

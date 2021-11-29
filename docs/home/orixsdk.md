@@ -217,7 +217,7 @@ next:
 ```ca65
 
 ;----------------------------------------------------------------------
-; strncpy(src, dest, n)
+; strncpy src, dest, n
 ;
 ; Sortie:
 ;        A: 0 et Z=1 si copie effectuée, inchangé si non
@@ -225,3 +225,42 @@ next:
 ;        Y: Longueur réellement copiée
 ;----------------------------------------------------------------------
 ```
+
+```ca65
+
+    lda     #<file_path
+    sta     ptr2
+    lda     #>file_path
+    sta     ptr2+1
+
+    strncpy ptr2, ptr1, #20 ;Limit 20 bytes (immediate mode) strncpy(src, dest, n)
+```
+
+### strncat
+
+concat 2 strings. Strings must be terminated by 0
+
+strncat src, dest, n
+
+
+```ca65
+    lda     #<file_path
+    sta     ptr2
+    lda     #>file_path
+    sta     ptr2+1
+
+    strncpy ptr2, ptr1, #20 ;strncpy(src, dest, n)
+
+    lda     files_type_loader_low
+    sta     ptr2
+    lda     files_type_loader_high
+    sta     ptr2+1
+
+
+    strncat RESB, ptr1 , #13
+```
+
+
+!!! warning "dest ptr will be changed by strncat. dest pointer must be saved"
+
+

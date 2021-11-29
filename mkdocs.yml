@@ -49,12 +49,14 @@ nav:
         - I/O : hardware/i_o.md
         - Firmware informations : home/firmware.md
         - Joysticks: home/hardware/joysticks.md
+    - User guide :
+        - commands : commands/all.md
+        - Shell guide : 
+            - Basic 11 commands: how-it-work/index.md        
     - Kernel guide : 
         - Kernel : home/kernel.md
         - Primitives : kernel/primitives/index.md 
         - Boot sequence: how-it-work/binary_starts.md
-    - Shell guide : 
-        - Basic 11 commands: how-it-work/index.md        
     - Extra Libs :
         - Twilighte librairy : libs/twillib.md
 

@@ -197,8 +197,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../kernel/" class="md-tabs__link">
-          Kernel guide
+        <a href="../../commands/all/" class="md-tabs__link">
+          User guide
         </a>
       
     </li>
@@ -210,8 +210,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../how-it-work/" class="md-tabs__link">
-          Shell guide
+        <a href="../kernel/" class="md-tabs__link">
+          Kernel guide
         </a>
       
     </li>
@@ -539,6 +539,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#strncat" class="md-nav__link">
+    strncat
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -700,11 +707,87 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
+      User guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        User guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/all/" class="md-nav__link">
+      commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Shell guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Shell guide" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        <span class="md-nav__icon md-icon"></span>
+        Shell guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../how-it-work/" class="md-nav__link">
+      Basic 11 commands
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
       Kernel guide
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Kernel guide" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
         Kernel guide
       </label>
@@ -743,44 +826,6 @@
   <li class="md-nav__item">
     <a href="../../how-it-work/binary_starts/" class="md-nav__link">
       Boot sequence
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      Shell guide
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Shell guide" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon"></span>
-        Shell guide
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../how-it-work/" class="md-nav__link">
-      Basic 11 commands
     </a>
   </li>
 
@@ -971,6 +1016,13 @@
           <li class="md-nav__item">
   <a href="#strncpy" class="md-nav__link">
     strncpy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strncat" class="md-nav__link">
+    strncat
   </a>
   
 </li>
@@ -1175,7 +1227,7 @@
 <h2 id="strings-operation">Strings operation</h2>
 <h3 id="strncpy">strncpy</h3>
 <div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>
-<span class="c1">; strncpy(src, dest, n)</span>
+<span class="c1">; strncpy src, dest, n</span>
 <span class="c1">;</span>
 <span class="c1">; Sortie:</span>
 <span class="c1">;        A: 0 et Z=1 si copie effectuée, inchangé si non</span>
@@ -1183,6 +1235,37 @@
 <span class="c1">;        Y: Longueur réellement copiée</span>
 <span class="c1">;----------------------------------------------------------------------</span>
 </code></pre></div>
+
+<div class="highlight"><pre><span></span><code>    <span class="k">lda</span>     <span class="p">#</span><span class="o">&lt;</span><span class="n">file_path</span>
+    <span class="k">sta</span>     <span class="n">ptr2</span>
+    <span class="k">lda</span>     <span class="p">#</span><span class="o">&gt;</span><span class="n">file_path</span>
+    <span class="k">sta</span>     <span class="n">ptr2</span><span class="o">+</span><span class="mi">1</span>
+
+    <span class="n">strncpy</span> <span class="n">ptr2</span><span class="p">,</span> <span class="n">ptr1</span><span class="p">,</span> <span class="p">#</span><span class="mi">20</span> <span class="c1">;Limit 20 bytes (immediate mode) strncpy(src, dest, n)</span>
+</code></pre></div>
+
+<h3 id="strncat">strncat</h3>
+<p>concat 2 strings. Strings must be terminated by 0</p>
+<p>strncat src, dest, n</p>
+<div class="highlight"><pre><span></span><code>    <span class="k">lda</span>     <span class="p">#</span><span class="o">&lt;</span><span class="n">file_path</span>
+    <span class="k">sta</span>     <span class="n">ptr2</span>
+    <span class="k">lda</span>     <span class="p">#</span><span class="o">&gt;</span><span class="n">file_path</span>
+    <span class="k">sta</span>     <span class="n">ptr2</span><span class="o">+</span><span class="mi">1</span>
+
+    <span class="n">strncpy</span> <span class="n">ptr2</span><span class="p">,</span> <span class="n">ptr1</span><span class="p">,</span> <span class="p">#</span><span class="mi">20</span> <span class="c1">;strncpy(src, dest, n)</span>
+
+    <span class="k">lda</span>     <span class="n">files_type_loader_low</span>
+    <span class="k">sta</span>     <span class="n">ptr2</span>
+    <span class="k">lda</span>     <span class="n">files_type_loader_high</span>
+    <span class="k">sta</span>     <span class="n">ptr2</span><span class="o">+</span><span class="mi">1</span>
+
+
+    <span class="n">strncat</span> <span class="n">RESB</span><span class="p">,</span> <span class="n">ptr1</span> <span class="p">,</span> <span class="p">#</span><span class="mi">13</span>
+</code></pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">dest ptr will be changed by strncat. dest pointer must be saved</p>
+</div>
                 
               
               

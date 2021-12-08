@@ -393,6 +393,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#banking-management-explanation" class="md-nav__link">
+    Banking management explanation.
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -788,6 +795,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#banking-management-explanation" class="md-nav__link">
+    Banking management explanation.
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -804,38 +818,52 @@
                 <h1 id="memory-management">Memory management</h1>
 <h2 id="orix-roms">Orix Roms</h2>
 <p>Kernel has XMALLOC and XFREE primitives to allocate memory dynamictly. But theses primitives only returns pointer from main memory.</p>
+<p>Kernel can't instanciate extra memory from bank for instance.</p>
 <h2 id="standalone-rom">Standalone ROM</h2>
 <p>Extra memory can be accessed without kernel primitive with simple code</p>
-<p>The banking management is a bit special, because it keeps telestrat compatibility (7 banks available + 1 bank for Overlay RAM), that is why twilighte board adds others registers to keep telestrat compatibility</p>
-<p>It selects bank set ($343).</p>
-<p>When you start Orix</p>
-<p>you have only 7 banks available :</p>
-<p>bank 7 : kernel
-bank 6 : basic11 (modified to work with sdcard or usb key)
-bank 5 : shell</p>
-<p>Theses banks can't be switch and are always shown.</p>
-<p>For others banks (4,3,2,1), you have
-bank 4: what you want
-bank 3: what you want
-bank 2: what you want
-bank 1: what you want</p>
-<p>But theses banks can be switches to others set banking RAM or ROM</p>
-<p>You should not use this code, because it's not necessary to use theses routines (Kernel provides routines, or facility to call binaries in banks)</p>
-<p>If you want to switch to bank 4 (hardware) you have to do in main ram, but there is also vectors) :</p>
+<p>The banking management is the same as Telestrat in order to have Orix working on Telestrat too, because it keeps telestrat compatibility (7 banks available + 1 bank for Overlay RAM), that is why twilighte board adds others registers to keep telestrat compatibility</p>
+<p>There is a register which contains a set of 4 banks. This register accept values from 0 to 7 : $343. Each value set another set of 4 banks. For example, if $343 contains 2, it will displays others parts of eeprom or SRAM when bit b0, b1, b2 in $321 register contains 4,3,2,1</p>
+<h2 id="banking-management-explanation">Banking management explanation.</h2>
+<p>Switching to another bank should not be done, but the behavior of the card is explained below.</p>
+<p>For example, a ROM can be loaded into eeprom or ram with orixcfg. Some others ROMS (as systemd, or others standalone rom) are loaded on the fly with loader menu.</p>
+<p>If it needs more ram than the main memory, extended driver is not coded, but it could on the future.</p>
+<p>Kernel is always reached when $321&amp;7 is equal to 7 . $343 register does not change the behavior of the value set in $321, when $321&amp;7=7 $321&amp;6=6 and $321&amp;5=5. When it's below 5, banks are swapped when register value of $343 change</p>
+<p>To summarize : </p>
+<ul>
+<li>bank 7 : kernel</li>
+<li>bank 6 : basic11 (modified to work with sdcard or usb key)</li>
+<li>bank 5 : shell</li>
+</ul>
+<p>Theses banks can't be switch and are always shown but for others banks (4,3,2,1), you have (depending the value of $343)</p>
+<ul>
+<li>bank 4: what you want</li>
+<li>bank 3: what you want</li>
+<li>bank 2: what you want</li>
+<li>bank 1: what you want</li>
+</ul>
+<p>Theses banks can be switches to others set banking RAM or ROM with a flag.</p>
+<p>You should not use this code, because it's not necessary to use theses routines when you do an orix bank (Kernel provides routines, or facility to call binaries in banks)</p>
+<p>In the case you need to switch to another bank, you can do this : 
+If you want to switch to bank 4 (hardware) you have to do in main ram, but there is also vectors) :</p>
 <div class="highlight"><pre><span></span><code><span class="k">sei</span>
-<span class="k">lda</span> <span class="p">#</span><span class="mh">$04</span>
+<span class="k">lda</span> <span class="mh">$321</span>
+<span class="k">and</span> <span class="p">#</span><span class="mb">%11111000</span> <span class="c1">; Do mask for b0,b1, b2 of banking register</span>
+<span class="k">ora</span> <span class="p">#</span><span class="mh">$04</span> <span class="c1">; Switch to bank 4</span>
 <span class="k">sta</span> <span class="mh">$321</span>
 <span class="k">cli</span>
 </code></pre></div>
 
 <p>; $C000 to $FFFF will be on bank 4 on eeprom bank because we did not set any others registers)</p>
-<p>if you want to switch to RAM bank :</p>
+<p>if you want to switch to RAM mode :</p>
 <div class="highlight"><pre><span></span><code><span class="k">sei</span>
 <span class="k">lda</span> <span class="mh">$342</span>
 <span class="k">ora</span> <span class="p">#</span><span class="mb">%00100000</span> <span class="c1">; switch to ram set</span>
 <span class="k">sta</span> <span class="mh">$342</span>
-<span class="k">lda</span> <span class="p">#</span><span class="mh">$04</span> <span class="c1">; switch to bank set of ram bank</span>
+<span class="k">lda</span> <span class="mh">$321</span>
+<span class="k">and</span> <span class="p">#</span><span class="mb">%11111000</span> <span class="c1">; Do mask for b0,b1, b2 of banking register</span>
+<span class="k">ora</span> <span class="p">#</span><span class="mh">$04</span> <span class="c1">; Switch to bank 4</span>
 <span class="k">sta</span> <span class="mh">$321</span>
+
 <span class="k">cli</span>
 </code></pre></div>
 

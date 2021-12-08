@@ -452,7 +452,7 @@
         
           <li class="md-nav__item">
   <a href="#fopen" class="md-nav__link">
-    fopen
+    FOPEN
   </a>
   
 </li>
@@ -933,7 +933,7 @@
         
           <li class="md-nav__item">
   <a href="#fopen" class="md-nav__link">
-    fopen
+    FOPEN
   </a>
   
 </li>
@@ -1074,7 +1074,7 @@
 </code></pre></div>
 
 <h2 id="files-operation">Files operation</h2>
-<h3 id="fopen">fopen</h3>
+<h3 id="fopen">FOPEN</h3>
 <div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>
 <span class="c1">;</span>
 <span class="c1">; usage:</span>
@@ -1110,6 +1110,7 @@
 <p class="admonition-title">The filename/path address must not be in the rom. If it's the case, the string must be copied into main memory because Kernel overlap the ROM. fopen macro from SDK will produce an error, if the 'address' is in a ROM range (eg : $c000-$FFFF). If you use a ptr, macro can not detect it, and XOPEN primitive won't be able to open your file</p>
 </div>
 <h3 id="fread-macro">FREAD macro</h3>
+<p>https://github.com/assinie/orix-sdk/blob/master/macros/SDK_file.mac#L70</p>
 <div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>
     <span class="c1">;</span>
     <span class="c1">; usage:</span>
@@ -1138,7 +1139,7 @@
     <span class="c1">; Save FP</span>
     <span class="k">sta</span>     <span class="n">MAN_FP</span>
     <span class="k">stx</span>     <span class="n">MAN_FP</span><span class="o">+</span><span class="mi">1</span>
-    <span class="n">fread</span> <span class="n">myptr</span><span class="p">,</span> <span class="mi">1080</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">MAN_FP</span>
+    <span class="n">fread</span> <span class="p">(</span><span class="n">myptr</span><span class="p">),</span> <span class="mi">1080</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">MAN_FP</span> <span class="c1">; myptr is from a malloc for example</span>
     <span class="n">fclose</span><span class="p">(</span><span class="n">MAN_FP</span><span class="p">)</span>
 </code></pre></div>
 

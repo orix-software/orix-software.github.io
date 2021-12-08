@@ -1,5 +1,11 @@
 # Summary
 
+Kernel calls are done with brk VALUE.
+
+Some parameter are set into A,X,Y and some others ones needs to be set in Kernel zp memory.
+
+Orix-sdk must be use in order to manage in the right way kernel calls
+
 ## Args from commandline
 
 * [XMAINARGS](xmainargs) : get command line and build argv/argc

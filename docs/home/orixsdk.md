@@ -38,7 +38,7 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 
 ## Files operation
 
-### fopen
+### FOPEN
 
 ```ca65
 ;----------------------------------------------------------------------
@@ -79,6 +79,8 @@ ex :
 
 ### FREAD macro
 
+https://github.com/assinie/orix-sdk/blob/master/macros/SDK_file.mac#L70
+
 ```ca65
 ;----------------------------------------------------------------------
 	;
@@ -110,7 +112,7 @@ next:
     ; Save FP
     sta     MAN_FP
     stx     MAN_FP+1
-    fread myptr, 1080, 1, MAN_FP
+    fread (myptr), 1080, 1, MAN_FP ; myptr is from a malloc for example
     fclose(MAN_FP)
 ```
 

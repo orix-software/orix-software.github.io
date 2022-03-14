@@ -1,24 +1,22 @@
-# XBINDX (16 bytes to decimal)
+# XBINDX (16 bit number to decimal)
 
 ## Description
 
-convert A & Y number into decimal
+convert A & Y number into decimal string
 
 ## Input
 
-A & Y the 16 bits values
+A & Y the 16 bits value
 
-TR5 the pointer of the address to put decimal number
+TR5 the pointer of the address to put decimal number (String)
 
 DEFAFF : space before the number
 
-X : xxx
-
 ## Output
 
-A,TR4, TR5
+A, TR4, TR5
 
-## Example
+## Example 1 : Displays value AY (16 bits number) in $bb80 text mode
 
 ``` ca65
 	lda        #<$bb80

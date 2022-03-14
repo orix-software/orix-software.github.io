@@ -23,5 +23,4 @@ A&Y : ptr
     BRK_TELEMON XMALLOC
     ; A & Y contains a ptr
     rts
-
 ```

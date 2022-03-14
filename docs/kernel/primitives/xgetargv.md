@@ -12,10 +12,10 @@ argv_ptr          .res     KERNEL_MAX_ARGS_COMMAND_LINE
 argv_value_ptr    .res     KERNEL_LENGTH_MAX_CMDLINE+KERNEL_MAX_ARGS_COMMAND_LINE ; add 0 to string
 .endstruct
 ```
+
 argv_ptr contains an offset of each param. It means that we can't have a length of args greater than 256.
 
 XMAINARGS and XGETARGV does not handle "" yet and "\ "
-
 
 ## Input
 

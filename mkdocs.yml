@@ -51,8 +51,10 @@ nav:
         - Joysticks: hardware/joysticks.md
     - User guide :
         - Commands : commands/all.md
+        - Floppy drive commands:
+            - Bootfd: user_manual/bootfd.md
         - Shell guide : 
-            - Basic 11 commands: how-it-work/index.md        
+            - Basic 11 commands: how-it-work/index.md
     - Kernel guide : 
         - Kernel : home/kernel.md
         - Primitives : kernel/primitives/index.md 

@@ -569,11 +569,49 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
+      Floppy drive commands
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Floppy drive commands" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        <span class="md-nav__icon md-icon"></span>
+        Floppy drive commands
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user_manual/bootfd/" class="md-nav__link">
+      Bootfd
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
       Shell guide
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Shell guide" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-2">
+      <label class="md-nav__title" for="nav-5-3">
         <span class="md-nav__icon md-icon"></span>
         Shell guide
       </label>
@@ -770,12 +808,13 @@
 <h2 id="description">Description</h2>
 <p>Get argv. X register contains the number of the arg search</p>
 <p>Kernel handle a struct with XMAINARGS. This struct is handled by Kernel, and no action are required in external code, but here is how struct works :</p>
-<p><div class="highlight"><pre><span></span><code><span class="kp">.struct</span> <span class="n">XMAINARGS_STRUCT</span>
+<div class="highlight"><pre><span></span><code><span class="kp">.struct</span> <span class="n">XMAINARGS_STRUCT</span>
 <span class="n">argv_ptr</span>          <span class="kp">.res</span>     <span class="n">KERNEL_MAX_ARGS_COMMAND_LINE</span>
 <span class="n">argv_value_ptr</span>    <span class="kp">.res</span>     <span class="n">KERNEL_LENGTH_MAX_CMDLINE</span><span class="o">+</span><span class="n">KERNEL_MAX_ARGS_COMMAND_LINE</span> <span class="c1">; add 0 to string</span>
 <span class="kp">.endstruct</span>
 </code></pre></div>
-argv_ptr contains an offset of each param. It means that we can't have a length of args greater than 256.</p>
+
+<p>argv_ptr contains an offset of each param. It means that we can't have a length of args greater than 256.</p>
 <p>XMAINARGS and XGETARGV does not handle "" yet and "\ "</p>
 <h2 id="input">Input</h2>
 <p>A &amp; Y the ptr of struct from XMAINARGS</p>

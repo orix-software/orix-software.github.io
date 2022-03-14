@@ -10,7 +10,7 @@ Return argc and argv
 
 Nothing
 
-##Output
+## Output
 
 A & Y contains ptr to XMAINARGS Struct
 X: number of args
@@ -23,7 +23,8 @@ XMAINARGS = $2C
 brk_kernel XMAINARGS
 
 stx save_argc
-sta save_argvlow
-sty save_argvhigh
-``` 
+sta save_argv
+sty save_argv+1
+```
 
+!!! warning "XMAINARGS allocate a chunk in memory, it must be free"

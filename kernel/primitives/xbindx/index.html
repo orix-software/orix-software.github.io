@@ -13,7 +13,7 @@
     
     
       
-        <title>XBINDX (16 bytes to decimal) - Orix</title>
+        <title>XBINDX (16 bit number to decimal) - Orix</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xbindx-16-bytes-to-decimal" class="md-skip">
+        <a href="#xbindx-16-bit-number-to-decimal" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              XBINDX (16 bytes to decimal)
+              XBINDX (16 bit number to decimal)
             
           </span>
         </div>
@@ -569,11 +569,49 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
+      Floppy drive commands
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Floppy drive commands" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        <span class="md-nav__icon md-icon"></span>
+        Floppy drive commands
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user_manual/bootfd/" class="md-nav__link">
+      Bootfd
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
       Shell guide
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Shell guide" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-2">
+      <label class="md-nav__title" for="nav-5-3">
         <span class="md-nav__icon md-icon"></span>
         Shell guide
       </label>
@@ -747,8 +785,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#example-1-displays-value-ay-16-bits-number-in-bb80-text-mode" class="md-nav__link">
+    Example 1 : Displays value AY (16 bits number) in $bb80 text mode
   </a>
   
 </li>
@@ -766,17 +804,16 @@
               
                 
                 
-                <h1 id="xbindx-16-bytes-to-decimal">XBINDX (16 bytes to decimal)</h1>
+                <h1 id="xbindx-16-bit-number-to-decimal">XBINDX (16 bit number to decimal)</h1>
 <h2 id="description">Description</h2>
-<p>convert A &amp; Y number into decimal</p>
+<p>convert A &amp; Y number into decimal string</p>
 <h2 id="input">Input</h2>
-<p>A &amp; Y the 16 bits values</p>
-<p>TR5 the pointer of the address to put decimal number</p>
+<p>A &amp; Y the 16 bits value</p>
+<p>TR5 the pointer of the address to put decimal number (String)</p>
 <p>DEFAFF : space before the number</p>
-<p>X : xxx</p>
 <h2 id="output">Output</h2>
-<p>A,TR4, TR5</p>
-<h2 id="example">Example</h2>
+<p>A, TR4, TR5</p>
+<h2 id="example-1-displays-value-ay-16-bits-number-in-bb80-text-mode">Example 1 : Displays value AY (16 bits number) in $bb80 text mode</h2>
 <div class="highlight"><pre><span></span><code>    <span class="k">lda</span>        <span class="p">#</span><span class="o">&lt;</span><span class="mh">$bb80</span>
     <span class="k">sta</span>        <span class="n">TR5</span>
     <span class="k">lda</span>        <span class="p">#</span><span class="o">&gt;</span><span class="mh">$bb80</span>

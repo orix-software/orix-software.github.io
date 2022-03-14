@@ -14,6 +14,7 @@ Orix-sdk must be use in order to manage in the right way kernel calls
 ## Numbers
 
 * [XBINDX](xbindx) : convert a number to decimal
+* [XDECIM](xdecim) : display a number to the output
 
 ## Memory
 
@@ -23,6 +24,8 @@ Orix-sdk must be use in order to manage in the right way kernel calls
 ## Files
 
 * [XOPEN](xopen) : Open a file
+* [XWRITE](xwrite) : Write bytes to file
+* [XFREAD](xfread) : read bytes from file
 * [XMKDIR](xmkdir) : Create a folder
 * [XGETCWD](xgetcwd) : get current path
 * [XPUTCWD](xputcwd) : change current path

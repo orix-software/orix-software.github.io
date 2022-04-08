@@ -49,6 +49,7 @@ nav:
         - I/O : hardware/i_o.md
         - Firmware informations : home/firmware.md
         - Joysticks: hardware/joysticks.md
+        - Eeprom structure: hardware/eeprom_structure.md
     - User guide :
         - Commands : commands/all.md
         - Floppy drive commands:

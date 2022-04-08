@@ -13,7 +13,7 @@
     
     
       
-        <title>Open and read files with cc65 - Orix</title>
+        <title>Eeprom structure - Orix</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#open-and-read-files-with-cc65" class="md-skip">
+        <a href="#eeprom-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Open and read files with cc65
+              Eeprom structure
             
           </span>
         </div>
@@ -137,14 +137,16 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -182,7 +184,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../hardware/i_o/" class="md-tabs__link">
+        <a href="../i_o/" class="md-tabs__link md-tabs__link--active">
           Hardware guide
         </a>
       
@@ -468,10 +470,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Hardware guide
@@ -491,7 +495,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../hardware/i_o/" class="md-nav__link">
+    <a href="../i_o/" class="md-nav__link">
       I/O
     </a>
   </li>
@@ -515,7 +519,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../hardware/joysticks/" class="md-nav__link">
+    <a href="../joysticks/" class="md-nav__link">
       Joysticks
     </a>
   </li>
@@ -525,11 +529,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../hardware/eeprom_structure/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Eeprom structure
     </a>
+    
   </li>
 
         
@@ -780,23 +793,15 @@
               
                 
                 
-                <h1 id="open-and-read-files-with-cc65">Open and read files with cc65</h1>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
-
-<span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">chars</span><span class="p">[</span><span class="mi">255</span><span class="p">];</span>
-
-<span class="n">main</span> <span class="p">(){</span>
- <span class="n">fp</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="s">&quot;/myfile&quot;</span><span class="p">,</span><span class="s">&quot;r&quot;</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">fp</span><span class="o">==</span><span class="nb">NULL</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Can&#39;t open %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-  <span class="p">}</span>   
-
-  <span class="n">nb</span><span class="o">=</span><span class="n">fread</span><span class="p">(</span><span class="n">chars</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">fp</span><span class="p">);</span>
-  <span class="n">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
+                <h1 id="eeprom-structure">eeprom structure</h1>
+<p>The eeprom structure is : 
+* First bank (16KB) : empty
+* First bank (16KB) : empty
+* First bank (16KB) : empty
+* First bank (16KB) : empty
+* Shell (16KB)
+* basic11 (16KB)
+* Kernel (16KB)</p>
                 
               
               
@@ -811,6 +816,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../joysticks/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Joysticks
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../commands/all/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Commands
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

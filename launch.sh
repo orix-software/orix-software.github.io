@@ -13,7 +13,7 @@ rm docs/commands/all.md
 for I in $COMMAND_LIST; do
 echo Get shell .md 
 wget https://raw.githubusercontent.com/orix-software/shell/master/docs/$I.md -O docs/commands/$I.md
-echo "* [../$I]($I)" >> docs/commands/all.md
+echo "* [$I](../$I)" >> docs/commands/all.md
 done 
 
 echo full

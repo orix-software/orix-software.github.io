@@ -1,6 +1,6 @@
 #! /bin/bash
 
-COMMAND_LIST="bank basic11 ioports ls mkdir touch viewhrs"
+COMMAND_LIST="bank basic11 cat cd clear date echo env help ioports ls lscpu lsmem man mkdir mount ps reboot rm setfont touch twil uname viewhrs"
 
 #cd kernel && mkdocs build && cp site/* . -adpR && cd ..
 #cd hardware && mkdocs build && cp site/* . -adpR && cd ..

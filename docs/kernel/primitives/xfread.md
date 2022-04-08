@@ -33,4 +33,4 @@ A & X contains the length
 
 ```
 
-!!! fail "XFREAD does not multiple opened files "
+!!! fail "XFREAD does not manage multiples opened files "

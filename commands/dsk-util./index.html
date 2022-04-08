@@ -13,7 +13,7 @@
     
     
       
-        <title>Commands - Orix</title>
+        <title>Command: dsk-util - Orix</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#command-dsk-util" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Commands
+              Command: dsk-util
             
           </span>
         </div>
@@ -132,16 +137,14 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -192,7 +195,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../all/" class="md-tabs__link">
           User guide
         </a>
       
@@ -527,12 +530,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       User guide
@@ -550,18 +551,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../all/" class="md-nav__link">
       Commands
     </a>
-    
   </li>
 
         
@@ -753,41 +747,102 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disk-image-utility" class="md-nav__link">
+    Disk image utility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synopsys" class="md-nav__link">
+    SYNOPSYS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    EXAMPLES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    DESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    OPTIONS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    SOURCE
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Commands</h1>
-                
-                <ul>
-<li><a href="../bank">bank</a></li>
-<li><a href="../basic11">basic11</a></li>
-<li><a href="../cat">cat</a></li>
-<li><a href="../cd">cd</a></li>
-<li><a href="../clear">clear</a></li>
-<li><a href="../date">date</a></li>
-<li><a href="../echo">echo</a></li>
-<li><a href="../env">env</a></li>
-<li><a href="../help">help</a></li>
-<li><a href="../ioports">ioports</a></li>
-<li><a href="../ls">ls</a></li>
-<li><a href="../lscpu">lscpu</a></li>
-<li><a href="../lsmem">lsmem</a></li>
-<li><a href="../man">man</a></li>
-<li><a href="../mkdir">mkdir</a></li>
-<li><a href="../mount">mount</a></li>
-<li><a href="../ps">ps</a></li>
-<li><a href="../reboot">reboot</a></li>
-<li><a href="../rm">rm</a></li>
-<li><a href="../setfont">setfont</a></li>
-<li><a href="../touch">touch</a></li>
-<li><a href="../twil">twil</a></li>
-<li><a href="../uname">uname</a></li>
-<li><a href="../viewhrs">viewhrs</a></li>
-<li><a href="../dsk-util">dsk-util</a></li>
+                <h1 id="command-dsk-util">Command: dsk-util</h1>
+<h3 id="disk-image-utility">Disk image utility</h3>
+<h2 id="synopsys">SYNOPSYS</h2>
+<ul>
+<li>dsk-util -f|-s file.dsk</li>
+<li>dsk-util -h</li>
 </ul>
+<h2 id="examples">EXAMPLES</h2>
+<ul>
+<li>dsk-util -f ftdos.dsk</li>
+<li>dsk-util -s sedoric3.dsk</li>
+</ul>
+<h2 id="description">DESCRIPTION</h2>
+<p><strong>dsk-util</strong> display the directory of a disk image file.</p>
+<h2 id="options">OPTIONS</h2>
+<ul>
+<li>-h
+                show this help message and exit</li>
+<li>-f
+                FTDOS disk image</li>
+<li>-s
+                Sedoric disk image</li>
+</ul>
+<h2 id="source">SOURCE</h2>
+<p>https://github.com/orix-software/dsk-util</p>
                 
               
               
@@ -802,41 +857,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../../hardware/joysticks/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Joysticks
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../../user_manual/bootfd/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Bootfd
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

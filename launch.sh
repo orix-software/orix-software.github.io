@@ -16,6 +16,9 @@ wget https://raw.githubusercontent.com/orix-software/shell/master/docs/$I.md -O 
 echo "* [$I](../$I)" >> docs/commands/all.md
 done 
 
+echo "* [dsk-util](../dsk-util)" >> docs/commands/all.md
+wget https://github.com/orix-software/dsk-util/raw/master/docs/dsk-util.md -O docs/commands/dsk-util..md
+
 echo full
 fi
 

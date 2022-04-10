@@ -1,12 +1,12 @@
-# XCLOSE
+# XFREE
 
 ## Description
 
-Close file
+Free memory
 
 ## Input
 
-* A : fd
+* A&Y : ptr
 
 ## Output
 
@@ -16,6 +16,5 @@ Close file
 ## Example
 
 ``` ca65
-    lda     #MYFD
-    BRK_KERNEL XCLOSE
+
 ```

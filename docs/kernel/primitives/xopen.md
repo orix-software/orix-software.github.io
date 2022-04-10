@@ -11,15 +11,16 @@ open a file
 
 ## Output
 
- AX contains $FF if it does not exists
- A : FD id if file is found
+* AX contains $FF if it does not exists
+* A : FD id if file is found
 
-## Modify 
+## Modify
 
 * RES, A X Y, XOPEN_SAVE XOPEN_FLAGS, XOPEN_RES_SAVE, XOPEN_SAVEA
 * with XMALLOC call TR7
 
 ## Internal kernel calls
+
 * XMALLOC
 * create_file_pointer
 

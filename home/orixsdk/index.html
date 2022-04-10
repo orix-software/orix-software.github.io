@@ -1159,6 +1159,7 @@
 <div class="admonition warning">
 <p class="admonition-title">The filename/path address must not be in the rom. If it's the case, the string must be copied into main memory because Kernel overlap the ROM. fopen macro from SDK will produce an error, if the 'address' is in a ROM range (eg : $c000-$FFFF). If you use a ptr, macro can not detect it, and XOPEN primitive won't be able to open your file</p>
 </div>
+<p>See XOPEN kernel primitive : <a href="../kernel/primitives/xopen">XOPEN</a></p>
 <h3 id="fread-macro">FREAD macro</h3>
 <p>https://github.com/assinie/orix-sdk/blob/master/macros/SDK_file.mac#L70</p>
 <div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>

@@ -19,7 +19,7 @@ Orix-sdk must be use in order to manage in the right way kernel calls
 ## Memory
 
 * [XMALLOC](xmalloc) : allocate memory from main memory
-* [XFREE](xfree) ; free memory
+* [XFREE](xfree) : free memory
 
 ## Files
 

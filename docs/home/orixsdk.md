@@ -77,6 +77,8 @@ ex :
 
 !!! warning "The filename/path address must not be in the rom. If it's the case, the string must be copied into main memory because Kernel overlap the ROM. fopen macro from SDK will produce an error, if the 'address' is in a ROM range (eg : $c000-$FFFF). If you use a ptr, macro can not detect it, and XOPEN primitive won't be able to open your file"
 
+See XOPEN kernel primitive : [XOPEN](../kernel/primitives/xopen)
+
 ### FREAD macro
 
 https://github.com/assinie/orix-sdk/blob/master/macros/SDK_file.mac#L70

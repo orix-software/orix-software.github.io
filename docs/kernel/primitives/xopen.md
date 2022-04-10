@@ -6,18 +6,22 @@ open a file
 
 ## Input
 
-Y : flag open mode
-A&X : path filename
-
-This routine use :
-       RES, A X Y, XOPEN_SAVE XOPEN_FLAGS, XOPEN_RES_SAVE, XOPEN_SAVEA
-and with XMALLOC :
-TR7 (malloc)
+* Y : flag open mode
+* A&X : path filename
 
 ## Output
 
  AX contains $FF if it does not exists
  A : FD id if file is found
+
+## Modify 
+
+* RES, A X Y, XOPEN_SAVE XOPEN_FLAGS, XOPEN_RES_SAVE, XOPEN_SAVEA
+* with XMALLOC call TR7
+
+## Internal kernel calls
+* XMALLOC
+* create_file_pointer
 
 ## Changelog
 
@@ -41,5 +45,5 @@ O_CREAT  |    Yes      | open and return FD
     BRK_TELEMON XOPEN
     rts
 str:
-    .asciiz "myfolder"
+    .asciiz "myfile"
 ```

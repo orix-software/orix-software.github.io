@@ -797,6 +797,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#modify" class="md-nav__link">
+    Modify
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internal-kernel-calls" class="md-nav__link">
+    Internal kernel calls
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#changelog" class="md-nav__link">
     Changelog
   </a>
@@ -840,15 +854,23 @@
 <h2 id="description">Description</h2>
 <p>open a file</p>
 <h2 id="input">Input</h2>
-<p>Y : flag open mode
-A&amp;X : path filename</p>
-<p>This routine use :
-       RES, A X Y, XOPEN_SAVE XOPEN_FLAGS, XOPEN_RES_SAVE, XOPEN_SAVEA
-and with XMALLOC :
-TR7 (malloc)</p>
+<ul>
+<li>Y : flag open mode</li>
+<li>A&amp;X : path filename</li>
+</ul>
 <h2 id="output">Output</h2>
 <p>AX contains $FF if it does not exists
  A : FD id if file is found</p>
+<h2 id="modify">Modify</h2>
+<ul>
+<li>RES, A X Y, XOPEN_SAVE XOPEN_FLAGS, XOPEN_RES_SAVE, XOPEN_SAVEA</li>
+<li>with XMALLOC call TR7</li>
+</ul>
+<h2 id="internal-kernel-calls">Internal kernel calls</h2>
+<ul>
+<li>XMALLOC</li>
+<li>create_file_pointer</li>
+</ul>
 <h2 id="changelog">Changelog</h2>
 <h3 id="since-kernel-20222">Since kernel 2022.2</h3>
 <p>Flag     | File exists | behaviour
@@ -866,7 +888,7 @@ O_CREAT  |    Yes      | open and return FD</p>
     <span class="n">BRK_TELEMON</span> <span class="n">XOPEN</span>
     <span class="k">rts</span>
 <span class="nl">str:</span>
-    <span class="kp">.asciiz</span> <span class="s">&quot;myfolder&quot;</span>
+    <span class="kp">.asciiz</span> <span class="s">&quot;myfile&quot;</span>
 </code></pre></div>
                 
               

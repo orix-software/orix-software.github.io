@@ -26,7 +26,8 @@ Orix-sdk must be use in order to manage in the right way kernel calls
 * [XOPEN](xopen) : Open a file
 * [XWRITE](xwrite) : Write bytes to file
 * [XFREAD](xfread) : read bytes from file
-* [XFCLOSE](xclose) : read bytes from file
+* [XCLOSE](xclose) : Close file
+* [XFSEEK](xfseek) : Seek into files
 * [XMKDIR](xmkdir) : Create a folder
 * [XGETCWD](xgetcwd) : get current path
 * [XPUTCWD](xputcwd) : change current path

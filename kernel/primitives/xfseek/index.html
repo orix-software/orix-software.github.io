@@ -13,7 +13,7 @@
     
     
       
-        <title>XCLOSE - Orix</title>
+        <title>XFEEK - Orix</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xclose" class="md-skip">
+        <a href="#xfeek" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              XCLOSE
+              XFEEK
             
           </span>
         </div>
@@ -809,18 +809,17 @@
               
                 
                 
-                <h1 id="xclose">XCLOSE</h1>
+                <h1 id="xfeek">XFEEK</h1>
 <h2 id="description">Description</h2>
-<p>Read byte from files</p>
 <h2 id="input">Input</h2>
 <ul>
-<li>AY contains the length to read</li>
-<li>PTR_READ_DEST must be set because it's the ptr_dest</li>
-<li>X contains the fd id</li>
+<li>X whence</li>
+<li>AY : position 0 to 15 bits (word)</li>
+<li>RESB : position 16 to 32 bits(word)</li>
+<li>RES fd</li>
 </ul>
 <h2 id="output">Output</h2>
-<p>A &amp; X contains the length read</p>
-<h1 id="samples">Samples</h1>
+<h1 id="code">Code</h1>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>

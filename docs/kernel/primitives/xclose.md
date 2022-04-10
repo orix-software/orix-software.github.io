@@ -1,4 +1,4 @@
-# XCLOS
+# XCLOSE
 
 ## Description
 

@@ -13,7 +13,7 @@
     
     
       
-        <title>XCLOSE - Orix</title>
+        <title>XCLOS - Orix</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xclose" class="md-skip">
+        <a href="#xclos" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              XCLOSE
+              XCLOS
             
           </span>
         </div>
@@ -809,7 +809,7 @@
               
                 
                 
-                <h1 id="xclose">XCLOSE</h1>
+                <h1 id="xclos">XCLOS</h1>
 <h2 id="description">Description</h2>
 <p>Read byte from files</p>
 <h2 id="input">Input</h2>
@@ -822,21 +822,8 @@
 <p>A &amp; X contains the length read</p>
 <h1 id="samples">Samples</h1>
 <h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code>    <span class="k">lda</span> <span class="p">#</span><span class="o">&lt;</span><span class="mh">$A000</span>
-    <span class="k">sta</span> <span class="n">PTR_READ_DEST</span>
-    <span class="k">lda</span> <span class="p">#</span><span class="o">&gt;</span><span class="mh">$A000</span>
-    <span class="k">sta</span> <span class="n">PTR_READ_DEST</span><span class="o">+</span><span class="mi">1</span>
-
-    <span class="k">lda</span> <span class="p">#</span><span class="o">&lt;</span><span class="mi">12</span> <span class="c1">; Read 12 bytes</span>
-    <span class="k">ldy</span> <span class="p">#</span><span class="o">&gt;</span><span class="mi">12</span> <span class="c1">; REad 12 bytes</span>
-    <span class="k">ldx</span> <span class="n">fp</span>
-    <span class="n">BRK_KERNEL</span> <span class="n">XFREAD</span>
-    <span class="k">rts</span>
+<div class="highlight"><pre><span></span><code>
 </code></pre></div>
-
-<div class="admonition fail">
-<p class="admonition-title">XFREAD does not manage multiples opened files </p>
-</div>
                 
               
               

@@ -24,5 +24,5 @@ Return #ENODEV if the device can't be mount
     rts
 str:
     .asciiz "myfolder"
-``` 
+```
 

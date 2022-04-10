@@ -22,4 +22,4 @@ wget https://github.com/orix-software/dsk-util/raw/master/docs/dsk-util.md -O do
 echo full
 fi
 
-mkdocs build && cp site/* . -adpR  && git add * && git commit -m update && git push
+mkdocs build && cp site/* . -r  && git add * && git commit -m update &&echo push &&  git push

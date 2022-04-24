@@ -14,9 +14,9 @@ Read byte from files
 
 A & X contains the length read
 
-# Samples
+## Samples
 
-## Example
+### Example
 
 ``` ca65
     lda #<$A000

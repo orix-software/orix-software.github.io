@@ -11,10 +11,12 @@ Free memory
 ## Output
 
 
-# Samples
+## Samples
 
-## Example
+### Example
 
 ``` ca65
-
+    lda     ptr
+    ldy     ptr+1
+    BRK_KERNEL XFREE
 ```

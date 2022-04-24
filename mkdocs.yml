@@ -58,7 +58,7 @@ nav:
             - Basic 11 commands: how-it-work/index.md
     - Kernel guide : 
         - Kernel : home/kernel.md
-        - Primitives : kernel/primitives/index.md 
+        - Primitives : kernel/primitives/index.md
         - Boot sequence: how-it-work/binary_starts.md
     - Extra Libs :
         - Twilighte librairy : libs/twillib.md

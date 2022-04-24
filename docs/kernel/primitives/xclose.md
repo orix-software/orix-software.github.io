@@ -10,10 +10,13 @@ Close file
 
 ## Output
 
+## Modify
 
-# Samples
+* RESB
 
-## Example
+## Samples
+
+### Example
 
 ``` ca65
     lda     #MYFD

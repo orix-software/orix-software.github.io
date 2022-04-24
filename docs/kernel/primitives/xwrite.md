@@ -14,7 +14,7 @@ X contains the fd id
 
 A & X contains the written length
 
-# Modification :
+## Modification
 
 ## Example
 
@@ -32,4 +32,4 @@ A & X contains the written length
 
 ```
 
-!!! fail "XFREAD does not manage multiples opened files "
+!!! fail "XFREAD does not manage multiples opened files : except since kernel 2022.2"

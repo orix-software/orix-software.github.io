@@ -796,6 +796,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modification" class="md-nav__link">
+    Modification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -818,7 +832,7 @@ PTR_READ_DEST must be set (ptr where data are read)
 X contains the fd id</p>
 <h2 id="output">Output</h2>
 <p>A &amp; X contains the written length</p>
-<h1 id="modification">Modification :</h1>
+<h2 id="modification">Modification</h2>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code>    <span class="k">lda</span> <span class="p">#</span><span class="o">&lt;</span><span class="mh">$A000</span>
     <span class="k">sta</span> <span class="n">PTR_READ_DEST</span>
@@ -833,7 +847,7 @@ X contains the fd id</p>
 </code></pre></div>
 
 <div class="admonition fail">
-<p class="admonition-title">XFREAD does not manage multiples opened files </p>
+<p class="admonition-title">XFREAD does not manage multiples opened files : except since kernel 2022.2</p>
 </div>
                 
               

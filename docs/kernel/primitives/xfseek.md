@@ -1,6 +1,10 @@
 # XFSEEK
 
+Available in kernel 2022.2
+
 ## Description
+
+Seek into file
 
 ## Input
 

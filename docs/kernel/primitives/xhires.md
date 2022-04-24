@@ -1,0 +1,4 @@
+# XHIRES
+
+Switch to Hires
+

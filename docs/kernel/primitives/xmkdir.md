@@ -19,10 +19,9 @@ Return #ENODEV if the device can't be mount
 ``` ca65
     lda #<str
     ldy #>str
-
+    ldx #$00
     BRK_TELEMON XMKDIR
     rts
 str:
     .asciiz "myfolder"
 ```
-

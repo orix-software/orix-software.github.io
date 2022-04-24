@@ -23,6 +23,7 @@ Returns an error if the binary is not found
 ``` ca65
     lda #<str
     ldy #>str
+    ldx #$00 ; Fork
     BRK_KERNEL XEXEC
     rts
 str:

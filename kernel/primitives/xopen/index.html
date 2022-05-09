@@ -883,15 +883,9 @@ O_WRONLY |    No       | return Null
 O_CREAT  |    No       | Create file and open and return FD
 O_CREAT  |    Yes      | open and return FD</p>
 <h2 id="usage">Usage</h2>
-<div class="highlight"><pre><span></span><code>    <span class="k">lda</span> <span class="p">#</span><span class="o">&lt;</span><span class="n">str</span>
-    <span class="k">ldx</span> <span class="p">#</span><span class="o">&gt;</span><span class="n">str</span>
-    <span class="k">ldy</span> <span class="p">#</span><span class="n">O_CREAT</span>
-
-    <span class="n">BRK_TELEMON</span> <span class="n">XOPEN</span>
-    <span class="k">rts</span>
-<span class="nl">str:</span>
-    <span class="kp">.asciiz</span> <span class="s">&quot;myfile&quot;</span>
-</code></pre></div>
+<div class="admonition fail">
+<p class="admonition-title">XOPEN does not manage './' or '../' calls</p>
+</div>
                 
               
               

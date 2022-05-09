@@ -835,10 +835,16 @@
 <li>RES : fd (but only I byte is managed)</li>
 </ul>
 <h2 id="output">Output</h2>
+<ul>
+<li>Return A=EINVAL if whence is not recognize</li>
+<li>Return A=EOK if seek has been performed</li>
+<li>Return A=$FF if something is wrong when seek has performed</li>
+</ul>
 <h2 id="code">Code</h2>
 <h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
+<div class="admonition fail">
+<p class="admonition-title">XFSEEK is available since kernel v2022.2</p>
+</div>
                 
               
               

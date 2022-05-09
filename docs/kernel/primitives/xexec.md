@@ -30,4 +30,4 @@ str:
     .asciiz "mybin"    
 ```
 
-!!! fail "XEXEC does not manage './' calls"
+!!! fail "XEXEC does not manage './' or '../' calls"

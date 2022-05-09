@@ -31,11 +31,17 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 * [XMKDIR](xmkdir) : Create a folder
 * [XGETCWD](xgetcwd) : get current path
 * [XPUTCWD](xputcwd) : change current path
+* [XOPENDIR](xopendir) : opendir
+* [XREADDIR](xreaddir) : readdir (return a struct with the files)
+* [XM](xrm) : remove file
 
 ## Text mode
 
 * [XSCROB](xscrob) : scroll from bottom to top
 * [XSCROH](xscrob) : scroll from top to bottom
+
+## Graphic mode
+* [XHIRES](xhires) : start graphic mode
 
 ## Execute
 

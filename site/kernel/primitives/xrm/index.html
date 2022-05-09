@@ -13,7 +13,7 @@
     
     
       
-        <title>XFSEEK - Orix</title>
+        <title>XRM - Orix</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xfseek" class="md-skip">
+        <a href="#xrm" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              XFSEEK
+              XRM
             
           </span>
         </div>
@@ -797,16 +797,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#code" class="md-nav__link">
-    Code
+  <a href="#samples" class="md-nav__link">
+    Samples
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Samples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     Example
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -823,28 +829,12 @@
               
                 
                 
-                <h1 id="xfseek">XFSEEK</h1>
-<p>Available in kernel 2022.2</p>
+                <h1 id="xrm">XRM</h1>
 <h2 id="description">Description</h2>
-<p>Seek into file</p>
 <h2 id="input">Input</h2>
-<ul>
-<li>X whence</li>
-<li>AY : position 0 to 15 bits (word)</li>
-<li>RESB : position 16 to 32 bits(word)</li>
-<li>RES : fd (but only I byte is managed)</li>
-</ul>
 <h2 id="output">Output</h2>
-<ul>
-<li>Return A=EINVAL if whence is not recognize</li>
-<li>Return A=EOK if seek has been performed</li>
-<li>Return A=$FF if something is wrong when seek has performed</li>
-</ul>
-<h2 id="code">Code</h2>
-<h2 id="example">Example</h2>
-<div class="admonition fail">
-<p class="admonition-title">XFSEEK is available since kernel v2022.2</p>
-</div>
+<h2 id="samples">Samples</h2>
+<h3 id="example">Example</h3>
                 
               
               

@@ -48,3 +48,4 @@ O_CREAT  |    Yes      | open and return FD
 str:
     .asciiz "myfile"
 ```
+!!! fail "XOPEN does not manage './' or '../' calls"

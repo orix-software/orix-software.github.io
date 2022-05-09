@@ -9,4 +9,3 @@ We can pass args to AXY or others memory location and the primitive can be calle
 Orix SDK manages some kernel calls, and it's better to use macro set to call some primitives
 
 ## Kernel doc for developpers
-

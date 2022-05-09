@@ -36,6 +36,10 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 	;----------------------------------------------------------------------
 ```
 
+### Return a line
+
+crlf
+
 ## Files operation
 
 ### FOPEN

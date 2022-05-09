@@ -1,6 +1,6 @@
 # XSCROH (Scrollup text mode)
 
-scroll all lines from bottom to the top
+Scroll all lines from bottom to the top
 
 # Examples
 

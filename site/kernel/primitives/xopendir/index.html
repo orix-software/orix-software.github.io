@@ -13,7 +13,7 @@
     
     
       
-        <title>XFSEEK - Orix</title>
+        <title>XOPENDIR - Orix</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xfseek" class="md-skip">
+        <a href="#xopendir" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              XFSEEK
+              XOPENDIR
             
           </span>
         </div>
@@ -797,15 +797,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#code" class="md-nav__link">
-    Code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#example-1-displays-value-ay-16-bits-number-in-bb80-text-mode" class="md-nav__link">
+    Example 1 : Displays value AY (16 bits number) in $bb80 text mode
   </a>
   
 </li>
@@ -823,28 +816,32 @@
               
                 
                 
-                <h1 id="xfseek">XFSEEK</h1>
-<p>Available in kernel 2022.2</p>
+                <h1 id="xopendir">XOPENDIR</h1>
 <h2 id="description">Description</h2>
-<p>Seek into file</p>
+<p>Open a folder</p>
 <h2 id="input">Input</h2>
-<ul>
-<li>X whence</li>
-<li>AY : position 0 to 15 bits (word)</li>
-<li>RESB : position 16 to 32 bits(word)</li>
-<li>RES : fd (but only I byte is managed)</li>
-</ul>
+<p>A &amp; X : string</p>
 <h2 id="output">Output</h2>
-<ul>
-<li>Return A=EINVAL if whence is not recognize</li>
-<li>Return A=EOK if seek has been performed</li>
-<li>Return A=$FF if something is wrong when seek has performed</li>
-</ul>
-<h2 id="code">Code</h2>
-<h2 id="example">Example</h2>
-<div class="admonition fail">
-<p class="admonition-title">XFSEEK is available since kernel v2022.2</p>
-</div>
+<p>A : fd</p>
+<h2 id="example-1-displays-value-ay-16-bits-number-in-bb80-text-mode">Example 1 : Displays value AY (16 bits number) in $bb80 text mode</h2>
+<div class="highlight"><pre><span></span><code>    <span class="k">ldx</span>     <span class="p">#</span><span class="mh">$00</span>
+    <span class="k">lda</span>     <span class="p">#</span><span class="o">&lt;</span><span class="n">opendir</span>
+    <span class="k">ldy</span>     <span class="p">#</span><span class="o">&gt;</span><span class="n">opendir</span>
+    <span class="n">BRK_TELEMON</span> <span class="mh">$2F</span>
+    <span class="k">cmp</span>     <span class="p">#</span><span class="mh">$FF</span>
+    <span class="k">bne</span>     <span class="n">@ok</span>
+    <span class="k">cpx</span>     <span class="p">#</span><span class="mh">$FF</span>
+    <span class="k">bne</span>     <span class="n">@ok</span>
+
+    <span class="n">print</span> <span class="n">str_error</span>
+
+    <span class="k">rts</span>
+<span class="nl">@ok:</span>
+    <span class="c1">; Save ptr  </span>
+    <span class="k">rts</span>
+<span class="nl">opendir:</span>
+    <span class="n">asciiz</span> <span class="s">&quot;/bin&quot;</span>      
+</code></pre></div>
                 
               
               

@@ -6,13 +6,13 @@ Close file
 
 ## Input
 
-* A : fd
+A : fd
 
 ## Output
 
 ## Modify
 
-* RESB
+RESB
 
 ## Samples
 

@@ -1,6 +1,19 @@
+# Getting started
+
+## Users
+
+<div class="cards" markdown>
+- :fontawesome-thin-joystick: __Starting software__  
+--- 
+   [XGETARGV](xgetargv) 
+</div>
+
+## Developers
 
 <div class="grid cards" markdown>
-- :fontawesome-brands-html5: __HTML__ for content and structure
-- :fontawesome-regular-joystick: __Starting software__  
+- :fontawesome-thin-joystick: __C program (memory)__
+---
+Start
 </div>
+
 

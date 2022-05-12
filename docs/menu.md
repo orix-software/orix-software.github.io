@@ -3,7 +3,7 @@
 ## Users
 
 <div class="cards" markdown>
-
+- :fontawesome-brands-html5: __HTML__ for content and structure
 -   :fontawesome-thin-joystick: __Starting software__  
     --- 
     [Loader](home/loader/loader/) 
@@ -12,9 +12,9 @@
 ## Developers
 
 <div class="grid cards" markdown>
--   :fontawesome-thin-joystick: __C program (memory)__
+-   :fontawesome-solid-code: __Start code__
     ---
-    Start
+    __Start__
 </div>
 
 

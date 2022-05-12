@@ -49,3 +49,8 @@ str:
     .asciiz "myfile"
 ```
 !!! fail "XOPEN does not manage './' or '../' calls"
+
+!!! warning "Multiples opened files are working since kernel 2022.2"
+
+!!! warning "Max 2 opened files are working since kernel 2022.2, it's a constant defined in kernel build"
+

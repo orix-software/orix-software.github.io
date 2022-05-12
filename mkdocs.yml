@@ -35,8 +35,13 @@ theme:
 
 nav:
     - Home: index.md
-    - Getting started:
-        - Installation: home/index.md
+    - User guide :
+        - Commands : commands/all.md
+        - Floppy drive commands:
+            - Bootfd: user_manual/bootfd.md
+        - Shell guide :
+            - Basic 11 commands: how-it-work/index.md
+    - Software loader : home/loader/loader.md
     - Developper guide : 
         - Installation: home/index.md
         - Memory management : home/memory.md
@@ -54,12 +59,6 @@ nav:
         - Firmware informations : home/firmware.md
         - Joysticks: hardware/joysticks.md
         - Eeprom structure: hardware/eeprom_structure.md
-    - User guide :
-        - Commands : commands/all.md
-        - Floppy drive commands:
-            - Bootfd: user_manual/bootfd.md
-        - Shell guide : 
-            - Basic 11 commands: how-it-work/index.md
     - Kernel guide : 
         - Kernel : home/kernel.md
         - Primitives : kernel/primitives/index.md

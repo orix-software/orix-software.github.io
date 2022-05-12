@@ -38,9 +38,10 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 ## Text mode
 
 * [XSCROB](xscrob) : scroll from bottom to top
-* [XSCROH](xscrob) : scroll from top to bottom
+* [XSCROH](xscroh) : scroll from top to bottom
 
 ## Graphic mode
+
 * [XHIRES](xhires) : start graphic mode
 
 ## Execute

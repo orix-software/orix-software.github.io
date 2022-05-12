@@ -37,4 +37,5 @@ BRK_TELEMON XFSEEK
  
 
 ```
-!!! fail "XFSEEK is available since kernel v2022.2"
+!!! warning "XFSEEK is available since kernel v2022.2"
+

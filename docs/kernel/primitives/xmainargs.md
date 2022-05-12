@@ -27,4 +27,4 @@ sta save_argv
 sty save_argv+1
 ```
 
-!!! warning "XMAINARGS allocate a chunk in memory, it must be free at the end of the use of the parameters"
+!!! warning "XMAINARGS allocates a chunk in memory, it must be free at the end of the use of the parameters"

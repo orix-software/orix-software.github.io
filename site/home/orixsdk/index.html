@@ -527,8 +527,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#return-a-line" class="md-nav__link">
-    Return a line
+  <a href="#return-a-line-in-text-mode" class="md-nav__link">
+    Return a line in text mode
   </a>
   
 </li>
@@ -951,8 +951,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#return-a-line" class="md-nav__link">
-    Return a line
+  <a href="#return-a-line-in-text-mode" class="md-nav__link">
+    Return a line in text mode
   </a>
   
 </li>
@@ -1099,9 +1099,9 @@
 <div class="highlight"><pre><span></span><code>    <span class="c1">;----------------------------------------------------------------------</span>
     <span class="c1">;</span>
     <span class="c1">; usage:</span>
-    <span class="c1">;   print #byte [,TELEMON|NOSAVE]</span>
-    <span class="c1">;   print (pointer) [,TELEMON|NOSAVE]</span>
-    <span class="c1">;   print address [,TELEMON|NOSAVE]</span>
+    <span class="c1">;   print #byte [,TELEMON|SAVE]</span>
+    <span class="c1">;   print (pointer) [,TELEMON|SAVE]</span>
+    <span class="c1">;   print address [,TELEMON|SAVE]</span>
     <span class="c1">;</span>
     <span class="c1">; Option:</span>
     <span class="c1">;   - TELEMON: when used within TELEMON bank</span>
@@ -1112,8 +1112,17 @@
     <span class="c1">;----------------------------------------------------------------------</span>
 </code></pre></div>
 
-<h3 id="return-a-line">Return a line</h3>
-<p>crlf</p>
+<div class="highlight"><pre><span></span><code>  <span class="n">print</span> <span class="n">helloworld_str</span>
+  <span class="n">crlf</span> <span class="c1">; Return line</span>
+  <span class="k">rts</span>
+<span class="nl">helloworld_str:</span>
+    <span class="kp">.asciiz</span> <span class="s">&quot;Hello world!&quot;</span>
+</code></pre></div>
+
+<h3 id="return-a-line-in-text-mode">Return a line in text mode</h3>
+<div class="highlight"><pre><span></span><code><span class="n">crlf</span>
+</code></pre></div>
+
 <h2 id="files-operation">Files operation</h2>
 <h3 id="fopen">FOPEN</h3>
 <div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>
@@ -1132,19 +1141,21 @@
 </code></pre></div>
 
 <p>ex :</p>
-<div class="highlight"><pre><span></span><code>    <span class="n">fopen</span> <span class="p">(</span><span class="n">basic11_ptr2</span><span class="p">),</span> <span class="n">O_RDONLY</span>
+<div class="highlight"><pre><span></span><code>    <span class="n">fopen</span> <span class="p">(</span><span class="n">basic11_ptr2</span><span class="p">),</span> <span class="n">O_RDONLY</span><span class="p">,,</span><span class="n">fp</span> <span class="c1">; open the filename located in ptr &#39;basic11_ptr2&#39;, in readonly and store the fp in fp address</span>
     <span class="k">cpx</span>     <span class="p">#</span><span class="mh">$FF</span>
     <span class="k">bne</span>     <span class="n">@read_maindb</span> <span class="c1">; not null then  start because we did not found a conf</span>
     <span class="k">cmp</span>     <span class="p">#</span><span class="mh">$FF</span>
     <span class="k">bne</span>     <span class="n">@read_maindb</span> <span class="c1">; not null then  start because we did not found a conf</span>
 
-    <span class="n">PRINT</span>   <span class="n">str_basic11_missing</span>
-    <span class="n">BRK_KERNEL</span> <span class="n">XCRLF</span>
+    <span class="n">print</span>   <span class="n">str_basic11_missing</span>
+    <span class="n">crlf</span>    <span class="c1">; Macro for return line</span>
     <span class="k">lda</span>     <span class="p">#</span><span class="mh">$FF</span>
     <span class="k">ldx</span>     <span class="p">#</span><span class="mh">$FF</span>
     <span class="k">rts</span>
+<span class="nl">fp:</span>
+    <span class="kp">.res</span> <span class="mi">2</span>
 <span class="nl">@read_maindb:</span>
-    <span class="n">bla</span>
+    <span class="c1">; bla</span>
 </code></pre></div>
 
 <div class="admonition warning">
@@ -1152,8 +1163,7 @@
 </div>
 <p>See XOPEN kernel primitive : <a href="../kernel/primitives/xopen">XOPEN</a></p>
 <h3 id="fread-macro">FREAD macro</h3>
-<p>https://github.com/assinie/orix-sdk/blob/master/macros/SDK_file.mac#L70</p>
-<div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span>
+<div class="highlight"><pre><span></span><code>    <span class="c1">;----------------------------------------------------------------------</span>
     <span class="c1">;</span>
     <span class="c1">; usage:</span>
     <span class="c1">;   fread ptr, size, count, fp</span>
@@ -1223,6 +1233,12 @@
     <span class="c1">;----------------------------------------------------------------------</span>
 </code></pre></div>
 
+<div class="highlight"><pre><span></span><code>    <span class="n">mkdir</span> <span class="n">myfolder</span>
+    <span class="k">rts</span>
+<span class="nl">myfolder:</span>
+    <span class="kp">.asciiz</span> <span class="s">&quot;here&quot;</span>
+</code></pre></div>
+
 <h3 id="chdir-macro">CHDIR macro</h3>
 <div class="highlight"><pre><span></span><code>    <span class="c1">;----------------------------------------------------------------------</span>
     <span class="c1">;</span>
@@ -1234,6 +1250,12 @@
     <span class="c1">;</span>
     <span class="c1">; Call XPUTCWD function</span>
     <span class="c1">;----------------------------------------------------------------------</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>    <span class="n">chdir</span> <span class="n">myfolder</span>
+    <span class="k">rts</span>
+<span class="nl">myfolder:</span>
+    <span class="kp">.asciiz</span> <span class="s">&quot;home&quot;</span>
 </code></pre></div>
 
 <h2 id="memory-operations">Memory operations</h2>
@@ -1265,6 +1287,10 @@
 <span class="c1">;</span>
 <span class="c1">; Call XFREE function</span>
 <span class="c1">;----------------------------------------------------------------------</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>    <span class="n">mfree</span> <span class="p">(</span><span class="n">mymalloc</span><span class="p">)</span> <span class="c1">; mymalloc is a 2 bytes zp ptr</span>
+    <span class="k">rts</span>
 </code></pre></div>
 
 <h2 id="strings-operation">Strings operation</h2>
@@ -1385,7 +1411,7 @@
         
         
       
-      <a href="https://www.youtube.com/user/jede06600" target="_blank" rel="noopener" title="www.youtube.com" class="md-footer-social__link">
+      <a href="https://www.youtube.com/user/jede06600/videos" target="_blank" rel="noopener" title="www.youtube.com" class="md-footer-social__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
       </a>
     

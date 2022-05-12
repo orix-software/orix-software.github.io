@@ -6,6 +6,12 @@ Each primitives are called with "brk" instruction with a value after it.
 
 We can pass args to AXY or others memory location and the primitive can be called.
 
-Orix SDK manages some kernel calls, and it's better to use macro set to call some primitives
+[Orixsdk](../home/orixsdk/) manages some kernel calls, and it's better to use macro set to call some primitives
 
-## Kernel doc for developpers
+## Useful links
+
+* Documented primitives  [Orixsdk](../kernel/primitives/)
+
+* Orixsdk (sdk for assembly) : [Orixsdk](../home/orixsdk/)
+
+* C programming : cc65 (telestrat target)

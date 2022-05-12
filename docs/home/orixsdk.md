@@ -23,9 +23,9 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 	;----------------------------------------------------------------------
 	;
 	; usage:
-	;	print #byte [,TELEMON|NOSAVE]
-	;	print (pointer) [,TELEMON|NOSAVE]
-	;	print address [,TELEMON|NOSAVE]
+	;	print #byte [,TELEMON|SAVE]
+	;	print (pointer) [,TELEMON|SAVE]
+	;	print address [,TELEMON|SAVE]
 	;
 	; Option:
 	;	- TELEMON: when used within TELEMON bank
@@ -36,9 +36,22 @@ you just need to load macro file in your code (and telestrat.inc from cc65):
 	;----------------------------------------------------------------------
 ```
 
-### Return a line
 
+```ca65
+  print helloworld_str
+  crlf ; Return line
+  rts
+helloworld_str:
+	.asciiz "Hello world!"
+```
+
+
+
+### Return a line in text mode
+
+```ca65
 crlf
+```
 
 ## Files operation
 
@@ -63,19 +76,21 @@ crlf
 ex :
 
 ```ca65
-    fopen (basic11_ptr2), O_RDONLY
+    fopen (basic11_ptr2), O_RDONLY,,fp ; open the filename located in ptr 'basic11_ptr2', in readonly and store the fp in fp address
     cpx     #$FF
     bne     @read_maindb ; not null then  start because we did not found a conf
     cmp     #$FF
     bne     @read_maindb ; not null then  start because we did not found a conf
     
-    PRINT   str_basic11_missing
-    BRK_KERNEL XCRLF
+    print   str_basic11_missing
+    crlf    ; Macro for return line
     lda     #$FF
     ldx     #$FF
     rts
+fp:
+    .res 2
 @read_maindb:
-    bla
+    ; bla
 
 ```
 
@@ -85,10 +100,9 @@ See XOPEN kernel primitive : [XOPEN](../kernel/primitives/xopen)
 
 ### FREAD macro
 
-https://github.com/assinie/orix-sdk/blob/master/macros/SDK_file.mac#L70
 
 ```ca65
-;----------------------------------------------------------------------
+    ;----------------------------------------------------------------------
 	;
 	; usage:
 	;	fread ptr, size, count, fp
@@ -166,6 +180,13 @@ next:
 	;----------------------------------------------------------------------
 ```
 
+```ca65
+    mkdir myfolder
+	rts
+myfolder:
+	.asciiz "here"
+```
+
 ### CHDIR macro
 
 ```ca65
@@ -179,6 +200,13 @@ next:
 	;
 	; Call XPUTCWD function
 	;----------------------------------------------------------------------
+```
+
+```ca65
+    chdir myfolder
+    rts
+myfolder:
+    .asciiz "home"
 ```
 
 ## Memory operations
@@ -217,6 +245,12 @@ next:
 ; Call XFREE function
 ;----------------------------------------------------------------------
 ```
+
+```ca65
+    mfree (mymalloc) ; mymalloc is a 2 bytes zp ptr
+    rts
+```
+
 
 ## Strings operation
 

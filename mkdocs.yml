@@ -35,6 +35,7 @@ theme:
 
 nav:
     - Home: index.md
+    - Getting started : menu.md
     - User guide :
         - Commands : commands/all.md
         - Floppy drive commands:
@@ -65,4 +66,7 @@ nav:
         - Boot sequence: how-it-work/binary_starts.md
     - Extra Libs :
         - Twilighte librairy : libs/twillib.md
-
+extra:
+    social:
+        - icon: fontawesome/brands/twitter 
+          link: https://twitter.com/OrixTwil

@@ -3,7 +3,7 @@
 ## Users
 
 <div class="grid cards" markdown>
--   :fontawesome-thin-code: Bla
+-   :fontawesome-regular-gear: Board configuration
 -   :fontawesome-thin-code: Bla
 -   :fontawesome-thin-code: Bla
 -   :fontawesome-regular-joystick: __Starting software__  

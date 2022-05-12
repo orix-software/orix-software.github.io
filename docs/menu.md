@@ -12,7 +12,7 @@
 ## Developers
 
 <div class="grid cards" markdown>
--   :fontawesome-solid-code: __Start code__
+-   :fontawesome-regular-face-laugh-wink: __Start code__
     ---
     __Start__
 </div>

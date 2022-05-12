@@ -2,17 +2,21 @@
 
 ## Users
 
-<div class="cards" markdown>
-- :fontawesome-brands-html5: __HTML__ for content and structure
--   :fontawesome-thin-joystick: __Starting software__  
-    --- 
+<div class="grid cards" markdown>
+-   :fontawesome-thin-code: Bla
+-   :fontawesome-thin-code: Bla
+-   :fontawesome-thin-code: Bla
+-   :fontawesome-regular-joystick: __Starting software__  
+
+    ---
+
     [Loader](home/loader/loader/) 
 </div>
 
 ## Developers
 
 <div class="grid cards" markdown>
--   :fontawesome-regular-face-laugh-wink: __Start code__
+-   :fontawesome-regular-code: __Start code__
     ---
     __Start__
 </div>

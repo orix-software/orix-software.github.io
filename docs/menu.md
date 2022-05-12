@@ -1,8 +1,8 @@
 
 <div class="grid cards" markdown>
 
-- :fontawesome-brands-html5: __Starting software__ Loader menu
-- :fontawesome-brands-js: __Orix Development__ Kernel
+- :fontawesome-fa-gaming: __Starting software__ Loader menu
+- :fontawesome-fagaming: __Orix Development__ Kernel
 
 </div>
 

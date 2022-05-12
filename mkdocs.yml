@@ -5,6 +5,11 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.superfences
     - pymdownx.snippets
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
     - admonition
     - pymdownx.details
     - pymdownx.superfences:
@@ -70,3 +75,5 @@ extra:
     social:
         - icon: fontawesome/brands/twitter 
           link: https://twitter.com/OrixTwil
+        - icon: fontawesome/brands/youtube
+          link: https://www.youtube.com/user/jede06600

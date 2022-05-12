@@ -41,7 +41,7 @@ nav:
             - Bootfd: user_manual/bootfd.md
         - Shell guide :
             - Basic 11 commands: how-it-work/index.md
-    - Software loader : home/loader/loader.md
+        - Software loader : home/loader/loader.md
     - Developper guide : 
         - Installation: home/index.md
         - Memory management : home/memory.md

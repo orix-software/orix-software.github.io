@@ -505,6 +505,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#install-in-a-project" class="md-nav__link">
+    Install in a project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#load-orix-sdk" class="md-nav__link">
     Load Orix SDK
   </a>
@@ -929,6 +936,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#install-in-a-project" class="md-nav__link">
+    Install in a project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#load-orix-sdk" class="md-nav__link">
     Load Orix SDK
   </a>
@@ -1088,10 +1102,17 @@
 <p>It provides macro to help assembly coding for Orix :</p>
 <p>https://github.com/assinie/orix-sdk/</p>
 <p>The main way to handle orix-sdk is to add it as gitmodules (for example in a "dependencies folder")</p>
+<h2 id="install-in-a-project">Install in a project</h2>
+<div class="highlight"><pre><span></span><code>mkdir myasmproject
+<span class="nb">cd</span>  myasm_project
+mkdir dependencies <span class="o">&amp;&amp;</span> <span class="nb">cd</span> dependencies
+git clone https://github.com/assinie/orix-sdk.git
+</code></pre></div>
+
 <h2 id="load-orix-sdk">Load Orix SDK</h2>
 <p>you just need to load macro file in your code (and telestrat.inc from cc65):</p>
 <div class="highlight"><pre><span></span><code><span class="kp">.include</span> <span class="s">&quot;telestrat.inc&quot;</span>
-<span class="kp">.include</span> <span class="s">&quot;macros/SDK.mac&quot;</span>
+<span class="kp">.include</span> <span class="s">&quot;dependencies/orix-sdk/macros/SDK.mac&quot;</span>
 </code></pre></div>
 
 <h2 id="display-operation">Display operation</h2>

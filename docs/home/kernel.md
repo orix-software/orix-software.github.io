@@ -10,8 +10,8 @@ We can pass args to AXY or others memory location and the primitive can be calle
 
 ## Useful links
 
-* Documented primitives  [Orixsdk](../kernel/primitives/)
+* Documented primitives  [Primitives](../../kernel/primitives/)
 
-* Orixsdk (sdk for assembly) : [Orixsdk](../home/orixsdk/)
+* Orixsdk (sdk for assembly) : [Orixsdk](../orixsdk/)
 
 * C programming : cc65 (telestrat target)

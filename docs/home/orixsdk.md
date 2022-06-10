@@ -91,7 +91,7 @@ ex :
     bne     @read_maindb ; not null then  start because we did not found a conf
     cmp     #$FF
     bne     @read_maindb ; not null then  start because we did not found a conf
-    
+
     print   str_basic11_missing
     crlf    ; Macro for return line
     lda     #$FF
@@ -218,6 +218,16 @@ myfolder:
 myfolder:
     .asciiz "home"
 ```
+
+### UNLINK macro
+
+```ca65
+    unlink myfile
+    rts
+myfile:
+    .asciiz "toto.txt"
+```
+
 
 ## Memory operations
 

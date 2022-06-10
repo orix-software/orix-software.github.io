@@ -2,8 +2,7 @@
 
 ## Orix Roms
 
-
-Kernel has XMALLOC and XFREE primitives to allocate memory dynamictly. But theses primitives only returns pointer from main memory.
+Kernel has [../../kernel/primitives/xmalloc/](XMALLOC) and [../../kernel/primitives/xfree/](XFREE) primitives to allocate memory dynamictly. XMALLOC primitives only returns pointer from main memory.
 
 Kernel can't instanciate extra memory from bank for instance.
 

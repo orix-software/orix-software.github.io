@@ -2,25 +2,27 @@
 
 ## Guideline
 
-In order to have commands available from shell, some rules must be set. Bank structure must be used, or commands won't be accessed from the kernel or commands (As help -b XX)
+* In order to have commands available from shell, some rules must be set in the bank structure ([https://github.com/orix-software/empty-rom/](https://github.com/orix-software/empty-rom/)). Bank structure must be used, or commands won't be accessed from the kernel or commands (As [help](/commands/help/) -b XX)
 
-There is the choice to build a ROM which will be in an eeprom slot or a RAM slot.
+* A ROM which will be in an ROM slot or a RAM slot. 
 
 Ram slot is useful if some values must be set internaly (and it avoid malloc use, but it's not the way a ROM should not done if the process can be launched twice at the same time).
 
-Almost all existing roms are in a eeprom slot (kernel, shell, monitor, forth ..). Systemd rom is the only rom loaded into RAM slot, because, systemd can not be started twice, and keep internal informations.
+Some existing roms are in a eeprom slot (kernel, shell, monitor, forth ..). Systemd rom is a rom loaded into RAM bank.
 
-C is possible for ROM, but the 16KB of a bank is quickly filled with code.
+* C language can be used for bank, but the 16KB of a bank is quickly filled with C code.
 
-orix-sdk must be intensively used, and if it can't used, kernel primitives must be used. If a universal feature is missing in kernel, it's better to insert into kernel than develop only for the ROM.
+* [orix-sdk](/home/orixsdk/) must be intensively used, and if it can't used, kernel primitives must be used. If a universal feature is missing in kernel, it's better to insert into kernel than develop only for the ROM.
 
-Each rom contains 1 or X commands.
+* Each rom contains 1 or X commands.
 
-In order to have multitasking in the future, commands must use malloc and free from kernel (and file operations)
+* In order to have multitasking in the future, commands must use malloc and free from kernel (and file operations)
 
-The limit is 16KB for a ROM for instance. But, it's maybe enough because many operations are done with kernel calls (fopen for example).
+* commands must use zero page from $80 to $80+26 because kernel saves 26 bytes from $80 to $80+26 in order to swap processes
 
-Kernel is always **available** when "set" banking is RAM or EEPROM, or are changed. Bank 7 (kernel is always available even when there is swapping between banks)
+*limit for a rom is 16KB. But, it's maybe enough because many operations are done with kernel calls (fopen for example).
+
+* Kernel is always **available** when "set" banking is RAM or EEPROM Bank 7 (kernel is always available even when there is swapping between twilighte banking register.
 
 ## Bank Structure
 

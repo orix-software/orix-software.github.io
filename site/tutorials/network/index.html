@@ -13,7 +13,7 @@
     
     
       
-        <title>Commands - Orix</title>
+        <title>Gestion ethernet beta (WIP) : nécessite une carte à insérer dans la twilighte board - Orix</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#gestion-ethernet-beta-wip-necessite-une-carte-a-inserer-dans-la-twilighte-board" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Commands
+              Gestion ethernet beta (WIP) : nécessite une carte à insérer dans la twilighte board
             
           </span>
         </div>
@@ -132,16 +137,14 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -155,7 +158,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../../commands/all/" class="md-tabs__link">
           User guide
         </a>
       
@@ -270,12 +273,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       User guide
@@ -293,18 +294,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../commands/all/" class="md-nav__link">
       Commands
     </a>
-    
   </li>
 
         
@@ -740,44 +734,74 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Commands</h1>
-                
-                <ul>
-<li><a href="../bank">bank</a></li>
-<li><a href="../basic11">basic11</a></li>
-<li><a href="../cat">cat</a></li>
-<li><a href="../cd">cd</a></li>
-<li><a href="../clear">clear</a></li>
-<li><a href="../date">date</a></li>
-<li><a href="../echo">echo</a></li>
-<li><a href="../env">env</a></li>
-<li><a href="../help">help</a></li>
-<li><a href="../ioports">ioports</a></li>
-<li><a href="../ls">ls</a></li>
-<li><a href="../lscpu">lscpu</a></li>
-<li><a href="../lsmem">lsmem</a></li>
-<li><a href="../man">man</a></li>
-<li><a href="../mkdir">mkdir</a></li>
-<li><a href="../mount">mount</a></li>
-<li><a href="../ps">ps</a></li>
-<li><a href="../reboot">reboot</a></li>
-<li><a href="../rm">rm</a></li>
-<li><a href="../setfont">setfont</a></li>
-<li><a href="../touch">touch</a></li>
-<li><a href="../twil">twil</a></li>
-<li><a href="../uname">uname</a></li>
-<li><a href="../viewhrs">viewhrs</a></li>
-<li><a href="../dsk-util">dsk-util</a></li>
-<li><a href="../hexdump">hexdump</a></li>
-<li><a href="../grep">grep</a></li>
-<li><a href="../gunzip">gunzip</a></li>
+                <h1 id="gestion-ethernet-beta-wip-necessite-une-carte-a-inserer-dans-la-twilighte-board">Gestion ethernet beta (WIP) : nécessite une carte à insérer dans la twilighte board</h1>
+<p>ATTENTION : c'est une version en cours de dev, il y a beaucoup de bugs.</p>
+<ul>
+<li>
+<p>Démarrer l'oric</p>
+</li>
+<li>
+<p>s'assurer que le cable réseau est branché sur la carte réseau et que le cable est bien sur un réseau disposant d'un dhcp</p>
+</li>
+<li>
+<p>Presser FUNCT+L (pour passer un bug) quitter (ESC) pui presser FUNCT+N et attendre le démarrage de la couche réseau.</p>
+</li>
 </ul>
+<p>3 [OK] en vert devrait apparaitre, si ce n'est pas le cas, se référer à l'erreur concernée (cable débranché, dhcp ...)</p>
+<ul>
+<li>Quand tout est vert, regarder l'ip récupérée au dhcp :</li>
+</ul>
+<p>/#ifcfg</p>
+<p>L'adresse IP est présente et la mac address de la carte est présente aussi.</p>
+<ul>
+<li>Vérifier les commandes qu'apporte ce démarrage réseau (banque network numéro 34)</li>
+</ul>
+<p>/#help -b34</p>
+<ul>
+<li>Vérifier le serveur DNS configuré</li>
+</ul>
+<p>/#resvctl</p>
+<ul>
+<li>Faire une résolution dns d'oric.org puis de www.google.com</li>
+</ul>
+<p>/#dig www.oric.org</p>
+<p>puis</p>
+<p>/#dig www.google.com</p>
+<ul>
+<li>Envoyer un message sur un serveur rsyslog</li>
+</ul>
+<p>=&gt; nécessite d'avoir un serveur rsyslog sur le réseau acceptant les messages en UDP (à configurer sur le serveur distant)</p>
+<p>/#nc -u 192.168.1.200 514 -s MONMSG</p>
+<ul>
+<li>Telecharger un fichier de 5 mo et l'écrire sur disque</li>
+</ul>
+<p>/# curl</p>
+<p>=&gt; attendre 3 Mins, le programme rend la main.</p>
+<p>/# ls -l </p>
+<p>un fichier index.htm de 5mo est présent</p>
+<p>/# v
+=&gt; fait appelle un serveur web, et récupère un index.hlp qui s'affiche à l'écran</p>
                 
               
               
@@ -792,41 +816,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../../menu/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Getting started
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../../user_manual/bootfd/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Bootfd
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

@@ -23,3 +23,6 @@
 * [uname](../uname)
 * [viewhrs](../viewhrs)
 * [dsk-util](../dsk-util)
+* [hexdump](../hexdump)
+* [grep](../grep)
+* [gunzip](../gunzip)

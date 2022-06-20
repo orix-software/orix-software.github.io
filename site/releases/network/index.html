@@ -13,7 +13,7 @@
     
     
       
-        <title>Commands - Orix</title>
+        <title>Carte réseau ethernet pour Oric - Orix</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#carte-reseau-ethernet-pour-oric" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Commands
+              Carte réseau ethernet pour Oric
             
           </span>
         </div>
@@ -132,16 +137,14 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -155,7 +158,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../../commands/all/" class="md-tabs__link">
           User guide
         </a>
       
@@ -270,12 +273,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       User guide
@@ -293,18 +294,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../commands/all/" class="md-nav__link">
       Commands
     </a>
-    
   </li>
 
         
@@ -740,44 +734,49 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Commands</h1>
-                
-                <ul>
-<li><a href="../bank">bank</a></li>
-<li><a href="../basic11">basic11</a></li>
-<li><a href="../cat">cat</a></li>
-<li><a href="../cd">cd</a></li>
-<li><a href="../clear">clear</a></li>
-<li><a href="../date">date</a></li>
-<li><a href="../echo">echo</a></li>
-<li><a href="../env">env</a></li>
-<li><a href="../help">help</a></li>
-<li><a href="../ioports">ioports</a></li>
-<li><a href="../ls">ls</a></li>
-<li><a href="../lscpu">lscpu</a></li>
-<li><a href="../lsmem">lsmem</a></li>
-<li><a href="../man">man</a></li>
-<li><a href="../mkdir">mkdir</a></li>
-<li><a href="../mount">mount</a></li>
-<li><a href="../ps">ps</a></li>
-<li><a href="../reboot">reboot</a></li>
-<li><a href="../rm">rm</a></li>
-<li><a href="../setfont">setfont</a></li>
-<li><a href="../touch">touch</a></li>
-<li><a href="../twil">twil</a></li>
-<li><a href="../uname">uname</a></li>
-<li><a href="../viewhrs">viewhrs</a></li>
-<li><a href="../dsk-util">dsk-util</a></li>
-<li><a href="../hexdump">hexdump</a></li>
-<li><a href="../grep">grep</a></li>
-<li><a href="../gunzip">gunzip</a></li>
+                <h1 id="carte-reseau-ethernet-pour-oric">Carte réseau ethernet pour Oric</h1>
+<ul>
+<li>vraie carte réseau ethernet avec gestion de la stack tcp/ip hardware</li>
+<li>vitesse 40KB/sec du réseau à la ram, et 23KB du réseau à la sdcard</li>
 </ul>
+<p>En cours de dev, mais voici les choses en cours et en partie fonctionnel pour certains:</p>
+<ul>
+<li>Gestion du dhcp</li>
+<li>check du cable</li>
+<li>ifconfig</li>
+<li>resvctl pour voir le dns server ou le setter</li>
+<li>netcnf pour une vue de tous les paramètres</li>
+<li>curl</li>
+<li>dig</li>
+<li>serveur telnetd</li>
+<li>netstat</li>
+<li>nc : permet l'envoi de log sur du loghost</li>
+<li>ip</li>
+<li>mini browser</li>
+<li>ping</li>
+</ul>
+<p>Api réseau possible à l'avenir pour ses propres programmes.</p>
                 
               
               
@@ -792,41 +791,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../../menu/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Getting started
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../../user_manual/bootfd/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Bootfd
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

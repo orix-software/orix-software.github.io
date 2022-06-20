@@ -2,8 +2,8 @@
 
 declare -a tab_command
 
-tab_command=("bank" "basic11" "cat" "cd" "clear" "date" "echo" "env" "help" "ioports" "ls" "lscpu" "lsmem" "man" "mkdir" "mount" "ps" "reboot" "rm" "setfont" "touch" "twil" "uname" "viewhrs")
-
+tab_command=("bank" "basic11" "bootfd" "cat"   "cd"    "cksum"   "clear" "date"   "dsk-util"       "echo"  "env"   "forth" "help" "hexdump"  "ioports"  "ls"    "lscpu" "lsmem" "man"   "mkdir" "mount" "orixcfg" "ps"     "reboot" "rm"    "setfont" "touch" "twil"  "uname" "untar" "vidplay" "viewscr" "viewhrs" )
+tab_repo=("shell"   "shell"   "bootfd"  "shell" "shell"  "cksum"        "shell" "shell"  "dsk-util" "shell" "shell" "forth" "shell" "hexdump" "shell"    "shell" "shell" "shell" "shell" "shell" "shell" "orixcfg" "shell"  "shell"  "shell" "shell"   "shell" "shell" "shell" "untar" "vidplay" "viewscr" "shell")
 
 
 COMMAND_LIST="bank basic11 cat cd clear date echo env help ioports ls lscpu lsmem man mkdir mount ps reboot rm setfont touch twil uname viewhrs"
@@ -16,14 +16,17 @@ mkdir docs/commands/ -p
 
 rm docs/commands/all.md
 
-for I in $COMMAND_LIST; do
+#for I in $COMMAND_LIST; do
+for i in ${!tab_command[@]}; do
+VAL=${tab_command[$i]}
 echo Get shell .md 
-wget https://raw.githubusercontent.com/orix-software/shell/master/docs/$I.md -O docs/commands/$I.md
-echo "* [$I](../$I)" >> docs/commands/all.md
+
+wget https://raw.githubusercontent.com/orix-software/${tab_repo[$i]}/master/docs/$VAL.md -O docs/commands/$VAL.md
+echo "* [$VAL](../$VAL)" >> docs/commands/all.md
 done 
 
-echo "* [dsk-util](../dsk-util)" >> docs/commands/all.md
-wget https://github.com/orix-software/dsk-util/raw/master/docs/dsk-util.md -O docs/commands/dsk-util.md
+#echo "* [dsk-util](../dsk-util)" >> docs/commands/all.md
+#wget https://github.com/orix-software/dsk-util/raw/master/docs/dsk-util.md -O docs/commands/dsk-util.md
 
 echo "* [hexdump](../hexdump)" >> docs/commands/all.md
 wget https://github.com/orix-software/hexdump/raw/master/docs/hexdump.md -O docs/commands/hexdump.md

@@ -2,8 +2,8 @@
 
 declare -a tab_command
 
-tab_command=("bank" "basic11" "bootfd" "cat"   "cd"    "cksum"   "clear" "date"   "dsk-util"       "echo"  "env"   "forth" "help" "hexdump"  "ioports"  "ls"    "lscpu" "lsmem" "man"   "mkdir" "mount" "orixcfg" "ps"     "reboot" "rm"    "setfont" "touch" "twil"  "uname" "untar" "vidplay" "viewscr" "viewhrs" )
-tab_repo=("shell"   "shell"   "bootfd"  "shell" "shell"  "cksum"        "shell" "shell"  "dsk-util" "shell" "shell" "forth" "shell" "hexdump" "shell"    "shell" "shell" "shell" "shell" "shell" "shell" "orixcfg" "shell"  "shell"  "shell" "shell"   "shell" "shell" "shell" "untar" "vidplay" "viewscr" "shell")
+tab_command=("bank" "basic11" "bootfd" "cat"   "cd"    "cksum"   "clear" "date"   "dsk-util"       "echo"  "env"   "forth" "help" "hexdump"  "ioports"  "ls"    "lscpu" "lsmem" "man"   "mkdir" "mount" "orixcfg" "ps"     "reboot" "rm"    "setfont" "sh" "touch" "twil"  "uname" "untar" "vidplay" "viewscr" "viewhrs" )
+tab_repo=("shell"   "shell"   "bootfd"  "shell" "shell"  "cksum"        "shell" "shell"  "dsk-util" "shell" "shell" "forth" "shell" "hexdump" "shell"    "shell" "shell" "shell" "shell" "shell" "shell" "orixcfg" "shell"  "shell"  "shell" "shell" "shell"  "shell" "shell" "shell" "untar" "vidplay" "viewscr" "shell")
 
 
 COMMAND_LIST="bank basic11 cat cd clear date echo env help ioports ls lscpu lsmem man mkdir mount ps reboot rm setfont touch twil uname viewhrs"
@@ -31,5 +31,14 @@ wget https://github.com/orix-software/grep/raw/master/docs/grep.md -O docs/comma
 
 echo full
 fi
+
+
+
+#touch pandoc/manual.md
+#cat 
+
+
+# sudo docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex manual.md -o manual.pdf
+
 
 mkdocs build && cp site/* . -r  && git add * && git commit -m update &&echo push &&  git push

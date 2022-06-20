@@ -2,7 +2,7 @@
 
 declare -a tab_command
 
-tab_command=("bank" "basic11" "bootfd" "cat"   "cd"    "cksum"   "clear" "date"   "dsk-util"       "echo"  "env"   "forth" "help" "hexdump"  "ioports"  "ls"    "lscpu" "lsmem" "man"   "mkdir" "mount" "orixcfg" "ps"     "reboot" "rm"    "setfont" "sh" "touch" "twil"  "uname" "untar" "vidplay" "viewscr" "viewhrs" )
+tab_command=("bank" "basic11" "bootfd" "cat"   "cd"    "cksum"   "clear" "otimer"   "dsk-util"       "echo"  "env"   "forth" "help" "hexdump"  "ioports"  "ls"    "lscpu" "lsmem" "man"   "mkdir" "mount" "orixcfg" "ps"     "reboot" "rm"    "setfont" "sh" "touch" "twil"  "uname" "untar" "vidplay" "viewscr" "viewhrs" )
 tab_repo=("shell"   "shell"   "bootfd"  "shell" "shell"  "cksum"        "shell" "shell"  "dsk-util" "shell" "shell" "forth" "shell" "hexdump" "shell"    "shell" "shell" "shell" "shell" "shell" "shell" "orixcfg" "shell"  "shell"  "shell" "shell" "shell"  "shell" "shell" "shell" "untar" "vidplay" "viewscr" "shell")
 
 

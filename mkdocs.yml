@@ -50,6 +50,8 @@ nav:
         - Shell guide :
             - Basic 11 commands: how-it-work/index.md
         - Software loader : home/loader/loader.md
+        - Updates :
+            - 2022.3: update/2022_3.md
     - Developper guide : 
         - Installation: home/index.md
         - Memory management : home/memory.md

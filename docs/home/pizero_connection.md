@@ -24,11 +24,11 @@ You need to execute in crontab a shell script. It flushs linux cache to disk. Th
 
 * insert a usb cable in the *second*  usb port (it's really important), and insert usb cable into the PC
 
-* Wait one minute, your Pc should detect a new storage device (it's the pi)
+* Wait one minute, your PC should detect a new storage device (it's the pi)
 
 * in the new device, copy all files you need for Orix (sdcard.tgz content for example)
 
-* with an editor file, edit on this new mass storage : /etc/pizero/wpa/wpa.cnf and insert the wifi network you use and the password
+* with an text editor, edit on this new mass storage : /etc/pizero/wpa/wpa.cnf and insert the wifi network you use and the password
 
 * unplug the zero pi and insert it in the usb twilighte board port
 

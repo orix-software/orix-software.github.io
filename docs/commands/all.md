@@ -10,6 +10,7 @@
 * [echo](../echo)
 * [env](../env)
 * [forth](../forth)
+* [grep](../grep)
 * [help](../help)
 * [hexdump](../hexdump)
 * [ioports](../ioports)
@@ -32,4 +33,3 @@
 * [vidplay](../vidplay)
 * [viewscr](../viewscr)
 * [viewhrs](../viewhrs)
-* [grep](../grep)

@@ -580,9 +580,38 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Cross development on real hardware
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
     <a href="./" class="md-nav__link md-nav__link--active">
       Cross development on real hardware
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-install" class="md-nav__link">
+    How to install
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -795,6 +824,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-install" class="md-nav__link">
+    How to install
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -812,6 +856,45 @@
 <p>For example : copy mycode /s/bin/</p>
 <p>/s/bin is pi zero folder, and you just need to type mycode at command line.</p>
 <p>You need to execute in crontab a shell script. It flushs linux cache to disk. The problem with gadget is that it keeps action in memory, and in facts, samba does not show you the binary because, it's not written on disk.</p>
+<h2 id="how-to-install">How to install</h2>
+<ul>
+<li>
+<p>Download img http://repo.orix.oric.org/orixpi.img.gz</p>
+</li>
+<li>
+<p>'gzip -d' it or use 7zip </p>
+</li>
+<li>
+<p>Download and install Win32 disk imager : https://sourceforge.net/projects/win32diskimager/</p>
+</li>
+<li>
+<p>insert a sdcard into your PC, and write the orixpi.img on the sdcard with Win32 disk imager</p>
+</li>
+<li>
+<p>remove sdcard from the pc and insert it to pizero when Win32 disk imager had finished</p>
+</li>
+<li>
+<p>insert a usb cable in the <em>second</em>  usb port (it's really important), and insert usb cable into the PC</p>
+</li>
+<li>
+<p>Wait one minute, your Pc should detect a new storage device (it's the pi)</p>
+</li>
+<li>
+<p>in the new device, copy all files you need for Orix (sdcard.tgz content for example)</p>
+</li>
+<li>
+<p>with an editor file, edit on this new mass storage : /etc/pizero/wpa/wpa.cnf and insert the wifi network you use and the password</p>
+</li>
+<li>
+<p>unplug the zero pi and insert it in the usb twilighte board port</p>
+</li>
+<li>
+<p>switch on the oric with the board and wait 1 minutes</p>
+</li>
+<li>
+<p>If everything is ok, you should see your files with "ls" and the pizero should be in your wifi network, you can now access to the network folder of pizero from your pc (with the right IP)</p>
+</li>
+</ul>
                 
               
               

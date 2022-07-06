@@ -57,6 +57,7 @@ nav:
         - Memory management : home/memory.md
         - Build an Orix rom : home/buildrom.md
         - Build standalone Rom : home/buildstandalonerom.md
+        - Generate a binary for sdcard/usb key: binaries/generateBinary.md
         - SDK for Assembly : home/orixsdk.md
         - Generate man pages : home/buildman.md
         - cc65 : home/cc65.md

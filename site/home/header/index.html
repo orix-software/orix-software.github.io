@@ -593,15 +593,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#orix-binary-v1-format-not-relocated" class="md-nav__link">
-    Orix binary v1 format (not relocated)
+  <a href="#orix-binary-v1-format-will-be-deprecated" class="md-nav__link">
+    Orix binary v1 format (Will be deprecated)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#orix-binary-v3-format-relocated-by-bitfield" class="md-nav__link">
-    Orix binary v3 format (relocated by bitfield)
+  <a href="#orix-binary-v2-format-relocated-bitfield-table" class="md-nav__link">
+    Orix binary v2 format (relocated : bitfield table)
   </a>
   
 </li>
@@ -859,15 +859,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#orix-binary-v1-format-not-relocated" class="md-nav__link">
-    Orix binary v1 format (not relocated)
+  <a href="#orix-binary-v1-format-will-be-deprecated" class="md-nav__link">
+    Orix binary v1 format (Will be deprecated)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#orix-binary-v3-format-relocated-by-bitfield" class="md-nav__link">
-    Orix binary v3 format (relocated by bitfield)
+  <a href="#orix-binary-v2-format-relocated-bitfield-table" class="md-nav__link">
+    Orix binary v2 format (relocated : bitfield table)
   </a>
   
 </li>
@@ -893,7 +893,7 @@
                 
                 
                 <h1 id="header">Header</h1>
-<h2 id="orix-binary-v1-format-not-relocated">Orix binary v1 format (not relocated)</h2>
+<h2 id="orix-binary-v1-format-will-be-deprecated">Orix binary v1 format (Will be deprecated)</h2>
 <p>Orix binary v1 is not a relocated format. The binary must be never under $800. In the future, a relocated binary format could be used</p>
 <p>You don't need to know this format except if you use others assembler than ca65 (or cc65 with C). Orix-sdk provide .cfg file to add header to your code in assembly</p>
 <div class="highlight"><pre><span></span><code>        <span class="kp">.byt</span> <span class="mh">$01</span><span class="p">,</span><span class="mh">$00</span>            <span class="c1">; non-C64 marker like o65 format</span>
@@ -921,10 +921,10 @@
 <span class="nl">EndOfMemory:</span>
 </code></pre></div>
 
-<h2 id="orix-binary-v3-format-relocated-by-bitfield">Orix binary v3 format (relocated by bitfield)</h2>
+<h2 id="orix-binary-v2-format-relocated-bitfield-table">Orix binary v2 format (relocated : bitfield table)</h2>
 <div class="highlight"><pre><span></span><code>        <span class="kp">.byt</span> <span class="mh">$01</span><span class="p">,</span><span class="mh">$00</span>            <span class="c1">; non-C64 marker like o65 format</span>
         <span class="kp">.byt</span> <span class="s">&quot;o&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="s">&quot;i&quot;</span>      <span class="c1">; &quot;ori&quot; MAGIC number :$6f, $36, $35 like o65 format</span>
-        <span class="kp">.byt</span> <span class="mh">$01</span>                <span class="c1">; version of this header (can not be relocated)</span>
+        <span class="kp">.byt</span> <span class="mh">$02</span>                <span class="c1">; version of this header</span>
 <span class="nl">cpu_mode:</span>
         <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; CPU see below for description</span>
 <span class="c1">;7</span>

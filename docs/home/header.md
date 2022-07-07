@@ -1,6 +1,6 @@
 # Header
 
-## Orix binary v1 format (not relocated)
+## Orix binary v1 format (Will be deprecated)
 
 Orix binary v1 is not a relocated format. The binary must be never under $800. In the future, a relocated binary format could be used
 
@@ -32,12 +32,12 @@ start_adress:
 EndOfMemory:
 ```
 
-## Orix binary v3 format (relocated by bitfield)
+## Orix binary v2 format (relocated : bitfield table)
 
 ``` ca65
         .byt $01,$00            ; non-C64 marker like o65 format
         .byt "o", "r", "i"      ; "ori" MAGIC number :$6f, $36, $35 like o65 format
-        .byt $01                ; version of this header (can not be relocated)
+        .byt $02                ; version of this header
 cpu_mode:
         .byt $00                ; CPU see below for description
 ;7

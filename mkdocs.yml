@@ -76,6 +76,8 @@ nav:
         - Boot sequence: how-it-work/binary_starts.md
     - Extra Libs :
         - Twilighte librairy : libs/twillib.md
+extra_css:
+    - stylesheets/extra.css
 extra:
     social:
         - icon: fontawesome/brands/twitter 

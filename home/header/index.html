@@ -593,15 +593,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#orix-binary-v1-format-will-be-deprecated" class="md-nav__link">
-    Orix binary v1 format (Will be deprecated)
+  <a href="#orix-binary-v2-format-relocated-bitfield-table" class="md-nav__link">
+    Orix binary v2 format (relocated : bitfield table)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#orix-binary-v2-format-relocated-bitfield-table" class="md-nav__link">
-    Orix binary v2 format (relocated : bitfield table)
+  <a href="#orix-binary-v1-format-will-be-deprecated" class="md-nav__link">
+    Orix binary v1 format (Will be deprecated)
   </a>
   
 </li>
@@ -859,15 +859,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#orix-binary-v1-format-will-be-deprecated" class="md-nav__link">
-    Orix binary v1 format (Will be deprecated)
+  <a href="#orix-binary-v2-format-relocated-bitfield-table" class="md-nav__link">
+    Orix binary v2 format (relocated : bitfield table)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#orix-binary-v2-format-relocated-bitfield-table" class="md-nav__link">
-    Orix binary v2 format (relocated : bitfield table)
+  <a href="#orix-binary-v1-format-will-be-deprecated" class="md-nav__link">
+    Orix binary v1 format (Will be deprecated)
   </a>
   
 </li>
@@ -893,6 +893,35 @@
                 
                 
                 <h1 id="header">Header</h1>
+<h2 id="orix-binary-v2-format-relocated-bitfield-table">Orix binary v2 format (relocated : bitfield table)</h2>
+<div class="highlight"><pre><span></span><code>  <span class="kp">.byt</span> <span class="mh">$01</span><span class="p">,</span><span class="mh">$00</span>            <span class="c1">; non-C64 marker like o65 format</span>
+  <span class="kp">.byt</span> <span class="s">&quot;o&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="s">&quot;i&quot;</span>      <span class="c1">; &quot;ori&quot; MAGIC number like o65 format</span>
+  <span class="kp">.byt</span> <span class="mh">$02</span>                <span class="c1">; version of this header</span>
+<span class="nl">cpu_mode:</span>
+  <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; CPU see below for description</span>
+<span class="c1">;7</span>
+  <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">SIZE_BITFIELD</span><span class="p">,</span><span class="o">&gt;</span><span class="n">SIZE_BITFIELD</span>    <span class="c1">; size of the bitfield map low</span>
+<span class="c1">;9</span>
+  <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+<span class="c1">;10</span>
+  <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+<span class="c1">;11</span>
+  <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
+<span class="c1">;12</span>
+  <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">OFFSET_BITFIELD</span><span class="p">,</span><span class="o">&gt;</span><span class="n">OFFSET_BITFIELD</span> <span class="c1">; offset of the bitfield</span>
+<span class="c1">;14</span>
+  <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">start_adress</span><span class="p">,</span><span class="o">&gt;</span><span class="n">start_adress</span>  <span class="c1">; loading adress</span>
+<span class="c1">;16</span>
+  <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">endofmemory</span><span class="p">,</span><span class="o">&gt;</span><span class="n">EndOfMemory</span>    <span class="c1">; end of loading adress</span>
+<span class="c1">; 18</span>
+  <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">start_adress</span><span class="p">,</span><span class="o">&gt;</span><span class="n">start_adress</span>  <span class="c1">; Execution adress</span>
+<span class="c1">; end of header</span>
+<span class="nl">start_adress:</span>
+  <span class="k">lda</span>  <span class="mh">$00</span>
+  <span class="k">rts</span>
+<span class="nl">EndOfMemory:</span>
+</code></pre></div>
+
 <h2 id="orix-binary-v1-format-will-be-deprecated">Orix binary v1 format (Will be deprecated)</h2>
 <p>Orix binary v1 is not a relocated format. The binary must be never under $800. Relocation format (Format 2 see below) is now provided in kernel v2022.4</p>
 <p>You don't need to know this format except if you use others assembler than ca65 (or cc65 with C). Orix-sdk provide .cfg file to add header to your code in assembly</p>
@@ -917,37 +946,6 @@
   <span class="k">lda</span> <span class="p">#</span><span class="mh">$41</span>
   <span class="k">sta</span> <span class="mh">$bb80</span>
   <span class="k">rts</span>
-<span class="nl">EndOfMemory:</span>
-</code></pre></div>
-
-<h2 id="orix-binary-v2-format-relocated-bitfield-table">Orix binary v2 format (relocated : bitfield table)</h2>
-<div class="highlight"><pre><span></span><code>        <span class="kp">.byt</span> <span class="mh">$01</span><span class="p">,</span><span class="mh">$00</span>            <span class="c1">; non-C64 marker like o65 format</span>
-        <span class="kp">.byt</span> <span class="s">&quot;o&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="s">&quot;i&quot;</span>      <span class="c1">; &quot;ori&quot; MAGIC number :$6f, $36, $35 like o65 format</span>
-        <span class="kp">.byt</span> <span class="mh">$02</span>                <span class="c1">; version of this header</span>
-<span class="nl">cpu_mode:</span>
-        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; CPU see below for description</span>
-<span class="c1">;7</span>
-        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; size of the bitfield map low</span>
-        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; size of the bitfield map high</span>
-<span class="c1">;9</span>
-        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
-<span class="c1">;10</span>
-        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
-<span class="c1">;11</span>
-        <span class="kp">.byt</span> <span class="mh">$00</span>                <span class="c1">; reserved</span>
-<span class="c1">;12</span>
-        <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">Offset_of_the_bitfield_map_in_the_file_low</span><span class="p">,</span><span class="o">&gt;</span><span class="n">Offset_of_the_bitfield_map_in_the_file_low</span>  <span class="c1">; offset of the bitfield</span>
-<span class="c1">;14</span>
-        <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">start_adress</span><span class="p">,</span><span class="o">&gt;</span><span class="n">start_adress</span>  <span class="c1">; loading adress</span>
-<span class="c1">;16</span>
-        <span class="kp">.byt</span> <span class="o">&lt;</span><span class="n">endofmemory</span><span class="p">,</span><span class="o">&gt;</span><span class="n">EndOfMemory</span>    <span class="c1">; end of loading adress</span>
-<span class="c1">; 18</span>
-        <span class="kp">.byte</span> <span class="o">&lt;</span><span class="n">start_adress</span><span class="p">,</span><span class="o">&gt;</span><span class="n">start_adress</span> <span class="c1">; Execution adress</span>
-<span class="c1">; end of header</span>
-<span class="nl">start_adress:</span>
-        <span class="k">lda</span>  <span class="mh">$00</span>
-        <span class="k">rts</span>
-
 <span class="nl">EndOfMemory:</span>
 </code></pre></div>
 

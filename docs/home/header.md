@@ -2,7 +2,7 @@
 
 ## Orix binary v1 format (Will be deprecated)
 
-Orix binary v1 is not a relocated format. The binary must be never under $800. In the future, a relocated binary format could be used
+Orix binary v1 is not a relocated format. The binary must be never under $800. Relocation format (Format 2 see below) is now provided in kernel v2022.4
 
 You don't need to know this format except if you use others assembler than ca65 (or cc65 with C). Orix-sdk provide .cfg file to add header to your code in assembly
 
@@ -24,7 +24,6 @@ cpu_mode:
         .byt <start_adress,>start_adress ; starting adress
 
 start_adress:
- 
   *=$1000
   lda #$41
   sta $bb80
@@ -41,25 +40,22 @@ EndOfMemory:
 cpu_mode:
         .byt $00                ; CPU see below for description
 ;7
-        .byt $00                ; size of the bitfield map low 
+        .byt $00                ; size of the bitfield map low
         .byt $00                ; size of the bitfield map high
-;9        
+;9
         .byt $00                ; reserved
-;10        
+;10
         .byt $00                ; reserved
-;11        
+;11
         .byt $00                ; reserved
-;12        
-        .byt $00                ; reserved
-;13        
-        .byt $00                ; reserved
-;14        
-        .byt <start_adress,>start_adress ; loading adress
-;16        
-        .byt <endofmemory,>EndOfMemory   ; end of loading adress
-; 18        
-        .byt $00                ; Offset of the bitfield map in the file low 
-        .byt $00                ; Offset of the bitfield map in the file high 
+;12
+        .byt <Offset_of_the_bitfield_map_in_the_file_low,>Offset_of_the_bitfield_map_in_the_file_low  ; offset of the bitfield
+;14
+        .byt <start_adress,>start_adress  ; loading adress
+;16
+        .byt <endofmemory,>EndOfMemory    ; end of loading adress
+; 18
+        .byte <start_adress,>start_adress ; Execution adress
 ; end of header
 start_adress:
         lda  $00

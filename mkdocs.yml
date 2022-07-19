@@ -53,7 +53,7 @@ nav:
         - Updates :
             - 2022.3: update/2022_3.md
     - Developper guide : 
-        - Installation: home/index.md
+        - Install: home/index.md
         - Memory management : home/memory.md
         - Build an Orix rom : home/buildrom.md
         - Build standalone Rom : home/buildstandalonerom.md
@@ -66,6 +66,7 @@ nav:
         - Cross development on real hardware : home/pizero_connection.md
         - Oricutron VS real hardware : home/oricutronvsreal.md
     - Hardware guide :
+        - Memory: hardware/memory.md
         - I/O : hardware/i_o.md
         - Firmware informations : home/firmware.md
         - Joysticks: hardware/joysticks.md

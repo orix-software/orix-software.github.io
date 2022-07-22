@@ -9,13 +9,21 @@ Return argc and argv or a ptr with a content of the command line
 ## Input
 
 A => mode
+
 mode 0 : return a struct of args
+
 mode 1 : return the string of the command line (ptr)
 
 ## Output
 
-A & Y :contains ptr to XMAINARGS Struct
-X: number of args
+Mode 0 :
+
+* A & Y :contains ptr to XMAINARGS Struct
+* X: number of args
+
+Mode 1 :
+
+* A & Y : a ptr to a new malloc which contains commandline
 
 ## Usage
 

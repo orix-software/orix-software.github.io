@@ -860,12 +860,19 @@
 <h2 id="description">Description</h2>
 <p>Return argc and argv or a ptr with a content of the command line</p>
 <h2 id="input">Input</h2>
-<p>A =&gt; mode
-mode 0 : return a struct of args
-mode 1 : return the string of the command line (ptr)</p>
+<p>A =&gt; mode</p>
+<p>mode 0 : return a struct of args</p>
+<p>mode 1 : return the string of the command line (ptr)</p>
 <h2 id="output">Output</h2>
-<p>A &amp; Y :contains ptr to XMAINARGS Struct
-X: number of args</p>
+<p>Mode 0 :</p>
+<ul>
+<li>A &amp; Y :contains ptr to XMAINARGS Struct</li>
+<li>X: number of args</li>
+</ul>
+<p>Mode 1 :</p>
+<ul>
+<li>A &amp; Y : a ptr to a new malloc which contains commandline</li>
+</ul>
 <h2 id="usage">Usage</h2>
 <p>Mode 0 : parse command line and build argc/argv</p>
 <div class="highlight"><pre><span></span><code><span class="n">XMAINARGS</span> <span class="o">=</span> <span class="mh">$2C</span>

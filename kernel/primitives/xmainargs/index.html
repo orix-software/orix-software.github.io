@@ -860,13 +860,15 @@
 <h2 id="description">Description</h2>
 <p>Return argc and argv</p>
 <h2 id="input">Input</h2>
-<p>Nothing</p>
+<p>A =&gt; mode
+For instance only mode 0 is avaiblable</p>
 <h2 id="output">Output</h2>
 <p>A &amp; Y contains ptr to XMAINARGS Struct
 X: number of args</p>
 <h2 id="usage">Usage</h2>
 <div class="highlight"><pre><span></span><code><span class="n">XMAINARGS</span> <span class="o">=</span> <span class="mh">$2C</span>
 
+<span class="k">lda</span>     <span class="p">#</span><span class="mh">$00</span> <span class="c1">; Mode 0</span>
 <span class="n">brk_kernel</span> <span class="n">XMAINARGS</span>
 
 <span class="k">stx</span> <span class="n">save_argc</span>

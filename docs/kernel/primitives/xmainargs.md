@@ -8,7 +8,8 @@ Return argc and argv
 
 ## Input
 
-Nothing
+A => mode
+For instance only mode 0 is avaiblable
 
 ## Output
 
@@ -20,6 +21,7 @@ X: number of args
 ``` ca65
 XMAINARGS = $2C
 
+lda		#$00 ; Mode 0
 brk_kernel XMAINARGS
 
 stx save_argc

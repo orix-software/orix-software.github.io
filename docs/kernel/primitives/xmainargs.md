@@ -4,19 +4,22 @@ ID primitive : $2C
 
 ## Description
 
-Return argc and argv
+Return argc and argv or a ptr with a content of the command line
 
 ## Input
 
 A => mode
-For instance only mode 0 is avaiblable
+mode 0 : return a struct of args
+mode 1 : return the string of the command line (ptr)
 
 ## Output
 
-A & Y contains ptr to XMAINARGS Struct
+A & Y :contains ptr to XMAINARGS Struct
 X: number of args
 
 ## Usage
+
+Mode 0 : parse command line and build argc/argv
 
 ``` ca65
 XMAINARGS = $2C
@@ -27,6 +30,18 @@ brk_kernel XMAINARGS
 stx save_argc
 sta save_argv
 sty save_argv+1
+```
+
+Mode 1 : return command line
+
+``` ca65
+XMAINARGS = $2C
+
+lda		#$01 ; Mode 0
+brk_kernel XMAINARGS
+
+sta ptr_cmd
+sty ptr_cmd+1 ; ptr_cmd contains the ptr to the command line. It allocates a string, it needs to be free when the program does not need it anymore
 ```
 
 !!! warning "XMAINARGS allocates a chunk in memory, it must be free at the end of the use of the parameters"

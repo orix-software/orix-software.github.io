@@ -3,11 +3,14 @@
 ![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm"
 height="12.749cm"}
 
-v2022.1
+v2022.4
 
-(rev 01/01/2022)
+(rev 20/07/2022)
 
-EXTRA DOCUMENTATION
+\newpage
+
+## EXTRA DOCUMENTATION
+
 ===================
 
 Rom loader and firmware twilighte board menu
@@ -18,7 +21,7 @@ https://raw.githubusercontent.com/orix-software/systemd/master/doc/pdf/systemd.p
 []{#anchor}INTRODUCTION
 =======================
 
-[]{#anchor-1}What is new (v2022.1) ? 
+[]{#anchor-1}What is new (v2022.3) ? 
 -------------------------------------
 
 []{#anchor-2}Firmware menu (Systemd Rom)
@@ -30,7 +33,7 @@ https://raw.githubusercontent.com/orix-software/systemd/master/doc/pdf/systemd.p
 --------------------------------------
 
 -   Launched atmos tape file included osid, and some demo running on
-    microdisc only (Ripped)
+</p>    microdisc only (Ripped)
 
 []{#anchor-4}General informations
 ---------------------------------
@@ -170,11 +173,11 @@ folder.
 Now, you can insert the device (sdcard or usbkey -- or pi zero) in the
 twilighte board and play.
 
-[]{#anchor-13}Upgrade from v2021.4 to v2022.1
+[]{#anchor-13}Upgrade from v2022.1 to v2022.3
 ---------------------------------------------
 
-If your card is below v2021.4 version, please go to annexes part at the
-end of this document, before you try to upgrade to v2022.1
+If your orix version is below v2022.1 version, please go to annexes part at the
+end of this document, before you try to upgrade to v2022.3
 
 -   Download
     <http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz>
@@ -186,19 +189,20 @@ end of this document, before you try to upgrade to v2022.1
     /\#cd usr\
     /usr\#cd share\
     /*usr/share\#cd carts\
-    /usr/share/carts\#cd 2022.1*
+    /usr/share/carts\#cd 2022.3*
 
     If you want to usr usb drive for default device :
 
-    */usr/share/carts/2022.1\#orixcfg -r -s 4 kernelus.r64*
+    */usr/share/carts/2022.3\#orixcfg -r -s 4 kernelus.r64*
 
     If you want to use sdcard for default device :
 
-    /usr/share/carts/2022.1\#orixcfg -r -s 4 kernelsd.r64
+    /usr/share/carts/2022.3\#orixcfg -r -s 4 kernelsd.r64
 
 -   press 'y', and **wait until Orix reboots **
 
     (Don't switch off the Oric at this step)
+
 
 []{#anchor-14}Optionnal step for upgrade
 ----------------------------------------
@@ -601,56 +605,210 @@ in forth for example :
 if you type « cd forth» in forth environnement, all files actions will
 be perform in « /*home/*forth »
 
+\newpage
+
+[]{#anchor-53}HELP
+=====================
+
+
+# help
+
+## Introduction
+
+Display commands
+
+## SYNOPSYS
+
++ help
+
+## DESCRIPTION
+
+- No parameter : Displays all internals shell command
+- bX parameter : Displays all internals commands in bank X
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/help.asm
+\newpage
+
 []{#anchor-54}HEXDUMP
+======================
+# Command: hexdump
+
+### hexdump utility
+
+## SYNOPSYS
++ hexdump file
+
+## EXAMPLES
++ hexdump /bin/hexdump
+
+## DESCRIPTION
+Display file contents in hexadecimal.
+You can use [SPACE] to pause the display ou [CTRL]+C to abort.
+
+## SOURCE
+https://github.com/orix-software/hexdump
+
+![](.//Pictures/1000020100000280000001D2140A361B5ADFEDE0.png){width="7.685cm" height="5.595cm"}
+\newpage
+
+[]{#anchor-55}IOPORTS
 =====================
-
-[]{#anchor-55}Introduction
---------------------------
-
-![](.//Pictures/1000020100000280000001D2140A361B5ADFEDE0.png){width="7.685cm"
-height="5.595cm"}Can dump in hexadecimal and ascii the content of a
-file. Ctrl+c and space are working
-
-[]{#anchor-56}IOPORTS
-=====================
-
-[]{#anchor-57}Introduction
---------------------------
 
 Displays I/O address of the board
 
-[]{#anchor-58}LS
-================
+# ioports
 
-[]{#anchor-59}Introduction
---------------------------
+## Introduction
 
-« ls » list all the file in the current folder. Token are supported
-(\*,?) ex : « ls ?e.tap » will list all files with a 'e ' in the second
-letter
+Display I/O Ports
 
-[]{#anchor-60}list all the files in the current folder
-------------------------------------------------------
+## SYNOPSYS
 
-/\#ls
++ #ioports
 
-[]{#anchor-61}List all \*.tap files
------------------------------------
+## DESCRIPTION
 
-/\#ls \*.tap
+Displays I/O ports.
 
-[]{#anchor-62}List size and datetime of the file
-------------------------------------------------
+## SOURCE
 
-/\#ls -l
+https://github.com/orix-software/shell/blob/master/src/commands/ioports.asm
+\newpage
+
+\# ls
+
+### Display catalog
+
+## SYNOPSYS
+
++ ls
++ ls *.tap
++ ls -l
+
+## DESCRIPTION
+
+Directories are in ^FBLUE^G color. It  manages '-l' and Pattern works in different ways : ls *.tap
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/ls.asm
+\newpage
 
 []{#anchor-63}LSCPU
-===================
+=====================
 
-[]{#anchor-64}Introduction
---------------------------
 
-Displays cpu info. It detects : 6502, 65c02 and 65816
+# lscpu
+
+## Introduction
+
+Displays cpu info
+
+## SYNOPSYS
+
++ #lscpu
+
+## DESCRIPTION
+
+Displays cpu info
+
+## EXAMPLES
+
++ lscpu
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/lscpu.asm
+\newpage
+
+[]{#anchor-63}LSMEM
+=====================
+
+
+# lsmem
+
+## Introduction
+
+ Displays malloc table
+
+## SYNOPSYS
+
++ #lsmem
+
+## DESCRIPTION
+
+Displays malloc table. Free chunks and busy chuncks are displayed with ranges.
+
+## EXAMPLES
+
++ lsmem
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/lsmem.asm
+\newpage
+
+[]{#anchor-63}MAN
+=====================
+
+
+# man
+
+## Introduction
+
+display manual pages
+
+## SYNOPSYS
+
++ # man lsmem
+
+## DESCRIPTION
+
+Displays manual. All .hlp files are located in /usr/share/man/. It manages multiples text screen (if .hlp is bigger than a screen when space is pressed, it switch to next page).
+
+## Keys
+
+* SPACE to switch to next page
+
+* ESC to exit
+
+## EXAMPLES
+
++ man ls
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/man.asm
+\newpage
+
+[]{#anchor-63}MKDIR
+=====================
+
+
+# mkdir
+
+## Introduction
+
+Create a folder
+
+## SYNOPSYS
+
++ /#mkdir PATH
+
+## DESCRIPTION
+
+Create a folder. -p (recursive mode) option is not available
+
+## EXAMPLES
+
++ mkdir /opt
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/mkdir.asm
+
 
 []{#anchor-65}MONITOR
 =====================
@@ -1091,6 +1249,37 @@ box and program the firmware with Jtag port)
 
 []{#anchor-121}Upgrade from older version
 -----------------------------------------
+
+
+Upgrade from v2021.4 to v2022.1
+---------------------------------------------
+
+If your card is below v2021.4 version, please go to annexes part at the
+end of this document, before you try to upgrade to v2022.1
+
+-   Download
+    <http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz>
+-   untar/gunzip sdcard.tgz (use 7zip under windows) on your device usb
+    or sdcard : It could require some time to copy because there is a
+    lot of small files (tap, hlp etc)
+-   you can start orix on real machine, and type :
+
+    /\#cd usr\
+    /usr\#cd share\
+    /*usr/share\#cd carts\
+    /usr/share/carts\#cd 2022.1*
+
+    If you want to usr usb drive for default device :
+
+    */usr/share/carts/2022.1\#orixcfg -r -s 4 kernelus.r64*
+
+    If you want to use sdcard for default device :
+
+    /usr/share/carts/2022.1\#orixcfg -r -s 4 kernelsd.r64
+
+-   press 'y', and **wait until Orix reboots **
+
+    (Don't switch off the Oric at this step)
 
 Upgrade from v2021.3 to v2021.4
 -------------------------------

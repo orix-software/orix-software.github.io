@@ -1,11 +1,11 @@
-# Orix/Twilighte Manual
+---
+title: Orix/Twilighte Manual
+author: v2022.4
+date: (rev 20/07/2022)
+---
 
-![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm"
-height="12.749cm"}
+![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm" height="12.749cm"}
 
-v2022.4
-
-(rev 20/07/2022)
 
 \newpage
 
@@ -24,16 +24,7 @@ https://raw.githubusercontent.com/orix-software/systemd/master/doc/pdf/systemd.p
 []{#anchor-1}What is new (v2022.3) ? 
 -------------------------------------
 
-[]{#anchor-2}Firmware menu (Systemd Rom)
-----------------------------------------
-
--   Displays ROM
-
-[]{#anchor-3}Loader Menu (Systemd Rom)
---------------------------------------
-
--   Launched atmos tape file included osid, and some demo running on
-</p>    microdisc only (Ripped)
+FIXME
 
 []{#anchor-4}General informations
 ---------------------------------
@@ -223,6 +214,7 @@ You can access to available command from many ways :
 -   From banks : type « help -b5 » you will see available commands
 
 
+\newpage
 
 []{#anchor-16}BANK
 ==================
@@ -263,6 +255,8 @@ Bank 1 to 32 is eeprom bank and bank 33 to 64 are ram bank
 If you need to load a rom into a bank, you need to have a look to
 orixcfg binary.
 
+\newpage
+
 []{#anchor-22}SHELL
 ===================
 
@@ -284,9 +278,9 @@ won't be able to type the complete command line
 []{#anchor-25}Known bugs
 ------------------------
 
-1)  If you return to a line when your command line is bigger than 40
-    columns, if you try to del a chars at the previous line, you can't.
-2)  « ./ » can not be used to launch a binary
+*  « ./ » can not be used to launch a binary
+
+\newpage
 
 []{#anchor-26}BASIC11
 =====================
@@ -507,6 +501,8 @@ You need to download software.tgz in the official repo for :
 « added to the archive » means that you need to download softwares.tgz
 from the repo after the displayed date to get it in the archive
 
+\newpage
+
 []{#anchor-41}BOOTFD
 ====================
 
@@ -527,6 +523,8 @@ have firmware 2, all sedoric .dsk should start.
 
 For instance, only Space99 does not work, it stops after intro.
 
+\newpage
+
 []{#anchor-43}CKSUM
 ===================
 
@@ -534,6 +532,8 @@ For instance, only Space99 does not work, it stops after intro.
 -----------------------------------------------------------------------------------------------------------------
 
 Cksum is a tool to compute a checksum of a file and displays its size.
+
+\newpage
 
 []{#anchor-45}DF
 ================
@@ -545,6 +545,8 @@ It displays available blocks on current device
 
 ![](.//Pictures/1000000000000283000001D12D928D88479E7F83.png){width="17cm"
 height="12.293cm"}
+
+\newpage
 
 []{#anchor-47}DSK-UTIL
 ======================
@@ -578,6 +580,8 @@ look to «/usr/share/sedoric/ » and for ftdos : « */usr/share/ftdos »*
 
 /home/sedoric\# dsk-util -s e sed.dsk \*.hrs
 
+\newpage
+
 []{#anchor-52}FORTH
 ===================
 
@@ -604,4 +608,3 @@ in forth for example :
 
 if you type « cd forth» in forth environnement, all files actions will
 be perform in « /*home/*forth »
-

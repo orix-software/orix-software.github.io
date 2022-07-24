@@ -1,11 +1,11 @@
-# Orix/Twilighte Manual
+---
+title: Orix/Twilighte Manual
+author: v2022.4
+date: (rev 20/07/2022)
+---
 
-![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm"
-height="12.749cm"}
+![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm" height="12.749cm"}
 
-v2022.4
-
-(rev 20/07/2022)
 
 \newpage
 
@@ -24,16 +24,7 @@ https://raw.githubusercontent.com/orix-software/systemd/master/doc/pdf/systemd.p
 []{#anchor-1}What is new (v2022.3) ? 
 -------------------------------------
 
-[]{#anchor-2}Firmware menu (Systemd Rom)
-----------------------------------------
-
--   Displays ROM
-
-[]{#anchor-3}Loader Menu (Systemd Rom)
---------------------------------------
-
--   Launched atmos tape file included osid, and some demo running on
-</p>    microdisc only (Ripped)
+FIXME
 
 []{#anchor-4}General informations
 ---------------------------------
@@ -223,6 +214,7 @@ You can access to available command from many ways :
 -   From banks : type « help -b5 » you will see available commands
 
 
+\newpage
 
 []{#anchor-16}BANK
 ==================
@@ -263,6 +255,8 @@ Bank 1 to 32 is eeprom bank and bank 33 to 64 are ram bank
 If you need to load a rom into a bank, you need to have a look to
 orixcfg binary.
 
+\newpage
+
 []{#anchor-22}SHELL
 ===================
 
@@ -284,9 +278,9 @@ won't be able to type the complete command line
 []{#anchor-25}Known bugs
 ------------------------
 
-1)  If you return to a line when your command line is bigger than 40
-    columns, if you try to del a chars at the previous line, you can't.
-2)  « ./ » can not be used to launch a binary
+*  « ./ » can not be used to launch a binary
+
+\newpage
 
 []{#anchor-26}BASIC11
 =====================
@@ -507,6 +501,8 @@ You need to download software.tgz in the official repo for :
 « added to the archive » means that you need to download softwares.tgz
 from the repo after the displayed date to get it in the archive
 
+\newpage
+
 []{#anchor-41}BOOTFD
 ====================
 
@@ -527,6 +523,8 @@ have firmware 2, all sedoric .dsk should start.
 
 For instance, only Space99 does not work, it stops after intro.
 
+\newpage
+
 []{#anchor-43}CKSUM
 ===================
 
@@ -534,6 +532,8 @@ For instance, only Space99 does not work, it stops after intro.
 -----------------------------------------------------------------------------------------------------------------
 
 Cksum is a tool to compute a checksum of a file and displays its size.
+
+\newpage
 
 []{#anchor-45}DF
 ================
@@ -545,6 +545,8 @@ It displays available blocks on current device
 
 ![](.//Pictures/1000000000000283000001D12D928D88479E7F83.png){width="17cm"
 height="12.293cm"}
+
+\newpage
 
 []{#anchor-47}DSK-UTIL
 ======================
@@ -578,6 +580,8 @@ look to «/usr/share/sedoric/ » and for ftdos : « */usr/share/ftdos »*
 
 /home/sedoric\# dsk-util -s e sed.dsk \*.hrs
 
+\newpage
+
 []{#anchor-52}FORTH
 ===================
 
@@ -604,10 +608,9 @@ in forth for example :
 
 if you type « cd forth» in forth environnement, all files actions will
 be perform in « /*home/*forth »
-
 \newpage
 
-[]{#anchor-53}HELP
+[]{#anchor-53}Help
 =====================
 
 
@@ -631,7 +634,7 @@ Display commands
 https://github.com/orix-software/shell/blob/master/src/commands/help.asm
 \newpage
 
-[]{#anchor-54}HEXDUMP
+[]{#anchor-54}Hexdump
 ======================
 # Command: hexdump
 
@@ -653,7 +656,7 @@ https://github.com/orix-software/hexdump
 ![](.//Pictures/1000020100000280000001D2140A361B5ADFEDE0.png){width="7.685cm" height="5.595cm"}
 \newpage
 
-[]{#anchor-55}IOPORTS
+[]{#anchor-55}Ioports
 =====================
 
 Displays I/O address of the board
@@ -677,7 +680,11 @@ Displays I/O ports.
 https://github.com/orix-software/shell/blob/master/src/commands/ioports.asm
 \newpage
 
-\# ls
+[]{#anchor-56}Ls
+=====================
+
+
+# ls
 
 ### Display catalog
 
@@ -696,7 +703,7 @@ Directories are in ^FBLUE^G color. It  manages '-l' and Pattern works in differe
 https://github.com/orix-software/shell/blob/master/src/commands/ls.asm
 \newpage
 
-[]{#anchor-63}LSCPU
+[]{#anchor-63}Lscpu
 =====================
 
 
@@ -723,7 +730,7 @@ Displays cpu info
 https://github.com/orix-software/shell/blob/master/src/commands/lscpu.asm
 \newpage
 
-[]{#anchor-63}LSMEM
+[]{#anchor-63}Lsmem
 =====================
 
 
@@ -750,7 +757,7 @@ Displays malloc table. Free chunks and busy chuncks are displayed with ranges.
 https://github.com/orix-software/shell/blob/master/src/commands/lsmem.asm
 \newpage
 
-[]{#anchor-63}MAN
+[]{#anchor-63}Man
 =====================
 
 
@@ -783,7 +790,7 @@ Displays manual. All .hlp files are located in /usr/share/man/. It manages multi
 https://github.com/orix-software/shell/blob/master/src/commands/man.asm
 \newpage
 
-[]{#anchor-63}MKDIR
+[]{#anchor-63}Mkdir
 =====================
 
 
@@ -808,7 +815,7 @@ Create a folder. -p (recursive mode) option is not available
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/mkdir.asm
-
+\newpage
 
 []{#anchor-65}MONITOR
 =====================
@@ -1003,7 +1010,6 @@ path=/usr/share/rom/my2.rom
 Twil command can displays the current firmware of twilighte card, and
 can swap root folder to usbkey or sdcard.
 
-Twil command can also swap bank 4, 3, 2 and to eeprom set or ram set.
 
 []{#anchor-87}Displays Twilighte board firmware
 -----------------------------------------------
@@ -1019,26 +1025,36 @@ Twil command can also swap bank 4, 3, 2 and to eeprom set or ram set.
 --------------------------------------------------
 
 /\#twil -u
+\newpage
 
-[]{#anchor-90}PI ZERO connection for DRAG AND DROP
-==================================================
+[]{#anchor-91}Untar
+=====================
 
-[]{#anchor-91}Drag and drop or file copy to the pi zero
--------------------------------------------------------
 
-If you have a pi zero, you can use it to simulate a usb key with wifi
-connectivity for drag and drop.
+# Command: untar
 
-You need to follow this documentation :
-<http://orix.oric.org/drag-and-drop-files-from-pc-to-the-card/>
+### untar utility
 
-Please note that you must connect pi to usb twilighte port on his usb
-port (not the psu port). Also note that pi consumes power and if you use
-a psu lower than 2 A, you should have some hardware errors
+## SYNOPSYS
++ untar -t[v]f tarfile
++ untar -x[v]f tarfile
 
-![](.//Pictures/10000201000004E0000003605B6721EC7F221E18.png){width="17cm"
-height="11.769cm"}Some usb cable are only for charge, it means that it
-won't work with the card and pi zero, because it missed data wires
+## EXAMPLES
++ untar -tf /home/test.tar
+
+## DESCRIPTION
+**untar** list and extract files in a TAR archive
+
+## OPTIONS
+*  -h ^Bshow this help message and exit
+*  -t ^Blist files
+*  -x ^Bextract files
+*  -v ^Bverbose mode
+
+## SOURCE
+https://github.com/orix-software/untar
+
+\newpage
 
 []{#anchor-92}CUMULUS COMPATIBILITY
 ===================================

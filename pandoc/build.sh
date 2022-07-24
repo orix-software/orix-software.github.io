@@ -5,6 +5,7 @@ cat ../docs/commands/bank.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/cksum.md >> manual.md
+echo '![](.//Pictures/1000020100000281000001CFDD8EF28C17D2A206.png){width="7.685cm" height="5.595cm"}' >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/help.md >> manual.md
@@ -30,6 +31,10 @@ cat ../docs/commands/man.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/mkdir.md >> manual.md
+
+echo "\\\newpage\n">> manual.md
+cat ../docs/commands/mount.md >> manual.md
+echo '![](.//Pictures/1000020100000280000001CFC6CDA413ADDF6624.png){width="7.685cm" height="5.595cm"}' >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/sh.md >> manual.md

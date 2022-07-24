@@ -580,6 +580,7 @@ checksum and count the bytes in a file
 ## SOURCE
 https://github.com/orix-software/cksum
 
+![](.//Pictures/1000020100000281000001CFDD8EF28C17D2A206.png){width="7.685cm" height="5.595cm"}
 \newpage
 
 # help
@@ -756,6 +757,26 @@ Create a folder. -p (recursive mode) option is not available
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/mkdir.asm
+\newpage
+
+# mount
+
+## Introduction
+
+Displays mounts
+
+## SYNOPSYS
+
++ #mount
+
+## DESCRIPTION
+
+Displays mount (usb key or sdcard)
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/mount.asm
+![](.//Pictures/1000020100000280000001CFC6CDA413ADDF6624.png){width="7.685cm" height="5.595cm"}
 \newpage
 
 # sh

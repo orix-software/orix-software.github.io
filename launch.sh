@@ -26,7 +26,7 @@ wget https://raw.githubusercontent.com/orix-software/${tab_repo[$i]}/master/docs
 echo "* [$VAL](../$VAL)" >> docs/commands/all.md
 done
 
-wget https://raw.githubusercontent.com/orix-software/${tab_repo[$i]}/master/docs/subdoc.md -O docs/commands/subdoc.md
+wget https://raw.githubusercontent.com/orix-software/submit/master/docs/subdoc.md -O docs/commands/subdoc.md
 
 
 

@@ -13,7 +13,7 @@
     
     
       
-        <title>Subdoc - Orix</title>
+        <title>Description - Orix</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#description" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Subdoc
+              Description
             
           </span>
         </div>
@@ -966,6 +971,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -979,9 +986,292 @@
                 
 
 
-  <h1>Subdoc</h1>
-
-
+<h1 id="description">Description</h1>
+<p>\
+\
+Un fichier submit peut faire appel a toutes les commandes du shell a
+l'exception des commandes internes suivantes:</p>
+<ul>
+<li>help</li>
+<li>pwd</li>
+</ul>
+<p>qui ne sont pas encore supportees.</p>
+<p>Les commandes <strong>call</strong>,<strong>choice</strong>,<strong>cls</strong>,
+<strong>getkey</strong>,<strong>goto</strong>,<strong>if</strong>,<strong>pause</strong>,
+<strong>return</strong> et <strong>type</strong> ont ete ajoutees.</p>
+<p>La commande <strong>echo</strong> est etendue par rapport a celle du shell.</p>
+<p>Une ligne ne peut exceder <em>128</em> caracteres ou <em>200</em> apres expansion des variables.</p>
+<p>Il n'y a ^Bpas de taille maximale^G pour un fichier submit.</p>
+<h1 id="description_1">Description</h1>
+<p>\
+\
+Les parametres de la ligne de commande sont accessibles par les variables<sup>C$0</sup>G a<sup>C$9</sup>G.</p>
+<p><sup>C$0</sup>G est le nom du fichier submit.</p>
+<p>Les lignes commencant par <strong>REM</strong> ,  <sup>T#</sup>P , <sup>T;</sup>P sont des commentaires.</p>
+<p>Les lignes commencant par <sup>T:</sup>P definissent un label.
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\</p>
+<h1 id="call">call</h1>
+<p>\
+\
+La commande <strong>call</strong> permet de faire
+appell a une sous-routine terminee
+par <strong>return</strong>.
+\
+\</p>
+<h2 id="syntaxep">Syntaxe:^P</h2>
+<p>call^Flabel
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\</p>
+<h1 id="choice">choice</h1>
+<p>\
+\
+La commande <strong>choice</strong> permet d'afficher
+un message et de proposer une liste
+d'options.
+\
+\</p>
+<h2 id="syntaxep_1">Syntaxe:^P</h2>
+<p>choice ^B[-n] [-c<liste>] [msg]</p>
+<h2 id="optionsp">Options:^P</h2>
+<ul>
+<li><sup>B-n</sup>G n'affiche pas les choix</li>
+<li><sup>B<liste></sup>G est une suite de caracteres composant les options possibles. Valeur par defaut: YN</li>
+<li><sup>Bmsg</sup>G est le message affiche. Valeur par defaut: aucun</li>
+</ul>
+<h2 id="exemplesp">Exemples:^P</h2>
+<ul>
+<li>choice -con Continuer
+\
+\
+\</li>
+</ul>
+<h1 id="echo">echo</h1>
+<p>\
+\
+La commande <strong>echo</strong> accepte les caracteres de controle.</p>
+<p>Par exemple pour la couleur:</p>
+<p><sup>@</sup>WNoir ^P
+^ARouge
+^BVert
+^CJaune
+^DBleu
+^EMagenta
+^FCyan
+ Blanc</p>
+<p>noir
+^Qrouge ^P
+<sup>@</sup>Rvert ^P
+<sup>@</sup>Sjaune ^P
+^Tbleu ^P
+^Umagenta ^P
+<sup>D</sup>Vcyan ^P
+<sup>@</sup>Wblanc ^P</p>
+<p>Les caracteres de controles sont ^ A a ^[</p>
+<h2 id="syntaxep_2">Syntaxe:^P</h2>
+<ul>
+<li>echo ^B[-n] [message]</li>
+</ul>
+<h2 id="optionsp_1">Options:^P</h2>
+<ul>
+<li><sup>B-n</sup>G ne fait pas de saut de ligne a la suite du message
+\
+\</li>
+</ul>
+<h1 id="getkey">Getkey</h1>
+<p>\
+\
+La commande <strong>getkey</strong> permet d'attendre
+la frappe d'une touche du clavier.</p>
+<p>Le code ASCII de la touche est place
+dans la variable<sup>D</sup>Rkey <sup>P</sup>@.
+\
+\</p>
+<h2 id="syntaxep_3">Syntaxe:^P</h2>
+<p>getkey
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\</p>
+<h1 id="goto">Goto</h1>
+<p>\
+\
+La commande <strong>goto</strong> permet de poursuivre
+l'execution a un label specifique.</p>
+<p>Un label est cree en debutant une ligne
+par<sup>F:</sup>Gsuivi d'une chaine de caracteres.
+\
+\</p>
+<h2 id="syntaxep_4">Syntaxe:^P</h2>
+<p>goto^Flabel
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\</p>
+<h1 id="if-12">If  (1/2)</h1>
+<p>\
+\
+La commande <strong>if</strong> permet de faire
+un test par rapport au code erreur de
+la derniere commande executee ou de
+tester l'existence d'un fichier.
+\
+\</p>
+<h2 id="syntaxep_5">Syntaxe:^P</h2>
+<ul>
+<li>if <sup>D</sup>Rvar<sup>C</sup>Pn^Finstruction</li>
+<li>if exist<sup>Efichier</sup>Finstruction</li>
+<li>if <sup>D</sup>Rvar<sup>B</sup>Pop<sup>Cn</sup>Finstruction
+\
+Si la valeur de <sup>D</sup>Rvar<sup>G</sup>Pest superieure ou egale a<sup>Cn</sup>Gou si le fichier
+existe alors<sup>Finstruction</sup>Gsera executee.</li>
+</ul>
+<p><sup>D</sup>Rvar<sup>G</sup>P peut etre errorlevel ou key</p>
+<p><sup>Bop</sup>Gpeut etre &lt;, =, &gt; ou #
+\</p>
+<h1 id="if-22">If  (2/2)</h1>
+<p>\
+\</p>
+<h3 id="exemplesp_1">Exemples:^P</h3>
+<ul>
+<li>[1] if errorlevel 2 goto choix2</li>
+<li>[2] if exist fichier echo Ok</li>
+<li>[3] if errorlevel &lt; 2 echo inferieur</li>
+<li>[4] if keu # 65 echo different
+\
+\
+[1] Ira au label<sup>Fchoix2</sup>Gsi<sup>D</sup>Rerrorlevel<sup>P</sup>G est superieur ou egale a<sup>C2</sup>G.</li>
+</ul>
+<p>[2] Affiche<sup>BOk</sup>Gsi<sup>Efichier</sup>Gexiste.</p>
+<p>[3] Affiche<sup>Binferieur</sup>Gsi<sup>D</sup>Rerrorlevel <sup>P</sup>G est inferieur a<sup>C2</sup>G.</p>
+<p>[4] Affiche<sup>Bdifferent</sup>Gsi<sup>D</sup>Rkey <sup>P</sup>G est different de<sup>C65</sup>G.
+\
+\
+\</p>
+<h1 id="pause">Pause</h1>
+<p>\
+\
+La commande <strong>pause</strong> affiche un message et attend l'appui sur une touche.</p>
+<p>Elle accepte un message optionnel en parametre.
+\
+\
+\
+\</p>
+<h2 id="syntaxep_6">Syntaxe:^P</h2>
+<p>pause^B[message]</p>
+<p>Le message par defaut est:</p>
+<div class="highlight"><pre><span></span><code>  ^LPress any key to continue
+</code></pre></div>
+<p>\
+\
+\
+\
+\
+\</p>
+<h1 id="return">Return</h1>
+<p>\
+\
+La commande <strong>return</strong> termine une
+sous-routine et permet de revenir a la
+ligne suivant le <strong>call</strong>.</p>
+<h2 id="syntaxep_7">Syntaxe:^P</h2>
+<p>return
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\</p>
+<h1 id="text-12">Text (1/2)</h1>
+<p>\
+\
+Affiche directement tout ce qui est entre <strong>text</strong> et <strong>endtext</strong>
+\
+Cela permet d'afficher un texte ou un formulaire plus simplement qu'avec
+la commande <strong>echo</strong>
+\
+Les codes de controles sont interpretes ainsi que les parametres du script.
+\
+<strong>text</strong> et <strong>endtext</strong> doivent etre seuls sur la ligne.
+\
+\
+\
+\
+\
+\
+\</p>
+<h1 id="text-22">Text (2/2)</h1>
+<p>\
+\
+<sup>TExemple:</sup>P</p>
+<p>text</p>
+<p>Ligne de texte</p>
+<p>avec des<sup>[Bcouleurs</sup>[G</p>
+<p>endtext
+\
+\
+<sup>Taffiche:</sup>P</p>
+<p>Ligne de texte</p>
+<p>avec des<sup>Bcouleurs</sup>G
+\
+\
+\
+\
+\</p>
+<h1 id="type">Type</h1>
+<p>\
+\
+La commande <strong>type</strong> est un alias de <strong>cat</strong>
+mais renvoie une erreur si son parametre est absent.</p>
+<h2 id="syntaxep_8">Syntaxe:^P</h2>
+<p>type ^Efichier</p>
 
               
             </article>

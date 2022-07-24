@@ -1025,20 +1025,18 @@
 <h1 id="v20224">v2022.4</h1>
 <h2 id="kernel">Kernel</h2>
 <ul>
-<li>
-<p>Process structure stores a command line with 60 bytes length (it was 37 bytes before)</p>
-</li>
-<li>
-<p>Kernel supports relocation mode binary</p>
-</li>
+<li>Process structure stores a command line with 60 bytes length (it was 37 bytes before)</li>
+<li>Kernel supports relocation mode binary</li>
+<li>fixbug in multiples files opened</li>
 </ul>
 <h2 id="cc65-telestrat-target">CC65 (telestrat target)</h2>
 <ul>
-<li>Generated binary from cc65 will be deprecated (without relocbin tool in order to convert it in relocation mode)</li>
+<li>binary from cc65 will be deprecated (without relocbin tool in order to convert it in relocation mode). It needs to get relocbin from orix-sdk : https://github.com/assinie/orix-sdk</li>
 </ul>
 <h2 id="shell">Shell</h2>
 <ul>
 <li>Command line supports now 60 bytes (37 bytes previously)</li>
+<li>cp now works</li>
 </ul>
 <h2 id="how-to-upgrade">How to upgrade</h2>
 <ul>

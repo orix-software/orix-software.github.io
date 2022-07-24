@@ -41,10 +41,12 @@ cat parts/pizero.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/submit.md >> manual.md
+echo "\n======================\n">> manual.md
+cat ../docs/commands/subdoc.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/untar.md >> manual.md
 
 cat parts/last.md >> manual.md
 
-pandoc -V geometry:margin=.5in   -s -o manual.pdf manual.md
+pandoc -V geometry:margin=.5in   -s -o ../twilighte_manual.pdf manual.md

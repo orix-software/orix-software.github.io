@@ -960,6 +960,8 @@ CLOAD«OSNEVER
 
 Displays current PWD
 
+\newpage
+
 []{#anchor-79}SHA1
 ==================
 
@@ -1023,6 +1025,9 @@ path=/usr/share/rom/my2.rom
 
 ## SOURCE
 https://github.com/orix-software/submit
+
+
+======================
 
 \newpage
 

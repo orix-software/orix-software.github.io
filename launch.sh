@@ -3,8 +3,8 @@
 declare -a tab_command
 declare -a tab_repo
 
-tab_command=("bank" "basic11" "bootfd" "cat"   "cd"    "cksum"   "clear" "otimer"   "dsk-util"       "echo"  "env"   "forth" "grep" "help" "hexdump"  "ioports"  "ls"    "lscpu" "lsmem" "man"   "mkdir" "mount" "orixcfg" "pwd"   "ps"     "reboot" "rm"    "setfont" "sh"    "submit" "touch" "twil"  "uname" "untar" "vidplay" "viewscr" "viewhrs" )
-tab_repo=("shell"   "shell"   "bootfd"  "shell" "shell"  "cksum"        "shell" "shell"  "dsk-util" "shell" "shell" "forth"  "grep" "shell" "hexdump" "shell"    "shell" "shell" "shell" "shell" "shell" "shell" "orixcfg" "shell" "shell"  "shell"  "shell" "shell"   "shell" "submit" "shell" "shell" "shell" "untar" "vidplay" "viewscr" "shell")
+tab_command=("bank" "basic10" "basic11" "bootfd"  "cat"   "cd"     "cksum" "clear" "otimer" "dsk-util" "echo"  "env"   "forth" "grep" "help" "hexdump"  "ioports"  "ls"    "lscpu" "lsmem" "man"   "mkdir" "mount" "orixcfg" "pwd"   "ps"     "reboot" "rm"    "setfont" "sh"    "submit" "touch" "twil"  "uname" "untar" "vidplay" "viewscr" "viewhrs" )
+tab_repo=("shell"   "shell"   "shell"   "bootfd"  "shell" "shell"  "cksum" "shell" "shell"  "dsk-util" "shell" "shell" "forth"  "grep" "shell" "hexdump" "shell"    "shell" "shell" "shell" "shell" "shell" "shell" "orixcfg" "shell" "shell"  "shell"  "shell" "shell"   "shell" "submit" "shell" "shell" "shell" "untar" "vidplay" "viewscr" "shell")
 
 
 COMMAND_LIST="bank basic11 cat cd clear date echo env help ioports ls lscpu lsmem man mkdir mount ps reboot rm setfont touch twil uname viewhrs"

@@ -13,7 +13,7 @@
     
     
       
-        <title>Commands - Orix</title>
+        <title>pwd - Orix</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pwd" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Commands
+              pwd
             
           </span>
         </div>
@@ -177,15 +182,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../all/" class="md-tabs__link">
         User guide
       </a>
     </li>
@@ -324,14 +327,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -352,19 +353,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../all/" class="md-nav__link">
         Commands
       </a>
-      
     </li>
   
 
@@ -978,6 +971,37 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synopsys" class="md-nav__link">
+    SYNOPSYS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    SOURCE
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -991,48 +1015,15 @@
                 
 
 
-  <h1>Commands</h1>
-
+<h1 id="pwd">pwd</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Display the current path</p>
+<h2 id="synopsys">SYNOPSYS</h2>
 <ul>
-<li><a href="../bank">bank</a></li>
-<li><a href="../basic10">basic10</a></li>
-<li><a href="../basic11">basic11</a></li>
-<li><a href="../bootfd">bootfd</a></li>
-<li><a href="../cat">cat</a></li>
-<li><a href="../cd">cd</a></li>
-<li><a href="../cksum">cksum</a></li>
-<li><a href="../clear">clear</a></li>
-<li><a href="../otimer">otimer</a></li>
-<li><a href="../dsk-util">dsk-util</a></li>
-<li><a href="../echo">echo</a></li>
-<li><a href="../env">env</a></li>
-<li><a href="../forth">forth</a></li>
-<li><a href="../grep">grep</a></li>
-<li><a href="../help">help</a></li>
-<li><a href="../hexdump">hexdump</a></li>
-<li><a href="../ioports">ioports</a></li>
-<li><a href="../ls">ls</a></li>
-<li><a href="../lscpu">lscpu</a></li>
-<li><a href="../lsmem">lsmem</a></li>
-<li><a href="../man">man</a></li>
-<li><a href="../mkdir">mkdir</a></li>
-<li><a href="../mount">mount</a></li>
-<li><a href="../orixcfg">orixcfg</a></li>
-<li><a href="../pwd">pwd</a></li>
-<li><a href="../ps">ps</a></li>
-<li><a href="../reboot">reboot</a></li>
-<li><a href="../rm">rm</a></li>
-<li><a href="../setfont">setfont</a></li>
-<li><a href="../sh">sh</a></li>
-<li><a href="../submit">submit</a></li>
-<li><a href="../touch">touch</a></li>
-<li><a href="../twil">twil</a></li>
-<li><a href="../uname">uname</a></li>
-<li><a href="../untar">untar</a></li>
-<li><a href="../vidplay">vidplay</a></li>
-<li><a href="../viewscr">viewscr</a></li>
-<li><a href="../viewhrs">viewhrs</a></li>
+<li>pwd</li>
 </ul>
+<h2 id="source">SOURCE</h2>
+<p>https://github.com/orix-software/shell/blob/master/src/commands/pwd.asm</p>
 
               
             </article>
@@ -1047,41 +1038,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../../menu/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting started" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Getting started
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../user_manual/bootfd/" class="md-footer__link md-footer__link--next" aria-label="Next: Bootfd" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Bootfd
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

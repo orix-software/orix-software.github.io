@@ -74,6 +74,8 @@ But, when it will be released, you could update the firmware with :
 In that case, fimware upgrade will be done, and you could ask to upgrade
 to new board version to add (sometimes new functionnality)
 
+\newpage
+
 []{#anchor-103}TROUBLE SHOOTING
 ===============================
 
@@ -164,6 +166,8 @@ Sometimes sdcard or usbkey has bad format for the usb controler and it
 can reads some content. Format the usb key or sdcard and install again
 all files. Or try another usb key/sdcard
 
+\newpage
+
 []{#anchor-114}Q&A
 ==================
 
@@ -194,6 +198,8 @@ connect a joystick to the left port on the board.
 
 The issue can be fixed by upgrading firmware board (it needs to open the
 box and program the firmware with Jtag port)
+
+\newpage
 
 []{#anchor-119}ANNEXES
 ======================
@@ -302,14 +308,6 @@ You need to unzip/untar orixcfg new version here :
 
     (Don't switch off the Oric at this step)
 
-[]{#anchor-123}Optionnal step for upgrade
------------------------------------------
-
-Now bank displays all banks from l to 64. It means that you should have
-some strange bank signature for eeprom. Now an empty set is provided in
-*/usr/share/carts/2021.3 *folder. With Orixcfg you can initialize your
-set with this cart. Don't use « -s 4 » flag for orixcfg when you want to
-load emptyset.
 
 ### []{#anchor-124}Upgrade from v2021.1 to v2021.2
 
@@ -364,3 +362,14 @@ Unzip it on your device (sdcard/usbkey)
 -   press 'y', and **wait until Orix reboots **
 
     (Don't switch off the Oric at this step)
+
+
+
+[]{#anchor-200}Optionnal step for upgrade
+-----------------------------------------
+
+Now bank displays all banks from l to 64. It means that you should have
+some strange bank signature for eeprom. Now an empty set is provided in
+*/usr/share/carts/2021.3* folder. With Orixcfg you can initialize your
+set with this cart. Don't use « -s 4 » flag for orixcfg when you want to
+load emptyset.

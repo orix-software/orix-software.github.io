@@ -214,71 +214,6 @@ You can access to available command from many ways :
 -   From banks : type « help -b5 » you will see available commands
 
 
-\newpage
-
-[]{#anchor-16}BANK
-==================
-
-[]{#anchor-17}Usage 
---------------------
-
-Bank command is command line tool to see which bank are loaded into
-EEPROM bank and RAM bank. Each bank has a « signature ». Bank allows to
-see theses banks.
-
-Bank can also starts a ROM with his id. In that case, you don't need to
-have a rom « orix friendly » and you can start it from command line. In
-the current bank version, there is restriction to launch a command.
-
-[]{#anchor-18}List all bank (when ROM signature is valid)
----------------------------------------------------------
-
-/\#bank
-
-Bank 1 to 32 is eeprom bank and bank 33 to 64 are ram bank
-
-[]{#anchor-19}Displays all signature even when ROM is not valid
----------------------------------------------------------------
-
-/\#bank
-
-[]{#anchor-20}List all commands from a bank 
---------------------------------------------
-
-/\#help -b5
-
-[]{#anchor-21}Start a specific bank
------------------------------------
-
-/\#bank 1
-
-If you need to load a rom into a bank, you need to have a look to
-orixcfg binary.
-
-\newpage
-
-[]{#anchor-22}SHELL
-===================
-
-[]{#anchor-23}Flush the current command line 
----------------------------------------------
-
-Ctrl+c
-
-[]{#anchor-24}Available commands
---------------------------------
-
-You can see available commands with this command :
-
-/\#help -b5
-
-The command line is limited in characters. If you reach this limit, you
-won't be able to type the complete command line
-
-[]{#anchor-25}Known bugs
-------------------------
-
-*  « ./ » can not be used to launch a binary
 
 \newpage
 
@@ -522,16 +457,6 @@ If you have firmware 1, you will be able to load « blake's 7 ». If you
 have firmware 2, all sedoric .dsk should start.
 
 For instance, only Space99 does not work, it stops after intro.
-
-\newpage
-
-[]{#anchor-43}CKSUM
-===================
-
-![](.//Pictures/1000020100000281000001CFDD8EF28C17D2A206.png){width="8.334cm" height="6.02cm"}[]{#anchor-44}Usage
------------------------------------------------------------------------------------------------------------------
-
-Cksum is a tool to compute a checksum of a file and displays its size.
 
 \newpage
 

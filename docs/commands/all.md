@@ -15,6 +15,7 @@
 * [help](../help)
 * [hexdump](../hexdump)
 * [ioports](../ioports)
+* [list](../list)
 * [ls](../ls)
 * [lscpu](../lscpu)
 * [lsmem](../lsmem)

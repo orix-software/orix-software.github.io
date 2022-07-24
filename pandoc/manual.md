@@ -214,71 +214,6 @@ You can access to available command from many ways :
 -   From banks : type « help -b5 » you will see available commands
 
 
-\newpage
-
-[]{#anchor-16}BANK
-==================
-
-[]{#anchor-17}Usage 
---------------------
-
-Bank command is command line tool to see which bank are loaded into
-EEPROM bank and RAM bank. Each bank has a « signature ». Bank allows to
-see theses banks.
-
-Bank can also starts a ROM with his id. In that case, you don't need to
-have a rom « orix friendly » and you can start it from command line. In
-the current bank version, there is restriction to launch a command.
-
-[]{#anchor-18}List all bank (when ROM signature is valid)
----------------------------------------------------------
-
-/\#bank
-
-Bank 1 to 32 is eeprom bank and bank 33 to 64 are ram bank
-
-[]{#anchor-19}Displays all signature even when ROM is not valid
----------------------------------------------------------------
-
-/\#bank
-
-[]{#anchor-20}List all commands from a bank 
---------------------------------------------
-
-/\#help -b5
-
-[]{#anchor-21}Start a specific bank
------------------------------------
-
-/\#bank 1
-
-If you need to load a rom into a bank, you need to have a look to
-orixcfg binary.
-
-\newpage
-
-[]{#anchor-22}SHELL
-===================
-
-[]{#anchor-23}Flush the current command line 
----------------------------------------------
-
-Ctrl+c
-
-[]{#anchor-24}Available commands
---------------------------------
-
-You can see available commands with this command :
-
-/\#help -b5
-
-The command line is limited in characters. If you reach this limit, you
-won't be able to type the complete command line
-
-[]{#anchor-25}Known bugs
-------------------------
-
-*  « ./ » can not be used to launch a binary
 
 \newpage
 
@@ -525,16 +460,6 @@ For instance, only Space99 does not work, it stops after intro.
 
 \newpage
 
-[]{#anchor-43}CKSUM
-===================
-
-![](.//Pictures/1000020100000281000001CFDD8EF28C17D2A206.png){width="8.334cm" height="6.02cm"}[]{#anchor-44}Usage
------------------------------------------------------------------------------------------------------------------
-
-Cksum is a tool to compute a checksum of a file and displays its size.
-
-\newpage
-
 []{#anchor-45}DF
 ================
 
@@ -610,9 +535,52 @@ if you type « cd forth» in forth environnement, all files actions will
 be perform in « /*home/*forth »
 \newpage
 
-[]{#anchor-53}Help
-=====================
+# bank
 
+## Introduction
+
+Displays bank or switch a bank
+
+## SYNOPSYS
+
++ bank
+
+## DESCRIPTION
+
+This command displays bank when the command is called without parameter. WIth a parameter, you can switch to a the id of the bank passed to the argument :
+
+bank : displays all the bank (if a signature is found)
+bank 4 : switch to bank 4
+bank -a : displauys all bank (empty bank too)
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/bank.asm
+\newpage
+
+# Command: cksum
+
+### checksum utility
+
+## SYNOPSYS
++ cksum file [...]
++ cksum @batchfile
++ cksum -h
+
+## EXAMPLES
++ cksum /bin/cksum
+
+## DESCRIPTION
+checksum and count the bytes in a file
+
+## OPTIONS
+*  -h
+                show this help message and exit
+
+## SOURCE
+https://github.com/orix-software/cksum
+
+\newpage
 
 # help
 
@@ -634,8 +602,6 @@ Display commands
 https://github.com/orix-software/shell/blob/master/src/commands/help.asm
 \newpage
 
-[]{#anchor-54}Hexdump
-======================
 # Command: hexdump
 
 ### hexdump utility
@@ -656,11 +622,6 @@ https://github.com/orix-software/hexdump
 ![](.//Pictures/1000020100000280000001D2140A361B5ADFEDE0.png){width="7.685cm" height="5.595cm"}
 \newpage
 
-[]{#anchor-55}Ioports
-=====================
-
-Displays I/O address of the board
-
 # ioports
 
 ## Introduction
@@ -680,10 +641,6 @@ Displays I/O ports.
 https://github.com/orix-software/shell/blob/master/src/commands/ioports.asm
 \newpage
 
-[]{#anchor-56}Ls
-=====================
-
-
 # ls
 
 ### Display catalog
@@ -702,10 +659,6 @@ Directories are in ^FBLUE^G color. It  manages '-l' and Pattern works in differe
 
 https://github.com/orix-software/shell/blob/master/src/commands/ls.asm
 \newpage
-
-[]{#anchor-63}Lscpu
-=====================
-
 
 # lscpu
 
@@ -730,10 +683,6 @@ Displays cpu info
 https://github.com/orix-software/shell/blob/master/src/commands/lscpu.asm
 \newpage
 
-[]{#anchor-63}Lsmem
-=====================
-
-
 # lsmem
 
 ## Introduction
@@ -756,10 +705,6 @@ Displays malloc table. Free chunks and busy chuncks are displayed with ranges.
 
 https://github.com/orix-software/shell/blob/master/src/commands/lsmem.asm
 \newpage
-
-[]{#anchor-63}Man
-=====================
-
 
 # man
 
@@ -790,10 +735,6 @@ Displays manual. All .hlp files are located in /usr/share/man/. It manages multi
 https://github.com/orix-software/shell/blob/master/src/commands/man.asm
 \newpage
 
-[]{#anchor-63}Mkdir
-=====================
-
-
 # mkdir
 
 ## Introduction
@@ -817,6 +758,58 @@ Create a folder. -p (recursive mode) option is not available
 https://github.com/orix-software/shell/blob/master/src/commands/mkdir.asm
 \newpage
 
+# sh
+
+## Introduction
+
+When kernel has finished to initialize at boot time, sh command is started in interactive mode
+
+## Interactive mode
+
+*Esc-b* : move cursor at the beginning of the previous word
+
+*Esc-f* : move cursor at the end of the next word
+
+*Esc-l* : switch current word into lowercase, and put cursor at the end of the word
+
+*Esc-u* : switch current word into uppercase, and put cursor at the end of the word
+
+*Ctrl-a* : move cursor at the beginning of the line
+
+*Ctrl-e* : move cursor at the end of the line
+
+*Ctrl-c* : cancel current line
+
+*Ctrl-k* : delete the end of the line
+
+*Ctrl-l* : clear screen, and displays the line, the cursors keeps his position
+
+*Ctrl-u* : clear the line and put cursor at the beginning of the line
+
+*Ctrl-t* : swap char under the cursor with the previous one, and shift the cursor to the right
+
+*Ctrl-o* : Switch into replacement or insertion mode
+\newpage
+
+# twil
+
+## Introduction
+
+Manage twilighte board options
+
+## SYNOPSYS
+
++ /#twil -f  : displays firmware
++ /#twil -u  : switch default device : usbdrive
++ /#twil -s  : swap default device to : sdcard
+
+## DESCRIPTION
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/twil.asm
+\newpage
+
 []{#anchor-65}MONITOR
 =====================
 
@@ -825,6 +818,8 @@ https://github.com/orix-software/shell/blob/master/src/commands/mkdir.asm
 
 Monitor is a rom which can displays a monitor. It's teleass without
 assembler part.
+
+\newpage
 
 []{#anchor-67}ORIXCFG
 =====================
@@ -840,21 +835,20 @@ your current version, and the last release version. You can go to
 [http://orix.oric.org](http://orix.oric.org/) You need to have a look to
 this release below :
 
-![](.//Pictures/10000000000004A9000002B630F032C016A16F4A.png){width="17cm"
-height="9.888cm"}
+![](.//Pictures/10000000000004A9000002B630F032C016A16F4A.png){width="17cm" height="9.888cm"}
 
 If on your Oric screen, it's not the same value, you can update it. The
 sequence of the Orix release is Year.X. There is 4 releases a year, and
 each one must be done until you reach the final one, in order to avoid
 some case. If your version is v2020.3 and the last available version is
 v2021.4. You need to update to v2020.4, then v2021.1, v2021.2, v2021.3,
-v2021.4.
+v2021.4, v2022.1, v2022.4
 
-It's maybe possible to jump to version v2021.4, but it's at your own
+It's maybe possible to jump to version v2022.3, but it's at your own
 risk because there is a « chance » that some kernel calls changed, and
 orixcfg could do wrong step.
 
-[]{#anchor-69}Update kernel, shell
+[]{#anchor-69} Update kernel, shell
 ----------------------------------
 
 When you need to update kernel, you can update it with orixcfg. You just
@@ -925,6 +919,9 @@ is no switch to clear all the ram with one command.
 
 /\#orixcfg -w -f
 
+\newpage
+
+
 []{#anchor-75}OSID MUSIC
 ========================
 
@@ -953,6 +950,8 @@ And then load the osid file you want :
 
 CLOAD«OSNEVER
 
+\newpage
+
 []{#anchor-77}PWD
 =================
 
@@ -969,6 +968,8 @@ Displays current PWD
 
 Sha1 is a tool to displays a string into sha1 encoding
 
+\newpage
+
 []{#anchor-81}STORMLORD
 =======================
 
@@ -980,6 +981,8 @@ to this game.
 
 []{#anchor-83}Only one joystick port is working on this version
 ===============================================================
+
+\newpage
 
 []{#anchor-84}SYSTEMD
 =====================
@@ -1000,36 +1003,28 @@ You can set roms in *« /etc/systemd/banks » as : *
 *\[MYROMNAME2\]*
 
 path=/usr/share/rom/my2.rom
-
-[]{#anchor-85}TWIL
-==================
-
-[]{#anchor-86}Introduction
---------------------------
-
-Twil command can displays the current firmware of twilighte card, and
-can swap root folder to usbkey or sdcard.
-
-
-[]{#anchor-87}Displays Twilighte board firmware
------------------------------------------------
-
-/\#twil -f
-
-[]{#anchor-88}Swap to sdcard for root file system
--------------------------------------------------
-
-/\#twil -d
-
-[]{#anchor-89}Swap to usb key for root file system
---------------------------------------------------
-
-/\#twil -u
 \newpage
 
-[]{#anchor-91}Untar
-=====================
+# Command: submit
 
+### submit utility
+
+## SYNOPSYS
++ submit file [arg...]
+
+## EXAMPLES
++ submit help.sub
+
+## DESCRIPTION
+**submit** is a command language interpreter that executes commands read from a file.
+
+## OPTIONS
+*  no options
+
+## SOURCE
+https://github.com/orix-software/submit
+
+\newpage
 
 # Command: untar
 
@@ -1059,7 +1054,7 @@ https://github.com/orix-software/untar
 []{#anchor-92}CUMULUS COMPATIBILITY
 ===================================
 
-[]{#anchor-93}How to connect a cumulus 
+[]{#anchor-93}How to connect a cumulus
 ---------------------------------------
 
 On the current firmware (Firmware 1) : and current hardware (board
@@ -1129,6 +1124,8 @@ But, when it will be released, you could update the firmware with :
 
 In that case, fimware upgrade will be done, and you could ask to upgrade
 to new board version to add (sometimes new functionnality)
+
+\newpage
 
 []{#anchor-103}TROUBLE SHOOTING
 ===============================
@@ -1220,6 +1217,8 @@ Sometimes sdcard or usbkey has bad format for the usb controler and it
 can reads some content. Format the usb key or sdcard and install again
 all files. Or try another usb key/sdcard
 
+\newpage
+
 []{#anchor-114}Q&A
 ==================
 
@@ -1250,6 +1249,8 @@ connect a joystick to the left port on the board.
 
 The issue can be fixed by upgrading firmware board (it needs to open the
 box and program the firmware with Jtag port)
+
+\newpage
 
 []{#anchor-119}ANNEXES
 ======================
@@ -1358,14 +1359,6 @@ You need to unzip/untar orixcfg new version here :
 
     (Don't switch off the Oric at this step)
 
-[]{#anchor-123}Optionnal step for upgrade
------------------------------------------
-
-Now bank displays all banks from l to 64. It means that you should have
-some strange bank signature for eeprom. Now an empty set is provided in
-*/usr/share/carts/2021.3 *folder. With Orixcfg you can initialize your
-set with this cart. Don't use « -s 4 » flag for orixcfg when you want to
-load emptyset.
 
 ### []{#anchor-124}Upgrade from v2021.1 to v2021.2
 
@@ -1420,3 +1413,14 @@ Unzip it on your device (sdcard/usbkey)
 -   press 'y', and **wait until Orix reboots **
 
     (Don't switch off the Oric at this step)
+
+
+
+[]{#anchor-200}Optionnal step for upgrade
+-----------------------------------------
+
+Now bank displays all banks from l to 64. It means that you should have
+some strange bank signature for eeprom. Now an empty set is provided in
+*/usr/share/carts/2021.3* folder. With Orixcfg you can initialize your
+set with this cart. Don't use « -s 4 » flag for orixcfg when you want to
+load emptyset.

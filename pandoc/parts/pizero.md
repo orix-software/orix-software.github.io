@@ -9,6 +9,8 @@
 Monitor is a rom which can displays a monitor. It's teleass without
 assembler part.
 
+\newpage
+
 []{#anchor-67}ORIXCFG
 =====================
 
@@ -23,21 +25,20 @@ your current version, and the last release version. You can go to
 [http://orix.oric.org](http://orix.oric.org/) You need to have a look to
 this release below :
 
-![](.//Pictures/10000000000004A9000002B630F032C016A16F4A.png){width="17cm"
-height="9.888cm"}
+![](.//Pictures/10000000000004A9000002B630F032C016A16F4A.png){width="17cm" height="9.888cm"}
 
 If on your Oric screen, it's not the same value, you can update it. The
 sequence of the Orix release is Year.X. There is 4 releases a year, and
 each one must be done until you reach the final one, in order to avoid
 some case. If your version is v2020.3 and the last available version is
 v2021.4. You need to update to v2020.4, then v2021.1, v2021.2, v2021.3,
-v2021.4.
+v2021.4, v2022.1, v2022.4
 
-It's maybe possible to jump to version v2021.4, but it's at your own
+It's maybe possible to jump to version v2022.3, but it's at your own
 risk because there is a « chance » that some kernel calls changed, and
 orixcfg could do wrong step.
 
-[]{#anchor-69}Update kernel, shell
+[]{#anchor-69} Update kernel, shell
 ----------------------------------
 
 When you need to update kernel, you can update it with orixcfg. You just
@@ -108,6 +109,9 @@ is no switch to clear all the ram with one command.
 
 /\#orixcfg -w -f
 
+\newpage
+
+
 []{#anchor-75}OSID MUSIC
 ========================
 
@@ -136,6 +140,8 @@ And then load the osid file you want :
 
 CLOAD«OSNEVER
 
+\newpage
+
 []{#anchor-77}PWD
 =================
 
@@ -144,6 +150,8 @@ CLOAD«OSNEVER
 
 Displays current PWD
 
+\newpage
+
 []{#anchor-79}SHA1
 ==================
 
@@ -151,6 +159,8 @@ Displays current PWD
 -------------------
 
 Sha1 is a tool to displays a string into sha1 encoding
+
+\newpage
 
 []{#anchor-81}STORMLORD
 =======================
@@ -163,6 +173,8 @@ to this game.
 
 []{#anchor-83}Only one joystick port is working on this version
 ===============================================================
+
+\newpage
 
 []{#anchor-84}SYSTEMD
 =====================
@@ -183,28 +195,3 @@ You can set roms in *« /etc/systemd/banks » as : *
 *\[MYROMNAME2\]*
 
 path=/usr/share/rom/my2.rom
-
-[]{#anchor-85}TWIL
-==================
-
-[]{#anchor-86}Introduction
---------------------------
-
-Twil command can displays the current firmware of twilighte card, and
-can swap root folder to usbkey or sdcard.
-
-
-[]{#anchor-87}Displays Twilighte board firmware
------------------------------------------------
-
-/\#twil -f
-
-[]{#anchor-88}Swap to sdcard for root file system
--------------------------------------------------
-
-/\#twil -d
-
-[]{#anchor-89}Swap to usb key for root file system
---------------------------------------------------
-
-/\#twil -u

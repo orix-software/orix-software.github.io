@@ -1552,6 +1552,14 @@ Sometimes sdcard or usbkey has bad format for the usb controler and it
 can reads some content. Format the usb key or sdcard and install again
 all files. Or try another usb key/sdcard
 
+
+[]{#anchor-200}Garbage on basic screen
+---------------------------------------------------------------------------------------------------------------------------------------
+
+When you start altered charset on screen when you start basic11 command (or funct+T), download again basic.tgz here : http://repo.orix.oric.org/dists/official/tgz/6502/
+
+untar and unzip it on your device, it should fix this : the charset.chs file had been altered
+
 \newpage
 
 []{#anchor-114}Q&A
@@ -1695,7 +1703,7 @@ You need to unzip/untar orixcfg new version here :
     (Don't switch off the Oric at this step)
 
 
-### []{#anchor-124}Upgrade from v2021.1 to v2021.2
+[]{#anchor-123}Upgrade from v2021.1 to v2021.2
 
 If your card is below v2021.1 version, please go to annexes part at the
 end of this document, before you try to upgrade to v2021.2
@@ -1724,7 +1732,7 @@ end of this document, before you try to upgrade to v2021.2
 
     (Don't switch off the Oric at this step)
 
-### []{#anchor-125}From 2020.4 to 2021.1
+[]{#anchor-125}From 2020.4 to 2021.1
 
 Download : <http://repo.orix.oric.org/dists/2021.1/tgz/6502/carts.zip>
 

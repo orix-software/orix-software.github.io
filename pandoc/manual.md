@@ -1,7 +1,7 @@
 ---
 title: Orix/Twilighte Manual
 author: v2022.3
-date: (rev 20/07/2022)
+date: (rev 07/08/2022)
 ---
 
 ![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm" height="12.749cm"}
@@ -21,7 +21,7 @@ https://raw.githubusercontent.com/orix-software/systemd/master/doc/pdf/systemd.p
 []{#anchor}INTRODUCTION
 =======================
 
-[]{#anchor-1}What is new (v2022.3) ? 
+[]{#anchor-1}What is new (v2022.3) ?
 -------------------------------------
 
 https://orix-software.github.io/update/2022_3/
@@ -581,6 +581,23 @@ checksum and count the bytes in a file
 https://github.com/orix-software/cksum
 
 ![](.//Pictures/1000020100000281000001CFDD8EF28C17D2A206.png){width="7.685cm" height="5.595cm"}
+\newpage
+
+# Ftdos
+
+## Usage
+
+ftdos mydsk.dsk
+
+ftdos disks must be present in /home/basic11/dsk/
+
+## Informations
+
+* Write on .dsk file is not supported
+
+* refers to ftdos manual for usages
+
+
 \newpage
 
 # help

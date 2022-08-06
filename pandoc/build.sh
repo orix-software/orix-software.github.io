@@ -8,6 +8,9 @@ cat ../docs/commands/cksum.md >> manual.md
 echo '![](.//Pictures/1000020100000281000001CFDD8EF28C17D2A206.png){width="7.685cm" height="5.595cm"}' >> manual.md
 
 echo "\\\newpage\n">> manual.md
+cat ../docs/commands/ftdos.md >> manual.md
+
+echo "\\\newpage\n">> manual.md
 cat ../docs/commands/help.md >> manual.md
 
 echo "\\\newpage\n">> manual.md

@@ -11,6 +11,7 @@
 * [echo](../echo)
 * [env](../env)
 * [forth](../forth)
+* [ftdos](../ftdos)
 * [grep](../grep)
 * [help](../help)
 * [hexdump](../hexdump)

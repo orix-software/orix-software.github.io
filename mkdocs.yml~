@@ -1,0 +1,88 @@
+site_name: Orix
+
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+    - pymdownx.snippets
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+    - attr_list
+    - md_in_html
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+    - tables
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+
+dev_addr: '192.168.1.103:8001'
+
+theme:
+    name: material
+    highlightjs: true
+#    icon:
+#        admonition:
+#            <type>: <icon> #
+
+    palette:
+        primary: red
+    features:
+        - navigation.tabs
+        - navigation.top
+        - content.tabs.link
+
+nav:
+    - Home: index.md
+    - Getting started : menu.md
+    - User guide :
+        - Commands : commands/all.md
+        - Floppy drive commands:
+            - Bootfd: user_manual/bootfd.md
+        - Shell guide :
+            - Basic 11 commands: how-it-work/index.md
+        - Software loader : home/loader/loader.md
+        - Updates :
+            - 2022.3: update/2022_3.md
+    - Developper guide : 
+        - Install: home/index.md
+        - Memory management : home/memory.md
+        - Build an Orix rom : home/buildrom.md
+        - Build standalone Rom : home/buildstandalonerom.md
+        - Generate a binary for sdcard/usb key: binaries/generateBinary.md
+        - SDK for Assembly : home/orixsdk.md
+        - Generate man pages : home/buildman.md
+        - cc65 : home/cc65.md
+        - Binary header format : home/header.md
+        - Joysticks management : home/joysticks.md
+        - Cross development on real hardware : home/pizero_connection.md
+        - Oricutron VS real hardware : home/oricutronvsreal.md
+    - Hardware guide :
+        - Memory: hardware/memory.md
+        - I/O : hardware/i_o.md
+        - Firmware informations : home/firmware.md
+        - Joysticks: hardware/joysticks.md
+        - Eeprom structure: hardware/eeprom_structure.md
+    - Kernel guide : 
+        - Kernel : home/kernel.md
+        - Primitives : kernel/primitives/index.md
+        - Boot sequence: how-it-work/binary_starts.md
+    - Extra Libs :
+        - Twilighte librairy : libs/twillib.md
+extra_css:
+    - stylesheets/extra.css
+extra:
+    social:
+        - icon: fontawesome/brands/twitter 
+          link: https://twitter.com/OrixTwil
+        - icon: fontawesome/brands/youtube
+          link: https://www.youtube.com/user/jede06600/videos
+

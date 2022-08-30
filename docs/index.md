@@ -20,6 +20,9 @@ It handles 32 Banks of 16KB of eeprom and 32 Banks of 16KB for RAM. The architec
 
 ## Orix
 
+loader_img.jpg
+![Image](loader_img.jpg){ align=left }
+
 Orix is the default (D)OS of the board when it plugged into the oric. Orix is a linux/unix style OS. It's the main OS which can help to start every others systems as oric-1 ROM, atmos ROM etc
 
 Orix must have at least 2 banks to boot : Kernel and shell.

@@ -3,8 +3,8 @@
 declare -a tab_command
 declare -a tab_repo
 
-tab_command=("bank" "basic10" "basic11" "bootfd"  "cat"   "cd"     "cksum" "clear" "otimer" "dsk-util" "echo"  "env"   "forth" "ftdos" "grep" "help" "hexdump"  "ioports" "list" "ls"    "lscpu" "lsmem" "man"   "mkdir" "mount" "orixcfg" "pwd"   "ps"     "reboot" "rm"    "setfont" "sh"    "submit" "touch" "twil"  "uname" "untar" "vidplay" "viewscr" "viewhrs" )
-tab_repo=("shell"   "shell"   "shell"   "bootfd"  "shell" "shell"  "cksum" "shell" "shell"  "dsk-util" "shell" "shell" "forth" "ftdos" "grep" "shell" "hexdump" "shell"  "list"  "shell" "shell" "shell" "shell" "shell" "shell" "orixcfg" "shell" "shell"  "shell"  "shell" "shell"   "shell" "submit" "shell" "shell" "shell" "untar" "vidplay" "viewscr" "shell")
+tab_command=("bank" "basic10" "basic11" "barboric" "blakes7" "bootfd" "born1983" "cat"   "cd"     "cksum" "clear" "otimer" "dsk-util" "echo"  "env"   "forth" "ftdos" "grep" "help" "hexdump"  "ioports" "list" "ls"    "lscpu" "lsmem" "loader" "man"   "mkdir" "mount" "orixcfg" "pwd"   "ps"     "quintes" "reboot" "rm"    "setfont" "sh"    "submit" "touch" "twil"  "twiload" "uname" "untar" "vidplay" "viewscr" "viewhrs" )
+tab_repo=("shell"   "shell"   "shell"   "barboric" "blakes7" "bootfd" "born1983" "shell" "shell"  "cksum" "shell" "shell"  "dsk-util" "shell" "shell" "forth" "ftdos" "grep" "shell" "hexdump" "shell"  "list"  "shell" "shell" "shell" "systemd" "shell" "shell" "shell" "orixcfg" "shell" "shell" "quintes" "shell"  "shell" "shell"   "shell" "submit" "shell" "shell" "systemd" "shell"  "untar" "vidplay" "viewscr" "shell")
 
 
 COMMAND_LIST="bank basic11 cat cd clear date echo env help ioports ls lscpu lsmem man mkdir mount ps reboot rm setfont touch twil uname viewhrs"
@@ -20,13 +20,33 @@ rm docs/commands/all.md
 #for I in $COMMAND_LIST; do
 for i in ${!tab_command[@]}; do
 VAL=${tab_command[$i]}
-echo Get shell .md
 
 wget https://raw.githubusercontent.com/orix-software/${tab_repo[$i]}/master/docs/$VAL.md -O docs/commands/$VAL.md
-echo "* [$VAL](../$VAL)" >> docs/commands/all.md
+
+wget https://raw.githubusercontent.com/orix-software/${tab_repo[$i]}/master/VERSION -O VERSION
+
+MYVERSION=`cat VERSION`
+
+echo "* [$VAL](../$VAL) Last version : $MYVERSION" >> docs/commands/all.md
 done
 
-wget https://raw.githubusercontent.com/orix-software/submit/master/docs/subdoc.md -O docs/commands/subdoc.md
+
+tab_rom=("kernel" "shell")
+
+#echo "# VERSION" > docs/user_manual/rom_versions.md
+
+for i in ${!tab_rom[@]}; do
+VAL=${tab_rom[$i]}
+
+#wget https://raw.githubusercontent.com/orix-software/${VAL}/master/VERSION -O VERSION
+#echo "* [$VAL](../$VAL)" >> docs/user_manual/rom_versions.md
+#cat VERSION >>docs/user_manual/rom_versions.md
+done
+
+
+
+
+#wget https://raw.githubusercontent.com/orix-software/submit/master/docs/subdoc.md -O docs/commands/subdoc.md
 
 
 

@@ -4,7 +4,7 @@ declare -a tab_command
 declare -a tab_repo
 
 tab_command=("bank" "basic10" "basic11" "barboric" "blakes7" "bootfd" "born1983" "cat"   "cd"     "cksum" "clear" "otimer" "dsk-util" "echo"  "env"   "forth" "ftdos" "grep" "help" "hexdump"  "ioports" "list" "ls"    "lscpu" "lsmem" "loader" "man"   "mkdir" "mount" "orixcfg" "pwd"   "ps"     "quintes" "reboot" "rm"    "setfont" "sh"    "submit" "touch" "twil"  "twiload" "uname" "untar" "vidplay" "viewscr" "viewhrs" )
-tab_repo=("shell"   "shell"   "shell"   "barboric" "blakes7" "bootfd" "born1983" "shell" "shell"  "cksum" "shell" "shell"  "dsk-util" "shell" "shell" "forth" "ftdos" "grep" "shell" "hexdump" "shell"  "list"  "shell" "shell" "shell" "systemd" "shell" "shell" "shell" "orixcfg" "shell" "shell" "quintes" "shell"  "shell" "shell"   "shell" "submit" "shell" "shell" "systemd" "shell"  "untar" "vidplay" "viewscr" "shell")
+tab_repo=("shell"   "shell"   "shell"   "barboric" "blakes7" "bootfd" "born1983" "shell" "shell"  "cksum" "shell" "shell"  "dsk-util" "shell" "shell" "forth" "ftdos" "grep" "shell" "hexdump" "shell"  "list"  "shell" "shell" "shell" "systemd" "shell" "shell" "shell" "orixcfg" "shell" "shell" "quintessential" "shell"  "shell" "shell"   "shell" "submit" "shell" "shell" "systemd" "shell"  "untar" "vidplay" "viewscr" "shell")
 
 
 COMMAND_LIST="bank basic11 cat cd clear date echo env help ioports ls lscpu lsmem man mkdir mount ps reboot rm setfont touch twil uname viewhrs"

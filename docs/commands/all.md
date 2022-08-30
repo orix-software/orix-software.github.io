@@ -30,7 +30,7 @@
 * [orixcfg](../orixcfg) Last version : 2022.3
 * [pwd](../pwd) Last version : 2022.3
 * [ps](../ps) Last version : 2022.3
-* [quintes](../quintes) Last version : 
+* [quintes](../quintes) Last version : 2022.1
 * [reboot](../reboot) Last version : 2022.3
 * [rm](../rm) Last version : 2022.3
 * [setfont](../setfont) Last version : 2022.3

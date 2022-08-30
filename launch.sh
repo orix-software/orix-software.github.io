@@ -23,6 +23,12 @@ VAL=${tab_command[$i]}
 
 wget https://raw.githubusercontent.com/orix-software/${tab_repo[$i]}/master/docs/$VAL.md -O docs/commands/$VAL.md
 
+ret=$?
+
+#if [ $ret -ne 0 ]; then
+#exit
+#fi
+
 wget https://raw.githubusercontent.com/orix-software/${tab_repo[$i]}/master/VERSION -O VERSION
 
 MYVERSION=`cat VERSION`

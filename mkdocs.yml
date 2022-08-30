@@ -71,7 +71,7 @@ nav:
         - Firmware informations : home/firmware.md
         - Joysticks: hardware/joysticks.md
         - Eeprom structure: hardware/eeprom_structure.md
-    - Kernel guide : 
+    - Kernel guide :
         - Kernel : home/kernel.md
         - Primitives : kernel/primitives/index.md
         - Boot sequence: how-it-work/binary_starts.md
@@ -81,8 +81,7 @@ extra_css:
     - stylesheets/extra.css
 extra:
     social:
-        - icon: fontawesome/brands/twitter 
+        - icon: fontawesome/brands/twitter
           link: https://twitter.com/OrixTwil
         - icon: fontawesome/brands/youtube
           link: https://www.youtube.com/user/jede06600/videos
-

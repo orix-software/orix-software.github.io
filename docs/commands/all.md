@@ -1,7 +1,10 @@
 * [bank](../bank) Last version : 2022.3
 * [basic10](../basic10) Last version : 2022.3
 * [basic11](../basic11) Last version : 2022.3
+* [barboric](../barboric) Last version : 
+* [blakes7](../blakes7) Last version : 
 * [bootfd](../bootfd) Last version : 2021.1
+* [born1983](../born1983) Last version : 
 * [cat](../cat) Last version : 2022.3
 * [cd](../cd) Last version : 2022.3
 * [cksum](../cksum) Last version : 2022.2
@@ -27,6 +30,7 @@
 * [orixcfg](../orixcfg) Last version : 2022.3
 * [pwd](../pwd) Last version : 2022.3
 * [ps](../ps) Last version : 2022.3
+* [quintes](../quintes) Last version : 
 * [reboot](../reboot) Last version : 2022.3
 * [rm](../rm) Last version : 2022.3
 * [setfont](../setfont) Last version : 2022.3

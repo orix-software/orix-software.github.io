@@ -1,7 +1,7 @@
 ---
 title: Orix/Twilighte Manual
 author: v2022.3
-date: (rev 07/08/2022)
+date: rev 31/08/2022
 ---
 
 ![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm" height="12.749cm"}
@@ -504,32 +504,3 @@ look to «/usr/share/sedoric/ » and for ftdos : « */usr/share/ftdos »*
 ------------------------------------------------------------
 
 /home/sedoric\# dsk-util -s e sed.dsk \*.hrs
-
-\newpage
-
-[]{#anchor-52}FORTH
-===================
-
-[]{#anchor-53}Use forth
------------------------
-
-You can use forth language. It works the same ways than Tele forth (it's
-teleforth but it write file on sdcard/usbdrive).
-
-You can download Teleforth langage in order to see how to program in
-forth.
-
-When you type « forth » forth starts with the current folder directory.
-
-If you were in /, forth will load and save file in this folder.
-
-In others cases, you can create a forth folder in home and goes into it
-in forth for example :
-
-/\#mkdir home\
-/\#cd home\
-/\#mkdir forth\
-/\#forth
-
-if you type « cd forth» in forth environnement, all files actions will
-be perform in « /*home/*forth »

@@ -1,10 +1,10 @@
 * [bank](../bank) Last version : 2022.3
 * [basic10](../basic10) Last version : 2022.3
 * [basic11](../basic11) Last version : 2022.3
-* [barboric](../barboric) Last version : 
+* [barboric](../barboric) Last version : 2022.1
 * [blakes7](../blakes7) Last version : 2022.1
 * [bootfd](../bootfd) Last version : 2021.1
-* [born1983](../born1983) Last version : 
+* [born1983](../born1983) Last version : 2022.1
 * [cat](../cat) Last version : 2022.3
 * [cd](../cd) Last version : 2022.3
 * [cksum](../cksum) Last version : 2022.2

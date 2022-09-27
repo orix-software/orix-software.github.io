@@ -32,3 +32,7 @@ if you have this one, you can not connect without a connector modification. The 
 
 ![Amplibus silicebit](./img/expansion_board_for_amplibus_fonction.jpg)
 
+Full overview :
+
+![Ribbon](./img/full_amplibus_double.jpg)
+

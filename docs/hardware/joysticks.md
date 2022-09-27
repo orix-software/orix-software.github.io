@@ -8,6 +8,4 @@ Right port has 3 buttons
 
 Left port has 1 button
 
-There is 2 bits to read joysticks states. Bit 7 and 6 
-
-
+There is 2 bits to read joysticks states. Bit 7 and 6

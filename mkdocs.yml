@@ -52,7 +52,7 @@ nav:
         - Software loader : home/loader/loader.md
         - Hardware manuals :
             - Ribbon cable: hardware/nappe.md
-            - Plug voice synthezer: hardware/synth_vocal_mea80900.md
+            - Plug voice synthetizer: hardware/synth_vocal_mea80900.md
             - Oric incompatibility: hardware/incompatibility_oric.md
             - Hardware issues: hardware/hardware_issues.md
         - Updates :

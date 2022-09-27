@@ -24,3 +24,5 @@ A&Y : ptr
     ; A & Y contains a ptr
     rts
 ```
+
+!!! warning "Number of malloc are limited in kernel side"

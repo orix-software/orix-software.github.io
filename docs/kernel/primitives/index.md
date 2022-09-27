@@ -14,6 +14,7 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 ## Numbers
 
 * [XBINDX](xbindx) : convert a number to decimal
+* [XHEXA](xhexa) : convert a number to hexadecimal and printit
 * [XDECIM](xdecim) : display a number to the output
 * [XDECAY](xdecay) : Convert a string into a number (16 bits)
 

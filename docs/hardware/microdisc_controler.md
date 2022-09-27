@@ -29,7 +29,10 @@ Check if the switches are ok on the drive :
 
 ### Step 5 : Connect and switch on
 
-* Connect microdisc controler to the orioc
+* Connect microdisc controler to the oric with the amplibus like this (Insert Silicebit amplibus into *expansion board connector* and the ribbon to microdisc controler in silicebit amplibus connector)
+
+![Patch](./img/amplibus_microdisc.jpg)
+
 * Connect the drive to microdisc controler
 * Switch on the oric with its own psu
 * Switch on the microdisc controleur with its own psu too

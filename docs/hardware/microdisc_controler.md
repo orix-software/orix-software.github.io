@@ -50,6 +50,6 @@ The following photo shows the pico psu and the adaptor for pico psu.
 
 * Solder "power on" on the adaptator, in order to have the pico starting
 
-![Patch](./micro_psu_patch.jpg)
+![Patch](./img/micro_psu_patch.jpg)
 
 * plug a 12V PSU (1,5A used during test), in the jack connector of the pico psu

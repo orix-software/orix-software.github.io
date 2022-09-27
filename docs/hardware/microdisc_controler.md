@@ -23,7 +23,9 @@ Check if the switches are ok on the drive :
 
 ![Patch](./img/microdisc_A14_A15.jpg)
 
-### Step 4 : Remove eeprom
+### Step 4 : Remove Eprom
+
+See the blue empty connector : the eprom is removed
 
 ![Patch](./img/microdisc_controler.jpg)
 

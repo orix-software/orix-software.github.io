@@ -39,7 +39,7 @@ See the blue empty connector : the eprom is removed
 * Switch on the oric with its own psu
 * Switch on the microdisc controleur with its own psu too
 
-!!! warning "The internal usb controler in Twilighte board refuses to work correctly during 20 minutes, in this configuration. Wait a bit"
+!!! warning "The internal usb controler in Twilighte board refuses to work correctly during 20 minutes, in this configuration. Wait a bit. It's a problem with the ribbon cable connected in the amplibus"
 
 ### Step 6 : Uses bootfd to start bootsector
 

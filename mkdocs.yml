@@ -57,6 +57,9 @@ nav:
             - Hardware issues: hardware/hardware_issues.md
         - Updates :
             - 2022.3: update/2022_3.md
+            - 2022.4: update/2022_3.md
+            - commands:
+                - File: update/file/file.md
     - Developper guide :
         - Install: home/index.md
         - Memory management : home/memory.md

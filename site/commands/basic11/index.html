@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.2">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.69437709.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -42,7 +42,7 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -1139,29 +1139,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#synopsys" class="md-nav__link">
-    SYNOPSYS
+  <a href="#start-basic11-menu" class="md-nav__link">
+    Start basic11 menu
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    DESCRIPTION
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-software" class="md-nav__link">
-    Working software
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
-    SOURCE
+  <a href="#how-the-tap-file-starts" class="md-nav__link">
+    How the .tap file starts
   </a>
   
 </li>
@@ -1182,7 +1168,95 @@
 
 <h1 id="basic11">basic11</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Start Atmos rom</p>
+<p>Start Atmos rom. You can type basic11 or press FUNCT+B to start.</p>
+<p>Load a personal .tap file
+When you starts basic11 commands, the default path is « /home/basic11/ ». Each action on the basic11 mode will be done in
+this folder (cload/csave). If you cload a tape file, it must be in « /home/basic11 » folder.</p>
+<p>You have downloaded a .tap file, and want to use it. Then, you can create a
+folder /home/basic11/
+Under Orix
+/#mkdir home
+/#cd home
+/home#mkdir basic11
+/home#cd basic11
+Put you file in this folder from your PC, and start basic11 (you don’t need to be in the «/home/basic11 » folder to start
+basic11 with no parameter. By default, basic11 starts in « /home/basic11/ »
+Oric.org tape file
+When you downloaded sdcard.tgz and unzip it into sdcard or usbkey device, there is many tape file included in this archive.
+You don’t need to move these type file, if you know the key, you can starts it from commands line. In this case, it will load
+the correct basic1.1 rom to start the tape file (see below), and the correct joystick configuration if it’s correct.
+Oric.org tape file update
+Each week a new software.tgz is generated. You can download it from « repo » and unzip it on the device. It will generate
+last tape file and last joysticks configuration.
+Search a tape file from command line</p>
+<p>Basic11 has also many.tap files inserted in sdcard.tgz
+8
+Try to find the software with option -l
+/# basic11 -l
+If you find your software, you can do perform ctrl+c.
+You can type space to do a pause.
+On that case, you can launch the tape file like :
+/# basic11 «KEYDISPLAYED
+When KEYDISPLAYED is the key displayed in key column. Please note that the key must be in UPPERCASE
+Load a tap file from command line
+Note that MYFILE must be in UPPERCASE
+/# basic11 «MYFILE
+If MYFILE is in the oric.org database, it will launch the software with the filename MYFILE.
+If basic11 command does not find MYFILE in the oric.org database, it will try to load it from /home/basic11/ folder.
+Save your program
+If you start « basic11 » with no options, basic rom will starts and each csave (or cload) actions will store files in « /home/basic11 »
+folder</p>
+<h2 id="start-basic11-menu">Start basic11 menu</h2>
+<p>If you type « basic11 -g » on command line or FUNCT+G, you will have a
+menu with all software which have a download link on oric.org (only atmos version and when a tape file is available).
+/#basic11 -g
+You can use left and right letters to change to a new letter. If the letter is empty, it means that there is no available tap file
+for this letter.
+You can use up and down link to navigate into software. If you press enter, the software will starts.
+Note that not all games are working yet. Some times, chars are corrupted. If the joysticks does not works, there is two case :
+• the game does not call rom routine to manage keyboard
+• keyboard mapping is not done yet
+You can use arrows to navigate into the menu :
+• up and down to select the software
+• right and left to switch to the menu letters
+Some letters are empty. It means that there is no software with tape file available on oric.org for this letter
+Quit basic11
+If you want to quit basic11 from interpreter command line, you can type « QUIT ». This will force to reboot to Orix (you can
+also use reset button)</p>
+<h2 id="how-the-tap-file-starts">How the .tap file starts</h2>
+<p>If you only type « basic11 », this will start bank 6 (normal basic rom). The default folder in that case is «/home/basic11 »
+If you type « basic11 » with a tape file as an argument, there is 2 cases
+1. The tape file (key) is already known in oric.org website, then basic11 try to find it in its databank file (/var/cache/basic11/
+folder). If the key is found, it will start the tape file located in «/usr/share/basic11/... »
+2. If the key is unknown, it will try to find it in «/home/basic11 »
+If the tap file is in the oric.org db file, basic11 will load the software configuration from the db software file (as joystick
+configuration, and the id of the rom). Basic11 load the right rom into ram bank, override the default basic11 path to the tape
+file folder (« usr/share/basic11/[firstletter software].
+It means that if you load this kind of software and you can quit the software, each file action in basic11 rom, will be performed
+in « usr/share/basic11/[firstletter software]. »
+Not working tapes (for instance)
+• All Oric-1 games can be started with FUNCT+L in ROM menu : start oric-1 (depending of your device), and put .tap
+files in /home/basic10
+• Software which does not work (25), but the number can be reduced in future release.
+cobra Cobra pinball Damsel in distress
+Rush hour 4K
+Le diamant de l’ile maudite Durendal HU*BERT
+Hunchback Schtroumpfs Stanley (ROM 0,1 tested)
+Them Titan Visif
+Xenon III Dig Dog Elektro Storm
+Kilburn Encounter Le tresor du pirate L’aigle d’or (ROM 0,1 tested)
+Compatible (micropuce) Volcanic demo Clavidact
+DAO Cobra Soft CW-Morse The Hellion
+MARC Caspak Kryllis : when we lost one life, the game does not restar</p>
+<h1 id="tape-with-altered-charset">Tape with altered charset</h1>
+<p>Fire flash Scuba Dive 3D fongus (i,f letters)
+Joysticks issues
+We did keyboard/joystick mapping for a lot of games, but we did not set the keyboard mapping for all software. If you want
+to help us, contact us.
+Some game does not work because they handle their own keyboard routine. It could be handle with hardware tricks but, it’s
+not done.
+Some others games uses special keys (SHIFT, CTRL) for direction or the first button. Theses cases are not handle yet : but it
+could in the future.</p>
 <h2 id="synopsys">SYNOPSYS</h2>
 <ul>
 <li>basic11</li>
@@ -1205,6 +1279,9 @@ or
 </ul>
 <h2 id="source">SOURCE</h2>
 <p>https://github.com/orix-software/shell/blob/master/src/commands/basic11.asm</p>
+
+
+
 
               
             </article>
@@ -1243,7 +1320,7 @@ or
       
     
     <a href="https://twitter.com/OrixTwil" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
     </a>
   
     
@@ -1252,7 +1329,7 @@ or
       
     
     <a href="https://www.youtube.com/user/jede06600/videos" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
     </a>
   
 </div>
@@ -1265,10 +1342,11 @@ or
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
       
     
   </body>

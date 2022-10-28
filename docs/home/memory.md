@@ -18,17 +18,17 @@ The banking management is the same as Telestrat in order to have Orix working on
 
 There is a register which contains a set of 4 banks. This register accept values from 0 to 7 : $343. Each value set another set of 4 banks. For example, if $343 contains 2, it will displays others parts of eeprom or SRAM when bit b0, b1, b2 in $321 register contains 4,3,2,1
 
-## Banking management explanation.
+## Banking management explanation
 
 Switching to another bank should not be done, but the behavior of the card is explained below.
 
-For example, a ROM can be loaded into eeprom or ram with orixcfg. Some others ROMS (as systemd, or others standalone rom) are loaded on the fly with loader menu.
+For example, a ROM can be loaded into eeprom or ram with [orixcfg](https://orix-software.github.io/commands/orixcfg/orixcfg) Some others ROMS (as systemd, or others standalone rom) are loaded on the fly with loader menu.
 
 If it needs more ram than the main memory, extended driver is not coded, but it could on the future.
 
 Kernel is always reached when $321&7 is equal to 7 . $343 register does not change the behavior of the value set in $321, when $321&7=7 $321&6=6 and $321&5=5. When it's below 5, banks are swapped when register value of $343 change
 
-To summarize : 
+To summarize :
 
 * bank 7 : kernel
 * bank 6 : basic11 (modified to work with sdcard or usb key)

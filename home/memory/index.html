@@ -783,7 +783,7 @@
       
         <li class="md-nav__item">
   <a href="#banking-management-explanation" class="md-nav__link">
-    Banking management explanation.
+    Banking management explanation
   </a>
   
 </li>
@@ -1220,7 +1220,7 @@
       
         <li class="md-nav__item">
   <a href="#banking-management-explanation" class="md-nav__link">
-    Banking management explanation.
+    Banking management explanation
   </a>
   
 </li>
@@ -1249,12 +1249,12 @@
 <p>Extra memory can be accessed without kernel primitive with simple code</p>
 <p>The banking management is the same as Telestrat in order to have Orix working on Telestrat too, because it keeps telestrat compatibility (7 banks available + 1 bank for Overlay RAM), that is why twilighte board adds others registers to keep telestrat compatibility</p>
 <p>There is a register which contains a set of 4 banks. This register accept values from 0 to 7 : $343. Each value set another set of 4 banks. For example, if $343 contains 2, it will displays others parts of eeprom or SRAM when bit b0, b1, b2 in $321 register contains 4,3,2,1</p>
-<h2 id="banking-management-explanation">Banking management explanation.</h2>
+<h2 id="banking-management-explanation">Banking management explanation</h2>
 <p>Switching to another bank should not be done, but the behavior of the card is explained below.</p>
-<p>For example, a ROM can be loaded into eeprom or ram with orixcfg. Some others ROMS (as systemd, or others standalone rom) are loaded on the fly with loader menu.</p>
+<p>For example, a ROM can be loaded into eeprom or ram with <a href="https://orix-software.github.io/commands/orixcfg/orixcfg">orixcfg</a> Some others ROMS (as systemd, or others standalone rom) are loaded on the fly with loader menu.</p>
 <p>If it needs more ram than the main memory, extended driver is not coded, but it could on the future.</p>
 <p>Kernel is always reached when $321&amp;7 is equal to 7 . $343 register does not change the behavior of the value set in $321, when $321&amp;7=7 $321&amp;6=6 and $321&amp;5=5. When it's below 5, banks are swapped when register value of $343 change</p>
-<p>To summarize : </p>
+<p>To summarize :</p>
 <ul>
 <li>bank 7 : kernel</li>
 <li>bank 6 : basic11 (modified to work with sdcard or usb key)</li>

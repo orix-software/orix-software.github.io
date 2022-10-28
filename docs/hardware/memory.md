@@ -7,5 +7,3 @@ Theses RAM and ROM are in banking mode : It replaces the top memory ($c000 to $F
 There is 32 banks of RAMs and 32 banks of ROMs
 
 bank command line command can displays the availables banks.
-
-

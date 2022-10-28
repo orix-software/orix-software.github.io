@@ -1,7 +1,6 @@
 # Header
 
-
-## Orix binary v2 format (relocated : bitfield table)
+## Orix binary v2 format (relocated : bitfield table, available since Kernel 2022.4)
 
 ``` ca65
   .byt $01,$00            ; non-C64 marker like o65 format

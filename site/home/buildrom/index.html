@@ -1312,52 +1312,58 @@
 <p>In order to have commands available from shell, some rules must be set in the bank structure (<a href="https://github.com/orix-software/empty-rom/">https://github.com/orix-software/empty-rom/</a>). Bank structure must be used, or commands won't be accessed from the kernel or commands (As <a href="/commands/help/">help</a> -b XX)</p>
 </li>
 <li>
-<p>A ROM which will be in an ROM slot or a RAM slot. </p>
+<p>A ROM will be in an ROM slot or a RAM slot.</p>
 </li>
 </ul>
 <p>Ram slot is useful if some values must be set internaly (and it avoid malloc use, but it's not the way a ROM should not done if the process can be launched twice at the same time).</p>
+<p>The twilighte board had been released without the sram saved with a battery, there is a lot more twilighte board in the workd without SRAM saved by battery than with a battery. In that case, if a .rom is coded with the behavior to keep information into it's bank slot (like configuration), it will lost (and the content of the rom) when oric is switch off.</p>
+<div class="admonition warning">
+<p class="admonition-title">Since shell 2022.4, it's possible to load roms with a shortcut from a config file in /etc</p>
+</div>
 <p>Some existing roms are in a eeprom slot (kernel, shell, monitor, forth ..). Systemd rom is a rom loaded into RAM bank.</p>
 <ul>
 <li>
 <p>C language can be used for bank, but the 16KB of a bank is quickly filled with C code.</p>
 </li>
 <li>
-<p><a href="/home/orixsdk/">orix-sdk</a> must be intensively used, and if it can't used, kernel primitives must be used. If a universal feature is missing in kernel, it's better to insert into kernel than develop only for the ROM.</p>
+<p><a href="/home/orixsdk/">orix-sdk</a> must be intensively used, and if it can't be used, kernel primitives must be used. If a universal feature is missing in kernel, it's better to insert into kernel than develop only for the ROM.</p>
 </li>
 <li>
 <p>Each rom contains 1 or X commands.</p>
 </li>
 <li>
-<p>In order to have multitasking in the future, commands must use malloc and free from kernel (and file operations)</p>
+<p>In order to have multitasking in the future, commands must use malloc and free from kernel (and file operations from the kernel)</p>
 </li>
 <li>
-<p>commands must use zero page from $80 to $80+26 because kernel saves 26 bytes from $80 to $80+26 in order to swap processes</p>
+<p>commands must use zero page from $80 to $80+26 because kernel saves 26 bytes from $80 to $80+26 in order to swap processes. Address $80 to $80+26 are reserved for binary functionnality. It's also possible to use RES and RESB (used in kernel primitive), if you don't call kernel primitives, or else, it well be erased in each kernel primitive call</p>
 </li>
-</ul>
-<p>*limit for a rom is 16KB. But, it's maybe enough because many operations are done with kernel calls (fopen for example).</p>
-<ul>
-<li>Kernel is always <strong>available</strong> when "set" banking is RAM or EEPROM Bank 7 (kernel is always available even when there is swapping between twilighte banking register.</li>
+<li>
+<p>limit for a rom is 16KB. But, it's maybe enough because many operations are done with kernel calls (fopen for example).</p>
+</li>
+<li>
+<p>Kernel is always <strong>available</strong> (Bank 7) when "set" banking is RAM or EEPROM  (kernel is always available durint swapping banks with twilighte banking register ($343).</p>
+</li>
 </ul>
 <h2 id="bank-structure">Bank Structure</h2>
 <p>If you want to build an orix compatible rom, a special format is used for Orix bank.</p>
-<p>You can download rom template here : <a href="https://github.com/orix-software/empty-rom/">https://github.com/orix-software/empty-rom/</a></p>
+<p>A rom template can be downloaded here : <a href="https://github.com/orix-software/empty-rom/">https://github.com/orix-software/empty-rom/</a></p>
 <h3 id="rom-definition">Rom definition</h3>
 <ul>
 <li>$fff0 : 1 byte, rom type (Value 0 : empty bank, value 1 : command bank)</li>
 </ul>
 <h2 id="zero-page">Zero page</h2>
-<p>Kernel uses some address in zero page. But $80 to $FF offset are reserved for binary, Orix banks. Address below $80 can be used, but kernel could erase it when IRQ or Kernels calls occurs.</p>
-<p>Mainly, in some orix rom, userzp is a label for $80 offset.</p>
-<p>Kernel saves 16 bytes when a binary is forked. It means that a XEXEC calls in a binary will save PPID offset from $80 to $80+16, and kernel will restore theses offsets when the PID has finished. In the future, multitasking will work in the same ways, and there is no guarantee that a binary will have its values restores when offset are greater than $80+16</p>
+<p>Kernel uses some address in zero page. But $80 to $80+26 offset are reserved for binary, Orix banks. Address below $80 can be used, but kernel could erase it when IRQ or Kernels calls are performed</p>
+<p>Iin some orix rom, userzp is a label for $80 offset.</p>
+<p>Kernel saves 16 bytes when a binary is forked. It means that a <a href="../../kernel/primitives/xexec">XEXEC</a> calls in a binary will save PPID offset from $80 to $80+16, and kernel will restore theses offsets when the PID has finished. In the future, multitasking will work in the same ways, and there is no guarantee that a binary will have its values restores when offset are greater than $80+16</p>
 <h2 id="launch-the-rom">Launch the ROM</h2>
 <h3 id="oricutron">Oricutron</h3>
-<p>If it's a rom which must be in a ram slot, the config file must be set it in in bankram section or else insert it in bankrom section.</p>
+<p>If it's a rom which must be in a ram slot, the config file (twilighte.cfg) must be set it in in bankram section or else insert it in bankrom section.</p>
 <h3 id="real">Real</h3>
 <p>Rom can be loaded on eeprom easily, it will erase 4 banks :</p>
-<div class="highlight"><pre><span></span><code>orixcfg -r -s <span class="m">0</span> myrom.rom
+<div class="highlight"><pre><span></span><code>/#orixcfg -r -s <span class="m">0</span> myrom.rom
 </code></pre></div>
 <p>Rom must be loaded into ram slot, it will erase only one bank :  :</p>
-<div class="highlight"><pre><span></span><code>orixcfg -w -s <span class="m">0</span> -b <span class="m">4</span> myrom.rom
+<div class="highlight"><pre><span></span><code>/#orixcfg -w -s <span class="m">0</span> -b <span class="m">4</span> myrom.rom
 </code></pre></div>
 <p>At this step if everything is OK, each commands from the bank can be accessed from shell.</p>
 

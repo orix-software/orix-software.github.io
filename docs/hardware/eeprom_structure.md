@@ -1,8 +1,8 @@
 # eeprom structure
 
-112KB 
+112KB
 
-The eeprom structure is (minimum requirement to boot): 
+The eeprom structure is (minimum requirement to boot):
 
 * First bank (16KB) : empty
 
@@ -15,7 +15,3 @@ The eeprom structure is (minimum requirement to boot):
 * Shell (16KB)
 * basic11 (16KB)
 * Kernel (16KB)
-
-
-
-

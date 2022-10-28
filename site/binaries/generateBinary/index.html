@@ -803,8 +803,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-one-build-your-binary-from-cc65-with-the-start-address-800" class="md-nav__link">
-    Step one : build your binary from cc65 with the start address $800
+  <a href="#step-one-build-your-binary-from-cc65-with-the-start-address-80" class="md-nav__link">
+    Step one : build your binary from cc65 with the start address $80
   </a>
   
 </li>
@@ -818,7 +818,7 @@
       
         <li class="md-nav__item">
   <a href="#step-three-last-one-generate-the-relocation-format" class="md-nav__link">
-    Step three (last one) : generate the relocation format :
+    Step three (last one) : generate the relocation format:
   </a>
   
 </li>
@@ -1191,8 +1191,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-one-build-your-binary-from-cc65-with-the-start-address-800" class="md-nav__link">
-    Step one : build your binary from cc65 with the start address $800
+  <a href="#step-one-build-your-binary-from-cc65-with-the-start-address-80" class="md-nav__link">
+    Step one : build your binary from cc65 with the start address $80
   </a>
   
 </li>
@@ -1206,7 +1206,7 @@
       
         <li class="md-nav__item">
   <a href="#step-three-last-one-generate-the-relocation-format" class="md-nav__link">
-    Step three (last one) : generate the relocation format :
+    Step three (last one) : generate the relocation format:
   </a>
   
 </li>
@@ -1228,13 +1228,19 @@
 <h1 id="build-a-binary-from-cc65-or-assembly-located-on-sdcard">Build a binary from cc65 or assembly located on sdcard</h1>
 <p>cc65 generates a non relocation format for telestrat target.</p>
 <p>We decided to stop this format in the kernel v2022.4 because it was too complex to manage it in a kernel which use dynamic memory allocation.</p>
-<p>In order to generate a launchable binary, relocbin must be used : https://github.com/assinie/orix-sdk/blob/master/bin/relocbin.py3</p>
-<h2 id="step-one-build-your-binary-from-cc65-with-the-start-address-800">Step one : build your binary from cc65 with the start address $800</h2>
-<p>cl65 -ttelestrat mysrc.c -o mysrc_800 --start-addr \$800</p>
+<p>In order to generate a launchable binary, relocbin must be used : <a href="https://github.com/assinie/orix-sdk/blob/master/bin/relocbin.py3">https://github.com/assinie/orix-sdk/blob/master/bin/relocbin.py3</a></p>
+<h2 id="step-one-build-your-binary-from-cc65-with-the-start-address-80">Step one : build your binary from cc65 with the start address $80</h2>
+<div class="highlight"><pre><span></span><code>cl65 -ttelestrat mysrc.c -o mysrc_800 --start-addr <span class="se">\$</span><span class="m">800</span>
+</code></pre></div>
 <h2 id="step-two-build-your-binary-from-cc65-with-the-start-address-900">Step Two : build your binary from cc65 with the start address $900</h2>
-<p>cl65 -ttelestrat mysrc.c -o mysrc_900 --start-addr \$900</p>
-<h2 id="step-three-last-one-generate-the-relocation-format">Step three (last one) : generate the relocation format :</h2>
-<p>python relocbin.py3 -2 -o mybin mysrc_800 mysrc_900 </p>
+<div class="highlight"><pre><span></span><code>/# cl65 -ttelestrat mysrc.c -o mysrc_900 --start-addr <span class="se">\$</span><span class="m">900</span>
+</code></pre></div>
+<h2 id="step-three-last-one-generate-the-relocation-format">Step three (last one) : generate the relocation format:</h2>
+<div class="highlight"><pre><span></span><code>/#python relocbin.py3 -2 -o mybin mysrc_800 mysrc_900
+</code></pre></div>
+<p>Place mybin in /bin of the sdcard/usb key of the twilighte board, and launch : </p>
+<div class="highlight"><pre><span></span><code>/#mybin
+</code></pre></div>
 
               
             </article>

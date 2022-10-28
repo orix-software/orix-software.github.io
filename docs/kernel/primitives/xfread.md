@@ -32,4 +32,4 @@ A & X contains the length read
 
 ```
 
-!!! fail "XFREAD does not manage multiples opened files "
+!!! fail "XFREAD does not manage multiples opened files before kernel 2022.4.1 "

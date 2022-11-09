@@ -52,3 +52,5 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 
 ## Keyboard
 
+* [XRDW0](xrdw0) : Get a char from keyboard (wait for a key)
+* [XRDW0](xrd0) : check if a char is typed on the keyboard (continue execution)

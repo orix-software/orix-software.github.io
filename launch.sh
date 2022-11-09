@@ -64,4 +64,4 @@ echo full
 fi
 
 
-mkdocs build && cp site/* . -r  && git add * && git commit -m update &&echo push &&  git push
+mkdocs build && cp site/* . -r  && git add * && git commit -m update && echo push &&  git push

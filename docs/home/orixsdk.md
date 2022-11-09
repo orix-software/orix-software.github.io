@@ -55,8 +55,6 @@ helloworld_str:
 	.asciiz "Hello world!"
 ```
 
-
-
 ### Return a line in text mode
 
 ```ca65
@@ -271,7 +269,6 @@ myfile:
     rts
 ```
 
-
 ## Strings operation
 
 ### strncpy
@@ -325,4 +322,44 @@ strncat src, dest, n
 
 !!! warning "dest ptr will be changed by strncat. dest pointer must be saved"
 
+## Get args from command line
+
+### Init struct of the mainargs from current process
+
+```ca65
+	XMAINARGS       = $2C
+	XGETARGV        = $2E
+	argv            := userzp   ; 2 bytes
+	argc            := userzp+2 ; 1 byte
+
+	initmainargs argv, argc, 0
+```
+
+### Get arg 1
+
+```ca65
+	XMAINARGS       = $2C
+	XGETARGV        = $2E
+	argv            := userzp   ; 2 bytes
+	argc            := userzp+2 ; 1 byte
+
+	; Init struct
+	initmainargs argv, argc, 0
+
+    getmainarg #1, (argv)
+
+	; Save the ptr of the parameter
+    sta     argv
+    sty     argv+1
+
+	BRK_TELEMON XWSTR0 ; Displays the arg 1 from the command line
+
+```
+
+Result (argbin) is binary in assembly with a parameter "foo"
+
+```bash
+/#argbin foo
+foo
+```
 

@@ -1,7 +1,7 @@
 ---
 title: Orix/Twilighte Manual
-author: v2022.3
-date: rev 31/08/2022
+author: v2022.4.1
+date: rev 09/11/2022
 ---
 
 ![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm" height="12.749cm"}
@@ -21,16 +21,16 @@ https://raw.githubusercontent.com/orix-software/systemd/master/doc/pdf/systemd.p
 []{#anchor}INTRODUCTION
 =======================
 
-[]{#anchor-1}What is new (v2022.3) ?
+[]{#anchor-1}What is new (v2022.4) ?
 -------------------------------------
 
-https://orix-software.github.io/update/2022_3/
+https://orix-software.github.io/update/2022_4/
 
 []{#anchor-4}General informations
 ---------------------------------
 
 This documentation must be use when you have installed orix version
-**2022.1** (see at the top of the banner on the oric at boot).
+**2022.3** (see at the top of the banner on the oric at boot).
 
 On [http://orix.oric.org](http://orix.oric.org/), you will have some
 youtube videos links showiint how to use some functionnality.
@@ -59,8 +59,8 @@ ways to use joystick, others hardware exists in the same way)
 
 <!-- -->
 
--   -   Joysticks support for a lot of games on atmos mode
-    -   the hobbit, defence-force (and others games) works without any
+-   Joysticks support for a lot of games on atmos mode
+-   the hobbit, defence-force (and others games) works without any
         patch for loading
 
 -   in system : kernel update, roms and ram update (with
@@ -132,7 +132,7 @@ button can't work with TOM2 connected.
 ![](.//Pictures/1000020100000310000000B48F2DD6FDDF185453.png){width="17cm" height="3.902cm"}
 --------------------------------------------------------------------------------------------
 
-![](.//Pictures/1000020100000280000001CFC6CDA413ADDF6624.png){width="10.659cm" height="7.712cm"}[]{#anchor-12}First boot : Initialize the storage
+{#anchor-12}First boot : Initialize the storage
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 When the card is sent, kernel is built with a default storage. In order
@@ -164,11 +164,13 @@ folder.
 Now, you can insert the device (sdcard or usbkey -- or pi zero) in the
 twilighte board and play.
 
-[]{#anchor-13}Upgrade from v2022.1 to v2022.3
+![check default storage](.//Pictures/1000020100000280000001CFC6CDA413ADDF6624.png){width="10.659cm" height="7.712cm"}[]
+
+[]{#anchor-13}Upgrade from v2022.4 to v2022.4.1
 ---------------------------------------------
 
-If your orix version is below v2022.1 version, please go to annexes part at the
-end of this document, before you try to upgrade to v2022.3
+If your orix version is below v2022.3 version, please go to annexes part at the
+end of this document, before you try to upgrade to v2022.4.1
 
 -   Download
     <http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz>
@@ -180,15 +182,15 @@ end of this document, before you try to upgrade to v2022.3
     /\#cd usr\
     /usr\#cd share\
     /*usr/share\#cd carts\
-    /usr/share/carts\#cd 2022.3*
+    /usr/share/carts\#cd 2022.4*
 
     If you want to usr usb drive for default device :
 
-    */usr/share/carts/2022.3\#orixcfg -r -s 4 kernelus.r64*
+    */usr/share/carts/2022.4\#orixcfg -r -s 4 kernelus.r64*
 
     If you want to use sdcard for default device :
 
-    /usr/share/carts/2022.3\#orixcfg -r -s 4 kernelsd.r64
+    /usr/share/carts/2022.4\#orixcfg -r -s 4 kernelsd.r64
 
 -   press 'y', and **wait until Orix reboots **
 
@@ -200,7 +202,7 @@ end of this document, before you try to upgrade to v2022.3
 
 Now bank displays all banks from l to 64. It means that you should have
 some strange bank signature for eeprom. Now an empty set is provided in
-*/usr/share/carts/2021.3 *folder. With Orixcfg you can initialize your
+*/usr/share/carts/2021.4 *folder. With Orixcfg you can initialize your
 set with this cart. Don't use « -s 4 » flag for orixcfg when you want to
 load emptyset.
 
@@ -217,11 +219,15 @@ You can access to available command from many ways :
 
 \newpage
 
-[]{#anchor-26}BASIC11
+[]{#anchor-26}Basic10 & Basic11
 =====================
 
 Launch
 ------
+
+Basic10 starts Oric-1 rom with sdcard/usb key support
+
+Basic11 starts Atmos rom with sdcard/usb key support
 
 You can type basic11 or press FUNCT+B to start
 
@@ -233,8 +239,9 @@ When you starts basic11 commands, the default path is
 this folder (cload/csave). If you cload a tape file, it must be in
 « /home/basic11 » folder.*
 
-![](.//Pictures/1000000000000280000001CEBA336B5CD12B9A19.png){width="7.544cm"
-height="5.447cm"}You have downloaded a .tap file, and want to use it.
+![](.//Pictures/1000000000000280000001CEBA336B5CD12B9A19.png){width="7.544cm" height="5.447cm"}
+
+You have downloaded a .tap file, and want to use it.
 Then, you can create a folder /*home*/basic11/
 
 Under Orix
@@ -268,9 +275,9 @@ last joysticks configuration.
 []{#anchor-30}Search a tape file from command line
 --------------------------------------------------
 
-![](.//Pictures/1000000000000280000001D0A6B6EC50CAE741F0.png){width="7.304cm"
-height="5.398cm"}[]{#anchor-31}Basic11 has also many.tap files inserted
-in sdcard.tgz
+![](.//Pictures/1000000000000280000001D0A6B6EC50CAE741F0.png){width="7.304cm" height="5.398cm"}[]{#anchor-31}
+
+Basic11 has also many.tap files inserted in sdcard.tgz
 
 Try to find the software with option -l
 
@@ -310,8 +317,9 @@ csave (or cload) actions will store files in « /*home/basic11 » folder*
 []{#anchor-34}Start basic11 menu
 --------------------------------
 
-![](.//Pictures/1000020100000280000001CF0A8D4A0E098A9D66.png){width="7.384cm"
-height="5.341cm"}If you type « basic11 -g » on command line or FUNCT+G,
+![](.//Pictures/1000020100000280000001CF0A8D4A0E098A9D66.png){width="7.384cm"height="5.341cm"}
+
+If you type « basic11 -g » on command line or FUNCT+G,
 you will have a menu with all software which have a download link on
 oric.org (only atmos version and when a tape file is available).
 
@@ -381,7 +389,7 @@ software, each file action in basic11 rom, will be performed in
 
   ----------------------------- --------------------- ------------------------------------------------------------
   cobra                         Cobra pinball         Damsel in distress
-  Rush hour 4K                                        
+  Rush hour 4K
   Le diamant de l'ile maudite   Durendal              HU\*BERT
   Hunchback                     Schtroumpfs           Stanley (ROM 0,1 tested)
   Them                          Titan                 Visif
@@ -397,7 +405,7 @@ software, each file action in basic11 rom, will be performed in
 
   ------------ ------------ -------------------------
   Fire flash   Scuba Dive   3D fongus (i,f letters)
-                            
+
   ------------ ------------ -------------------------
 
 []{#anchor-39}Joysticks issues
@@ -414,93 +422,5 @@ Some others games uses special keys (SHIFT, CTRL) for direction or the
 first button. Theses cases are not handle yet : but it could in the
 future.
 
-[]{#anchor-40}Software update changelog
----------------------------------------
-
-You need to download software.tgz in the official repo for :
-
--   Mr wimpy added to the archive (takes effect 20/01/2021)
--   Airfox added to the archive (takes effect 20/01/2021)
--   Atlantid added to the archive (takes effect 20/01/2021)
--   Centrale nucléaire added to the archive (takes effect 20/01/2021)
--   Cobra invaders added to the archive (takes effect 20/01/2021)
--   Coctail Recipies added to the archive (takes effect 20/01/2021)
--   Crusher added to the archive (takes effect 20/01/2021)
--   Death Driver added to the archive (takes effect 20/01/2021)
--   Challenge voile added to the archive (takes effect 20/01/2021)
--   Breakout 1K added to the archive (takes effect 20/01/2021)
--   DAO added to the archive (takes effect 20/01/2021)
--   echecs asn
--   dialogue
-
-« added to the archive » means that you need to download softwares.tgz
-from the repo after the displayed date to get it in the archive
 
 \newpage
-
-[]{#anchor-41}BOOTFD
-====================
-
-[]{#anchor-42}Introduction
---------------------------
-
-bootfd is a tool to boot the boot sector when a drive is connected.
-Insert a disk and type :
-
-/\#bootfd
-
-The binary is located to bin folder. It will load microdisc rom and
-start it. If the binary displays that it does not found microdis.rom,
-then place microdis.rom file in the right folder.
-
-If you have firmware 1, you will be able to load « blake's 7 ». If you
-have firmware 2, all sedoric .dsk should start.
-
-For instance, only Space99 does not work, it stops after intro.
-
-\newpage
-
-[]{#anchor-45}DF
-================
-
-[]{#anchor-46}Usage
--------------------
-
-It displays available blocks on current device
-
-![](.//Pictures/1000000000000283000001D12D928D88479E7F83.png){width="17cm"
-height="12.293cm"}
-
-\newpage
-
-[]{#anchor-47}DSK-UTIL
-======================
-
-[]{#anchor-48}Introduction
---------------------------
-
-This tool is useful to extract files from dsk file. You can extract it,
-and uses command line tool to use it. For example, if you extract a
-basic program (.bas in FTDOS .dsk file), you can see it with « list »
-binary. If it's a .hrs/.hir file, you can read it with viewhrs file.
-
-You can create a «/*home/sedoric/ » *folder and adds .dsk sedoric files
-in this folder
-
-Some .dsk files are imported in sdcard.tgz. For sedoric, you can have a
-look to «/usr/share/sedoric/ » and for ftdos : « */usr/share/ftdos »*
-
-[]{#anchor-49}List files from .dsk (sedoric)
---------------------------------------------
-
-/home/sedoric\# dsk-util -s ls sed.dsk
-
-[]{#anchor-50}Extract a file from sedoric .dsk file
----------------------------------------------------
-
-/home/sedoric\# dsk-util -s e sed.dsk myfile.hrs
-
-[]{#anchor-51}Extract only .hrs files from sedoric .dsk file
-------------------------------------------------------------
-
-/home/sedoric\# dsk-util -s e sed.dsk \*.hrs

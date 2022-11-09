@@ -224,6 +224,36 @@ box and program the firmware with Jtag port)
 []{#anchor-121}Upgrade from older version
 -----------------------------------------
 
+Upgrade from v2022.1 to v2022.3
+---------------------------------------------
+
+If your orix version is below v2022.1 version, please go to annexes part at the
+end of this document, before you try to upgrade to v2022.3
+
+-   Download
+    <http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz>
+-   untar/gunzip sdcard.tgz (use 7zip under windows) on your device usb
+    or sdcard : It could require some time to copy because there is a
+    lot of small files (tap, hlp etc)
+-   you can start orix on real machine, and type :
+
+    /\#cd usr\
+    /usr\#cd share\
+    /*usr/share\#cd carts\
+    /usr/share/carts\#cd 2022.3*
+
+    If you want to usr usb drive for default device :
+
+    */usr/share/carts/2022.3\#orixcfg -r -s 4 kernelus.r64*
+
+    If you want to use sdcard for default device :
+
+    /usr/share/carts/2022.3\#orixcfg -r -s 4 kernelsd.r64
+
+-   press 'y', and **wait until Orix reboots **
+
+    (Don't switch off the Oric at this step)
+
 
 Upgrade from v2021.4 to v2022.1
 ---------------------------------------------

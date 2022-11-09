@@ -1,7 +1,7 @@
 ---
 title: Orix/Twilighte Manual
 author: v2022.3
-date: (rev 07/08/2022)
+date: rev 31/08/2022
 ---
 
 ![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm" height="12.749cm"}
@@ -217,11 +217,15 @@ You can access to available command from many ways :
 
 \newpage
 
-[]{#anchor-26}BASIC11
+[]{#anchor-26}Basic10 & BASIC11
 =====================
 
 Launch
 ------
+
+Basic10 starts Oric-1 rom with sdcard/usb key support
+
+Basic11 starts Atmos rom with sdcard/usb key support
 
 You can type basic11 or press FUNCT+B to start
 
@@ -473,77 +477,45 @@ height="12.293cm"}
 
 \newpage
 
-[]{#anchor-47}DSK-UTIL
-======================
+404: Not Found\newpage
 
-[]{#anchor-48}Introduction
---------------------------
+# asm2k2 
 
-This tool is useful to extract files from dsk file. You can extract it,
-and uses command line tool to use it. For example, if you extract a
-basic program (.bas in FTDOS .dsk file), you can see it with « list »
-binary. If it's a .hrs/.hir file, you can read it with viewhrs file.
+launch asm2k2 demo
 
-You can create a «/*home/sedoric/ » *folder and adds .dsk sedoric files
-in this folder
+/#asm2k2
 
-Some .dsk files are imported in sdcard.tgz. For sedoric, you can have a
-look to «/usr/share/sedoric/ » and for ftdos : « */usr/share/ftdos »*
-
-[]{#anchor-49}List files from .dsk (sedoric)
---------------------------------------------
-
-/home/sedoric\# dsk-util -s ls sed.dsk
-
-[]{#anchor-50}Extract a file from sedoric .dsk file
----------------------------------------------------
-
-/home/sedoric\# dsk-util -s e sed.dsk myfile.hrs
-
-[]{#anchor-51}Extract only .hrs files from sedoric .dsk file
-------------------------------------------------------------
-
-/home/sedoric\# dsk-util -s e sed.dsk \*.hrs
-
-\newpage
-
-[]{#anchor-52}FORTH
-===================
-
-[]{#anchor-53}Use forth
------------------------
-
-You can use forth language. It works the same ways than Tele forth (it's
-teleforth but it write file on sdcard/usbdrive).
-
-You can download Teleforth langage in order to see how to program in
-forth.
-
-When you type « forth » forth starts with the current folder directory.
-
-If you were in /, forth will load and save file in this folder.
-
-In others cases, you can create a forth folder in home and goes into it
-in forth for example :
-
-/\#mkdir home\
-/\#cd home\
-/\#mkdir forth\
-/\#forth
-
-if you type « cd forth» in forth environnement, all files actions will
-be perform in « /*home/*forth »
 \newpage
 
 # bank
 
 ## Introduction
 
-Displays bank or switch a bank
+Bank command is command line tool to see which bank are loaded into EEPROM bank and RAM bank. Each bank has a
+"signature". Bank allows to see theses banks.
+Bank can also starts a ROM with his id. In that case, you don’t need to have a rom "orix friendly" and you can start it
+from command line. In the current bank version, there is restriction to launch a command.
 
 ## SYNOPSYS
 
-+ bank
+### List all bank (when ROM signature is valid)
+
+/#bank
+Bank 1 to 32 is eeprom bank and bank 33 to 64 are ram bank
+
+### Displays all signature even when ROM is not valid
+
+/#bank
+
+### List all commands from a bank
+
+/#help -b5
+
+### Start a specific bank
+
+/#bank 1
+
+If you need to load a rom into a bank, you need to have a look to orixcfg binar
 
 ## DESCRIPTION
 
@@ -556,6 +528,74 @@ bank -a : displauys all bank (empty bank too)
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/bank.asm
+\newpage
+
+# Barboric/Barbitoric demo
+
+Launch barbitoric demo from orix (sdcard/usbdrive)
+
+/# barboric
+\newpage
+
+# Blakes7
+
+Start Blakes7
+
+/#blakes7
+
+If you want to remove your saved game : 
+
+/#cd /usr/share/blakes7
+
+/usr/share/blakes7# rm 136.o
+\newpage
+
+# Born1983
+
+Launch born 1983 demo
+
+/#born1983
+
+\newpage
+
+# cat
+
+## Introduction
+
+ Display a file to the screen
+
+## SYNOPSYS
+
++ cat FILENAME
+
+## NOTES
+
+Displays content of the FILENAME
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/cat.asm
+\newpage
+
+# cd
+
+## Introduction
+
+Change directory
+
+## SYNOPSYS
+
++ cd DIRECTORY
+
+## EXAMPLES
+
++ cd /usr/bin
++ cd ..
++ cd /
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/cd.asm
 \newpage
 
 # Command: cksum
@@ -583,6 +623,148 @@ https://github.com/orix-software/cksum
 ![](.//Pictures/1000020100000281000001CFDD8EF28C17D2A206.png){width="7.685cm" height="5.595cm"}
 \newpage
 
+# clear
+
+## Introduction
+
+Clear the screen
+
+## SYNOPSYS
+
++ clear
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/clear.asm
+\newpage
+
+# cp
+
+## Introduction
+
+ Copy a file to another file
+
+## SYNOPSYS
+
++ #cp from to
+
+## DESCRIPTION
+
+Copy a file to another. Only 40KB can be copied. It's a software limit. cp tries to allocate 40KB, if there is not enough memory it displays Out of memory.
+
+## EXAMPLES
+
++ cp from.txt to.txt
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/cp.asm
+\newpage
+
+# Command: dsk-util
+
+### Disk image utility
+
+## SYNOPSYS
++ dsk-util -f|-s file.dsk
++ dsk-util -h
+
+## EXAMPLES
++ dsk-util -f ftdos.dsk
++ dsk-util -s sedoric3.dsk
+
+## DESCRIPTION
+**dsk-util** display the directory of a disk image file.
+
+## OPTIONS
+*  -h
+                show this help message and exit
+*  -f
+                FTDOS disk image
+*  -s
+                Sedoric disk image
+
+## SOURCE
+https://github.com/orix-software/dsk-util
+
+\newpage
+
+# echo
+
+## Introduction
+
+Display a message
+
+## SYNOPSYS
+
++ #echo hello
+
+## DESCRIPTION
+
+Display a message
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/echo.asm
+\newpage
+
+# env
+
+## Introduction
+
+Displays env variables
+
+## SYNOPSYS
+
++ #env
+
+## DESCRIPTION
+
+Displays env variables. It can't be used in command line or shell script for instance
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/env.asm
+\newpage
+
+# Command: forth
+
+Launch forth for Orix
+
+## SYNOPSYS
++ forth
+
+## DESCRIPTION
+
+**Forth** is a language based on teleforth (telestrat). You can type **VLIST** to list all words. If you need to switch to hires, you can type **GRAFX** and **HIRES**. If you need to switch to text: **GRAFX** and **TEXT**
+
+
+You can use forth language. It works the same ways than Tele forth (it's
+teleforth but it write file on sdcard/usbdrive).
+
+You can download Teleforth langage in order to see how to program in
+forth.
+
+When you type « forth » forth starts with the current folder directory.
+
+If you were in /, forth will load and save file in this folder.
+
+In others cases, you can create a forth folder in home and goes into it
+in forth for example :
+
+* mkdir home
+* #cd home
+* #mkdir forth
+* forth
+
+if you type « cd forth» in forth environnement, all files actions will
+be perform in « /*home/*forth »
+
+## SOURCE
+
+https://github.com/assinie/Tele-Forth
+\newpage
+
 # Ftdos
 
 ## Introduction
@@ -606,6 +788,40 @@ ftdos disks must be present in /home/basic11/dsk/
 * Write on .dsk file is not supported
 * refers to ftdos manual for usages
 * you need to switch off/on the oric when you reset into ftdos mode, because there is a bug when we reset during ftdos mode. Ftdos does not load and reboot into Orix
+\newpage
+
+# Command: grep
+
+### grep utility
+
+## SYNOPSYS
++ grep [-ncisw] string filename
++ grep -h
+
+## DESCRIPTION
+**grep** display all lines of a text file that contain a string.
+
+## OPTIONS
+*  -h^GDisplay command syntax
+*  -n^GShow line numbers
+*  -c^GCount only the matching lines
+*  -i^GIgnore case
+*  -w^GString can use wildcards *, ?, ^ and $
+*  -s^GSilent mode
+
+## EXAMPLES
++ grep error menu.sub
++ grep -n "level 1" menu.sub
++ grep -i ERROR menu.sub
++ grep -ni 'level 2' menu.sub
++ grep -w '\*lev?? 2\*'menu.sub
++ grep -w '^if' menu.sub
++ grep -w 'error$' menu.sub
++ grep -w 'if*level ??' menu.sub
+
+## SOURCE
+https://github.com/orix-software/grep
+
 \newpage
 
 # help
@@ -652,7 +868,7 @@ https://github.com/orix-software/hexdump
 
 ## Introduction
 
-Display I/O Ports
+Display I/O Ports of the board
 
 ## SYNOPSYS
 
@@ -669,12 +885,22 @@ https://github.com/orix-software/shell/blob/master/src/commands/ioports.asm
 
 # ls
 
-### Display catalog
+## Display catalog
+
+List all the file in the current folder. Token are supported (*,?) ex : « ls ?e.tap » will list all files with a ‘e ’ in the
+second letter
 
 ## SYNOPSYS
 
+list all the files in the current folder
+
 + ls
+
+List all *.tap files
+
 + ls *.tap
+
+List size and datetime of the file
 + ls -l
 
 ## DESCRIPTION
@@ -690,7 +916,7 @@ https://github.com/orix-software/shell/blob/master/src/commands/ls.asm
 
 ## Introduction
 
-Displays cpu info
+Displays cpu info. It detects : 6502, 65c02 and 65816
 
 ## SYNOPSYS
 
@@ -740,7 +966,7 @@ display manual pages
 
 ## SYNOPSYS
 
-+ # man lsmem
++ man lsmem
 
 ## DESCRIPTION
 
@@ -804,6 +1030,112 @@ https://github.com/orix-software/shell/blob/master/src/commands/mount.asm
 ![](.//Pictures/1000020100000280000001CFC6CDA413ADDF6624.png){width="7.685cm" height="5.595cm"}
 \newpage
 
+# otimer
+
+## Introduction
+
+Display timer since the Oric is power on
+
+## SYNOPSYS
+
++ otimer
+
+## NOTES
+
+Each time Oric reboots, this timer is reset
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/otimer.asm
+\newpage
+
+# pwd
+
+## Introduction
+
+ Display the current path
+
+## SYNOPSYS
+
++ pwd
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/pwd.asm
+\newpage
+
+# ps
+
+## Introduction
+
+Displays process list
+
+## SYNOPSYS
+
++ #ps
+
+## DESCRIPTION
+
+Displays process list
+
+## EXAMPLES
+
++ ps
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/ps.asm
+\newpage
+
+# Quintessential demo
+
+Start quintessential demo 
+
+/#quintes
+\newpage
+
+# reboot
+
+## Introduction
+
+ reboot machine
+
+## SYNOPSYS
+
++ reboot
+
+## DESCRIPTION
+
+Reboot the machine: it call NMI VECTORS and flush page 2 and page 0
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/reboot.asm
+\newpage
+
+# rm
+
+## Introduction
+
+remove file
+
+## SYNOPSYS
+
++ /# rm /myfile
+
+## DESCRIPTION
+
+rm file or directory. For instance, rm can only remove file in root folder, relative arg does not work yet
+
+## EXAMPLES
+
++ rm /myffile
+
+## SOURCE
+
+https://github.com/orix-software/shell/blob/master/src/commands/rm.asm
+\newpage
+
 # sh
 
 ## Introduction
@@ -835,17 +1167,34 @@ When kernel has finished to initialize at boot time, sh command is started in in
 *Ctrl-t* : swap char under the cursor with the previous one, and shift the cursor to the right
 
 *Ctrl-o* : Switch into replacement or insertion mode
+
+## Shortcuts for tools
+
+*Funct+T* : Start Twilighte setup
+
+*Funct+L* : Start Loader
+
+*Funct+B* : Start Basic11
+
+*Funct+G* : Start basic11 gui
+
+## Available commands
+
+The command line is limited in characters (37). If you reach this limit, you won’t be able to type the complete command line Known bugs
+
+* « ./ » can not be used to launch a binar
 \newpage
 
 # twil
 
 ## Introduction
 
-Manage twilighte board options
+Twil command can displays the current firmware of twilighte card, and
+can swap root folder to usbkey or sdcard.
 
 ## SYNOPSYS
 
-+ /#twil -f  : displays firmware
++ /#twil -f  : displays Twilighte board firmware
 + /#twil -u  : switch default device : usbdrive
 + /#twil -s  : swap default device to : sdcard
 
@@ -1071,318 +1420,6 @@ path=/usr/share/rom/my2.rom
 
 ## SOURCE
 https://github.com/orix-software/submit
-
-
-======================
-
-# Description
-\
-\
-Un fichier submit peut faire appel a toutes les commandes du shell a
-l'exception des commandes internes suivantes:
-
-- help
-- pwd
-
-qui ne sont pas encore supportees.
-
-Les commandes **call**,**choice**,**cls**,
-**getkey**,**goto**,**if**,**pause**,
-**return** et **type** ont ete ajoutees.
-
-La commande **echo** est etendue par rapport a celle du shell.
-
-Une ligne ne peut exceder *128* caracteres ou *200* apres expansion des variables.
-
-Il n'y a ^Bpas de taille maximale^G pour un fichier submit.
-
-# Description
-\
-\
-Les parametres de la ligne de commande sont accessibles par les variables^C$0^G a^C$9^G.
-
-^C$0^G est le nom du fichier submit.
-
-
-Les lignes commencant par **REM** ,  ^T#^P , ^T;^P sont des commentaires.
-
-Les lignes commencant par ^T:^P definissent un label.
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-# call
-\
-\
-La commande **call** permet de faire
-appell a une sous-routine terminee
-par **return**.
-\
-\
-## Syntaxe:^P
-call^Flabel
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-# choice
-\
-\
-La commande **choice** permet d'afficher
-un message et de proposer une liste
-d'options.
-\
-\
-## Syntaxe:^P
-choice ^B[-n] [-c<liste>] [msg]
-
-## Options:^P
-- ^B-n^G n'affiche pas les choix
-- ^B<liste>^G est une suite de caracteres composant les options possibles. Valeur par defaut: YN
-- ^Bmsg^G est le message affiche. Valeur par defaut: aucun
-
-## Exemples:^P
-- choice -con Continuer
-\
-\
-\
-# echo
-\
-\
-La commande **echo** accepte les caracteres de controle.
-
-Par exemple pour la couleur:
-
-^@^WNoir ^P
-^ARouge
-^BVert
-^CJaune
-^DBleu
-^EMagenta
-^FCyan
- Blanc
-
-  noir
-^Qrouge ^P
-^@^Rvert ^P
-^@^Sjaune ^P
-^Tbleu ^P
-^Umagenta ^P
-^D^Vcyan ^P
-^@^Wblanc ^P
-
-Les caracteres de controles sont \^ A a \^[
-
-## Syntaxe:^P
-- echo ^B[-n] [message]
-
-## Options:^P
-- ^B-n^G ne fait pas de saut de ligne a la suite du message
-\
-\
-# Getkey
-\
-\
-La commande **getkey** permet d'attendre
-la frappe d'une touche du clavier.
-
-Le code ASCII de la touche est place
-dans la variable^D^Rkey ^P^@.
-\
-\
-## Syntaxe:^P
-getkey
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-# Goto
-\
-\
-La commande **goto** permet de poursuivre
-l'execution a un label specifique.
-
-Un label est cree en debutant une ligne
-par^F:^Gsuivi d'une chaine de caracteres.
-\
-\
-## Syntaxe:^P
-goto^Flabel
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-# If  (1/2)
-\
-\
-La commande **if** permet de faire
-un test par rapport au code erreur de
-la derniere commande executee ou de
-tester l'existence d'un fichier.
-\
-\
-## Syntaxe:^P
-- if ^D^Rvar^C^Pn^Finstruction
-- if exist^Efichier^Finstruction
-- if ^D^Rvar^B^Pop^Cn^Finstruction
-\
-Si la valeur de ^D^Rvar^G^Pest superieure ou egale a^Cn^Gou si le fichier
-existe alors^Finstruction^Gsera executee.
-
-^D^Rvar^G^P peut etre errorlevel ou key
-
-^Bop^Gpeut etre <, =, > ou #
-\
-# If  (2/2)
-\
-\
-### Exemples:^P
-- [1] if errorlevel 2 goto choix2
-- [2] if exist fichier echo Ok
-- [3] if errorlevel < 2 echo inferieur
-- [4] if keu # 65 echo different
-\
-\
-[1] Ira au label^Fchoix2^Gsi^D^Rerrorlevel^P^G est superieur ou egale a^C2^G.
-
-[2] Affiche^BOk^Gsi^Efichier^Gexiste.
-
-[3] Affiche^Binferieur^Gsi^D^Rerrorlevel ^P^G est inferieur a^C2^G.
-
-[4] Affiche^Bdifferent^Gsi^D^Rkey ^P^G est different de^C65^G.
-\
-\
-\
-# Pause
-\
-\
-La commande **pause** affiche un message et attend l'appui sur une touche.
-
-Elle accepte un message optionnel en parametre.
-\
-\
-\
-\
-## Syntaxe:^P
-pause^B[message]
-
-Le message par defaut est:
-
-      ^LPress any key to continue
-\
-\
-\
-\
-\
-\
-# Return
-\
-\
-La commande **return** termine une
-sous-routine et permet de revenir a la
-ligne suivant le **call**.
-
-## Syntaxe:^P
-return
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-# Text (1/2)
-\
-\
-Affiche directement tout ce qui est entre **text** et **endtext**
-\
-Cela permet d'afficher un texte ou un formulaire plus simplement qu'avec
-la commande **echo**
-\
-Les codes de controles sont interpretes ainsi que les parametres du script.
-\
-**text** et **endtext** doivent etre seuls sur la ligne.
-\
-\
-\
-\
-\
-\
-\
-# Text (2/2)
-\
-\
-^TExemple:^P
-
-text
-
-Ligne de texte
-
-avec des^[Bcouleurs^[G
-
-endtext
-\
-\
-^Taffiche:^P
-
-Ligne de texte
-
-avec des^Bcouleurs^G
-\
-\
-\
-\
-\
-# Type
-\
-\
-La commande **type** est un alias de **cat**
-mais renvoie une erreur si son parametre est absent.
-
-## Syntaxe:^P
-type ^Efichier
 
 \newpage
 

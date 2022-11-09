@@ -12,6 +12,7 @@
 * [cksum](../cksum) Last version : 2022.2
 * [clear](../clear) Last version : 2022.4
 * [cp](../cp) Last version : 2022.4
+* [df](../df) Last version : 2022.4
 * [otimer](../otimer) Last version : 2022.4
 * [dsk-util](../dsk-util) Last version : 2022.2
 * [echo](../echo) Last version : 2022.4

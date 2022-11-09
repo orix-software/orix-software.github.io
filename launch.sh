@@ -3,8 +3,8 @@
 declare -a tab_command
 declare -a tab_repo
 
-tab_command=("30years" "asm2k2" "bank"  "basic10" "basic11" "barboric" "blakes7" "bootfd" "born1983" "cat"   "cd"     "cksum" "clear" "cp"    "otimer" "dsk-util" "echo"  "env"   "forth" "ftdos" "grep" "help" "hexdump"  "ioports" "list" "ls"    "lscpu" "lsmem" "loader" "man"   "mkdir" "mount" "orixcfg" "pwd"   "ps"     "quintes"        "reboot" "rm"    "setfont" "sh"    "submit" "touch" "twil"  "twiload" "uname" "untar" "vidplay" "viewscr" "viewhrs" "zerofx")
-tab_repo=(   "30years" "asm2K2" "shell" "shell"   "shell"   "barboric" "blakes7" "bootfd" "born1983" "shell" "shell"  "cksum" "shell" "shell" "shell"  "dsk-util" "shell" "shell" "forth" "ftdos" "grep" "shell" "hexdump" "shell"  "list"  "shell" "shell" "shell" "systemd" "shell" "shell" "shell" "orixcfg" "shell" "shell" "quintessential" "shell"  "shell" "shell"   "shell" "submit" "shell" "shell" "systemd" "shell"  "untar" "vidplay" "viewscr" "shell" "zerofx")
+tab_command=("30years" "asm2k2" "bank"  "basic10" "basic11" "barboric" "blakes7" "bootfd" "born1983" "cat"   "cd"     "cksum" "clear" "cp"    "df"  "otimer" "dsk-util" "echo"  "env"   "forth" "ftdos" "grep" "help" "hexdump"  "ioports" "list" "ls"    "lscpu" "lsmem" "loader" "man"   "mkdir" "mount" "orixcfg" "pwd"   "ps"     "quintes"        "reboot" "rm"    "setfont" "sh"    "submit" "touch" "twil"  "twiload" "uname" "untar" "vidplay" "viewscr" "viewhrs" "zerofx")
+tab_repo=(   "30years" "asm2K2" "shell" "shell"   "shell"   "barboric" "blakes7" "bootfd" "born1983" "shell" "shell"  "cksum" "shell" "shell" "shell" "shell"  "dsk-util" "shell" "shell" "forth" "ftdos" "grep" "shell" "hexdump" "shell"  "list"  "shell" "shell" "shell" "systemd" "shell" "shell" "shell" "orixcfg" "shell" "shell" "quintessential" "shell"  "shell" "shell"   "shell" "submit" "shell" "shell" "systemd" "shell"  "untar" "vidplay" "viewscr" "shell" "zerofx")
 
 
 

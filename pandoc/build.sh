@@ -1,9 +1,6 @@
 cat parts/part1.md > manual.md
 
 echo "\\\newpage\n">> manual.md
-cat ../docs/commands/30years.md >> manual.md
-
-echo "\\\newpage\n">> manual.md
 cat ../docs/commands/asm2k2.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
@@ -39,7 +36,7 @@ cat ../docs/commands/cp.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/df.md >> manual.md
-
+echo "" >> manual.md
 echo '![](.//Pictures/1000000000000283000001D12D928D88479E7F83.png){width="17cm" height="12.293cm"}' >> manual.md
 
 
@@ -88,7 +85,7 @@ cat ../docs/commands/mkdir.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/mount.md >> manual.md
-
+echo "" >>  manual.md
 echo '![](.//Pictures/1000020100000280000001CFC6CDA413ADDF6624.png){width="7.685cm" height="5.595cm"}' >> manual.md
 
 echo "\\\newpage\n">> manual.md

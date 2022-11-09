@@ -16,7 +16,7 @@ date: rev 09/11/2022
 Rom loader and firmware twilighte board menu
 --------------------------------------------
 
-https://raw.githubusercontent.com/orix-software/systemd/master/doc/pdf/systemd.pdf
+https://github.com/orix-software/systemd/blob/master/docs/pdf/systemd.pdf
 
 []{#anchor}INTRODUCTION
 =======================

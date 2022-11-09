@@ -16,7 +16,7 @@ date: rev 09/11/2022
 Rom loader and firmware twilighte board menu
 --------------------------------------------
 
-https://raw.githubusercontent.com/orix-software/systemd/master/doc/pdf/systemd.pdf
+https://github.com/orix-software/systemd/blob/master/docs/pdf/systemd.pdf
 
 []{#anchor}INTRODUCTION
 =======================
@@ -428,7 +428,13 @@ future.
 
 404: Not Found\newpage
 
-404: Not Found\newpage
+# asm2k2 
+
+launch asm2k2 demo
+
+/#asm2k2
+
+\newpage
 
 # bank
 
@@ -473,9 +479,25 @@ bank -a : displauys all bank (empty bank too)
 https://github.com/orix-software/shell/blob/master/src/commands/bank.asm
 \newpage
 
-404: Not Found\newpage
+# Barboric/Barbitoric demo
 
-404: Not Found\newpage
+Launch barbitoric demo from orix (sdcard/usbdrive)
+
+/# barboric
+\newpage
+
+# Blakes7
+
+Start Blakes7
+
+/#blakes7
+
+If you want to remove your saved game : 
+
+/#cd /usr/share/blakes7
+
+/usr/share/blakes7# rm 136.o
+\newpage
 
 # Command: bootfd
 
@@ -507,7 +529,13 @@ Boots only microdisc boot sector with the help of microdisc.rom. In this version
 Src code : https://github.com/orix-software/bootfd.git (Assembly and C)
 \newpage
 
-404: Not Found\newpage
+# Born1983
+
+Launch born 1983 demo
+
+/#born1983
+
+\newpage
 
 # cat
 
@@ -1044,7 +1072,12 @@ Displays process list
 https://github.com/orix-software/shell/blob/master/src/commands/ps.asm
 \newpage
 
-404: Not Found\newpage
+# Quintessential demo
+
+Start quintessential demo 
+
+/#quintes
+\newpage
 
 # reboot
 

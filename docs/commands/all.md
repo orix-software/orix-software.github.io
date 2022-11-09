@@ -1,12 +1,12 @@
-* [30years](../30years) Last version : 404: Not Found
-* [asm2k2](../asm2k2) Last version : 404: Not Found
+* [30years](../30years) Last version : 2022.1
+* [asm2k2](../asm2k2) Last version : 2021.1
 * [bank](../bank) Last version : 2022.4
 * [basic10](../basic10) Last version : 2022.4
 * [basic11](../basic11) Last version : 2022.4
-* [barboric](../barboric) Last version : 404: Not Found
-* [blakes7](../blakes7) Last version : 404: Not Found
+* [barboric](../barboric) Last version : 2022.1
+* [blakes7](../blakes7) Last version : 2022.1
 * [bootfd](../bootfd) Last version : 2021.1
-* [born1983](../born1983) Last version : 404: Not Found
+* [born1983](../born1983) Last version : 2022.1
 * [cat](../cat) Last version : 2022.4
 * [cd](../cd) Last version : 2022.4
 * [cksum](../cksum) Last version : 2022.2
@@ -34,7 +34,7 @@
 * [orixcfg](../orixcfg) Last version : 2022.3
 * [pwd](../pwd) Last version : 2022.4
 * [ps](../ps) Last version : 2022.4
-* [quintes](../quintes) Last version : 404: Not Found
+* [quintes](../quintes) Last version : 2022.1
 * [reboot](../reboot) Last version : 2022.4
 * [rm](../rm) Last version : 2022.4
 * [setfont](../setfont) Last version : 2022.4
@@ -48,4 +48,4 @@
 * [vidplay](../vidplay) Last version : 2022.3
 * [viewscr](../viewscr) Last version : 2022.2
 * [viewhrs](../viewhrs) Last version : 2022.4
-* [zerofx](../zerofx) Last version : 404: Not Found
+* [zerofx](../zerofx) Last version : 2022.2

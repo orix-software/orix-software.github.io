@@ -48,6 +48,9 @@ O_CREAT  |    Yes      | open and return FD
 str:
     .asciiz "myfile"
 ```
+
+!!! tip "See [fopen](../../home/orixsdk) macro from orix-sdk to use it "
+
 !!! fail "XOPEN does not manage './' or '../' calls"
 
 !!! warning "Multiples opened files are working since kernel 2022.2"

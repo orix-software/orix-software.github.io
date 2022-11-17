@@ -22,3 +22,5 @@ RESB
     lda     #MYFD
     BRK_KERNEL XCLOSE
 ```
+
+!!! tip "See [fclose](../../home/orixsdk) macro from orix-sdk to use it "

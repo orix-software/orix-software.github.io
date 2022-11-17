@@ -2,7 +2,7 @@
 
 ## Description
 
-
+Remove file in arg
 
 ## Input
 

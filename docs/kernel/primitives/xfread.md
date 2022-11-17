@@ -32,4 +32,6 @@ A & X contains the length read
 
 ```
 
-!!! fail "XFREAD does not manage multiples opened files before kernel 2022.4.1 "
+!!! tip "See [fread](../../home/orixsdk) macro from orix-sdk to use it "
+
+!!! fail "XFREAD does not manage multiples opened files before kernel 2022.4 "

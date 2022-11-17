@@ -10,7 +10,6 @@ Free memory
 
 ## Output
 
-
 ## Samples
 
 ### Example
@@ -21,4 +20,6 @@ Free memory
     BRK_KERNEL XFREE
 ```
 
-!!! fail "XFREE still have bugs for versions before v2022.2"
+!!! tip "See [free](../../home/orixsdk) macro from orix-sdk to use it "
+
+!!! fail "XFREE still have bugs for versions before kernel v2022.2"

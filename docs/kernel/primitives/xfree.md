@@ -20,6 +20,6 @@ Free memory
     BRK_KERNEL XFREE
 ```
 
-!!! tip "See [free](../../home/orixsdk) macro from orix-sdk to use it "
+!!! tip "See [free](../../../home/orixsdk) macro from orix-sdk to use it "
 
 !!! fail "XFREE still have bugs for versions before kernel v2022.2"

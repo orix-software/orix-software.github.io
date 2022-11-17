@@ -28,8 +28,8 @@ A : fd
 
 	rts
 @ok:
-    ; Save ptr  
+    ; Save ptr
     rts
 opendir:
-    asciiz "/bin"      
+    asciiz "/bin"
 ```

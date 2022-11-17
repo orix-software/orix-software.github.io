@@ -52,7 +52,7 @@ sta ptr_cmd
 sty ptr_cmd+1 ; ptr_cmd contains the ptr to the command line. It allocates a string, it needs to be free when the program does not need it anymore
 ```
 
-!!! tip "See [initmainargs](../../home/orixsdk) macro from orix-sdk to use it "
+!!! tip "See [initmainargs](../../../home/orixsdk) macro from orix-sdk to use it "
 
 !!! warning "XMAINARGS allocates a chunk in memory, it must be free at the end of the use of the parameters"
 

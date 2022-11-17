@@ -32,4 +32,6 @@ A & X contains the written length
 
 ```
 
-!!! fail "XFREAD does not manage multiples opened files : except since kernel 2022.2"
+!!! tip "See [malloc](../../../home/orixsdk) macro from orix-sdk to use it easily "
+
+!!! fail "XFWRITE does not manage multiples opened files : except since kernel 2022.2"

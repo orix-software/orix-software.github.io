@@ -10,7 +10,6 @@ Remove file in arg
 ## Output
 
 
-
 ## Samples
 
 ### Example

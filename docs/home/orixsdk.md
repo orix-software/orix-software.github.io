@@ -319,7 +319,6 @@ strncat src, dest, n
     strncat RESB, ptr1 , #13
 ```
 
-
 !!! warning "dest ptr will be changed by strncat. dest pointer must be saved"
 
 ## Get args from command line

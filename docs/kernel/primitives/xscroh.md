@@ -9,3 +9,5 @@ Scroll all lines from bottom to the top
     ldy     #26
     BRK_KERNEL XSCROH
 ```
+
+!!! tip "See [scroll](../../../home/orixsdk_macros/scroll) macro from orix-sdk to use it "

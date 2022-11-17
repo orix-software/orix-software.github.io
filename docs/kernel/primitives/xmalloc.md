@@ -25,6 +25,6 @@ A&Y : ptr
     rts
 ```
 
-!!! tip "See [malloc](../../home/orixsdk) macro from orix-sdk to use it easily "
+!!! tip "See [malloc](../../../home/orixsdk) macro from orix-sdk to use it easily "
 
 !!! warning "Number of malloc are limited in kernel side for all programs running"

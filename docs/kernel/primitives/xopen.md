@@ -49,7 +49,7 @@ str:
     .asciiz "myfile"
 ```
 
-!!! tip "See [fopen](../../home/orixsdk) macro from orix-sdk to use it "
+!!! tip "See [fopen](../../../home/orixsdk) macro from orix-sdk to use it "
 
 !!! fail "XOPEN does not manage './' or '../' calls"
 

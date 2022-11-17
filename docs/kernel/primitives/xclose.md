@@ -23,4 +23,4 @@ RESB
     BRK_KERNEL XCLOSE
 ```
 
-!!! tip "See [fclose](../../home/orixsdk) macro from orix-sdk to use it "
+!!! tip "See [fclose](../../../home/orixsdk) macro from orix-sdk to use it "

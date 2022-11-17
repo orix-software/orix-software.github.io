@@ -7,4 +7,4 @@
     ldx     #$00
     BRK_KERNEL XDECIM
     rts
-```    
+```

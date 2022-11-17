@@ -9,6 +9,9 @@ date: rev 09/11/2022
 
 \newpage
 
+
+
+
 ## EXTRA DOCUMENTATION
 
 ===================
@@ -77,13 +80,16 @@ ways to use joystick, others hardware exists in the same way)
 -   cumulus compatible with the help of an other amplibus board (not
     provided)
 
+\section{}
+
 []{#anchor-6}GETTING STARTED
 ============================
 
 []{#anchor-7}Content
 --------------------
 
-![ Figure1 : Expansion board and reset button](.//Pictures/10000000000003C000000500327D8F1579FF49A0.jpg "fig:"){width="6.08cm" height="8.107cm"}![ Figure 2: Twilighte board](.//Pictures/1000000000000FC000000BD07B912694A61F7F2E.jpg "fig:"){width="10.509cm" height="7.881cm"}
+![ Figure1 : Expansion board and reset button](.//Pictures/10000000000003C000000500327D8F1579FF49A0.jpg "fig:"){width="6.08cm" height="8.107cm"}
+![ Figure 2: Twilighte board](.//Pictures/1000000000000FC000000BD07B912694A61F7F2E.jpg "fig:"){width="10.509cm" height="7.881cm"}
 =================================================================================================================================================================================================================================================================================
 
 []{#anchor-8}Physicals ports
@@ -218,6 +224,15 @@ You can access to available command from many ways :
 
 
 \newpage
+\center
+\Huge Commands
+
+\flushleft
+
+\normalsize
+
+\newpage
+
 
 []{#anchor-26}Basic10 & Basic11
 =====================
@@ -425,8 +440,6 @@ future.
 
 \newpage
 \newpage
-
-404: Not Found\newpage
 
 # asm2k2 
 
@@ -643,6 +656,7 @@ https://github.com/orix-software/shell/blob/master/src/commands/cp.asm
 # df 
 
 Displays storage device informations
+
 ![](.//Pictures/1000000000000283000001D12D928D88479E7F83.png){width="17cm" height="12.293cm"}
 \newpage
 
@@ -807,6 +821,8 @@ ftdos disks must be present in /home/basic11/dsk/
 ## SOURCE
 https://github.com/orix-software/grep
 
+
+![](../docs/update/images/2022_3/grep.jpg){width="7.685cm" height="5.595cm"}
 \newpage
 
 # help
@@ -845,6 +861,7 @@ You can use [SPACE] to pause the display ou [CTRL]+C to abort.
 
 ## SOURCE
 https://github.com/orix-software/hexdump
+
 
 ![](.//Pictures/1000020100000280000001D2140A361B5ADFEDE0.png){width="7.685cm" height="5.595cm"}
 \newpage
@@ -1012,6 +1029,7 @@ Displays mount (usb key or sdcard)
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/mount.asm
+
 ![](.//Pictures/1000020100000280000001CFC6CDA413ADDF6624.png){width="7.685cm" height="5.595cm"}
 \newpage
 

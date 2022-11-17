@@ -57,12 +57,15 @@ cat ../docs/commands/ftdos.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/grep.md >> manual.md
+echo "" >>  manual.md
+echo '![](../docs/update/images/2022_3/grep.jpg){width="7.685cm" height="5.595cm"}' >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/help.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/hexdump.md >> manual.md
+echo "" >>  manual.md
 echo '![](.//Pictures/1000020100000280000001D2140A361B5ADFEDE0.png){width="7.685cm" height="5.595cm"}' >> manual.md
 
 echo "\\\newpage\n">> manual.md
@@ -90,8 +93,6 @@ echo '![](.//Pictures/1000020100000280000001CFC6CDA413ADDF6624.png){width="7.685
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/otimer.md >> manual.md
-
-
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/pwd.md >> manual.md

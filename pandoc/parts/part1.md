@@ -9,6 +9,9 @@ date: rev 09/11/2022
 
 \newpage
 
+
+
+
 ## EXTRA DOCUMENTATION
 
 ===================
@@ -77,13 +80,16 @@ ways to use joystick, others hardware exists in the same way)
 -   cumulus compatible with the help of an other amplibus board (not
     provided)
 
+\section{}
+
 []{#anchor-6}GETTING STARTED
 ============================
 
 []{#anchor-7}Content
 --------------------
 
-![ Figure1 : Expansion board and reset button](.//Pictures/10000000000003C000000500327D8F1579FF49A0.jpg "fig:"){width="6.08cm" height="8.107cm"}![ Figure 2: Twilighte board](.//Pictures/1000000000000FC000000BD07B912694A61F7F2E.jpg "fig:"){width="10.509cm" height="7.881cm"}
+![ Figure1 : Expansion board and reset button](.//Pictures/10000000000003C000000500327D8F1579FF49A0.jpg "fig:"){width="6.08cm" height="8.107cm"}
+![ Figure 2: Twilighte board](.//Pictures/1000000000000FC000000BD07B912694A61F7F2E.jpg "fig:"){width="10.509cm" height="7.881cm"}
 =================================================================================================================================================================================================================================================================================
 
 []{#anchor-8}Physicals ports
@@ -218,6 +224,15 @@ You can access to available command from many ways :
 
 
 \newpage
+\center
+\Huge Commands
+
+\flushleft
+
+\normalsize
+
+\newpage
+
 
 []{#anchor-26}Basic10 & Basic11
 =====================

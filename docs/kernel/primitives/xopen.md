@@ -61,41 +61,28 @@ str:
 
 !!! warning "Max 2 opened files are working since kernel 2022.2, it's a constant defined in kernel build"
 
-??? info "Since kernel 2023.1"
+??? info "Flags behaviors since kernel 2023.1"
+    | Flag     | File exists                         |Behaviour|
+    | ----------- | ------------------------------------ ||
+    | O_WRONLY & O_CREAT |    No       | Create file, open and return FD
+    | O_WRONLY           |    No       | return Null (Changed since kernel 2023.1)
+    | O_WRONLY           |    Yes      | open and return FD
+    | O_RDONLY           |    Yes      | open and return FD
+    | O_WRONLY           |    No       | return Null
+    | O_CREAT            |    No       | Create file and open and return FD
+    | O_CREAT            |    Yes      | open and return FD
 
-    Flag               | File exists | behaviour
+??? info "Flags behaviors before kernel 2023.1"
 
-    ; O_WRONLY & O_CREAT |    No       | Create file, open and return FD
-
-    ; O_WRONLY           |    No       | return Null (Changed since kernel 2023.1)
-
-    ; O_WRONLY           |    Yes      | open and return FD
-
-    ; O_RDONLY           |    Yes      | open and return FD
-
-    ; O_WRONLY           |    No       | return Null
-
-    ; O_CREAT            |    No       | Create file and open and return FD
-
-    ; O_CREAT            |    Yes      | open and return FD
-
-??? info "Before kernel 2023.1"
-
-    ; Flag               | File exists | behaviour
-
-    ; O_WRONLY & O_CREAT |    No       | Create file, open and return FD
-
-    ; O_WRONLY           |    No       | open and return FD
-
-    ; O_WRONLY           |    Yes      | open and return FD
-
-    ; O_RDONLY           |    Yes      | open and return FD
-
-    ; O_WRONLY           |    No       | return Null
-
-    ; O_CREAT            |    No       | Create file and open and return FD
-
-    ; O_CREAT            |    Yes      | open and return FD
+    | Flag     | File exists                         |Behaviour|
+    | ----------- | ------------------------------------ ||
+    |O_WRONLY & O_CREAT |    No       | Create file, open and return FD
+    |O_WRONLY           |    No       | open and return FD
+    |O_WRONLY           |    Yes      | open and return FD
+    |O_RDONLY           |    Yes      | open and return FD
+    |O_WRONLY           |    No       | return Null
+    | O_CREAT            |    No       | Create file and open and return FD
+    | O_CREAT            |    Yes      | open and return FD
 
 
 

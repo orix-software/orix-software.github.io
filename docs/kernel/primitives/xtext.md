@@ -9,3 +9,5 @@ Switch to text mode
     BRK_KERNEL XTEXT
 	rts
 ```
+
+Page last revised on: {{ git_revision_date }}

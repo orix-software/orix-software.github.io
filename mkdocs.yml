@@ -85,8 +85,16 @@ nav:
     - Kernel guide:
         - Kernel: home/kernel.md
         - Primitives:
-            - List : kernel/primitives/index.md
-            - XMAINARGS: kernel/primitives/xmainargs.md
+            - General list : kernel/primitives/index.md
+            - By category:
+                - Command line args:
+                    - XMAINARGS: kernel/primitives/xmainargs.md
+                - Files operations:
+                    - XOPEN: kernel/primitives/xopen.md
+                    - XCLOSE: kernel/primitives/xclose.md
+                    - XFREAD: kernel/primitives/xfread.md
+                    - XWRITE: kernel/primitives/xwrite.md
+                    - XFSEEK: kernel/primitives/xfseek.md
         - Boot sequence: how-it-work/binary_starts.md
     - Extra Libs :
         - Twilighte librairy : libs/twillib.md

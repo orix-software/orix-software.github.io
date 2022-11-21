@@ -6,5 +6,3 @@ Voice synthetizer works with the board. It needs a silicebit amplibus to have th
 
 ![Ribbon](./img/synth_vocal.jpg)
 
-
-Page last revised on: {{ git_revision_date }}

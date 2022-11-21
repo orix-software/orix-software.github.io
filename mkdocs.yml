@@ -69,7 +69,17 @@ nav:
         - Build an Orix rom : home/buildrom.md
         - Build standalone Rom : home/buildstandalonerom.md
         - Generate a binary for sdcard/usb key: binaries/generateBinary.md
-        - SDK for Assembly : home/orixsdk.md
+        - SDK for Assembly (Orixsdk):
+            - Main usage: home/orixsdk.md
+            - File operations:
+                - fopen: home/orixsdk_macros/fopen.md
+                - fread: home/orixsdk_macros/fread.md
+                - fwrite: home/orixsdk_macros/fwrite.md
+                - fclose: home/orixsdk_macros/fclose.md
+            - Text mode operations:
+                - print: home/orixsdk_macros/print.md
+                - crlf: home/orixsdk_macros/crlf.md
+                - scroll: home/orixsdk_macros/scroll.md
         - Generate man pages : home/buildman.md
         - cc65 : home/cc65.md
         - Binary header format : home/header.md
@@ -95,6 +105,9 @@ nav:
                     - XFREAD: kernel/primitives/xfread.md
                     - XWRITE: kernel/primitives/xwrite.md
                     - XFSEEK: kernel/primitives/xfseek.md
+                - Memory operations:
+                    - XMALLOC: kernel/primitives/xmalloc.md
+                    - XFREE: kernel/primitives/xfree.md
         - Boot sequence: how-it-work/binary_starts.md
     - Extra Libs :
         - Twilighte librairy : libs/twillib.md

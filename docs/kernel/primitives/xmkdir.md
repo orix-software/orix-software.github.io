@@ -25,3 +25,5 @@ Return #ENODEV if the device can't be mount
 str:
     .asciiz "myfolder"
 ```
+
+Page last revised on: {{ git_revision_date }}

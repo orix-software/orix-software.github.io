@@ -8,4 +8,5 @@ Scroll all lines from the top to the bottom
     BRK_KERNEL XSCROB
 ```
 
-!!! tip "See [free](../../../home/orixsdk_macros/scroll) macro from orix-sdk to use it "
+!!! tip "See [scroll](../../../home/orixsdk_macros/scroll) macro from orix-sdk to use it "
+

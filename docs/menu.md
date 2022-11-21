@@ -2,8 +2,8 @@
 
 ## User side
 
-[User manuals](commands/all/)
+[User manuals](../commands/all/)
 
 ## developper side
 
-[Developpers manuals](home/)
+[Developpers manuals](../home/)

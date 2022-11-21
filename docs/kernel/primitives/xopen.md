@@ -49,6 +49,10 @@ str:
     .asciiz "myfile"
 ```
 
+
+
+
+
 !!! tip "See [fopen](../../../home/orixsdk) macro from orix-sdk to use it "
 
 !!! fail "XOPEN does not manage './' or '../' calls"
@@ -57,3 +61,25 @@ str:
 
 !!! warning "Max 2 opened files are working since kernel 2022.2, it's a constant defined in kernel build"
 
+!!! warning "
+   ; Since kernel 2023.1
+
+  ; Flag               | File exists | behaviour
+  ; O_WRONLY & O_CREAT |    No       | Create file, open and return FD
+  ; O_WRONLY           |    No       | return Null
+  ; O_WRONLY           |    Yes      | open and return FD
+  ; O_RDONLY           |    Yes      | open and return FD
+  ; O_WRONLY           |    No       | return Null
+  ; O_CREAT            |    No       | Create file and open and return FD
+  ; O_CREAT            |    Yes      | open and return FD
+
+; Before kernel 2023.1
+
+  ; Flag               | File exists | behaviour
+  ; O_WRONLY & O_CREAT |    No       | Create file, open and return FD
+  ; O_WRONLY           |    No       | open and return FD
+  ; O_WRONLY           |    Yes      | open and return FD
+  ; O_RDONLY           |    Yes      | open and return FD
+  ; O_WRONLY           |    No       | return Null
+  ; O_CREAT            |    No       | Create file and open and return FD
+  ; O_CREAT            |    Yes      | open and return FD"

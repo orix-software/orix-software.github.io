@@ -85,7 +85,16 @@ nav:
                 - scroll: home/orixsdk_macros/scroll.md
             - Memory operations:
                 - malloc: home/orixsdk_macros/malloc.md
-                - mfree: home/orixsdk_macros/mdree.md
+                - mfree: home/orixsdk_macros/mfree.md
+            - Strings operations:
+                - strncat: home/orixsdk_macros/strncat.md
+                - strncpy: home/orixsdk_macros/strncpy.md
+            - Command line operations:
+                - initmainargs: home/orixsdk_macros/initmainargs.md
+                - getmainargs: home/orixsdk_macros/getmainargs.md
+            - Keyboards operations:
+                - initmainargs: home/orixsdk_macros/initmainargs.md
+
         - Generate man pages : home/buildman.md
         - cc65 : home/cc65.md
         - Binary header format : home/header.md

@@ -63,39 +63,39 @@ str:
 
 ??? info "Since kernel 2023.1"
 
-Flag               | File exists | behaviour
+    Flag               | File exists | behaviour
 
-  ; O_WRONLY & O_CREAT |    No       | Create file, open and return FD
+    ; O_WRONLY & O_CREAT |    No       | Create file, open and return FD
 
-  ; O_WRONLY           |    No       | return Null (Changed since kernel 2023.1)
+    ; O_WRONLY           |    No       | return Null (Changed since kernel 2023.1)
 
-  ; O_WRONLY           |    Yes      | open and return FD
+    ; O_WRONLY           |    Yes      | open and return FD
 
-  ; O_RDONLY           |    Yes      | open and return FD
+    ; O_RDONLY           |    Yes      | open and return FD
 
-  ; O_WRONLY           |    No       | return Null
+    ; O_WRONLY           |    No       | return Null
 
-  ; O_CREAT            |    No       | Create file and open and return FD
+    ; O_CREAT            |    No       | Create file and open and return FD
 
-  ; O_CREAT            |    Yes      | open and return FD
+    ; O_CREAT            |    Yes      | open and return FD
 
 ??? info "Before kernel 2023.1"
 
-  ; Flag               | File exists | behaviour
+    ; Flag               | File exists | behaviour
 
-  ; O_WRONLY & O_CREAT |    No       | Create file, open and return FD
+    ; O_WRONLY & O_CREAT |    No       | Create file, open and return FD
 
-  ; O_WRONLY           |    No       | open and return FD
+    ; O_WRONLY           |    No       | open and return FD
 
-  ; O_WRONLY           |    Yes      | open and return FD
+    ; O_WRONLY           |    Yes      | open and return FD
 
-  ; O_RDONLY           |    Yes      | open and return FD
+    ; O_RDONLY           |    Yes      | open and return FD
 
-  ; O_WRONLY           |    No       | return Null
+    ; O_WRONLY           |    No       | return Null
 
-  ; O_CREAT            |    No       | Create file and open and return FD
+    ; O_CREAT            |    No       | Create file and open and return FD
 
-  ; O_CREAT            |    Yes      | open and return FD
+    ; O_CREAT            |    Yes      | open and return FD
 
 
 

@@ -20,3 +20,5 @@ mystring:
   .asciiz "125"
 
 ```
+
+Page last revised on: {{ git_revision_date }}

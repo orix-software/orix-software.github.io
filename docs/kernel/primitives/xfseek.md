@@ -41,3 +41,4 @@ BRK_TELEMON XFSEEK
 
 !!! warning "XFSEEK is available since kernel v2022.2 and have bugs for CUR_SET in 2022.4.1 "
 
+Page last revised on: {{ git_revision_date }}

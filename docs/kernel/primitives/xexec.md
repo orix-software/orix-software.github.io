@@ -27,7 +27,9 @@ Returns an error if the binary is not found
     BRK_KERNEL XEXEC
     rts
 str:
-    .asciiz "mybin"    
+    .asciiz "mybin"
 ```
 
 !!! fail "XEXEC does not manage './' or '../' calls"
+
+Page last revised on: {{ git_revision_date }}

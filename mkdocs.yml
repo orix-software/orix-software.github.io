@@ -27,7 +27,7 @@ markdown_extensions:
 plugins:
   - git-revision-date
 
-dev_addr: '172.20.41.79:8001'
+dev_addr: '172.27.7.150:8001'
 
 theme:
     name: material

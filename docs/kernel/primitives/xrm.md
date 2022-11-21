@@ -13,3 +13,5 @@ Remove file in arg
 ## Samples
 
 ### Example
+
+Page last revised on: {{ git_revision_date }}

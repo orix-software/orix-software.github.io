@@ -35,3 +35,5 @@ A & X contains the length read
 !!! tip "See [fread](../../../home/orixsdk) macro from orix-sdk to use it "
 
 !!! fail "XFREAD does not manage multiples opened files before kernel 2022.4 "
+
+Page last revised on: {{ git_revision_date }}

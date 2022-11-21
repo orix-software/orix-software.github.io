@@ -11,3 +11,5 @@ Switch to Hires
     BRK_KERNEL XHIRES
     rts
 ```
+
+Page last revised on: {{ git_revision_date }}

@@ -33,3 +33,5 @@ A : fd
 opendir:
     asciiz "/bin"
 ```
+
+  Page last revised on: {{ git_revision_date }}

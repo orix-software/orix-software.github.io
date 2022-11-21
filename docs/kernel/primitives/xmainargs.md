@@ -59,3 +59,5 @@ sty ptr_cmd+1 ; ptr_cmd contains the ptr to the command line. It allocates a str
 !!! warning "Mode 0 is available since v2022.4"
 
 !!! fail "XGETARGV does not handle "" yet and "\ in parameters"
+
+Page last revised on: {{ git_revision_date }}

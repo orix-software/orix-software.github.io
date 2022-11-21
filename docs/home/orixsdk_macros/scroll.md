@@ -11,4 +11,3 @@ scroll down, 0, 26
 ```
 
 
-Page last revised on: {{ git_revision_date }}

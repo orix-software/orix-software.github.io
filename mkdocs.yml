@@ -76,10 +76,16 @@ nav:
                 - fread: home/orixsdk_macros/fread.md
                 - fwrite: home/orixsdk_macros/fwrite.md
                 - fclose: home/orixsdk_macros/fclose.md
+                - mkdir: home/orixsdk_macros/mkdir.md
+                - chdir: home/orixsdk_macros/chdir.md
+                - unlink: home/orixsdk_macros/unlink.md
             - Text mode operations:
                 - print: home/orixsdk_macros/print.md
                 - crlf: home/orixsdk_macros/crlf.md
                 - scroll: home/orixsdk_macros/scroll.md
+            - Memory operations:
+                - malloc: home/orixsdk_macros/malloc.md
+                - mfree: home/orixsdk_macros/mdree.md
         - Generate man pages : home/buildman.md
         - cc65 : home/cc65.md
         - Binary header format : home/header.md

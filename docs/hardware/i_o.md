@@ -25,3 +25,6 @@ This register is in firmware 2, and can mirror $314 calls to change to overlay m
 ## $343 : Twilighte banking register
 
 This register can contains values from 0 to 7 included. It defines the "set" of 64KB which be present in slot 4,3,2 and 1 of register $321 which contains the bank.
+
+
+Page last revised on: {{ git_revision_date }}

@@ -28,3 +28,6 @@ Some tests had been done on some usb mass storage key and sdcard, here is some i
 ### Non working usb mass storage key
 
 * verbatim 'store and go' 8GB
+
+
+Page last revised on: {{ git_revision_date }}

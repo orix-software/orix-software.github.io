@@ -28,3 +28,6 @@ taper quit ou appuyer sur reset
 
 CLOAD"PRG
 LIST
+
+
+Page last revised on: {{ git_revision_date }}

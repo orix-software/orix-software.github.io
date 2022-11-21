@@ -51,3 +51,6 @@
 #define VAR_FILE_SIZE 0x68 / * La longueur du fichier actuel (la longueur totale est de 32 bits, octet de poids faible en premier) * /
 #define VAR_CURRENT_OFFSET 0x6C / * Le pointeur de fichier actuel, le décalage d'octet de la position actuelle de lecture et d'écriture (longueur totale 32 bits, octet de poids faible en premier) * / 
 ```
+
+
+Page last revised on: {{ git_revision_date }}

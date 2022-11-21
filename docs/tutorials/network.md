@@ -52,3 +52,5 @@ un fichier index.htm de 5mo est présent
 => fait appelle un serveur web, et récupère un index.hlp qui s'affiche à l'écran
 
 
+
+Page last revised on: {{ git_revision_date }}

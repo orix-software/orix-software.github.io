@@ -31,6 +31,8 @@ Place mybin in /bin of the sdcard/usb key of the twilighte board, and launch :
 ```
 
 
+Page last revised on: {{ git_revision_date }}
+
 
 
 

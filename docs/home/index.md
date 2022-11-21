@@ -42,5 +42,7 @@ Build it from cc65. You can build your first program in C with cc65 and telestra
 Clone [https://github.com/assinie/orix-sdk](https://github.com/assinie/orix-sdk) in your project folder
 
 
+Page last revised on: {{ git_revision_date }}
+
 
 

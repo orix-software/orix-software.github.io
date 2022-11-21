@@ -28,3 +28,6 @@ On real computer, you need to
 * copy your ROM into a folder (ex : /usr/share/myroms/myrom.rom)
 * Modify /etc/systemd/banks.cnf to add a new rom entry
 * Type funct + L and you will be able to start your standalone ROM
+
+
+Page last revised on: {{ git_revision_date }}

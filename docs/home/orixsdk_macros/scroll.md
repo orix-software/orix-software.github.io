@@ -9,3 +9,6 @@ scroll up, 0, 26 ; Scroll all lines from bottom to the first line : it erases th
 
 scroll down, 0, 26
 ```
+
+
+Page last revised on: {{ git_revision_date }}

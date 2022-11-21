@@ -19,3 +19,6 @@ If the binary is not in a bank, kernel will try to open "/bin/BINARY_FILE". If t
 ## Step 3 : binary on storage device is found
 
 Kernel opens the file, reads the header, and loads the content of the binary on the right address. When it's OK, the binary is started (and a fork occurs)
+
+
+Page last revised on: {{ git_revision_date }}

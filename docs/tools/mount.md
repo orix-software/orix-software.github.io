@@ -1,7 +1,7 @@
 # Mount (not developed yet)
 
 ## FP
-Each FP has a struct with with string, flag and others 3 bytes : 
+Each FP has a struct with with string, flag and others 3 bytes :
 
 extbank (1 byte)
 vectorbank (2 bytes)

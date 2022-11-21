@@ -362,3 +362,5 @@ Result (argbin) is binary in assembly with a parameter "foo"
 foo
 ```
 
+
+Page last revised on: {{ git_revision_date }}

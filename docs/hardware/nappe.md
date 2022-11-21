@@ -36,3 +36,5 @@ Full overview :
 
 ![Ribbon](./img/full_amplibus_double.jpg)
 
+
+Page last revised on: {{ git_revision_date }}

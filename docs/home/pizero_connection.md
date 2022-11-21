@@ -14,7 +14,7 @@ You need to execute in crontab a shell script. It flushs linux cache to disk. Th
 
 * Download img http://repo.orix.oric.org/orixpi.img.gz
 
-* 'gzip -d' it or use 7zip 
+* 'gzip -d' it or use 7zip
 
 * Download and install Win32 disk imager : https://sourceforge.net/projects/win32diskimager/
 
@@ -37,3 +37,5 @@ You need to execute in crontab a shell script. It flushs linux cache to disk. Th
 * If everything is ok, you should see your files with "ls" and the pizero should be in your wifi network, you can now access to the network folder of pizero from your pc (with the right IP)
 
 
+
+Page last revised on: {{ git_revision_date }}

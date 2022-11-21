@@ -15,3 +15,6 @@ The eeprom structure is (minimum requirement to boot):
 * Shell (16KB)
 * basic11 (16KB)
 * Kernel (16KB)
+
+
+Page last revised on: {{ git_revision_date }}

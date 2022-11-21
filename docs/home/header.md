@@ -78,3 +78,6 @@ cpu_mode
 .byt %00000010 ; 65C816 (bit 1 = 1)
 
   For 6502 with illegal opcodes (rockwell)
+
+
+Page last revised on: {{ git_revision_date }}

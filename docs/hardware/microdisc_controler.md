@@ -58,3 +58,6 @@ The following photo shows the pico psu and the adaptor for pico psu.
 ![Patch](./img/micro_psu_patch.jpg)
 
 * plug a 12V PSU (1,5A used during test), in the jack connector of the pico psu
+
+
+Page last revised on: {{ git_revision_date }}

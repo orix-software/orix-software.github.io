@@ -78,11 +78,15 @@ nav:
                 - fclose: home/orixsdk_macros/fclose.md
                 - mkdir: home/orixsdk_macros/mkdir.md
                 - chdir: home/orixsdk_macros/chdir.md
+                - getcwd: home/orixsdk_macros/chdir.md
                 - unlink: home/orixsdk_macros/unlink.md
             - Text mode operations:
                 - print: home/orixsdk_macros/print.md
+                - cputc: home/orixsdk_macros/cputc.md
                 - crlf: home/orixsdk_macros/crlf.md
                 - scroll: home/orixsdk_macros/scroll.md
+                - cursor: home/orixsdk_macros/cursor.md
+                - setscreen: home/orixsdk_macros/setscreen.md
             - Memory operations:
                 - malloc: home/orixsdk_macros/malloc.md
                 - mfree: home/orixsdk_macros/mfree.md
@@ -93,7 +97,9 @@ nav:
                 - initmainargs: home/orixsdk_macros/initmainargs.md
                 - getmainargs: home/orixsdk_macros/getmainargs.md
             - Keyboards operations:
-                - initmainargs: home/orixsdk_macros/initmainargs.md
+                - cgetc: home/orixsdk_macros/cgetc.md
+            - Process operations:
+                - exec: home/orixsdk_macros/exec.md
 
         - Generate man pages : home/buildman.md
         - cc65 : home/cc65.md

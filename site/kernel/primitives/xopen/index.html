@@ -995,10 +995,57 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_2">
+          Primitives
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Primitives" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Primitives
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        Primitives
+        List
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xmainargs/" class="md-nav__link">
+        XMAINARGS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1228,9 +1275,10 @@ O_CREAT  |    Yes      | open and return FD</p>
 <div class="admonition warning">
 <p class="admonition-title">Max 2 opened files are working since kernel 2022.2, it's a constant defined in kernel build</p>
 </div>
-<div class="admonition info"></div>
-<p>; Since kernel 2023.1</p>
-<p>; Flag               | File exists | behaviour</p>
+<details class="info">
+<summary>Since kernel 2023.1</summary>
+</details>
+<p>Flag               | File exists | behaviour</p>
 <p>; O_WRONLY &amp; O_CREAT |    No       | Create file, open and return FD</p>
 <p>; O_WRONLY           |    No       | return Null (Changed since kernel 2023.1)</p>
 <p>; O_WRONLY           |    Yes      | open and return FD</p>
@@ -1238,7 +1286,9 @@ O_CREAT  |    Yes      | open and return FD</p>
 <p>; O_WRONLY           |    No       | return Null</p>
 <p>; O_CREAT            |    No       | Create file and open and return FD</p>
 <p>; O_CREAT            |    Yes      | open and return FD</p>
-<p>; Before kernel 2023.1</p>
+<details class="info">
+<summary>Before kernel 2023.1</summary>
+</details>
 <p>; Flag               | File exists | behaviour</p>
 <p>; O_WRONLY &amp; O_CREAT |    No       | Create file, open and return FD</p>
 <p>; O_WRONLY           |    No       | open and return FD</p>

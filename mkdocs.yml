@@ -78,13 +78,15 @@ nav:
         - Oricutron VS real hardware : home/oricutronvsreal.md
     - Hardware guide :
         - Memory: hardware/memory.md
-        - I/O : hardware/i_o.md
+        - I/O: hardware/i_o.md
         - Firmware informations : home/firmware.md
         - Joysticks: hardware/joysticks.md
         - Eeprom structure: hardware/eeprom_structure.md
-    - Kernel guide :
-        - Kernel : home/kernel.md
-        - Primitives : kernel/primitives/index.md
+    - Kernel guide:
+        - Kernel: home/kernel.md
+        - Primitives:
+            - List : kernel/primitives/index.md
+            - XMAINARGS: kernel/primitives/xmainargs.md
         - Boot sequence: how-it-work/binary_starts.md
     - Extra Libs :
         - Twilighte librairy : libs/twillib.md

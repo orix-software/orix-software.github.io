@@ -61,11 +61,9 @@ str:
 
 !!! warning "Max 2 opened files are working since kernel 2022.2, it's a constant defined in kernel build"
 
-!!! info ""
+??? info "Since kernel 2023.1"
 
-   ; Since kernel 2023.1
-
-  ; Flag               | File exists | behaviour
+Flag               | File exists | behaviour
 
   ; O_WRONLY & O_CREAT |    No       | Create file, open and return FD
 
@@ -81,7 +79,7 @@ str:
 
   ; O_CREAT            |    Yes      | open and return FD
 
-; Before kernel 2023.1
+??? info "Before kernel 2023.1"
 
   ; Flag               | File exists | behaviour
 
@@ -98,7 +96,7 @@ str:
   ; O_CREAT            |    No       | Create file and open and return FD
 
   ; O_CREAT            |    Yes      | open and return FD
-  
+
 
 
   Page last revised on: {{ git_revision_date }}

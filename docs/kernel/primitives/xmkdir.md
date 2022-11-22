@@ -26,4 +26,3 @@ str:
     .asciiz "myfolder"
 ```
 
-Page last revised on: {{ git_revision_date }}

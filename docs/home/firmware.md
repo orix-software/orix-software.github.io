@@ -19,5 +19,3 @@ Under development
 It's under development but it will handles others hardware chips.
 
 
-Page last revised on: {{ git_revision_date }}
-

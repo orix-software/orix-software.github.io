@@ -11,4 +11,3 @@ Left port has 1 button
 There is 2 bits to read joysticks states. Bit 7 and 6
 
 
-Page last revised on: {{ git_revision_date }}

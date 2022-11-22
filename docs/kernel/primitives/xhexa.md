@@ -14,4 +14,3 @@ Convert a number in A and returns hexadecimal to AY
     rts
 ```
 
-Page last revised on: {{ git_revision_date }}

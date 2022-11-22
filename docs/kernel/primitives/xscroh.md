@@ -12,4 +12,3 @@ Scroll all lines from bottom to the top
 
 !!! tip "See [scroll](../../../home/orixsdk_macros/scroll) macro from orix-sdk to use it "
 
-Page last revised on: {{ git_revision_date }}

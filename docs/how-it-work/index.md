@@ -73,4 +73,3 @@ filenametap8bytesLength ;  name_software '\0'
 * up_joy : keyboard fire2 matrix
 
 
-Page last revised on: {{ git_revision_date }}

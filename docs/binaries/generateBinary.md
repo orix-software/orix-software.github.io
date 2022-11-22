@@ -24,14 +24,12 @@ cl65 -ttelestrat mysrc.c -o mysrc_800 --start-addr \$800
 /#python relocbin.py3 -2 -o mybin mysrc_800 mysrc_900
 ```
 
-Place mybin in /bin of the sdcard/usb key of the twilighte board, and launch : 
+Place mybin in /bin of the sdcard/usb key of the twilighte board, and launch :
 
 ```
 /#mybin
 ```
 
-
-Page last revised on: {{ git_revision_date }}
 
 
 

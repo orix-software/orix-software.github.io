@@ -6,4 +6,3 @@
 
 ![Third part](./img/tower_microdisc.jpg)
 
-Page last revised on: {{ git_revision_date }}

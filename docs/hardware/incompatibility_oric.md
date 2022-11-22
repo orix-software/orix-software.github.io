@@ -4,5 +4,3 @@ Some oric crashes sometimes with the board. If you have an amplibus (as Silicebi
 
 It should solve all Oric compatibility with the board.
 
-
-Page last revised on: {{ git_revision_date }}

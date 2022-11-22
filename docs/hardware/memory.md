@@ -8,5 +8,3 @@ There is 32 banks of RAMs and 32 banks of ROMs
 
 bank command line command can displays the availables banks.
 
-
-Page last revised on: {{ git_revision_date }}

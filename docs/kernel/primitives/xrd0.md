@@ -11,4 +11,3 @@ Check if a key is pressed
 @no_key_pressed:
     rts
 ```
-  Page last revised on: {{ git_revision_date }}

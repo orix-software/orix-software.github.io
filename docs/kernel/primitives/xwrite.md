@@ -36,4 +36,3 @@ A & X contains the written length
 
 !!! fail "XFWRITE does not manage multiples opened files : except since kernel 2022.2"
 
-Page last revised on: {{ git_revision_date }}

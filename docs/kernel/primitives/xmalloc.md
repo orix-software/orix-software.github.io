@@ -29,4 +29,3 @@ A&Y : ptr
 
 !!! warning "Number of malloc are limited in kernel side for all programs running"
 
-Page last revised on: {{ git_revision_date }}

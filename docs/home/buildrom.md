@@ -68,4 +68,3 @@ Rom must be loaded into ram slot, it will erase only one bank :  :
 
 At this step if everything is OK, each commands from the bank can be accessed from shell.
 
-Page last revised on: {{ git_revision_date }}

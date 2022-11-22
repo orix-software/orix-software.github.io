@@ -32,4 +32,3 @@ str:
 
 !!! fail "XEXEC does not manage './' or '../' calls"
 
-Page last revised on: {{ git_revision_date }}

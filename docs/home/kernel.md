@@ -16,5 +16,3 @@ We can pass args to AXY or others memory location and the primitive can be calle
 
 * C programming : cc65 (telestrat target)
 
-
-Page last revised on: {{ git_revision_date }}

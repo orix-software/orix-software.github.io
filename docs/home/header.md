@@ -79,5 +79,3 @@ cpu_mode
 
   For 6502 with illegal opcodes (rockwell)
 
-
-Page last revised on: {{ git_revision_date }}

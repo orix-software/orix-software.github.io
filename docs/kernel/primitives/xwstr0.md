@@ -10,5 +10,3 @@ Displays a string
 
 !!! tip "See [print](../../../home/orixsdk) macro from orix-sdk to use it easily "
 
-
-Page last revised on: {{ git_revision_date }}

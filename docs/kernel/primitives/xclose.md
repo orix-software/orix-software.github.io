@@ -25,4 +25,3 @@ RESB
 
 !!! tip "See [fclose](../../../home/orixsdk) macro from orix-sdk to use it "
 
-Page last revised on: {{ git_revision_date }}

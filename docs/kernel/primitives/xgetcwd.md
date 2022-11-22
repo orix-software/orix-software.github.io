@@ -17,5 +17,3 @@ A/Y returns a string
     BRK_KERNEL XWSTR0
     rts
 ```
-
-Page last revised on: {{ git_revision_date }}

@@ -75,7 +75,3 @@ Le dsk démarre.
 Regarder le contenu du dsk :
 
 !CAT"
-
-
-
-

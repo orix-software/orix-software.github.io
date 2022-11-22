@@ -8,5 +8,3 @@
     BRK_KERNEL XDECIM
     rts
 ```
-
-Page last revised on: {{ git_revision_date }}

@@ -37,5 +37,3 @@ You need to execute in crontab a shell script. It flushs linux cache to disk. Th
 * If everything is ok, you should see your files with "ls" and the pizero should be in your wifi network, you can now access to the network folder of pizero from your pc (with the right IP)
 
 
-
-Page last revised on: {{ git_revision_date }}

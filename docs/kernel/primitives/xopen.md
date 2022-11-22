@@ -85,5 +85,3 @@ str:
     | O_CREAT            |    Yes      | open and return FD
 
 
-
-  Page last revised on: {{ git_revision_date }}

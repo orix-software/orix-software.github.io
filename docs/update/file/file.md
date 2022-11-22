@@ -8,5 +8,3 @@
 
 ![](file_2022_4.png)
 
-
-Page last revised on: {{ git_revision_date }}

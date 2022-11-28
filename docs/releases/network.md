@@ -22,5 +22,3 @@ En cours de dev, mais voici les choses en cours et en partie fonctionnel pour ce
 Api réseau possible à l'avenir pour ses propres programmes.
 
 
-Page last revised on: {{ git_revision_date }}
-

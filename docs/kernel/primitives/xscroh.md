@@ -2,11 +2,11 @@
 
 Scroll all lines from bottom to the top
 
-# Examples
+## Examples
 
 ```ca65
-    ldx     #$01
-    ldy     #26
+    ldx     #$01 ; First line to scroll
+    ldy     #26  ; Last line to scroll
     BRK_KERNEL XSCROH
 ```
 

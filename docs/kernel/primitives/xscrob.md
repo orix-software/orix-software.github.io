@@ -3,8 +3,8 @@
 Scroll all lines from the top to the bottom
 
 ```ca65
-    ldx     #$01
-    ldy     #25
+    ldx     #$01 ; First line to scroll
+    ldy     #25  ; Last line to scroll
     BRK_KERNEL XSCROB
 ```
 

@@ -1,6 +1,6 @@
 # scroll macro
 
-scroll [Direction],firstline, number_of_line
+scroll [Direction],firstline, last_line_to_scroll
 
 ## General case
 

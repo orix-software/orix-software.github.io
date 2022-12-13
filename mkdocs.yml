@@ -128,14 +128,15 @@ nav:
                         - XMALLOC: kernel/primitives/xmalloc.md
                         - XFREE: kernel/primitives/xfree.md
             - Boot sequence: how-it-work/binary_starts.md
-    - Hardware guide :
-        - Memory: hardware/memory.md
-        - I/O: hardware/i_o.md
-        - Firmware informations : home/firmware.md
-        - Joysticks: hardware/joysticks.md
-        - Eeprom structure: hardware/eeprom_structure.md
-    - Extra Libs :
-        - Twilighte librairy : libs/twillib.md
+        - Hardware guide :
+            - Memory: hardware/memory.md
+            - I/O: hardware/i_o.md
+            - Firmware informations : home/firmware.md
+            - Joysticks: hardware/joysticks.md
+            - Eeprom structure: hardware/eeprom_structure.md
+        - Extra Libs :
+            - Twilighte library : libs/twillib.md
+
 extra_css:
     - stylesheets/extra.css
 extra:

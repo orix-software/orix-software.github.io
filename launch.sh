@@ -6,8 +6,6 @@ declare -a tab_repo
 tab_command=("asm2k2" "bank"  "basic10" "basic11" "barboric" "blakes7" "bootfd" "born1983" "cat"   "cd"     "cksum" "clear" "cp"    "df"    "otimer" "dsk-util" "echo"  "env"   "forth" "ftdos" "grep" "help" "hexdump"  "ioports" "list" "ls"    "lscpu" "lsmem" "loader" "man"   "mkdir" "mount" "orixcfg" "pwd"   "ps"     "quintes"        "readdsk" "reboot" "rm"    "setfont" "sh"    "submit" "touch" "twil"  "twiload" "uname" "untar" "vidplay" "viewscr" "viewhrs" "zerofx")
 tab_repo=(   "asm2K2" "shell" "shell"   "shell"   "barboric" "blakes7" "bootfd" "born1983" "shell" "shell"  "cksum" "shell" "shell" "shell" "shell"  "dsk-util" "shell" "shell" "forth" "ftdos" "grep" "shell" "hexdump" "shell"  "list"  "shell" "shell" "shell" "systemd" "shell" "shell" "shell" "orixcfg" "shell" "shell" "quintessential" "readdsk" "shell"  "shell" "shell"   "shell" "submit" "shell" "shell" "systemd" "shell"  "untar" "vidplay" "viewscr" "shell" "zerofx")
 
-
-
 if [ -z $TOKEN_GITHUB_PRIVATE_REPO ]; then
 echo Missing TOKEN_GITHUB_PRIVATE_REPO  impossible to get private repo
 else
@@ -37,7 +35,6 @@ ret=$?
 
 if [ $ret -ne 0 ]; then
 exit
-echo YTO
 fi
 
 MYURLVERSION="https://${GITHUB_AUTH}raw.githubusercontent.com/orix-software/${tab_repo[$i]}/master/VERSION -o VERSION"
@@ -48,21 +45,8 @@ MYVERSION=`cat VERSION`
 
 echo "* [$VAL](../$VAL) Last version : $MYVERSION" >> docs/commands/all.md
 done
-
-
-tab_rom=("kernel" "shell")
-
-
-for i in ${!tab_rom[@]}; do
-VAL=${tab_rom[$i]}
-
-#wget https://raw.githubusercontent.com/orix-software/${VAL}/master/VERSION -O VERSION
-#echo "* [$VAL](../$VAL)" >> docs/user_manual/rom_versions.md
-#cat VERSION >>docs/user_manual/rom_versions.md
-done
-
-echo full
 fi
 
-
 mkdocs build && cp site/* . -r  && git add * && git commit -m update && echo push &&  git push
+
+

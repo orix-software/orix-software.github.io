@@ -20,4 +20,3 @@ mystring:
   .asciiz "125"
 
 ```
-

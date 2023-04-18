@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structvi__struct__data" kind="struct" language="C++" prot="public">
+    <compoundname>vi_struct_data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvi__struct__data_1ac708be4e5e24c529de773f45569bc98d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::xpos_screen</definition>
+        <argsstring></argsstring>
+        <name>xpos_screen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position x of the cursor on the screen </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="5" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1ad6b155867a22adc3adc2a3dac0c03446" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::ypos_screen</definition>
+        <argsstring></argsstring>
+        <name>ypos_screen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position y of the cursor on the screen </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="6" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a94dd20e3a32701eb3c4d3ba7d62c28d5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vi_struct_data::pos_file_addr</definition>
+        <argsstring></argsstring>
+        <name>pos_file_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position on the file (address) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="7" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1aec4b493d747fc7f92ed3b621c3152547" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::pos_file[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>pos_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position in the file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="8" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1af8fc3cc83cc863889636768107d3f2a0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::posx_command_line</definition>
+        <argsstring></argsstring>
+        <name>posx_command_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position on command line </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="9" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1affa159c6be14a873bdc7a3b766162b64" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::name_file_open[VI_MAX_LENGTH_FILENAME]</definition>
+        <argsstring>[VI_MAX_LENGTH_FILENAME]</argsstring>
+        <name>name_file_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="10" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a46202fb8c9855fb904d46981ec558768" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>vi_struct_data::int</definition>
+        <argsstring></argsstring>
+        <name>int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="11" column="1" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1ad5847413cc24f34cca7ddd24eb59fd83" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>vi_struct_data::ptr_file_begin</definition>
+        <argsstring></argsstring>
+        <name>ptr_file_begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>adress of the beginning of the file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="11" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a3a41260445a6c5ed9b6d54ec356a7b7e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::length_file[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>length_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Length of the file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="12" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a43c4d9b5e8c09bfd94a60754781e6a62" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vi_struct_data::pos_ptr_video_address</definition>
+        <argsstring></argsstring>
+        <name>pos_ptr_video_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="13" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a418f7eed2a70898bf3f28c8340d09148" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::file_number_of_line[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>file_number_of_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="14" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a7520f51fdc4b576225f78f5d7002f25e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::xpos_command_line</definition>
+        <argsstring></argsstring>
+        <name>xpos_command_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="15" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a623324d87db75b2fd6d127b68913f87e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::command_line_buffer[39]</definition>
+        <argsstring>[39]</argsstring>
+        <name>command_line_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="16" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a136e72e950f97d694b48cdc70ba40b5e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vi_struct_data::ptr_last_char_file</definition>
+        <argsstring></argsstring>
+        <name>ptr_last_char_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="17" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a4069e41ffbce43408963fb8241902c64" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vi_struct_data::line_id</definition>
+        <argsstring></argsstring>
+        <name>line_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="18" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1aa1b7e90648e8f5efbbc53394d1081168" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::xpos_text</definition>
+        <argsstring></argsstring>
+        <name>xpos_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="19" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvi__struct__data_1a820e11bd4c7f7a310d4cd6553ff48dff" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char vi_struct_data::ypos_text</definition>
+        <argsstring></argsstring>
+        <name>ypos_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="20" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" line="4" column="1" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_struct.s" bodystart="4" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structvi__struct__data_1a623324d87db75b2fd6d127b68913f87e" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>command_line_buffer</name></member>
+      <member refid="structvi__struct__data_1a418f7eed2a70898bf3f28c8340d09148" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>file_number_of_line</name></member>
+      <member refid="structvi__struct__data_1a46202fb8c9855fb904d46981ec558768" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>int</name></member>
+      <member refid="structvi__struct__data_1a3a41260445a6c5ed9b6d54ec356a7b7e" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>length_file</name></member>
+      <member refid="structvi__struct__data_1a4069e41ffbce43408963fb8241902c64" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>line_id</name></member>
+      <member refid="structvi__struct__data_1affa159c6be14a873bdc7a3b766162b64" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>name_file_open</name></member>
+      <member refid="structvi__struct__data_1aec4b493d747fc7f92ed3b621c3152547" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>pos_file</name></member>
+      <member refid="structvi__struct__data_1a94dd20e3a32701eb3c4d3ba7d62c28d5" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>pos_file_addr</name></member>
+      <member refid="structvi__struct__data_1a43c4d9b5e8c09bfd94a60754781e6a62" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>pos_ptr_video_address</name></member>
+      <member refid="structvi__struct__data_1af8fc3cc83cc863889636768107d3f2a0" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>posx_command_line</name></member>
+      <member refid="structvi__struct__data_1ad5847413cc24f34cca7ddd24eb59fd83" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>ptr_file_begin</name></member>
+      <member refid="structvi__struct__data_1a136e72e950f97d694b48cdc70ba40b5e" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>ptr_last_char_file</name></member>
+      <member refid="structvi__struct__data_1a7520f51fdc4b576225f78f5d7002f25e" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>xpos_command_line</name></member>
+      <member refid="structvi__struct__data_1ac708be4e5e24c529de773f45569bc98d" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>xpos_screen</name></member>
+      <member refid="structvi__struct__data_1aa1b7e90648e8f5efbbc53394d1081168" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>xpos_text</name></member>
+      <member refid="structvi__struct__data_1ad6b155867a22adc3adc2a3dac0c03446" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>ypos_screen</name></member>
+      <member refid="structvi__struct__data_1a820e11bd4c7f7a310d4cd6553ff48dff" prot="public" virt="non-virtual"><scope>vi_struct_data</scope><name>ypos_text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

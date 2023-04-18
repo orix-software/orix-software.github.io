@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="vi__ypos__screen__plus__plus_8s" kind="file" language="C++">
+    <compoundname>vi_ypos_screen_plus_plus.s</compoundname>
+    <includedby refid="vi_8s" local="yes">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_ypos_screen_plus_plus.s</label>
+        <link refid="vi__ypos__screen__plus__plus_8s"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</label>
+        <link refid="vi_8s"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s</label>
+        <link refid="rom_8s"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vi__ypos__screen__plus__plus_8s_1afc0b96c53386e4c2e026f95427675d33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vi_ypos_screen_plus_plus</definition>
+        <argsstring>()</argsstring>
+        <name>vi_ypos_screen_plus_plus</name>
+        <briefdescription>
+<para>Increment ypos and returns IS_LAST_LINE_OF_SCREEN_TEXT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A : IS_LAST_LINE_OF_SCREEN_TEXT if we are on the last line of the screen else $00 </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_ypos_screen_plus_plus.s" line="6" column="1" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_ypos_screen_plus_plus.s" bodystart="6" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">;;<sp/>Increment<sp/>ypos<sp/>and<sp/>returns<sp/>IS_LAST_LINE_OF_SCREEN_TEXT</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">;@</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>A<sp/>:<sp/>IS_LAST_LINE_OF_SCREEN_TEXT<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>we<sp/>are<sp/>on<sp/>the<sp/>last<sp/>line<sp/>of<sp/>the<sp/>screen<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>$00</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">;@see<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">;;</highlight></codeline>
+<codeline lineno="6" refid="vi__ypos__screen__plus__plus_8s_1afc0b96c53386e4c2e026f95427675d33" refkind="member"><highlight class="normal">.proc<sp/><ref refid="vi__ypos__screen__plus__plus_8s_1afc0b96c53386e4c2e026f95427675d33" kindref="member">vi_ypos_screen_plus_plus</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>ypos_screen=ypos_screen+1</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#<ref refid="structvi__struct__data_1ad6b155867a22adc3adc2a3dac0c03446" kindref="member">vi_struct_data::ypos_screen</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref>),y</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#<ref refid="vi_8s_1ac2df40bfbdee63703d0497bd65ad73d5" kindref="member">VI_LAST_LINE_EDITOR</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@no_add</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>clc</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>adc<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref>),y</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">@no_add:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#IS_LAST_LINE_OF_SCREEN_TEXT</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">.endproc</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_ypos_screen_plus_plus.s"/>
+  </compounddef>
+</doxygen>

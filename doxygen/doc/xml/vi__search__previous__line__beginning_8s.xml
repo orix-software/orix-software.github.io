@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="vi__search__previous__line__beginning_8s" kind="file" language="C++">
+    <compoundname>vi_search_previous_line_beginning.s</compoundname>
+    <includedby refid="vi_8s" local="yes">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_search_previous_line_beginning.s</label>
+        <link refid="vi__search__previous__line__beginning_8s"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</label>
+        <link refid="vi_8s"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s</label>
+        <link refid="rom_8s"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vi__search__previous__line__beginning_8s_1a8afe7b0601a926ba3bfa3214341e7758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vi_search_previous_line_beginning</definition>
+        <argsstring>()</argsstring>
+        <name>vi_search_previous_line_beginning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_search_previous_line_beginning.s" line="1" column="1" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_search_previous_line_beginning.s" bodystart="1" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">.proc<sp/>vi_search_previous_line_beginning</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>A<sp/>=<sp/>1<sp/>found<sp/>$0D</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>A<sp/>=<sp/>0<sp/>find<sp/>beginning</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>X<sp/>contains<sp/>the<sp/>number<sp/>of<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>parsed</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>ldx<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">@L1:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_ptr_file_used_sub_sub</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#IS_BEGINNING_OF_THE_FILE</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@beginning_of_file</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref>),y</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#CR</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@found_0D</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#LF</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@dex</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>inx</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>@L1</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">@dex:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>jmp<sp/><sp/><sp/><sp/><sp/>@L1</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">@found_0D:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">@beginning_of_file:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">.endproc</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_search_previous_line_beginning.s"/>
+  </compounddef>
+</doxygen>

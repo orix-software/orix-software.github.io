@@ -1,0 +1,198 @@
+\hypertarget{vi_8s}{}\doxysection{/mnt/c/\+Users/plifp/\+One\+Drive/oric/projets/orix-\/software/vi/src/commands/vi.s File Reference}
+\label{vi_8s}\index{/mnt/c/Users/plifp/OneDrive/oric/projets/orix-\/software/vi/src/commands/vi.s@{/mnt/c/Users/plifp/OneDrive/oric/projets/orix-\/software/vi/src/commands/vi.s}}
+{\ttfamily \#include \char`\"{}data/vi/strings.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/vi\+\_\+fill\+\_\+screen\+\_\+with\+\_\+empty\+\_\+line.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/vi\+\_\+struct.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/vi\+\_\+displays\+\_\+info.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+init\+\_\+vi\+\_\+struct.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+ptr\+\_\+last\+\_\+char\+\_\+plus\+\_\+plus.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+ptr\+\_\+last\+\_\+char\+\_\+sub\+\_\+sub.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+set\+\_\+ptr\+\_\+last\+\_\+char.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+ptr\+\_\+last\+\_\+char\+\_\+add.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+vi\+\_\+ptr\+\_\+file\+\_\+used\+\_\+plus\+\_\+plus.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+xpos\+\_\+screen\+\_\+plus\+\_\+plus.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+xpos\+\_\+screen\+\_\+sub\+\_\+sub.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+ypos\+\_\+screen\+\_\+sub\+\_\+sub.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+ypos\+\_\+screen\+\_\+plus\+\_\+plus.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+ptr\+\_\+file\+\_\+used\+\_\+plus\+\_\+plus.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+length\+\_\+file\+\_\+sub\+\_\+sub.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+display\+\_\+char.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+check\+\_\+beginning\+\_\+of\+\_\+file.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+fill\+\_\+last\+\_\+line.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+copy\+\_\+arg1\+\_\+to\+\_\+name\+\_\+file\+\_\+open.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+length\+\_\+file\+\_\+plus\+\_\+plus.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+compute\+\_\+video\+\_\+adress.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+ptr\+\_\+file\+\_\+used\+\_\+sub\+\_\+sub.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+display\+\_\+file\+\_\+opened.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+check\+\_\+0\+A.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+set\+\_\+xpos\+\_\+0.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+ptr\+\_\+file\+\_\+used\+\_\+plus\+\_\+plus\+\_\+and\+\_\+check\+\_\+eof.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+search\+\_\+next\+\_\+line.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+shift\+\_\+file\+\_\+from\+\_\+memory\+\_\+one\+\_\+char.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+check\+\_\+inserted\+\_\+char\+\_\+overflow\+\_\+the\+\_\+max\+\_\+column.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+scroll\+\_\+from\+\_\+left\+\_\+to\+\_\+right\+\_\+full\+\_\+line.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+shift\+\_\+line\+\_\+left\+\_\+to\+\_\+right\+\_\+editor.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+search\+\_\+previous\+\_\+line\+\_\+beginning.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+set\+\_\+xpos\+\_\+from\+\_\+\+A.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+scroll\+\_\+to\+\_\+left.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+check\+\_\+if\+\_\+previous\+\_\+line\+\_\+was\+\_\+truncated.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+search\+\_\+previous\+\_\+cr.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+add\+\_\+char\+\_\+to\+\_\+text.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+strlen\+\_\+current\+\_\+line.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+compute\+\_\+last\+\_\+text\+\_\+line.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+clear\+\_\+command\+\_\+line.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+key\+\_\+down.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+key\+\_\+enter.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+key\+\_\+del.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+key\+\_\+up.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+key\+\_\+right.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+key\+\_\+left.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/subfunc/vi/vi\+\_\+check\+\_\+eof.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/vi\+\_\+put\+\_\+char.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/vi\+\_\+command\+\_\+edition.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/vi\+\_\+editor\+\_\+switch\+\_\+on\+\_\+cursor.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/vi\+\_\+editor\+\_\+switch\+\_\+off\+\_\+cursor.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/vi\+\_\+edition\+\_\+keyboard.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/vi\+\_\+switch\+\_\+to\+\_\+edition\+\_\+mode.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/tables.\+s\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions/\+\_\+clrscr\+\_\+vi.\+s\char`\"{}}\newline
+Include dependency graph for vi.\+s\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vi_8s__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{vi_8s__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{vi_8s_a5f04e8c1fc8c4de1080509024725975a}\label{vi_8s_a5f04e8c1fc8c4de1080509024725975a}} 
+\#define {\bfseries vi\+\_\+dec16\+\_\+zp}(addr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{vi_8s_a4119dc4e1586cc055c686971e6e8e62a}\label{vi_8s_a4119dc4e1586cc055c686971e6e8e62a}} 
+{\bfseries \+\_\+vi} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{vi_8s_ad3136d2f1f34e592c66e09ba8a852812}\label{vi_8s_ad3136d2f1f34e592c66e09ba8a852812}} 
+const char {\bfseries CR} = \$0D
+\item 
+\mbox{\Hypertarget{vi_8s_a19b283812883e1dad22bbde25738643a}\label{vi_8s_a19b283812883e1dad22bbde25738643a}} 
+const char {\bfseries LF} = \$0A
+\item 
+\mbox{\Hypertarget{vi_8s_abd1ae2b8d549a71550eb8bba2bb8f599}\label{vi_8s_abd1ae2b8d549a71550eb8bba2bb8f599}} 
+const char {\bfseries IS\+\_\+\+EOF} = \$00
+\item 
+\mbox{\Hypertarget{vi_8s_a54a9c0d7bf1a3338cc11a927505d77be}\label{vi_8s_a54a9c0d7bf1a3338cc11a927505d77be}} 
+const char {\bfseries IS\+\_\+\+BEGINNING\+\_\+\+OF\+\_\+\+THE\+\_\+\+FILE} = \$00
+\item 
+\mbox{\Hypertarget{vi_8s_a8c615aaec06c8bad172dc3938aba0eba}\label{vi_8s_a8c615aaec06c8bad172dc3938aba0eba}} 
+const char {\bfseries IS\+\_\+\+LAST\+\_\+\+LINE\+\_\+\+OF\+\_\+\+SCREEN\+\_\+\+TEXT} = \$01
+\item 
+\mbox{\Hypertarget{vi_8s_a32745d6b4ceb80d5a4d42cddd79d9ef4}\label{vi_8s_a32745d6b4ceb80d5a4d42cddd79d9ef4}} 
+const char {\bfseries IS\+\_\+\+BEGINNING\+\_\+\+OF\+\_\+\+THE\+\_\+\+LINE} = \$00
+\item 
+\mbox{\Hypertarget{vi_8s_ac2df40bfbdee63703d0497bd65ad73d5}\label{vi_8s_ac2df40bfbdee63703d0497bd65ad73d5}} 
+const char \mbox{\hyperlink{vi_8s_ac2df40bfbdee63703d0497bd65ad73d5}{VI\+\_\+\+LAST\+\_\+\+LINE\+\_\+\+EDITOR}} = 26
+\begin{DoxyCompactList}\small\item\em Last line used by the editor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_acae644326fea9395449f972f6a6e0d8b}\label{vi_8s_acae644326fea9395449f972f6a6e0d8b}} 
+const char {\bfseries VI\+\_\+\+FILL\+\_\+\+SCREEN\+\_\+\+MODE\+\_\+\+STOP\+\_\+\+AT\+\_\+\+THE\+\_\+\+END\+\_\+\+OF\+\_\+\+LAST\+\_\+\+LINE} = 0
+\item 
+\mbox{\Hypertarget{vi_8s_a79290cfb784db718baac2e64eb11f152}\label{vi_8s_a79290cfb784db718baac2e64eb11f152}} 
+const char {\bfseries VI\+\_\+\+COMMANDLINE\+\_\+\+MAX\+\_\+\+CHAR} = 8
+\item 
+\mbox{\Hypertarget{vi_8s_a475084ca07c485e6f755adcbbf60c008}\label{vi_8s_a475084ca07c485e6f755adcbbf60c008}} 
+const char {\bfseries VI\+\_\+\+MAX\+\_\+\+LENGTH\+\_\+\+FILE} = 2000
+\item 
+\mbox{\Hypertarget{vi_8s_a2bc721a097dbed8bcefad1348f046702}\label{vi_8s_a2bc721a097dbed8bcefad1348f046702}} 
+const char {\bfseries VI\+\_\+\+EDITOR\+\_\+\+CHAR\+\_\+\+LIMITS\+\_\+\+EMPTY} = \textquotesingle{}$\sim$\textquotesingle{}
+\item 
+\mbox{\Hypertarget{vi_8s_ae006014881715ddf4f7e8aa76566b79e}\label{vi_8s_ae006014881715ddf4f7e8aa76566b79e}} 
+const char {\bfseries VI\+\_\+\+COMMANDLINE\+\_\+\+VIDEO\+\_\+\+ADRESS} = \$bb80+40$\ast$27
+\item 
+\mbox{\Hypertarget{vi_8s_abe993d49c201a7539637a125ac0807fc}\label{vi_8s_abe993d49c201a7539637a125ac0807fc}} 
+const char {\bfseries VI\+\_\+\+EDITION\+\_\+\+LAST\+\_\+\+VIDEO\+\_\+\+ADRESS} = \$bb80+40$\ast$26
+\item 
+\mbox{\Hypertarget{vi_8s_a543b38bda59d1d8e824090c2c174edf3}\label{vi_8s_a543b38bda59d1d8e824090c2c174edf3}} 
+const char {\bfseries VI\+\_\+\+EDITION\+\_\+\+VIDEO\+\_\+\+ADRESS} = \$bb80
+\item 
+\mbox{\Hypertarget{vi_8s_ab045a30b1750af930b9bc87c3bc53c22}\label{vi_8s_ab045a30b1750af930b9bc87c3bc53c22}} 
+const char {\bfseries VI\+\_\+\+EDITOR\+\_\+\+MAX\+\_\+\+LENGTH\+\_\+\+OF\+\_\+\+A\+\_\+\+LINE} = 255
+\item 
+\mbox{\Hypertarget{vi_8s_a97137c7f96f2e9f4d3ec743fe18c0665}\label{vi_8s_a97137c7f96f2e9f4d3ec743fe18c0665}} 
+const char {\bfseries VI\+\_\+\+EDITOR\+\_\+\+MAX\+\_\+\+COLUMN} = 39
+\item 
+\mbox{\Hypertarget{vi_8s_af804024f92f05e75a9f3a16f7e65873e}\label{vi_8s_af804024f92f05e75a9f3a16f7e65873e}} 
+const char \mbox{\hyperlink{vi_8s_af804024f92f05e75a9f3a16f7e65873e}{vi\+\_\+struct}} = userzp
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_aadda8db3383bdab25ec1683d8dd0f6eb}\label{vi_8s_aadda8db3383bdab25ec1683d8dd0f6eb}} 
+const char \mbox{\hyperlink{vi_8s_aadda8db3383bdab25ec1683d8dd0f6eb}{vi\+\_\+ptr1}} = userzp+2
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a62f7795ee167060eb27b1e3db7d7d23c}\label{vi_8s_a62f7795ee167060eb27b1e3db7d7d23c}} 
+const char \mbox{\hyperlink{vi_8s_a62f7795ee167060eb27b1e3db7d7d23c}{vi\+\_\+argv}} = userzp+4
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_aae53a4d8f7ef38ac152a0350423b8f1c}\label{vi_8s_aae53a4d8f7ef38ac152a0350423b8f1c}} 
+const char \mbox{\hyperlink{vi_8s_aae53a4d8f7ef38ac152a0350423b8f1c}{vi\+\_\+argc}} = userzp+6
+\begin{DoxyCompactList}\small\item\em 1 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_abe3cbd9bfcb577ef36a5a222f61203f5}\label{vi_8s_abe3cbd9bfcb577ef36a5a222f61203f5}} 
+const char \mbox{\hyperlink{vi_8s_abe3cbd9bfcb577ef36a5a222f61203f5}{vi\+\_\+arg1}} = userzp+7
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a5a9929a47b0ba3db03915e19b3b68cd6}\label{vi_8s_a5a9929a47b0ba3db03915e19b3b68cd6}} 
+const char \mbox{\hyperlink{vi_8s_a5a9929a47b0ba3db03915e19b3b68cd6}{vi\+\_\+fp}} = userzp+9
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a46b0a41d1f654c3f19989f9094001198}\label{vi_8s_a46b0a41d1f654c3f19989f9094001198}} 
+const char \mbox{\hyperlink{vi_8s_a46b0a41d1f654c3f19989f9094001198}{vi\+\_\+ptr\+\_\+file}} = userzp+11
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_ab0315168012ba88e1479a8c665b58a2b}\label{vi_8s_ab0315168012ba88e1479a8c665b58a2b}} 
+const char {\bfseries vi\+\_\+tmp2} = userzp+13
+\item 
+\mbox{\Hypertarget{vi_8s_ae75ff061f510abe8dcbcdc8434e5d3b9}\label{vi_8s_ae75ff061f510abe8dcbcdc8434e5d3b9}} 
+const char \mbox{\hyperlink{vi_8s_ae75ff061f510abe8dcbcdc8434e5d3b9}{vi\+\_\+ptr\+\_\+screen}} = userzp+14
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a4ce74bdf77badacd182d1181a0e2b77a}\label{vi_8s_a4ce74bdf77badacd182d1181a0e2b77a}} 
+const char \mbox{\hyperlink{vi_8s_a4ce74bdf77badacd182d1181a0e2b77a}{vi\+\_\+length\+\_\+file}} = userzp+16
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a57ddc9c9afcd4940ce8a258c8a99671b}\label{vi_8s_a57ddc9c9afcd4940ce8a258c8a99671b}} 
+const char \mbox{\hyperlink{vi_8s_a57ddc9c9afcd4940ce8a258c8a99671b}{vi\+\_\+length\+\_\+file\+\_\+compute}} = userzp+18
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a703657d2caaa1643edd99b0c5a95a38d}\label{vi_8s_a703657d2caaa1643edd99b0c5a95a38d}} 
+const char {\bfseries vi\+\_\+tmp1} = userzp+20
+\item 
+\mbox{\Hypertarget{vi_8s_a016587ca26ff7083124a34813e6983e2}\label{vi_8s_a016587ca26ff7083124a34813e6983e2}} 
+const char {\bfseries vi\+\_\+fileopened} = userzp+22
+\item 
+\mbox{\Hypertarget{vi_8s_affe3a94e7eb08fe3f01266521eb1bd6f}\label{vi_8s_affe3a94e7eb08fe3f01266521eb1bd6f}} 
+const char \mbox{\hyperlink{vi_8s_affe3a94e7eb08fe3f01266521eb1bd6f}{vi\+\_\+ptr\+\_\+file\+\_\+used}} = userzp+24
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a0d112819ae9613db7066af27a7f87465}\label{vi_8s_a0d112819ae9613db7066af27a7f87465}} 
+const char {\bfseries tmp0\+\_\+16} = userzp+26
+\item 
+\mbox{\Hypertarget{vi_8s_a68c5056a5807066bf90f759212cc8301}\label{vi_8s_a68c5056a5807066bf90f759212cc8301}} 
+const char {\bfseries vi\+\_\+no\+\_\+opened\+\_\+file} = userzp+28
+\item 
+\mbox{\Hypertarget{vi_8s_aac61d55e2587ca8fe2b138a6aeb61ffe}\label{vi_8s_aac61d55e2587ca8fe2b138a6aeb61ffe}} 
+const char {\bfseries vi\+\_\+pos\+\_\+debug} = userzp+30
+\item 
+\mbox{\Hypertarget{vi_8s_a450181cfcccedf7f533d5259df4d2eeb}\label{vi_8s_a450181cfcccedf7f533d5259df4d2eeb}} 
+const char \mbox{\hyperlink{vi_8s_a450181cfcccedf7f533d5259df4d2eeb}{vi\+\_\+ptr2}} = userzp+32
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a683876721ab370879aa1095e1b11444a}\label{vi_8s_a683876721ab370879aa1095e1b11444a}} 
+const char \mbox{\hyperlink{vi_8s_a683876721ab370879aa1095e1b11444a}{vi\+\_\+savex}} = userzp+34
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a1c69f491e2054203373226bba5c59c7f}\label{vi_8s_a1c69f491e2054203373226bba5c59c7f}} 
+const char \mbox{\hyperlink{vi_8s_a1c69f491e2054203373226bba5c59c7f}{vi\+\_\+ptr3}} = userzp+36
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vi_8s_a530efc8d92452198964b9568561138ae}\label{vi_8s_a530efc8d92452198964b9568561138ae}} 
+const char \mbox{\hyperlink{vi_8s_a530efc8d92452198964b9568561138ae}{vi\+\_\+tmp3}} = userzp+38
+\begin{DoxyCompactList}\small\item\em 2 bytes \end{DoxyCompactList}\end{DoxyCompactItemize}

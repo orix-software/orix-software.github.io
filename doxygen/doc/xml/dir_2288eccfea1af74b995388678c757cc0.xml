@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_2288eccfea1af74b995388678c757cc0" kind="dir">
+    <compoundname>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions</compoundname>
+    <innerdir refid="dir_8a0a2fbb0e248d2b08adec17bb698d4e">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc</innerdir>
+    <innerfile refid="__clrscr__vi_8s">_clrscr_vi.s</innerfile>
+    <innerfile refid="tables_8s">tables.s</innerfile>
+    <innerfile refid="vi__command__edition_8s">vi_command_edition.s</innerfile>
+    <innerfile refid="vi__displays__info_8s">vi_displays_info.s</innerfile>
+    <innerfile refid="vi__edition__keyboard_8s">vi_edition_keyboard.s</innerfile>
+    <innerfile refid="vi__editor__switch__off__cursor_8s">vi_editor_switch_off_cursor.s</innerfile>
+    <innerfile refid="vi__editor__switch__on__cursor_8s">vi_editor_switch_on_cursor.s</innerfile>
+    <innerfile refid="vi__fill__screen__with__empty__line_8s">vi_fill_screen_with_empty_line.s</innerfile>
+    <innerfile refid="vi__put__char_8s">vi_put_char.s</innerfile>
+    <innerfile refid="vi__set__length__file_8s">vi_set_length_file.s</innerfile>
+    <innerfile refid="vi__struct_8s">vi_struct.s</innerfile>
+    <innerfile refid="vi__switch__to__edition__mode_8s">vi_switch_to_edition_mode.s</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/"/>
+  </compounddef>
+</doxygen>

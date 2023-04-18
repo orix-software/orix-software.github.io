@@ -43,4 +43,3 @@ In Orix roms, the rom declares commands to an offset in the bank and can be acce
 | ----------- | ------------------------------------ |
 | `Multitasking`         | :material-close:     |
 | `Long filename management`       | :material-close:  |
-

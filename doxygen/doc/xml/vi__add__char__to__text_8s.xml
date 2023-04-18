@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="vi__add__char__to__text_8s" kind="file" language="C++">
+    <compoundname>vi_add_char_to_text.s</compoundname>
+    <includedby refid="vi_8s" local="yes">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_add_char_to_text.s</label>
+        <link refid="vi__add__char__to__text_8s"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</label>
+        <link refid="vi_8s"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s</label>
+        <link refid="rom_8s"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vi__add__char__to__text_8s_1a7e8ca89c0d87604a38c0bd54fb4112d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vi_add_char_to_text</definition>
+        <argsstring>()</argsstring>
+        <name>vi_add_char_to_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_add_char_to_text.s" line="1" column="1" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_add_char_to_text.s" bodystart="1" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">.proc<sp/>vi_add_char_to_text</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Ajoute<sp/>un<sp/>caractère<sp/>dans<sp/>le<sp/>texte</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>pha</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_ptr_last_char_plus_plus</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_shift_file_from_memory_one_char<sp/>;<sp/>shift<sp/>one<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>the<sp/>text<sp/>file<sp/>in<sp/>the<sp/>memory</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>pla</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref>),y<sp/>;<sp/>store<sp/>\n</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_ptr_file_used_plus_plus</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_length_file_plus_plus</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">.endproc</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_add_char_to_text.s"/>
+  </compounddef>
+</doxygen>

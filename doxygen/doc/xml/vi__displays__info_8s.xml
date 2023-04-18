@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="vi__displays__info_8s" kind="file" language="C++">
+    <compoundname>vi_displays_info.s</compoundname>
+    <includedby refid="vi_8s" local="yes">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_displays_info.s</label>
+        <link refid="vi__displays__info_8s"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</label>
+        <link refid="vi_8s"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s</label>
+        <link refid="rom_8s"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vi__displays__info_8s_1a201b71b4b3b25d9f9608108b3569885d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vi_displays_info</definition>
+        <argsstring>()</argsstring>
+        <name>vi_displays_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_displays_info.s" line="1" column="1" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_displays_info.s" bodystart="1" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="vi__displays__info_8s_1a31cf46dcbb09295efc631c5223384709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>displays_debug</definition>
+        <argsstring>()</argsstring>
+        <name>displays_debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_displays_info.s" line="44" column="1" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_displays_info.s" bodystart="44" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">.proc<sp/>vi_displays_info</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>vi_fileopened</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@is_new_file</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Displays<sp/>filename<sp/>at<sp/>the<sp/>bottom</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$22<sp/>;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>char</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>ldx<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">@L1:</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>(vi_arg1),y</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@end_display_filename</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,x</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>inx</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>@L1</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral">@end_display_filename:</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$22<sp/>;<sp/>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,x</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">@is_new_file:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">@L10:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>msg_nofile,y</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">@end</highlight><highlight class="normal">_display_msg_nofile</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>@L10</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal">_display_msg_nofile:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/>vi_pos_debug</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>displays_debug</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">.endproc</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">.proc<sp/>displays_debug</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$02</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>y</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Display<sp/>ptr_last_char_file<sp/>offset</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/>RES</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#vi_struct_data::ptr_last_char_file+1<sp/>;<sp/>last<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>file</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref>),y</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>BRK_TELEMON<sp/>XHEXA</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>A<sp/>and<sp/>Y</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>RES</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/>RES</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#vi_struct_data::ptr_last_char_file</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref>),y</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>BRK_TELEMON<sp/>XHEXA</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>A<sp/>and<sp/>Y</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>RES</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$02</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/>RES</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/><sp/>pos_file_addr</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref>+1</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>BRK_TELEMON<sp/>XHEXA</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>A<sp/>and<sp/>Y</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>RES</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/>RES</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/><sp/>pos_file_addr</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>BRK_TELEMON<sp/>XHEXA</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>A<sp/>and<sp/>Y</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>RES</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>iny</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS,y</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Display<sp/>length</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$06</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS+22</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#&lt;($bb80+40*27+23)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>TR5</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#&gt;($bb80+40*27+23)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>TR5+1</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#$20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>DEFAFF</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>ldx<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a4ce74bdf77badacd182d1181a0e2b77a" kindref="member">vi_length_file</ref>+1</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a4ce74bdf77badacd182d1181a0e2b77a" kindref="member">vi_length_file</ref></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>BRK_TELEMON<sp/>XBINDX</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$05</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>VI_COMMANDLINE_VIDEO_ADRESS+28</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Display<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>under<sp/>the<sp/>cursor</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref>),y</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#$0D</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>@notcrlf</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#</highlight><highlight class="charliteral">&apos;$&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">@notcrlf:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>$bb80+40*27+29</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">.endproc</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_displays_info.s"/>
+  </compounddef>
+</doxygen>

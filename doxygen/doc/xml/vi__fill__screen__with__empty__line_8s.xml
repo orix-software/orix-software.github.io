@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="vi__fill__screen__with__empty__line_8s" kind="file" language="C++">
+    <compoundname>vi_fill_screen_with_empty_line.s</compoundname>
+    <includedby refid="vi_8s" local="yes">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_fill_screen_with_empty_line.s</label>
+        <link refid="vi__fill__screen__with__empty__line_8s"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</label>
+        <link refid="vi_8s"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s</label>
+        <link refid="rom_8s"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vi__fill__screen__with__empty__line_8s_1a16de0d8af2bb61361564c6960856d4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vi_fill_screen_with_empty_line</definition>
+        <argsstring>()</argsstring>
+        <name>vi_fill_screen_with_empty_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_fill_screen_with_empty_line.s" line="1" column="1" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_fill_screen_with_empty_line.s" bodystart="1" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">.proc<sp/>vi_fill_screen_with_empty_line</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/>;<sp/>X<sp/>the<sp/>first<sp/>line</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>cpy<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@out</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>stx<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>ldx<sp/><sp/><sp/><sp/><sp/>#<ref refid="vi_8s_1ac2df40bfbdee63703d0497bd65ad73d5" kindref="member">VI_LAST_LINE_EDITOR</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">@loop:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>TABLE_LOW_TEXT,x</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1aadda8db3383bdab25ec1683d8dd0f6eb" kindref="member">vi_ptr1</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>TABLE_HIGH_TEXT,x</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1aadda8db3383bdab25ec1683d8dd0f6eb" kindref="member">vi_ptr1</ref>+1</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">@skip:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#VI_EDITOR_CHAR_LIMITS_EMPTY</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1aadda8db3383bdab25ec1683d8dd0f6eb" kindref="member">vi_ptr1</ref>),y</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>dex</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>cpx<sp/><sp/><sp/><sp/><sp/>vi_tmp1</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>bpl<sp/><sp/><sp/><sp/><sp/>@loop</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">@out:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">.endproc</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/vi_fill_screen_with_empty_line.s"/>
+  </compounddef>
+</doxygen>

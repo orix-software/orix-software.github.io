@@ -1,4 +1,4 @@
-site_name: Orix
+site_name: ORIX v2023.1 DOCUMENTATION
 
 markdown_extensions:
     - pymdownx.highlight
@@ -25,23 +25,22 @@ markdown_extensions:
         emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
-  - git-revision-date
-  - search
+ - git-revision-date
+ - search
+ - markmap
 #   - mkdocstrings:
 #         watch:
 #             - src/project
 
-dev_addr: '172.27.7.150:8001'
+dev_addr: '172.30.72.43:8001'
+
 
 theme:
     name: material
     highlightjs: true
-#    icon:
-#        admonition:
-#            <type>: <icon> #
-
     palette:
-        primary: red
+        primary: black
+        scheme: default
     features:
         - navigation.tabs
         - navigation.top
@@ -52,11 +51,11 @@ nav:
     - Getting started : menu.md
     - User guide :
         - Commands : commands/all.md
-        - Floppy drive commands:
-            - Bootfd: user_manual/bootfd.md
-        - Shell guide :
-            - Basic 11 commands: how-it-work/index.md
-        - Software loader : home/loader/loader.md
+        # - Floppy drive commands:
+        #     - Bootfd: user_manual/bootfd.md
+        # - Shell guide :
+        #     - Basic 11 commands: how-it-work/index.md
+        - Software loader : developer_manual/loader/loader.md
         - Hardware manuals :
             - Ribbon cable: hardware/nappe.md
             - Plug voice synthetizer: hardware/synth_vocal_mea80900.md
@@ -68,56 +67,58 @@ nav:
             - commands:
                 - File: update/file/file.md
     - Developper guide :
-        - Install: home/index.md
-        - Memory management : home/memory.md
-        - Build an Orix rom : home/buildrom.md
-        - Build standalone Rom : home/buildstandalonerom.md
+        - Install: developer_manual/index.md
+        - Development guidelines: developer_manual/guidelines.md
+        - Memory management : developer_manual/memory.md
+        - Build an Orix rom : developer_manual/buildrom.md
+        - Build standalone Rom : developer_manual/buildstandalonerom.md
         - Generate a binary for sdcard/usb key: binaries/generateBinary.md
         - SDK for Assembly (Orixsdk):
-            - Main usage: home/orixsdk.md
+            - Main usage: developer_manual/orixsdk.md
             - File operations:
-                - fopen: home/orixsdk_macros/fopen.md
-                - fread: home/orixsdk_macros/fread.md
-                - fwrite: home/orixsdk_macros/fwrite.md
-                - fclose: home/orixsdk_macros/fclose.md
-                - mkdir: home/orixsdk_macros/mkdir.md
-                - chdir: home/orixsdk_macros/chdir.md
-                - getcwd: home/orixsdk_macros/chdir.md
-                - unlink: home/orixsdk_macros/unlink.md
+                - fopen: developer_manual/orixsdk_macros/fopen.md
+                - fread: developer_manual/orixsdk_macros/fread.md
+                - fwrite: developer_manual/orixsdk_macros/fwrite.md
+                - fclose: developer_manual/orixsdk_macros/fclose.md
+                - mkdir: developer_manual/orixsdk_macros/mkdir.md
+                - chdir: developer_manual/orixsdk_macros/chdir.md
+                - getcwd: developer_manual/orixsdk_macros/chdir.md
+                - unlink: developer_manual/orixsdk_macros/unlink.md
             - Text mode operations:
-                - print: home/orixsdk_macros/print.md
-                - cputc: home/orixsdk_macros/cputc.md
-                - crlf: home/orixsdk_macros/crlf.md
-                - scroll: home/orixsdk_macros/scroll.md
-                - cursor: home/orixsdk_macros/cursor.md
-                - setscreen: home/orixsdk_macros/setscreen.md
+                - print: developer_manual/orixsdk_macros/print.md
+                - cputc: developer_manual/orixsdk_macros/cputc.md
+                - crlf: developer_manual/orixsdk_macros/crlf.md
+                - scroll: developer_manual/orixsdk_macros/scroll.md
+                - cursor: developer_manual/orixsdk_macros/cursor.md
+                - setscreen: developer_manual/orixsdk_macros/setscreen.md
             - Memory operations:
-                - malloc: home/orixsdk_macros/malloc.md
-                - mfree: home/orixsdk_macros/mfree.md
+                - malloc: developer_manual/orixsdk_macros/malloc.md
+                - mfree: developer_manual/orixsdk_macros/mfree.md
             - Strings operations:
-                - strncat: home/orixsdk_macros/strncat.md
-                - strncpy: home/orixsdk_macros/strncpy.md
+                - strncat: developer_manual/orixsdk_macros/strncat.md
+                - strncpy: developer_manual/orixsdk_macros/strncpy.md
             - Command line operations:
-                - initmainargs: home/orixsdk_macros/initmainargs.md
-                - getmainargs: home/orixsdk_macros/getmainargs.md
+                - initmainargs: developer_manual/orixsdk_macros/initmainargs.md
+                - getmainargs: developer_manual/orixsdk_macros/getmainargs.md
             - Keyboards operations:
-                - cgetc: home/orixsdk_macros/cgetc.md
+                - cgetc: developer_manual/orixsdk_macros/cgetc.md
             - Process operations:
-                - exec: home/orixsdk_macros/exec.md
+                - exec: developer_manual/orixsdk_macros/exec.md
 
-        - Generate man pages : home/buildman.md
-        - cc65 : home/cc65.md
-        - Binary header format : home/header.md
-        - Joysticks management : home/joysticks.md
-        - Cross development on real hardware : home/pizero_connection.md
-        - Oricutron VS real hardware : home/oricutronvsreal.md
+        - Generate man pages : developer_manual/buildman.md
+        - cc65 : developer_manual/cc65.md
+        - Binary header format : developer_manual/header.md
+        - Joysticks management : developer_manual/joysticks.md
+        - Cross development on real hardware : developer_manual/pizero_connection.md
+        - Oricutron VS real hardware : developer_manual/oricutronvsreal.md
         - Kernel guide:
-            - Kernel: home/kernel.md
+            - Kernel: developer_manual/kernel.md
             - Primitives:
                 - General list : kernel/primitives/index.md
                 - By category:
                     - Command line args:
                         - XMAINARGS: kernel/primitives/xmainargs.md
+                        - XGETARGV: kernel/primitives/xgetargv.md
                     - Files operations:
                         - XOPEN: kernel/primitives/xopen.md
                         - XCLOSE: kernel/primitives/xclose.md
@@ -131,7 +132,7 @@ nav:
         - Hardware guide :
             - Memory: hardware/memory.md
             - I/O: hardware/i_o.md
-            - Firmware informations : home/firmware.md
+            - Firmware informations : developer_manual/firmware.md
             - Joysticks: hardware/joysticks.md
             - Eeprom structure: hardware/eeprom_structure.md
         - Extra Libs :

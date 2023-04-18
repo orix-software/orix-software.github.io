@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="rom_8s" kind="file" language="C++">
+    <compoundname>rom.s</compoundname>
+    <includes local="yes">telestrat.inc</includes>
+    <includes local="yes">fcntl.inc</includes>
+    <includes local="yes">errno.inc</includes>
+    <includes local="yes">cpu.mac</includes>
+    <includes local="yes">../dependencies/orix-sdk/macros/SDK.mac</includes>
+    <includes local="yes">../dependencies/orix-sdk/include/SDK.inc</includes>
+    <includes local="yes">../dependencies/orix-sdk/include/keyboard.inc</includes>
+    <includes refid="vi_8s" local="yes">commands/vi.s</includes>
+    <incdepgraph>
+      <node id="56">
+        <label>functions/subfunc/vi/vi_key_left.s</label>
+        <link refid="vi__key__left_8s"/>
+      </node>
+      <node id="64">
+        <label>functions/tables.s</label>
+        <link refid="tables_8s"/>
+      </node>
+      <node id="34">
+        <label>functions/subfunc/vi/vi_check_0A.s</label>
+        <link refid="vi__check__0A_8s"/>
+      </node>
+      <node id="24">
+        <label>functions/subfunc/vi/vi_ptr_file_used_plus_plus.s</label>
+        <link refid="vi__ptr__file__used__plus__plus_8s"/>
+      </node>
+      <node id="32">
+        <label>functions/subfunc/vi/vi_ptr_file_used_sub_sub.s</label>
+        <link refid="vi__ptr__file__used__sub__sub_8s"/>
+      </node>
+      <node id="42">
+        <label>functions/subfunc/vi/vi_search_previous_line_beginning.s</label>
+        <link refid="vi__search__previous__line__beginning_8s"/>
+      </node>
+      <node id="58">
+        <label>functions/vi_put_char.s</label>
+        <link refid="vi__put__char_8s"/>
+      </node>
+      <node id="8">
+        <label>../dependencies/orix-sdk/include/keyboard.inc</label>
+      </node>
+      <node id="13">
+        <label>functions/vi_displays_info.s</label>
+        <link refid="vi__displays__info_8s"/>
+      </node>
+      <node id="28">
+        <label>functions/subfunc/vi/vi_fill_last_line.s</label>
+        <link refid="vi__fill__last__line_8s"/>
+      </node>
+      <node id="25">
+        <label>functions/subfunc/vi/vi_length_file_sub_sub.s</label>
+        <link refid="vi__length__file__sub__sub_8s"/>
+      </node>
+      <node id="29">
+        <label>functions/subfunc/vi/vi_copy_arg1_to_name_file_open.s</label>
+        <link refid="vi__copy__arg1__to__name__file__open_8s"/>
+      </node>
+      <node id="14">
+        <label>functions/subfunc/vi/vi_init_vi_struct.s</label>
+        <link refid="vi__init__vi__struct_8s"/>
+      </node>
+      <node id="60">
+        <label>functions/vi_editor_switch_on_cursor.s</label>
+        <link refid="vi__editor__switch__on__cursor_8s"/>
+      </node>
+      <node id="31">
+        <label>functions/subfunc/vi/vi_compute_video_adress.s</label>
+        <link refid="vi__compute__video__adress_8s"/>
+      </node>
+      <node id="55">
+        <label>functions/subfunc/vi/vi_key_right.s</label>
+        <link refid="vi__key__right_8s"/>
+      </node>
+      <node id="45">
+        <label>functions/subfunc/vi/vi_check_if_previous_line_was_truncated.s</label>
+        <link refid="vi__check__if__previous__line__was__truncated_8s"/>
+      </node>
+      <node id="54">
+        <label>functions/subfunc/vi/vi_key_up.s</label>
+        <link refid="vi__key__up_8s"/>
+      </node>
+      <node id="52">
+        <label>functions/subfunc/vi/vi_key_enter.s</label>
+        <link refid="vi__key__enter_8s"/>
+      </node>
+      <node id="35">
+        <label>functions/subfunc/vi/vi_set_xpos_0.s</label>
+        <link refid="vi__set__xpos__0_8s"/>
+      </node>
+      <node id="38">
+        <label>functions/subfunc/vi/vi_shift_file_from_memory_one_char.s</label>
+        <link refid="vi__shift__file__from__memory__one__char_8s"/>
+      </node>
+      <node id="20">
+        <label>functions/subfunc/vi/vi_xpos_screen_plus_plus.s</label>
+        <link refid="vi__xpos__screen__plus__plus_8s"/>
+      </node>
+      <node id="37">
+        <label>functions/subfunc/vi/vi_search_next_line.s</label>
+        <link refid="vi__search__next__line_8s"/>
+      </node>
+      <node id="61">
+        <label>functions/vi_editor_switch_off_cursor.s</label>
+        <link refid="vi__editor__switch__off__cursor_8s"/>
+      </node>
+      <node id="4">
+        <label>errno.inc</label>
+      </node>
+      <node id="65">
+        <label>functions/_clrscr_vi.s</label>
+        <link refid="__clrscr__vi_8s"/>
+      </node>
+      <node id="46">
+        <label>functions/subfunc/vi/vi_search_previous_cr.s</label>
+        <link refid="vi__search__previous__cr_8s"/>
+      </node>
+      <node id="21">
+        <label>functions/subfunc/vi/vi_xpos_screen_sub_sub.s</label>
+        <link refid="vi__xpos__screen__sub__sub_8s"/>
+      </node>
+      <node id="11">
+        <label>functions/vi_fill_screen_with_empty_line.s</label>
+        <link refid="vi__fill__screen__with__empty__line_8s"/>
+      </node>
+      <node id="17">
+        <label>functions/subfunc/vi/vi_set_ptr_last_char.s</label>
+        <link refid="vi__set__ptr__last__char_8s"/>
+      </node>
+      <node id="7">
+        <label>../dependencies/orix-sdk/include/SDK.inc</label>
+      </node>
+      <node id="15">
+        <label>functions/subfunc/vi/vi_ptr_last_char_plus_plus.s</label>
+        <link refid="vi__ptr__last__char__plus__plus_8s"/>
+      </node>
+      <node id="57">
+        <label>functions/subfunc/vi/vi_check_eof.s</label>
+        <link refid="vi__check__eof_8s"/>
+      </node>
+      <node id="62">
+        <label>functions/vi_edition_keyboard.s</label>
+        <link refid="vi__edition__keyboard_8s"/>
+      </node>
+      <node id="59">
+        <label>functions/vi_command_edition.s</label>
+        <link refid="vi__command__edition_8s"/>
+      </node>
+      <node id="23">
+        <label>functions/subfunc/vi/vi_ypos_screen_plus_plus.s</label>
+        <link refid="vi__ypos__screen__plus__plus_8s"/>
+      </node>
+      <node id="12">
+        <label>functions/vi_struct.s</label>
+        <link refid="vi__struct_8s"/>
+      </node>
+      <node id="19">
+        <label>functions/subfunc/vi/vi_vi_ptr_file_used_plus_plus.s</label>
+        <link refid="vi__vi__ptr__file__used__plus__plus_8s"/>
+      </node>
+      <node id="3">
+        <label>fcntl.inc</label>
+      </node>
+      <node id="30">
+        <label>functions/subfunc/vi/vi_length_file_plus_plus.s</label>
+        <link refid="vi__length__file__plus__plus_8s"/>
+      </node>
+      <node id="6">
+        <label>../dependencies/orix-sdk/macros/SDK.mac</label>
+      </node>
+      <node id="63">
+        <label>functions/vi_switch_to_edition_mode.s</label>
+        <link refid="vi__switch__to__edition__mode_8s"/>
+      </node>
+      <node id="10">
+        <label>data/vi/strings.s</label>
+        <link refid="strings_8s"/>
+      </node>
+      <node id="40">
+        <label>functions/subfunc/vi/vi_scroll_from_left_to_right_full_line.s</label>
+        <link refid="vi__scroll__from__left__to__right__full__line_8s"/>
+      </node>
+      <node id="41">
+        <label>functions/subfunc/vi/vi_shift_line_left_to_right_editor.s</label>
+        <link refid="vi__shift__line__left__to__right__editor_8s"/>
+      </node>
+      <node id="27">
+        <label>functions/subfunc/vi/vi_check_beginning_of_file.s</label>
+        <link refid="vi__check__beginning__of__file_8s"/>
+      </node>
+      <node id="49">
+        <label>functions/subfunc/vi/vi_compute_last_text_line.s</label>
+        <link refid="vi__compute__last__text__line_8s"/>
+      </node>
+      <node id="22">
+        <label>functions/subfunc/vi/vi_ypos_screen_sub_sub.s</label>
+        <link refid="vi__ypos__screen__sub__sub_8s"/>
+      </node>
+      <node id="51">
+        <label>functions/subfunc/vi/vi_key_down.s</label>
+        <link refid="vi__key__down_8s"/>
+      </node>
+      <node id="18">
+        <label>functions/subfunc/vi/vi_ptr_last_char_add.s</label>
+        <link refid="vi__ptr__last__char__add_8s"/>
+      </node>
+      <node id="44">
+        <label>functions/subfunc/vi/vi_scroll_to_left.s</label>
+        <link refid="vi__scroll__to__left_8s"/>
+      </node>
+      <node id="43">
+        <label>functions/subfunc/vi/vi_set_xpos_from_A.s</label>
+        <link refid="vi__set__xpos__from__A_8s"/>
+      </node>
+      <node id="36">
+        <label>functions/subfunc/vi/vi_ptr_file_used_plus_plus_and_check_eof.s</label>
+        <link refid="vi__ptr__file__used__plus__plus__and__check__eof_8s"/>
+      </node>
+      <node id="47">
+        <label>functions/subfunc/vi/vi_add_char_to_text.s</label>
+        <link refid="vi__add__char__to__text_8s"/>
+      </node>
+      <node id="48">
+        <label>functions/subfunc/vi/vi_strlen_current_line.s</label>
+        <link refid="vi__strlen__current__line_8s"/>
+      </node>
+      <node id="2">
+        <label>telestrat.inc</label>
+      </node>
+      <node id="33">
+        <label>functions/subfunc/vi/vi_display_file_opened.s</label>
+        <link refid="vi__display__file__opened_8s"/>
+      </node>
+      <node id="5">
+        <label>cpu.mac</label>
+      </node>
+      <node id="16">
+        <label>functions/subfunc/vi/vi_ptr_last_char_sub_sub.s</label>
+        <link refid="vi__ptr__last__char__sub__sub_8s"/>
+      </node>
+      <node id="39">
+        <label>functions/subfunc/vi/vi_check_inserted_char_overflow_the_max_column.s</label>
+        <link refid="vi__check__inserted__char__overflow__the__max__column_8s"/>
+      </node>
+      <node id="53">
+        <label>functions/subfunc/vi/vi_key_del.s</label>
+        <link refid="vi__key__del_8s"/>
+      </node>
+      <node id="50">
+        <label>functions/subfunc/vi/vi_clear_command_line.s</label>
+        <link refid="vi__clear__command__line_8s"/>
+      </node>
+      <node id="9">
+        <label>commands/vi.s</label>
+        <link refid="vi_8s"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s</label>
+        <link refid="rom_8s"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>functions/subfunc/vi/vi_display_char.s</label>
+        <link refid="vi__display__char_8s"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="rom_8s_1a7c4346d873634cc6c9c302e0666199d8" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char userzp</definition>
+        <argsstring></argsstring>
+        <name>userzp</name>
+        <initializer>= $80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="23" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1ae9f35a1799b9d6f7d0724f31dc90a42b" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char NULL</definition>
+        <argsstring></argsstring>
+        <name>NULL</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="24" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1af46c5b0bd4a1c7322c839e4a8d75a979" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char list_of_commands_bank[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>list_of_commands_bank</name>
+        <initializer>= &quot;vi&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="43" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1a3b5b98883de6f1129805cf17ff147283" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int addr_commands</definition>
+        <argsstring></argsstring>
+        <name>addr_commands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="46" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1a2a4f4b45cae05b21bab16b88e723e5e9" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char signature[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>signature</name>
+        <initializer>= &quot;vi 2022.4&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="49" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1a2cea453e479f6e4cb7f356f020d80172" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char end_rom[ $FFF0- *]</definition>
+        <argsstring>[$FFF0- *]</argsstring>
+        <name>end_rom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="61" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1a778d687745c3fcc2316c5911de59a17d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char parse_vector[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>parse_vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="66" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1a7c6a264a7c1d9bf9bf82006025f10068" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int signature_adress_commands</definition>
+        <argsstring></argsstring>
+        <name>signature_adress_commands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="69" column="14" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1aba728320e2aff1e8f4221a65c48a78fa" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int list_commands</definition>
+        <argsstring></argsstring>
+        <name>list_commands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="72" column="14" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1a847dea06ed72564e4b3e8fae5f5ce6d1" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char number_of_commands</definition>
+        <argsstring></argsstring>
+        <name>number_of_commands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="75" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1ae70f94ccc32dbd5165e03671f8ccc433" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int copyright</definition>
+        <argsstring></argsstring>
+        <name>copyright</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="79" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1aa057579846e09bf615c5e9ef9f863550" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NMI</definition>
+        <argsstring></argsstring>
+        <name>NMI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="82" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1aafb34724d0c9dcf2785cfc01e6412a36" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RESET</definition>
+        <argsstring></argsstring>
+        <name>RESET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="86" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rom_8s_1ab4ffaa54e2cf83aac36be756c11ea348" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BRK_IRQ</definition>
+        <argsstring></argsstring>
+        <name>BRK_IRQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" line="89" column="5" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cc65<sp/>includes</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">.include<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;telestrat.inc&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/>from<sp/>cc65</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">.include<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;fcntl.inc&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/>from<sp/>cc65</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">.include<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;errno.inc&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/>from<sp/>cc65</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">.include<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;cpu.mac&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/>from<sp/>cc65</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orix<sp/>SDK<sp/>includes</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">.include<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;../dependencies/orix-sdk/macros/SDK.mac&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">.include<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;../dependencies/orix-sdk/include/SDK.inc&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">.include<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;../dependencies/orix-sdk/include/keyboard.inc&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Zero<sp/>Page</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">userzp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>$80</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">NULL<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Shell</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">.org<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$C000</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">.code</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">start:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">rts</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;commands/vi.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">list_of_commands_bank:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>.asciiz<sp/></highlight><highlight class="stringliteral">&quot;vi&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">addr_commands:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>.word<sp/>_vi</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">signature:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>.asciiz<sp/></highlight><highlight class="stringliteral">&quot;vi<sp/>2022.4&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">end_rom:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">;----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">.out<sp/><sp/><sp/>.sprintf(</highlight><highlight class="stringliteral">&quot;Size<sp/>of<sp/>ROM<sp/>:<sp/>%d<sp/>bytes&quot;</highlight><highlight class="normal">,<sp/>end_rom-$c000)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>.res<sp/>$FFF0-*</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>.org<sp/>$FFF0</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">.byt<sp/>1<sp/>;<sp/>Command<sp/>ROM</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">;<sp/>$fff1</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">parse_vector:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>.byt<sp/>$00,$00</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">;<sp/>fff3</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">signature_adress_commands:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>.addr<sp/>addr_commands</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">;<sp/>fff5-fff6</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">list_commands:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>.addr<sp/>list_of_commands_bank</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">;<sp/>fff7</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">number_of_commands:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>.byt<sp/>1</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">;<sp/>fff8-fff9</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">copyright:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>.word<sp/><sp/><sp/>signature</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">;<sp/>fffa-fffb</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">NMI:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>.word<sp/><sp/><sp/>start</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">;<sp/>fffc-fffd</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">RESET:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>.word<sp/><sp/><sp/>start</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">;<sp/>fffe-ffff</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">BRK_IRQ:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>.word<sp/><sp/><sp/>IRQVECTOR</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s"/>
+  </compounddef>
+</doxygen>

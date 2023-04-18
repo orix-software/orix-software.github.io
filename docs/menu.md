@@ -7,5 +7,3 @@
 ## developper side
 
 [Developpers manuals](../home/)
-
-

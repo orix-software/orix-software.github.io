@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_6c260d28152e78a3ffcc2e06b7438967" kind="dir">
+    <compoundname>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src</compoundname>
+    <innerdir refid="dir_e1568de7a9ec0caf269f7729a27efb24">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands</innerdir>
+    <innerdir refid="dir_eb94e028ad508402029845f2921e79f7">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data</innerdir>
+    <innerdir refid="dir_2288eccfea1af74b995388678c757cc0">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions</innerdir>
+    <innerfile refid="rom_8s">rom.s</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/"/>
+  </compounddef>
+</doxygen>

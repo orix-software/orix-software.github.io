@@ -7,4 +7,28 @@
   --md-code-hl-comment-color: #707070;
   --md-code-hl-generic-color: #FFFFFF;
   --md-code-hl-variable-color: #FFFFFF;
+  --md-default-bg-color: #000000;
+  --md-default-fg-color: #FFFFFF;
+  --md-default-fg-color--lighter: #FFFFFF;
+  --md-default-fg-color--light: #FFFFFF;
+}
+
+.md-ellipsis::before {
+  content: "";
+  display: inline-block;
+  width: 112px;
+  height: 16px;
+  margin-right: 5px;
+  background-image: url("/degrade_before.png");
+  background-size: cover;
+}
+
+.md-ellipsis::after {
+  content: "";
+  display: inline-block;
+  width: 112px;
+  height: 16px;
+  margin-left: 5px;
+  background-image: url("/degrade_after.png");
+  background-size: cover;
 }

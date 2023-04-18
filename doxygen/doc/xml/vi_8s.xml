@@ -1,0 +1,1323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="vi_8s" kind="file" language="C++">
+    <compoundname>vi.s</compoundname>
+    <includes refid="strings_8s" local="yes">data/vi/strings.s</includes>
+    <includes refid="vi__fill__screen__with__empty__line_8s" local="yes">functions/vi_fill_screen_with_empty_line.s</includes>
+    <includes refid="vi__struct_8s" local="yes">functions/vi_struct.s</includes>
+    <includes refid="vi__displays__info_8s" local="yes">functions/vi_displays_info.s</includes>
+    <includes refid="vi__init__vi__struct_8s" local="yes">functions/subfunc/vi/vi_init_vi_struct.s</includes>
+    <includes refid="vi__ptr__last__char__plus__plus_8s" local="yes">functions/subfunc/vi/vi_ptr_last_char_plus_plus.s</includes>
+    <includes refid="vi__ptr__last__char__sub__sub_8s" local="yes">functions/subfunc/vi/vi_ptr_last_char_sub_sub.s</includes>
+    <includes refid="vi__set__ptr__last__char_8s" local="yes">functions/subfunc/vi/vi_set_ptr_last_char.s</includes>
+    <includes refid="vi__ptr__last__char__add_8s" local="yes">functions/subfunc/vi/vi_ptr_last_char_add.s</includes>
+    <includes refid="vi__vi__ptr__file__used__plus__plus_8s" local="yes">functions/subfunc/vi/vi_vi_ptr_file_used_plus_plus.s</includes>
+    <includes refid="vi__xpos__screen__plus__plus_8s" local="yes">functions/subfunc/vi/vi_xpos_screen_plus_plus.s</includes>
+    <includes refid="vi__xpos__screen__sub__sub_8s" local="yes">functions/subfunc/vi/vi_xpos_screen_sub_sub.s</includes>
+    <includes refid="vi__ypos__screen__sub__sub_8s" local="yes">functions/subfunc/vi/vi_ypos_screen_sub_sub.s</includes>
+    <includes refid="vi__ypos__screen__plus__plus_8s" local="yes">functions/subfunc/vi/vi_ypos_screen_plus_plus.s</includes>
+    <includes refid="vi__ptr__file__used__plus__plus_8s" local="yes">functions/subfunc/vi/vi_ptr_file_used_plus_plus.s</includes>
+    <includes refid="vi__length__file__sub__sub_8s" local="yes">functions/subfunc/vi/vi_length_file_sub_sub.s</includes>
+    <includes refid="vi__display__char_8s" local="yes">functions/subfunc/vi/vi_display_char.s</includes>
+    <includes refid="vi__check__beginning__of__file_8s" local="yes">functions/subfunc/vi/vi_check_beginning_of_file.s</includes>
+    <includes refid="vi__fill__last__line_8s" local="yes">functions/subfunc/vi/vi_fill_last_line.s</includes>
+    <includes refid="vi__copy__arg1__to__name__file__open_8s" local="yes">functions/subfunc/vi/vi_copy_arg1_to_name_file_open.s</includes>
+    <includes refid="vi__length__file__plus__plus_8s" local="yes">functions/subfunc/vi/vi_length_file_plus_plus.s</includes>
+    <includes refid="vi__compute__video__adress_8s" local="yes">functions/subfunc/vi/vi_compute_video_adress.s</includes>
+    <includes refid="vi__ptr__file__used__sub__sub_8s" local="yes">functions/subfunc/vi/vi_ptr_file_used_sub_sub.s</includes>
+    <includes refid="vi__display__file__opened_8s" local="yes">functions/subfunc/vi/vi_display_file_opened.s</includes>
+    <includes refid="vi__check__0A_8s" local="yes">functions/subfunc/vi/vi_check_0A.s</includes>
+    <includes refid="vi__set__xpos__0_8s" local="yes">functions/subfunc/vi/vi_set_xpos_0.s</includes>
+    <includes refid="vi__ptr__file__used__plus__plus__and__check__eof_8s" local="yes">functions/subfunc/vi/vi_ptr_file_used_plus_plus_and_check_eof.s</includes>
+    <includes refid="vi__search__next__line_8s" local="yes">functions/subfunc/vi/vi_search_next_line.s</includes>
+    <includes refid="vi__shift__file__from__memory__one__char_8s" local="yes">functions/subfunc/vi/vi_shift_file_from_memory_one_char.s</includes>
+    <includes refid="vi__check__inserted__char__overflow__the__max__column_8s" local="yes">functions/subfunc/vi/vi_check_inserted_char_overflow_the_max_column.s</includes>
+    <includes refid="vi__scroll__from__left__to__right__full__line_8s" local="yes">functions/subfunc/vi/vi_scroll_from_left_to_right_full_line.s</includes>
+    <includes refid="vi__shift__line__left__to__right__editor_8s" local="yes">functions/subfunc/vi/vi_shift_line_left_to_right_editor.s</includes>
+    <includes refid="vi__search__previous__line__beginning_8s" local="yes">functions/subfunc/vi/vi_search_previous_line_beginning.s</includes>
+    <includes refid="vi__set__xpos__from__A_8s" local="yes">functions/subfunc/vi/vi_set_xpos_from_A.s</includes>
+    <includes refid="vi__scroll__to__left_8s" local="yes">functions/subfunc/vi/vi_scroll_to_left.s</includes>
+    <includes refid="vi__check__if__previous__line__was__truncated_8s" local="yes">functions/subfunc/vi/vi_check_if_previous_line_was_truncated.s</includes>
+    <includes refid="vi__search__previous__cr_8s" local="yes">functions/subfunc/vi/vi_search_previous_cr.s</includes>
+    <includes refid="vi__add__char__to__text_8s" local="yes">functions/subfunc/vi/vi_add_char_to_text.s</includes>
+    <includes refid="vi__strlen__current__line_8s" local="yes">functions/subfunc/vi/vi_strlen_current_line.s</includes>
+    <includes refid="vi__compute__last__text__line_8s" local="yes">functions/subfunc/vi/vi_compute_last_text_line.s</includes>
+    <includes refid="vi__clear__command__line_8s" local="yes">functions/subfunc/vi/vi_clear_command_line.s</includes>
+    <includes refid="vi__key__down_8s" local="yes">functions/subfunc/vi/vi_key_down.s</includes>
+    <includes refid="vi__key__enter_8s" local="yes">functions/subfunc/vi/vi_key_enter.s</includes>
+    <includes refid="vi__key__del_8s" local="yes">functions/subfunc/vi/vi_key_del.s</includes>
+    <includes refid="vi__key__up_8s" local="yes">functions/subfunc/vi/vi_key_up.s</includes>
+    <includes refid="vi__key__right_8s" local="yes">functions/subfunc/vi/vi_key_right.s</includes>
+    <includes refid="vi__key__left_8s" local="yes">functions/subfunc/vi/vi_key_left.s</includes>
+    <includes refid="vi__check__eof_8s" local="yes">functions/subfunc/vi/vi_check_eof.s</includes>
+    <includes refid="vi__put__char_8s" local="yes">functions/vi_put_char.s</includes>
+    <includes refid="vi__command__edition_8s" local="yes">functions/vi_command_edition.s</includes>
+    <includes refid="vi__editor__switch__on__cursor_8s" local="yes">functions/vi_editor_switch_on_cursor.s</includes>
+    <includes refid="vi__editor__switch__off__cursor_8s" local="yes">functions/vi_editor_switch_off_cursor.s</includes>
+    <includes refid="vi__edition__keyboard_8s" local="yes">functions/vi_edition_keyboard.s</includes>
+    <includes refid="vi__switch__to__edition__mode_8s" local="yes">functions/vi_switch_to_edition_mode.s</includes>
+    <includes refid="tables_8s" local="yes">functions/tables.s</includes>
+    <includes refid="__clrscr__vi_8s" local="yes">functions/_clrscr_vi.s</includes>
+    <includedby refid="rom_8s" local="yes">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s</includedby>
+    <incdepgraph>
+      <node id="48">
+        <label>functions/subfunc/vi/vi_key_left.s</label>
+        <link refid="vi__key__left_8s"/>
+      </node>
+      <node id="56">
+        <label>functions/tables.s</label>
+        <link refid="tables_8s"/>
+      </node>
+      <node id="26">
+        <label>functions/subfunc/vi/vi_check_0A.s</label>
+        <link refid="vi__check__0A_8s"/>
+      </node>
+      <node id="16">
+        <label>functions/subfunc/vi/vi_ptr_file_used_plus_plus.s</label>
+        <link refid="vi__ptr__file__used__plus__plus_8s"/>
+      </node>
+      <node id="24">
+        <label>functions/subfunc/vi/vi_ptr_file_used_sub_sub.s</label>
+        <link refid="vi__ptr__file__used__sub__sub_8s"/>
+      </node>
+      <node id="34">
+        <label>functions/subfunc/vi/vi_search_previous_line_beginning.s</label>
+        <link refid="vi__search__previous__line__beginning_8s"/>
+      </node>
+      <node id="50">
+        <label>functions/vi_put_char.s</label>
+        <link refid="vi__put__char_8s"/>
+      </node>
+      <node id="5">
+        <label>functions/vi_displays_info.s</label>
+        <link refid="vi__displays__info_8s"/>
+      </node>
+      <node id="20">
+        <label>functions/subfunc/vi/vi_fill_last_line.s</label>
+        <link refid="vi__fill__last__line_8s"/>
+      </node>
+      <node id="17">
+        <label>functions/subfunc/vi/vi_length_file_sub_sub.s</label>
+        <link refid="vi__length__file__sub__sub_8s"/>
+      </node>
+      <node id="21">
+        <label>functions/subfunc/vi/vi_copy_arg1_to_name_file_open.s</label>
+        <link refid="vi__copy__arg1__to__name__file__open_8s"/>
+      </node>
+      <node id="6">
+        <label>functions/subfunc/vi/vi_init_vi_struct.s</label>
+        <link refid="vi__init__vi__struct_8s"/>
+      </node>
+      <node id="52">
+        <label>functions/vi_editor_switch_on_cursor.s</label>
+        <link refid="vi__editor__switch__on__cursor_8s"/>
+      </node>
+      <node id="23">
+        <label>functions/subfunc/vi/vi_compute_video_adress.s</label>
+        <link refid="vi__compute__video__adress_8s"/>
+      </node>
+      <node id="47">
+        <label>functions/subfunc/vi/vi_key_right.s</label>
+        <link refid="vi__key__right_8s"/>
+      </node>
+      <node id="37">
+        <label>functions/subfunc/vi/vi_check_if_previous_line_was_truncated.s</label>
+        <link refid="vi__check__if__previous__line__was__truncated_8s"/>
+      </node>
+      <node id="46">
+        <label>functions/subfunc/vi/vi_key_up.s</label>
+        <link refid="vi__key__up_8s"/>
+      </node>
+      <node id="44">
+        <label>functions/subfunc/vi/vi_key_enter.s</label>
+        <link refid="vi__key__enter_8s"/>
+      </node>
+      <node id="27">
+        <label>functions/subfunc/vi/vi_set_xpos_0.s</label>
+        <link refid="vi__set__xpos__0_8s"/>
+      </node>
+      <node id="30">
+        <label>functions/subfunc/vi/vi_shift_file_from_memory_one_char.s</label>
+        <link refid="vi__shift__file__from__memory__one__char_8s"/>
+      </node>
+      <node id="12">
+        <label>functions/subfunc/vi/vi_xpos_screen_plus_plus.s</label>
+        <link refid="vi__xpos__screen__plus__plus_8s"/>
+      </node>
+      <node id="29">
+        <label>functions/subfunc/vi/vi_search_next_line.s</label>
+        <link refid="vi__search__next__line_8s"/>
+      </node>
+      <node id="53">
+        <label>functions/vi_editor_switch_off_cursor.s</label>
+        <link refid="vi__editor__switch__off__cursor_8s"/>
+      </node>
+      <node id="57">
+        <label>functions/_clrscr_vi.s</label>
+        <link refid="__clrscr__vi_8s"/>
+      </node>
+      <node id="38">
+        <label>functions/subfunc/vi/vi_search_previous_cr.s</label>
+        <link refid="vi__search__previous__cr_8s"/>
+      </node>
+      <node id="13">
+        <label>functions/subfunc/vi/vi_xpos_screen_sub_sub.s</label>
+        <link refid="vi__xpos__screen__sub__sub_8s"/>
+      </node>
+      <node id="3">
+        <label>functions/vi_fill_screen_with_empty_line.s</label>
+        <link refid="vi__fill__screen__with__empty__line_8s"/>
+      </node>
+      <node id="9">
+        <label>functions/subfunc/vi/vi_set_ptr_last_char.s</label>
+        <link refid="vi__set__ptr__last__char_8s"/>
+      </node>
+      <node id="7">
+        <label>functions/subfunc/vi/vi_ptr_last_char_plus_plus.s</label>
+        <link refid="vi__ptr__last__char__plus__plus_8s"/>
+      </node>
+      <node id="49">
+        <label>functions/subfunc/vi/vi_check_eof.s</label>
+        <link refid="vi__check__eof_8s"/>
+      </node>
+      <node id="54">
+        <label>functions/vi_edition_keyboard.s</label>
+        <link refid="vi__edition__keyboard_8s"/>
+      </node>
+      <node id="51">
+        <label>functions/vi_command_edition.s</label>
+        <link refid="vi__command__edition_8s"/>
+      </node>
+      <node id="15">
+        <label>functions/subfunc/vi/vi_ypos_screen_plus_plus.s</label>
+        <link refid="vi__ypos__screen__plus__plus_8s"/>
+      </node>
+      <node id="4">
+        <label>functions/vi_struct.s</label>
+        <link refid="vi__struct_8s"/>
+      </node>
+      <node id="11">
+        <label>functions/subfunc/vi/vi_vi_ptr_file_used_plus_plus.s</label>
+        <link refid="vi__vi__ptr__file__used__plus__plus_8s"/>
+      </node>
+      <node id="22">
+        <label>functions/subfunc/vi/vi_length_file_plus_plus.s</label>
+        <link refid="vi__length__file__plus__plus_8s"/>
+      </node>
+      <node id="55">
+        <label>functions/vi_switch_to_edition_mode.s</label>
+        <link refid="vi__switch__to__edition__mode_8s"/>
+      </node>
+      <node id="2">
+        <label>data/vi/strings.s</label>
+        <link refid="strings_8s"/>
+      </node>
+      <node id="32">
+        <label>functions/subfunc/vi/vi_scroll_from_left_to_right_full_line.s</label>
+        <link refid="vi__scroll__from__left__to__right__full__line_8s"/>
+      </node>
+      <node id="33">
+        <label>functions/subfunc/vi/vi_shift_line_left_to_right_editor.s</label>
+        <link refid="vi__shift__line__left__to__right__editor_8s"/>
+      </node>
+      <node id="19">
+        <label>functions/subfunc/vi/vi_check_beginning_of_file.s</label>
+        <link refid="vi__check__beginning__of__file_8s"/>
+      </node>
+      <node id="41">
+        <label>functions/subfunc/vi/vi_compute_last_text_line.s</label>
+        <link refid="vi__compute__last__text__line_8s"/>
+      </node>
+      <node id="14">
+        <label>functions/subfunc/vi/vi_ypos_screen_sub_sub.s</label>
+        <link refid="vi__ypos__screen__sub__sub_8s"/>
+      </node>
+      <node id="43">
+        <label>functions/subfunc/vi/vi_key_down.s</label>
+        <link refid="vi__key__down_8s"/>
+      </node>
+      <node id="10">
+        <label>functions/subfunc/vi/vi_ptr_last_char_add.s</label>
+        <link refid="vi__ptr__last__char__add_8s"/>
+      </node>
+      <node id="36">
+        <label>functions/subfunc/vi/vi_scroll_to_left.s</label>
+        <link refid="vi__scroll__to__left_8s"/>
+      </node>
+      <node id="35">
+        <label>functions/subfunc/vi/vi_set_xpos_from_A.s</label>
+        <link refid="vi__set__xpos__from__A_8s"/>
+      </node>
+      <node id="28">
+        <label>functions/subfunc/vi/vi_ptr_file_used_plus_plus_and_check_eof.s</label>
+        <link refid="vi__ptr__file__used__plus__plus__and__check__eof_8s"/>
+      </node>
+      <node id="39">
+        <label>functions/subfunc/vi/vi_add_char_to_text.s</label>
+        <link refid="vi__add__char__to__text_8s"/>
+      </node>
+      <node id="40">
+        <label>functions/subfunc/vi/vi_strlen_current_line.s</label>
+        <link refid="vi__strlen__current__line_8s"/>
+      </node>
+      <node id="25">
+        <label>functions/subfunc/vi/vi_display_file_opened.s</label>
+        <link refid="vi__display__file__opened_8s"/>
+      </node>
+      <node id="8">
+        <label>functions/subfunc/vi/vi_ptr_last_char_sub_sub.s</label>
+        <link refid="vi__ptr__last__char__sub__sub_8s"/>
+      </node>
+      <node id="31">
+        <label>functions/subfunc/vi/vi_check_inserted_char_overflow_the_max_column.s</label>
+        <link refid="vi__check__inserted__char__overflow__the__max__column_8s"/>
+      </node>
+      <node id="45">
+        <label>functions/subfunc/vi/vi_key_del.s</label>
+        <link refid="vi__key__del_8s"/>
+      </node>
+      <node id="42">
+        <label>functions/subfunc/vi/vi_clear_command_line.s</label>
+        <link refid="vi__clear__command__line_8s"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</label>
+        <link refid="vi_8s"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>functions/subfunc/vi/vi_display_char.s</label>
+        <link refid="vi__display__char_8s"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</label>
+        <link refid="vi_8s"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s</label>
+        <link refid="rom_8s"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="vi_8s_1a5f04e8c1fc8c4de1080509024725975a" prot="public" static="no">
+        <name>vi_dec16_zp</name>
+        <param><defname>addr</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="13" column="9" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="vi_8s_1ad3136d2f1f34e592c66e09ba8a852812" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <initializer>= $0D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="22" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a19b283812883e1dad22bbde25738643a" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char LF</definition>
+        <argsstring></argsstring>
+        <name>LF</name>
+        <initializer>= $0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="23" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1abd1ae2b8d549a71550eb8bba2bb8f599" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char IS_EOF</definition>
+        <argsstring></argsstring>
+        <name>IS_EOF</name>
+        <initializer>= $00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="25" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a54a9c0d7bf1a3338cc11a927505d77be" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char IS_BEGINNING_OF_THE_FILE</definition>
+        <argsstring></argsstring>
+        <name>IS_BEGINNING_OF_THE_FILE</name>
+        <initializer>= $00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="26" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a8c615aaec06c8bad172dc3938aba0eba" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char IS_LAST_LINE_OF_SCREEN_TEXT</definition>
+        <argsstring></argsstring>
+        <name>IS_LAST_LINE_OF_SCREEN_TEXT</name>
+        <initializer>= $01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="27" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a32745d6b4ceb80d5a4d42cddd79d9ef4" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char IS_BEGINNING_OF_THE_LINE</definition>
+        <argsstring></argsstring>
+        <name>IS_BEGINNING_OF_THE_LINE</name>
+        <initializer>= $00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="28" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1ac2df40bfbdee63703d0497bd65ad73d5" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_LAST_LINE_EDITOR</definition>
+        <argsstring></argsstring>
+        <name>VI_LAST_LINE_EDITOR</name>
+        <initializer>= 26</initializer>
+        <briefdescription>
+<para>Last line used by the editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="31" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1acae644326fea9395449f972f6a6e0d8b" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_FILL_SCREEN_MODE_STOP_AT_THE_END_OF_LAST_LINE</definition>
+        <argsstring></argsstring>
+        <name>VI_FILL_SCREEN_MODE_STOP_AT_THE_END_OF_LAST_LINE</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="32" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a79290cfb784db718baac2e64eb11f152" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_COMMANDLINE_MAX_CHAR</definition>
+        <argsstring></argsstring>
+        <name>VI_COMMANDLINE_MAX_CHAR</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="33" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a475084ca07c485e6f755adcbbf60c008" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_MAX_LENGTH_FILE</definition>
+        <argsstring></argsstring>
+        <name>VI_MAX_LENGTH_FILE</name>
+        <initializer>= 2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="34" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a2bc721a097dbed8bcefad1348f046702" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_EDITOR_CHAR_LIMITS_EMPTY</definition>
+        <argsstring></argsstring>
+        <name>VI_EDITOR_CHAR_LIMITS_EMPTY</name>
+        <initializer>= &apos;~&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="35" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1ae006014881715ddf4f7e8aa76566b79e" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_COMMANDLINE_VIDEO_ADRESS</definition>
+        <argsstring></argsstring>
+        <name>VI_COMMANDLINE_VIDEO_ADRESS</name>
+        <initializer>= $bb80+40*27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="36" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1abe993d49c201a7539637a125ac0807fc" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_EDITION_LAST_VIDEO_ADRESS</definition>
+        <argsstring></argsstring>
+        <name>VI_EDITION_LAST_VIDEO_ADRESS</name>
+        <initializer>= $bb80+40*26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="37" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a543b38bda59d1d8e824090c2c174edf3" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_EDITION_VIDEO_ADRESS</definition>
+        <argsstring></argsstring>
+        <name>VI_EDITION_VIDEO_ADRESS</name>
+        <initializer>= $bb80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="38" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1ab045a30b1750af930b9bc87c3bc53c22" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_EDITOR_MAX_LENGTH_OF_A_LINE</definition>
+        <argsstring></argsstring>
+        <name>VI_EDITOR_MAX_LENGTH_OF_A_LINE</name>
+        <initializer>= 255</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="39" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a97137c7f96f2e9f4d3ec743fe18c0665" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char VI_EDITOR_MAX_COLUMN</definition>
+        <argsstring></argsstring>
+        <name>VI_EDITOR_MAX_COLUMN</name>
+        <initializer>= 39</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="40" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_struct</definition>
+        <argsstring></argsstring>
+        <name>vi_struct</name>
+        <initializer>= userzp</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="45" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1aadda8db3383bdab25ec1683d8dd0f6eb" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_ptr1</definition>
+        <argsstring></argsstring>
+        <name>vi_ptr1</name>
+        <initializer>= userzp+2</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="46" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a62f7795ee167060eb27b1e3db7d7d23c" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_argv</definition>
+        <argsstring></argsstring>
+        <name>vi_argv</name>
+        <initializer>= userzp+4</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="47" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1aae53a4d8f7ef38ac152a0350423b8f1c" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_argc</definition>
+        <argsstring></argsstring>
+        <name>vi_argc</name>
+        <initializer>= userzp+6</initializer>
+        <briefdescription>
+<para>1 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="48" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1abe3cbd9bfcb577ef36a5a222f61203f5" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_arg1</definition>
+        <argsstring></argsstring>
+        <name>vi_arg1</name>
+        <initializer>= userzp+7</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="49" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a5a9929a47b0ba3db03915e19b3b68cd6" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_fp</definition>
+        <argsstring></argsstring>
+        <name>vi_fp</name>
+        <initializer>= userzp+9</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="50" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a46b0a41d1f654c3f19989f9094001198" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_ptr_file</definition>
+        <argsstring></argsstring>
+        <name>vi_ptr_file</name>
+        <initializer>= userzp+11</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="51" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1ab0315168012ba88e1479a8c665b58a2b" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_tmp2</definition>
+        <argsstring></argsstring>
+        <name>vi_tmp2</name>
+        <initializer>= userzp+13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="52" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1ae75ff061f510abe8dcbcdc8434e5d3b9" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_ptr_screen</definition>
+        <argsstring></argsstring>
+        <name>vi_ptr_screen</name>
+        <initializer>= userzp+14</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="53" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a4ce74bdf77badacd182d1181a0e2b77a" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_length_file</definition>
+        <argsstring></argsstring>
+        <name>vi_length_file</name>
+        <initializer>= userzp+16</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="54" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a57ddc9c9afcd4940ce8a258c8a99671b" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_length_file_compute</definition>
+        <argsstring></argsstring>
+        <name>vi_length_file_compute</name>
+        <initializer>= userzp+18</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="55" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a703657d2caaa1643edd99b0c5a95a38d" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_tmp1</definition>
+        <argsstring></argsstring>
+        <name>vi_tmp1</name>
+        <initializer>= userzp+20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="56" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a016587ca26ff7083124a34813e6983e2" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_fileopened</definition>
+        <argsstring></argsstring>
+        <name>vi_fileopened</name>
+        <initializer>= userzp+22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="57" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_ptr_file_used</definition>
+        <argsstring></argsstring>
+        <name>vi_ptr_file_used</name>
+        <initializer>= userzp+24</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="58" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a0d112819ae9613db7066af27a7f87465" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char tmp0_16</definition>
+        <argsstring></argsstring>
+        <name>tmp0_16</name>
+        <initializer>= userzp+26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="59" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a68c5056a5807066bf90f759212cc8301" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_no_opened_file</definition>
+        <argsstring></argsstring>
+        <name>vi_no_opened_file</name>
+        <initializer>= userzp+28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="60" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1aac61d55e2587ca8fe2b138a6aeb61ffe" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_pos_debug</definition>
+        <argsstring></argsstring>
+        <name>vi_pos_debug</name>
+        <initializer>= userzp+30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="61" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a450181cfcccedf7f533d5259df4d2eeb" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_ptr2</definition>
+        <argsstring></argsstring>
+        <name>vi_ptr2</name>
+        <initializer>= userzp+32</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="62" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a683876721ab370879aa1095e1b11444a" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_savex</definition>
+        <argsstring></argsstring>
+        <name>vi_savex</name>
+        <initializer>= userzp+34</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="63" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a1c69f491e2054203373226bba5c59c7f" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_ptr3</definition>
+        <argsstring></argsstring>
+        <name>vi_ptr3</name>
+        <initializer>= userzp+36</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="64" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vi_8s_1a530efc8d92452198964b9568561138ae" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char vi_tmp3</definition>
+        <argsstring></argsstring>
+        <name>vi_tmp3</name>
+        <initializer>= userzp+38</initializer>
+        <briefdescription>
+<para>2 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="65" column="13" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vi_8s_1a4119dc4e1586cc055c686971e6e8e62a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>_vi</definition>
+        <argsstring>()</argsstring>
+        <name>_vi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" line="138" column="1" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s" bodystart="138" bodyend="335"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">;<sp/>Limits<sp/>max<sp/>line<sp/>:<sp/>256<sp/>bytes</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">;<sp/>Max<sp/>file<sp/>:<sp/>VI_MAX_LENGTH_FILE<sp/>(2000<sp/>bytes)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">;<sp/>max<sp/>edit<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>per<sp/>line<sp/>:<sp/>39</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">;<sp/>Max<sp/>2KB<sp/>pour<sp/>un<sp/>fichier<sp/>(arbitraire)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">;<sp/>Pas<sp/>de<sp/>possibilité<sp/>d</highlight><highlight class="stringliteral">&apos;éditer<sp/>une<sp/>ligne<sp/>de<sp/>plus<sp/>de<sp/>39<sp/>chars<sp/>(donc<sp/>pas<sp/>de<sp/>gestion<sp/>de<sp/>retour<sp/>à<sp/>la<sp/>ligne<sp/>quand<sp/>une<sp/>ligne<sp/>fait<sp/>plus<sp/>de<sp/>40<sp/>chars</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral">;<sp/>Quand<sp/>on<sp/>remonte<sp/>ou<sp/>quand<sp/>on<sp/>descend<sp/>le<sp/>curseur,<sp/>il<sp/>revient<sp/>toujours<sp/>à<sp/>la<sp/>position<sp/>X=0<sp/>même<sp/>si<sp/>on<sp/>était<sp/>en<sp/>milieu<sp/>de<sp/>ligne</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral">;<sp/>Pas<sp/>de<sp/>gestion<sp/>du<sp/>mode<sp/>écrasement</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral">;<sp/>Pas<sp/>de<sp/>possibilité<sp/>d&apos;</highlight><highlight class="normal">avoir<sp/>une<sp/>touche<sp/>pour<sp/>aller<sp/>en<sp/>fin<sp/>de<sp/>ligne</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">;<sp/>gère<sp/>le<sp/>mode<sp/>windows<sp/>pour<sp/>les<sp/>retours<sp/>à<sp/>la<sp/>ligne,<sp/>et<sp/>ne<sp/>marchera<sp/>pas<sp/>en<sp/>retour<sp/>chariot<sp/>unix</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">.macro<sp/><sp/>vi_dec16_zp<sp/><sp/><sp/>addr</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>addr<sp/>;<sp/>98</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>*+2<sp/>;<sp/>go<sp/>to<sp/>label</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>dec<sp/><sp/><sp/><sp/><sp/>addr+1</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">;label:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>dec<sp/><sp/><sp/><sp/><sp/>addr</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">.endmacro</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">CR<sp/>=<sp/>$0D</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">LF<sp/>=<sp/>$0A</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">IS_EOF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>$00</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">IS_BEGINNING_OF_THE_FILE<sp/><sp/><sp/><sp/>=<sp/>$00</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">IS_LAST_LINE_OF_SCREEN_TEXT<sp/>=<sp/>$01</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">IS_BEGINNING_OF_THE_LINE<sp/><sp/><sp/><sp/>=<sp/>$00</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="vi_8s_1ac2df40bfbdee63703d0497bd65ad73d5" refkind="member"><highlight class="normal"><ref refid="vi_8s_1ac2df40bfbdee63703d0497bd65ad73d5" kindref="member">VI_LAST_LINE_EDITOR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>26<sp/>;<sp/>Last<sp/>line<sp/>used<sp/>by<sp/>the<sp/>editor</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">VI_FILL_SCREEN_MODE_STOP_AT_THE_END_OF_LAST_LINE<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">VI_COMMANDLINE_MAX_CHAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">VI_MAX_LENGTH_FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2000</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">VI_EDITOR_CHAR_LIMITS_EMPTY<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="charliteral">&apos;~&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">VI_COMMANDLINE_VIDEO_ADRESS<sp/><sp/><sp/><sp/>:=<sp/>$bb80+40*27</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">VI_EDITION_LAST_VIDEO_ADRESS<sp/><sp/><sp/>:=<sp/>$bb80+40*26</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">VI_EDITION_VIDEO_ADRESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>$bb80</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">VI_EDITOR_MAX_LENGTH_OF_A_LINE<sp/>=<sp/>255</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">VI_EDITOR_MAX_COLUMN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>39</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">;*<sp/>labels<sp/>prefixed<sp/>with<sp/>_<sp/>are<sp/>populated<sp/>from<sp/>C*/</highlight></codeline>
+<codeline lineno="45" refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="46" refid="vi_8s_1aadda8db3383bdab25ec1683d8dd0f6eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1aadda8db3383bdab25ec1683d8dd0f6eb" kindref="member">vi_ptr1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+2<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="47" refid="vi_8s_1a62f7795ee167060eb27b1e3db7d7d23c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a62f7795ee167060eb27b1e3db7d7d23c" kindref="member">vi_argv</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+4<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="48" refid="vi_8s_1aae53a4d8f7ef38ac152a0350423b8f1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1aae53a4d8f7ef38ac152a0350423b8f1c" kindref="member">vi_argc</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+6<sp/>;<sp/>1<sp/>bytes</highlight></codeline>
+<codeline lineno="49" refid="vi_8s_1abe3cbd9bfcb577ef36a5a222f61203f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1abe3cbd9bfcb577ef36a5a222f61203f5" kindref="member">vi_arg1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+7<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="50" refid="vi_8s_1a5a9929a47b0ba3db03915e19b3b68cd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a5a9929a47b0ba3db03915e19b3b68cd6" kindref="member">vi_fp</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+9<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="51" refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+11<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>vi_tmp2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+13</highlight></codeline>
+<codeline lineno="53" refid="vi_8s_1ae75ff061f510abe8dcbcdc8434e5d3b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1ae75ff061f510abe8dcbcdc8434e5d3b9" kindref="member">vi_ptr_screen</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+14<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="54" refid="vi_8s_1a4ce74bdf77badacd182d1181a0e2b77a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a4ce74bdf77badacd182d1181a0e2b77a" kindref="member">vi_length_file</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+16<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="55" refid="vi_8s_1a57ddc9c9afcd4940ce8a258c8a99671b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a57ddc9c9afcd4940ce8a258c8a99671b" kindref="member">vi_length_file_compute</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+18<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>vi_tmp1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+20</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>vi_fileopened<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+22</highlight></codeline>
+<codeline lineno="58" refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+24<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp0_16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+26</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>vi_no_opened_file<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+28</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>vi_pos_debug<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+30</highlight></codeline>
+<codeline lineno="62" refid="vi_8s_1a450181cfcccedf7f533d5259df4d2eeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a450181cfcccedf7f533d5259df4d2eeb" kindref="member">vi_ptr2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+32<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="63" refid="vi_8s_1a683876721ab370879aa1095e1b11444a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a683876721ab370879aa1095e1b11444a" kindref="member">vi_savex</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+34<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="64" refid="vi_8s_1a1c69f491e2054203373226bba5c59c7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a1c69f491e2054203373226bba5c59c7f" kindref="member">vi_ptr3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+36<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="65" refid="vi_8s_1a530efc8d92452198964b9568561138ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a530efc8d92452198964b9568561138ae" kindref="member">vi_tmp3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+38<sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;data/vi/strings.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/vi_fill_screen_with_empty_line.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/vi_struct.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/vi_displays_info.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_init_vi_struct.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_ptr_last_char_plus_plus.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_ptr_last_char_sub_sub.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_set_ptr_last_char.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_ptr_last_char_add.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_vi_ptr_file_used_plus_plus.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_xpos_screen_plus_plus.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_xpos_screen_sub_sub.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_ypos_screen_sub_sub.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_ypos_screen_plus_plus.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_ptr_file_used_plus_plus.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_length_file_sub_sub.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_display_char.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_check_beginning_of_file.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_fill_last_line.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_copy_arg1_to_name_file_open.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_length_file_plus_plus.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_compute_video_adress.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_ptr_file_used_sub_sub.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_display_file_opened.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_check_0A.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_set_xpos_0.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_ptr_file_used_plus_plus_and_check_eof.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_search_next_line.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_shift_file_from_memory_one_char.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_check_inserted_char_overflow_the_max_column.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_scroll_from_left_to_right_full_line.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_shift_line_left_to_right_editor.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_search_previous_line_beginning.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_set_xpos_from_A.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_scroll_to_left.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_check_if_previous_line_was_truncated.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_search_previous_cr.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_add_char_to_text.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_strlen_current_line.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_compute_last_text_line.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_clear_command_line.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_key_down.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_key_enter.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_key_del.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_key_up.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_key_right.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_key_left.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/subfunc/vi/vi_check_eof.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/vi_put_char.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/vi_command_edition.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/vi_editor_switch_on_cursor.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/vi_editor_switch_off_cursor.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/vi_edition_keyboard.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/vi_switch_to_edition_mode.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/tables.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">.include<sp/></highlight><highlight class="stringliteral">&quot;functions/_clrscr_vi.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">.proc<sp/>_vi</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>XMAINARGS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>$2C</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>XGETARGV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>$2E</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>argv<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp<sp/><sp/><sp/>;<sp/>2<sp/>bytes</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>argc<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:=<sp/>userzp+2<sp/>;<sp/>1<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>vi_no_opened_file</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#&lt;$bb80</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1ae75ff061f510abe8dcbcdc8434e5d3b9" kindref="member">vi_ptr_screen</ref></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#&gt;$bb80</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1ae75ff061f510abe8dcbcdc8434e5d3b9" kindref="member">vi_ptr_screen</ref>+1</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>vi_fileopened</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>malloc<sp/>.sizeof(<ref refid="structvi__struct__data" kindref="compound">vi_struct_data</ref>)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#NULL</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>@not_oom2</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>cpy<sp/><sp/><sp/><sp/><sp/>#NULL</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>@not_oom2</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>print<sp/><sp/><sp/>str_OOM</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>oom</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">@not_oom2:</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>sty<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref>+1</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_init_vi_struct</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>initmainargs<sp/><ref refid="vi_8s_1a62f7795ee167060eb27b1e3db7d7d23c" kindref="member">vi_argv</ref>,<sp/><ref refid="vi_8s_1aae53a4d8f7ef38ac152a0350423b8f1c" kindref="member">vi_argc</ref>,<sp/>0</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1aae53a4d8f7ef38ac152a0350423b8f1c" kindref="member">vi_argc</ref><sp/><sp/>;<sp/>Do<sp/>we<sp/>have<sp/>a<sp/>file<sp/>on<sp/>the<sp/>command<sp/>line</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>not_opened_file</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>getmainarg<sp/>#1,<sp/>(<ref refid="vi_8s_1a62f7795ee167060eb27b1e3db7d7d23c" kindref="member">vi_argv</ref>)<sp/>,<ref refid="vi_8s_1abe3cbd9bfcb577ef36a5a222f61203f5" kindref="member">vi_arg1</ref></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Checking<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><ref refid="vi_8s_1abe3cbd9bfcb577ef36a5a222f61203f5" kindref="member">vi_arg1</ref><sp/>is<sp/>not<sp/>empty</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>when<sp/>we<sp/>type<sp/></highlight><highlight class="stringliteral">&quot;vi<sp/>[space]&quot;</highlight><highlight class="normal"><sp/>on<sp/>command<sp/>line,<sp/>initmainargs<sp/>returns<sp/>argv=2<sp/>but<sp/>the<sp/>arg<sp/>is<sp/>empty</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>This<sp/>is<sp/>a<sp/>fix<sp/>to<sp/>avoid<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">@check_arg:</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1abe3cbd9bfcb577ef36a5a222f61203f5" kindref="member">vi_arg1</ref>),y</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>not_opened_file</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">@check_filename:</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>fopen<sp/>(<ref refid="vi_8s_1abe3cbd9bfcb577ef36a5a222f61203f5" kindref="member">vi_arg1</ref>),<sp/>O_RDONLY,,<ref refid="vi_8s_1a5a9929a47b0ba3db03915e19b3b68cd6" kindref="member">vi_fp</ref></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>cpx<sp/><sp/><sp/><sp/><sp/>#$FF</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>opened_file</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#$FF</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>opened_file</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>not_opened_file</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">opened_file:</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>vi_fileopened</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>copy<sp/>into<sp/>name_file_open<sp/>of<sp/>the<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_copy_arg1_to_name_file_open</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal">not_opened_file:</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>cursor<sp/>OFF</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>_clrscr_vi</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>malloc<sp/>#VI_MAX_LENGTH_FILE,<ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref><sp/>;<sp/>$376B</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref><sp/>;<sp/>$3769</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>@ptr_file_continue</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref>+1</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>bne<sp/><sp/><sp/><sp/><sp/>@ptr_file_continue</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>print<sp/><sp/><sp/>str_OOM</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal">@ptr_file_continue:</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Set<sp/>last<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>of<sp/>the<sp/>file<sp/>ptr</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>ldx<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref>+1</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_set_ptr_last_char</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/>Contains<sp/>the<sp/>ptr<sp/>$376B</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref>+1</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref>+1</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>vi_fileopened</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@skip_loading</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Now<sp/>load<sp/>the<sp/>file</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>fread<sp/>(<ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref>),<sp/>#VI_MAX_LENGTH_FILE,<sp/>1,<sp/><ref refid="vi_8s_1a5a9929a47b0ba3db03915e19b3b68cd6" kindref="member">vi_fp</ref><sp/>;<sp/>myptr<sp/>is<sp/>from<sp/>a<sp/>malloc<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>example</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a4ce74bdf77badacd182d1181a0e2b77a" kindref="member">vi_length_file</ref></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a57ddc9c9afcd4940ce8a258c8a99671b" kindref="member">vi_length_file_compute</ref></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>stx<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a4ce74bdf77badacd182d1181a0e2b77a" kindref="member">vi_length_file</ref>+1</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>stx<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a57ddc9c9afcd4940ce8a258c8a99671b" kindref="member">vi_length_file_compute</ref>+1</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(<ref refid="vi_8s_1a5a9929a47b0ba3db03915e19b3b68cd6" kindref="member">vi_fp</ref>)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1aadda8db3383bdab25ec1683d8dd0f6eb" kindref="member">vi_ptr1</ref></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref>+1</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1aadda8db3383bdab25ec1683d8dd0f6eb" kindref="member">vi_ptr1</ref>+1</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref>+1</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>now<sp/>set<sp/>vi_ptr_last_char<sp/>with<sp/>the<sp/>length<sp/>of<sp/>the<sp/>file</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a4ce74bdf77badacd182d1181a0e2b77a" kindref="member">vi_length_file</ref></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>ldx<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a4ce74bdf77badacd182d1181a0e2b77a" kindref="member">vi_length_file</ref>+1</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_ptr_last_char_add</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Check<sp/>eof</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Dans<sp/>le<sp/>cas<sp/>où<sp/>on<sp/>a<sp/>chargé<sp/>avant<sp/>un<sp/>fichier,<sp/>comme<sp/>on<sp/>ne<sp/>s</highlight><highlight class="stringliteral">&apos;arrete<sp/>pas<sp/>à<sp/>l&apos;</highlight><highlight class="normal">eof<sp/>du<sp/>fichier<sp/>courant,<sp/>cela<sp/>va<sp/>continuer<sp/>a<sp/>s</highlight><highlight class="stringliteral">&apos;afficher<sp/>alors<sp/>même<sp/>qu&apos;</highlight><highlight class="normal">on<sp/>est<sp/>à<sp/>la<sp/>fin<sp/>du<sp/>fichier</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Cela<sp/>va<sp/>afficher<sp/>l</highlight><highlight class="stringliteral">&apos;ancien<sp/>fichier<sp/>chargé.<sp/>On<sp/>compare<sp/>donc<sp/>pour<sp/>s&apos;</highlight><highlight class="normal">arreter.</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_display_file_opened</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal">@skip_fill_last_line:</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>ldx<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#<ref refid="structvi__struct__data_1ad6b155867a22adc3adc2a3dac0c03446" kindref="member">vi_struct_data::ypos_screen</ref></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref>),y</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@no_compute<sp/>;<sp/>First<sp/>line<sp/>?<sp/>Then<sp/>X=1<sp/>in<sp/>order<sp/>to<sp/>display<sp/>~<sp/>on<sp/>the<sp/>second<sp/>line</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#<ref refid="vi_8s_1ac2df40bfbdee63703d0497bd65ad73d5" kindref="member">VI_LAST_LINE_EDITOR</ref></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@no_empty_line_begin</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>tax</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>inx</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal">@no_compute:</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>jmp<sp/><sp/><sp/><sp/><sp/>@display_empty_line_begin</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal">@skip_loading:</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#$01<sp/>;<sp/>For<sp/>a<sp/>new_file</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>ldx<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">@display_empty_line_begin:</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_fill_screen_with_empty_line</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal">@no_empty_line_begin:</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>Set<sp/>cursor<sp/>position<sp/>to<sp/>0,0</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#<ref refid="structvi__struct__data_1ad6b155867a22adc3adc2a3dac0c03446" kindref="member">vi_struct_data::ypos_screen</ref></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/>#$00</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref>),y</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>ldy<sp/><sp/><sp/><sp/><sp/>#<ref refid="structvi__struct__data_1ac708be4e5e24c529de773f45569bc98d" kindref="member">vi_struct_data::xpos_screen</ref></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/>(<ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref>),y</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/>Contains<sp/>the<sp/>ptr</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>lda<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1a46b0a41d1f654c3f19989f9094001198" kindref="member">vi_ptr_file</ref>+1</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>sta<sp/><sp/><sp/><sp/><sp/><ref refid="vi_8s_1affe3a94e7eb08fe3f01266521eb1bd6f" kindref="member">vi_ptr_file_used</ref>+1</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal">@loop_until_esc_is_pressed:</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>jsr<sp/><sp/><sp/><sp/><sp/>vi_edition_keyboard</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>#$01</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>@final_exit</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>jmp<sp/><sp/><sp/><sp/><sp/>@loop_until_esc_is_pressed</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal">@final_exit:</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>rts</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal">;<sp/>**********************************</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal">str_OOM:</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>.asciiz<sp/></highlight><highlight class="stringliteral">&quot;OOM&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/>FIXME<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>from<sp/>general<sp/>lib</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">str_not_found:</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>.asciiz<sp/></highlight><highlight class="stringliteral">&quot;File<sp/>not<sp/>found&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal">.endproc</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s"/>
+  </compounddef>
+</doxygen>

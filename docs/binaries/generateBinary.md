@@ -29,14 +29,3 @@ Place mybin in /bin of the sdcard/usb key of the twilighte board, and launch :
 ```
 /#mybin
 ```
-
-
-
-
-
-
-
-
-
-
-

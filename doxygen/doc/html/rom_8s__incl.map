@@ -1,0 +1,67 @@
+<map id="/mnt/c/Users/plifp/OneDrive/oric/projets/orix&#45;software/vi/src/rom.s" name="/mnt/c/Users/plifp/OneDrive/oric/projets/orix&#45;software/vi/src/rom.s">
+<area shape="rect" id="node1" title=" " alt="" coords="4675,5,4867,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="4335,117,4435,143"/>
+<area shape="rect" id="node3" title=" " alt="" coords="4458,117,4533,143"/>
+<area shape="rect" id="node4" title=" " alt="" coords="4557,117,4636,143"/>
+<area shape="rect" id="node5" title=" " alt="" coords="4661,117,4738,143"/>
+<area shape="rect" id="node6" title=" " alt="" coords="4762,109,4927,151"/>
+<area shape="rect" id="node7" title=" " alt="" coords="4951,109,5106,151"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5131,109,5319,151"/>
+<area shape="rect" id="node9" href="$vi_8s.html" title=" " alt="" coords="5343,117,5464,143"/>
+<area shape="rect" id="node10" href="$strings_8s.html" title=" " alt="" coords="5,213,132,240"/>
+<area shape="rect" id="node11" href="$vi__fill__screen__with__empty__line_8s.html" title=" " alt="" coords="157,206,327,247"/>
+<area shape="rect" id="node12" href="$vi__struct_8s.html" title=" " alt="" coords="352,213,505,240"/>
+<area shape="rect" id="node13" href="$vi__displays__info_8s.html" title=" " alt="" coords="529,206,688,247"/>
+<area shape="rect" id="node14" href="$vi__init__vi__struct_8s.html" title=" " alt="" coords="712,206,865,247"/>
+<area shape="rect" id="node15" href="$vi__ptr__last__char__plus__plus_8s.html" title=" " alt="" coords="890,199,1053,255"/>
+<area shape="rect" id="node16" href="$vi__ptr__last__char__sub__sub_8s.html" title=" " alt="" coords="1077,206,1277,247"/>
+<area shape="rect" id="node17" href="$vi__set__ptr__last__char_8s.html" title=" " alt="" coords="1300,206,1467,247"/>
+<area shape="rect" id="node18" href="$vi__ptr__last__char__add_8s.html" title=" " alt="" coords="1491,206,1662,247"/>
+<area shape="rect" id="node19" href="$vi__vi__ptr__file__used__plus__plus_8s.html" title=" " alt="" coords="1687,199,1840,255"/>
+<area shape="rect" id="node20" href="$vi__xpos__screen__plus__plus_8s.html" title=" " alt="" coords="1865,199,2025,255"/>
+<area shape="rect" id="node21" href="$vi__xpos__screen__sub__sub_8s.html" title=" " alt="" coords="2049,206,2246,247"/>
+<area shape="rect" id="node22" href="$vi__ypos__screen__sub__sub_8s.html" title=" " alt="" coords="2270,206,2467,247"/>
+<area shape="rect" id="node23" href="$vi__ypos__screen__plus__plus_8s.html" title=" " alt="" coords="2491,199,2651,255"/>
+<area shape="rect" id="node24" href="$vi__ptr__file__used__plus__plus_8s.html" title=" " alt="" coords="2675,199,2838,255"/>
+<area shape="rect" id="node25" href="$vi__length__file__sub__sub_8s.html" title=" " alt="" coords="2862,206,3046,247"/>
+<area shape="rect" id="node26" href="$vi__display__char_8s.html" title=" " alt="" coords="3071,206,3224,247"/>
+<area shape="rect" id="node27" href="$vi__check__beginning__of__file_8s.html" title=" " alt="" coords="3248,199,3423,255"/>
+<area shape="rect" id="node28" href="$vi__fill__last__line_8s.html" title=" " alt="" coords="3447,206,3600,247"/>
+<area shape="rect" id="node29" href="$vi__copy__arg1__to__name__file__open_8s.html" title=" " alt="" coords="3625,199,3801,255"/>
+<area shape="rect" id="node30" href="$vi__length__file__plus__plus_8s.html" title=" " alt="" coords="3825,199,3979,255"/>
+<area shape="rect" id="node31" href="$vi__compute__video__adress_8s.html" title=" " alt="" coords="4003,206,4209,247"/>
+<area shape="rect" id="node32" href="$vi__ptr__file__used__sub__sub_8s.html" title=" " alt="" coords="4233,206,4432,247"/>
+<area shape="rect" id="node33" href="$vi__display__file__opened_8s.html" title=" " alt="" coords="4456,206,4641,247"/>
+<area shape="rect" id="node34" href="$vi__check__0A_8s.html" title=" " alt="" coords="4665,206,4819,247"/>
+<area shape="rect" id="node35" href="$vi__set__xpos__0_8s.html" title=" " alt="" coords="4843,206,4996,247"/>
+<area shape="rect" id="node36" href="$vi__ptr__file__used__plus__plus__and__check__eof_8s.html" title=" " alt="" coords="5021,199,5191,255"/>
+<area shape="rect" id="node37" href="$vi__search__next__line_8s.html" title=" " alt="" coords="5216,206,5383,247"/>
+<area shape="rect" id="node38" href="$vi__shift__file__from__memory__one__char_8s.html" title=" " alt="" coords="5407,199,5607,255"/>
+<area shape="rect" id="node39" href="$vi__check__inserted__char__overflow__the__max__column_8s.html" title=" " alt="" coords="5632,199,5847,255"/>
+<area shape="rect" id="node40" href="$vi__scroll__from__left__to__right__full__line_8s.html" title=" " alt="" coords="5871,199,6024,255"/>
+<area shape="rect" id="node41" href="$vi__shift__line__left__to__right__editor_8s.html" title=" " alt="" coords="6048,199,6201,255"/>
+<area shape="rect" id="node42" href="$vi__search__previous__line__beginning_8s.html" title=" " alt="" coords="6225,199,6408,255"/>
+<area shape="rect" id="node43" href="$vi__set__xpos__from__A_8s.html" title=" " alt="" coords="6433,206,6601,247"/>
+<area shape="rect" id="node44" href="$vi__scroll__to__left_8s.html" title=" " alt="" coords="6625,206,6779,247"/>
+<area shape="rect" id="node45" href="$vi__check__if__previous__line__was__truncated_8s.html" title=" " alt="" coords="6803,199,6969,255"/>
+<area shape="rect" id="node46" href="$vi__search__previous__cr_8s.html" title=" " alt="" coords="6993,206,7173,247"/>
+<area shape="rect" id="node47" href="$vi__add__char__to__text_8s.html" title=" " alt="" coords="7198,206,7366,247"/>
+<area shape="rect" id="node48" href="$vi__strlen__current__line_8s.html" title=" " alt="" coords="7391,206,7568,247"/>
+<area shape="rect" id="node49" href="$vi__compute__last__text__line_8s.html" title=" " alt="" coords="7592,199,7759,255"/>
+<area shape="rect" id="node50" href="$vi__clear__command__line_8s.html" title=" " alt="" coords="7783,206,7973,247"/>
+<area shape="rect" id="node51" href="$vi__key__down_8s.html" title=" " alt="" coords="7997,206,8151,247"/>
+<area shape="rect" id="node52" href="$vi__key__enter_8s.html" title=" " alt="" coords="8175,206,8328,247"/>
+<area shape="rect" id="node53" href="$vi__key__del_8s.html" title=" " alt="" coords="8352,206,8505,247"/>
+<area shape="rect" id="node54" href="$vi__key__up_8s.html" title=" " alt="" coords="8529,206,8683,247"/>
+<area shape="rect" id="node55" href="$vi__key__right_8s.html" title=" " alt="" coords="8707,206,8860,247"/>
+<area shape="rect" id="node56" href="$vi__key__left_8s.html" title=" " alt="" coords="8884,206,9037,247"/>
+<area shape="rect" id="node57" href="$vi__check__eof_8s.html" title=" " alt="" coords="9061,206,9215,247"/>
+<area shape="rect" id="node58" href="$vi__put__char_8s.html" title=" " alt="" coords="9239,213,9410,240"/>
+<area shape="rect" id="node59" href="$vi__command__edition_8s.html" title=" " alt="" coords="9434,206,9605,247"/>
+<area shape="rect" id="node60" href="$vi__editor__switch__on__cursor_8s.html" title=" " alt="" coords="9629,206,9780,247"/>
+<area shape="rect" id="node61" href="$vi__editor__switch__off__cursor_8s.html" title=" " alt="" coords="9805,206,9957,247"/>
+<area shape="rect" id="node62" href="$vi__edition__keyboard_8s.html" title=" " alt="" coords="9981,206,10132,247"/>
+<area shape="rect" id="node63" href="$vi__switch__to__edition__mode_8s.html" title=" " alt="" coords="10157,206,10306,247"/>
+<area shape="rect" id="node64" href="$tables_8s.html" title=" " alt="" coords="10331,213,10468,240"/>
+<area shape="rect" id="node65" href="$__clrscr__vi_8s.html" title=" " alt="" coords="10492,213,10651,240"/>
+</map>

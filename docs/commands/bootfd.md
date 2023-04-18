@@ -7,9 +7,9 @@ Insert a disk and type :
 
 /#bootfd
 
-The binary is located to bin folder. It will load microdisc rom and
-start it. If the binary displays that it does not found microdis.rom,
-then place microdis.rom file in the right folder.
+The binary is located in "/bin" folder. It will load microdisc rom and
+will start it. If it displays "microdis.rom not found",
+then place "microdis.rom" file in the right folder.
 
 If you have firmware 1, you will be able to load « blake's 7 ». If you
 have firmware 2, all sedoric .dsk should start.

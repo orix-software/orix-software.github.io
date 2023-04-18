@@ -1,0 +1,62 @@
+\hypertarget{rom_8s}{}\doxysection{/mnt/c/\+Users/plifp/\+One\+Drive/oric/projets/orix-\/software/vi/src/rom.s File Reference}
+\label{rom_8s}\index{/mnt/c/Users/plifp/OneDrive/oric/projets/orix-\/software/vi/src/rom.s@{/mnt/c/Users/plifp/OneDrive/oric/projets/orix-\/software/vi/src/rom.s}}
+{\ttfamily \#include \char`\"{}telestrat.\+inc\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}fcntl.\+inc\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}errno.\+inc\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cpu.\+mac\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../dependencies/orix-\/sdk/macros/\+SDK.\+mac\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../dependencies/orix-\/sdk/include/\+SDK.\+inc\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../dependencies/orix-\/sdk/include/keyboard.\+inc\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}commands/vi.\+s\char`\"{}}\newline
+Include dependency graph for rom.\+s\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rom_8s__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rom_8s_a7c4346d873634cc6c9c302e0666199d8}\label{rom_8s_a7c4346d873634cc6c9c302e0666199d8}} 
+const char {\bfseries userzp} = \$80
+\item 
+\mbox{\Hypertarget{rom_8s_ae9f35a1799b9d6f7d0724f31dc90a42b}\label{rom_8s_ae9f35a1799b9d6f7d0724f31dc90a42b}} 
+const char {\bfseries NULL} = 0
+\item 
+\mbox{\Hypertarget{rom_8s_af46c5b0bd4a1c7322c839e4a8d75a979}\label{rom_8s_af46c5b0bd4a1c7322c839e4a8d75a979}} 
+const char {\bfseries list\+\_\+of\+\_\+commands\+\_\+bank} \mbox{[}3\mbox{]} = \char`\"{}vi\char`\"{}
+\item 
+\mbox{\Hypertarget{rom_8s_a3b5b98883de6f1129805cf17ff147283}\label{rom_8s_a3b5b98883de6f1129805cf17ff147283}} 
+int {\bfseries addr\+\_\+commands}
+\item 
+\mbox{\Hypertarget{rom_8s_a2a4f4b45cae05b21bab16b88e723e5e9}\label{rom_8s_a2a4f4b45cae05b21bab16b88e723e5e9}} 
+const char {\bfseries signature} \mbox{[}10\mbox{]} = \char`\"{}vi 2022.\+4\char`\"{}
+\item 
+\mbox{\Hypertarget{rom_8s_a2cea453e479f6e4cb7f356f020d80172}\label{rom_8s_a2cea453e479f6e4cb7f356f020d80172}} 
+char {\bfseries end\+\_\+rom} \mbox{[}\$FFF0-\/ $\ast$\mbox{]}
+\item 
+\mbox{\Hypertarget{rom_8s_a778d687745c3fcc2316c5911de59a17d}\label{rom_8s_a778d687745c3fcc2316c5911de59a17d}} 
+char {\bfseries parse\+\_\+vector} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{rom_8s_a7c6a264a7c1d9bf9bf82006025f10068}\label{rom_8s_a7c6a264a7c1d9bf9bf82006025f10068}} 
+unsigned int {\bfseries signature\+\_\+adress\+\_\+commands}
+\item 
+\mbox{\Hypertarget{rom_8s_aba728320e2aff1e8f4221a65c48a78fa}\label{rom_8s_aba728320e2aff1e8f4221a65c48a78fa}} 
+unsigned int {\bfseries list\+\_\+commands}
+\item 
+\mbox{\Hypertarget{rom_8s_a847dea06ed72564e4b3e8fae5f5ce6d1}\label{rom_8s_a847dea06ed72564e4b3e8fae5f5ce6d1}} 
+char {\bfseries number\+\_\+of\+\_\+commands}
+\item 
+\mbox{\Hypertarget{rom_8s_ae70f94ccc32dbd5165e03671f8ccc433}\label{rom_8s_ae70f94ccc32dbd5165e03671f8ccc433}} 
+int {\bfseries copyright}
+\item 
+\mbox{\Hypertarget{rom_8s_aa057579846e09bf615c5e9ef9f863550}\label{rom_8s_aa057579846e09bf615c5e9ef9f863550}} 
+int {\bfseries NMI}
+\item 
+\mbox{\Hypertarget{rom_8s_aafb34724d0c9dcf2785cfc01e6412a36}\label{rom_8s_aafb34724d0c9dcf2785cfc01e6412a36}} 
+int {\bfseries RESET}
+\item 
+\mbox{\Hypertarget{rom_8s_ab4ffaa54e2cf83aac36be756c11ea348}\label{rom_8s_ab4ffaa54e2cf83aac36be756c11ea348}} 
+int {\bfseries BRK\+\_\+\+IRQ}
+\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a5544c2bf0b70f8d417c4d3bfea04409" kind="dir">
+    <compoundname>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi</compoundname>
+    <innerfile refid="vi__add__char__to__text_8s">vi_add_char_to_text.s</innerfile>
+    <innerfile refid="vi__check__0A_8s">vi_check_0A.s</innerfile>
+    <innerfile refid="vi__check__beginning__of__file_8s">vi_check_beginning_of_file.s</innerfile>
+    <innerfile refid="vi__check__eof_8s">vi_check_eof.s</innerfile>
+    <innerfile refid="vi__check__if__previous__line__was__truncated_8s">vi_check_if_previous_line_was_truncated.s</innerfile>
+    <innerfile refid="vi__check__inserted__char__overflow__the__max__column_8s">vi_check_inserted_char_overflow_the_max_column.s</innerfile>
+    <innerfile refid="vi__clear__command__line_8s">vi_clear_command_line.s</innerfile>
+    <innerfile refid="vi__compute__last__text__line_8s">vi_compute_last_text_line.s</innerfile>
+    <innerfile refid="vi__compute__video__adress_8s">vi_compute_video_adress.s</innerfile>
+    <innerfile refid="vi__copy__arg1__to__name__file__open_8s">vi_copy_arg1_to_name_file_open.s</innerfile>
+    <innerfile refid="vi__decal__text_8s">vi_decal_text.s</innerfile>
+    <innerfile refid="vi__display__char_8s">vi_display_char.s</innerfile>
+    <innerfile refid="vi__display__file__opened_8s">vi_display_file_opened.s</innerfile>
+    <innerfile refid="vi__fill__last__line_8s">vi_fill_last_line.s</innerfile>
+    <innerfile refid="vi__init__vi__struct_8s">vi_init_vi_struct.s</innerfile>
+    <innerfile refid="vi__key__del_8s">vi_key_del.s</innerfile>
+    <innerfile refid="vi__key__down_8s">vi_key_down.s</innerfile>
+    <innerfile refid="vi__key__enter_8s">vi_key_enter.s</innerfile>
+    <innerfile refid="vi__key__left_8s">vi_key_left.s</innerfile>
+    <innerfile refid="vi__key__right_8s">vi_key_right.s</innerfile>
+    <innerfile refid="vi__key__up_8s">vi_key_up.s</innerfile>
+    <innerfile refid="vi__length__file__plus__plus_8s">vi_length_file_plus_plus.s</innerfile>
+    <innerfile refid="vi__length__file__sub__sub_8s">vi_length_file_sub_sub.s</innerfile>
+    <innerfile refid="vi__ptr__file__used__plus__plus_8s">vi_ptr_file_used_plus_plus.s</innerfile>
+    <innerfile refid="vi__ptr__file__used__plus__plus__and__check__eof_8s">vi_ptr_file_used_plus_plus_and_check_eof.s</innerfile>
+    <innerfile refid="vi__ptr__file__used__sub__sub_8s">vi_ptr_file_used_sub_sub.s</innerfile>
+    <innerfile refid="vi__ptr__last__char__add_8s">vi_ptr_last_char_add.s</innerfile>
+    <innerfile refid="vi__ptr__last__char__plus__plus_8s">vi_ptr_last_char_plus_plus.s</innerfile>
+    <innerfile refid="vi__ptr__last__char__sub__sub_8s">vi_ptr_last_char_sub_sub.s</innerfile>
+    <innerfile refid="vi__scroll__from__left__to__right__full__line_8s">vi_scroll_from_left_to_right_full_line.s</innerfile>
+    <innerfile refid="vi__scroll__to__left_8s">vi_scroll_to_left.s</innerfile>
+    <innerfile refid="vi__search__next__line_8s">vi_search_next_line.s</innerfile>
+    <innerfile refid="vi__search__previous__cr_8s">vi_search_previous_cr.s</innerfile>
+    <innerfile refid="vi__search__previous__line__beginning_8s">vi_search_previous_line_beginning.s</innerfile>
+    <innerfile refid="vi__set__ptr__last__char_8s">vi_set_ptr_last_char.s</innerfile>
+    <innerfile refid="vi__set__xpos__0_8s">vi_set_xpos_0.s</innerfile>
+    <innerfile refid="vi__set__xpos__from__A_8s">vi_set_xpos_from_A.s</innerfile>
+    <innerfile refid="vi__shift__file__from__memory__one__char_8s">vi_shift_file_from_memory_one_char.s</innerfile>
+    <innerfile refid="vi__shift__line__left__to__right__editor_8s">vi_shift_line_left_to_right_editor.s</innerfile>
+    <innerfile refid="vi__strlen__current__line_8s">vi_strlen_current_line.s</innerfile>
+    <innerfile refid="vi__vi__ptr__file__used__plus__plus_8s">vi_vi_ptr_file_used_plus_plus.s</innerfile>
+    <innerfile refid="vi__xpos__screen__plus__plus_8s">vi_xpos_screen_plus_plus.s</innerfile>
+    <innerfile refid="vi__xpos__screen__sub__sub_8s">vi_xpos_screen_sub_sub.s</innerfile>
+    <innerfile refid="vi__ypos__screen__plus__plus_8s">vi_ypos_screen_plus_plus.s</innerfile>
+    <innerfile refid="vi__ypos__screen__sub__sub_8s">vi_ypos_screen_sub_sub.s</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/"/>
+  </compounddef>
+</doxygen>

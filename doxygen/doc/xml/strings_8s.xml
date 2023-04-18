@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="strings_8s" kind="file" language="C++">
+    <compoundname>strings.s</compoundname>
+    <includedby refid="vi_8s" local="yes">/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s</label>
+        <link refid="strings_8s"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/commands/vi.s</label>
+        <link refid="vi_8s"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/rom.s</label>
+        <link refid="rom_8s"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="strings_8s_1acd5b1c9328aaed1b2186ccfec8efc142" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char msg_insert[13]</definition>
+        <argsstring>[13]</argsstring>
+        <name>msg_insert</name>
+        <initializer>= &quot;-- INSERT --&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" line="2" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="strings_8s_1a35fb017447f6933ebcace70364bcc1e7" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char msg_nofile[11]</definition>
+        <argsstring>[11]</argsstring>
+        <name>msg_nofile</name>
+        <initializer>= &quot;[New File]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" line="5" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="strings_8s_1ac407a6aaf012abbbc3ecbb3b5a9592ba" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char msg_nofilename[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>msg_nofilename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" line="8" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="strings_8s_1a62a08e22c714b79c754c613aac77e5d7" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char msg_impossibletowrite[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>msg_impossibletowrite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" line="11" column="6" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="strings_8s_1a6121d85cafdba2d2e027fa015a673478" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char msg_written[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>msg_written</name>
+        <initializer>= &quot;written&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" line="14" column="12" bodyfile="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">msg_insert:</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>.asciiz<sp/></highlight><highlight class="stringliteral">&quot;--<sp/>INSERT<sp/>--&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">msg_nofile:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>.asciiz<sp/></highlight><highlight class="stringliteral">&quot;[New<sp/>File]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">msg_nofilename:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>.byte<sp/>17,</highlight><highlight class="stringliteral">&quot;E32:<sp/>No<sp/>file<sp/>name&quot;</highlight><highlight class="normal">,16,0</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">msg_impossibletowrite:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>.byte<sp/>17,</highlight><highlight class="stringliteral">&quot;E99:<sp/>Impossible<sp/>to<sp/>write&quot;</highlight><highlight class="normal">,16,0</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">msg_written:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>.asciiz<sp/></highlight><highlight class="stringliteral">&quot;written&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/data/vi/strings.s"/>
+  </compounddef>
+</doxygen>

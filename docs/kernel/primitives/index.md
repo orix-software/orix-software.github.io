@@ -35,6 +35,7 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 * [XPUTCWD](xputcwd) : change current path
 * [XOPENDIR](xopendir) : opendir
 * [XREADDIR](xreaddir) : readdir (return a struct with the files)
+* [XCLOSEDIR](xclosedir) : readdir (return a struct with the files)
 * [XRM](xrm) : remove file
 
 ## Text mode

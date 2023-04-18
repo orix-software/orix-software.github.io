@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="This-example" kind="example">
+    <compoundname>This</compoundname>
+    <briefdescription>
+<para>strlen of a line </para>
+    </briefdescription>
+    <detaileddescription>
+<para>strlen of a line<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A&amp;Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ptr of the position </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>X : the length of the line </para>
+</simplesect>
+<simplesect kind="return"><para>A &amp; Y : the ptr reached </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="vi_8s_1af804024f92f05e75a9f3a16f7e65873e" kindref="member">vi_struct</ref></para>
+</simplesect>
+routine compute ... <programlisting filename="This"></programlisting> </para>
+    </detaileddescription>
+    <location file="/mnt/c/Users/plifp/OneDrive/oric/projets/orix-software/vi/src/functions/subfunc/vi/vi_strlen_current_line.s"/>
+  </compounddef>
+</doxygen>

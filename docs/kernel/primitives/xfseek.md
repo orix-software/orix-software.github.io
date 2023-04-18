@@ -25,14 +25,21 @@ Seek into file
 
 ``` ca65
 ; Move to $20 bytes in the file from the current position
-ldx   #SEEK_CUR
+
+; [IN] X whence
+; [IN] AY position 0 to 15
+; [IN] RESB position 0 to 31
+; [IN] RES fd
+
 
 ldy   #$10
 lda   #$00
 tax
 sta   RESB
 sta   RESB+1
-ldx   fp
+
+lda   fp
+ldx   #SEEK_CUR
 BRK_TELEMON XFSEEK
 
 ```

@@ -12,10 +12,10 @@ A & X : string
 
 A : fd
 
-## Example 1 : Displays value AY (16 bits number) in $bb80 text mode
+## Example 1 : Openfolder /bin
 
 ``` ca65
-    ldx     #$00
+    ldx     #$00 ; XOPENDIR  Mode
     lda     #<opendir
     ldy     #>opendir
     BRK_TELEMON $2F
@@ -33,4 +33,6 @@ A : fd
 opendir:
     asciiz "/bin"
 ```
+
+!!! fail "XOPENDIR is in beta mode and close current open file : it brokes any fopen files."
 

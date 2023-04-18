@@ -10,7 +10,8 @@ When a fopen is done, if the file is not found on current device (ch376), before
 
 If it's found, EXTFP is executed (not forked) and it returns a A Y vector to manage this FP (if it manage this path). If it does not manage this path, it return null.
 
-## When a FREAD/FWRITE is done, if extbank is different to 0, then, Kernel will launch external vector with A and Y contains the string of the path, and X contains the action : 
+## When a FREAD/FWRITE is done, if extbank is different to 0, then, Kernel will launch external vector with A and Y contains the string of the path, and X contains the action
+
 X=1 : FREAD
 X=2 : FWRITE
 X=3 : XCLOSE

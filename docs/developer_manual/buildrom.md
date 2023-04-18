@@ -26,7 +26,7 @@ Some existing roms are in a eeprom slot (kernel, shell, monitor, forth ..). Syst
 
 * limit for a rom is 16KB. But, it's maybe enough because many operations are done with kernel calls (fopen for example).
 
-* Kernel is always **available** (Bank 7) when "set" banking is RAM or EEPROM  (kernel is always available durint swapping banks with twilighte banking register ($343).
+* Kernel is always **available** (Bank 7) when "set" banking is RAM or EEPROM  (kernel is always available during swapping banks with twilighte banking register ($343)).
 
 ## Bank Structure
 
@@ -40,11 +40,11 @@ A rom template can be downloaded here : [https://github.com/orix-software/empty-
 
 ## Zero page
 
-Kernel uses some address in zero page. But $80 to $80+26 offset are reserved for binary, Orix banks. Address below $80 can be used, but kernel could erase it when IRQ or Kernels calls are performed
+userzp is equal to $8C. It's a range from $8C to $8C+16 which is saved for each process, when a process is forked
 
-Iin some orix rom, userzp is a label for $80 offset.
+Kernel uses some address in zero page. But userzp to userzp+16 offset are reserved for binary, Orix banks. Address below userzp can be used, but kernel could erase it when IRQ or Kernels calls are performed
 
-Kernel saves 16 bytes when a binary is forked. It means that a [XEXEC](../../kernel/primitives/xexec) calls in a binary will save PPID offset from $80 to $80+16, and kernel will restore theses offsets when the PID has finished. In the future, multitasking will work in the same ways, and there is no guarantee that a binary will have its values restores when offset are greater than $80+16
+Kernel saves 16 bytes (zeropage) when a binary is forked. It means that, a [XEXEC](../../kernel/primitives/xexec) calls in a binary, kernel will save PPID offset from userzp to userzp+16, and kernel will restore theses offsets when the PID has finished. In the future, multitasking will work in the same ways, and there is no guarantee that a binary will have its values restores when offset are greater than userzp+16
 
 ## Launch the ROM
 
@@ -60,11 +60,10 @@ Rom can be loaded on eeprom easily, it will erase 4 banks :
 /#orixcfg -r -s 0 myrom.rom
 ```
 
-Rom must be loaded into ram slot, it will erase only one bank :  :
+Rom must be loaded into ram slot, it will erase only one bank :
 
 ``` bash
 /#orixcfg -w -s 0 -b 4 myrom.rom
 ```
 
 At this step if everything is OK, each commands from the bank can be accessed from shell.
-

@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ftdos" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1863,6 +1868,37 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informations" class="md-nav__link">
+    Informations
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1876,16 +1912,28 @@
                 
 
 
-  <h1>Ftdos</h1>
-
-
+<h1 id="ftdos">Ftdos</h1>
+<h2 id="introduction">Introduction</h2>
+<p>ftdos command starts ftdos .dsk file without jasmin floppy disc controler. It's a beta version.</p>
+<h2 id="usage">Usage</h2>
+<p>To start a .dsk file</p>
+<p>/#ftdos mydsk</p>
+<p>To display the ftdos command version :</p>
+<p>/#ftdos -v</p>
+<p>ftdos disks must be present in /home/basic11/dsk/</p>
+<h2 id="informations">Informations</h2>
+<ul>
+<li>Write on .dsk file is not supported</li>
+<li>refers to ftdos manual for usages</li>
+<li>you need to switch off/on the oric when you reset into ftdos mode, because there is a bug when we reset during ftdos mode. Ftdos does not load and reboot into Orix</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2022-08-31
+      2023-04-19
     
   </small>
 </div>

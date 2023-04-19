@@ -13,7 +13,7 @@
     
     
       
-        <title>Grep - ORIX v2023.1 DOCUMENTATION</title>
+        <title>Command: grep - ORIX v2023.1 DOCUMENTATION</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#command-grep" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Grep
+              Command: grep
             
           </span>
         </div>
@@ -1863,6 +1868,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grep-utility" class="md-nav__link">
+    grep utility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synopsys" class="md-nav__link">
+    SYNOPSYS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    DESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    OPTIONS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    EXAMPLES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    SOURCE
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1876,16 +1933,44 @@
                 
 
 
-  <h1>Grep</h1>
-
-
+<h1 id="command-grep">Command: grep</h1>
+<h3 id="grep-utility">grep utility</h3>
+<h2 id="synopsys">SYNOPSYS</h2>
+<ul>
+<li>grep [-ncisw] string filename</li>
+<li>grep -h</li>
+</ul>
+<h2 id="description">DESCRIPTION</h2>
+<p><strong>grep</strong> display all lines of a text file that contain a string.</p>
+<h2 id="options">OPTIONS</h2>
+<ul>
+<li>-h^GDisplay command syntax</li>
+<li>-n^GShow line numbers</li>
+<li>-c^GCount only the matching lines</li>
+<li>-i^GIgnore case</li>
+<li>-w^GString can use wildcards *, ?, ^ and $</li>
+<li>-s^GSilent mode</li>
+</ul>
+<h2 id="examples">EXAMPLES</h2>
+<ul>
+<li>grep error menu.sub</li>
+<li>grep -n "level 1" menu.sub</li>
+<li>grep -i ERROR menu.sub</li>
+<li>grep -ni 'level 2' menu.sub</li>
+<li>grep -w '*lev?? 2*'menu.sub</li>
+<li>grep -w '^if' menu.sub</li>
+<li>grep -w 'error$' menu.sub</li>
+<li>grep -w 'if*level ??' menu.sub</li>
+</ul>
+<h2 id="source">SOURCE</h2>
+<p>https://github.com/orix-software/grep</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2022-07-23
+      2023-04-19
     
   </small>
 </div>

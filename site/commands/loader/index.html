@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#loader" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1863,6 +1868,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informations" class="md-nav__link">
+    Informations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informations_1" class="md-nav__link">
+    Informations
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1876,16 +1918,41 @@
                 
 
 
-  <h1>Loader</h1>
-
-
+<h1 id="loader">Loader</h1>
+<p>Uses funct + L to launch the menu or type "twiload" if you have Oric-1 keyboard</p>
+<p>You can select the rom you want to start :</p>
+<ul>
+<li>For atmos (usbdrive or sdcard), root path of the rom is /home/basic11</li>
+<li>For Oric-1 (usbdrive or sdcard), root path of the rom is /home/basic10</li>
+<li>For Pravetzt (usbdrive or sdcard), root path of the rom is /home/pravetzt</li>
+</ul>
+<p>and others Roms</p>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>up/left arrow : move into list</li>
+<li>space : displays infos of the sofware if available</li>
+<li>ESC : quit loader</li>
+</ul>
+<h3 id="informations">Informations</h3>
+<h2 id="informations_1">Informations</h2>
+<p>Loader can starts tape file as atmos .tap file by category (demo, games).</p>
+<p>Demo, games, tools, music categories displays atmos tape file and Oric-1 tapes files. It means that loader is able to start atmos software only and Oric-1 only.</p>
+<p>In order to avoid 2 softwares for Oric-1 and another one for atmos when it's available for theses 2 machines, the choice is that loader displays atmos tape file, and if the software does not exist on the atmos, Oric-1 version is displayed.</p>
+<p>Number of software for each category since 15/5/2022</p>
+<ul>
+<li>Roms : 60</li>
+<li>Demo : 35</li>
+<li>Games : 788</li>
+<li>Tools : 142</li>
+<li>Music : 80</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2022-08-31
+      2023-04-19
     
   </small>
 </div>

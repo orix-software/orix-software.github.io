@@ -1,1 +1,3 @@
-404: Not Found
+# Vidplay
+
+Play .vhi video (some are located in /usr/share/vidplay/)

@@ -13,7 +13,7 @@
     
     
       
-        <title>Man - ORIX v2023.1 DOCUMENTATION</title>
+        <title>man - ORIX v2023.1 DOCUMENTATION</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#man" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Man
+              man
             
           </span>
         </div>
@@ -1863,6 +1868,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synopsys" class="md-nav__link">
+    SYNOPSYS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    DESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keys" class="md-nav__link">
+    Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    EXAMPLES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    SOURCE
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1876,16 +1933,37 @@
                 
 
 
-  <h1>Man</h1>
-
-
+<h1 id="man">man</h1>
+<h2 id="introduction">Introduction</h2>
+<p>display manual pages</p>
+<h2 id="synopsys">SYNOPSYS</h2>
+<ul>
+<li>man lsmem</li>
+</ul>
+<h2 id="description">DESCRIPTION</h2>
+<p>Displays manual. All .hlp files are located in /usr/share/man/. It manages multiples text screen (if .hlp is bigger than a screen when space is pressed, it switch to next page).</p>
+<h2 id="keys">Keys</h2>
+<ul>
+<li>
+<p>SPACE to switch to next page</p>
+</li>
+<li>
+<p>ESC to exit</p>
+</li>
+</ul>
+<h2 id="examples">EXAMPLES</h2>
+<ul>
+<li>man ls</li>
+</ul>
+<h2 id="source">SOURCE</h2>
+<p>https://github.com/orix-software/shell/blob/master/src/commands/man.asm</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2022-10-20
+      2023-04-19
     
   </small>
 </div>

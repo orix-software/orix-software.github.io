@@ -13,7 +13,7 @@
     
     
       
-        <title>List - ORIX v2023.1 DOCUMENTATION</title>
+        <title>Command: list - ORIX v2023.1 DOCUMENTATION</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#command-list" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              List
+              Command: list
             
           </span>
         </div>
@@ -1863,6 +1868,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#list-utility" class="md-nav__link">
+    LIST utility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synopsys" class="md-nav__link">
+    SYNOPSYS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    EXAMPLES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    DESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    OPTIONS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    SOURCE
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1876,16 +1933,39 @@
                 
 
 
-  <h1>List</h1>
-
-
+<h1 id="command-list">Command: list</h1>
+<h3 id="list-utility">LIST utility</h3>
+<h2 id="synopsys">SYNOPSYS</h2>
+<ul>
+<li>list [-c] [+offset] file</li>
+</ul>
+<h2 id="examples">EXAMPLES</h2>
+<ul>
+<li>list /home/basic11/prog.bas</li>
+<li>list +19 scuba.tap</li>
+</ul>
+<h2 id="description">DESCRIPTION</h2>
+<p>Similar to LIST instruction of the BASIC ROM but for files.
+With +nnn you can go past the tape header of a tape file.
+You can use [SPACE] to pause the display ou [CTRL]+C to abort.</p>
+<h2 id="options">OPTIONS</h2>
+<ul>
+<li>-h
+                show help message and exit</li>
+<li>-c
+                Color</li>
+<li>+nnn
+        skip nnn bytes before starting the listing</li>
+</ul>
+<h2 id="source">SOURCE</h2>
+<p>https://github.com/orix-software/list</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2022-07-24
+      2023-04-19
     
   </small>
 </div>

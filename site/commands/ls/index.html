@@ -13,7 +13,7 @@
     
     
       
-        <title>Ls - ORIX v2023.1 DOCUMENTATION</title>
+        <title>ls - ORIX v2023.1 DOCUMENTATION</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ls" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ls
+              ls
             
           </span>
         </div>
@@ -1863,6 +1868,44 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#display-catalog" class="md-nav__link">
+    Display catalog
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synopsys" class="md-nav__link">
+    SYNOPSYS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    DESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    SOURCE
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1876,16 +1919,32 @@
                 
 
 
-  <h1>Ls</h1>
-
-
+<h1 id="ls">ls</h1>
+<h2 id="display-catalog">Display catalog</h2>
+<p>List all the file in the current folder. Token are supported (*,?) ex : « ls ?e.tap » will list all files with a ‘e ’ in the
+second letter</p>
+<h2 id="synopsys">SYNOPSYS</h2>
+<p>list all the files in the current folder</p>
+<ul>
+<li>ls</li>
+</ul>
+<p>List all *.tap files</p>
+<ul>
+<li>ls *.tap</li>
+</ul>
+<p>List size and datetime of the file
++ ls -l</p>
+<h2 id="description">DESCRIPTION</h2>
+<p>Directories are in <sup>FBLUE</sup>G color. It  manages '-l' and Pattern works in different ways : ls *.tap</p>
+<h2 id="source">SOURCE</h2>
+<p>https://github.com/orix-software/shell/blob/master/src/commands/ls.asm</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2022-10-20
+      2023-04-19
     
   </small>
 </div>

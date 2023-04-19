@@ -6,4 +6,4 @@
 
 ## developper side
 
-[Developpers manuals](../home/)
+[Developpers manuals](../developer_manual/)

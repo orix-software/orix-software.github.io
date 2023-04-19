@@ -1946,15 +1946,45 @@
 <h1 id="guidelines">Guidelines</h1>
 <h2 id="ways-to-do-a-binary">Ways to do a binary</h2>
 <p>There is many ways to buid a binary : bank or on storage</p>
-<details class="info">
-<summary>Comparison between binary storages</summary>
 <p>To summarize, the best speed shoud be read only bank, but it could a bit slow when program runs cd</p>
-<p>| type    | Relocation                       |Loading| kernel search command speed| Runtime speed | Update performance|
-| ----------- | ------------------------------------ ||
-|Read only bank (eeprom) |    No relocation performed      | No loading | Best mode to find a command for the kernel | probably slower due to zp use and indirect mode to access memory | worst : need to load 64KB Rom slot to update
-|Read/write bank (Ram) |    No relocation performed      | No loading | Best mode to find a command for the kernel (slower than read only bank)| probably slower due to zp use and indirect mode to access memory | need to load file into the 16KB bank
-|Binary from /bin |    Relocation performed (some lag to relocate)     | Loading from storage| The worst way to find a command : kernel search into bank and after in the storage| probably faster than bank (due to absolute mode in it's own buffers) | just copy binary into /bin</p>
-</details>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>Relocation</th>
+<th>Loading</th>
+<th>kernel search command speed</th>
+<th>Runtime speed</th>
+<th>Update performance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read only bank (eeprom)</td>
+<td>No relocation performed</td>
+<td>No loading</td>
+<td>Best mode to find a command for the kernel</td>
+<td>probably slower due to zp use and indirect mode to access memory</td>
+<td>worst : need to load 64KB Rom slot to update</td>
+</tr>
+<tr>
+<td>Read/write bank (Ram)</td>
+<td>No relocation performed</td>
+<td>No loading</td>
+<td>Best mode to find a command for the kernel (slower than read only bank)</td>
+<td>probably slower due to zp use and indirect mode to access memory</td>
+<td>need to load file into the 16KB bank</td>
+</tr>
+<tr>
+<td>Binary from /bin</td>
+<td>Relocation performed (some lag to relocate)</td>
+<td>Loading from storage</td>
+<td>The worst way to find a command : kernel search into bank and after in the storage</td>
+<td>probably faster than bank (due to absolute mode in it's own buffers)</td>
+<td>just copy binary into /bin</td>
+</tr>
+</tbody>
+</table>
 
   <hr>
 <div class="md-source-file">

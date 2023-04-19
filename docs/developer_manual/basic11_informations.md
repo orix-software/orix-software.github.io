@@ -20,8 +20,8 @@ Cela lance la ROM
 
 * La rom va être chargée en ram principale puis basic11 va copier un driver en ram principale. Si la rom demandée n'est pas trouvée, le programme s'arrête avec un message d'erreur.
 
-* Ce driver passe en RAM 0 (banque 0) copie la ROM chargée en ram principale, puis va patcher le path par défaut pour accéder au .tap demandé. Ainsi, la ROM serait présente en RAM 0, avec le path par défaut tel que : 
-/usr/share/basic11/3/ pour 3dfongus
+* Ce driver passe en RAM 0 (banque 0) copie la ROM chargée en ram principale, puis va patcher le path par défaut pour accéder au .tap demandé. Ainsi, la ROM serait présente en RAM 0, avec le path par défaut tel que :
+'/usr/share/basic11/3/' pour 3dfongus
 
 Ainsi, la ROM a en argument 3Dfongus, et la rom charge donc à partir de là.
 

@@ -45,7 +45,7 @@ curl $MYURLVERSION
 MYVERSION=`cat VERSION`
 
 echo "* [$VAL](../$VAL) Last version : $MYVERSION" >> docs/commands/all.md
-echo "$VAL: commands/$VAL.md" >> docs/commands/commands_for_nav.md
+echo "- $VAL: commands/$VAL.md" >> docs/commands/commands_for_nav.md
 done
 fi
 

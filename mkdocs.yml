@@ -47,26 +47,26 @@ theme:
 
 nav:
     - Home: index.md
-    - Getting started : menu.md
-    - User guide :
-        - Commands : commands/all.md
+    - Getting started: menu.md
+    - User guide:
+        - Commands: commands/all.md
         # - Floppy drive commands:
         #     - Bootfd: user_manual/bootfd.md
         # - Shell guide :
         #     - Basic 11 commands: how-it-work/index.md
-        - Software loader : developer_manual/loader/loader.md
-        - Hardware manuals :
+        - Software loader: developer_manual/loader/loader.md
+        - Hardware manuals:
             - Ribbon cable: hardware/nappe.md
             - Plug voice synthetizer: hardware/synth_vocal_mea80900.md
             - Oric incompatibility: hardware/incompatibility_oric.md
             - Hardware issues: hardware/hardware_issues.md
-        - Updates :
+        - Updates:
             - 2023.1: update/2023_1.md
             - 2022.4: update/2022_4.md
             - 2022.3: update/2022_3.md
             - commands:
                 - File: update/file/file.md
-    - Developper guide :
+    - Developper guide:
         - Install: developer_manual/index.md
         - Development guidelines: developer_manual/guidelines.md
         - Memory management : developer_manual/memory.md

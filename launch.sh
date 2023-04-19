@@ -18,6 +18,7 @@ if [ "$1" == "--full" ]; then
 mkdir docs/commands/ -p
 
 rm docs/commands/all.md
+rm docs/commands/commands_for_nav.md
 
 for i in ${!tab_command[@]}; do
 VAL=${tab_command[$i]}
@@ -44,6 +45,7 @@ curl $MYURLVERSION
 MYVERSION=`cat VERSION`
 
 echo "* [$VAL](../$VAL) Last version : $MYVERSION" >> docs/commands/all.md
+echo "$VAL: commands/$VAL.md" >> docs/commands/commands_for_nav.md
 done
 fi
 

@@ -13,7 +13,7 @@
     
     
       
-        <title>orixcfg - ORIX v2023.1 DOCUMENTATION</title>
+        <title>Orixcfg - ORIX v2023.1 DOCUMENTATION</title>
       
     
     
@@ -65,11 +65,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#orixcfg" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              orixcfg
+              Orixcfg
             
           </span>
         </div>
@@ -1868,65 +1863,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#load-a-rom-into-a-ram-slot" class="md-nav__link">
-    Load a ROM into a ram slot
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#load-a-set-of-rom-into-rom-slot" class="md-nav__link">
-    Load a set of ROM into ROM slot
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clear-bank-ram-or-initialize-it" class="md-nav__link">
-    Clear bank ram or initialize it
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flush-all-ram-bank" class="md-nav__link">
-    Flush all ram bank
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#synopsys" class="md-nav__link">
-    SYNOPSYS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    DESCRIPTION
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1940,80 +1876,9 @@
                 
 
 
-<h1 id="orixcfg">orixcfg</h1>
-<h2 id="introduction">Introduction</h2>
-<p>Update kernel, shell : orixcfg</p>
-<p>When a new released is done, you can update the eeprom with the new
-kernel and new roms.</p>
-<p>If you want to know if you need to update the kernel, you can compare
-your current version, and the last release version. You can go to
-<a href="http://orix.oric.org/">http://orix.oric.org</a></p>
-<p>The sequence of the Orix release is Year.X. There is 4 releases a year, and
-each one must be done until you reach the final one, in order to avoid
-some case. If your version is v2020.3 and the last available version is
-v2021.4. You need to update to v2020.4, then v2021.1, v2021.2, v2021.3,
-v2021.4, v2022.1, v2022.4</p>
-<p>It's maybe possible to jump to version v2022.3, but it's at your own
-risk because there is a « chance » that some kernel calls changed, and
-orixcfg could do wrong step.</p>
-<p>When you need to update kernel, you can update it with orixcfg. You just
-need to define set 4 on the command line. This step is very
-<strong>dangerous</strong> if you don't load the right file. There is no verification
-and any file on the command line will be load in the kernel set.
-Usually, kernel set file is named kernxxxx.r64.</p>
-<p>If you did something wrong on this step, you won't be able to start orix
-again. It means that you will need to remove eeprom from the card and
-program it with a eeprom programmer</p>
-<p>This next command will load kernel.r64 to kernel set. Please wait until
-Orix reboots. If you have a kernel 2020.3 and you need to load a kernel
-2021,1, you will need to load previous kernel set before the update of
-2021.1.</p>
-<p>.r64 extension means that it's a 64KB set. It's usually used to define
-that the file contains 4 roms of 16KB.</p>
-<p>Please note that we provide 2 kernels version. One named
-« kernelsd.r64 » which means that the default device will be sdcard, and
-the other one « kernelus.r64 » which means that default device will be
-« usb » (usbkey). If you load the wrong kernel at this step, you can use
-twil command to switch to the right device, and you can start again
-kernel update with the right file (kernelsd.r64 or kernelus.r64
-depending of your configuration).</p>
-<p>orixcfg -r -s 4 kernelsd.r64</p>
-<h2 id="load-a-rom-into-a-ram-slot">Load a ROM into a ram slot</h2>
-<p>Space between values and switches are not optionnal, orixcfg needs
-theses spaces</p>
-<p>/#orixcfg -b XX -l myrom.rom</p>
-<p>This command will load myrom.rom (in the current path), in RAM bank XX</p>
-<p>Older usage as : orixcfg -r -s X -b Y myrom.rom is no longer included in
-orixcfg since orixcfg v2021.3</p>
-<h2 id="load-a-set-of-rom-into-rom-slot">Load a set of ROM into ROM slot</h2>
-<p>orixcfg -r -s 0 myrom.r64</p>
-<p>[]{#anchor-72}This command will load myrom.r64 (in the current path), in
-set 0. For instance, you can not load one bank, you need to load 64KB
-set.</p>
-<h2 id="clear-bank-ram-or-initialize-it">Clear bank ram or initialize it</h2>
-<p>Ram bank are not initialized when the board is tested. If you have
-garbage on screen when you uses bank (after you used twil -w). You have
-to clear all ram bank (ram bank are battery saved).</p>
-<p>If you want to clear bank 4 of the set 0, you can do this command. You
-need to do this command for each bank of each set. For instance, there
-is no switch to clear all the ram with one command.</p>
-<p>/#orixcfg -w -s 0 -b 4 -c</p>
-<h2 id="flush-all-ram-bank">Flush all ram bank</h2>
-<p>orixcfg -w -f</p>
-<h2 id="synopsys">SYNOPSYS</h2>
-<ul>
-<li>orixcfg
-Load a .rom into RAM (in the example, set 0, bank 4)</li>
-<li>orixcfg -w -s 0 -b 4 myrom.rom
-Clear a ram bank (in the example, set 0, bank 4)</li>
-<li>orixcfg -w -s 0 -b 4 -c
-Load an eeprom set (in the example, set 0), only 64KB set</li>
-<li>orixcfg -r -s 0 myset.r64
-Update kernel</li>
-<li>orixcfg -r -s 4 kernelus.r64</li>
-</ul>
-<h2 id="description">DESCRIPTION</h2>
-<p>Manage twilighte board configuration</p>
+  <h1>Orixcfg</h1>
+
+
 
   <hr>
 <div class="md-source-file">

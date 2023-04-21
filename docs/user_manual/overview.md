@@ -7,7 +7,7 @@
 ## Launch tape file
 
 * loader
-* basic11
+* [basic11](../commands/basic11.md)
 * basic10
 
 ## .dsk file management

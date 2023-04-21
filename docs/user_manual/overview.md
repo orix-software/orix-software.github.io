@@ -21,9 +21,18 @@
 
 * [ftdos](../../commands/ftdos)
 
-### Music
+### Music launchers
 
 * [mym](../../commands/mym)
+
+### Floppybuilder launchers
+
+* [blakes7](../../commands/blakes7)
+* [asm2k2](../../commands/asm2k2)
+* [barbitoric](../../commands/barboric)
+* [quintessential](../../commands/quintes)
+* [orictech](../../commands/orictech)
+* [30years](../../commands/30years)
 
 ### .dsk management
 

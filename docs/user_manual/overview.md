@@ -7,45 +7,45 @@
 ## Launch tape file
 
 * loader
-* [basic11](../../commands/basic11.md)
-* basic10
+* [basic11](../../commands/basic11)
+* [basic10](../../commands/basic10)
 
 ## .dsk file management
 
-* dsk-util
-* ftdos
+* [dsk-util](../../commands/dsk-util)
+* [ftdos](../../commands/ftdos)
 
 ## Load rom/manage banks
 
-* bank
-* help
-* hexdump
-* orixcfg
+* [bank](../../commands/bank)
+* [help](../../commands/help)
+* [hexdump](../../commands/hexdump)
+* [orixcfg](../../commands/orixcfg)
 
 ## Music
 
-* mym
+* [mym](../../commands/mym)
 
 ## Real floppy drive management
 
-* bootfd
-* readdsk
-* raw2dsk
+* [bootfd](../../commands/bootfd)
+* [readdsk](../../commands/readdsk)
+* [raw2dsk](../../commands/raw2dsk)
 
 ## File system management
 
-* cat
-* cd
-* cp
-* cksum
-* df
-* file
-* grep
-* ls
-* mkdir
-* mount
-* rm
-* touch
+* [cat](../../commands/cat)
+* [cd](../../commands/cd)
+* [cp](../../commands/cp)
+* [cksum](../../commands/cksum)
+* [df](../../commands/cp)
+* [file](../../commands/file)
+* [grep](../../commands/grep)
+* [ls](../../commands/ls)
+* [mkdir](../../commands/mkdir)
+* [mount](../../commands/mount)
+* [rm](../../commands/rm)
+* [touch](../../commands/touch)
 * twil
 * untar
 

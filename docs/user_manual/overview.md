@@ -91,8 +91,8 @@
 
 * [hexdump](../../commands/hexdump)
 * [list](../../commands/list)
-* viewhrs
-* viewscr
-* man
+* [viewhrs](../../commands/viewhrs)
+* [viewscr](../../commands/viewscr)
+* [man](../../commands/man)
 
 ```

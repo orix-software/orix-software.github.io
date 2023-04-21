@@ -4,35 +4,50 @@
 
 # Orix
 
-## Launch tape file
+## Users profile
+
+### Launch tape file
 
 * loader
 * [basic11](../../commands/basic11)
 * [basic10](../../commands/basic10)
 
-## .dsk file management
+### .dsk launchers
+
+* [ftdos](../../commands/ftdos)
+
+### Music
+
+* [mym](../../commands/mym)
+
+### .dsk management
 
 * [dsk-util](../../commands/dsk-util)
 * [ftdos](../../commands/ftdos)
+* [readdsk](../../commands/readdsk)
+* [raw2dsk](../../commands/raw2dsk)
 
-## Load rom/manage banks
+### Real floppy drive launchers
+
+* [bootfd](../../commands/bootfd)
+
+## Orix manager profiles
+
+### .dsk file management
+
+* [dsk-util](../../commands/dsk-util)
+* [ftdos](../../commands/ftdos)
+* [readdsk](../../commands/readdsk)
+* [raw2dsk](../../commands/raw2dsk)
+
+### Load rom/manage banks
 
 * [bank](../../commands/bank)
 * [help](../../commands/help)
 * [hexdump](../../commands/hexdump)
 * [orixcfg](../../commands/orixcfg)
 
-## Music
-
-* [mym](../../commands/mym)
-
-## Real floppy drive management
-
-* [bootfd](../../commands/bootfd)
-* [readdsk](../../commands/readdsk)
-* [raw2dsk](../../commands/raw2dsk)
-
-## File system management
+### File system management
 
 * [cat](../../commands/cat)
 * [cd](../../commands/cd)
@@ -49,12 +64,12 @@
 * [twil](../../commands/twil)
 * [untar](../../commands/untar)
 
-## Process management
+### Process management
 
 * [ps](../../commands/ps)
 * [pstree](../../commands/pstree)
 
-## Orix management
+### Orix management
 
 * [env](../../commands/env)
 * [ioports](../../commands/ioports)
@@ -65,29 +80,29 @@
 * [twil](../../commands/twil)
 * [uname](../../commands/uname)
 
-## Manuals
+### Manuals
 
 * [man](../../commands/man)
 
-## Rom management
+### Rom management
 
 * [orixcfg](../../commands/orixcfg)
 * loader
 
-## Basic tools
+### Basic tools
 
 * [basic10](../../commands/basic10)
 * [basic11](../../commands/basic11)
 * [list](../../commands/list)
 * [viewscr](../../commands/viewscr)
 
-## Debugging
+### Debugging
 
 * [cksum](../../commands/cksum)
 * [orixcfg](../../commands/orixcfg)
 * [hexdump](../../commands/hexdump)
 
-## Visualization tools
+### Visualization tools
 
 * [hexdump](../../commands/hexdump)
 * [list](../../commands/list)

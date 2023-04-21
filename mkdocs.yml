@@ -108,7 +108,7 @@ nav:
         #     - Bootfd: user_manual/bootfd.md
         # - Shell guide :
         #     - Basic 11 commands: how-it-work/index.md
-        - Software loader: developer_manual/loader/loader.md
+        - Software loader: user_manual/loader.md
         - Hardware manuals:
             - Ribbon cable: hardware/nappe.md
             - Plug voice synthetizer: hardware/synth_vocal_mea80900.md

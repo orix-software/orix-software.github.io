@@ -1,6 +1,6 @@
 # Loader
 
-![Image](../../loader_img.jpg){ align=left }
+![Image](../loader_img.jpg){ align=left }
 
 Loader can start atmos or oric-1 tape files.
 

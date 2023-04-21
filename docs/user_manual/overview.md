@@ -6,11 +6,16 @@
 
 ## Users profile
 
-### Launch tape file
+### tape file launchers (oric1/atmos)
 
 * loader
 * [basic11](../../commands/basic11)
 * [basic10](../../commands/basic10)
+
+### Roms launchers
+
+* loader
+* [bank](../../commands/bank)
 
 ### .dsk launchers
 

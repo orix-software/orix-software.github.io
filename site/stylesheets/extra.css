@@ -13,6 +13,10 @@
   --md-default-fg-color--light: #FFFFFF;
 }
 
+.star {
+  color: #FFFF00;
+}
+
 .md-ellipsis::before {
   content: "";
   display: inline-block;

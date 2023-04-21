@@ -50,6 +50,7 @@ nav:
     - Getting started: menu.md
     - User guide:
         - Commands:
+            - All commands: commands/all.md
             - asm2k2: commands/asm2k2.md
             - bank: commands/bank.md
             - basic10: commands/basic10.md

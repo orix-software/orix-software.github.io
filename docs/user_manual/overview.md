@@ -46,51 +46,51 @@
 * [mount](../../commands/mount)
 * [rm](../../commands/rm)
 * [touch](../../commands/touch)
-* twil
-* untar
+* [twil](../../commands/twil)
+* [untar](../../commands/untar)
 
 ## Process management
 
-* ps
-* pstree
+* [ps](../../commands/ps)
+* [pstree](../../commands/pstree)
 
 ## Orix management
 
-* env
-* ioports
-* orixcfg
-* reboot
-* setfont
-* submit
-* twil
-* uname
+* [env](../../commands/env)
+* [ioports](../../commands/ioports)
+* [orixcfg](../../commands/orixcfg)
+* [reboot](../../commands/reboot)
+* [setfont](../../commands/setfont)
+* [submit](../../commands/submit)
+* [twil](../../commands/twil)
+* [uname](../../commands/uname)
 
 ## Manuals
 
-* man
+* [man](../../commands/man)
 
 ## Rom management
 
-* orixcfg
+* [orixcfg](../../commands/orixcfg)
 * loader
 
 ## Basic tools
 
-* basic10
-* basic11
-* list
-* viewscr
+* [basic10](../../commands/basic10)
+* [basic11](../../commands/basic11)
+* [list](../../commands/list)
+* [viewscr](../../commands/viewscr)
 
 ## Debugging
 
-* cksum
-* orixcfg
-* hexdump
+* [cksum](../../commands/cksum)
+* [orixcfg](../../commands/orixcfg)
+* [hexdump](../../commands/hexdump)
 
 ## Visualization tools
 
-* hexdump
-* list
+* [hexdump](../../commands/hexdump)
+* [list](../../commands/list)
 * viewhrs
 * viewscr
 * man

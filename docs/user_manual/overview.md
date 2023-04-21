@@ -7,7 +7,7 @@
 ## Launch tape file
 
 * loader
-* [basic11](../commands/basic11.md)
+* [basic11](../../commands/basic11.md)
 * basic10
 
 ## .dsk file management
@@ -22,7 +22,7 @@
 * hexdump
 * orixcfg
 
-# Music
+## Music
 
 * mym
 

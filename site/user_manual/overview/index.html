@@ -1,0 +1,1183 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
+<title>Overview - ORIX v2023.1 DOCUMENTATION</title>
+<link href="../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<meta content="#000000" name="theme-color"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script src="https://unpkg.com/d3@6.7.0/dist/d3.min.js" type="text/javascript"></script><script src="../../js/unpkg.com/markmap-lib@0.14.1/dist/browser/index.min.js" type="text/javascript"></script><script src="../../js/unpkg.com/markmap-view@0.14.0/dist/index.min.js" type="text/javascript"></script><style type="text/css">div.mkdocs-markmap {
+    width: 100%;
+    min-height: 1em;
+    border: 1px solid grey;
+}
+.mkdocs-markmap > svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+</style></head>
+<body data-md-color-accent="" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#overview">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="ORIX v2023.1 DOCUMENTATION" class="md-header__button md-logo" data-md-component="logo" href="../.." title="ORIX v2023.1 DOCUMENTATION">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            ORIX v2023.1 DOCUMENTATION
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../menu/">
+      Getting started
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="./">
+        User guide
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../developer_manual/">
+        Developper guide
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="ORIX v2023.1 DOCUMENTATION" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="ORIX v2023.1 DOCUMENTATION">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    ORIX v2023.1 DOCUMENTATION
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../menu/">
+        Getting started
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          User guide
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="User guide" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          User guide
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Overview
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2">
+          Commands
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Commands" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+          Commands
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/all/">
+        All commands
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/asm2k2/">
+        asm2k2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/bank/">
+        bank
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/basic10/">
+        basic10
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/basic11/">
+        basic11
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/barboric/">
+        barboric
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/blakes7/">
+        blakes7
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/bootfd/">
+        bootfd
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/born1983/">
+        born1983
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/cat/">
+        cat
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/cd/">
+        cd
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/cksum/">
+        cksum
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/clear/">
+        clear
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/cp/">
+        cp
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/df/">
+        df
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/otimer/">
+        otimer
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/dsk-util/">
+        dsk-util
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/echo/">
+        echo
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/env/">
+        env
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/forth/">
+        forth
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/ftdos/">
+        ftdos
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/grep/">
+        grep
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/help/">
+        help
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/hexdump/">
+        hexdump
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/ioports/">
+        ioports
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/list/">
+        list
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/ls/">
+        ls
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/lscpu/">
+        lscpu
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/lsmem/">
+        lsmem
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/loader/">
+        loader
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/man/">
+        man
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/mkdir/">
+        mkdir
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/mount/">
+        mount
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/orixcfg/">
+        orixcfg
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/pwd/">
+        pwd
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/ps/">
+        ps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/quintes/">
+        quintes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/raw2dsk/">
+        raw2dsk
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/readdsk/">
+        readdsk
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/reboot/">
+        reboot
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/rm/">
+        rm
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/setfont/">
+        setfont
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/sh/">
+        sh
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/submit/">
+        submit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/touch/">
+        touch
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/twil/">
+        twil
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/twiload/">
+        twiload
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/uname/">
+        uname
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/untar/">
+        untar
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/vidplay/">
+        vidplay
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/viewscr/">
+        viewscr
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/viewhrs/">
+        viewhrs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../commands/zerofx/">
+        zerofx
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../loader/">
+        Software loader
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4">
+          Hardware manuals
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Hardware manuals" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+          Hardware manuals
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../hardware/nappe/">
+        Ribbon cable
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../hardware/synth_vocal_mea80900/">
+        Plug voice synthetizer
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../hardware/incompatibility_oric/">
+        Oric incompatibility
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../hardware/hardware_issues/">
+        Hardware issues
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5">
+          Updates
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Updates" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+          Updates
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../update/2023_1/">
+        2023.1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../update/2022_4/">
+        2022.4
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../update/2022_3/">
+        2022.3
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4" id="__nav_3_5_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_4">
+          commands
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="commands" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_4">
+<span class="md-nav__icon md-icon"></span>
+          commands
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../update/file/file/">
+        File
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Developper guide
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Developper guide" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Developper guide
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/">
+        Install
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/guidelines/">
+        Development guidelines
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/memory/">
+        Memory management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/buildrom/">
+        Build an Orix rom
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/buildstandalonerom/">
+        Build standalone Rom
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../binaries/generateBinary/">
+        Generate a binary for sdcard/usb key
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" id="__nav_4_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7">
+          SDK for Assembly (Orixsdk)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="SDK for Assembly (Orixsdk)" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_7">
+<span class="md-nav__icon md-icon"></span>
+          SDK for Assembly (Orixsdk)
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk/">
+        Main usage
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7_2" id="__nav_4_7_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7_2">
+          File operations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="File operations" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_7_2">
+<span class="md-nav__icon md-icon"></span>
+          File operations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/fopen/">
+        fopen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/fread/">
+        fread
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/fwrite/">
+        fwrite
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/fclose/">
+        fclose
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/mkdir/">
+        mkdir
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/chdir/">
+        chdir
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/chdir/">
+        getcwd
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/unlink/">
+        unlink
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7_3" id="__nav_4_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7_3">
+          Text mode operations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Text mode operations" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_7_3">
+<span class="md-nav__icon md-icon"></span>
+          Text mode operations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/print/">
+        print
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/cputc/">
+        cputc
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/crlf/">
+        crlf
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/scroll/">
+        scroll
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/cursor/">
+        cursor
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/setscreen/">
+        setscreen
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7_4" id="__nav_4_7_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7_4">
+          Memory operations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Memory operations" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_7_4">
+<span class="md-nav__icon md-icon"></span>
+          Memory operations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/malloc/">
+        malloc
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/mfree/">
+        mfree
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7_5" id="__nav_4_7_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7_5">
+          Strings operations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Strings operations" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_7_5">
+<span class="md-nav__icon md-icon"></span>
+          Strings operations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/strncat/">
+        strncat
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/strncpy/">
+        strncpy
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7_6" id="__nav_4_7_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7_6">
+          Command line operations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Command line operations" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_7_6">
+<span class="md-nav__icon md-icon"></span>
+          Command line operations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/initmainargs/">
+        initmainargs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/getmainargs/">
+        getmainargs
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7_7" id="__nav_4_7_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7_7">
+          Keyboards operations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Keyboards operations" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_7_7">
+<span class="md-nav__icon md-icon"></span>
+          Keyboards operations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/cgetc/">
+        cgetc
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7_8" id="__nav_4_7_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7_8">
+          Process operations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Process operations" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_7_8">
+<span class="md-nav__icon md-icon"></span>
+          Process operations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/orixsdk_macros/exec/">
+        exec
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/buildman/">
+        Generate man pages
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/cc65/">
+        cc65
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/header/">
+        Binary header format
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/joysticks/">
+        Joysticks management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/pizero_connection/">
+        Cross development on real hardware
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/oricutronvsreal/">
+        Oricutron VS real hardware
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14" id="__nav_4_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_14">
+          Kernel guide
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Kernel guide" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_14">
+<span class="md-nav__icon md-icon"></span>
+          Kernel guide
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/kernel/">
+        Kernel
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14_2" id="__nav_4_14_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_14_2">
+          Primitives
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Primitives" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_14_2">
+<span class="md-nav__icon md-icon"></span>
+          Primitives
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/">
+        General list
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14_2_2" id="__nav_4_14_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_14_2_2">
+          By category
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="By category" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_4_14_2_2">
+<span class="md-nav__icon md-icon"></span>
+          By category
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14_2_2_1" id="__nav_4_14_2_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_14_2_2_1">
+          Command line args
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Command line args" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_4_14_2_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Command line args
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/xmainargs/">
+        XMAINARGS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/xgetargv/">
+        XGETARGV
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14_2_2_2" id="__nav_4_14_2_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_14_2_2_2">
+          Files operations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Files operations" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_4_14_2_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Files operations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/xopen/">
+        XOPEN
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/xclose/">
+        XCLOSE
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/xfread/">
+        XFREAD
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/xwrite/">
+        XWRITE
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/xfseek/">
+        XFSEEK
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14_2_2_3" id="__nav_4_14_2_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_14_2_2_3">
+          Memory operations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Memory operations" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_4_14_2_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Memory operations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/xmalloc/">
+        XMALLOC
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../kernel/primitives/xfree/">
+        XFREE
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../how-it-work/binary_starts.md">
+        Boot sequence
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_15" id="__nav_4_15" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_15">
+          Hardware guide
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Hardware guide" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_15">
+<span class="md-nav__icon md-icon"></span>
+          Hardware guide
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../hardware/memory/">
+        Memory
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../hardware/i_o/">
+        I/O
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../developer_manual/firmware/">
+        Firmware informations
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../hardware/joysticks/">
+        Joysticks
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../hardware/eeprom_structure/">
+        Eeprom structure
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_16" id="__nav_4_16" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_16">
+          Extra Libs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Extra Libs" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_16">
+<span class="md-nav__icon md-icon"></span>
+          Extra Libs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../libs/twillib/">
+        Twilighte library
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="overview">Overview</h1>
+<div class="language-markmap mkdocs-markmap" data-markdown="&amp;#10;# Orix&amp;#10;&amp;#10;## Launch tape file&amp;#10;&amp;#10;* loader&amp;#10;* basic11&amp;#10;* basic10&amp;#10;&amp;#10;## Launch .dsk file&amp;#10;&amp;#10;* ftdos&amp;#10;&amp;#10;## Load rom/manage banks&amp;#10;&amp;#10;* bank&amp;#10;* help&amp;#10;* orixcfg&amp;#10;&amp;#10;&amp;#10;## File system management&amp;#10;&amp;#10;* cat&amp;#10;* cd&amp;#10;* cp&amp;#10;* df&amp;#10;* ls&amp;#10;* mkdir&amp;#10;&amp;#10;## Process management&amp;#10;&amp;#10;* pstree&amp;#10;&amp;#10;## Orix management&amp;#10;&amp;#10;* orixcfg&amp;#10;* submit&amp;#10;* twil&amp;#10;* uname&amp;#10;&amp;#10;&amp;#10;"><svg class="markmap" id="markmap-0"></svg></div>
+<hr/>
+<div class="md-source-file">
+<small>
+    
+      Last update:
+      2023-04-21
+    
+  </small>
+</div>
+</article>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Getting started" class="md-footer__link md-footer__link--prev" href="../../menu/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Getting started
+            </div>
+</div>
+</a>
+<a aria-label="Next: All commands" class="md-footer__link md-footer__link--next" href="../../commands/all/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              All commands
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://twitter.com/OrixTwil" rel="noopener" target="_blank" title="twitter.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.youtube.com/user/jede06600/videos" rel="noopener" target="_blank" title="www.youtube.com">
+<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script type="text/javascript">(function initializeMarkmap() {
+    function update_markmaps() {
+        const markmap_transformer = new markmap.Transformer();
+        const markmaps = document.getElementsByClassName('mkdocs-markmap');
+        var el, content, svg, root, m;
+        for (var i = 0; i < markmaps.length; i++) {
+            el = markmaps[i];
+            content = el.getAttribute('data-markdown').replaceAll('&#10;', '\n');
+            svg = el.querySelector('svg');
+            root = markmap_transformer.transform(content).root;
+            m = markmap.Markmap.create(svg, null, root);
+
+            (function(obj, e, r) {
+                obj.rescale(1).then(function() {
+                    e.parentElement.style.height = (e.getBBox().height + 10) + "px";
+                    requestAnimationFrame(() => { obj.fit(); })
+                });
+            })(m, svg, root);
+        }
+    }
+
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+    var observer = new MutationObserver(function(mutations) {
+        update_markmaps();
+    });
+
+    var target = document.getElementById('mkdocs-decrypted-content');
+    if (undefined != target) {
+        observer.observe(target, { childList: true });
+    }
+
+    update_markmaps();
+})();
+</script></body>
+</html>

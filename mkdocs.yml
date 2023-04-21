@@ -49,6 +49,7 @@ nav:
     - Home: index.md
     - Getting started: menu.md
     - User guide:
+        - Overview: user_manual/overview.md
         - Commands:
             - All commands: commands/all.md
             - asm2k2: commands/asm2k2.md

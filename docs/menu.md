@@ -1,9 +1,9 @@
 # Getting started
 
-## User side
+## Users manuals
 
-[User manuals](../commands/all/)
+[User manuals](../commands/all/) { .md-button .md-button--primary}
 
-## developper side
+## developpers manual
 
-[Developpers manuals](../developer_manual/)
+[Developpers manuals](../developer_manual/) { .md-button .md-button--primary}

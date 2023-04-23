@@ -2,8 +2,8 @@
 
 ## Users manuals
 
-[User manuals](../commands/all/) { .md-button .md-button--primary}
+[User manuals](../commands/all/){ .md-button .md-button--primary}
 
 ## developpers manual
 
-[Developpers manuals](../developer_manual/) { .md-button .md-button--primary}
+[Developpers manuals](../developer_manual/){ .md-button .md-button--primary}

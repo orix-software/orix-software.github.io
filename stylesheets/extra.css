@@ -21,7 +21,6 @@
   background-color: #707070;
 }
 
-
 .md-ellipsis::before {
   content: "";
   display: inline-block;

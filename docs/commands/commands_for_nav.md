@@ -39,6 +39,9 @@
 - reboot: commands/reboot.md
 - rm: commands/rm.md
 - setfont: commands/setfont.md
+- loader: commands/loader.md
+- twilconf: commands/twilconf.md
+- strerr: commands/strerr.md
 - sh: commands/sh.md
 - submit: commands/submit.md
 - touch: commands/touch.md

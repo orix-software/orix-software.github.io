@@ -8,13 +8,13 @@
 
 ### tape file launchers (oric1/atmos)
 
-* loader
+* [loader](../../commands/loader)
 * [basic11](../../commands/basic11)
 * [basic10](../../commands/basic10)
 
 ### Roms launchers
 
-* loader
+* [loader](../../commands/loader)
 * [bank](../../commands/bank)
 
 ### .dsk launchers
@@ -91,8 +91,10 @@
 * [reboot](../../commands/reboot)
 * [setfont](../../commands/setfont)
 * [submit](../../commands/submit)
+* [strerr](../../commands/strerr)
 * [twil](../../commands/twil)
 * [uname](../../commands/uname)
+
 
 ### Manuals
 
@@ -101,7 +103,7 @@
 ### Rom management
 
 * [orixcfg](../../commands/orixcfg)
-* loader
+* [loader](../../commands/loader)
 
 ### Basic tools
 

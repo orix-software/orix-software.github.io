@@ -13,7 +13,7 @@
     
     
       
-        <title>Commands for nav - ORIX v2023.1 DOCUMENTATION</title>
+        <title>Command: strerr - ORIX v2023.1 DOCUMENTATION</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#command-strerr" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Commands for nav
+              Command: strerr
             
           </span>
         </div>
@@ -2638,6 +2643,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#strerr-utility" class="md-nav__link">
+    strerr utility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synopsys" class="md-nav__link">
+    SYNOPSYS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    EXAMPLES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    DESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    OPTIONS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    SOURCE
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2651,72 +2708,47 @@
                 
 
 
-  <h1>Commands for nav</h1>
-
+<h1 id="command-strerr">Command: strerr</h1>
+<h3 id="strerr-utility">strerr utility</h3>
+<h2 id="synopsys">SYNOPSYS</h2>
 <ul>
-<li>asm2k2: commands/asm2k2.md</li>
-<li>bank: commands/bank.md</li>
-<li>basic10: commands/basic10.md</li>
-<li>basic11: commands/basic11.md</li>
-<li>barboric: commands/barboric.md</li>
-<li>blakes7: commands/blakes7.md</li>
-<li>bootfd: commands/bootfd.md</li>
-<li>born1983: commands/born1983.md</li>
-<li>cat: commands/cat.md</li>
-<li>cd: commands/cd.md</li>
-<li>cksum: commands/cksum.md</li>
-<li>clear: commands/clear.md</li>
-<li>cp: commands/cp.md</li>
-<li>df: commands/df.md</li>
-<li>otimer: commands/otimer.md</li>
-<li>dsk-util: commands/dsk-util.md</li>
-<li>echo: commands/echo.md</li>
-<li>env: commands/env.md</li>
-<li>forth: commands/forth.md</li>
-<li>ftdos: commands/ftdos.md</li>
-<li>grep: commands/grep.md</li>
-<li>help: commands/help.md</li>
-<li>hexdump: commands/hexdump.md</li>
-<li>ioports: commands/ioports.md</li>
-<li>list: commands/list.md</li>
-<li>ls: commands/ls.md</li>
-<li>lscpu: commands/lscpu.md</li>
-<li>lsmem: commands/lsmem.md</li>
-<li>loader: commands/loader.md</li>
-<li>man: commands/man.md</li>
-<li>mkdir: commands/mkdir.md</li>
-<li>mount: commands/mount.md</li>
-<li>orixcfg: commands/orixcfg.md</li>
-<li>pwd: commands/pwd.md</li>
-<li>ps: commands/ps.md</li>
-<li>quintes: commands/quintes.md</li>
-<li>raw2dsk: commands/raw2dsk.md</li>
-<li>readdsk: commands/readdsk.md</li>
-<li>reboot: commands/reboot.md</li>
-<li>rm: commands/rm.md</li>
-<li>setfont: commands/setfont.md</li>
-<li>loader: commands/loader.md</li>
-<li>twilconf: commands/twilconf.md</li>
-<li>strerr: commands/strerr.md</li>
-<li>sh: commands/sh.md</li>
-<li>submit: commands/submit.md</li>
-<li>touch: commands/touch.md</li>
-<li>twil: commands/twil.md</li>
-<li>twiload: commands/twiload.md</li>
-<li>uname: commands/uname.md</li>
-<li>untar: commands/untar.md</li>
-<li>vidplay: commands/vidplay.md</li>
-<li>viewscr: commands/viewscr.md</li>
-<li>viewhrs: commands/viewhrs.md</li>
-<li>zerofx: commands/zerofx.md</li>
+<li>strerr -h|-v|-a</li>
+<li>strerr [-q] start[,end]</li>
+<li>strerr [-a[q]] [start]</li>
 </ul>
+<h2 id="examples">EXAMPLES</h2>
+<ul>
+<li>strerr 1</li>
+<li>strerr 1,4</li>
+<li>strerr ,18</li>
+<li>strerr -a 3</li>
+</ul>
+<h2 id="description">DESCRIPTION</h2>
+<p><strong>strerr</strong> return string describing error number</p>
+<h2 id="options">OPTIONS</h2>
+<ul>
+<li>-h
+   display command syntax</li>
+<li>-v
+   display program version</li>
+<li>-a
+   display all message from start</li>
+<li>-q
+   quiet mode</li>
+<li>start
+   message number (def: 0)</li>
+<li>end
+   last message number (def: 0)</li>
+</ul>
+<h2 id="source">SOURCE</h2>
+<p>https://github.com/orix-software/strerr</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2023-04-19
+      2023-04-25
     
   </small>
 </div>

@@ -39,6 +39,9 @@
 * [reboot](../reboot) Last version : 2023.1
 * [rm](../rm) Last version : 2023.1
 * [setfont](../setfont) Last version : 2023.1
+* [loader](../loader) Last version : 2022.3
+* [twilconf](../twilconf) Last version : 2022.3
+* [strerr](../strerr) Last version : 2022.4
 * [sh](../sh) Last version : 2023.1
 * [submit](../submit) Last version : 2022.2
 * [touch](../touch) Last version : 2023.1

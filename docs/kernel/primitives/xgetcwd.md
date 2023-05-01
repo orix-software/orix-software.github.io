@@ -8,7 +8,7 @@ Return current directory of the process
 
 ## Output
 
-A/Y returns a string
+A andY returns a ptr of the string
 
 ## Example
 
@@ -17,3 +17,9 @@ A/Y returns a string
     BRK_KERNEL XWSTR0
     rts
 ```
+
+## Memory usage
+
+### zeropage
+
+* RESB

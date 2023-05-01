@@ -46,6 +46,6 @@ BRK_TELEMON XFSEEK
 
 !!! warning "XFSEEK is available since kernel v2022.2"
 
-!!! bug  "XFSEEK have bugs for SEEK_CUR in 2022.4.1 (fixed in kernel 2023.1"
+!!! bug  "XFSEEK have bugs for SEEK_CUR in 2022.4.1 (fixed in kernel 2023.1)"
 
 !!! bug  "XFSEEK does not manage SEEK_END"

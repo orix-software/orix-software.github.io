@@ -1,4 +1,4 @@
-# XVARS
+# XVALUES ROUTINE
 
 Get vars from kernel
 
@@ -27,11 +27,11 @@ X=KERNEL_XVALUES_GET_FTELL_FROM_FD
 
 It returns in A, X, Y and RES, the position in the file
 
-## TGet the ptre of the pid list
+## Get the ptr of the pid list
 
-KERNEL_XVALUES_GET_PROCESS_ID_LIST
+KERNEL_XVALUES_GET_PROCESS_ID_LIST=$0C
 
-; A and Y contains the ptre
+; A and Y contains the ptr
 
 ## Get the processname with the PID
 
@@ -63,10 +63,34 @@ A contains the max process
 
 ## Get Os string (Orix)
 
+```ca65
 XVARS_KERNEL_OSNAME = 9
 
 ldx     #XVARS_KERNEL_OSNAME
 BRK_KERNEL XVARS
 ; A and X contains
+```
 
 !!! warning "It will be available in Kenrel v2023.2"
+
+## Get an empty bank
+
+```ca65
+    KERNEL_XVALUES_GET_FREE_BANK = $10
+    ldx     #KERNEL_XVALUES_GET_FREE_BANK
+    ldy     #$00 ; RAM type
+    BRK_TELEMON  $2D ; XVALUES
+    ; Y contains the id of the bank
+    ; X contains set ($343 register)
+    ; A the bank ($321 register)
+    ; If there is no available bank, Y=0
+    rts
+```
+
+!!! warning "It will be available in Kenrel v2023.2"
+
+!!! warning "It can only allocate the first 8 banks"
+
+!!! warning "It does not verify the content of any bank"
+
+!!! warning "The content is reset every reboot"

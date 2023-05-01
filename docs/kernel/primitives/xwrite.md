@@ -18,7 +18,7 @@ A & X contains the written length
 
 ## Example
 
-``` ca65
+```ca65
     lda #<$A000
     sta PTR_READ_DEST
     lda #>$A000
@@ -35,4 +35,3 @@ A & X contains the written length
 !!! tip "See [fwrite](../../../home/orixsdk) macro from orix-sdk to use it easily"
 
 !!! fail "XFWRITE does not manage multiples opened files : except since kernel 2022.2"
-

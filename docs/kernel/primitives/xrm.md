@@ -13,4 +13,3 @@ Remove file in arg
 ## Samples
 
 ### Example
-

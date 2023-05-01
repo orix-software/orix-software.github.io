@@ -14,7 +14,7 @@ Free memory
 
 ### Example
 
-``` ca65
+```ca65
     lda     ptr
     ldy     ptr+1
     BRK_KERNEL XFREE

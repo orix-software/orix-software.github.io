@@ -6,7 +6,7 @@ A et Y contains the ptr of the string
 
 XDECAY returns the value (16 bits) in AY and X contains the length of the decimal number provided in the input
 
-``` ca65
+```ca65
 
 lda		#<mystring
 ldy		#>mystring

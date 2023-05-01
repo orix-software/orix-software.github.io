@@ -81,7 +81,5 @@ str:
     |O_WRONLY           |    Yes      | open and return FD
     |O_RDONLY           |    Yes      | open and return FD
     |O_WRONLY           |    No       | return Null
-    | O_CREAT            |    No       | Create file and open and return FD
-    | O_CREAT            |    Yes      | open and return FD
-
-
+    |O_CREAT            |    No       | Create file and open and return FD
+    |O_CREAT            |    Yes      | open and return FD

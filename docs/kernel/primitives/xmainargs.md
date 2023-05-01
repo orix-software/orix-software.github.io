@@ -29,10 +29,10 @@ Mode 1 :
 
 Mode 0 : parse command line and build argc/argv
 
-``` ca65
+```ca65
 XMAINARGS = $2C
 
-lda		#$00 ; Mode 0
+lda	#$00 ; Mode 0
 brk_kernel XMAINARGS
 
 stx save_argc
@@ -42,7 +42,7 @@ sty save_argv+1
 
 Mode 1 : return command line
 
-``` ca65
+```ca65
 XMAINARGS = $2C
 
 lda		#$01 ; Mode 0
@@ -59,4 +59,3 @@ sty ptr_cmd+1 ; ptr_cmd contains the ptr to the command line. It allocates a str
 !!! warning "Mode 0 is available since v2022.4"
 
 !!! fail "XGETARGV does not handle "" yet and "\ in parameters"
-

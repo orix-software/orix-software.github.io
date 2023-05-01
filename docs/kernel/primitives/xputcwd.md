@@ -23,4 +23,3 @@ str:
     .asciiz "/etc"
 
 ```
-

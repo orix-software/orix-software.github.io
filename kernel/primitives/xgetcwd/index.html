@@ -2435,6 +2435,53 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14_2_2_4" type="checkbox" id="__nav_4_14_2_2_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_14_2_2_4">
+          Process Operations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Process Operations" data-md-level="5">
+        <label class="md-nav__title" for="__nav_4_14_2_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Process Operations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../XGETCWD kernel/primitives/xgetcwd.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2680,6 +2727,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#memory-usage" class="md-nav__link">
+    Memory usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zeropage" class="md-nav__link">
+    zeropage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2699,12 +2766,17 @@
 <p>Return current directory of the process</p>
 <h2 id="input">Input</h2>
 <h2 id="output">Output</h2>
-<p>A/Y returns a string</p>
+<p>A andY returns a ptr of the string</p>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XGETCWD</span><span class="w"></span>
 <span class="w">    </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XWSTR0</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
+<h2 id="memory-usage">Memory usage</h2>
+<h3 id="zeropage">zeropage</h3>
+<ul>
+<li>RESB</li>
+</ul>
 
   <hr>
 <div class="md-source-file">

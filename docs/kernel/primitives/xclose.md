@@ -24,4 +24,3 @@ RESB
 ```
 
 !!! tip "See [fclose](../../../home/orixsdk) macro from orix-sdk to use it "
-

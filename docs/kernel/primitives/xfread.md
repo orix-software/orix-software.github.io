@@ -18,7 +18,7 @@ A & X contains the length read
 
 ### Example
 
-``` ca65
+```ca65
     lda #<$A000
     sta PTR_READ_DEST
     lda #>$A000
@@ -29,10 +29,8 @@ A & X contains the length read
     ldx fp
     BRK_KERNEL XFREAD
     rts
-
 ```
 
 !!! tip "See [fread](../../../home/orixsdk) macro from orix-sdk to use it "
 
 !!! fail "XFREAD does not manage multiples opened files before kernel 2022.4 "
-

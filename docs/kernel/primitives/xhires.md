@@ -6,9 +6,8 @@ Switch to Hires
 
 ### Example
 
-``` ca65
+```ca65
     ldx #$00
     BRK_KERNEL XHIRES
     rts
 ```
-

@@ -16,7 +16,7 @@ Return #ENODEV if the device can't be mount
 
 ## Usage
 
-``` ca65
+```ca65
     lda #<str
     ldy #>str
     ldx #$00
@@ -25,4 +25,3 @@ Return #ENODEV if the device can't be mount
 str:
     .asciiz "myfolder"
 ```
-

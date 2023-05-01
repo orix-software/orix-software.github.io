@@ -2575,8 +2575,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-it-work/binary_starts.md" class="md-nav__link">
-        Boot sequence
+      <a href="binary_starts/" class="md-nav__link">
+        Binary boot sequence
       </a>
     </li>
   
@@ -2830,14 +2830,14 @@
 <p>Build from source code oricutron : <a href="https://github.com/pete-gordon/oricutron">https://github.com/pete-gordon/oricutron</a> or download last windows binaries : https://iss.sandacite.com/iss/oricutron/</p>
 <p>In oricutron.cfg, you have just to set the right parameter to start oric with the board emulated</p>
 <div class="highlight"><pre><span></span><code><span class="n">ch376</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">yes</span><span class="w"></span>
-<span class="n">twilighte_board</span><span class="o">=</span><span class="n">yes</span><span class="w"></span>
+<span class="n">twilighte_board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">yes</span><span class="w"></span>
 </code></pre></div>
 <p>plugins/twilighte_board/twilighte.cfg you can put any rom you want.</p>
 <h2 id="step-2-get-main-rom-kernel-and-shell">Step 2 : get main rom (kernel and shell)</h2>
 <p>Skip this step, if you downloaded "oricutron_twilighte_board_for_projects" arhive</p>
 <h2 id="step-3-start-oricutron">Step 3 : start oricutron</h2>
 <p>Starts oricutron, if everything is OK, Orix starts, if you have missing rom at boot, modify plugins/twilighte_board/twilighte.cfg in order to replace wrong ROM.</p>
-<p>there is 2 folders on oricutron: sdcard and usbdrive, in orix type "/#mount", if usb is shown, then usbdrive/ folder is the main folder.</p>
+<p>there is 2 folders on oricutron: sdcard and usbdrive, in orix type "/#mount", if usb is shown, then "usbdrive/" folder is the main folder.</p>
 <p>Under Linux, all filenames must be uppercases (folder and files), it's mainly because emulation rescpect FAT32 specs in the sdcard/usbdrive chip</p>
 <h2 id="step-4-downloadbuild-cc65">Step 4 : Download/build cc65</h2>
 <p>Build it from cc65. You can build your first program in C with cc65 and telestrat target. It builds an Orix binary. This binary can be put in bin/ folder of the device (for oricutron : usbdrive or sdcard folder)</p>

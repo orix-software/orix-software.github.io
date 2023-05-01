@@ -58,5 +58,5 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 
 ## Kernel values
 
-* [XVALUES](xvalue)
+* [XVALUES](xvalues)
 * [XVARS](xvars)

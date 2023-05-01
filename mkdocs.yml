@@ -184,8 +184,18 @@ nav:
                         - XMALLOC: kernel/primitives/xmalloc.md
                         - XFREE: kernel/primitives/xfree.md
                     - Process Operations:
-                        - XGETCWD kernel/primitives/xgetcwd.md
-            - Boot sequence: how-it-work/binary_starts.md
+                        - XSCROB: kernel/primitives/xscrob.md
+                        - XSCROH: kernel/primitives/xscroh.md
+                    - Keyboard Operations:
+                        - XRDW0: kernel/primitives/xrdw0.md
+                        - XRD0: kernel/primitives/xrd0.md
+                    - Textmode Operations:
+                        - XRDW0: kernel/primitives/xrdw0.md
+                        - XRD0: kernel/primitives/xrd0.md
+                    - Kernel variables Operations:
+                        - XVALUES: kernel/primitives/xvalues.md
+                        - XVARS: kernel/primitives/xvars.md
+            - Binary boot sequence: developer_manual/binary_starts.md
         - Hardware guide :
             - Memory: hardware/memory.md
             - I/O: hardware/i_o.md

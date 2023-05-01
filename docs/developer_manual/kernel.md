@@ -15,4 +15,3 @@ We can pass args to AXY or others memory location and the primitive can be calle
 * Orixsdk (sdk for assembly) : [Orixsdk](../orixsdk/)
 
 * C programming : cc65 (telestrat target)
-

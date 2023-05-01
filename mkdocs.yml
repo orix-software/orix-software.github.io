@@ -180,18 +180,19 @@ nav:
                         - XFREAD: kernel/primitives/xfread.md
                         - XWRITE: kernel/primitives/xwrite.md
                         - XFSEEK: kernel/primitives/xfseek.md
+                        - XRM: kernel/primitives/xrm.md
+                        - XMKDIR: kernel/primitives/xmkdir.md
                     - Memory operations:
                         - XMALLOC: kernel/primitives/xmalloc.md
                         - XFREE: kernel/primitives/xfree.md
                     - Process Operations:
-                        - XSCROB: kernel/primitives/xscrob.md
-                        - XSCROH: kernel/primitives/xscroh.md
+                        - XEXEC: kernel/primitives/xexec.md
                     - Keyboard Operations:
                         - XRDW0: kernel/primitives/xrdw0.md
                         - XRD0: kernel/primitives/xrd0.md
                     - Textmode Operations:
-                        - XRDW0: kernel/primitives/xrdw0.md
-                        - XRD0: kernel/primitives/xrd0.md
+                        - XSCROB: kernel/primitives/xscrob.md
+                        - XSCROH: kernel/primitives/xscroh.md
                     - Kernel variables Operations:
                         - XVALUES: kernel/primitives/xvalues.md
                         - XVARS: kernel/primitives/xvars.md

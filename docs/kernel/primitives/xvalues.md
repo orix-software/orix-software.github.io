@@ -71,23 +71,23 @@ BRK_KERNEL XVARS
 ; A and X contains
 ```
 
-!!! warning "It will be available in Kenrel v2023.2"
+!!! warning "It will be available in Kernel v2023.2"
 
 ## Get an empty bank
 
 ```ca65
-    KERNEL_XVALUES_GET_FREE_BANK = $10
-    ldx     #KERNEL_XVALUES_GET_FREE_BANK
-    ldy     #$00 ; RAM type
-    BRK_TELEMON  $2D ; XVALUES
-    ; Y contains the id of the bank
-    ; X contains set ($343 register)
-    ; A the bank ($321 register)
-    ; If there is no available bank, Y=0
-    rts
+KERNEL_XVALUES_GET_FREE_BANK = $10
+ldx     #KERNEL_XVALUES_GET_FREE_BANK
+ldy     #$00 ; RAM type
+BRK_TELEMON  $2D ; XVALUES
+; Y contains the id of the bank
+; X contains set ($343 register)
+; A the bank ($321 register)
+; If there is no available bank, Y=0
+rts
 ```
 
-!!! warning "It will be available in Kenrel v2023.2"
+!!! warning "It will be available in Kernel v2023.2"
 
 !!! warning "It can only allocate the first 8 banks"
 

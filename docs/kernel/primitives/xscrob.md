@@ -9,4 +9,4 @@ Scroll all lines from the top to the bottom
     rts
 ```
 
-!!! tip "See [scroll](../../../developper_manual/orixsdk_macros/scroll) macro from orix-sdk to use it"
+!!! tip "See [scroll](../../developper_manual/orixsdk_macros/scroll) macro from orix-sdk to use it"

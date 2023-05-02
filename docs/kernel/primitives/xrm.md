@@ -11,3 +11,5 @@ Remove file in arg
 ## Samples
 
 ### Example
+
+!!! tip "See [unlink](../../developper_manual/orixsdk_macros/unlink) macro from orix-sdk to use it"

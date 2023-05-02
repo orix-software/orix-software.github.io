@@ -3005,11 +3005,13 @@
 <span class="w">  </span><span class="c1">; A and Y contains the number max of the process available</span><span class="w"></span>
 </code></pre></div>
 <h2 id="get-the-list-of-the-process">Get the list of the process</h2>
-<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="k">ldx</span><span class="w"> </span><span class="p">#</span><span class="n">KERNEL_XVARS_PID_LIST_PTR</span><span class="w"> </span><span class="c1">; Value = $0A</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">  </span><span class="k">ldx</span><span class="w"> </span><span class="p">#</span><span class="n">KERNEL_XVARS_PID_LIST_PTR</span><span class="w"> </span><span class="c1">; Value = $0A</span><span class="w"></span>
 <span class="w">  </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XVARS</span><span class="w"></span>
 <span class="w">  </span><span class="c1">; A and Y contains the ptr of the list of current pid.</span><span class="w"></span>
 <span class="w">  </span><span class="c1">; If 0 is set, the slot is available and there is no process</span><span class="w"></span>
 <span class="w">  </span><span class="c1">; The end of the list is defined with #KERNEL_XVARS_KERNEL_MAX_PROCESS</span><span class="w"></span>
+<span class="w">  </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
 
   <hr>

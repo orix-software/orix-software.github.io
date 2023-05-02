@@ -29,9 +29,8 @@ A & X contains the written length
     ldx fp
     BRK_KERNEL XFWRITE
     rts
-
 ```
 
-!!! tip "See [fwrite](../../../developper_manual/orixsdk) macro from orix-sdk to use it easily"
+!!! tip "See [fwrite](../../developper_manual/orixsdk_macros/fwrite) macro from orix-sdk to use it easily"
 
 !!! fail "XFWRITE does not manage multiples opened files : except since kernel 2022.2"

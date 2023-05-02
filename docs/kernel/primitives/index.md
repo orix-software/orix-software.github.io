@@ -40,6 +40,7 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 
 ## Text mode
 
+* [XWSTR0](xwstr0) : Display a string
 * [XSCROB](xscrob) : scroll from bottom to top
 * [XSCROH](xscroh) : scroll from top to bottom
 

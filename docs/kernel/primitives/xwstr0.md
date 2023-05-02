@@ -3,9 +3,13 @@
 Displays a string
 
 ```ca65
-    lda     str
-    ldy     str+1
+    .include "telestrat.inc"
+    lda     #<str
+    ldy     #>str
     BRK_KERNEL XWSTR0
+    rts
+str:
+    .asciiz "Hello world"
 ```
 
-!!! tip "See [print](../../../developper_manual/orixsdk) macro from orix-sdk to use it easily "
+!!! tip "See [print](../../developer_manual/orixsdk_macros/print/) macro from orix-sdk to use it easily "

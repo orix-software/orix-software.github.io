@@ -2981,13 +2981,15 @@
 
 
 <h1 id="initmainargs">initmainargs</h1>
-<h3 id="init-struct-of-the-mainargs-from-current-process">Init struct of the mainargs from current process</h3>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">XMAINARGS</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="mh">$2C</span><span class="w"></span>
-<span class="w">    </span><span class="n">XGETARGV</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mh">$2E</span><span class="w"></span>
-<span class="w">    </span><span class="n">argv</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="w">   </span><span class="c1">; 2 bytes</span><span class="w"></span>
-<span class="w">    </span><span class="n">argc</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="o">+</span><span class="mi">2</span><span class="w"> </span><span class="c1">; 1 byte</span><span class="w"></span>
+<h2 id="init-struct-of-the-mainargs-from-current-process">Init struct of the mainargs from current process</h2>
+<div class="highlight"><pre><span></span><code><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="n">XMAINARGS</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="mh">$2C</span><span class="w"></span>
+<span class="n">XGETARGV</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mh">$2E</span><span class="w"></span>
+<span class="n">argv</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="w">   </span><span class="c1">; 2 bytes</span><span class="w"></span>
+<span class="n">argc</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="o">+</span><span class="mi">2</span><span class="w"> </span><span class="c1">; 1 byte</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">initmainargs</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="n">initmainargs</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="k">rts</span><span class="w"></span>
 </code></pre></div>
 
   <hr>

@@ -2,9 +2,6 @@
 
 Get vars from kernel
 
-
-
-
 ## Get Os string (Orix)
 
 XVARS_KERNEL_OSNAME = 9

@@ -2935,24 +2935,16 @@
 
 
 <h1 id="malloc">Malloc</h1>
-<div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">; usage:</span><span class="w"></span>
-<span class="c1">;   malloc size [,ptr] [,oom_msg_ptr] [,fail_value]</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">;   malloc #$0100</span><span class="w"></span>
-<span class="c1">;   malloc (ptr)</span><span class="w"></span>
-<span class="c1">;   malloc value</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">; Note:</span><span class="w"></span>
-<span class="c1">;   - if parameter 'ptr' is present, store resulting AY in ptr &amp;ptr+1</span><span class="w"></span>
-<span class="c1">;   - if parameter 'oom_msg_ptr' is present, emit string pointed by</span><span class="w"></span>
-<span class="c1">;       'oom_msg_ptr' and return if AY is null (ie malloc error)</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">; Call XMALLOC function</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-</code></pre></div>
+<p>usage:
+malloc size [,ptr] [,oom_msg_ptr] [,fail_value]</p>
+<p>malloc #$0100
+malloc (ptr)
+malloc value</p>
+<p>Note:
+    - if parameter 'ptr' is present, store resulting AY in ptr &amp;ptr+1
+    - if parameter 'oom_msg_ptr' is present, emit string pointed by
+        'oom_msg_ptr' and return if AY is null (ie malloc error)</p>
+<p>Call <a href="../..//orixsdk_macros/kernel/primitives/xmalloc/">XMALLOC</a> function</p>
 
   <hr>
 <div class="md-source-file">

@@ -33,11 +33,12 @@ Mode 0 : parse command line and build argc/argv
 XMAINARGS = $2C
 
 lda	#$00 ; Mode 0
-brk_kernel XMAINARGS
+BRK_TELEMON XMAINARGS
 
 stx save_argc
 sta save_argv
 sty save_argv+1
+rts
 ```
 
 Mode 1 : return command line
@@ -46,13 +47,14 @@ Mode 1 : return command line
 XMAINARGS = $2C
 
 lda		#$01 ; Mode 0
-brk_kernel XMAINARGS
+BRK_TELEMON XMAINARGS
 
 sta ptr_cmd
 sty ptr_cmd+1 ; ptr_cmd contains the ptr to the command line. It allocates a string, it needs to be free when the program does not need it anymore
+rts
 ```
 
-!!! tip "See [initmainargs](../../../developper_manual/orixsdk) macro from orix-sdk to use it "
+!!! tip "See [initmainargs](../../developper_manual/orixsdk_macros/initmainargs/) macro from orix-sdk to use it "
 
 !!! warning "XMAINARGS allocates a chunk in memory, it must be free at the end of the use of the parameters"
 

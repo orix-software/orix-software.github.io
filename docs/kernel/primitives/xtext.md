@@ -9,4 +9,3 @@ Switch to text mode
     BRK_KERNEL XTEXT
 	rts
 ```
-

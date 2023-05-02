@@ -6,6 +6,7 @@ Scroll all lines from the top to the bottom
     ldx     #$01 ; First line to scroll
     ldy     #25  ; Last line to scroll
     BRK_KERNEL XSCROB
+    rts
 ```
 
-!!! tip "See [scroll](../../../home/orixsdk_macros/scroll) macro from orix-sdk to use it "
+!!! tip "See [scroll](../../../developper_manual/orixsdk_macros/scroll) macro from orix-sdk to use it"

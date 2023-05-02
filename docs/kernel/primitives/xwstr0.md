@@ -8,4 +8,4 @@ Displays a string
     BRK_KERNEL XWSTR0
 ```
 
-!!! tip "See [print](../../../home/orixsdk) macro from orix-sdk to use it easily "
+!!! tip "See [print](../../../developper_manual/orixsdk) macro from orix-sdk to use it easily "

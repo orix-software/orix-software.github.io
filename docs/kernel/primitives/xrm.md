@@ -6,9 +6,7 @@ Remove file in arg
 
 ## Input
 
-
 ## Output
-
 
 ## Samples
 

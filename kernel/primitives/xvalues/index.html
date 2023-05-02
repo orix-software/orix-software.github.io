@@ -3167,18 +3167,18 @@ X = 08</p>
 <p class="admonition-title">It will be available in Kernel v2023.2</p>
 </div>
 <h2 id="get-an-empty-bank">Get an empty bank</h2>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">KERNEL_XVALUES_GET_FREE_BANK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$10</span><span class="w"></span>
-<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">KERNEL_XVALUES_GET_FREE_BANK</span><span class="w"></span>
-<span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mh">$00</span><span class="w"> </span><span class="c1">; RAM type</span><span class="w"></span>
-<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; Y contains the id of the bank</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; X contains set ($343 register)</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; A the bank ($321 register)</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; If there is no available bank, Y=0</span><span class="w"></span>
-<span class="w">    </span><span class="k">rts</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">KERNEL_XVALUES_GET_FREE_BANK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$10</span><span class="w"></span>
+<span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">KERNEL_XVALUES_GET_FREE_BANK</span><span class="w"></span>
+<span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mh">$00</span><span class="w"> </span><span class="c1">; RAM type</span><span class="w"></span>
+<span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span><span class="w"></span>
+<span class="c1">; Y contains the id of the bank</span><span class="w"></span>
+<span class="c1">; X contains set ($343 register)</span><span class="w"></span>
+<span class="c1">; A the bank ($321 register)</span><span class="w"></span>
+<span class="c1">; If there is no available bank, Y=0</span><span class="w"></span>
+<span class="k">rts</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition warning">
-<p class="admonition-title">It will be available in Kenrel v2023.2</p>
+<p class="admonition-title">It will be available in Kernel v2023.2</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">It can only allocate the first 8 banks</p>

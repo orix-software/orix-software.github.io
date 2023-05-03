@@ -26,4 +26,4 @@ RESB
     rts
 ```
 
-!!! tip "See [fclose](../../../developer_manual/orixsdk_macros/fclose) macro from orix-sdk to use it "
+!!! tip "See [fclose](../../../developer_manual/orixsdk_macros/fclose) macro from orix-sdk to use it"

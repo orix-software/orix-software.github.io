@@ -4,6 +4,7 @@ usage:
 chdir ptr
 
 note:
+
 * ptr may be: (ptr), address
 * Call XPUTCWD function
 

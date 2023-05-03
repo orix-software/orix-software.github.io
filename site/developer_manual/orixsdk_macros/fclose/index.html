@@ -2935,21 +2935,23 @@
 
 
 <h1 id="fclose-macro">FCLOSE macro</h1>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; usage:</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   fclose (fp) [,TELEMON]</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; Call XCLOSE function</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
+<p>usage:
+  fclose (fp)</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"SDK_file.mac"</span><span class="w"> </span><span class="c1">; From orixsdk</span><span class="w"></span>
+
+
+<span class="w">    </span><span class="n">fclose</span><span class="w"> </span><span class="p">(</span><span class="n">ptr</span><span class="p">)</span><span class="w"> </span><span class="c1">; Ptr contains the FD (from fopen macro)</span><span class="w"></span>
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
+<p>Call <a href="../..//orixsdk_macros/kernel/primitives/XCLOSE/">XCLOSE</a> kernel function.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2023-04-18
+      2023-05-04
     
   </small>
 </div>

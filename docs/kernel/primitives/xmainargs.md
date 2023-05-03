@@ -30,28 +30,30 @@ Mode 1 :
 Mode 0 : parse command line and build argc/argv
 
 ```ca65
-XMAINARGS = $2C
+    .include "telestrat.inc"
+    XMAINARGS = $2C
 
-lda	#$00 ; Mode 0
-BRK_TELEMON XMAINARGS
+    lda #$00 ; Mode 0
+    BRK_TELEMON XMAINARGS
 
-stx save_argc
-sta save_argv
-sty save_argv+1
-rts
+    stx save_argc
+    sta save_argv
+    sty save_argv+1
+    rts
 ```
 
 Mode 1 : return command line
 
 ```ca65
-XMAINARGS = $2C
+    .include "telestrat.inc"
+    XMAINARGS = $2C
 
-lda   #$01 ; Mode 0
-BRK_TELEMON XMAINARGS
+    lda   #$01 ; Mode 0
+    BRK_TELEMON XMAINARGS
 
-sta ptr_cmd
-sty ptr_cmd+1 ; ptr_cmd contains the ptr to the command line. It allocates a string, it needs to be free when the program does not need it anymore
-rts
+    sta ptr_cmd
+    sty ptr_cmd+1 ; ptr_cmd contains the ptr to the command line. It allocates a string, it needs to be free when the program does not need it anymore
+    rts
 ```
 
 !!! tip "See [initmainargs](../../developer_manual/orixsdk_macros/initmainargs/) macro from orix-sdk to use it "

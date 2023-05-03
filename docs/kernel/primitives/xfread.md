@@ -19,6 +19,8 @@ A & X contains the length read
 ### Example
 
 ```ca65
+    .include "telestrat.inc"
+
     lda #<$A000
     sta PTR_READ_DEST
     lda #>$A000
@@ -31,6 +33,6 @@ A & X contains the length read
     rts
 ```
 
-!!! tip "See [fread](../../../developper_manual/orixsdk) macro from orix-sdk to use it "
+!!! tip "See [fread](../../../developer_manual/orixsdk/fread) macro from orix-sdk to use it"
 
 !!! fail "XFREAD does not manage multiples opened files before kernel 2022.4 "

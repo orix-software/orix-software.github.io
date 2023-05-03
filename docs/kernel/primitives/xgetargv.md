@@ -29,7 +29,8 @@ A & Y contains argv ptr from xmainargs struct. It returns a copy of the command 
 
 ## Example
 
-``` ca65
+```ca65
+    .include "telestrat.inc"
     XMAINARGS = $2C
     XGETARGV = $2E
     BRK_KERNEL XMAINARGS
@@ -43,4 +44,5 @@ A & Y contains argv ptr from xmainargs struct. It returns a copy of the command 
     BRK_KERNEL XGETARGV
 
     ; A & Y contains ptr
+    rts
 ```

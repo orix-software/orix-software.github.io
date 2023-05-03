@@ -24,3 +24,5 @@ A andY returns a ptr of the string
 ### zeropage
 
 * RESB
+
+!!! tip "See [getcwd](../../../developer_manual/orixsdk/getcwd) macro from orix-sdk to use it"

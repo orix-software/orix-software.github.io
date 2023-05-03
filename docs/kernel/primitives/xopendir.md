@@ -16,6 +16,7 @@ A : fd
 
 ```ca65
     .include "telestrat.inc"
+
     ldx     #$00 ; XOPENDIR  Mode
     lda     #<opendir
     ldy     #>opendir

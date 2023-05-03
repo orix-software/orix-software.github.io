@@ -2917,22 +2917,18 @@
 
 
 <h1 id="getcwd">getcwd</h1>
-<div class="highlight"><pre><span></span><code>;----------------------------------------------------------------------
-;
-; usage:
-;   getcwd ptr [,TELEMON]
-;
-; note:
-;   ptr may be: ptr, address
-;
-; Call XGETCWD function
-;----------------------------------------------------------------------
-.macro getcwd ptr, option
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">pwd</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="w"> </span><span class="c1">; 2 byte</span><span class="w"></span>
+<p>usage:
+getcwd ptr</p>
+<p>note:
+ptr may be: ptr, address</p>
+<p>Call XGETCWD function</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"SDK_dir.mac"</span><span class="w"></span>
+<span class="w">    </span><span class="n">pwd</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="w"> </span><span class="c1">; 2 byte</span><span class="w"></span>
 
 <span class="w">    </span><span class="n">getcwd</span><span class="w"> </span><span class="n">pwd</span><span class="w"></span>
 </code></pre></div>
+<p>Call <a href="../..//orixsdk_macros/kernel/primitives/XGETCWD/">XGETCWD</a> kernel function.</p>
 
   <hr>
 <div class="md-source-file">

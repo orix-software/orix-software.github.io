@@ -31,16 +31,18 @@ Seek into file
 ; [IN] RESB position 0 to 31
 ; [IN] RES fd
 
+    .include "telestrat.inc"
 
-ldy   #$10
-lda   #$00
-tax
-sta   RESB
-sta   RESB+1
+    ldy   #$10
+    lda   #$00
+    tax
+    sta   RESB
+    sta   RESB+1
 
-lda   fp
-ldx   #SEEK_CUR
-BRK_TELEMON XFSEEK
+    lda   fp
+    ldx   #SEEK_CUR
+    BRK_TELEMON XFSEEK
+    rts
 
 ```
 

@@ -11,4 +11,4 @@ Switch to text mode
     rts
 ```
 
-!!! tip "See [setscreen](../../developper_manual/orixsdk_macros/setscreen) macro from orix-sdk to use it"
+!!! tip "See [setscreen](../../developer_manual/orixsdk_macros/setscreen) macro from orix-sdk to use it"

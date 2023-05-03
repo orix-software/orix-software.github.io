@@ -21,7 +21,9 @@ Returns an error if the binary is not found
 
 ## Example
 
-``` ca65
+```ca65
+    .include "telestrat.inc"
+
     lda #<str
     ldy #>str
     ldx #$00 ; Fork

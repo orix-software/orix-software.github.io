@@ -13,4 +13,4 @@ usage:
     rts
 ```
 
-Call [XCLOSE](../..//orixsdk_macros/kernel/primitives/XCLOSE/) kernel function.
+Call [XCLOSE](../../kernel/primitives/XCLOSE/) kernel function.

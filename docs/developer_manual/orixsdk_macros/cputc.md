@@ -14,4 +14,4 @@ Alias for: [print](print) #'c'
 	cputc char
 ```
 
-Call [XWR0](../..//orixsdk_macros/kernel/primitives/XWR0/) kernel function.
+Call [XWR0](../../kernel/primitives/XWR0/) kernel function.

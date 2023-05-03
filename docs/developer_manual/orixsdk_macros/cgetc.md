@@ -11,4 +11,4 @@ note:
 
 File : SDK_conio.mac
 
-Call [XWR0](../..//orixsdk_macros/kernel/primitives/XWR0/) kernel function.
+Call [XWR0](../../kernel/primitives/XWR0/) kernel function.

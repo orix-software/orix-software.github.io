@@ -18,4 +18,4 @@ myfolder:
     .asciiz "home"
 ```
 
-Call [XPUTCWD](../..//orixsdk_macros/kernel/primitives/XPUTCWD/) kernel function.
+Call [XPUTCWD](../../kernel/primitives/XPUTCWD/) kernel function.

@@ -2,6 +2,7 @@
 
 ```ca65
     .include "telestrat.inc"
+
     unlink myfile
     rts
 myfile:

@@ -17,4 +17,4 @@ Call XGETCWD function
     getcwd pwd
 ```
 
-Call [XGETCWD](../..//orixsdk_macros/kernel/primitives/XGETCWD/) kernel function.
+Call [XGETCWD](../../kernel/primitives/XGETCWD/) kernel function.

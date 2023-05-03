@@ -13,4 +13,4 @@ Note:
     - if parameter 'oom_msg_ptr' is present, emit string pointed by
         'oom_msg_ptr' and return if AY is null (ie malloc error)
 
-Call [XMALLOC](../..//orixsdk_macros/kernel/primitives/xmalloc/) function
+Call [XMALLOC](../../kernel/primitives/xmalloc/) function

@@ -9,5 +9,3 @@ size may be: (ptr), address
 fp may be  : address, #value, {address,y}
 
 Call XFWRITE function
-
-

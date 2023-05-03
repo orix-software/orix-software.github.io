@@ -10,4 +10,4 @@ usage:
     rts
 ```
 
-Call [XFREE](../..//orixsdk_macros/kernel/primitives/xfree/) function.
+Call [XFREE](../../kernel/primitives/xfree/) function.

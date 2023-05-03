@@ -6,4 +6,4 @@ Return to the next line
 crlf
 ```
 
-Call [XCRLF](../..//orixsdk_macros/kernel/primitives/XCRLF/) kernel function.
+Call [XCRLF](../../../kernel/primitives/XCRLF/) kernel function.

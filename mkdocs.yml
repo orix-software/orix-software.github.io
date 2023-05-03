@@ -46,9 +46,12 @@ theme:
         - content.tabs.link
 
 nav:
-    - Home: index.md
-    - Getting started: menu.md
-    - User guide:
+    - Home:
+        - definitions: index.md
+    - Getting started:
+        - Users manuals: user_manual/overview.md
+        - Developpers manuals: developer_manual/index.md
+    - Users manuals:
         - Overview: user_manual/overview.md
         - Commands:
             - All commands: commands/all.md
@@ -121,7 +124,7 @@ nav:
             - 2022.3: update/2022_3.md
             - commands:
                 - File: update/file/file.md
-    - Developper guide:
+    - Developpers manuals:
         - Install: developer_manual/index.md
         - Development guidelines: developer_manual/guidelines.md
         - Memory management : developer_manual/memory.md
@@ -193,6 +196,9 @@ nav:
                     - Textmode Operations:
                         - XSCROB: kernel/primitives/xscrob.md
                         - XSCROH: kernel/primitives/xscroh.md
+                        - XCRLF: kernel/primitives/xcrlf.md
+                        - XWR0: kernel/primitives/xwr0.md
+                        - XWSTR0: kernel/primitives/xwstr0.md
                     - Kernel variables Operations:
                         - XVALUES: kernel/primitives/xvalues.md
                         - XVARS: kernel/primitives/xvars.md

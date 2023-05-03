@@ -4,25 +4,21 @@
 
 A & X returns length in 16 bits
 
+usage:
+fread ptr, size, count, fp
 
-```ca65
-    ;----------------------------------------------------------------------
-	;
-	; usage:
-	;	fread ptr, size, count, fp
-	;
-	; note:
-	;	ptr may be : (ptr), address
-	;	size may be: (ptr), address
-	;	fp may be  : address, #value, {address,y}
-	;
-	; Call XFREAD function
-	;----------------------------------------------------------------------
-```
+note:
+ptr may be : (ptr), address
+size may be: (ptr), address
+fp may be  : address, #value, {address,y}
+
+Call XFREAD function
 
 Example :
 
 ```ca65
+    .include "telestrat.inc"
+
     fopen (MAN_SAVE_MALLOC_PTR), O_RDONLY
     cpx     #$FF
     bne     next
@@ -38,4 +34,5 @@ next:
     stx     MAN_FP+1
     fread (myptr), 1080, 1, MAN_FP ; myptr is from a malloc for example
     fclose(MAN_FP)
+    rts
 ```

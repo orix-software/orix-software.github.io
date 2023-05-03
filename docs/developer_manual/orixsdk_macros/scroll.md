@@ -4,7 +4,7 @@ scroll [Direction],firstline, last_line_to_scroll
 
 ## General case
 
-``` ca65
+```ca65
 scroll up, 0, 26 ; Scroll all lines from bottom to the first line : it erases the first line with the second and so open
 
 scroll down, 0, 26

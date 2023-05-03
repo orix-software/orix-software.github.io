@@ -1,6 +1,6 @@
-# FOPEN
+# FOPEN macros
 
-```ca65
+
 
 usage:
 fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]

@@ -5,8 +5,9 @@ concat 2 strings. Strings must be terminated by 0
 
 strncat src, dest, n
 
-
 ```ca65
+    .include "telestrat.inc"
+
     lda     #<file_path
     sta     ptr2
     lda     #>file_path
@@ -21,6 +22,7 @@ strncat src, dest, n
 
 
     strncat RESB, ptr1 , #13
+    rts
 ```
 
 !!! warning "dest ptr will be changed by strncat. dest pointer must be saved"

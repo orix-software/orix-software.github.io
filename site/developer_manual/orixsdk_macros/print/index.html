@@ -2936,26 +2936,22 @@
 
 <h1 id="print-macro">Print macro</h1>
 <p>print string in text mode</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; usage:</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   print #byte [,TELEMON|SAVE]</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   print (pointer) [,TELEMON|SAVE]</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   print address [,TELEMON|SAVE]</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; Option:</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   - TELEMON: when used within TELEMON bank</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   - NOSAVE : does not preserve A,X,Y registers</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; Call XWSTR0 function</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
+<p>usage:
+    print #byte [,TELEMON|SAVE]
+    print (pointer) [,TELEMON|SAVE]
+    print address [,TELEMON|SAVE]</p>
+<div class="highlight"><pre><span></span><code>Option:
 </code></pre></div>
+<ul>
+<li>TELEMON: when used within TELEMON bank</li>
+<li>NOSAVE : does not preserve A,X,Y registers</li>
+</ul>
+<p>Call XWSTR0 function</p>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="n">print</span><span class="w"> </span><span class="n">helloworld_str</span><span class="w"></span>
 <span class="w">  </span><span class="n">crlf</span><span class="w"> </span><span class="c1">; Return line</span><span class="w"></span>
 <span class="w">  </span><span class="k">rts</span><span class="w"></span>
 <span class="nl">helloworld_str:</span><span class="w"></span>
-<span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"Hello world!"</span><span class="w"></span>
+<span class="w">  </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"Hello world!"</span><span class="w"></span>
 </code></pre></div>
 
   <hr>

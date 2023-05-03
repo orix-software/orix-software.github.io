@@ -17,6 +17,8 @@ A&Y : ptr
 ## Usage
 
 ``` ca65
+    .include "telestrat.inc"
+
     lda #<4000
     ldy #>4000
 

@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fopen" class="md-skip">
+        <a href="#fopen-macros" class="md-skip">
           Skip to content
         </a>
       
@@ -2934,18 +2934,16 @@
                 
 
 
-<h1 id="fopen">FOPEN</h1>
-<div class="highlight"><pre><span></span><code><span class="nl">usage:</span><span class="w"></span>
-<span class="n">fopen</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="p">[,</span><span class="n">TELEMON</span><span class="p">]</span><span class="w"> </span><span class="p">[,</span><span class="n">ptr</span><span class="p">]</span><span class="w"> </span><span class="p">[,</span><span class="n">oom_msg_ptr</span><span class="p">]</span><span class="w"> </span><span class="p">[,</span><span class="n">fail_value</span><span class="p">]</span><span class="w"></span>
-
-<span class="o">-</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="n">may</span><span class="w"> </span><span class="nl">be:</span><span class="w"> </span><span class="p">(</span><span class="n">ptr</span><span class="p">),</span><span class="w"> </span><span class="n">address</span><span class="w"></span>
-<span class="o">-</span><span class="w"> </span><span class="n">if</span><span class="w"> </span><span class="n">parameter</span><span class="w"> </span><span class="sc">'ptr'</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">present</span><span class="p">,</span><span class="w"> </span><span class="n">store</span><span class="w"> </span><span class="n">resulting</span><span class="w"> </span><span class="n">AX</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">ptr</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ptr</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
-<span class="o">-</span><span class="w"> </span><span class="n">if</span><span class="w"> </span><span class="n">parameter</span><span class="w"> </span><span class="sc">'oom_msg_ptr'</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">present</span><span class="p">,</span><span class="w"> </span><span class="n">emit</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">pointed</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="sc">'oom_msg_ptr'</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">return</span><span class="w"> </span><span class="n">if</span><span class="w"> </span><span class="n">AX</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="mh">$FFFF</span><span class="w"> </span><span class="p">(</span><span class="n">ie</span><span class="w"> </span><span class="n">XOPEN</span><span class="w"> </span><span class="n">error</span><span class="p">)</span><span class="w"></span>
-
-<span class="n">ex</span><span class="w"> </span><span class="p">:</span><span class="w"></span>
-
-<span class="err">```</span><span class="n">ca65</span><span class="w"></span>
-<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w">          </span><span class="c1">; from cc65</span><span class="w"></span>
+<h1 id="fopen-macros">FOPEN macros</h1>
+<p>usage:
+fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]</p>
+<ul>
+<li>file may be: (ptr), address</li>
+<li>if parameter 'ptr' is present, store resulting AX in ptr &amp; ptr+1</li>
+<li>if parameter 'oom_msg_ptr' is present, emit string pointed by 'oom_msg_ptr' and return if AX is $FFFF (ie XOPEN error)</li>
+</ul>
+<p>ex :</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w">          </span><span class="c1">; from cc65</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"fcntl.inc"</span><span class="w">              </span><span class="c1">; from cc65</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../dependencies/orix-sdk/macros/SDK_file.mac"</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../dependencies/orix-sdk/macros/SDK_print.mac"</span><span class="w"></span>

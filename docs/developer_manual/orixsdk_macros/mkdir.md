@@ -1,22 +1,18 @@
-
 # MKDIR macro
 
-```ca65
-	;----------------------------------------------------------------------
-	;
-	; usage:
-	;	mkdir ptr [,TELEMON]
-	;
-	; note:
-	;	ptr may be: (ptr), address
-	;
-	; Call XMKDIR function
-	;----------------------------------------------------------------------
-```
+usage:
+ mkdir ptr
+
+note:
+ ptr may be: (ptr), address
+
+Call XMKDIR function
 
 ```ca65
+    .include "telestrat.inc"
+
     mkdir myfolder
-	rts
+    rts
 myfolder:
-	.asciiz "here"
+    .asciiz "here"
 ```

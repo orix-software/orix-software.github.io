@@ -2937,7 +2937,9 @@
 <h1 id="strncat">strncat</h1>
 <p>concat 2 strings. Strings must be terminated by 0</p>
 <p>strncat src, dest, n</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&lt;</span><span class="n">file_path</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&lt;</span><span class="n">file_path</span><span class="w"></span>
 <span class="w">    </span><span class="k">sta</span><span class="w">     </span><span class="n">ptr2</span><span class="w"></span>
 <span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&gt;</span><span class="n">file_path</span><span class="w"></span>
 <span class="w">    </span><span class="k">sta</span><span class="w">     </span><span class="n">ptr2</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
@@ -2951,6 +2953,7 @@
 
 
 <span class="w">    </span><span class="n">strncat</span><span class="w"> </span><span class="n">RESB</span><span class="p">,</span><span class="w"> </span><span class="n">ptr1</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="p">#</span><span class="mi">13</span><span class="w"></span>
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">dest ptr will be changed by strncat. dest pointer must be saved</p>

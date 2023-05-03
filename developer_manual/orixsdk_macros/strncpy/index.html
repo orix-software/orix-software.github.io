@@ -2935,21 +2935,20 @@
 
 
 <h1 id="strncpy">strncpy</h1>
-<div class="highlight"><pre><span></span><code><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-<span class="c1">; strncpy src, dest, n</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">; Sortie:</span><span class="w"></span>
-<span class="c1">;        A: 0 et Z=1 si copie effectuée, inchangé si non</span><span class="w"></span>
-<span class="c1">;        X: 0</span><span class="w"></span>
-<span class="c1">;        Y: Longueur réellement copiée</span><span class="w"></span>
-<span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&lt;</span><span class="n">file_path</span><span class="w"></span>
+<p>strncpy src, dest, n</p>
+<p>A: 0 et Z=1 si copie effectuée, inchangé si non
+X: 0
+Y: Longueur réellement copiée</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&lt;</span><span class="n">file_path</span><span class="w"></span>
 <span class="w">    </span><span class="k">sta</span><span class="w">     </span><span class="n">ptr2</span><span class="w"></span>
 <span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&gt;</span><span class="n">file_path</span><span class="w"></span>
 <span class="w">    </span><span class="k">sta</span><span class="w">     </span><span class="n">ptr2</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">strncpy</span><span class="w"> </span><span class="n">ptr2</span><span class="p">,</span><span class="w"> </span><span class="n">ptr1</span><span class="p">,</span><span class="w"> </span><span class="p">#</span><span class="mi">20</span><span class="w"> </span><span class="c1">;Limit 20 bytes (immediate mode) strncpy(src, dest, n)</span><span class="w"></span>
+<span class="w">    </span><span class="c1">;Limit 20 bytes (immediate mode) strncpy(src, dest, n)</span><span class="w"></span>
+<span class="w">    </span><span class="n">strncpy</span><span class="w"> </span><span class="n">ptr2</span><span class="p">,</span><span class="w"> </span><span class="n">ptr1</span><span class="p">,</span><span class="w"> </span><span class="p">#</span><span class="mi">20</span><span class="w"></span>
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
 
   <hr>

@@ -2935,18 +2935,14 @@
 
 
 <h1 id="mkdir-macro">MKDIR macro</h1>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; usage:</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   mkdir ptr [,TELEMON]</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; note:</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   ptr may be: (ptr), address</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; Call XMKDIR function</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">mkdir</span><span class="w"> </span><span class="n">myfolder</span><span class="w"></span>
+<p>usage:
+ mkdir ptr [,TELEMON]</p>
+<p>note:
+ ptr may be: (ptr), address</p>
+<p>Call XMKDIR function</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">mkdir</span><span class="w"> </span><span class="n">myfolder</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 <span class="nl">myfolder:</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"here"</span><span class="w"></span>

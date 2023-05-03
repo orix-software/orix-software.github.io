@@ -4,7 +4,9 @@ usage:
     mfree (ptr)
 
 ```ca65
-    mfree (mymalloc) ; mymalloc is a 2 bytes zp ptr
+    .include "telestrat.inc"
+    ; mymalloc is a 2 bytes zp ptr
+    mfree (mymalloc)
     rts
 ```
 

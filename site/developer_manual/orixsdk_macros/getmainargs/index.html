@@ -2935,8 +2935,12 @@
 
 
 <h1 id="getmainargs">Getmainargs</h1>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">XMAINARGS</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="mh">$2C</span><span class="w"></span>
+<p>Get main args : get arg value</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">XMAINARGS</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="mh">$2C</span><span class="w"></span>
 <span class="w">    </span><span class="n">XGETARGV</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mh">$2E</span><span class="w"></span>
+
 <span class="w">    </span><span class="n">argv</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="w">   </span><span class="c1">; 2 bytes</span><span class="w"></span>
 <span class="w">    </span><span class="n">argc</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="o">+</span><span class="mi">2</span><span class="w"> </span><span class="c1">; 1 byte</span><span class="w"></span>
 
@@ -2950,6 +2954,7 @@
 <span class="w">    </span><span class="k">sty</span><span class="w">     </span><span class="n">argv</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
 
 <span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="n">XWSTR0</span><span class="w"> </span><span class="c1">; Displays the arg 1 from the command line</span><span class="w"></span>
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
 <p>Result (argbin) is binary in assembly with a parameter "foo"</p>
 <div class="highlight"><pre><span></span><code>/#argbin foo
@@ -2961,7 +2966,7 @@ foo
   <small>
     
       Last update:
-      2023-04-18
+      2023-05-04
     
   </small>
 </div>

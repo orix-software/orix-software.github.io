@@ -17,6 +17,7 @@ Return #ENODEV if the device can't be mount
 ## Usage
 
 ```ca65
+    .include "telestrat.inc"
     lda #<str
     ldy #>str
     ldx #$00
@@ -25,3 +26,5 @@ Return #ENODEV if the device can't be mount
 str:
     .asciiz "myfolder"
 ```
+
+!!! tip "See [mkdir](../../../developer_manual/orixsdk/mkdir) macro from orix-sdk to use it"

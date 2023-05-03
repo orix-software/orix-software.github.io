@@ -46,7 +46,7 @@ Mode 1 : return command line
 ```ca65
 XMAINARGS = $2C
 
-lda		#$01 ; Mode 0
+lda   #$01 ; Mode 0
 BRK_TELEMON XMAINARGS
 
 sta ptr_cmd
@@ -54,7 +54,7 @@ sty ptr_cmd+1 ; ptr_cmd contains the ptr to the command line. It allocates a str
 rts
 ```
 
-!!! tip "See [initmainargs](../../developper_manual/orixsdk_macros/initmainargs/) macro from orix-sdk to use it "
+!!! tip "See [initmainargs](../../developer_manual/orixsdk_macros/initmainargs/) macro from orix-sdk to use it "
 
 !!! warning "XMAINARGS allocates a chunk in memory, it must be free at the end of the use of the parameters"
 

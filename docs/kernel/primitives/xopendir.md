@@ -15,6 +15,7 @@ A : fd
 ## Example 1 : Openfolder /bin
 
 ```ca65
+    .include "telestrat.inc"
     ldx     #$00 ; XOPENDIR  Mode
     lda     #<opendir
     ldy     #>opendir
@@ -26,7 +27,7 @@ A : fd
 
     print str_error
 
-	rts
+    rts
 @ok:
     ; Save ptr
     rts

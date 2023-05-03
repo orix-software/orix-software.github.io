@@ -7,11 +7,10 @@ It returns max : 100 entry (READDIR_MAX_LINE = 100 values in kernel)
 ## Example
 
 ```ca65
+    .include "telestrat.inc"
     ldx     #$01               ; XREADDIR MODE  Mode
-
     BRK_TELEMON $2F
-
-	rts
+    rts
 @ok:
     ; Save ptr
     rts

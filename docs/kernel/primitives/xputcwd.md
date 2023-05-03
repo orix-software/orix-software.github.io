@@ -14,12 +14,14 @@ N/A
 
 ## Example
 
-``` ca65
-	lda        #<str
-	ldy        #>str
+```ca65
+    .include "telestrat.inc"
+    lda        #<str
+    ldy        #>str
     BRK_KERNEL XPUTCWD
     rts
 str:
     .asciiz "/etc"
-
 ```
+
+!!! tip "See [chdir](../../developer_manual/orixsdk_macros/chdir) macro from orix-sdk to use it"

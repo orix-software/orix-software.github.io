@@ -2935,10 +2935,9 @@
 <p>Read current folder and returns all entry in AY.</p>
 <p>It returns max : 100 entry (READDIR_MAX_LINE = 100 values in kernel)</p>
 <h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="mh">$01</span><span class="w">               </span><span class="c1">; XREADDIR MODE  Mode</span><span class="w"></span>
-
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="mh">$01</span><span class="w">               </span><span class="c1">; XREADDIR MODE  Mode</span><span class="w"></span>
 <span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="mh">$2F</span><span class="w"></span>
-
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 <span class="nl">@ok:</span><span class="w"></span>
 <span class="w">    </span><span class="c1">; Save ptr</span><span class="w"></span>

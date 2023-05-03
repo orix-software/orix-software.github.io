@@ -2935,22 +2935,20 @@
 
 
 <h1 id="chdir-macro">CHDIR macro</h1>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; usage:</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   chdir ptr [,TELEMON]</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; note:</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;   ptr may be: (ptr), address</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;</span><span class="w"></span>
-<span class="w">    </span><span class="c1">; Call XPUTCWD function</span><span class="w"></span>
-<span class="w">    </span><span class="c1">;----------------------------------------------------------------------</span><span class="w"></span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">chdir</span><span class="w"> </span><span class="n">myfolder</span><span class="w"></span>
+<p>usage:
+chdir ptr</p>
+<p>note:
+* ptr may be: (ptr), address
+* Call XPUTCWD function</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"SDK_dir.mac"</span><span class="w"> </span><span class="c1">; From orixsdk</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">chdir</span><span class="w"> </span><span class="n">myfolder</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 <span class="nl">myfolder:</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"home"</span><span class="w"></span>
 </code></pre></div>
+<p>Call <a href="../..//orixsdk_macros/kernel/primitives/XPUTCWD/">XPUTCWD</a> kernel function.</p>
 
   <hr>
 <div class="md-source-file">

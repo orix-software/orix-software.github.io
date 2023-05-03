@@ -2940,7 +2940,8 @@
 
 <h1 id="xscrob-scroll-down">XSCROB (Scroll down)</h1>
 <p>Scroll all lines from the top to the bottom</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="mh">$01</span><span class="w"> </span><span class="c1">; First line to scroll</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="mh">$01</span><span class="w"> </span><span class="c1">; First line to scroll</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mi">25</span><span class="w">  </span><span class="c1">; Last line to scroll</span><span class="w"></span>
 <span class="w">    </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XSCROB</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
@@ -2954,7 +2955,7 @@
   <small>
     
       Last update:
-      2023-05-02
+      2023-05-03
     
   </small>
 </div>

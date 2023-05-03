@@ -3,6 +3,7 @@
 Check if a key is pressed
 
 ``` ca65
+  .include "telestrat.inc"
   BRK_KERNEL XRD0 ; primitive exits even if no key had been pressed
   bcs   @no_key_pressed
   ; When a key is pressed, A contains the ascii of the value

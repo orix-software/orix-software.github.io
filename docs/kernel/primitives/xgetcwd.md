@@ -13,6 +13,7 @@ A andY returns a ptr of the string
 ## Example
 
 ``` ca65
+    .include "telestrat.inc"
     BRK_KERNEL XGETCWD
     BRK_KERNEL XWSTR0
     rts

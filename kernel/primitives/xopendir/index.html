@@ -2960,7 +2960,8 @@
 <h2 id="output">Output</h2>
 <p>A : fd</p>
 <h2 id="example-1-openfolder-bin">Example 1 : Openfolder /bin</h2>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="mh">$00</span><span class="w"> </span><span class="c1">; XOPENDIR  Mode</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="mh">$00</span><span class="w"> </span><span class="c1">; XOPENDIR  Mode</span><span class="w"></span>
 <span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&lt;</span><span class="n">opendir</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="o">&gt;</span><span class="n">opendir</span><span class="w"></span>
 <span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="mh">$2F</span><span class="w"></span>

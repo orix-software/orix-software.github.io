@@ -3066,16 +3066,18 @@
 <span class="c1">; [IN] RESB position 0 to 31</span><span class="w"></span>
 <span class="c1">; [IN] RES fd</span><span class="w"></span>
 
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 
-<span class="k">ldy</span><span class="w">   </span><span class="p">#</span><span class="mh">$10</span><span class="w"></span>
-<span class="k">lda</span><span class="w">   </span><span class="p">#</span><span class="mh">$00</span><span class="w"></span>
-<span class="k">tax</span><span class="w"></span>
-<span class="k">sta</span><span class="w">   </span><span class="n">RESB</span><span class="w"></span>
-<span class="k">sta</span><span class="w">   </span><span class="n">RESB</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
+<span class="w">    </span><span class="k">ldy</span><span class="w">   </span><span class="p">#</span><span class="mh">$10</span><span class="w"></span>
+<span class="w">    </span><span class="k">lda</span><span class="w">   </span><span class="p">#</span><span class="mh">$00</span><span class="w"></span>
+<span class="w">    </span><span class="k">tax</span><span class="w"></span>
+<span class="w">    </span><span class="k">sta</span><span class="w">   </span><span class="n">RESB</span><span class="w"></span>
+<span class="w">    </span><span class="k">sta</span><span class="w">   </span><span class="n">RESB</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
 
-<span class="k">lda</span><span class="w">   </span><span class="n">fp</span><span class="w"></span>
-<span class="k">ldx</span><span class="w">   </span><span class="p">#</span><span class="n">SEEK_CUR</span><span class="w"></span>
-<span class="n">BRK_TELEMON</span><span class="w"> </span><span class="n">XFSEEK</span><span class="w"></span>
+<span class="w">    </span><span class="k">lda</span><span class="w">   </span><span class="n">fp</span><span class="w"></span>
+<span class="w">    </span><span class="k">ldx</span><span class="w">   </span><span class="p">#</span><span class="n">SEEK_CUR</span><span class="w"></span>
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="n">XFSEEK</span><span class="w"></span>
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">XFSEEK is available since kernel v2022.2</p>
@@ -3092,7 +3094,7 @@
   <small>
     
       Last update:
-      2023-05-02
+      2023-05-03
     
   </small>
 </div>

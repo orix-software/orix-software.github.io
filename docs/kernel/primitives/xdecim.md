@@ -3,6 +3,9 @@
 Displays an integer into the the screen
 
 ```ca65
+
+    .include "telestrat.inc"
+
     ldy     #$00
     ldx     #$20 ;
     stx     DEFAFF

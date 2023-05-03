@@ -2918,7 +2918,9 @@
 
 <h1 id="xdecim">XDECIM</h1>
 <p>Displays an integer into the the screen</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mh">$00</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mh">$00</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="mh">$20</span><span class="w"> </span><span class="c1">;</span><span class="w"></span>
 <span class="w">    </span><span class="k">stx</span><span class="w">     </span><span class="n">DEFAFF</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="mh">$00</span><span class="w"></span>

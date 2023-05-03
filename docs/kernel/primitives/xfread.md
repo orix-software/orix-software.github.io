@@ -33,6 +33,6 @@ A & X contains the length read
     rts
 ```
 
-!!! tip "See [fread](../../../developer_manual/orixsdk/fread) macro from orix-sdk to use it"
+!!! tip "See [fread](../../../developer_manual/orixsdk_macros/fread) macro from orix-sdk to use it"
 
 !!! fail "XFREAD does not manage multiples opened files before kernel 2022.4 "

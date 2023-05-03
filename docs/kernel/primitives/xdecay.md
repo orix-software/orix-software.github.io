@@ -8,15 +8,16 @@ XDECAY returns the value (16 bits) in AY and X contains the length of the decima
 
 ```ca65
 
-lda		#<mystring
-ldy		#>mystring
-BRK_KERNEL XDECAY
+  .include "telestrat.inc"
 
-; A and Y contains the 16 bits value
-; X contains the length of chars in mystring
-rts
+  lda #<mystring
+  ldy #>mystring
+  BRK_KERNEL XDECAY
 
-mystring:
-  .asciiz "125"
+  ; A and Y contains the 16 bits value
+  ; X contains the length of chars in mystring
+  rts
 
+  mystring:
+    .asciiz "125"
 ```

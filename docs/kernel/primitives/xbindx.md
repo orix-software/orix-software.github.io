@@ -18,18 +18,20 @@ A, TR4, TR5
 
 ## Example 1 : Displays value AY (16 bits number) in $bb80 text mode
 
-``` ca65
-	lda        #<$bb80
-	sta        TR5
-	lda        #>$bb80
-	sta        TR5+1
+```ca65
+    .include "telestrat.inc"
 
-	lda        #$20
-	sta        DEFAFF
+    lda        #<$bb80
+    sta        TR5
+    lda        #>$bb80
+    sta        TR5+1
 
-	ldx		   #$01
-	ldy        #$00
-	lda        #$10
+    lda        #$20
+    sta        DEFAFF
+
+    ldx        #$01
+    ldy        #$00
+    lda        #$10
     BRK_KERNEL XBINDX
-	rts
+    rts
 ```

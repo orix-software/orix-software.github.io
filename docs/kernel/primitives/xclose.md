@@ -19,8 +19,11 @@ RESB
 ### Example
 
 ``` ca65
-    lda     #MYFD
+    .include "telestrat.inc"
+
+    lda     MYFD ; MYFD contains the value of the fd (returns of fopen)
     BRK_KERNEL XCLOSE
+    rts
 ```
 
-!!! tip "See [fclose](../../../home/orixsdk) macro from orix-sdk to use it "
+!!! tip "See [fclose](../../../developer_manual/orixsdk_macros/fclose) macro from orix-sdk to use it "

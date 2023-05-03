@@ -3055,7 +3055,9 @@
 <li>VEXBNK, BUFEDT, BNKOLD, KERNEL_TMP_XEXEC, BNK_TO_SWITCH, KERNEL_KERNEL_XEXEC_BNKOLD</li>
 </ul>
 <h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">lda</span><span class="w"> </span><span class="p">#</span><span class="o">&lt;</span><span class="n">str</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">lda</span><span class="w"> </span><span class="p">#</span><span class="o">&lt;</span><span class="n">str</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldy</span><span class="w"> </span><span class="p">#</span><span class="o">&gt;</span><span class="n">str</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldx</span><span class="w"> </span><span class="p">#</span><span class="mh">$00</span><span class="w"> </span><span class="c1">; Fork</span><span class="w"></span>
 <span class="w">    </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XEXEC</span><span class="w"></span>
@@ -3075,7 +3077,7 @@
   <small>
     
       Last update:
-      2023-05-02
+      2023-05-03
     
   </small>
 </div>

@@ -2920,16 +2920,18 @@
 <p>Convert a string into number</p>
 <p>A et Y contains the ptr of the string</p>
 <p>XDECAY returns the value (16 bits) in AY and X contains the length of the decimal number provided in the input</p>
-<div class="highlight"><pre><span></span><code><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&lt;</span><span class="n">mystring</span><span class="w"></span>
-<span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="o">&gt;</span><span class="n">mystring</span><span class="w"></span>
-<span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XDECAY</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 
-<span class="c1">; A and Y contains the 16 bits value</span><span class="w"></span>
-<span class="c1">; X contains the length of chars in mystring</span><span class="w"></span>
-<span class="k">rts</span><span class="w"></span>
+<span class="w">  </span><span class="k">lda</span><span class="w"> </span><span class="p">#</span><span class="o">&lt;</span><span class="n">mystring</span><span class="w"></span>
+<span class="w">  </span><span class="k">ldy</span><span class="w"> </span><span class="p">#</span><span class="o">&gt;</span><span class="n">mystring</span><span class="w"></span>
+<span class="w">  </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XDECAY</span><span class="w"></span>
 
-<span class="nl">mystring:</span><span class="w"></span>
-<span class="w">  </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"125"</span><span class="w"></span>
+<span class="w">  </span><span class="c1">; A and Y contains the 16 bits value</span><span class="w"></span>
+<span class="w">  </span><span class="c1">; X contains the length of chars in mystring</span><span class="w"></span>
+<span class="w">  </span><span class="k">rts</span><span class="w"></span>
+
+<span class="w">  </span><span class="nl">mystring:</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"125"</span><span class="w"></span>
 </code></pre></div>
 
   <hr>

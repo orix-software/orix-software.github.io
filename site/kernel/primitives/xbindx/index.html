@@ -2962,7 +2962,9 @@
 <h2 id="output">Output</h2>
 <p>A, TR4, TR5</p>
 <h2 id="example-1-displays-value-ay-16-bits-number-in-bb80-text-mode">Example 1 : Displays value AY (16 bits number) in $bb80 text mode</h2>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">lda</span><span class="w">        </span><span class="p">#</span><span class="o">&lt;</span><span class="mh">$bb80</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">lda</span><span class="w">        </span><span class="p">#</span><span class="o">&lt;</span><span class="mh">$bb80</span><span class="w"></span>
 <span class="w">    </span><span class="k">sta</span><span class="w">        </span><span class="n">TR5</span><span class="w"></span>
 <span class="w">    </span><span class="k">lda</span><span class="w">        </span><span class="p">#</span><span class="o">&gt;</span><span class="mh">$bb80</span><span class="w"></span>
 <span class="w">    </span><span class="k">sta</span><span class="w">        </span><span class="n">TR5</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>

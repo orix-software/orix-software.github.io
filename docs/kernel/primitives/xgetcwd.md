@@ -25,4 +25,4 @@ A andY returns a ptr of the string
 
 * RESB
 
-!!! tip "See [getcwd](../../../developer_manual/orixsdk/getcwd) macro from orix-sdk to use it"
+!!! tip "See [getcwd](../../../developer_manual/orixsdk_macros/getcwd) macro from orix-sdk to use it"

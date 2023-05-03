@@ -6,6 +6,8 @@ Some parameter are set into A,X,Y and some others ones needs to be set in Kernel
 
 Orix-sdk must be used in order to manage in the right way kernel calls
 
+```markmap
+
 ## Args from commandline
 
 * [XMAINARGS](xmainargs) : get command line and build argv/argc
@@ -40,7 +42,9 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 
 ## Text mode
 
+* [XWR0](xwr0) : Display a char
 * [XWSTR0](xwstr0) : Display a string
+* [XCRLF](xcrlf) : Returns to the next line
 * [XSCROB](xscrob) : scroll from bottom to top
 * [XSCROH](xscroh) : scroll from top to bottom
 
@@ -61,3 +65,5 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 
 * [XVALUES](xvalues)
 * [XVARS](xvars)
+
+```

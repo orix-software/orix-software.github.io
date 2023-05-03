@@ -18,7 +18,7 @@ RESB
 
 ### Example
 
-``` ca65
+```ca65
     .include "telestrat.inc"
 
     lda     MYFD ; MYFD contains the value of the fd (returns of fopen)

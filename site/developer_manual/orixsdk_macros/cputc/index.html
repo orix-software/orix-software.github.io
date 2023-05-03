@@ -2935,28 +2935,23 @@
 
 
 <h1 id="cputc">cputc</h1>
-<div class="highlight"><pre><span></span><code>;----------------------------------------------------------------------
-; usage:
-;   cputc
-;   cputc n
-;   cputc 'c'
-;
-; note:
-;   - no parameter: use the value of A register
-;
-; Alias for: print #'c'
-;
-; Call XWR0
-;----------------------------------------------------------------------
+<p>usage:
+  cputc
+  cputc n
+  cputc 'c'</p>
+<p>note:
+- no parameter: use the value of A register</p>
+<p>Alias for: <a href="print">print</a> #'c'</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">cputc</span><span class="w"> </span><span class="n">char</span><span class="w"></span>
 </code></pre></div>
-<p>cputc char</p>
+<p>Call <a href="../..//orixsdk_macros/kernel/primitives/XWR0/">XWR0</a> kernel function.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2023-04-18
+      2023-05-04
     
   </small>
 </div>

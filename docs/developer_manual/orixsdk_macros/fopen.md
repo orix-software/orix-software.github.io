@@ -1,20 +1,13 @@
 # FOPEN
 
 ```ca65
-;----------------------------------------------------------------------
-;
-; usage:
-;	fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]
-;
-; note:
-;	- file may be: (ptr), address
-;	- if parameter 'ptr' is present, store resulting AX in ptr & ptr+1
-;	- if parameter 'oom_msg_ptr' is present, emit string pointed by
-;		'oom_msg_ptr' and return if AX is $FFFF (ie XOPEN error)
-;
-; Call XOPEN function
-;----------------------------------------------------------------------
-```
+
+usage:
+fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]
+
+- file may be: (ptr), address
+- if parameter 'ptr' is present, store resulting AX in ptr & ptr+1
+- if parameter 'oom_msg_ptr' is present, emit string pointed by 'oom_msg_ptr' and return if AX is $FFFF (ie XOPEN error)
 
 ex :
 
@@ -45,4 +38,4 @@ fp:
 
 !!! warning "The filename/path address must not be in the rom. If it's the case, the string must be copied into main memory because Kernel overlap the ROM. fopen macro from SDK will produce an error, if the 'address' is in a ROM range (eg : $c000-$FFFF). If you use a ptr, macro can not detect it, and XOPEN primitive won't be able to open your file"
 
-See XOPEN kernel primitive : [XOPEN](../kernel/primitives/xopen)
+See [XOPEN](../kernel/primitives/xopen)kernel primitive.

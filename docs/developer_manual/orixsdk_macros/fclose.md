@@ -1,12 +1,8 @@
 
-#FCLOSE macro
+# FCLOSE macro
 
-```ca65
-	;----------------------------------------------------------------------
-	;
-	; usage:
-	;	fclose (fp) [,TELEMON]
-	;
-	; Call XCLOSE function
-	;----------------------------------------------------------------------
-```
+usage:
+  fclose (fp)
+
+
+Call [XCLOSE](../..//orixsdk_macros/kernel/primitives/XCLOSE/) kernel function.

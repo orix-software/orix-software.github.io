@@ -2937,7 +2937,9 @@
 <h1 id="mfree-free-pointer">Mfree (free pointer)</h1>
 <p>usage:
     mfree (ptr)</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">mfree</span><span class="w"> </span><span class="p">(</span><span class="n">mymalloc</span><span class="p">)</span><span class="w"> </span><span class="c1">; mymalloc is a 2 bytes zp ptr</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="c1">; mymalloc is a 2 bytes zp ptr</span><span class="w"></span>
+<span class="w">    </span><span class="n">mfree</span><span class="w"> </span><span class="p">(</span><span class="n">mymalloc</span><span class="p">)</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
 <p>Call <a href="../..//orixsdk_macros/kernel/primitives/xfree/">XFREE</a> function.</p>
@@ -2947,7 +2949,7 @@
   <small>
     
       Last update:
-      2023-05-03
+      2023-05-04
     
   </small>
 </div>

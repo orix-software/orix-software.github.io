@@ -1,8 +1,16 @@
-# setscreen
+# Setscreen
 
-usage:
-  setscreen [text|hires]
+## Usage
+
+setscreen [text|hires]
 
 Call XTEXT/XHIRES functions
 
-setscreen mode
+## Example
+
+```ca65
+    .include "telestrat.inc"
+
+    setscreen hires
+    rts
+```

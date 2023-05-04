@@ -12,10 +12,6 @@ TR5 the pointer of the address to put decimal number (String)
 
 DEFAFF : space before the number
 
-## Output
-
-A, TR4, TR5
-
 ## Example 1 : Displays value AY (16 bits number) in $bb80 text mode
 
 ```ca65

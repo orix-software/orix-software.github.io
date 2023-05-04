@@ -1,5 +1,20 @@
 # Definitions
 
+## Start atmos/oric-1 tape file, ftdos .dsk files, roms
+
+### .tap file
+
+| Feature     | read                         | Write | joystick management
+| ----------- | ---------------------------- |-------|---------------------|
+| `Atmos .tap file`         | :material-check: |:material-check:|:material-check:|
+| `Oric-1 .tap file`         | :material-check: |:material-check:|:material-check:|
+
+### .dsk file
+
+| Feature     | read                         | Write | joystick management
+| ----------- | ---------------------------- |-------|---------------------|
+| `ftdos .dsk file`         | :material-check: |:material-close: |:material-close: |
+
 ## Twilighte board
 
 The Twilighte board is an extra hardware connected on the the oric (Atmos or Oric-1), it improves default Oric with hardware feature as eeprom (in system update), RAM, joysticks, usb controler.
@@ -37,7 +52,6 @@ There are 2 kind of rom :
 * Orix Roms : in that case, rom does not manage the main memory, and calls kernel to do tasks (for example : Shell roms).
 
 In Orix roms, the rom declares commands to an offset in the bank and can be accessed from command line. If any command are typed from prompt, kernel will launch "XEXEC" primitive to find in any rom where the command is.
-
 
 | Feature     | Availability                          |
 | ----------- | ------------------------------------ |

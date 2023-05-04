@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#shoot" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -3040,6 +3045,37 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3053,9 +3089,19 @@
                 
 
 
-  <h1>Shoot</h1>
+<h1 id="shoot">Shoot</h1>
+<h2 id="description">Description</h2>
+<p>Produce a shoot sound</p>
+<h2 id="usage">Usage</h2>
+<p>shoot</p>
+<h2 id="example">Example</h2>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_sound.mac"</span><span class="w"></span>
 
-
+<span class="w">    </span><span class="n">shoot</span><span class="w"></span>
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
+</code></pre></div>
+<p>Call <a href="../../../kernel/primitives/xshoot/">XSHOOT</a> kernel function.</p>
 
   <hr>
 <div class="md-source-file">

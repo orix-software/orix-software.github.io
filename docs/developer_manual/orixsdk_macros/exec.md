@@ -1,14 +1,16 @@
-# exec
+# Exec macro
 
 ## Description
 
 Execute a binary
 
-## usage
+## Usage
 
 exec command
 
 command may be : (ptr), address
+
+## Exammple
 
 ```ca65
     .include "telestrat.inc"

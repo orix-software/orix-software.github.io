@@ -13,7 +13,7 @@ Close an opened file
 
 ```ca65
     .include "telestrat.inc"
-	.include "../orix-sdk/macros/SDK_file.mac"
+    .include "../orix-sdk/macros/SDK_file.mac"
 
 
     fclose (ptr) ; Ptr contains the FD (from fopen macro)

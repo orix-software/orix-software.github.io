@@ -6,6 +6,8 @@ Return to the next line
 
 ## Usage
 
+crlf
+
 ## Example
 
 ```ca65

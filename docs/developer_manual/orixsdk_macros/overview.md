@@ -1,7 +1,5 @@
 # Summary
 
-
-
 ```markmap
 
 ## Args from commandline
@@ -11,38 +9,33 @@
 
 ## Numbers
 
-* [XBINDX](xbindx) : convert a number to decimal
-* [XHEXA](xhexa) : convert a number to hexadecimal and printit
-* [XDECIM](xdecim) : display a number to the output
+* [itoa](itoa) : convert a number into decimal string
+* [tohex](tohex) : convert a number to hexadecimal and printit
 * [atoi](atoi) : Convert a string into a number (16 bits)
 
 ## Memory
 
-* [XMALLOC](xmalloc) : allocate memory from main memory
-* [XFREE](xfree) : free memory
+* [malloc](malloc) : allocate memory from main memory
+* [mfree](mfree) : free memory
 
 ## Files
 
-* [XOPEN](xopen) : Open a file
-* [XWRITE](xwrite) : Write bytes to file
-* [XFREAD](xfread) : read bytes from file
-* [XCLOSE](xclose) : Close file
-* [XFSEEK](xfseek) : Seek into files
-* [XMKDIR](xmkdir) : Create a folder
-* [XGETCWD](xgetcwd) : get current path
-* [XPUTCWD](xputcwd) : change current path
-* [XOPENDIR](xopendir) : opendir
-* [XREADDIR](xreaddir) : readdir (return a struct with the files)
-* [XCLOSEDIR](xclosedir) : readdir (return a struct with the files)
-* [XRM](xrm) : remove file
+* [fopen](fopen) : Open a file
+* [fwrite](fwrite) : Write bytes to file
+* [fread](fread) : read bytes from file
+* [fclose](fclose) : Close file
+* [fseek](fseek) : Seek into files
+* [mkdir](mkdir) : Create a folder
+* [getcwd](getcwd) : get current path
+* [chdir](chdir) : change current path
+* [unlink](unlink) : remove file
 
 ## Text mode
 
-* [XWR0](xwr0) : Display a char
-* [XWSTR0](xwstr0) : Display a string
-* [XCRLF](xcrlf) : Returns to the next line
-* [XSCROB](xscrob) : scroll from bottom to top
-* [XSCROH](xscroh) : scroll from top to bottom
+* [cputc](cputc) : Display a char
+* [print](print) : Display a string
+* [crlf](crlf) : Returns to the next line
+* [scroll](scroll) : scroll from bottom to top, or top to bottom
 
 ## Graphic mode
 

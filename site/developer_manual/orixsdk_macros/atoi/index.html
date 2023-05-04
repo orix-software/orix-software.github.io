@@ -3103,17 +3103,18 @@
 <p>atoi [ptr]</p>
 <p>ptr may be: (ptr), address</p>
 <h2 id="output">Output</h2>
-<div class="highlight"><pre><span></span><code>;   AY: value
-;   X: number of digits (ie 10^X)
-</code></pre></div>
+<p>AY: value
+X: number of digits (ie 10^X)</p>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"SDK_misc.mac"</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">atoi</span><span class="w"> </span>
+<span class="w">    </span><span class="n">atoi</span><span class="w"> </span><span class="n">mystrnumber</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
+<span class="nl">mystrnumber:</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"12"</span><span class="w"></span>
 </code></pre></div>
-<p>Call <a href="../../kernel/primitives/Xdecay/">XDECAY</a> kernel function.</p>
+<p>Call <a href="../../kernel/primitives/xdecay/">XDECAY</a> kernel function.</p>
 
   <hr>
 <div class="md-source-file">

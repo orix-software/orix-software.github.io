@@ -13,7 +13,7 @@
     
     
       
-        <title>atoi macro - ORIX v2023.1 DOCUMENTATION</title>
+        <title>itoa macro - ORIX v2023.1 DOCUMENTATION</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#atoi-macro" class="md-skip">
+        <a href="#itoa-macro" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              atoi macro
+              itoa macro
             
           </span>
         </div>
@@ -3096,25 +3096,24 @@
                 
 
 
-<h1 id="atoi-macro">atoi macro</h1>
+<h1 id="itoa-macro">itoa macro</h1>
 <h2 id="description">Description</h2>
-<p>Convert a string to a 16 bits number</p>
+<p>convert a number into string</p>
 <h2 id="usage">Usage</h2>
-<p>atoi [ptr]</p>
+<p>itoa [ptr], [len], [char]</p>
 <p>ptr may be: (ptr), address</p>
 <h2 id="output">Output</h2>
-<p>AY: value
-X: number of digits (ie 10^X)</p>
+<p>N/A</p>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"SDK_misc.mac"</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">atoi</span><span class="w"> </span><span class="n">mystrnumber</span><span class="w"></span>
+<span class="w">    </span><span class="n">itoa</span><span class="w"> </span><span class="n">mynumber</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
-<span class="nl">mystrnumber:</span><span class="w"></span>
-<span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"12"</span><span class="w"></span>
+<span class="nl">mynumber:</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.byte</span><span class="w"> </span><span class="mi">12</span><span class="w"></span>
 </code></pre></div>
-<p>Call <a href="../../kernel/primitives/xdecay/">XDECAY</a> kernel function.</p>
+<p>Call <a href="../../kernel/primitives/xbindx/">XBINDX</a> kernel function.</p>
 
   <hr>
 <div class="md-source-file">

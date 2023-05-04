@@ -2,7 +2,7 @@
 
 ## Description
 
-convert a number into decimal string
+convert a number into string
 
 ## Usage
 

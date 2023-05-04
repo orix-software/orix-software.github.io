@@ -2,9 +2,11 @@
 
 ## Description
 
-Remove  afile
+Remove a file
 
 ## Usage
+
+unlink address
 
 ## Example
 
@@ -17,3 +19,5 @@ Remove  afile
 myfile:
     .asciiz "toto.txt"
 ```
+
+Call [XRM](../../../kernel/primitives/xrm/) kernel function.

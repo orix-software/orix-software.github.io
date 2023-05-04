@@ -15,4 +15,4 @@ mfree (ptr)
     rts
 ```
 
-Call [XFREE](../../kernel/primitives/xfree/) function.
+Call [XFREE](../../../kernel/primitives/xfree/) function.

@@ -1,5 +1,9 @@
 # cgetc
 
+## Description
+
+Read the keyboard
+
 ## usage
 
 * cgetc
@@ -22,4 +26,4 @@ cgetc var
 
 ```
 
-Call [XRD0](../../kernel/primitives/XRD0/) kernel function.
+Call [XRD0](../../../kernel/primitives/XRD0/) kernel function.

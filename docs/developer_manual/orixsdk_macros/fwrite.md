@@ -17,4 +17,4 @@ fp may be  : address, #value, {address,y}
 
 .include "../orix-sdk/macros/SDK_file.mac"
 
-See [XFWRITE](../../kernel/primitives/xfwrite) kernel primitive
+See [XFWRITE](../../../kernel/primitives/xfwrite) kernel primitive

@@ -18,4 +18,4 @@ ptr may be: ptr, address
     getcwd pwd
 ```
 
-Call [XGETCWD](../../kernel/primitives/XGETCWD/) kernel function.
+Call [XGETCWD](../../../kernel/primitives/XGETCWD/) kernel function.

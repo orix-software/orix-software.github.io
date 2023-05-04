@@ -6,9 +6,9 @@ Displays a char
 
 ## usage
 
-  cputc
-  cputc n
-  cputc 'c'
+- cputc
+- cputc n
+- cputc 'c'
 
 note:
 
@@ -26,4 +26,4 @@ Alias for: [print](print) #'c'
     rts
 ```
 
-Call [XWR0](../../kernel/primitives/XWR0/) kernel function.
+Call [XWR0](../../../kernel/primitives/XWR0/) kernel function.

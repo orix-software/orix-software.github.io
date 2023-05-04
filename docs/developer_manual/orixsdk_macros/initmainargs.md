@@ -20,4 +20,4 @@ Initialize struct of the mainargs from current process
   rts
 ```
 
-Call [XMAINARGS](../../kernel/primitives/xmainargs/) function.
+Call [XMAINARGS](../../../kernel/primitives/xmainargs/) function.

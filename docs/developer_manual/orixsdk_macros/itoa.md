@@ -26,4 +26,4 @@ mynumber:
     .byte 12
 ```
 
-Call [XBINDX](../../kernel/primitives/xbindx/) kernel function.
+Call [XBINDX](../../../kernel/primitives/xbindx/) kernel function.

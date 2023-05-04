@@ -1,10 +1,10 @@
-# cursor
+# Cursor
 
 ## Description
 
 Switch on or switch off the cursor
 
-## usage
+## Usage
 
 cursor ON|OFF
 
@@ -18,4 +18,5 @@ cursor ON|OFF
     rts
 ```
 
-Call XCSSCR/XCOSCR functions
+Call [XCSSCR](../../../kernel/primitives/xcsscr) or [XCOSCR](../../../kernel/primitives/xcoscr) kernel function.
+

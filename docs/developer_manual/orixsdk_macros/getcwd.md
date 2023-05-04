@@ -1,6 +1,10 @@
-# getcwd
+# Getcwd
 
-## usage
+## Description
+
+Get cwd
+
+## Usage
 
 getcwd ptr
 
@@ -16,6 +20,7 @@ ptr may be: ptr, address
     pwd            := userzp ; 2 byte
 
     getcwd pwd
+    rts
 ```
 
 Call [XGETCWD](../../../kernel/primitives/XGETCWD/) kernel function.

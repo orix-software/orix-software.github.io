@@ -1,9 +1,13 @@
 
 # initmainargs
 
-## Usage
+## Description
 
 Initialize struct of the mainargs from current process
+
+## Usage
+
+initmainargs ptr, ptr1, 0
 
 ## Example
 

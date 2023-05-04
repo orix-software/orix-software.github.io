@@ -15,6 +15,14 @@ fp may be  : address, #value, {address,y}
 
 ## Example
 
-.include "../orix-sdk/macros/SDK_file.mac"
+```ca65
+    .include "telestrat.inc"
+    .include "../orix-sdk/macros/SDK_file.mac"
+
+    [...]
+    fwrite (myptr), 1080, 1, MAN_FP ; myptr is from a malloc for example
+    fclose(MAN_FP)
+    rts
+```
 
 See [XFWRITE](../../../kernel/primitives/xfwrite) kernel primitive

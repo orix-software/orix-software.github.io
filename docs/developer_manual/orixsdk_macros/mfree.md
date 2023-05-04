@@ -1,5 +1,9 @@
 # Mfree (free pointer)
 
+## Description
+
+Performs a mfree memory
+
 ## usage
 
 mfree (ptr)

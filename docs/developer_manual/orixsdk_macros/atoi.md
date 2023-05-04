@@ -19,7 +19,7 @@ X: number of digits (ie 10^X)
 
 ```ca65
     .include "telestrat.inc"
-    .include "SDK_misc.mac"
+    .include "../orix-sdk/macros/SDK_misc.mac"
 
     atoi mystrnumber
     rts
@@ -27,4 +27,4 @@ mystrnumber:
     .asciiz "12"
 ```
 
-Call [XDECAY](../../kernel/primitives/xdecay/) kernel function.
+Call [XDECAY](../../../kernel/primitives/xdecay/) kernel function.

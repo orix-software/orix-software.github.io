@@ -1,5 +1,9 @@
 # MKDIR macro
 
+## Decription
+
+Performs a mkdir
+
 ## Usage
 
 mkdir ptr

@@ -18,6 +18,7 @@ Return #ENODEV if the device can't be mount
 
 ```ca65
     .include "telestrat.inc"
+
     lda #<str
     ldy #>str
     ldx #$00

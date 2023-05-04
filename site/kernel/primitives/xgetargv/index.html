@@ -3174,9 +3174,10 @@
 <p>A &amp; Y contains argv ptr from xmainargs struct. It returns a copy of the command line with args parsed</p>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
 <span class="w">    </span><span class="n">XMAINARGS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$2C</span><span class="w"></span>
-<span class="w">    </span><span class="n">XGETARGV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$2E</span><span class="w"></span>
-<span class="w">    </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XMAINARGS</span><span class="w"></span>
+<span class="w">    </span><span class="n">XGETARGV</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mh">$2E</span><span class="w"></span>
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="n">XMAINARGS</span><span class="w"></span>
 <span class="w">    </span><span class="k">sta</span><span class="w">   </span><span class="n">debug_mainargs_ptr</span><span class="w"></span>
 <span class="w">    </span><span class="k">sty</span><span class="w">   </span><span class="n">debug_mainargs_ptr</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
 
@@ -3195,7 +3196,7 @@
   <small>
     
       Last update:
-      2023-05-03
+      2023-05-04
     
   </small>
 </div>

@@ -2513,6 +2513,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3100,6 +3107,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3122,10 +3136,12 @@
 <li>Returns ENOENT in A if the file does not exist</li>
 <li>Returns $00 in A if the rm is done</li>
 </ul>
+<h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
 <span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&lt;</span><span class="n">myfile_to_remove</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="o">&gt;</span><span class="n">myfile_to_remove</span><span class="w"></span>
-<span class="w">    </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XRM</span><span class="w"></span>
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="n">XRM</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 <span class="nl">myfile_to_remove:</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"toto"</span><span class="w"></span>

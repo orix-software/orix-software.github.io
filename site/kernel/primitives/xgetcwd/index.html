@@ -3073,18 +3073,12 @@
     Memory usage
   </a>
   
-    <nav class="md-nav" aria-label="Memory usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#zeropage" class="md-nav__link">
     zeropage
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3107,15 +3101,18 @@
 <p>Return current directory of the process</p>
 <h2 id="input">Input</h2>
 <h2 id="output">Output</h2>
-<p>A andY returns a ptr of the string</p>
+<p>A and Y returns a ptr of the string</p>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
-<span class="w">    </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XGETCWD</span><span class="w"></span>
-<span class="w">    </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XWSTR0</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="n">XGETCWD</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">; Displays</span><span class="w"></span>
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="n">XWSTR0</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
 <h2 id="memory-usage">Memory usage</h2>
-<h3 id="zeropage">zeropage</h3>
+<h2 id="zeropage">zeropage</h2>
 <ul>
 <li>RESB</li>
 </ul>

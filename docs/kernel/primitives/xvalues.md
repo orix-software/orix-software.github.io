@@ -6,6 +6,21 @@ Get vars from kernel
 
 X = KERNEL_XVALUES_FREE_MALLOC_TABLE
 
+```ca65
+    .include "telestrat.inc"
+
+    KERNEL_XVALUES_FREE_MALLOC_TABLE = $02
+
+    ldx     #KERNEL_XVALUES_FREE_MALLOC_TABLE
+
+    BRK_TELEMON  $2D ; XVALUES
+    ; Y contains the id of the bank
+    ; X contains set ($343 register)
+    ; A the bank ($321 register)
+    ; If there is no available bank, Y=0
+    rts
+```
+
 ## Get Busy malloc table
 
 X = KERNEL_XVALUES_BUSY_MALLOC_TABLE
@@ -64,11 +79,13 @@ A contains the max process
 ## Get Os string (Orix)
 
 ```ca65
-XVARS_KERNEL_OSNAME = 9
+    .include "telestrat.inc"
+    XVARS_KERNEL_OSNAME = 9
 
-ldx     #XVARS_KERNEL_OSNAME
-BRK_KERNEL XVARS
-; A and X contains
+    ldx     #XVARS_KERNEL_OSNAME
+    BRK_TELEMON XVARS
+    ; A and X contains the ptr to osname
+    rts
 ```
 
 !!! warning "It will be available in Kernel v2023.2"
@@ -76,15 +93,18 @@ BRK_KERNEL XVARS
 ## Get an empty bank
 
 ```ca65
-KERNEL_XVALUES_GET_FREE_BANK = $10
-ldx     #KERNEL_XVALUES_GET_FREE_BANK
-ldy     #$00 ; RAM type
-BRK_TELEMON  $2D ; XVALUES
-; Y contains the id of the bank
-; X contains set ($343 register)
-; A the bank ($321 register)
-; If there is no available bank, Y=0
-rts
+    .include "telestrat.inc"
+
+    KERNEL_XVALUES_GET_FREE_BANK = $10
+
+    ldx     #KERNEL_XVALUES_GET_FREE_BANK
+    ldy     #$00 ; RAM type
+    BRK_TELEMON  $2D ; XVALUES
+    ; Y contains the id of the bank
+    ; X contains set ($343 register)
+    ; A the bank ($321 register)
+    ; If there is no available bank, Y=0
+    rts
 ```
 
 !!! warning "It will be available in Kernel v2023.2"

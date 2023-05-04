@@ -1,5 +1,7 @@
 # XTEXT
 
+## Description
+
 Switch to text mode
 
 ## Example

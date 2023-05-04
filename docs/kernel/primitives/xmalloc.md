@@ -14,7 +14,7 @@ A&Y = $0000 : OOM or others errors
 else
 A&Y : ptr
 
-## Usage
+## Example
 
 ``` ca65
     .include "telestrat.inc"

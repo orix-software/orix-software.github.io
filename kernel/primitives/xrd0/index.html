@@ -2665,9 +2665,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          XRD0
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         XRD0
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3056,6 +3094,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3069,10 +3129,12 @@
 
 
 <h1 id="xrd0">XRD0</h1>
+<h2 id="usage">Usage</h2>
 <p>Check if a key is pressed</p>
+<h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 
-<span class="w">  </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XRD0</span><span class="w"> </span><span class="c1">; primitive exits even if no key had been pressed</span><span class="w"></span>
+<span class="w">  </span><span class="n">BRK_TELESTRAT</span><span class="w"> </span><span class="n">XRD0</span><span class="w"> </span><span class="c1">; primitive exits even if no key had been pressed</span><span class="w"></span>
 <span class="w">  </span><span class="k">bcs</span><span class="w">   </span><span class="n">@no_key_pressed</span><span class="w"></span>
 <span class="w">  </span><span class="c1">; When a key is pressed, A contains the ascii of the value</span><span class="w"></span>
 <span class="nl">@here_a_key_is_pressed:</span><span class="w"></span>

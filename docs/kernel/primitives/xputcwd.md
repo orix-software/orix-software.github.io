@@ -16,9 +16,10 @@ N/A
 
 ```ca65
     .include "telestrat.inc"
+
     lda        #<str
     ldy        #>str
-    BRK_KERNEL XPUTCWD
+    BRK_TELEMON XPUTCWD
     rts
 str:
     .asciiz "/etc"

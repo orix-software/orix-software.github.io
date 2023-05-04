@@ -8,11 +8,14 @@ Remove file in arg
 * Returns ENOENT in A if the file does not exist
 * Returns $00 in A if the rm is done
 
+## Example
+
 ```ca65
     .include "telestrat.inc"
+
     lda     #<myfile_to_remove
     ldx     #>myfile_to_remove
-    BRK_KERNEL XRM
+    BRK_TELEMON XRM
     rts
 myfile_to_remove:
     .asciiz "toto"

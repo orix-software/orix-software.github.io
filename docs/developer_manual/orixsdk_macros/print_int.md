@@ -6,7 +6,12 @@ Displays integer
 
 ## Usage
 
-## Example
+print_int [ptr], [len], [char]
+
+note:
+ptr may be: (ptr), address, <empty>
+len: value
+char: value (DEFAFF is not restored)
 
 ## Example
 
@@ -15,12 +20,11 @@ Displays integer
   .include "../orix-sdk/macros/SDK_print.mac"
 
 
-  print helloworld_str
-  crlf ; Return line
+  print_int mynumber, 3, 2
   rts
 
-helloworld_str:
-  .asciiz "Hello world!"
+mynumber:
+  .byt 12
 ```
 
-Call [XWSTR0](../../../kernel/primitives/xwstr0/) function.
+Call [XDECIM](../../../kernel/primitives/xdecim/) xdecim

@@ -1,12 +1,15 @@
 # CHDIR macro
 
-usage:
+## usage
+
 chdir ptr
 
 note:
 
 * ptr may be: (ptr), address
 * Call XPUTCWD function
+
+## Example
 
 ```ca65
     .include "telestrat.inc"
@@ -18,4 +21,4 @@ myfolder:
     .asciiz "home"
 ```
 
-Call [XPUTCWD](../../kernel/primitives/XPUTCWD/) kernel function.
+Call [XPUTCWD](../../../kernel/primitives/XPUTCWD/) kernel function.

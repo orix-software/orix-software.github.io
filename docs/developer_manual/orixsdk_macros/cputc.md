@@ -1,6 +1,11 @@
 # cputc
 
-usage:
+## Description
+
+Displays a char
+
+## usage
+
   cputc
   cputc n
   cputc 'c'
@@ -10,8 +15,12 @@ note:
 
 Alias for: [print](print) #'c'
 
+## example
+
 ```ca65
-	cputc char
+	.include "telstrat.inc"
+    cputc char
+    rts
 ```
 
-Call [XRDW0](../../kernel/primitives/XRDW0/) kernel function.
+Call [XWR0](../../kernel/primitives/XWR0/) kernel function.

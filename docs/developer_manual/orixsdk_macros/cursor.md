@@ -1,10 +1,12 @@
 # cursor
 
+## Description
+
+Switch on or switch off the cursor
+
 ## usage
 
 cursor ON|OFF
-
-Call XCSSCR/XCOSCR functions
 
 ## Example
 
@@ -14,3 +16,5 @@ Call XCSSCR/XCOSCR functions
     cursor ON
     rts
 ```
+
+Call XCSSCR/XCOSCR functions

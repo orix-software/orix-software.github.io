@@ -3143,6 +3143,8 @@
 <p>mfree (ptr)</p>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_memory.mac"</span><span class="w"></span>
+
 <span class="w">    </span><span class="c1">; mymalloc is a 2 bytes zp ptr</span><span class="w"></span>
 <span class="w">    </span><span class="n">mfree</span><span class="w"> </span><span class="p">(</span><span class="n">mymalloc</span><span class="p">)</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>

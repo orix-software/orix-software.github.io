@@ -17,6 +17,8 @@
 
 * [malloc](malloc) : allocate memory from main memory
 * [mfree](mfree) : free memory
+* [memdecal](memdecal) : move memory
+* [memmove](memmove) : move memory
 
 ## Files
 
@@ -34,6 +36,8 @@
 
 * [cputc](cputc) : Display a char
 * [print](print) : Display a string
+* [prints](prints) : Display a string
+* [print_int](print_int) : print an int
 * [crlf](crlf) : Returns to the next line
 * [scroll](scroll) : scroll from bottom to top, or top to bottom
 
@@ -49,9 +53,13 @@
 
 * [cgetc](cgetc) : Get a char from keyboard (wait for a key)
 
-## Kernel values
+## Sound
 
-* [XVALUES](xvalues)
-* [XVARS](xvars)
+* [ping](ping) : ping sound
+* [zap](zap) : zap sound
+* [explode](explode) : explode sound
+* [shoot](shoot) : shoot sound
+
+
 
 ```

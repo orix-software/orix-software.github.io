@@ -2874,8 +2874,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-the-position-in-the-opened-filed" class="md-nav__link">
-    Get the position in the opened filed
+  <a href="#get-the-path-of-an-opened-file" class="md-nav__link">
+    Get the path of an opened file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-position-in-the-opened-file" class="md-nav__link">
+    Get the position in the opened file
   </a>
   
 </li>
@@ -3211,8 +3218,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-the-position-in-the-opened-filed" class="md-nav__link">
-    Get the position in the opened filed
+  <a href="#get-the-path-of-an-opened-file" class="md-nav__link">
+    Get the path of an opened file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-position-in-the-opened-file" class="md-nav__link">
+    Get the position in the opened file
   </a>
   
 </li>
@@ -3315,20 +3329,35 @@ KERNEL_XVALUES_FREE_MALLOC_TABLE = $07</p>
 <p>Y contains the id of the malloc busy table</p>
 <p>Y = the pid
 X = 08</p>
-<p>It returns in A &amp; Y the ptr of the process name. </p>
-<p>XVARS_GET_PROCESS_NAME_PTR = $08</p>
+<p>It returns in A &amp; Y the ptr of the process name.</p>
+<p>KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_PID = $08</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">XVARS_GET_PROCESS_NAME_PTR_CALL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$07</span><span class="w"></span>
+<span class="w">    </span><span class="n">KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_PID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$07</span><span class="w"></span>
 
-<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">XVARS_GET_PROCESS_NAME_PTR</span><span class="w"></span>
+<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_PID</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mi">03</span><span class="w"> </span><span class="c1">; Get the name of pid = 3</span><span class="w"></span>
 
 <span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span><span class="w"></span>
 
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
-<h2 id="get-the-position-in-the-opened-filed">Get the position in the opened filed</h2>
+<h2 id="get-the-path-of-an-opened-file">Get the path of an opened file</h2>
+<p>KERNEL_XVALUES_PATH_FROM_FD = $09
+Y must contains the fd.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">KERNEL_XVALUES_PATH_FROM_FD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$09</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">KERNEL_XVALUES_PATH_FROM_FD</span><span class="w"></span>
+<span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mi">03</span><span class="w"> </span><span class="c1">; Get the name of pid = 3</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span><span class="w"></span>
+<span class="w">    </span><span class="c1">; A and Y contains the ptr of path</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
+</code></pre></div>
+<h2 id="get-the-position-in-the-opened-file">Get the position in the opened file</h2>
 <p>KERNEL_XVALUES_GET_FTELL_FROM_FD = $0A</p>
 <p>X=KERNEL_XVALUES_GET_FTELL_FROM_FD</p>
 <p>It returns in A, X, Y and RES, the position in the file</p>

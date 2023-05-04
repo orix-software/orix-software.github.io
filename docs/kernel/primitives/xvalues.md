@@ -51,14 +51,14 @@ X = 08
 
 It returns in A & Y the ptr of the process name.
 
-KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_ID_MALLOC_TABLE = $08
+KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_PID = $08
 
 ```ca65
     .include "telestrat.inc"
 
-    KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_ID_MALLOC_TABLE = $07
+    KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_PID = $07
 
-    ldx     #KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_ID_MALLOC_TABLE
+    ldx     #KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_PID
     ldy     #03 ; Get the name of pid = 3
 
     BRK_TELEMON  $2D ; XVALUES
@@ -66,7 +66,26 @@ KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_ID_MALLOC_TABLE = $08
     rts
 ```
 
-## Get the position in the opened filed
+## Get the path of an opened file
+
+KERNEL_XVALUES_PATH_FROM_FD = $09
+Y must contains the fd.
+
+```ca65
+    .include "telestrat.inc"
+
+    KERNEL_XVALUES_PATH_FROM_FD = $09
+
+    ldx     #KERNEL_XVALUES_PATH_FROM_FD
+    ldy     #03 ; Get the name of pid = 3
+
+    BRK_TELEMON  $2D ; XVALUES
+    ; A and Y contains the ptr of path
+
+    rts
+```
+
+## Get the position in the opened file
 
 KERNEL_XVALUES_GET_FTELL_FROM_FD = $0A
 

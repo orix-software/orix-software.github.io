@@ -1,11 +1,16 @@
 # cursor
-    
-    ;----------------------------------------------------------------------
-	;
-	; usage:
-	;	cursor ON|OFF
-	;
-	; Call XCSSCR/XCOSCR functions
-	;----------------------------------------------------------------------
-	
-    cursor mode
+
+## usage
+
+cursor ON|OFF
+
+Call XCSSCR/XCOSCR functions
+
+## Example
+
+```ca65
+    .include "telestrat.inc"
+
+    cursor ON
+    rts
+```

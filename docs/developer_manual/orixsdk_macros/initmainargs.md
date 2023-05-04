@@ -9,6 +9,7 @@ Initialize struct of the mainargs from current process
 
 ```ca65
   .include "telestrat.inc"
+  .include "../orix-sdk/macros/SDK_mainargs.mac"
 
   XMAINARGS       = $2C
   XGETARGV        = $2E

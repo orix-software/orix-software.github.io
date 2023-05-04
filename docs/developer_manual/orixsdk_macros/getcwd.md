@@ -11,7 +11,7 @@ ptr may be: ptr, address
 
 ```ca65
     .include "telestrat.inc"
-    .include "SDK_dir.mac"
+    .include "../orix-sdk/macros/SDK_dir.mac"
 
     pwd            := userzp ; 2 byte
 

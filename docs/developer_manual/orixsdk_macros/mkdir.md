@@ -1,6 +1,6 @@
 # MKDIR macro
 
-## usage
+## Usage
 
 mkdir ptr
 
@@ -11,6 +11,7 @@ note:
 
 ```ca65
     .include "telestrat.inc"
+    .include "../orix-sdk/macros/SDK_dir.mac"
 
     mkdir myfolder
     rts

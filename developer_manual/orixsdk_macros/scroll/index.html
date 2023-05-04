@@ -3181,6 +3181,8 @@
 <h2 id="example-2">Example 2</h2>
 <p>the first line to scroll is computed and is in X register</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_display.mac"</span><span class="w"></span>
+
 <span class="w">    </span><span class="c1">; The second arg is empty because we notice to the macro that it's provided by X register</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldx</span><span class="w"> </span><span class="p">#</span><span class="mi">3</span><span class="w"></span>
 <span class="w">    </span><span class="n">scroll</span><span class="w"> </span><span class="n">up</span><span class="p">,,</span><span class="w"> </span><span class="mi">26</span><span class="w"></span>

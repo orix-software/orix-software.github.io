@@ -24,6 +24,8 @@ the first line to scroll is computed and is in X register
 
 ```ca65
     .include "telestrat.inc"
+    .include "../orix-sdk/macros/SDK_display.mac"
+
     ; The second arg is empty because we notice to the macro that it's provided by X register
     ldx #3
     scroll up,, 26

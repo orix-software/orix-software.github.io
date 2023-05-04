@@ -3179,6 +3179,7 @@ fp may be  : address, #value, {address,y}</p>
 <p>A &amp; X returns length in 16 bits</p>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_file.mac"</span><span class="w"></span>
 
 <span class="w">    </span><span class="n">fopen</span><span class="w"> </span><span class="p">(</span><span class="n">MAN_SAVE_MALLOC_PTR</span><span class="p">),</span><span class="w"> </span><span class="n">O_RDONLY</span><span class="w"></span>
 <span class="w">    </span><span class="k">cpx</span><span class="w">     </span><span class="p">#</span><span class="mh">$FF</span><span class="w"></span>
@@ -3197,7 +3198,7 @@ fp may be  : address, #value, {address,y}</p>
 <span class="w">    </span><span class="n">fclose</span><span class="p">(</span><span class="n">MAN_FP</span><span class="p">)</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
-<p>See <a href="../kernel/primitives/xfread">XFREAD</a> kernel primitive.</p>
+<p>See <a href="../../kernel/primitives/xfread">XFREAD</a> kernel primitive.</p>
 
   <hr>
 <div class="md-source-file">

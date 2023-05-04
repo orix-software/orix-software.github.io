@@ -22,6 +22,7 @@ A & X returns length in 16 bits
 
 ```ca65
     .include "telestrat.inc"
+    .include "../orix-sdk/macros/SDK_file.mac"
 
     fopen (MAN_SAVE_MALLOC_PTR), O_RDONLY
     cpx     #$FF

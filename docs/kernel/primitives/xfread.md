@@ -14,9 +14,7 @@ Read byte from files
 
 A & X contains the length read
 
-## Samples
-
-### Example
+## Example
 
 ```ca65
     .include "telestrat.inc"

@@ -25,12 +25,13 @@ Mode 1 :
 
 * A & Y : a ptr to a new malloc which contains commandline
 
-## Usage
+## Example
 
 Mode 0 : parse command line and build argc/argv
 
 ```ca65
     .include "telestrat.inc"
+
     XMAINARGS = $2C
 
     lda #$00 ; Mode 0

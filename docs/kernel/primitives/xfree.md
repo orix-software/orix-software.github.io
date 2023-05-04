@@ -10,14 +10,16 @@ Free memory
 
 ## Output
 
-## Samples
 
-### Example
+## Example
 
 ```ca65
+    .include "telestrat.inc"
+
     lda     ptr
     ldy     ptr+1
-    BRK_KERNEL XFREE
+    BRK_TELEMON XFREE
+    rts
 ```
 
 !!! tip "See [mfree](../../../developer_manual/orixsdk_macros/mfree) macro from orix-sdk to use it"

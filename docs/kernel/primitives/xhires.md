@@ -1,13 +1,14 @@
 # XHIRES
 
+## Usage
+
 Switch to Hires
 
-## Samples
-
-### Example
+## Example
 
 ```ca65
     .include "telestrat.inc"
+
     ldx #$00
     BRK_KERNEL XHIRES
     rts

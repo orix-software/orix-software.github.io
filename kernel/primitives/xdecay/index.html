@@ -3034,6 +3034,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3047,14 +3069,16 @@
 
 
 <h1 id="xdecay">XDECAY</h1>
+<h2 id="usage">Usage</h2>
 <p>Convert a string into number</p>
 <p>A et Y contains the ptr of the string</p>
 <p>XDECAY returns the value (16 bits) in AY and X contains the length of the decimal number provided in the input</p>
+<h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 
 <span class="w">  </span><span class="k">lda</span><span class="w"> </span><span class="p">#</span><span class="o">&lt;</span><span class="n">mystring</span><span class="w"></span>
 <span class="w">  </span><span class="k">ldy</span><span class="w"> </span><span class="p">#</span><span class="o">&gt;</span><span class="n">mystring</span><span class="w"></span>
-<span class="w">  </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XDECAY</span><span class="w"></span>
+<span class="w">  </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="n">XDECAY</span><span class="w"></span>
 
 <span class="w">  </span><span class="c1">; A and Y contains the 16 bits value</span><span class="w"></span>
 <span class="w">  </span><span class="c1">; X contains the length of chars in mystring</span><span class="w"></span>

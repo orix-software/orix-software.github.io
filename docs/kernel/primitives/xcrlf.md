@@ -2,10 +2,12 @@
 
 Returns to next line.
 
+## Example
+
 ```ca65
     .include "telestrat.inc"
 
-    BRK_KERNEL XCRLF
+    BRK_TELEMON XCRLF
     rts
 ```
 

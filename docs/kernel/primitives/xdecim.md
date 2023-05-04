@@ -1,6 +1,10 @@
 # XDECIM
 
+## Usage
+
 Displays an integer into the the screen
+
+## Example
 
 ```ca65
 
@@ -10,6 +14,6 @@ Displays an integer into the the screen
     ldx     #$20 ;
     stx     DEFAFF
     ldx     #$00
-    BRK_KERNEL XDECIM
+    BRK_TELEMON XDECIM
     rts
 ```

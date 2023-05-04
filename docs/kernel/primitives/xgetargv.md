@@ -31,9 +31,10 @@ A & Y contains argv ptr from xmainargs struct. It returns a copy of the command 
 
 ```ca65
     .include "telestrat.inc"
+
     XMAINARGS = $2C
-    XGETARGV = $2E
-    BRK_KERNEL XMAINARGS
+    XGETARGV  = $2E
+    BRK_TELEMON XMAINARGS
     sta   debug_mainargs_ptr
     sty   debug_mainargs_ptr+1
 

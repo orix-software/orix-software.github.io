@@ -19,8 +19,6 @@ Seek into file
 * Return A=EOK if seek has been performed
 * Return A=$FF if something is wrong when seek has performed
 
-## Code
-
 ## Example
 
 ``` ca65

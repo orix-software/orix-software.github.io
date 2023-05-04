@@ -8,20 +8,23 @@ Return current directory of the process
 
 ## Output
 
-A andY returns a ptr of the string
+A and Y returns a ptr of the string
 
 ## Example
 
 ``` ca65
     .include "telestrat.inc"
-    BRK_KERNEL XGETCWD
-    BRK_KERNEL XWSTR0
+
+    BRK_TELEMON XGETCWD
+
+    ; Displays
+    BRK_TELEMON XWSTR0
     rts
 ```
 
 ## Memory usage
 
-### zeropage
+## zeropage
 
 * RESB
 

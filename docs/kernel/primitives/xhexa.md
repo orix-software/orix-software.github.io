@@ -1,10 +1,10 @@
 # XHEXA
 
+## Usage
+
 Convert a number in A and returns hexadecimal to AY
 
-## Samples
-
-### Example
+## Example
 
 ```ca65
     .include "telestrat.inc"

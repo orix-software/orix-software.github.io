@@ -27,7 +27,7 @@ Returns an error if the binary is not found
     lda #<str
     ldy #>str
     ldx #$00 ; Fork
-    BRK_KERNEL XEXEC
+    BRK_TELEMON XEXEC
     rts
 str:
     .asciiz "mybin"

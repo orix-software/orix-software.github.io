@@ -132,6 +132,7 @@ nav:
         - Build standalone Rom : developer_manual/buildstandalonerom.md
         - Generate a binary for sdcard/usb key: binaries/generateBinary.md
         - SDK for Assembly (Orixsdk):
+            - Overview: developer_manual/orixsdk_macros/overview.md
             - Main usage: developer_manual/orixsdk.md
             - File operations:
                 - fopen: developer_manual/orixsdk_macros/fopen.md

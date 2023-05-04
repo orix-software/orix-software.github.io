@@ -19,4 +19,4 @@ Call XTEXT/XHIRES functions
     rts
 ```
 
-
+Call [XTEXT](../../kernel/primitives/xtext/) routine or [XHIRES](../../kernel/primitives/xhires/)

@@ -3147,17 +3147,20 @@ print (pointer) [,SAVE]
 print address [,SAVE]</p>
 <p>Option:</p>
 <ul>
-<li>TELEMON: when used within TELEMON bank</li>
 <li>NOSAVE : does not preserve A,X,Y registers</li>
 </ul>
 <h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="n">print</span><span class="w"> </span><span class="n">helloworld_str</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_print.mac"</span><span class="w"></span>
+<span class="w">  </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">print</span><span class="w"> </span><span class="n">helloworld_str</span><span class="w"></span>
 <span class="w">  </span><span class="n">crlf</span><span class="w"> </span><span class="c1">; Return line</span><span class="w"></span>
 <span class="w">  </span><span class="k">rts</span><span class="w"></span>
+
 <span class="nl">helloworld_str:</span><span class="w"></span>
 <span class="w">  </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"Hello world!"</span><span class="w"></span>
 </code></pre></div>
-<p>Call XWSTR0 function</p>
+<p>Call <a href="../../kernel/primitives/xwstr0/">XWSTR0</a> function.</p>
 
   <hr>
 <div class="md-source-file">

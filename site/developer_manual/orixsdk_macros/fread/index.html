@@ -1650,6 +1650,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     usage
   </a>
@@ -3104,6 +3111,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     usage
   </a>
@@ -3139,13 +3153,14 @@
 
 
 <h1 id="fread-macro">FREAD macro</h1>
+<h2 id="description">description</h2>
+<p>Read byte from file</p>
 <h2 id="usage">usage</h2>
 <p>fread ptr, size, count, fp</p>
 <p>note:
 ptr may be : (ptr), address
 size may be: (ptr), address
 fp may be  : address, #value, {address,y}</p>
-<p>Call XFREAD function</p>
 <h2 id="output">Output</h2>
 <p>A &amp; X returns length in 16 bits</p>
 <h2 id="example">Example</h2>
@@ -3168,6 +3183,7 @@ fp may be  : address, #value, {address,y}</p>
 <span class="w">    </span><span class="n">fclose</span><span class="p">(</span><span class="n">MAN_FP</span><span class="p">)</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
+<p>See <a href="../kernel/primitives/xfread">XFREAD</a> kernel primitive.</p>
 
   <hr>
 <div class="md-source-file">

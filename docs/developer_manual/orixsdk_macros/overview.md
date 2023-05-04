@@ -37,18 +37,17 @@
 * [crlf](crlf) : Returns to the next line
 * [scroll](scroll) : scroll from bottom to top, or top to bottom
 
-## Graphic mode
+## Graphic/text mode
 
-* [XHIRES](xhires) : start graphic mode
+* [setscreen](setscreen) : start graphic mode
 
 ## Execute
 
-* [XEXEC](xexec) : Execute binary
+* [exec](exec) : Execute binary
 
 ## Keyboard
 
-* [XRDW0](xrdw0) : Get a char from keyboard (wait for a key)
-* [XRD0](xrd0) : check if a char is typed on the keyboard (continue execution)
+* [cgetc](cgetc) : Get a char from keyboard (wait for a key)
 
 ## Kernel values
 

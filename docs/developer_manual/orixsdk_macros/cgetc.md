@@ -14,7 +14,7 @@ cgetc var
 
 ```ca65
     .include "telestrat.inc"
-    .include "SDK_conio.mac" ; From orixsdk
+    .include "../orix-sdk/macros/SDK_conio.mac"
 
     cgetc
     ; A contains the key pressed

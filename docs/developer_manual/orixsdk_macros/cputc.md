@@ -11,6 +11,7 @@ Displays a char
   cputc 'c'
 
 note:
+
 - no parameter: use the value of A register
 
 Alias for: [print](print) #'c'
@@ -18,7 +19,9 @@ Alias for: [print](print) #'c'
 ## example
 
 ```ca65
-	.include "telstrat.inc"
+    .include "telestrat.inc"
+    .include "../orix-sdk/macros/SDK_conio.mac"
+
     cputc char
     rts
 ```

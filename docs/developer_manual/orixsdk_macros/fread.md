@@ -41,4 +41,4 @@ next:
     rts
 ```
 
-See [XFREAD](../kernel/primitives/xfread) kernel primitive.
+See [XFREAD](../../kernel/primitives/xfread) kernel primitive.

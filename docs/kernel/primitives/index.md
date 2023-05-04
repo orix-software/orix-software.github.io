@@ -47,6 +47,7 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 * [XCRLF](xcrlf) : Returns to the next line
 * [XSCROB](xscrob) : scroll from bottom to top
 * [XSCROH](xscroh) : scroll from top to bottom
+* [XTEXT](xtext) : switch to text mode
 
 ## Graphic mode
 

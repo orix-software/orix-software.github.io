@@ -1,4 +1,8 @@
-# FOPEN macros
+# FOPEN macro
+
+## description
+
+Open a file.
 
 ## usage
 
@@ -13,8 +17,8 @@ fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]
 ```ca65
     .include "telestrat.inc"          ; from cc65
     .include "fcntl.inc"              ; from cc65
-    .include "../dependencies/orix-sdk/macros/SDK_file.mac"
-    .include "../dependencies/orix-sdk/macros/SDK_print.mac"
+    .include "../orix-sdk/macros/SDK_file.mac"
+    .include "../orix-sdk/macros/SDK_print.mac"
 
 start:
     fopen (basic11_ptr2), O_RDONLY,,fp ; open the filename located in ptr 'basic11_ptr2', in readonly and store the fp in fp address

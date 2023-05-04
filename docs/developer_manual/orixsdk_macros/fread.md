@@ -1,5 +1,9 @@
 # FREAD macro
 
+## description
+
+Read byte from file
+
 ## usage
 
 fread ptr, size, count, fp
@@ -9,7 +13,6 @@ ptr may be : (ptr), address
 size may be: (ptr), address
 fp may be  : address, #value, {address,y}
 
-Call XFREAD function
 
 ## Output
 
@@ -37,3 +40,5 @@ next:
     fclose(MAN_FP)
     rts
 ```
+
+See [XFREAD](../kernel/primitives/xfread) kernel primitive.

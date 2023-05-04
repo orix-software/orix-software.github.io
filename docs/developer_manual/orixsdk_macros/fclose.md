@@ -1,6 +1,10 @@
 
 # FCLOSE macro
 
+## Description
+
+Close an opened file
+
 ## usage
 
   fclose (fp)

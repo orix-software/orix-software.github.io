@@ -18,4 +18,4 @@ myfolder:
     .asciiz "here"
 ```
 
-Call XMKDIR function
+Call [XMKDIR](../../kernel/primitives/xmkdir/) function.

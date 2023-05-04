@@ -12,19 +12,21 @@ print address [,SAVE]
 
 Option:
 
-- TELEMON: when used within TELEMON bank
 - NOSAVE : does not preserve A,X,Y registers
-
-
 
 ## Example
 
 ```ca65
+
+  .include "../orix-sdk/macros/SDK_print.mac"
+  .include "telestrat.inc"
+
   print helloworld_str
   crlf ; Return line
   rts
+
 helloworld_str:
   .asciiz "Hello world!"
 ```
 
-Call XWSTR0 function
+Call [XWSTR0](../../kernel/primitives/xwstr0/) function.

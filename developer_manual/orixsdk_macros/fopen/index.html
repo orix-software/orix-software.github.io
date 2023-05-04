@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fopen-macros" class="md-skip">
+        <a href="#fopen-macro" class="md-skip">
           Skip to content
         </a>
       
@@ -1636,6 +1636,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     usage
   </a>
@@ -3097,6 +3104,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     usage
   </a>
@@ -3124,7 +3138,9 @@
                 
 
 
-<h1 id="fopen-macros">FOPEN macros</h1>
+<h1 id="fopen-macro">FOPEN macro</h1>
+<h2 id="description">description</h2>
+<p>Open a file.</p>
 <h2 id="usage">usage</h2>
 <p>fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]</p>
 <ul>
@@ -3135,8 +3151,8 @@
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w">          </span><span class="c1">; from cc65</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"fcntl.inc"</span><span class="w">              </span><span class="c1">; from cc65</span><span class="w"></span>
-<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../dependencies/orix-sdk/macros/SDK_file.mac"</span><span class="w"></span>
-<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../dependencies/orix-sdk/macros/SDK_print.mac"</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_file.mac"</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_print.mac"</span><span class="w"></span>
 
 <span class="nl">start:</span><span class="w"></span>
 <span class="w">    </span><span class="n">fopen</span><span class="w"> </span><span class="p">(</span><span class="n">basic11_ptr2</span><span class="p">),</span><span class="w"> </span><span class="n">O_RDONLY</span><span class="p">,,</span><span class="n">fp</span><span class="w"> </span><span class="c1">; open the filename located in ptr 'basic11_ptr2', in readonly and store the fp in fp address</span><span class="w"></span>

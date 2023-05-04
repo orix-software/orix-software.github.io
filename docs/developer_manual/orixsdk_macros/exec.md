@@ -1,6 +1,6 @@
 # exec
 
-## Descripotion
+## Description
 
 Execute a binary
 
@@ -10,8 +10,13 @@ exec command
 
 command may be : (ptr), address
 
-Call XEXEC function
-
 ```ca65
     .include "telestrat.inc"
-	exec mycommand
+
+    exec mycommand
+    rts
+mycommand:
+    .asciiz ls
+```
+
+Call [XEXEC](../../../kernel/primitives/XEXEC/) kernel function.

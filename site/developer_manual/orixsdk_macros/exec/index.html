@@ -2128,6 +2128,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     usage
   </a>
@@ -3090,6 +3097,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     usage
   </a>
@@ -3111,11 +3125,19 @@
 
 
 <h1 id="exec">exec</h1>
+<h2 id="description">Description</h2>
+<p>Execute a binary</p>
 <h2 id="usage">usage</h2>
 <p>exec command</p>
 <p>command may be : (ptr), address</p>
-<p>Call XEXEC function</p>
-<p>exec command</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">exec</span><span class="w"> </span><span class="n">mycommand</span><span class="w"></span>
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
+<span class="nl">mycommand:</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="n">ls</span><span class="w"></span>
+</code></pre></div>
+<p>Call <a href="../../../kernel/primitives/XEXEC/">XEXEC</a> kernel function.</p>
 
   <hr>
 <div class="md-source-file">

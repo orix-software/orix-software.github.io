@@ -18,3 +18,5 @@ Initialize struct of the mainargs from current process
   initmainargs argv, argc, 0
   rts
 ```
+
+Call [XMAINARGS](../../kernel/primitives/xmainargs/) function.

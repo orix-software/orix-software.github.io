@@ -1770,9 +1770,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          cputc
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         cputc
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3052,6 +3097,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    example
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3065,16 +3139,21 @@
 
 
 <h1 id="cputc">cputc</h1>
-<p>usage:
-  cputc
+<h2 id="description">Description</h2>
+<p>Displays a char</p>
+<h2 id="usage">usage</h2>
+<p>cputc
   cputc n
   cputc 'c'</p>
 <p>note:
 - no parameter: use the value of A register</p>
 <p>Alias for: <a href="print">print</a> #'c'</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">cputc</span><span class="w"> </span><span class="n">char</span><span class="w"></span>
+<h2 id="example">example</h2>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telstrat.inc"</span><span class="w"></span>
+<span class="w">    </span><span class="n">cputc</span><span class="w"> </span><span class="n">char</span><span class="w"></span>
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
-<p>Call <a href="../../kernel/primitives/XRDW0/">XRDW0</a> kernel function.</p>
+<p>Call <a href="../../kernel/primitives/XWR0/">XWR0</a> kernel function.</p>
 
   <hr>
 <div class="md-source-file">

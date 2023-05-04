@@ -1,7 +1,11 @@
 
 # initmainargs
 
-## Initialize struct of the mainargs from current process
+## Usage
+
+Initialize struct of the mainargs from current process
+
+## Example
 
 ```ca65
   .include "telestrat.inc"

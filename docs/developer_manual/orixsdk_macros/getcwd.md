@@ -1,12 +1,13 @@
 # getcwd
 
-usage:
+## usage
+
 getcwd ptr
 
- note:
+note:
 ptr may be: ptr, address
 
-Call XGETCWD function
+## Example
 
 ```ca65
     .include "telestrat.inc"

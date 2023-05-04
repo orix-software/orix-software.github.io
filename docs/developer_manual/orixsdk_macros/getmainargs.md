@@ -1,6 +1,10 @@
 # Getmainargs
 
+## Usage
+
 Get main args : get arg value
+
+## Example
 
 ```ca65
     .include "telestrat.inc"

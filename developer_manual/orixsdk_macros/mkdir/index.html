@@ -1667,9 +1667,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          mkdir
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         mkdir
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3052,6 +3090,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3065,11 +3125,11 @@
 
 
 <h1 id="mkdir-macro">MKDIR macro</h1>
-<p>usage:
- mkdir ptr</p>
+<h2 id="usage">usage</h2>
+<p>mkdir ptr</p>
 <p>note:
  ptr may be: (ptr), address</p>
-<p>Call XMKDIR function</p>
+<h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 
 <span class="w">    </span><span class="n">mkdir</span><span class="w"> </span><span class="n">myfolder</span><span class="w"></span>
@@ -3077,6 +3137,7 @@
 <span class="nl">myfolder:</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"here"</span><span class="w"></span>
 </code></pre></div>
+<p>Call XMKDIR function</p>
 
   <hr>
 <div class="md-source-file">

@@ -1,8 +1,11 @@
 
 # FCLOSE macro
 
-usage:
+## usage
+
   fclose (fp)
+
+## Example
 
 ```ca65
     .include "telestrat.inc"

@@ -1,7 +1,8 @@
 
 # Malloc
 
-usage:
+## usage
+
 malloc size [,ptr] [,oom_msg_ptr] [,fail_value]
 
 malloc #$0100

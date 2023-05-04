@@ -1,12 +1,11 @@
-#exec
-	;----------------------------------------------------------------------
-	;
-	; usage:
-	;	exec command
-	;
-	; note:
-	;	command may be : (ptr), address
-	;
-	; Call XEXEC function
-	;----------------------------------------------------------------------
-	exec command
+# exec
+
+## usage
+
+exec command
+
+command may be : (ptr), address
+
+Call XEXEC function
+
+exec command

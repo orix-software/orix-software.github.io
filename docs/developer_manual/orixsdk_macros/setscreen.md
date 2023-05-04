@@ -1,5 +1,9 @@
 # Setscreen
 
+## Description
+
+Switch to text or hires
+
 ## Usage
 
 setscreen [text|hires]

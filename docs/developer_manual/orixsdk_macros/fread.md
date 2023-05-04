@@ -1,10 +1,7 @@
 # FREAD macro
 
-## Output
+## usage
 
-A & X returns length in 16 bits
-
-usage:
 fread ptr, size, count, fp
 
 note:
@@ -14,7 +11,11 @@ fp may be  : address, #value, {address,y}
 
 Call XFREAD function
 
-Example :
+## Output
+
+A & X returns length in 16 bits
+
+## Example
 
 ```ca65
     .include "telestrat.inc"

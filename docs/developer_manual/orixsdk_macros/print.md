@@ -1,18 +1,23 @@
 # Print macro
 
+## Description
+
 print string in text mode
 
-usage:
-    print #byte [,SAVE]
-    print (pointer) [,SAVE]
-    print address [,SAVE]
+## usage
+
+print #byte [,SAVE]
+print (pointer) [,SAVE]
+print address [,SAVE]
 
 Option:
 
 - TELEMON: when used within TELEMON bank
 - NOSAVE : does not preserve A,X,Y registers
 
-Call XWSTR0 function
+
+
+## Example
 
 ```ca65
   print helloworld_str
@@ -21,3 +26,5 @@ Call XWSTR0 function
 helloworld_str:
   .asciiz "Hello world!"
 ```
+
+Call XWSTR0 function

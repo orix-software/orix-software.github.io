@@ -1,15 +1,14 @@
 # FOPEN macros
 
+## usage
 
-
-usage:
 fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]
 
 - file may be: (ptr), address
 - if parameter 'ptr' is present, store resulting AX in ptr & ptr+1
 - if parameter 'oom_msg_ptr' is present, emit string pointed by 'oom_msg_ptr' and return if AX is $FFFF (ie XOPEN error)
 
-ex :
+## Example
 
 ```ca65
     .include "telestrat.inc"          ; from cc65

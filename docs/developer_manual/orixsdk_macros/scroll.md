@@ -1,8 +1,14 @@
 # scroll macro
 
+## Description
+
+Perfoms a scroll text
+
+## Usage
+
 scroll [Direction],firstline, last_line_to_scroll
 
-## General case
+## Example 1
 
 ```ca65
     .include "telestrat.inc"
@@ -12,7 +18,9 @@ scroll [Direction],firstline, last_line_to_scroll
     rts
 ```
 
-## the first line to scroll is computed and is in X register
+## Example 2
+
+the first line to scroll is computed and is in X register
 
 ```ca65
     .include "telestrat.inc"

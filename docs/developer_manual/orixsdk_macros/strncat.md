@@ -1,9 +1,15 @@
 
-#strncat
+# strncat
+
+## Description
 
 concat 2 strings. Strings must be terminated by 0
 
+## Usage
+
 strncat src, dest, n
+
+## Example
 
 ```ca65
     .include "telestrat.inc"

@@ -1,12 +1,13 @@
 # MKDIR macro
 
-usage:
- mkdir ptr
+## usage
+
+mkdir ptr
 
 note:
  ptr may be: (ptr), address
 
-Call XMKDIR function
+## Example
 
 ```ca65
     .include "telestrat.inc"
@@ -16,3 +17,5 @@ Call XMKDIR function
 myfolder:
     .asciiz "here"
 ```
+
+Call XMKDIR function

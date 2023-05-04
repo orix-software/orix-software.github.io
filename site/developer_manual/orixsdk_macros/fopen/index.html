@@ -1611,9 +1611,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          fopen
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         fopen
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3052,6 +3090,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3065,14 +3125,14 @@
 
 
 <h1 id="fopen-macros">FOPEN macros</h1>
-<p>usage:
-fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]</p>
+<h2 id="usage">usage</h2>
+<p>fopen file, mode [,TELEMON] [,ptr] [,oom_msg_ptr] [,fail_value]</p>
 <ul>
 <li>file may be: (ptr), address</li>
 <li>if parameter 'ptr' is present, store resulting AX in ptr &amp; ptr+1</li>
 <li>if parameter 'oom_msg_ptr' is present, emit string pointed by 'oom_msg_ptr' and return if AX is $FFFF (ie XOPEN error)</li>
 </ul>
-<p>ex :</p>
+<h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w">          </span><span class="c1">; from cc65</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"fcntl.inc"</span><span class="w">              </span><span class="c1">; from cc65</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../dependencies/orix-sdk/macros/SDK_file.mac"</span><span class="w"></span>

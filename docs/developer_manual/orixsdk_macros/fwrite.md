@@ -1,6 +1,7 @@
 # FWRITE macro
 
-usage:
+## usage
+
 fwrite ptr, size, count, fp
 
 note:

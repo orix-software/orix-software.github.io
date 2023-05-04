@@ -1823,15 +1823,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#general-case" class="md-nav__link">
-    General case
+  <a href="#description" class="md-nav__link">
+    Description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-first-line-to-scroll-is-computed-and-is-in-x-register" class="md-nav__link">
-    the first line to scroll is computed and is in X register
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
   </a>
   
 </li>
@@ -3097,15 +3111,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#general-case" class="md-nav__link">
-    General case
+  <a href="#description" class="md-nav__link">
+    Description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-first-line-to-scroll-is-computed-and-is-in-x-register" class="md-nav__link">
-    the first line to scroll is computed and is in X register
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
   </a>
   
 </li>
@@ -3125,15 +3153,19 @@
 
 
 <h1 id="scroll-macro">scroll macro</h1>
+<h2 id="description">Description</h2>
+<p>Perfoms a scroll text</p>
+<h2 id="usage">Usage</h2>
 <p>scroll [Direction],firstline, last_line_to_scroll</p>
-<h2 id="general-case">General case</h2>
+<h2 id="example-1">Example 1</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 <span class="w">    </span><span class="c1">; Scroll all lines from bottom to the first line : it erases the first line with the second and so open0</span><span class="w"></span>
 <span class="w">    </span><span class="n">scroll</span><span class="w"> </span><span class="n">up</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">26</span><span class="w"></span>
 <span class="w">    </span><span class="n">scroll</span><span class="w"> </span><span class="n">down</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">26</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
-<h2 id="the-first-line-to-scroll-is-computed-and-is-in-x-register">the first line to scroll is computed and is in X register</h2>
+<h2 id="example-2">Example 2</h2>
+<p>the first line to scroll is computed and is in X register</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 <span class="w">    </span><span class="c1">; The second arg is empty because we notice to the macro that it's provided by X register</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldx</span><span class="w"> </span><span class="p">#</span><span class="mi">3</span><span class="w"></span>

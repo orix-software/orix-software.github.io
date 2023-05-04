@@ -1,7 +1,10 @@
 # Mfree (free pointer)
 
-usage:
-    mfree (ptr)
+## usage
+
+mfree (ptr)
+
+## Example
 
 ```ca65
     .include "telestrat.inc"

@@ -5,6 +5,11 @@ Get vars from kernel
 ## Get Free malloc table
 
 X = KERNEL_XVALUES_FREE_MALLOC_TABLE
+KERNEL_XVALUES_FREE_MALLOC_TABLE = $02
+
+Returns in A and Y a copy of free malloc table. This ptr must be free when the buffer is useless
+
+### Example
 
 ```ca65
     .include "telestrat.inc"
@@ -14,25 +19,52 @@ X = KERNEL_XVALUES_FREE_MALLOC_TABLE
     ldx     #KERNEL_XVALUES_FREE_MALLOC_TABLE
 
     BRK_TELEMON  $2D ; XVALUES
-    ; Y contains the id of the bank
-    ; X contains set ($343 register)
-    ; A the bank ($321 register)
-    ; If there is no available bank, Y=0
+
     rts
 ```
 
 ## Get Busy malloc table
 
 X = KERNEL_XVALUES_BUSY_MALLOC_TABLE
+KERNEL_XVALUES_FREE_MALLOC_TABLE = $07
+
+Returns in A and Y a copy of busy malloc table. This ptr must be free when the buffer is useless
+
+```ca65
+    .include "telestrat.inc"
+
+    KERNEL_XVALUES_FREE_MALLOC_TABLE = $07
+
+    ldx     #KERNEL_XVALUES_BUSY_MALLOC_TABLE
+
+    BRK_TELEMON  $2D ; XVALUES
+
+    rts
+```
 
 ## Get processName of the current chunk
 
 Y contains the id of the malloc busy table
 
-Y = the chunk
+Y = the pid
 X = 08
 
-It returns in A & Y the ptr of the process name
+It returns in A & Y the ptr of the process name.
+
+KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_ID_MALLOC_TABLE = $08
+
+```ca65
+    .include "telestrat.inc"
+
+    KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_ID_MALLOC_TABLE = $07
+
+    ldx     #KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_ID_MALLOC_TABLE
+    ldy     #03 ; Get the name of pid = 3
+
+    BRK_TELEMON  $2D ; XVALUES
+
+    rts
+```
 
 ## Get the position in the opened filed
 
@@ -80,6 +112,7 @@ A contains the max process
 
 ```ca65
     .include "telestrat.inc"
+
     XVARS_KERNEL_OSNAME = 9
 
     ldx     #XVARS_KERNEL_OSNAME

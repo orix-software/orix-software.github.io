@@ -2844,6 +2844,19 @@
     Get Free malloc table
   </a>
   
+    <nav class="md-nav" aria-label="Get Free malloc table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3168,6 +3181,19 @@
     Get Free malloc table
   </a>
   
+    <nav class="md-nav" aria-label="Get Free malloc table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3257,14 +3283,51 @@
 <h1 id="xvalues-routine">XVALUES ROUTINE</h1>
 <p>Get vars from kernel</p>
 <h2 id="get-free-malloc-table">Get Free malloc table</h2>
-<p>X = KERNEL_XVALUES_FREE_MALLOC_TABLE</p>
+<p>X = KERNEL_XVALUES_FREE_MALLOC_TABLE
+KERNEL_XVALUES_FREE_MALLOC_TABLE = $02</p>
+<p>Returns in A and Y a copy of free malloc table. This ptr must be free when the buffer is useless</p>
+<h3 id="example">Example</h3>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">KERNEL_XVALUES_FREE_MALLOC_TABLE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$02</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">KERNEL_XVALUES_FREE_MALLOC_TABLE</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
+</code></pre></div>
 <h2 id="get-busy-malloc-table">Get Busy malloc table</h2>
-<p>X = KERNEL_XVALUES_BUSY_MALLOC_TABLE</p>
+<p>X = KERNEL_XVALUES_BUSY_MALLOC_TABLE
+KERNEL_XVALUES_FREE_MALLOC_TABLE = $07</p>
+<p>Returns in A and Y a copy of busy malloc table. This ptr must be free when the buffer is useless</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">KERNEL_XVALUES_FREE_MALLOC_TABLE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$07</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">KERNEL_XVALUES_BUSY_MALLOC_TABLE</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
+</code></pre></div>
 <h2 id="get-processname-of-the-current-chunk">Get processName of the current chunk</h2>
 <p>Y contains the id of the malloc busy table</p>
-<p>Y = the chunk
+<p>Y = the pid
 X = 08</p>
-<p>It returns in A &amp; Y the ptr of the process name</p>
+<p>It returns in A &amp; Y the ptr of the process name. </p>
+<p>XVARS_GET_PROCESS_NAME_PTR = $08</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">XVARS_GET_PROCESS_NAME_PTR_CALL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$07</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">XVARS_GET_PROCESS_NAME_PTR</span><span class="w"></span>
+<span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mi">03</span><span class="w"> </span><span class="c1">; Get the name of pid = 3</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">rts</span><span class="w"></span>
+</code></pre></div>
 <h2 id="get-the-position-in-the-opened-filed">Get the position in the opened filed</h2>
 <p>KERNEL_XVALUES_GET_FTELL_FROM_FD = $0A</p>
 <p>X=KERNEL_XVALUES_GET_FTELL_FROM_FD</p>
@@ -3288,6 +3351,7 @@ X = 08</p>
 <p>A contains the max process</p>
 <h2 id="get-os-string-orix">Get Os string (Orix)</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
+
 <span class="w">    </span><span class="n">XVARS_KERNEL_OSNAME</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="w"></span>
 
 <span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">XVARS_KERNEL_OSNAME</span><span class="w"></span>
@@ -3330,7 +3394,7 @@ X = 08</p>
   <small>
     
       Last update:
-      2023-05-02
+      2023-05-04
     
   </small>
 </div>

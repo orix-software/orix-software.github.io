@@ -2,21 +2,29 @@
 
 ## Description
 
-	; sortie:
-	;	AY: value
-	;	X: number of digits (ie 10^X)
-	;
-	; note:
-	;	ptr may be: (ptr), address
+Convert a string to a 16 bits number
 
 ## Usage
 
 atoi [ptr]
 
-## output
+ptr may be: (ptr), address
+
+## Output
+
+AY: value
+X: number of digits (ie 10^X)
 
 ## Example
 
-.include "SDK_misc.mac"
+```ca65
+    .include "telestrat.inc"
+    .include "SDK_misc.mac"
 
-Use XDECAY
+    atoi mystrnumber
+    rts
+mystrnumber:
+    .asciiz "12"
+```
+
+Call [XDECAY](../../kernel/primitives/xdecay/) kernel function.

@@ -4,6 +4,6 @@
 
 [Users manuals](../commands/all/){ .md-button .md-button--primary}
 
-## developpers manual
+## developers manual
 
-[Developpgers manuals](../developer_manual/){ .md-button .md-button--primary}
+[Developers manuals](../developer_manual/){ .md-button .md-button--primary}

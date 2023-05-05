@@ -125,7 +125,7 @@ nav:
             - 2022.3: update/2022_3.md
             - commands:
                 - File: update/file/file.md
-    - Developpers manuals:
+    - Developers manuals:
         - Tutorials:
             - Print a string: developer_manual/tutorials/print_string.md
         - Install: developer_manual/index.md
@@ -156,6 +156,8 @@ nav:
             - Memory operations:
                 - malloc: developer_manual/orixsdk_macros/malloc.md
                 - mfree: developer_manual/orixsdk_macros/mfree.md
+                - memdecal: developer_manual/orixsdk_macros/memdecal.md
+                - memdecal: developer_manual/orixsdk_macros/memmove.md
             - Strings operations:
                 - strncat: developer_manual/orixsdk_macros/strncat.md
                 - strncpy: developer_manual/orixsdk_macros/strncpy.md
@@ -166,6 +168,12 @@ nav:
                 - cgetc: developer_manual/orixsdk_macros/cgetc.md
             - Process operations:
                 - exec: developer_manual/orixsdk_macros/exec.md
+            - Number operations:
+                - atoi: developer_manual/orixsdk_macros/atoi.md
+                - tohex: developer_manual/orixsdk_macros/tohex.md
+                - print_int: developer_manual/orixsdk_macros/print_int.md
+                - itoa: developer_manual/orixsdk_macros/itoa.md
+
 
         - Generate man pages : developer_manual/buildman.md
         - cc65 : developer_manual/cc65.md

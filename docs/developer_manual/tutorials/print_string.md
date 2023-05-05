@@ -17,12 +17,13 @@
 
     ```ca65
 
-    .include "telestrat"
+    .include "telestrat.inc"
     .include "../orix-sdk/macros/SDK_print.mac"
 
-    print str_hello
+    start:
+        print str_hello
 
-    rts
+        rts
     str_hello:
         .byte "Hello world!",$0A,$0D,0
     ```

@@ -12,4 +12,4 @@ str:
     .asciiz "Hello world"
 ```
 
-!!! tip "See [print](../../developer_manual/orixsdk_macros/print/) macro from orix-sdk to use it easily "
+!!! tip "See [print](../../developer_manual/orixsdk_macros/print/) macro from orix-sdk to use it easily"

@@ -6,4 +6,4 @@
 
 ## developpers manual
 
-[Developpers manuals](../developer_manual/){ .md-button .md-button--primary}
+[Developpgers manuals](../developer_manual/){ .md-button .md-button--primary}

@@ -3,7 +3,8 @@ site_name: ORIX v2023.1 DOCUMENTATION
 markdown_extensions:
     - pymdownx.highlight
     - pymdownx.inlinehilite
-    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true
     - pymdownx.snippets
     - pymdownx.critic
     - pymdownx.caret
@@ -125,6 +126,8 @@ nav:
             - commands:
                 - File: update/file/file.md
     - Developpers manuals:
+        - Tutorials:
+            - Print a string: developer_manual/tutorials/print_string.md
         - Install: developer_manual/index.md
         - Development guidelines: developer_manual/guidelines.md
         - Memory management : developer_manual/memory.md

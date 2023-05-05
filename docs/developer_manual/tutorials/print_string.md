@@ -15,14 +15,15 @@
 
 === "Asm"
 
-    ```bash
+    ```ca65
 
-    .include "telestrat
+    .include "telestrat"
+    .include "../orix-sdk/macros/SDK_print.mac"
 
     print str_hello
 
     rts
-str_hello:
-    .byte "Hello world!",$0A,$0D,0
+    str_hello:
+        .byte "Hello world!",$0A,$0D,0
     ```
 

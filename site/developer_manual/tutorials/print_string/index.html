@@ -3265,16 +3265,18 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>```bash</p>
-<p>.include "telestrat</p>
-<p>print str_hello</p>
-<p>rts</p>
+<div class="highlight"><pre><span></span><code><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat"</span><span class="w"></span>
+<span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_print.mac"</span><span class="w"></span>
+
+<span class="n">print</span><span class="w"> </span><span class="n">str_hello</span><span class="w"></span>
+
+<span class="k">rts</span><span class="w"></span>
+<span class="nl">str_hello:</span><span class="w"></span>
+<span class="w">    </span><span class="kp">.byte</span><span class="w"> </span><span class="s">"Hello world!"</span><span class="p">,</span><span class="mh">$0A</span><span class="p">,</span><span class="mh">$0D</span><span class="p">,</span><span class="mi">0</span><span class="w"></span>
+</code></pre></div>
 </div>
 </div>
 </div>
-<p>str_hello:
-    .byte "Hello world!",$0A,$0D,0
-    ```</p>
 
   <hr>
 <div class="md-source-file">

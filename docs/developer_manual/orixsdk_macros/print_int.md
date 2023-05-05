@@ -19,7 +19,6 @@ char: value (DEFAFF is not restored)
   .include "telestrat.inc"
   .include "../orix-sdk/macros/SDK_print.mac"
 
-
   print_int mynumber, 3, 2
   rts
 

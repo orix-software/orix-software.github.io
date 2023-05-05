@@ -15,7 +15,7 @@
 
 === "Asm"
 
-    ```ca65
+    ```bash
 
     .include "telestrat
 

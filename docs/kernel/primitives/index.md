@@ -53,6 +53,12 @@ Orix-sdk must be used in order to manage in the right way kernel calls
 
 * [XHIRES](xhires) : start graphic mode
 
+## Numbers
+
+* [XBINDX](xbindx) : convert a 16 bits number into decimal
+* [XDECIM](xdecim) : displays a 16 bits number into decimal mode
+* [XHEXA](xhexa) : convert a 8 bits number into hexadecimal
+
 ## Execute
 
 * [XEXEC](xexec) : Execute binary

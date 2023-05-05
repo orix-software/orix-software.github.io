@@ -203,6 +203,10 @@ nav:
                         - XCRLF: kernel/primitives/xcrlf.md
                         - XWR0: kernel/primitives/xwr0.md
                         - XWSTR0: kernel/primitives/xwstr0.md
+                    - Numbers Operations:
+                        - XBINDX: kernel/primitives/xbindx.md
+                        - XDECIM: kernel/primitives/xdecim.md
+                        - XHEXA: kernel/primitives/xhexa.md
                     - Kernel variables Operations:
                         - XVALUES: kernel/primitives/xvalues.md
                         - XVARS: kernel/primitives/xvars.md

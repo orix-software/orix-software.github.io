@@ -40,6 +40,7 @@
 * [print_int](../print_int) : print an int
 * [crlf](../crlf) : Returns to the next line
 * [scroll](../scroll) : scroll from bottom to top, or top to bottom
+* [cursor](../cursor) : Switch on/off cursor
 
 ## Graphic/text mode
 

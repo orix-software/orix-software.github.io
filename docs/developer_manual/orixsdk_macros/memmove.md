@@ -25,3 +25,5 @@ note:
 
     rts
 ```
+
+Call [XDECAL](../../../kernel/primitives/xdecal/) kernel function.

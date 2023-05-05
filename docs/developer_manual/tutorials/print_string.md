@@ -1,6 +1,6 @@
 # Tutorial
 
-## Print a string
+## Hello world
 
 === "C"
 

@@ -24,3 +24,5 @@ note:
     memdecal $c040, $c000, $c080
     rts
 ```
+
+Call [XDECAL](../../../kernel/primitives/xdecal/) kernel function.

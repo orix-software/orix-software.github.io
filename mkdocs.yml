@@ -127,7 +127,7 @@ nav:
                 - File: update/file/file.md
     - Developers manuals:
         - Tutorials:
-            - Print a string: developer_manual/tutorials/print_string.md
+            - hello world: developer_manual/tutorials/print_string.md
         - Install: developer_manual/index.md
         - Development guidelines: developer_manual/guidelines.md
         - Memory management : developer_manual/memory.md
@@ -141,6 +141,7 @@ nav:
                 - fopen: developer_manual/orixsdk_macros/fopen.md
                 - fread: developer_manual/orixsdk_macros/fread.md
                 - fwrite: developer_manual/orixsdk_macros/fwrite.md
+                - fseek: developer_manual/orixsdk_macros/fseek.md
                 - fclose: developer_manual/orixsdk_macros/fclose.md
                 - mkdir: developer_manual/orixsdk_macros/mkdir.md
                 - chdir: developer_manual/orixsdk_macros/chdir.md
@@ -148,6 +149,8 @@ nav:
                 - unlink: developer_manual/orixsdk_macros/unlink.md
             - Text mode operations:
                 - print: developer_manual/orixsdk_macros/print.md
+                - prints: developer_manual/orixsdk_macros/prints.md
+                - print_int: developer_manual/orixsdk_macros/print_int.md
                 - cputc: developer_manual/orixsdk_macros/cputc.md
                 - crlf: developer_manual/orixsdk_macros/crlf.md
                 - scroll: developer_manual/orixsdk_macros/scroll.md
@@ -157,7 +160,7 @@ nav:
                 - malloc: developer_manual/orixsdk_macros/malloc.md
                 - mfree: developer_manual/orixsdk_macros/mfree.md
                 - memdecal: developer_manual/orixsdk_macros/memdecal.md
-                - memdecal: developer_manual/orixsdk_macros/memmove.md
+                - memmove: developer_manual/orixsdk_macros/memmove.md
             - Strings operations:
                 - strncat: developer_manual/orixsdk_macros/strncat.md
                 - strncpy: developer_manual/orixsdk_macros/strncpy.md
@@ -173,6 +176,11 @@ nav:
                 - tohex: developer_manual/orixsdk_macros/tohex.md
                 - print_int: developer_manual/orixsdk_macros/print_int.md
                 - itoa: developer_manual/orixsdk_macros/itoa.md
+            - Sound operations:
+                - shoot: developer_manual/orixsdk_macros/shoot.md
+                - ping: developer_manual/orixsdk_macros/ping.md
+                - zap: developer_manual/orixsdk_macros/zap.md
+                - explode: developer_manual/orixsdk_macros/explode.md
 
 
         - Generate man pages : developer_manual/buildman.md

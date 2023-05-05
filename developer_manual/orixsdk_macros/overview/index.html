@@ -682,6 +682,11 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../fseek/">
+        fseek
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../fclose/">
         fclose
       </a>
@@ -774,6 +779,16 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../mfree/">
         mfree
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../memdecal/">
+        memdecal
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../memmove/">
+        memdecal
       </a>
 </li>
 </ul>
@@ -1316,7 +1331,7 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="summary">Summary</h1>
-<div class="language-markmap mkdocs-markmap" data-markdown="&amp;#10;## Args from commandline&amp;#10;&amp;#10;* [initmainargs](../initmainargs) : get command line and build argv/argc&amp;#10;* [getmainargs](../getmainargs) : get an argv from xmainargs struct&amp;#10;&amp;#10;## Numbers&amp;#10;&amp;#10;* [itoa](../itoa) : convert a number into decimal string&amp;#10;* [tohex](../tohex) : convert a number to hexadecimal and printit&amp;#10;* [atoi](../atoi) : Convert a string into a number (16 bits)&amp;#10;&amp;#10;## Memory&amp;#10;&amp;#10;* [malloc](../malloc) : allocate memory from main memory&amp;#10;* [mfree](../mfree) : free memory&amp;#10;* [memdecal](../memdecal) : move memory&amp;#10;* [memmove](../memmove) : move memory&amp;#10;&amp;#10;## Files&amp;#10;&amp;#10;* [fopen](../fopen) : Open a file&amp;#10;* [fwrite](../fwrite) : Write bytes to file&amp;#10;* [fread](../fread) : read bytes from file&amp;#10;* [fclose](../fclose) : Close file&amp;#10;* [fseek](../fseek) : Seek into files&amp;#10;* [mkdir](../mkdir) : Create a folder&amp;#10;* [getcwd](../getcwd) : get current path&amp;#10;* [chdir](../chdir) : change current path&amp;#10;* [unlink](../unlink) : remove file&amp;#10;&amp;#10;## Text mode&amp;#10;&amp;#10;* [cputc](../cputc) : Display a char&amp;#10;* [print](../print) : Display a string&amp;#10;* [prints](../prints) : Display a string&amp;#10;* [print_int](../print_int) : print an int&amp;#10;* [crlf](../crlf) : Returns to the next line&amp;#10;* [scroll](../scroll) : scroll from bottom to top, or top to bottom&amp;#10;&amp;#10;## Graphic/text mode&amp;#10;&amp;#10;* [setscreen](../setscreen) : start graphic mode&amp;#10;&amp;#10;## Execute&amp;#10;&amp;#10;* [exec](../exec) : Execute binary&amp;#10;&amp;#10;## Keyboard&amp;#10;&amp;#10;* [cgetc](../cgetc) : Get a char from keyboard (wait for a key)&amp;#10;&amp;#10;## Sound&amp;#10;&amp;#10;* [ping](../ping) : ping sound&amp;#10;* [zap](../zap) : zap sound&amp;#10;* [explode](../explode) : explode sound&amp;#10;* [shoot](../shoot) : shoot sound&amp;#10;&amp;#10;&amp;#10;"><svg class="markmap" id="markmap-0"></svg></div>
+<div class="language-markmap mkdocs-markmap" data-markdown="&amp;#10;## Args from commandline&amp;#10;&amp;#10;* [initmainargs](../initmainargs) : get command line and build argv/argc&amp;#10;* [getmainargs](../getmainargs) : get an argv from xmainargs struct&amp;#10;&amp;#10;## Numbers&amp;#10;&amp;#10;* [itoa](../itoa) : convert a number into decimal string&amp;#10;* [tohex](../tohex) : convert a number to hexadecimal and printit&amp;#10;* [atoi](../atoi) : Convert a string into a number (16 bits)&amp;#10;&amp;#10;## Memory&amp;#10;&amp;#10;* [malloc](../malloc) : allocate memory from main memory&amp;#10;* [mfree](../mfree) : free memory&amp;#10;* [memdecal](../memdecal) : move memory&amp;#10;* [memmove](../memmove) : move memory&amp;#10;&amp;#10;## Files&amp;#10;&amp;#10;* [fopen](../fopen) : Open a file&amp;#10;* [fwrite](../fwrite) : Write bytes to file&amp;#10;* [fread](../fread) : read bytes from file&amp;#10;* [fclose](../fclose) : Close file&amp;#10;* [fseek](../fseek) : Seek into files&amp;#10;* [mkdir](../mkdir) : Create a folder&amp;#10;* [getcwd](../getcwd) : get current path&amp;#10;* [chdir](../chdir) : change current path&amp;#10;* [unlink](../unlink) : remove file&amp;#10;&amp;#10;## Text mode&amp;#10;&amp;#10;* [cputc](../cputc) : Display a char&amp;#10;* [print](../print) : Display a string&amp;#10;* [prints](../prints) : Display a string&amp;#10;* [print_int](../print_int) : print an int&amp;#10;* [crlf](../crlf) : Returns to the next line&amp;#10;* [scroll](../scroll) : scroll from bottom to top, or top to bottom&amp;#10;* [cursor](../cursor) : Switch on/off cursor&amp;#10;&amp;#10;## Graphic/text mode&amp;#10;&amp;#10;* [setscreen](../setscreen) : start graphic mode&amp;#10;&amp;#10;## Execute&amp;#10;&amp;#10;* [exec](../exec) : Execute binary&amp;#10;&amp;#10;## Keyboard&amp;#10;&amp;#10;* [cgetc](../cgetc) : Get a char from keyboard (wait for a key)&amp;#10;&amp;#10;## Sound&amp;#10;&amp;#10;* [ping](../ping) : ping sound&amp;#10;* [zap](../zap) : zap sound&amp;#10;* [explode](../explode) : explode sound&amp;#10;* [shoot](../shoot) : shoot sound&amp;#10;&amp;#10;&amp;#10;"><svg class="markmap" id="markmap-0"></svg></div>
 <hr/>
 <div class="md-source-file">
 <small>

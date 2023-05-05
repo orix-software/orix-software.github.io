@@ -1,6 +1,6 @@
 # Tutorial
 
-##Print a string
+## Print a string
 
 === "C"
 
@@ -15,13 +15,14 @@
 
 === "Asm"
 
-    ``` ca65
+    ```ca65
+
     .include "telestrat
 
     print str_hello
 
     rts
 str_hello:
-    .byte "Hello world!",$OA,$0D,0
+    .byte "Hello world!",$0A,$0D,0
     ```
 

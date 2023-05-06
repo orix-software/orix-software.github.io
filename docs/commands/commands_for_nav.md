@@ -30,6 +30,7 @@
 - man: commands/man.md
 - mkdir: commands/mkdir.md
 - mount: commands/mount.md
+- more: commands/more.md
 - orixcfg: commands/orixcfg.md
 - pwd: commands/pwd.md
 - ps: commands/ps.md

@@ -95,7 +95,6 @@
 * [twil](../../commands/twil)
 * [uname](../../commands/uname)
 
-
 ### Manuals
 
 * [man](../../commands/man)
@@ -117,6 +116,7 @@
 * [cksum](../../commands/cksum)
 * [orixcfg](../../commands/orixcfg)
 * [hexdump](../../commands/hexdump)
+* [sterr](../../commands/strerr)
 
 ### Visualization tools
 
@@ -125,5 +125,6 @@
 * [viewhrs](../../commands/viewhrs)
 * [viewscr](../../commands/viewscr)
 * [man](../../commands/man)
+* [more](../../commands/more)
 
 ```

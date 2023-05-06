@@ -87,6 +87,7 @@ nav:
             - loader: commands/loader.md
             - man: commands/man.md
             - mkdir: commands/mkdir.md
+            - more: commands/more.md
             - mount: commands/mount.md
             - orixcfg: commands/orixcfg.md
             - pwd: commands/pwd.md
@@ -98,6 +99,7 @@ nav:
             - rm: commands/rm.md
             - setfont: commands/setfont.md
             - sh: commands/sh.md
+            - sterr: commands/strerr.md
             - submit: commands/submit.md
             - touch: commands/touch.md
             - twil: commands/twil.md

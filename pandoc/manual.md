@@ -505,11 +505,15 @@ Start Blakes7
 
 /#blakes7
 
-If you want to remove your saved game : 
+If you want to remove your saved game :
 
 /#cd /usr/share/blakes7
 
 /usr/share/blakes7# rm 136.o
+
+## Check the version
+
+/#blakes7 -v
 \newpage
 
 # Command: bootfd
@@ -521,9 +525,9 @@ Insert a disk and type :
 
 /#bootfd
 
-The binary is located to bin folder. It will load microdisc rom and
-start it. If the binary displays that it does not found microdis.rom,
-then place microdis.rom file in the right folder.
+The binary is located in "/bin" folder. It will load microdisc rom and
+will start it. If it displays "microdis.rom not found",
+then place "microdis.rom" file in the right folder.
 
 If you have firmware 1, you will be able to load « blake's 7 ». If you
 have firmware 2, all sedoric .dsk should start.
@@ -595,9 +599,9 @@ https://github.com/orix-software/shell/blob/master/src/commands/cd.asm
 ### checksum utility
 
 ## SYNOPSYS
++ cksum -h|-v
 + cksum file [...]
 + cksum @batchfile
-+ cksum -h
 
 ## EXAMPLES
 + cksum /bin/cksum
@@ -606,8 +610,10 @@ https://github.com/orix-software/shell/blob/master/src/commands/cd.asm
 checksum and count the bytes in a file
 
 ## OPTIONS
-*  -h
+* -h
                 show this help message and exit
+* -v
+                display program version and exit
 
 ## SOURCE
 https://github.com/orix-software/cksum
@@ -850,13 +856,18 @@ https://github.com/orix-software/shell/blob/master/src/commands/help.asm
 ### hexdump utility
 
 ## SYNOPSYS
++ hexdump -v
++ hexdump -h
++ hexdump -b bankid [,offset]
 + hexdump file
 
 ## EXAMPLES
 + hexdump /bin/hexdump
++ hexdump -b 7
++ hexdump -b 33,16128
 
 ## DESCRIPTION
-Display file contents in hexadecimal.
+Display file or bank contents in hexadecimal.
 You can use [SPACE] to pause the display ou [CTRL]+C to abort.
 
 ## SOURCE
@@ -1173,13 +1184,15 @@ When kernel has finished to initialize at boot time, sh command is started in in
 
 ## Shortcuts for tools
 
-*Funct+T* : Start Twilighte setup
-
-*Funct+L* : Start Loader
+*Funct+A* : Start Systemd rom
 
 *Funct+B* : Start Basic11
 
 *Funct+G* : Start basic11 gui
+
+*Funct+L* : Start Loader
+
+*Funct+T* : Start Twilighte setup
 
 ## Available commands
 

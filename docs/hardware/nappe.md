@@ -14,7 +14,13 @@ Put the notch (black connector) at the bottom and crimp the HE10 34 connector (G
 
 On the picture the notch is not visible on the black connector, because it's on the other side. But the hole on the grey connector is visible. It's really important to keep theses positions.
 
-Now we can use any amplibus or another expansion board from the twilighte board
+Ribbon cable tested :
+
+* 10 cms (OK)
+* 20 cms (OK)
+* 30 cms (OK)
+
+Now, we can use any amplibus or another expansion board from the twilighte board
 
 ## with a simple amplibus
 

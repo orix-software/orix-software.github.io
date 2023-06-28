@@ -39,7 +39,6 @@ cat ../docs/commands/df.md >> manual.md
 echo "" >> manual.md
 echo '![](.//Pictures/1000000000000283000001D12D928D88479E7F83.png){width="17cm" height="12.293cm"}' >> manual.md
 
-
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/dsk-util.md >> manual.md
 
@@ -80,7 +79,8 @@ cat ../docs/commands/lscpu.md >> manual.md
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/lsmem.md >> manual.md
 
-echo "\\\newpage\n">> manual.md
+
+cho "\\\newpage\n">> manual.md
 cat ../docs/commands/man.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
@@ -90,6 +90,9 @@ echo "\\\newpage\n">> manual.md
 cat ../docs/commands/mount.md >> manual.md
 echo "" >>  manual.md
 echo '![](.//Pictures/1000020100000280000001CFC6CDA413ADDF6624.png){width="7.685cm" height="5.595cm"}' >> manual.md
+
+echo "\\\newpage\n">> manual.md
+cat ../docs/commands/more.md >> manual.md
 
 echo "\\\newpage\n">> manual.md
 cat ../docs/commands/otimer.md >> manual.md
@@ -127,4 +130,4 @@ cat ../docs/commands/untar.md >> manual.md
 
 cat parts/last.md >> manual.md
 
-pandoc -V geometry:margin=.5in   -s -o ../twilighte_manual.pdf manual.md
+pandoc -V geometry:margin=.5in -s -o ../twilighte_manual.pdf manual.md

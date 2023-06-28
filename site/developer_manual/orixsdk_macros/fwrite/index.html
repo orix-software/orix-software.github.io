@@ -1334,16 +1334,77 @@
       
       
         <label class="md-nav__link" for="__nav_3_5">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/autoboot_fr/" class="md-nav__link">
+        Autoboot
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
           Updates
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Updates" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_5">
+        <label class="md-nav__title" for="__nav_3_6">
           <span class="md-nav__icon md-icon"></span>
           Updates
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../update/2023_2/" class="md-nav__link">
+        2023.2
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -1396,18 +1457,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4" type="checkbox" id="__nav_3_5_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6_5" type="checkbox" id="__nav_3_6_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_5_4">
+        <label class="md-nav__link" for="__nav_3_6_5">
           commands
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="commands" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_5_4">
+        <label class="md-nav__title" for="__nav_3_6_5">
           <span class="md-nav__icon md-icon"></span>
           commands
         </label>
@@ -3562,10 +3623,12 @@
 <p>Write bytes into file</p>
 <h2 id="usage">Usage</h2>
 <p>fwrite ptr, size, count, fp</p>
-<p>note:
-ptr may be : (ptr), address
-size may be: (ptr), address
-fp may be  : address, #value, {address,y}</p>
+<p>note:</p>
+<ul>
+<li>ptr may be : (ptr), address</li>
+<li>size may be: (ptr), address</li>
+<li>fp may be  : address, #value, {address,y}</li>
+</ul>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_file.mac"</span><span class="w"></span>

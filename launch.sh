@@ -13,6 +13,9 @@ GITHUB_AUTH=$TOKEN_GITHUB_PRIVATE_REPO@
 echo no
 fi
 
+if [ "$1" == "--pdf" ]; then
+cd pandoc/ && ./build.sh
+fi
 
 if [ "$1" == "--full" ]; then
 mkdir docs/commands/ -p

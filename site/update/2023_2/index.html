@@ -191,13 +191,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../user_manual/overview/" class="md-tabs__link">
+      <a href="../../user_manual/overview/" class="md-tabs__link md-tabs__link--active">
         Users manuals
       </a>
     </li>
@@ -375,12 +377,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -1332,16 +1336,120 @@
       
       
         <label class="md-nav__link" for="__nav_3_5">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/autoboot_fr/" class="md-nav__link">
+        Autoboot
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
           Updates
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Updates" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_5">
+        <label class="md-nav__title" for="__nav_3_6">
           <span class="md-nav__icon md-icon"></span>
           Updates
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          2023.2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        2023.2
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kernel" class="md-nav__link">
+    Kernel
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
           
             
               
@@ -1394,18 +1502,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4" type="checkbox" id="__nav_3_5_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6_5" type="checkbox" id="__nav_3_6_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_5_4">
+        <label class="md-nav__link" for="__nav_3_6_5">
           commands
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="commands" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_5_4">
+        <label class="md-nav__title" for="__nav_3_6_5">
           <span class="md-nav__icon md-icon"></span>
           commands
         </label>
@@ -3466,40 +3574,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#shell" class="md-nav__link">
-    Shell
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    Install
-  </a>
-  
-    <nav class="md-nav" aria-label="Install">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#orixcfg-below-20232-orixcfg-version" class="md-nav__link">
-    orixcfg (below 2023.2 orixcfg version)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#orixcfg-equal-or-greater-than-20232-orixcfg-version" class="md-nav__link">
-    orixcfg (equal or greater than 2023.2 orixcfg version)
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3519,18 +3593,34 @@
 <ul>
 <li>XEXEC works with absolute path (/root/bin/toto can be launched)</li>
 <li>XEXEC works with relative "./" syntax only  (./toto can be launched)</li>
+<li>
+<h1 id="script-are-now-working">! script are now working</h1>
+</li>
+<li>Fix bug when we switch to hires many times</li>
 </ul>
 <h2 id="shell">Shell</h2>
+<ul>
+<li>Cleaning</li>
+<li>Fix bug in lsmem (free chunk)</li>
+<li>viewhrs can have an arg "-t" in order to specify a wait value before viewhrs exit</li>
+</ul>
+<h2 id="cc65">cc65</h2>
+<p>fwrite and fread did not returns the right number of byte read or written</p>
+<h2 id="tools">Tools</h2>
+<ul>
+<li>'more' available</li>
+<li>'blakes7' is now in relocation format</li>
+</ul>
 <h2 id="install">Install</h2>
-<p>Download : https://repo.orix.oric.org/dists/official/tgz/6502/cardridge.tgz</p>
+<p>Download Kernel: https://repo.orix.oric.org/dists/official/tgz/6502/cardridge.tgz</p>
 <p>untar/gunzip on the twilighte board device.</p>
 <h3 id="orixcfg-below-20232-orixcfg-version">orixcfg (below 2023.2 orixcfg version)</h3>
 <p>Under Orix</p>
-<div class="highlight"><pre><span></span><code>/# <span class="nb">cd</span> /usr/share/carts/2023.1/
+<div class="highlight"><pre><span></span><code>/# <span class="nb">cd</span> /usr/share/carts/2023.2/
 /usr/share/carts/2023.2# orixcfg -r -s <span class="m">4</span> kernelus.r64
 </code></pre></div>
 <h2 id="orixcfg-equal-or-greater-than-20232-orixcfg-version">orixcfg (equal or greater than 2023.2 orixcfg version)</h2>
-<div class="highlight"><pre><span></span><code>/# <span class="nb">cd</span> /usr/share/carts/2023.1/
+<div class="highlight"><pre><span></span><code>/# <span class="nb">cd</span> /usr/share/carts/2023.2/
 /usr/share/carts/2023.1# orixcfg -k kernelus.r64
 </code></pre></div>
 
@@ -3563,6 +3653,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../tutorials/autoboot_fr/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Autoboot" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Autoboot
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../2023_1/" class="md-footer__link md-footer__link--next" aria-label="Next: 2023.1" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              2023.1
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

@@ -1334,16 +1334,77 @@
       
       
         <label class="md-nav__link" for="__nav_3_5">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/autoboot_fr/" class="md-nav__link">
+        Autoboot
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
           Updates
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Updates" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_5">
+        <label class="md-nav__title" for="__nav_3_6">
           <span class="md-nav__icon md-icon"></span>
           Updates
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../update/2023_2/" class="md-nav__link">
+        2023.2
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -1396,18 +1457,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4" type="checkbox" id="__nav_3_5_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6_5" type="checkbox" id="__nav_3_6_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_5_4">
+        <label class="md-nav__link" for="__nav_3_6_5">
           commands
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="commands" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_5_4">
+        <label class="md-nav__title" for="__nav_3_6_5">
           <span class="md-nav__icon md-icon"></span>
           commands
         </label>
@@ -3593,9 +3654,11 @@
 <h2 id="description">Description</h2>
 <p>Write bytes to file</p>
 <h2 id="input">Input</h2>
-<p>AY contains the length to write
-PTR_READ_DEST must be set (ptr where data are read)
-X contains the fd id</p>
+<ul>
+<li>AY contains the length to write</li>
+<li>PTR_READ_DEST must be set (ptr where data are read)</li>
+<li>X contains the fd id</li>
+</ul>
 <h2 id="output">Output</h2>
 <p>A &amp; X contains the written length</p>
 <h2 id="modification">Modification</h2>
@@ -3605,7 +3668,7 @@ X contains the fd id</p>
 <span class="w">    </span><span class="k">lda</span><span class="w"> </span><span class="p">#</span><span class="o">&gt;</span><span class="mh">$A000</span><span class="w"></span>
 <span class="w">    </span><span class="k">sta</span><span class="w"> </span><span class="n">PTR_READ_DEST</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
 
-<span class="w">    </span><span class="k">lda</span><span class="w"> </span><span class="p">#</span><span class="o">&lt;</span><span class="mi">12</span><span class="w"></span>
+<span class="w">    </span><span class="k">lda</span><span class="w"> </span><span class="p">#</span><span class="o">&lt;</span><span class="mi">12</span><span class="w"> </span><span class="c1">; Write 12 bytes</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldy</span><span class="w"> </span><span class="p">#</span><span class="o">&gt;</span><span class="mi">12</span><span class="w"></span>
 <span class="w">    </span><span class="k">ldx</span><span class="w"> </span><span class="n">fp</span><span class="w"></span>
 <span class="w">    </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XFWRITE</span><span class="w"></span>

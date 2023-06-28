@@ -1,7 +1,7 @@
 ---
-title: Orix/Twilighte Manual
-author: v2022.4.1
-date: rev 09/11/2022
+title: Orix/Twilighte board Manual
+author: v2022.2
+date: rev 26/06/2023
 ---
 
 ![](.//Pictures/10000000000003F0000002F4BA33A9E79E8D2E3F.jpg){width="17cm" height="12.749cm"}
@@ -24,51 +24,44 @@ https://github.com/orix-software/systemd/blob/master/docs/pdf/systemd.pdf
 []{#anchor}INTRODUCTION
 =======================
 
-[]{#anchor-1}What is new (v2022.4) ?
+[]{#anchor-1}What is new (v2023.2) ?
 -------------------------------------
 
-https://orix-software.github.io/update/2022_4/
+https://orix-software.github.io/update/2023_2/
 
 []{#anchor-4}General informations
 ---------------------------------
 
-This documentation must be use when you have installed orix version
-**2022.3** (see at the top of the banner on the oric at boot).
+This documentation must be use for the use if orix version **2023.2**. Upgrade to the last version of Orix all the stuff working.
 
-On [http://orix.oric.org](http://orix.oric.org/), you will have some
-youtube videos links showiint how to use some functionnality.
+Definitions :
 
-The board has a firmware version. This firmware can be upgarded see
+* Orix is the OS working on the board.
+* Twilighte board is the hardware.
+
+On [http://orix.oric.org](http://orix.oric.org/), you will have some youtube videos links showing how to use some functionnality.
+
+The board has a firmware version (see twil command for more information). This firmware can be upgarded see
 « Hardware and firmware upgrade » section.
 
-The board can be upgarded too but you have to send it to upgrade the
-board see «  Hardware and firmware upgrade » section » too.
+The card has a 512KB eeprom chip, and a 512KB RAM chip. Theres RAM and ROM areas are divided into "bank" of 16KB. That is why, there is 32 banks of ROM and 32 banks of RAM (use 'bank' tool, to see it)
 
-The card has a 512KB of eeprom, and 512KB of RAM. This RAM is saved with
-a battery. For instance, only bank 4, 3, 2 and 1 can be switched to see
-others sets. It's a software limit. In the future, you will be able to
-displays all bank and starts any binary from theses banks. If you wants
-to change the set, you can use twil command. This command can switch to
-eeprom bank or ram bank and can switch to any set.
-
-Some extra devices (TOM2, logitech joypad) are explained a bit in this
-manual, but it's not adverts, we don't ear anything:) It explains some
-ways to use joystick, others hardware exists in the same way)
+Some extra devices (TOM2, logitech joypad) are explained a bit in this manual, others hardware can work with the board.
 
 []{#anchor-5}Features
 ---------------------
 
 -   .tap file fast loading (with multitap files)
-
-<!-- -->
-
+-    Start Oric-1/Atmos tape file.
+-    Write tap file.
+-    Starts any ROM
+-    Starts ftdos .dsk file
+-    Starts Sedoric .dsk file
 -   Joysticks support for a lot of games on atmos mode
--   the hobbit, defence-force (and others games) works without any
-        patch for loading
-
+-   No patch for tape file
 -   in system : kernel update, roms and ram update (with
     [orixcfg](http://orix.oric.org/command-orixcfg/) binary)
--   2 DB9 Joysticks (atari)
+-   2 DB9 Joysticks (atari pinout)
 -   512KB of EEPROM (banking mode)
 -   512KB of RAM (banking mode)
 -   read/write from sdcard (MAX 64GB) or usb drive (mass storage)
@@ -96,44 +89,38 @@ ways to use joystick, others hardware exists in the same way)
 ----------------------------
 
 ![\
-Figure 1: 2 joysticks port : left port and right port, 1 usb
+Picture 1: 2 joysticks port : left port and right port, 1 usb
 port](.//Pictures/10000000000003E9000002297085C8C49E232E8C.jpg "fig:"){width="8.326cm"
 height="4.598cm"}![\
-Figure 2: sdcard
+Picture 2: sdcard
 port](.//Pictures/10000000000003EE000001D3DAA5DF11D6460212.jpg "fig:"){width="9.181cm"
 height="4.262cm"}
 
 []{#anchor-9}Hardware limits
 ----------------------------
 
-The usb controler manage FAT32 only. Sdcard and usb key must be
-formatted with FAT32 filesystem. If you want to use pi zero gadget
-trick, you need to do a mkfs to FAT32 file system.
+The usb controler manage FAT32 only. Sdcard and usb key must be formatted with FAT32 filesystem. If you want to use pi zero gadget trick, you need to do a mkfs to FAT32 file system.
 
-All tests had been done with samsung evo sdcard and sandisk usb key. A
-lot of sdcard works, and we did not see incompatibility with sdcard.
+All tests had been done with samsung evo sdcard and sandisk usb key. A lot of sdcard works, and we did not see incompatibility with sdcard.
 
 Sdcard controler and usb key controler can work with 32GB storage Max.
-But it can handle 64 GB sdcard (tested). It can handle larger sdcard/usb
-key reader, but only 32 and 64 GB devices was used.
+But it can handle 64 GB sdcard (tested). It can handle larger sdcard/usb key reader, but only 32 and 64 GB devices was used.
 
 []{#anchor-10}Software limits
 -----------------------------
 
-The sdcard/usb controler can handle long filename, but Orix handles 8+3
-filename only.
+The sdcard/usb controler can handle long filename, but Orix handles 8+3 filename only.
 
 []{#anchor-11}Information about joysticks part
 ----------------------------------------------
 
 The left port has only 1 button. The right port has 3 buttons. The
-joystick pinout is atari pinout. You can use standard DB9 joystick. You
+joysticks pinout is atari pinout. You can use standard DB9 joystick. You
 can also plug « TOM2 » hardware (not provided), it can connect a usb
 mouse or usb joypad (wireless) to theses ports. For example, logitech
 joypad F710 (wireless) works with TOM2.
 
-Please note that TOM2 can only handle 2 buttons. It means that the third
-button can't work with TOM2 connected.
+Please note that TOM2 can only handle 2 buttons. It means that the third button can't work with TOM2 connected.
 
 ![](.//Pictures/1000020100000310000000B48F2DD6FDDF185453.png){width="17cm" height="3.902cm"}
 --------------------------------------------------------------------------------------------
@@ -141,7 +128,7 @@ button can't work with TOM2 connected.
 {#anchor-12}First boot : Initialize the storage
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-When the card is sent, kernel is built with a default storage. In order
+When the board is sent, kernel is built with a default storage. In order
 to know which device is the default one, you can type « mount ». You can
 only use one device at the same time, but you can swap easily theses
 devices from command line.
@@ -175,8 +162,8 @@ twilighte board and play.
 []{#anchor-13}Upgrade from v2022.4 to v2022.4.1
 ---------------------------------------------
 
-If your orix version is below v2022.3 version, please go to annexes part at the
-end of this document, before you try to upgrade to v2022.4.1
+If your orix version is below v2023.1 version, please go to annexes part at the
+end of this document, before you try to upgrade to v2023.2
 
 -   Download
     <http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz>
@@ -188,7 +175,15 @@ end of this document, before you try to upgrade to v2022.4.1
     /\#cd usr\
     /usr\#cd share\
     /*usr/share\#cd carts\
-    /usr/share/carts\#cd 2022.4*
+    /usr/share/carts\#cd 2023.2*
+
+    Check orixcfg version
+
+    orixcfg -v
+
+    If orixcfg returns version 2023.2, use "-k" flag to upgrade kernel :
+
+    orixcfg -k mycart.r64
 
     If you want to usr usb drive for default device :
 

@@ -3616,7 +3616,7 @@
                 
 
 
-<h1 id="orix-demarrage-personnalise-par-autoboot-et-submit">[Orix] Démarrage personnalisé par autoboot et submit</h1>
+<div><h1 id="orix-demarrage-personnalise-par-autoboot-et-submit">[Orix] Démarrage personnalisé par autoboot et submit</h1>
 <p>Depuis la version du kernel v2023.1, il est désormais possible de personnaliser le démarrage d’Orix sur son atmos.</p>
 <p>Submit est un langage de scripting issu de CPM mais modifié par Assinie. Assine a fait le code pour Orix mais aussi a amélioré le fonctionnement afin d’intégrer des fonctionnalités en plus. Submit est un langage interprété.</p>
 <p>Autoboot est un fichier localisé dans le répertoire “/etc/” et va contenir un script submit. Ce script contenu dans le fichier autoboot sera lancé au boot de l’ordinateur ce qui permettra de personnaliser son boot, faire des menus etc.</p>
@@ -3636,6 +3636,7 @@ blakes7
 </code></pre></div>
 <p>Je sauve le fichier, je mets la clé usb, et je démarre l’oric.</p>
 <p>Blakes7 démarrera automatiquement</p>
+<p><div class="video-container"><iframe src="https://youtu.be/0f3IOA3p_fQ" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <h2 id="demarrage-dun-menu-personnalise-avec-changement-de-fonte">Démarrage d’un menu personnalisé avec changement de fonte</h2>
 <p>Cette fois ci, nous allons lancer un menu au boot. Le script suivant va :</p>
 <p>effacer l’écran après le boot, mettre la fonte fanta2uk (les fontes sont localisées dans “/usr/share/fonts”).
@@ -3681,7 +3682,8 @@ basic11 <span class="s2">"PSY</span>
 <span class="s2">exit</span>
 </code></pre></div>
 <p>Le résultat en image:</p>
-<p>Le résultat en vidéo:</p>
+<p>Le résultat en vidéo :</p>
+<p><div class="video-container"><iframe src="https://youtu.be/7wXobqItIEo" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <p>Ce script va lancer, en fonction de la touche pressée, l’entrée voulue (rom basic, blake, psychiatric, barbitoric ou revenir au shell). En revanche, une entrée de fonctionnera pas, c’est barbitoric (pour la version disponible au 7/06/2023).</p>
 <p>Pour expliquer pourquoi barbitoric ne fonctionne pas dans le cas où il est localisé dans un script submit, il faut se référer au fonctionnement d’un binaire Orix. Le problème ne se produit pas pour une commande en ROM, mais il peut se produire pour un binaire sur clé usb/sdcard.</p>
 <p>Au début du développement d’Orix, un seul format de binaire existait, c’est le fameux format statique que nous connaissons pour du basic, hyperbasic, commandes sedoric etc. Les programmes sont assemblés à une adresse fixe, et il y a conflit si on essaie de charger un programme qui est dans la même plage d’adresse : l’un va écraser l’autre. C’est ce qu’il se passe dans le cas de submit et barbitoric, mais ce n’est pas submit le fautif, c’est le binaire barbitoric en natif Orix. Submit est un binaire sur disque au format 2 Orix. Ce format est relogeable. Le kernel va allouer la plage mémoire disponible en fonction de la taille et reloger au runtime le binaire pour que submit puisse tourner à une nouvelle adresse. Submit tourne donc à une adresse inconnue par l’utilisateur, seul le kernel sait où submit est localisé en RAM. Aussi, Submit va faire des allocations mémoire pour sa propre utilisation.</p>
@@ -3699,7 +3701,7 @@ Avant d’aller plus loin, l’idéal est de lire la doc “subdoc” en utilisa
 <div class="highlight"><pre><span></span><code>/#man subdoc
 </code></pre></div>
 <p>Nous avons besoin de personnaliser un peu plus ce menu, et nous allons afficher un texte double hauteur avec quelques couleurs. Cela se fait avec les caractères de contrôle :
-<div class="highlight"><pre><span></span><code><span class="nv">ink_black</span> <span class="o">=</span> ^@
+</p><div class="highlight"><pre><span></span><code><span class="nv">ink_black</span> <span class="o">=</span> ^@
 <span class="nv">ink_red</span> <span class="o">=</span> ^A
 <span class="nv">ink_green</span> <span class="o">=</span> ^B
 <span class="nv">ink_yellow</span> <span class="o">=</span> ^C
@@ -3722,7 +3724,7 @@ Avant d’aller plus loin, l’idéal est de lire la doc “subdoc” en utilisa
 <span class="nv">paper_purple</span> <span class="o">=</span> ^U
 <span class="nv">paper_cyan</span> <span class="o">=</span> ^V
 <span class="nv">paper_white</span> <span class="o">=</span> ^W
-</code></pre></div></p>
+</code></pre></div>
 <p>Nous allons modifier autoboot, pour afficher un bandeau avec sur fond bleu et en écriture rouge le mot menu en double hauteur, puis afficher un encadré magenta avec le menu.</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#! /bin/submit</span>
 cls
@@ -3775,7 +3777,7 @@ basic11 <span class="s2">"PSY</span>
 </code></pre></div>
 <p>“toto” sera dans la variable $1, permettant de faire des tests avec if.</p>
 <p>Il est possible de tester la présence d’un fichier (if exist myfile.txt goto start)</p>
-<p>D’afficher un prompt avec input, et récupérer ce qui a été saisi dans une variable.</p>
+<p>D’afficher un prompt avec input, et récupérer ce qui a été saisi dans une variable.</p></div>
 
   <hr>
 <div class="md-source-file">

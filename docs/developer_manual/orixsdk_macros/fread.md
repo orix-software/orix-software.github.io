@@ -36,7 +36,7 @@ next:
     ; Save FP
     sta     MAN_FP
     stx     MAN_FP+1
-    fread (myptr), 1080, 1, MAN_FP ; myptr is from a malloc for example
+    fread (myptr), #1080, 1, MAN_FP ; myptr is from a malloc for example
     fclose(MAN_FP)
     rts
 ```

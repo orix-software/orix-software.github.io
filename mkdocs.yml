@@ -29,6 +29,7 @@ plugins:
  - git-revision-date
  - search
  - markmap
+ - mkdocs-video
 #   - mkdocstrings:
 #         watch:
 #             - src/project

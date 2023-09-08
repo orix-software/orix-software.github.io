@@ -3616,7 +3616,7 @@
                 
 
 
-<h1 id="binary-start-sequence">Binary start sequence</h1>
+<div><h1 id="binary-start-sequence">Binary start sequence</h1>
 <p>All commands are started with XEXEC kernel primitive. For example, when something is typed into shell, shell calls XEXEC kernel primitive (except for shell internal commands like echo, pwd ...).</p>
 <p>When a binary is executed, kernel fork a new process with its PID, PPID, CWD</p>
 <h2 id="step-1-check-if-binary-is-in-a-bank">Step 1 : check if binary is in a bank</h2>
@@ -3626,7 +3626,7 @@
 <h2 id="step-2-check-if-the-binary-is-on-the-device">Step 2 : Check if the binary is on the device</h2>
 <p>If the binary is not in a bank, kernel will try to open "/bin/BINARY_FILE". If the binary open fails, it returns "command not found" or impossible to mount if device is not present.</p>
 <h2 id="step-3-binary-on-storage-device-is-found">Step 3 : binary on storage device is found</h2>
-<p>Kernel opens the file, reads the header, and loads the content of the binary on the right address. When it's OK, the binary is started (and a fork occurs)</p>
+<p>Kernel opens the file, reads the header, and loads the content of the binary on the right address. When it's OK, the binary is started (and a fork occurs)</p></div>
 
   <hr>
 <div class="md-source-file">

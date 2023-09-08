@@ -13,7 +13,7 @@
     
     
       
-        <title>Scripts submit avancés - ORIX v2023.1 DOCUMENTATION</title>
+        <title>submit scripts advanced - ORIX v2023.1 DOCUMENTATION</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#scripts-submit-avances" class="md-skip">
+        <a href="#submit-scripts-advanced" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Scripts submit avancés
+              submit scripts advanced
             
           </span>
         </div>
@@ -3521,8 +3521,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequis" class="md-nav__link">
-    Prérequis
+  <a href="#versions" class="md-nav__link">
+    Versions
   </a>
   
 </li>
@@ -3548,13 +3548,50 @@
                 
 
 
-<h1 id="scripts-submit-avances">Scripts submit avancés</h1>
-<h2 id="prerequis">Prérequis</h2>
+<div><h1 id="submit-scripts-advanced">submit scripts advanced</h1>
+<h2 id="versions">Versions</h2>
 <p>Kernel v2023.2
 submit 2022.4</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/submit</span>
 </code></pre></div>
 <h2 id="restore-from">Restore from</h2>
+<p>restore from /etc/orix/menu.cnf</p>
+<p>En PJ la version corrigée de submit.</p>
+<p>Bugfix: restore from: ne fonctionnait plus suite à l'optimisation de la lecture du script</p>
+<p>Modification: place la flèche au début de la variable et non à la fin (cas de if exists)</p>
+<p>Je ne sais pas si tu l'avais vu dans le manuel subdoc mais tu peux vérifier la valeur de errrorlevel après une commande restore ou save.</p>
+<h1 id="restore-22">Restore (2/2)</h1>
+<p>Apres execution errorlevel vaut:</p>
+<ul>
+<li>0: ok</li>
+<li>1: erreur d'ouverture du fichier</li>
+<li>2: '=' manquant</li>
+<li>3: nom de variable trop long</li>
+<li>4: trop de variables</li>
+<li>5: chaine trop longue</li>
+<li>6: erreur interne</li>
+</ul>
+<h1 id="save">Save</h1>
+<p>Apres execution errorlevel vaut:</p>
+<ul>
+<li>0: ok</li>
+<li>1: erreur d'ouverture du fichier</li>
+</ul>
+<p>Donc tu peux faire:</p>
+<p>if errorlevel 1 goto erreur ou if errorlevel &gt;=1 goto erreur qui est équivalent
+if errorlevel = 1 goto erreur pour ne détecter que le problème d'ouverture du fichier
+if errorlevel = 0 goto ok et mettre le traitement d'erreur juste après cette ligne.
+on error ne fonctionnera pas ici parce que j'ai considérer qu'il ne s'agissait d'erreurs fatales.</p>
+<h2 id="call">Call</h2>
+<h2 id="chain">Chain</h2>
+<p>Calls a new submit script. If chain is called, the main script is left and the one starts</p>
+<div class="highlight"><pre><span></span><code>chain script.sub
+</code></pre></div>
+<h2 id="on-error">On error</h2>
+<h2 id="getkey">getkey</h2>
+<p>getkey wait for a key. The value of the key pressed is inserted in "key" variable</p>
+<h2 id="if">if</h2>
+<h2 id="variable">variable</h2></div>
 
   <hr>
 <div class="md-source-file">

@@ -1,5 +1,7 @@
 # Definitions
 
+!!! info "Kernel 2023.2 and Shell 2023.2 had been released."
+
 ## Start atmos/oric-1 tape file, ftdos .dsk files, roms
 
 ### .tap file
@@ -13,6 +15,7 @@
 
 | Feature     | read                         | Write | joystick management
 | ----------- | ---------------------------- |-------|---------------------|
+| `Sedoric .dsk file (beta)`         | :material-check: |:material-close: |:material-close: |
 | `ftdos .dsk file`         | :material-check: |:material-close: |:material-close: |
 
 ## Twilighte board

@@ -3632,7 +3632,7 @@
                 
 
 
-<h1 id="fread-macro">FREAD macro</h1>
+<div><h1 id="fread-macro">FREAD macro</h1>
 <h2 id="description">description</h2>
 <p>Read byte from file</p>
 <h2 id="usage">Usage</h2>
@@ -3660,11 +3660,11 @@ fp may be  : address, #value, {address,y}</p>
 <span class="w">    </span><span class="c1">; Save FP</span><span class="w"></span>
 <span class="w">    </span><span class="k">sta</span><span class="w">     </span><span class="n">MAN_FP</span><span class="w"></span>
 <span class="w">    </span><span class="k">stx</span><span class="w">     </span><span class="n">MAN_FP</span><span class="o">+</span><span class="mi">1</span><span class="w"></span>
-<span class="w">    </span><span class="n">fread</span><span class="w"> </span><span class="p">(</span><span class="n">myptr</span><span class="p">),</span><span class="w"> </span><span class="mi">1080</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">MAN_FP</span><span class="w"> </span><span class="c1">; myptr is from a malloc for example</span><span class="w"></span>
+<span class="w">    </span><span class="n">fread</span><span class="w"> </span><span class="p">(</span><span class="n">myptr</span><span class="p">),</span><span class="w"> </span><span class="p">#</span><span class="mi">1080</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">MAN_FP</span><span class="w"> </span><span class="c1">; myptr is from a malloc for example</span><span class="w"></span>
 <span class="w">    </span><span class="n">fclose</span><span class="p">(</span><span class="n">MAN_FP</span><span class="p">)</span><span class="w"></span>
 <span class="w">    </span><span class="k">rts</span><span class="w"></span>
 </code></pre></div>
-<p>See <a href="../../../kernel/primitives/xfread">XFREAD</a> kernel primitive.</p>
+<p>See <a href="../../../kernel/primitives/xfread">XFREAD</a> kernel primitive.</p></div>
 
   <hr>
 <div class="md-source-file">

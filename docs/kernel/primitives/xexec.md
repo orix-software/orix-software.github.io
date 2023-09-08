@@ -33,6 +33,12 @@ str:
     .asciiz "mybin"
 ```
 
+!!! info "If the command is executed Y contains 'EOK' code"
+
 !!! fail "XEXEC does not manage './' or '../' before kernel v2023.2"
 
+!!! fail "Bug : when XEXEC is finished (binary is terminated), XEXEC will close all FD of all process !"
+
 !!! warning "./ calls and /mypath/mybinary calls are available since kernel v2023.2, but '../' is not available"
+
+!!! warning "Since Kernel 2023.3 : if command is too long for the KERNEL, Y contains 'EINVAL' error"

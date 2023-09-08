@@ -10,7 +10,7 @@ exec command
 
 command may be : (ptr), address
 
-## Exammple
+## Example
 
 ```ca65
     .include "telestrat.inc"

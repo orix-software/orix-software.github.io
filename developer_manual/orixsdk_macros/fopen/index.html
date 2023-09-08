@@ -3618,7 +3618,7 @@
                 
 
 
-<h1 id="fopen-macro">FOPEN macro</h1>
+<div><h1 id="fopen-macro">FOPEN macro</h1>
 <h2 id="description">description</h2>
 <p>Open a file.</p>
 <h2 id="usage">usage</h2>
@@ -3654,7 +3654,7 @@
 <div class="admonition warning">
 <p class="admonition-title">The filename/path address must not be in the rom. If it's the case, the string must be copied into main memory because Kernel overlap the ROM. fopen macro from SDK will produce an error, if the 'address' is in a ROM range (eg : $c000-$FFFF). If you use a ptr, macro can not detect it, and XOPEN primitive won't be able to open your file</p>
 </div>
-<p>See <a href="../../../kernel/primitives/xopen">XOPEN</a> kernel primitive.</p>
+<p>See <a href="../../../kernel/primitives/xopen">XOPEN</a> kernel primitive.</p></div>
 
   <hr>
 <div class="md-source-file">

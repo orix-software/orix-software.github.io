@@ -3650,7 +3650,7 @@
                 
 
 
-<h1 id="xexec">XEXEC</h1>
+<div><h1 id="xexec">XEXEC</h1>
 <h2 id="description">Description</h2>
 <p>Start a binary (located in a ROM or on the current device)</p>
 <h2 id="input">Input</h2>
@@ -3675,12 +3675,21 @@
 <span class="nl">str:</span><span class="w"></span>
 <span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"mybin"</span><span class="w"></span>
 </code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">If the command is executed Y contains 'EOK' code</p>
+</div>
 <div class="admonition fail">
 <p class="admonition-title">XEXEC does not manage './' or '../' before kernel v2023.2</p>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">Bug : when XEXEC is finished (binary is terminated), XEXEC will close all FD of all process !</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">./ calls and /mypath/mybinary calls are available since kernel v2023.2, but '../' is not available</p>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Since Kernel 2023.3 : if command is too long for the KERNEL, Y contains 'EINVAL' error</p>
+</div></div>
 
   <hr>
 <div class="md-source-file">

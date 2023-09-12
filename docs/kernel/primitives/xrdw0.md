@@ -14,4 +14,4 @@ Wait a key from the keyboard
     rts
 ```
 
-!!! tip "See [cgetc](../../developer_manual/orixsdk_macros/cgetc) macro from orix-sdk to use it"
+!!! tip "See [cgetc](../../../developer_manual/orixsdk_macros/cgetc) macro from orix-sdk to use it"

@@ -25,4 +25,4 @@ str:
     .asciiz "/etc"
 ```
 
-!!! tip "See [chdir](../../developer_manual/orixsdk_macros/chdir) macro from orix-sdk to use it"
+!!! tip "See [chdir](../../../developer_manual/orixsdk_macros/chdir) macro from orix-sdk to use it"

@@ -21,4 +21,4 @@ myfile_to_remove:
     .asciiz "toto"
 ```
 
-!!! tip "See [unlink](../../developer_manual/orixsdk_macros/unlink) macro from orix-sdk to use it"
+!!! tip "See [unlink](../../../developer_manual/orixsdk_macros/unlink) macro from orix-sdk to use it"

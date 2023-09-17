@@ -20,4 +20,3 @@ En cours de dev, mais voici les choses en cours et en partie fonctionnel pour ce
 * ping
 
 Api réseau possible à l'avenir pour ses propres programmes.
-

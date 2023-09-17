@@ -406,7 +406,7 @@
   
     <li class="md-nav__item">
       <a href="../../user_manual/features/" class="md-nav__link">
-        Overview
+        Features
       </a>
     </li>
   
@@ -3713,19 +3713,23 @@
 <div><h1 id="bank">bank</h1>
 <h2 id="introduction">Introduction</h2>
 <p>Bank command is command line tool to see which bank are loaded into EEPROM bank and RAM bank. Each bank has a
-"signature". Bank allows to see theses banks.
-Bank can also starts a ROM with his id. In that case, you don’t need to have a rom "orix friendly" and you can start it
-from command line. In the current bank version, there is restriction to launch a command.</p>
+"signature". Bank allows to see theses signatures.
+Bank can also start a ROM with his identifier. In that case, you don't need to have a rom "orix friendly" and you can start it
+from command line.</p>
 <h2 id="synopsys">SYNOPSYS</h2>
 <h3 id="list-all-bank-when-rom-signature-is-valid">List all bank (when ROM signature is valid)</h3>
-<p>/#bank
-Bank 1 to 32 is eeprom bank and bank 33 to 64 are ram bank</p>
+<div class="highlight"><pre><span></span><code>/#bank
+</code></pre></div>
+<p>Bank 1 to 32 are eeprom banks and banks from 33 to 64 are ram banks</p>
 <h3 id="displays-all-signature-even-when-rom-is-not-valid">Displays all signature even when ROM is not valid</h3>
-<p>/#bank</p>
+<div class="highlight"><pre><span></span><code>/#bank
+</code></pre></div>
 <h3 id="list-all-commands-from-a-bank">List all commands from a bank</h3>
-<p>/#help -b5</p>
+<div class="highlight"><pre><span></span><code>/#help -b5
+</code></pre></div>
 <h3 id="start-a-specific-bank">Start a specific bank</h3>
-<p>/#bank 1</p>
+<div class="highlight"><pre><span></span><code>/#bank <span class="m">1</span>
+</code></pre></div>
 <p>If you need to load a rom into a bank, you need to have a look to orixcfg binar</p>
 <h2 id="description">DESCRIPTION</h2>
 <p>This command displays bank when the command is called without parameter. WIth a parameter, you can switch to a the id of the bank passed to the argument :</p>

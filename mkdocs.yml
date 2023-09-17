@@ -55,7 +55,7 @@ nav:
         - Users manuals: user_manual/overview.md
         - Developpers manuals: developer_manual/index.md
     - Users manuals:
-        - Overview: user_manual/features.md
+        - Features: user_manual/features.md
         - Overview: user_manual/overview.md
         - Commands:
             - All commands: commands/all.md

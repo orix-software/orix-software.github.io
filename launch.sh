@@ -35,6 +35,14 @@ MYURL="https://${GITHUB_AUTH}raw.githubusercontent.com/orix-software/${tab_repo[
 
 echo $MYURL
 curl  $MYURL
+
+echo Checking screenshots
+SCREENSHOT=`cat docs/commands/$VAL.md | grep ''`
+
+if [ "$SCREENSHOT" neq "" ]; then
+
+fi
+
 ret=$?
 
 if [ $ret -ne 0 ]; then

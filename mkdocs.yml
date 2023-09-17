@@ -1,4 +1,4 @@
-site_name: ORIX v2023.1 DOCUMENTATION
+site_name: ORIX v2023.2 DOCUMENTATION
 
 markdown_extensions:
     - pymdownx.highlight
@@ -38,6 +38,7 @@ dev_addr: '172.30.72.43:8001'
 
 theme:
     name: material
+    logo: favicon.png
     highlightjs: true
     palette:
         primary: black
@@ -54,6 +55,7 @@ nav:
         - Users manuals: user_manual/overview.md
         - Developpers manuals: developer_manual/index.md
     - Users manuals:
+        - Overview: user_manual/features.md
         - Overview: user_manual/overview.md
         - Commands:
             - All commands: commands/all.md

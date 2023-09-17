@@ -1,6 +1,6 @@
 # Definitions
 
-!!! info "Kernel 2023.2 and Shell 2023.2 had been released. : [Notes](update/2023_2)"
+!!! info "Kernel 2023.2 and Shell 2023.2 had been released : [Notes](update/2023_2)"
 
 ## Start atmos/oric-1 tape file, ftdos .dsk files, roms
 

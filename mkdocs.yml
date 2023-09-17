@@ -38,7 +38,7 @@ dev_addr: '172.30.72.43:8001'
 
 theme:
     name: material
-    logo: favicon.png
+    logo: docs/favicon.png
     highlightjs: true
     palette:
         primary: black

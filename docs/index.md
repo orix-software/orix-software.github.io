@@ -2,7 +2,7 @@
 
 !!! info "Kernel 2023.2 and Shell 2023.2 had been released : [Notes](update/2023_2)"
 
-![Overview](./user_manual/img/v2023_3.png)
+![Overview](./user_manual/img/v2023_3.png){: style="height:150px;width:150px"}
 
 ## Start atmos/oric-1 tape file, ftdos .dsk files, roms
 

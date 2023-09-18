@@ -30,6 +30,7 @@ plugins:
  - search
  - markmap
  - mkdocs-video
+
 #   - mkdocstrings:
 #         watch:
 #             - src/project

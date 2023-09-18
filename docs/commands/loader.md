@@ -16,8 +16,6 @@ and others Roms
 * space : displays infos of the sofware if available
 * ESC : quit loader
 
-### Informations
-
 ## Informations
 
 Loader can starts tape file as atmos .tap file by category (demo, games).

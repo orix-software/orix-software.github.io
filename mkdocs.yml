@@ -53,8 +53,8 @@ nav:
     - Home:
         - definitions: index.md
     - Getting started:
-        - Users manuals: user_manual/overview.md
-        - Developpers manuals: developer_manual/index.md
+        - User manual: user_manual/overview.md
+        - Developer manual: developer_manual/index.md
     - Users manuals:
         - Features: user_manual/features.md
         - Overview: user_manual/overview.md
@@ -134,7 +134,7 @@ nav:
             - 2022.3: update/2022_3.md
             - commands:
                 - File: update/file/file.md
-    - Developers manuals:
+    - Developer manual:
         - Tutorials:
             - hello world: developer_manual/tutorials/print_string.md
         - Install: developer_manual/index.md

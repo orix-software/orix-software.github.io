@@ -1,6 +1,6 @@
 # Definitions
 
-!!! info (30-06-2023) Kernel 2023.2 and Shell 2023.2 had been released : [Notes](update/2023_2)"
+!!! info Kernel 2023.2 and Shell 2023.2 had been released (30-06-2023) : [Notes](update/2023_2)"
 
 ![Overview](./user_manual/img/v2023_3.png){: style="height:350px;"}
 

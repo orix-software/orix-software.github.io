@@ -1,24 +1,8 @@
 # Definitions
 
-!!! info "Kernel 2023.2 and Shell 2023.2 had been released(30-06-2023) : [Notes](update/2023_2)"
+!!! info "Kernel 2023.2 and Shell 2023.2 had been released (30-06-2023) : [Notes](update/2023_2)"
 
 ![Overview](./user_manual/img/v2023_3.png){: style="height:350px;"}
-
-## Start atmos/oric-1 tape file, ftdos .dsk files, roms
-
-### .tap file
-
-| Feature     | read                         | Write | joystick management
-| ----------- | ---------------------------- |-------|---------------------|
-| `Atmos .tap file`         | :material-check: |:material-check:|:material-check:|
-| `Oric-1 .tap file`         | :material-check: |:material-check:|:material-check:|
-
-### .dsk file
-
-| Feature     | read                         | Write | joystick management
-| ----------- | ---------------------------- |-------|---------------------|
-| `Sedoric .dsk file (beta)`         | :material-check: |:material-close: |:material-close: |
-| `ftdos .dsk file`         | :material-check: |:material-close: |:material-close: |
 
 ## Twilighte board
 

@@ -52,6 +52,7 @@ theme:
 nav:
     - Home:
         - definitions: index.md
+        - Features: user_manual/features/
     - Getting started:
         - User manual: user_manual/overview.md
         - Developer manual: developer_manual/index.md
@@ -60,7 +61,7 @@ nav:
         - Overview: user_manual/overview.md
         - Commands:
             - All commands: commands/all.md
-            - asm2k2: commands/asm2k2.md
+            - asm2k2: commands/asm2k2.m
             - bank: commands/bank.md
             - basic10: commands/basic10.md
             - basic11: commands/basic11.md

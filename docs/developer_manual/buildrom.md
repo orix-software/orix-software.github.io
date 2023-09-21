@@ -2,7 +2,7 @@
 
 ## Guideline
 
-* In order to have commands available from shell, some rules must be set in the bank structure ([https://github.com/orix-software/empty-rom/](https://github.com/orix-software/empty-rom/)). Bank structure must be used, or commands won't be accessed from the kernel or commands (As [help](/commands/help/) -b XX)
+* In order to have commands available from shell, some rules must be set in the bank structure ([https://github.com/orix-software/empty-rom/](https://github.com/orix-software/empty-rom/)). Bank structure must be used, or commands won't be accessed from the kernel or commands (As [help](/commands/help.md) -b XX)
 
 * A ROM will be in an ROM slot or a RAM slot.
 

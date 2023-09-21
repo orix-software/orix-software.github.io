@@ -21,22 +21,28 @@
   background-color: #707070;
 }
 
-.md-header__title::before {
-  content: "";
+.md-header__topic::before {
+  background-image: url("/degrade_before.png");
+}
+
+.md-ellipsis::before {
+  /*content: "";*/
   display: inline-block;
   width: 112px;
   height: 16px;
   margin-right: 5px;
-  background-image: url("/degrade_before.png");
+  /*background-image: url("/degrade_before.png");*/
   background-size: cover;
+  text-align: left;
 }
 
-.md-header__title::after {
-  content: "";
+.md-ellipsis::after {
+  /*content: "";*/
   display: inline-block;
   width: 112px;
   height: 16px;
   margin-left: 5px;
-  background-image: url("/degrade_after.png");
+  /*background-image: url("/degrade_after.png");*/
   background-size: cover;
+  text-align: left;
 }

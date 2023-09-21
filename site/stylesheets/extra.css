@@ -21,22 +21,22 @@
   background-color: #707070;
 }
 
-.md-ellipsis::before {
+.md-header__title::before {
   content: "";
   display: inline-block;
   width: 112px;
   height: 16px;
   margin-right: 5px;
-  /*background-image: url("/degrade_before.png");*/
+  background-image: url("/degrade_before.png");
   background-size: cover;
 }
 
-.md-ellipsis::after {
+.md-header__title::after {
   content: "";
   display: inline-block;
   width: 112px;
   height: 16px;
   margin-left: 5px;
-  /*background-image: url("/degrade_after.png");*/
+  background-image: url("/degrade_after.png");
   background-size: cover;
 }

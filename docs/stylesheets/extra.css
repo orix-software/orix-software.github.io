@@ -27,7 +27,7 @@
   width: 112px;
   height: 16px;
   margin-right: 5px;
-  background-image: url("/degrade_before.png");
+  /*background-image: url("/degrade_before.png");*/
   background-size: cover;
 }
 
@@ -37,6 +37,6 @@
   width: 112px;
   height: 16px;
   margin-left: 5px;
-  background-image: url("/degrade_after.png");
+  /*background-image: url("/degrade_after.png");*/
   background-size: cover;
 }

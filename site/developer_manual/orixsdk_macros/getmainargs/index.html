@@ -2573,7 +2573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chdir/" class="md-nav__link">
+      <a href="../getcwd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4951,16 +4951,18 @@
 
 <span class="w">    </span><span class="n">argv</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="w">   </span><span class="c1">; 2 bytes</span>
 <span class="w">    </span><span class="n">argc</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="o">+</span><span class="mi">2</span><span class="w"> </span><span class="c1">; 1 byte</span>
+<span class="w">    </span><span class="n">first_arg_ptr</span><span class="w">   </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="o">+</span><span class="mi">2</span><span class="w"> </span><span class="c1">; 1 byte</span>
 
 <span class="w">    </span><span class="c1">; Init struct</span>
 <span class="w">    </span><span class="n">initmainargs</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span>
 
 <span class="w">    </span><span class="n">getmainarg</span><span class="w"> </span><span class="p">#</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">argv</span><span class="p">)</span>
 
-<span class="w">    </span><span class="c1">; Save the ptr of the parameter</span>
-<span class="w">    </span><span class="k">sta</span><span class="w">     </span><span class="n">argv</span>
-<span class="w">    </span><span class="k">sty</span><span class="w">     </span><span class="n">argv</span><span class="o">+</span><span class="mi">1</span>
+<span class="w">    </span><span class="c1">; Save the ptr of the first parameter in first_arg_ptr</span>
+<span class="w">    </span><span class="k">sta</span><span class="w">     </span><span class="n">first_arg_ptr</span>
+<span class="w">    </span><span class="k">sty</span><span class="w">     </span><span class="n">first_arg_ptr</span><span class="o">+</span><span class="mi">1</span>
 
+<span class="w">    </span><span class="c1">; Displays because A and Y are set</span>
 <span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w"> </span><span class="n">XWSTR0</span><span class="w"> </span><span class="c1">; Displays the arg 1 from the command line</span>
 <span class="w">    </span><span class="k">rts</span>
 </code></pre></div>

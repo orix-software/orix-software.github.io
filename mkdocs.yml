@@ -157,7 +157,7 @@ nav:
                 - fclose: developer_manual/orixsdk_macros/fclose.md
                 - mkdir: developer_manual/orixsdk_macros/mkdir.md
                 - chdir: developer_manual/orixsdk_macros/chdir.md
-                - getcwd: developer_manual/orixsdk_macros/chdir.md
+                - getcwd: developer_manual/orixsdk_macros/getcwd.md
                 - unlink: developer_manual/orixsdk_macros/unlink.md
             - Text mode operations:
                 - print: developer_manual/orixsdk_macros/print.md

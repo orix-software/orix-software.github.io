@@ -1,4 +1,4 @@
-site_name: ORIX v2023.2 DOCUMENTATION
+site_name: ORIX v2023.3 DOCUMENTATION
 
 markdown_extensions:
     - pymdownx.highlight
@@ -51,8 +51,9 @@ theme:
 
 nav:
     - Home:
-        - definitions: index.md
-        - Features: user_manual/features/
+        - Introduction: index.md
+        - Hardware: hardware.md
+        - Software: software.md
     - Getting started:
         - User manual: user_manual/overview.md
         - Developer manual: developer_manual/index.md
@@ -129,6 +130,7 @@ nav:
         - Tutorials:
             - Autoboot : tutorials/autoboot_fr.md
         - Updates:
+            - 2023.3: update/2023_2.md
             - 2023.2: update/2023_2.md
             - 2023.1: update/2023_1.md
             - 2022.4: update/2022_4.md
@@ -191,7 +193,6 @@ nav:
                 - ping: developer_manual/orixsdk_macros/ping.md
                 - zap: developer_manual/orixsdk_macros/zap.md
                 - explode: developer_manual/orixsdk_macros/explode.md
-
 
         - Generate man pages : developer_manual/buildman.md
         - cc65 : developer_manual/cc65.md

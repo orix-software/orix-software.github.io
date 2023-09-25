@@ -1,8 +1,8 @@
 # Installation for developpers
 
-There is two way to develop : Oricutron and cross dev with test on real computer
+There is two ways to develop : Oricutron and cross dev with test on real computer
 
-## Step 1 : Download the oricutron archive with all things set :
+## Step 1 : Download the oricutron archive with all things set:
 
 [oricutron_twilighte_board_for_projects.zip](oricutron_twilighte_board_for_projects.zip)
 

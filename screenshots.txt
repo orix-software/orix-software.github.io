@@ -1,1 +1,1 @@
-![Screenshot ftdos](ftdos.jpg)
+![ps](imgs/ps.png)

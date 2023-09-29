@@ -26,4 +26,4 @@ note:
     rts
 ```
 
-See [XFWRITE](../../../kernel/primitives/xwrite) kernel primitive
+See [XFWRITE](../../../kernel/primitives/xwrite.md) kernel primitive

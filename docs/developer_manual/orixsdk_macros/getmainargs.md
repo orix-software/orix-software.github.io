@@ -42,4 +42,4 @@ Result (argbin) is binary in assembly with a parameter "foo"
 foo
 ```
 
-Call [XGETARGV](../../../kernel/primitives/xgetargv/) kernel function.
+Call [XGETARGV](../../../kernel/primitives/xgetargv.md) kernel function.

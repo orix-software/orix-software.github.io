@@ -18,5 +18,5 @@ cursor ON|OFF
     rts
 ```
 
-Call [XCSSCR](../../../kernel/primitives/xcsscr) or [XCOSCR](../../../kernel/primitives/xcoscr) kernel function.
+Call [XCSSCR](../../../kernel/primitives/xcsscr.md) or [XCOSCR](../../../kernel/primitives/xcoscr.md) kernel function.
 

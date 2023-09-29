@@ -23,4 +23,4 @@ myfolder:
     .asciiz "here"
 ```
 
-Call [XMKDIR](../../../kernel/primitives/xmkdir/) function.
+Call [XMKDIR](../../../kernel/primitives/xmkdir.md) function.

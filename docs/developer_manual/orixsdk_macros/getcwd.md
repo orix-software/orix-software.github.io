@@ -23,4 +23,4 @@ ptr may be: ptr, address
     rts
 ```
 
-Call [XGETCWD](../../../kernel/primitives/wgetcwd) kernel function.
+Call [XGETCWD](../../../kernel/primitives/xgetcwd.md) kernel function.

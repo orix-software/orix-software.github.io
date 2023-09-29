@@ -19,4 +19,4 @@ Close an opened file
     rts
 ```
 
-Call [XCLOSE](../../../kernel/primitives/xclose) kernel function.
+Call [XCLOSE](../../../kernel/primitives/xclose.md) kernel function.

@@ -34,4 +34,4 @@ the first line to scroll is computed and is in X register
 
 !!! tip "This only work with X register"
 
-Call [XSCROB](../../../kernel/primitives/xscrob/) routine or [XSCROH](../../../kernel/primitives/xscroh/)
+Call [XSCROB](../../../kernel/primitives/xscrob.md) routine or [XSCROH](../../../kernel/primitives/xscroh.md)

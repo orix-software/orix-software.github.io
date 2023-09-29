@@ -19,4 +19,4 @@ zap
 
 ```
 
-Call [XZAP](../../../kernel/primitives/xzap/) kernel function.
+Call [XZAP](../../../kernel/primitives/xzap.md) kernel function.

@@ -19,4 +19,4 @@ ping
 
 ```
 
-Call [XPING](../../../kernel/primitives/xping/) kernel function.
+Call [XPING](../../../kernel/primitives/xping.md) kernel function.

@@ -130,7 +130,7 @@ nav:
         - Tutorials:
             - Autoboot : tutorials/autoboot_fr.md
         - Updates:
-            - 2023.3: update/2023_2.md
+            - 2023.3: update/2023_3.md
             - 2023.2: update/2023_2.md
             - 2023.1: update/2023_1.md
             - 2022.4: update/2022_4.md
@@ -138,9 +138,9 @@ nav:
             - commands:
                 - File: update/file/file.md
     - Developer manual:
+        - Install: developer_manual/index.md
         - Tutorials:
             - hello world: developer_manual/tutorials/print_string.md
-        - Install: developer_manual/index.md
         - Development guidelines: developer_manual/guidelines.md
         - Memory management : developer_manual/memory.md
         - Build an Orix rom : developer_manual/buildrom.md

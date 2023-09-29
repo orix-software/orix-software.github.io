@@ -57,7 +57,7 @@ Mode 1 : return command line
     rts
 ```
 
-!!! tip "See [initmainargs](../../../developer_manual/orixsdk_macros/initmainargs/) macro from orix-sdk to use it "
+!!! tip "See [initmainargs](../../../developer_manual/orixsdk_macros/initmainargs.md) macro from orix-sdk to use it "
 
 !!! warning "XMAINARGS allocates a chunk in memory, it must be free at the end of the use of the parameters"
 

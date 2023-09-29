@@ -44,7 +44,7 @@ userzp is equal to $8C. It's a range from $8C to $8C+16 which is saved for each 
 
 Kernel uses some address in zero page. But userzp to userzp+16 offset are reserved for binary, Orix banks. Address below userzp can be used, but kernel could erase it when IRQ or Kernels calls are performed
 
-Kernel saves 16 bytes (zeropage) when a binary is forked. It means that, a [XEXEC](../../kernel/primitives/xexec) calls in a binary, kernel will save PPID offset from userzp to userzp+16, and kernel will restore theses offsets when the PID has finished. In the future, multitasking will work in the same ways, and there is no guarantee that a binary will have its values restores when offset are greater than userzp+16
+Kernel saves 16 bytes (zeropage) when a binary is forked. It means that, a [XEXEC](../../kernel/primitives/xexec.md) calls in a binary, kernel will save PPID offset from userzp to userzp+16, and kernel will restore theses offsets when the PID has finished. In the future, multitasking will work in the same ways, and there is no guarantee that a binary will have its values restores when offset are greater than userzp+16
 
 ## Launch the ROM
 

@@ -62,7 +62,7 @@ nav:
         - Overview: user_manual/overview.md
         - Commands:
             - All commands: commands/all.md
-            - asm2k2: commands/asm2k2.m
+            - asm2k2: commands/asm2k2.md
             - bank: commands/bank.md
             - basic10: commands/basic10.md
             - basic11: commands/basic11.md
@@ -202,7 +202,7 @@ nav:
         - Oricutron VS real hardware : developer_manual/oricutronvsreal.md
         - Kernel guide:
             - Kernel: developer_manual/kernel.md
-            - Memmap: docs/kernel/memmap.md
+            - Memmap: kernel/memmap.md
             - Primitives:
                 - General list : kernel/primitives/index.md
                 - By category:

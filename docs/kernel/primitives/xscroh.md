@@ -14,4 +14,4 @@ Scroll all lines from bottom to the top
     rts
 ```
 
-!!! tip "See [scroll](../../../developer_manual/orixsdk_macros/scroll) macro from orix-sdk to use it"
+!!! tip "See [scroll](../../../developer_manual/orixsdk_macros/scroll.md) macro from orix-sdk to use it"

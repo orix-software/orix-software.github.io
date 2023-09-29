@@ -2,7 +2,7 @@
 
 #get memmap kernel
 
-curl https://raw.githubusercontent.com/orix-software/kernel/master/docs/memmap_ram.md -o docs/kernel/memmap.md
+#curl https://raw.githubusercontent.com/orix-software/kernel/master/docs/memmap_ram.md -o docs/kernel/memmap.md
 
 declare -a tab_command
 declare -a tab_repo

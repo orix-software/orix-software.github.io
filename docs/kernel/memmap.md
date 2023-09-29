@@ -1,4 +1,5 @@
-# Page 0
+# Memmap
+## Page 0
 |Type     | Name                          | Range       | Size |
 | :------- |:----------------------------- |:----------- |:-----|
 |RAM|RES                            | $00-$01     |  2   |
@@ -44,7 +45,7 @@
 |RAM|<span style="color:green">FREE</span>                           | $35-$3F     |      |
 |RAM|ADCLK                          | $40-$41     |  2   |
 |RAM|TIMEUS                         | $42-$43     |  2   |
-|RAM|TIMEUD                         | $44-$45     |  2   |
+|RAM|TIMEUD (used in cc65 clock function)| $44-$45     |  2   |
 |RAM|HRSX                           | $46-$46     |  1   |
 |RAM|HRSY                           | $47-$47     |  1   |
 |RAM|<span style="color:green">FREE</span>                           | $48-$48     |  1   |
@@ -62,7 +63,7 @@
 |RAM|INDRS                          | $5B-$5B     |  1   |
 |RAM|<span style="color:green">FREE</span>                           | $5C-$5F     |  2   |
 |RAM|<span style="color:green">FREE</span>                           | $8C-$FF     |  115   |
-# Page 2
+## Page 2
 |Type     | Name                          | Range       | Size |
 | :------- |:----------------------------- |:----------- |:-----|
 |RAM|KERNEL_ERRNO                   | $0200-$0200 |  1   |
@@ -87,7 +88,7 @@
 |RAM|ADSCRH                          | $021C-$021F |  4   |
 |RAM|SCRX                         | $0220-$0220 |  1   |
 |RAM|BUSY_BANK_TABLE_RAM             | $0221-$0224 |  3   |
-|RAM|SCRY                         | $0224-$0228 |  1   |
+|RAM|SCRY                         | $0224-$0227 |  4   |
 |RAM|SCRDX                         | $0228-$0228 |  1   |
 |RAM|SCRFX                         | $022C-$022C |  1   |
 |RAM|SCRFY                         | $0234-$0234 |  1   |
@@ -100,7 +101,7 @@
 |RAM|FLGSCR                          | $0248-$024C |  4   |
 |RAM|CURSCR                          | $024C-$024D |  1   |
 |RAM|<span style="color:green">FREE</span>                          | $024D-$0256 |  11   |
-|RAM|SCRTXT                          | $0256-$025C |  604   |
+|RAM|SCRTXT                          | $0256-$0260 |  4   |
 |RAM|SCRHIR  (not used)              | $025C-$0260 |  4   |
 |RAM|SCRTRA                          | $0262-$0266 |  6   |
 |RAM|KBDCOL                          | $0268-$0270 |  8   |
@@ -117,36 +118,36 @@
 |RAM|HRSPAT                            | $02AA-$02AA |  1   |
 |RAM|IOTAB                          | $02AE-$02B1 |  X   |
 |RAM|KERNEL_ADIOB                   | $02B2-$02B9 | 8   |
-|RAM|kernel_malloc_free_chunk_size_low                   | $02BA-$02C3 | 10   |
+|RAM|kernel_malloc_free_chunk_size                   | $02BA-$02C3 | 10   |
+|RAM|kernel_xmalloc_call            | $02C4-$02EB |    39  |
 |RAM|FLGRST                            | $02EE-$02EE |  1   |
 |RAM|CSRND                            | $02EF-$02EF |  1   |
-|RAM|kernel_xmalloc_call            | $02C4-$02EB |    39  |
 |RAM|<span style="color:green">FREE</span>                           | $02EC-$02ED | 2   |
 |RAM|VNMI            | $02F4-$02F7 |   3   |
 |RAM|ADIODB_VECTOR            | $02F7-$02FA |   3   |
 |RAM|IRQVECTOR            | $02FA-$02FD |   3   |
 |RAM|VAPLIC            | $02FD-$0300 |   3   |
-# Page 3
+## Page 3
 |Type     | Name                          | Range       | Size |
 | :------- |:----------------------------- |:----------- |:-----|
 |IO |VIA1                           | $0300-$030F     |     |
-# Page 4
+## Page 4
 |Type     | Name                          | Range       | Size |
 | :------- |:----------------------------- |:----------- |:-----|
 |RAM|page4 overlay_access       | $0419-$0436 |  54  |
-# Page 5&6
+## Page 5&6
 |Type     | Name                          | Range       | Size |
 | :------- |:----------------------------- |:----------- |:-----|
-|RAM|BUFNOM                         | $0517-$0525 |  14  |
+|RAM|<span style="color:green">FREE</span>                         | $0517-$0525 |  14  |
 |RAM|Malloc table                   | $0525-$0579 |  84    |
 |RAM|main kernel process struct     | $0579-$058F |  22    |
 |RAM|BUFEDT                         | $0590-$05FE |   110   |
 |RAM|KERNEL_MEMORY_DRIVER           | $05FE-$06A1 |   163   |
-# Kernel bank 7
+## Kernel bank 7
 | Type      | Name                         | Range   | Size |
 | :-------- |:---------------------------- |:------- |:-----|
 |ROM|<span style="color:green">FREE</span>                         |$feea-$fff0|   262   |
-#Bank 0
+##Bank 0
 | Type      | Name                         | Range   | Size |
 | --------  | ---------------------------- | ------- |-----|
 |BANK0|BUFBUF                        | $c080-$c0b6 |  54   |

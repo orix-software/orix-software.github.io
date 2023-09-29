@@ -4942,9 +4942,11 @@
 <p>Move into opened file</p>
 <h2 id="usage">Usage</h2>
 <p>fseek fp, offset, whence</p>
-<p>fp may be : (ptr), address
-offset may be: (ptr), address, constant
-whence may be  : address, #value</p>
+<ul>
+<li>fp may be : (ptr), address</li>
+<li>offset may be: (ptr), address, constant</li>
+<li>whence may be  : address, #value</li>
+</ul>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_file.mac"</span>
@@ -4953,7 +4955,8 @@ whence may be  : address, #value</p>
 <span class="w">    </span><span class="n">fseek</span><span class="w"> </span><span class="p">(</span><span class="n">myfp</span><span class="p">),</span><span class="w"> </span><span class="mi">1080</span><span class="p">,</span><span class="w"> </span><span class="p">#</span><span class="n">SEEK_CUR</span>
 <span class="w">    </span><span class="n">fclose</span><span class="p">(</span><span class="n">MAN_FP</span><span class="p">)</span>
 <span class="w">    </span><span class="k">rts</span>
-</code></pre></div></div>
+</code></pre></div>
+<p>See <a href="../../../kernel/primitives/xfseek">XFSEEK</a> kernel primitive.</p></div>
 
   <hr>
 <div class="md-source-file">

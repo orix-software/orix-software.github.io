@@ -8,10 +8,9 @@ Move into opened file
 
 fseek fp, offset, whence
 
-fp may be : (ptr), address
-offset may be: (ptr), address, constant
-whence may be  : address, #value
-
+* fp may be : (ptr), address
+* offset may be: (ptr), address, constant
+* whence may be  : address, #value
 
 ## Example
 
@@ -24,3 +23,5 @@ whence may be  : address, #value
     fclose(MAN_FP)
     rts
 ```
+
+See [XFSEEK](../../../kernel/primitives/xfseek) kernel primitive.

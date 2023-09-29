@@ -17,10 +17,10 @@ ptr may be: ptr, address
     .include "telestrat.inc"
     .include "../orix-sdk/macros/SDK_dir.mac"
 
-    pwd            := userzp ; 2 byte
+    pwd            := userzp ; 2 bytes
 
     getcwd pwd
     rts
 ```
 
-Call [XGETCWD](../../../kernel/primitives/XGETCWD/) kernel function.
+Call [XGETCWD](../../../kernel/primitives/wgetcwd) kernel function.

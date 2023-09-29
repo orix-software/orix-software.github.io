@@ -7,4 +7,3 @@
 * displays more informations from format 2
 
 ![](file_2022_4.png)
-

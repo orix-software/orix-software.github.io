@@ -1,4 +1,3 @@
-
 # FCLOSE macro
 
 ## Description
@@ -20,4 +19,4 @@ Close an opened file
     rts
 ```
 
-Call [XCLOSE](../../../kernel/primitives/XCLOSE/) kernel function.
+Call [XCLOSE](../../../kernel/primitives/xclose) kernel function.

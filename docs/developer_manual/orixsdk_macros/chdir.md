@@ -23,6 +23,6 @@ note:
     rts
 myfolder:
     .asciiz "home"
-```
+``
 
-Call [XPUTCWD](../../../kernel/primitives/XPUTCWD/) kernel function.
+Call [XPUTCWD](../../../kernel/primitives/xputcwd/) kernel function.

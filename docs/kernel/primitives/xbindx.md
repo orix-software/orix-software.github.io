@@ -31,3 +31,5 @@ DEFAFF : space before the number
     BRK_KERNEL XBINDX
     rts
 ```
+
+!!! tip "See [itoa](../../../developer_manual/orixsdk_macros/itoa) macro from orix-sdk to use it"

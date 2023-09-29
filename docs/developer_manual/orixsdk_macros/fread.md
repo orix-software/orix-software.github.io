@@ -9,9 +9,9 @@ Read byte from file
 fread ptr, size, count, fp
 
 note:
-ptr may be : (ptr), address
-size may be: (ptr), address
-fp may be  : address, #value, {address,y}
+* ptr may be : (ptr), address
+* size may be: (ptr), address
+* fp may be  : address, #value, {address,y}
 
 ## Output
 
@@ -41,4 +41,4 @@ next:
     rts
 ```
 
-See [XFREAD](../../../kernel/primitives/xfread) kernel primitive.
+See [XFREAD](../../../kernel/primitives/xfread.md) kernel primitive.

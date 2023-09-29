@@ -25,4 +25,4 @@ myfolder:
     .asciiz "home"
 ``
 
-Call [XPUTCWD](../../../kernel/primitives/xputcwd/) kernel function.
+Call [XPUTCWD](../../../kernel/primitives/xputcwd.md) kernel function.

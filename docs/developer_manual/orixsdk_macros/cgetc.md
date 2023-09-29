@@ -26,4 +26,4 @@ cgetc var
 
 ```
 
-Call [XRD0](../../../kernel/primitives/XRD0/) kernel function.
+Call [XRD0](../../../kernel/primitives/XRD0.md) kernel function.

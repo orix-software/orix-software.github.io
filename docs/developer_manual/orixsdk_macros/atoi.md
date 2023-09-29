@@ -27,4 +27,4 @@ mystrnumber:
     .asciiz "12"
 ```
 
-Call [XDECAY](../../../kernel/primitives/xdecay/) kernel function.
+Call [XDECAY](../../../kernel/primitives/xdecay.md) kernel function.

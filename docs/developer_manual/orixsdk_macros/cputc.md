@@ -14,7 +14,7 @@ note:
 
 - no parameter: use the value of A register
 
-Alias for: [print](print) #'c'
+Alias for: [print](print.md) #'c'
 
 ## example
 
@@ -26,4 +26,4 @@ Alias for: [print](print) #'c'
     rts
 ```
 
-Call [XWR0](../../../kernel/primitives/XWR0/) kernel function.
+Call [XWR0](../../../kernel/primitives/XWR0.md) kernel function.

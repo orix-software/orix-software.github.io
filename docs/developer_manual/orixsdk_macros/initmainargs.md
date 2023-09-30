@@ -24,4 +24,4 @@ initmainargs ptr, ptr1, 0
   rts
 ```
 
-Call [XMAINARGS](../../../kernel/primitives/xmainargs.md) function.
+Call [XMAINARGS](../../../kernel/primitives/xmainargs) function.

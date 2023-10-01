@@ -4865,7 +4865,7 @@ blakes7
 </code></pre></div>
 <p>Je sauve le fichier, je mets la clé usb, et je démarre l’oric.</p>
 <p>Blakes7 démarrera automatiquement</p>
-<p><div class="video-container"><iframe src="https://youtu.be/0f3IOA3p_fQ" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="408" src="https://youtu.be/0f3IOA3p_fQ" title="Blakes's 7" width="600"></iframe>
 <h2 id="demarrage-dun-menu-personnalise-avec-changement-de-fonte">Démarrage d’un menu personnalisé avec changement de fonte</h2>
 <p>Cette fois ci, nous allons lancer un menu au boot. Le script suivant va :</p>
 <p>effacer l’écran après le boot, mettre la fonte fanta2uk (les fontes sont localisées dans “/usr/share/fonts”).
@@ -4912,7 +4912,7 @@ basic11<span class="w"> </span><span class="s2">"PSY</span>
 </code></pre></div>
 <p>Le résultat en image:</p>
 <p>Le résultat en vidéo :</p>
-<p><div class="video-container"><iframe src="https://youtu.be/7wXobqItIEo" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="408" src="https://youtu.be/7wXobqItIEo" title="Menu" width="600"></iframe>
 <p>Ce script va lancer, en fonction de la touche pressée, l’entrée voulue (rom basic, blake, psychiatric, barbitoric ou revenir au shell). En revanche, une entrée de fonctionnera pas, c’est barbitoric (pour la version disponible au 7/06/2023).</p>
 <p>Pour expliquer pourquoi barbitoric ne fonctionne pas dans le cas où il est localisé dans un script submit, il faut se référer au fonctionnement d’un binaire Orix. Le problème ne se produit pas pour une commande en ROM, mais il peut se produire pour un binaire sur clé usb/sdcard.</p>
 <p>Au début du développement d’Orix, un seul format de binaire existait, c’est le fameux format statique que nous connaissons pour du basic, hyperbasic, commandes sedoric etc. Les programmes sont assemblés à une adresse fixe, et il y a conflit si on essaie de charger un programme qui est dans la même plage d’adresse : l’un va écraser l’autre. C’est ce qu’il se passe dans le cas de submit et barbitoric, mais ce n’est pas submit le fautif, c’est le binaire barbitoric en natif Orix. Submit est un binaire sur disque au format 2 Orix. Ce format est relogeable. Le kernel va allouer la plage mémoire disponible en fonction de la taille et reloger au runtime le binaire pour que submit puisse tourner à une nouvelle adresse. Submit tourne donc à une adresse inconnue par l’utilisateur, seul le kernel sait où submit est localisé en RAM. Aussi, Submit va faire des allocations mémoire pour sa propre utilisation.</p>

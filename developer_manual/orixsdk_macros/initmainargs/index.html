@@ -3010,6 +3010,26 @@
     Usage
   </a>
   
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters-already-prepared" class="md-nav__link">
+    Parameters already prepared
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-only-command-line-to-ptr-buffer" class="md-nav__link">
+    Copy only command line to ptr buffer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4823,6 +4843,26 @@
     Usage
   </a>
   
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters-already-prepared" class="md-nav__link">
+    Parameters already prepared
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-only-command-line-to-ptr-buffer" class="md-nav__link">
+    Copy only command line to ptr buffer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4851,19 +4891,28 @@
 <h2 id="description">Description</h2>
 <p>Initialize struct of the mainargs from current process</p>
 <h2 id="usage">Usage</h2>
-<p>initmainargs ptr, ptr1, 0</p>
+<h3 id="parameters-already-prepared">Parameters already prepared</h3>
+<p>initmainargs ptr, nb_of_paramter, 0</p>
+<h3 id="copy-only-command-line-to-ptr-buffer">Copy only command line to ptr buffer</h3>
+<p>initmainargs ptr, nb_of_paramter, 1</p>
 <h2 id="example">Example</h2>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
 <span class="w">  </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_mainargs.mac"</span>
 
 <span class="w">  </span><span class="n">XMAINARGS</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="mh">$2C</span>
 <span class="w">  </span><span class="n">XGETARGV</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mh">$2E</span>
-<span class="w">  </span><span class="n">argv</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="w">   </span><span class="c1">; 2 bytes</span>
-<span class="w">  </span><span class="n">argc</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="o">+</span><span class="mi">2</span><span class="w"> </span><span class="c1">; 1 byte</span>
+<span class="w">  </span><span class="n">argv</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="w">   </span><span class="c1">; 2 bytes -&gt; ptr</span>
+<span class="w">  </span><span class="n">argc</span><span class="w">            </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">userzp</span><span class="o">+</span><span class="mi">2</span><span class="w"> </span><span class="c1">; 1 byte -&gt; value</span>
 
 <span class="w">  </span><span class="n">initmainargs</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">  </span><span class="p">...</span>
+
+<span class="w">  </span><span class="n">mfree</span><span class="p">(</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="c1">; Free argv copy</span>
 <span class="w">  </span><span class="k">rts</span>
 </code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">initmainargs calls XMAINARGS kernel routine. It will returns in argv a ptr with a malloc performs by the kernel. It means that it must be free after the use of the mainargs (if there is no others uses after)</p>
+</div>
 <p>Call <a href="../../../kernel/primitives/xmainargs">XMAINARGS</a> function.</p></div>
 
   <hr>
@@ -4871,7 +4920,7 @@
   <small>
     
       Last update:
-      2023-09-29
+      2023-09-30
     
   </small>
 </div>

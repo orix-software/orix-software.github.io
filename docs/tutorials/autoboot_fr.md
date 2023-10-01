@@ -32,7 +32,7 @@ Je sauve le fichier, je mets la clé usb, et je démarre l’oric.
 
 Blakes7 démarrera automatiquement
 
-![type:video](https://youtu.be/0f3IOA3p_fQ)
+<iframe width="600" height="408" src="https://youtu.be/0f3IOA3p_fQ" title="Blakes's 7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Démarrage d’un menu personnalisé avec changement de fonte
 
@@ -86,11 +86,9 @@ exit
 
 Le résultat en image:
 
-
 Le résultat en vidéo :
 
-![type:video](https://youtu.be/7wXobqItIEo)
-
+<iframe width="600" height="408" src="https://youtu.be/7wXobqItIEo" title="Menu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Ce script va lancer, en fonction de la touche pressée, l’entrée voulue (rom basic, blake, psychiatric, barbitoric ou revenir au shell). En revanche, une entrée de fonctionnera pas, c’est barbitoric (pour la version disponible au 7/06/2023).
 

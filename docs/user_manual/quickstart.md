@@ -13,4 +13,3 @@ For board with 39SF040 eeprom, only use orixcfg equal or greater than 2023.2. Ch
 ## How the board must be plugged when board does not with the oric (keyboard is lost or prompt does not appears)
 
 ![](img/20230414_161337.jpg)
-

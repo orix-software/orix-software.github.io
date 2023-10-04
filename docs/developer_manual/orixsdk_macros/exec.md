@@ -22,4 +22,4 @@ mycommand:
     .asciiz ls
 ```
 
-Call [XEXEC](../../../kernel/primitives/xexec.md) kernel function.
+Call [XEXEC](../../../kernel/primitives/xexec) kernel function.

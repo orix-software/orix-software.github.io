@@ -4890,10 +4890,14 @@
 <span class="w">    </span><span class="k">sta</span><span class="w">     </span><span class="n">MAN_FP</span>
 <span class="w">    </span><span class="k">stx</span><span class="w">     </span><span class="n">MAN_FP</span><span class="o">+</span><span class="mi">1</span>
 <span class="w">    </span><span class="n">fread</span><span class="w"> </span><span class="p">(</span><span class="n">myptr</span><span class="p">),</span><span class="w"> </span><span class="p">#</span><span class="mi">1080</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">MAN_FP</span><span class="w"> </span><span class="c1">; myptr is from a malloc for example</span>
+<span class="w">    </span><span class="c1">; A and X contains number of bytes</span>
 <span class="w">    </span><span class="n">fclose</span><span class="p">(</span><span class="n">MAN_FP</span><span class="p">)</span>
 <span class="w">    </span><span class="k">rts</span>
 </code></pre></div>
-<p>See <a href="../../../kernel/primitives/xfread.md">XFREAD</a> kernel primitive.</p></div>
+<div class="admonition tip">
+<p class="admonition-title">XFREAD returns the size in A &amp; Y since kernel 2023.2</p>
+</div>
+<p>See <a href="../../../kernel/primitives/xfread">XFREAD</a> kernel primitive.</p></div>
 
   <hr>
 <div class="md-source-file">

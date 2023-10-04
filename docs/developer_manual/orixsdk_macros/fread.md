@@ -37,8 +37,11 @@ next:
     sta     MAN_FP
     stx     MAN_FP+1
     fread (myptr), #1080, 1, MAN_FP ; myptr is from a malloc for example
+    ; A and X contains number of bytes
     fclose(MAN_FP)
     rts
 ```
 
-See [XFREAD](../../../kernel/primitives/xfread.md) kernel primitive.
+!!! tip "XFREAD returns the size in A & Y since kernel 2023.2"
+
+See [XFREAD](../../../kernel/primitives/xfread) kernel primitive.

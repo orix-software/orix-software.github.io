@@ -40,7 +40,7 @@
 * [reboot](../reboot) Last version : 2023.3
 * [rm](../rm) Last version : 2023.3
 * [setfont](../setfont) Last version : 2023.3
-* [sedoric](../sedoric) Last version : 2023.2
+* [sedoric](../sedoric) Last version : 2023.4
 * [loader](../loader) Last version : 2022.3
 * [twilconf](../twilconf) Last version : 2022.3
 * [strerr](../strerr) Last version : 2023.2

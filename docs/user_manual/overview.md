@@ -38,6 +38,7 @@
 
 * [dsk-util](../../commands/dsk-util)
 * [ftdos](../../commands/ftdos)
+* [sedoric](../../commands/sedoric)
 * [readdsk](../../commands/readdsk)
 * [raw2dsk](../../commands/raw2dsk)
 
@@ -51,6 +52,7 @@
 
 * [dsk-util](../../commands/dsk-util)
 * [ftdos](../../commands/ftdos)
+* [sedoric](../../commands/sedoric)
 * [readdsk](../../commands/readdsk)
 * [raw2dsk](../../commands/raw2dsk)
 

@@ -103,6 +103,7 @@ nav:
             - readdsk: commands/readdsk.md
             - reboot: commands/reboot.md
             - rm: commands/rm.md
+            - sedoric: commands/sedoric.md
             - setfont: commands/setfont.md
             - sh: commands/sh.md
             - sterr: commands/strerr.md

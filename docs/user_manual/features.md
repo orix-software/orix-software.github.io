@@ -27,4 +27,3 @@
 ## Loader
 
 <iframe width="500" height="308" src="https://www.youtube.com/embed/5eWcoW2PdKQ" title="Loader" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-

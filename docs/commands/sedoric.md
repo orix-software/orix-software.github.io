@@ -37,7 +37,7 @@ or
 
 install/dsk file on twilighte board device:
 
-Download [http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz) gunzip, untar and put all extracted files into the twilighte device.
+Download [http://repo.orix.oric.org/dists/official/tgz/6502/softwarew.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/softwarew.tgz) gunzip, untar and put all extracted files into the twilighte device.
 
 Download [http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz), gunzip, untar and put all extracted files into the twilighte device.
 
@@ -64,4 +64,4 @@ All dsk built with floppybuilder:
 
 ## Trouble shooting
 
-If sedoric is launched without any args, it will try to load by default '/usr/share/sedoric/sedoric3.dsk'. If this disk is not present, sedsd will failed.
+If sedoric is launched without any args, it will try to load by default '/usr/share/sedoric/sedoric3.dsk'. If this disk is not present, sedoric will failed.

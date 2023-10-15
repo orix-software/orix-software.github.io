@@ -2,22 +2,42 @@
 
 Starts .dsk sedoric disk file
 
+<iframe width="500" height="308" src="https://youtu.be/ZElaqi_xa6U" title="Twilighte board : Start sedoric" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Search a dsk file with the first letter
+
+```code
+/#sedoric -l p
+```
+
+It will list all .dsk files with the letter 'p' on the first letter.
+
+then without .dsk file, sedoric will try to find .dsk in the right folder :
+
+```code
+/#sedoric pulsoids
+```
+
 ## Start a disk from args
 
 ```code
 /#sedoric my.dsk
 ```
 
-oe
+or
 
 ```code
 /#cd /usr/share/sedoric/p/
 /#sedoric pulsoids.dsk
 ```
 
-## install/dsk file on twilighte board device
+## Requirements
 
-Download http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz, gunzip,untar and put all extracted files into the twilighte device
+install/dsk file on twilighte board device:
+
+Download http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz, gunzip,untar and put all extracted files into the twilighte device.
+
+Download http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz, gunzip,untar and put all extracted files into the twilighte device.
 
 ## Issues
 
@@ -42,4 +62,4 @@ Download http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz, gunzip,
 
 ## Trouble shooting
 
-If sedoricis launched without any args, it will try to load by default '/usr/share/sedoric/sedoric3.dsk'. If this disk is not present, sedsd will failed.
+If sedoric is launched without any args, it will try to load by default '/usr/share/sedoric/sedoric3.dsk'. If this disk is not present, sedsd will failed.

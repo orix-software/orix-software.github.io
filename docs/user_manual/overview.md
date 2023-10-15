@@ -20,6 +20,7 @@
 ### .dsk launchers
 
 * [ftdos](../../commands/ftdos)
+* [sedoric](../../commands/sedoric)
 
 ### Music launchers
 

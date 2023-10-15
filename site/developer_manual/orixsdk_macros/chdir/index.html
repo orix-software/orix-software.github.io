@@ -4878,15 +4878,14 @@
 <li>Call XPUTCWD function</li>
 </ul>
 <h2 id="example">Example</h2>
-<p>```ca65
-    .include "telestrat.inc"
-    .include "../orix-sdk/macros/SDK_dir.mac"</p>
-<div class="highlight"><pre><span></span><code>chdir myfolder
-rts
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_dir.mac"</span>
+
+<span class="w">    </span><span class="n">chdir</span><span class="w"> </span><span class="n">myfolder</span>
+<span class="w">    </span><span class="k">rts</span>
+<span class="nl">myfolder:</span>
+<span class="w">    </span><span class="kp">.asciiz</span><span class="w"> </span><span class="s">"home"</span>
 </code></pre></div>
-<p>myfolder:
-    .asciiz "home"
-``</p>
 <p>Call <a href="../../../kernel/primitives/xputcwd.md">XPUTCWD</a> kernel function.</p></div>
 
   <hr>

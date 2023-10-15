@@ -1,10 +1,16 @@
 # Informations
 
+!!! info "Sedoric .dsk laucher had been released (15-10-2023) : [Download sedoric](http://repo.orix.oric.org/dists/official/tgz/6502/sedoric.tgz) & [Download dsk-bank](http://repo.orix.oric.org/dists/official/tgz/6502/sedoric.tgz) & [Download softwares](http://repo.orix.oric.org/dists/official/tgz/6502/softwares.tgz) and [Sedoric manual](./commands/sedoric.md) "
+
 !!! info "Kernel 2023.3 and Shell 2023.3 had been released (25-09-2023) : [Notes](update/2023_3.md)"
 
-Contact to have a board, contact : jede[at]oric[dot]org
+http://repo.orix.oric.org/dists/official/tgz/6502/sedoric.tgz
+
+Contact to have a board : jede[at]oric[dot]org
 
 ## Overview
+
+The twilighte board is a board which can be plug on a Oric atmos or Oric-1
 
 ![Overview](./user_manual/img/twil_prez.jpg)
 

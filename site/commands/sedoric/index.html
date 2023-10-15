@@ -1362,6 +1362,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#search-a-dsk-file-with-the-first-letter" class="md-nav__link">
+    Search a dsk file with the first letter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#start-a-disk-from-args" class="md-nav__link">
     Start a disk from args
   </a>
@@ -1369,8 +1376,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installdsk-file-on-twilighte-board-device" class="md-nav__link">
-    install/dsk file on twilighte board device
+  <a href="#requirements" class="md-nav__link">
+    Requirements
   </a>
   
 </li>
@@ -4844,6 +4851,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#search-a-dsk-file-with-the-first-letter" class="md-nav__link">
+    Search a dsk file with the first letter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#start-a-disk-from-args" class="md-nav__link">
     Start a disk from args
   </a>
@@ -4851,8 +4865,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installdsk-file-on-twilighte-board-device" class="md-nav__link">
-    install/dsk file on twilighte board device
+  <a href="#requirements" class="md-nav__link">
+    Requirements
   </a>
   
 </li>
@@ -4895,15 +4909,25 @@
 
 <div><h1 id="sedoric">Sedoric</h1>
 <p>Starts .dsk sedoric disk file</p>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="308" src="https://youtu.be/ZElaqi_xa6U" title="Twilighte board : Start sedoric" width="500"></iframe>
+<h2 id="search-a-dsk-file-with-the-first-letter">Search a dsk file with the first letter</h2>
+<div class="highlight"><pre><span></span><code>/#sedoric -l p
+</code></pre></div>
+<p>It will list all .dsk files with the letter 'p' on the first letter.</p>
+<p>then without .dsk file, sedoric will try to find .dsk in the right folder :</p>
+<div class="highlight"><pre><span></span><code>/#sedoric pulsoids
+</code></pre></div>
 <h2 id="start-a-disk-from-args">Start a disk from args</h2>
 <div class="highlight"><pre><span></span><code>/#sedoric my.dsk
 </code></pre></div>
-<p>oe</p>
+<p>or</p>
 <div class="highlight"><pre><span></span><code>/#cd /usr/share/sedoric/p/
 /#sedoric pulsoids.dsk
 </code></pre></div>
-<h2 id="installdsk-file-on-twilighte-board-device">install/dsk file on twilighte board device</h2>
-<p>Download http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz, gunzip,untar and put all extracted files into the twilighte device</p>
+<h2 id="requirements">Requirements</h2>
+<p>install/dsk file on twilighte board device:</p>
+<p>Download http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz, gunzip,untar and put all extracted files into the twilighte device.</p>
+<p>Download http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz, gunzip,untar and put all extracted files into the twilighte device.</p>
 <h2 id="issues">Issues</h2>
 <ul>
 <li>Write on .dsk does not work</li>
@@ -4932,7 +4956,7 @@
 </li>
 </ul>
 <h2 id="trouble-shooting">Trouble shooting</h2>
-<p>If sedoricis launched without any args, it will try to load by default '/usr/share/sedoric/sedoric3.dsk'. If this disk is not present, sedsd will failed.</p></div>
+<p>If sedoric is launched without any args, it will try to load by default '/usr/share/sedoric/sedoric3.dsk'. If this disk is not present, sedsd will failed.</p></div>
 
   <hr>
 <div class="md-source-file">

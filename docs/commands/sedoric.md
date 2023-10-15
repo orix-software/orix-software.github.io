@@ -2,7 +2,7 @@
 
 Starts .dsk sedoric disk file
 
-<iframe width="500" height="308" src="https://youtu.be/embed/ZElaqi_xa6U" title="Twilighte board : Start sedoric" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="500" height="308" src="https://www.youtube.com/embed/ZElaqi_xa6U" title="Twilighte board : Start sedoric" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Search a dsk file with the first letter
 
@@ -11,6 +11,8 @@ Starts .dsk sedoric disk file
 ```
 
 It will list all .dsk files with the letter 'p' on the first letter.
+
+If a personnal disk must be inserted : It can be put in any folder (as /home/sedoric) for example.
 
 then without .dsk file, sedoric will try to find .dsk in the right folder :
 
@@ -35,15 +37,15 @@ or
 
 install/dsk file on twilighte board device:
 
-Download [http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz) gunzip,untar and put all extracted files into the twilighte device.
+Download [http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/software.tgz) gunzip, untar and put all extracted files into the twilighte device.
 
-Download [http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz), gunzip,untar and put all extracted files into the twilighte device.
+Download [http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz), gunzip, untar and put all extracted files into the twilighte device.
 
 ## Issues
 
 * Write on .dsk does not work
 * some .dsk does not work
-* Does not handle sedoric 4 disks
+* Does not handle sedoric 4 disks (NY2019 COMPETITION)
 * Pulsoids : When a game is finished, computer reboots
 * Magnetix : When a game is finished, the game stops
 

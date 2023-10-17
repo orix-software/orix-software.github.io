@@ -29,15 +29,15 @@ then without .dsk file, sedoric will try to find .dsk in the right folder :
 or
 
 ```code
-/#cd /usr/share/sedoric/p/
-/#sedoric pulsoids.dsk
+/#cd /usr/share/sedoric/p
+/usr/share/sedoric/p#sedoric pulsoids.dsk
 ```
 
 ## Requirements
 
 install/dsk file on twilighte board device:
 
-Download [http://repo.orix.oric.org/dists/official/tgz/6502/softwarew.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/softwarew.tgz) gunzip, untar and put all extracted files into the twilighte device.
+Download [http://repo.orix.oric.org/dists/official/tgz/6502/softwares.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/softwares.tgz) gunzip, untar and put all extracted files into the twilighte device.
 
 Download [http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz), gunzip, untar and put all extracted files into the twilighte device.
 

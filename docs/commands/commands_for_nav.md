@@ -41,3 +41,17 @@
 - rm: commands/rm.md
 - setfont: commands/setfont.md
 - sedoric: commands/sedoric.md
+- loader: commands/loader.md
+- twilconf: commands/twilconf.md
+- strerr: commands/strerr.md
+- sh: commands/sh.md
+- submit: commands/submit.md
+- touch: commands/touch.md
+- twil: commands/twil.md
+- twiload: commands/twiload.md
+- uname: commands/uname.md
+- untar: commands/untar.md
+- vidplay: commands/vidplay.md
+- viewscr: commands/viewscr.md
+- viewhrs: commands/viewhrs.md
+- zerofx: commands/zerofx.md

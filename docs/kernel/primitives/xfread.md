@@ -34,6 +34,6 @@ A & X contains the length read
 
 !!! tip "See [fread](../../../developer_manual/orixsdk_macros/fread) macro from orix-sdk to use it"
 
-!!! tip "XFREAD returns the size in A & Y since kernel 2023.2"
+!!! tip "XFREAD returns the size in A & X since kernel 2023.2, previous versions the length must be compute from "
 
-!!! fail "XFREAD does not manage multiples opened files before kernel 2022.4 "
+!!! fail "XFREAD does not manage two opened files before kernel 2022.4."

@@ -108,6 +108,7 @@ nav:
             - sh: commands/sh.md
             - sterr: commands/strerr.md
             - submit: commands/submit.md
+            - telstrat: commands/telstrat.md
             - touch: commands/touch.md
             - twil: commands/twil.md
             - twiload: commands/twiload.md

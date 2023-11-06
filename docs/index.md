@@ -1,6 +1,6 @@
 # News
 
-!!! info "[06-11-2023] Telestrat mode had been released : [Download telstrat](https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz){:target="_blank"}& [Download stratsed disks](https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz){:target="_blank"} and look at [Sedoric manual](./commands/telstrat.md) "
+!!! info "[06-11-2023] Telestrat mode had been released : [Download telstrat](https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz){:target="_blank"}& [Download stratsed disks](https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz){:target="_blank"} and look at [Telstrat manual](./commands/telstrat.md) "
 
 !!! info "[15-10-2023] Sedoric mode had been released : [Download sedoric](https://repo.orix.oric.org/dists/official/tgz/6502/sedoric.tgz){:target="_blank"} & [Download dsk-bank](https://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz){:target="_blank"} & [Download softwares](https://repo.orix.oric.org/dists/official/tgz/6502/softwares.tgz){:target="_blank"} and [Sedoric manual](./commands/sedoric.md) "
 

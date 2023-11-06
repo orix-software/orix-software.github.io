@@ -17,10 +17,11 @@
 * [loader](../../commands/loader)
 * [bank](../../commands/bank)
 
-### .dsk launchers
+### Operating system Oric
 
 * [ftdos](../../commands/ftdos)
 * [sedoric](../../commands/sedoric)
+* [telstrat](../../commands/telstrat)
 
 ### Music launchers
 
@@ -40,6 +41,7 @@
 * [dsk-util](../../commands/dsk-util)
 * [ftdos](../../commands/ftdos)
 * [sedoric](../../commands/sedoric)
+* [telstrat](../../commands/telstrat)
 * [readdsk](../../commands/readdsk)
 * [raw2dsk](../../commands/raw2dsk)
 

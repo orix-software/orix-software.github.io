@@ -41,11 +41,12 @@
 * [rm](../rm) Last version : 2023.3
 * [setfont](../setfont) Last version : 2023.3
 * [sedoric](../sedoric) Last version : 2023.4
+* [telstrat](../telstrat) Last version : 2023.4
 * [loader](../loader) Last version : 2022.3
 * [twilconf](../twilconf) Last version : 2022.3
 * [strerr](../strerr) Last version : 2023.2
 * [sh](../sh) Last version : 2023.3
-* [submit](../submit) Last version : 2023.2
+* [submit](../submit) Last version : 2023.3
 * [touch](../touch) Last version : 2023.3
 * [twil](../twil) Last version : 2023.3
 * [twiload](../twiload) Last version : 2022.3

@@ -41,6 +41,7 @@
 - rm: commands/rm.md
 - setfont: commands/setfont.md
 - sedoric: commands/sedoric.md
+- telstrat: commands/telstrat.md
 - loader: commands/loader.md
 - twilconf: commands/twilconf.md
 - strerr: commands/strerr.md

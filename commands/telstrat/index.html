@@ -4964,7 +4964,7 @@
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="308" src="https://www.youtube.com/embed/9n0x8EYgBJM" title="Twilighte board : Start Telestrat, hyperbasic, stratsed, teleass, telematic" width="500"></iframe>
 <h2 id="install">Install</h2>
 <p><a href="https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz">Download telstrat</a></p>
-<p><a href="https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz">Download stratsed disks</a></p>
+<p><a href="https://repo.orix.oric.org/dists/official/tgz/6502/stratsed.tgz">Download stratsed disks</a></p>
 <h2 id="modes">Modes</h2>
 <p>Starts telestrat with hyperbasic + Stratsed</p>
 <div class="highlight"><pre><span></span><code>/#telstrat -m 0
@@ -4973,18 +4973,18 @@
 <div class="highlight"><pre><span></span><code>/#telstrat -m 1
 </code></pre></div>
 <p>Starts telestrat with hyperbasic, telematic + Stratsed</p>
-<div class="highlight"><pre><span></span><code>/#telstrat -m 1
+<div class="highlight"><pre><span></span><code>/#telstrat -m 2
 </code></pre></div>
 <h2 id="disk-search">Disk search</h2>
-<p>Displays all disks availables with the filename starting by 'a'</p>
+<p>Displays all disks availables with the filename starting by 'a' :</p>
 <div class="highlight"><pre><span></span><code>/#telstrat -l a
 </code></pre></div>
 <h2 id="starts-with-a-disk">Starts with a disk</h2>
 <p>When telstrat starts, default disk (stratsed is inserted), it's possible to insert another disk with -d option.</p>
-<p>in that case, send</p>
+<p>in that case,</p>
 <div class="highlight"><pre><span></span><code>/#telstrat -d builder
 </code></pre></div>
-<p>It will try to load /usr/share/stratsed/b/builder.dsk</p>
+<p>It will insert /usr/share/stratsed/b/builder.dsk</p>
 <p>If a .dsk is added to the disk argument like :</p>
 <div class="highlight"><pre><span></span><code>/#telstrat -d /builder.dsk
 </code></pre></div>

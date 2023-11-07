@@ -49,10 +49,10 @@
 * [submit](../submit) Last version : 2023.3
 * [touch](../touch) Last version : 2023.3
 * [twil](../twil) Last version : 2023.3
-* [twiload](../twiload) Last version : 2023.3
+* [twiload](../twiload) Last version : 2022.3
 * [uname](../uname) Last version : 2023.3
 * [untar](../untar) Last version : 2023.2
 * [vidplay](../vidplay) Last version : 2022.3
-* [viewscr](../viewscr) Last version : 2022.3
+* [viewscr](../viewscr) Last version : 2023.2
 * [viewhrs](../viewhrs) Last version : 2023.3
 * [zerofx](../zerofx) Last version : 2022.2

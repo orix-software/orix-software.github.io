@@ -16,7 +16,7 @@ telstrat without binary starts hyperbasic mode with stratsed (Like -m 0 flag)
 
 [Download telstrat](https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz)
 
-[Download stratsed disks](https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz)
+[Download stratsed disks](https://repo.orix.oric.org/dists/official/tgz/6502/stratsed.tgz)
 
 ## Modes
 
@@ -35,12 +35,12 @@ Starts telestrat with hyperbasic, teleass + Stratsed
 Starts telestrat with hyperbasic, telematic + Stratsed
 
 ```code
-/#telstrat -m 1
+/#telstrat -m 2
 ```
 
 ## Disk search
 
-Displays all disks availables with the filename starting by 'a'
+Displays all disks availables with the filename starting by 'a' :
 
 ```code
 /#telstrat -l a
@@ -50,13 +50,13 @@ Displays all disks availables with the filename starting by 'a'
 
 When telstrat starts, default disk (stratsed is inserted), it's possible to insert another disk with -d option.
 
-in that case, send
+in that case,
 
 ```code
 /#telstrat -d builder
 ```
 
-It will try to load /usr/share/stratsed/b/builder.dsk
+It will insert /usr/share/stratsed/b/builder.dsk
 
 If a .dsk is added to the disk argument like :
 

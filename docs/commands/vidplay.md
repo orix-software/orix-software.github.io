@@ -1,6 +1,6 @@
-# Vidplay
-
-Play .vhi video (some are located in /usr/share/vidplay/)
 ---
 comments: true
 ---
+# Vidplay
+
+Play .vhi video (some are located in /usr/share/vidplay/)

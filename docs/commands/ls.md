@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # ls
 
 ## Display catalog
@@ -26,6 +29,3 @@ Directories are in ^FBLUE^G color. It  manages '-l' and Pattern works in differe
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/ls.asm
----
-comments: true
----

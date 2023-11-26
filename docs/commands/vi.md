@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # vi
 
 ## Beta version
@@ -25,6 +28,3 @@ USE AT YOUR OWN RISK
 ```
 
 ![image](vi.png)
----
-comments: true
----

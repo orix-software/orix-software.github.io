@@ -1,8 +1,8 @@
+---
+comments: true
+---
 # ZeroFX demo
 
 Launch zerofx
 
 /#zerofx
----
-comments: true
----

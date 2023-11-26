@@ -40,9 +40,12 @@ MYURL="https://${GITHUB_AUTH}raw.githubusercontent.com/orix-software/${tab_repo[
 echo $MYURL
 curl  $MYURL
 
-echo "---" >> docs/commands/$VAL.md
-echo "comments: true" >> docs/commands/$VAL.md
-echo "---" >> docs/commands/$VAL.md
+echo "---" > docs/commands/tmp.md
+echo "comments: true" >> docs/commands/tmp.md
+echo "---" >> docs/commands/tmp.md
+cat docs/commands/$VAL.md >> docs/commands/tmp.md
+mv docs/commands/tmp.md docs/commands/$VAL.md
+cat docs/commands/$VAL.md
 
 echo Checking screenshots
 SCREENSHOT=`cat docs/commands/$VAL.md | grep '\!\['`

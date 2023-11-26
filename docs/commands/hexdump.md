@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Command: hexdump
 
 ### hexdump utility
@@ -20,6 +23,3 @@ You can use [SPACE] to pause the display ou [CTRL]+C to abort.
 ## SOURCE
 https://github.com/orix-software/hexdump
 
----
-comments: true
----

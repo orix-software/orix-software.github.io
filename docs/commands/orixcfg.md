@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # orixcfg
 
 ## Introduction
@@ -100,6 +103,3 @@ Update kernel
 ## DESCRIPTION
 
 Manage twilighte board configuration
----
-comments: true
----

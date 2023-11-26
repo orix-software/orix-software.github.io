@@ -1545,17 +1545,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    vidplay
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1565,39 +1554,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#play-vhi-video-some-are-located-in-usrsharevidplay" class="md-nav__link">
-    Play .vhi video (some are located in /usr/share/vidplay/)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments-true" class="md-nav__link">
-    comments: true
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -4836,28 +4792,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#play-vhi-video-some-are-located-in-usrsharevidplay" class="md-nav__link">
-    Play .vhi video (some are located in /usr/share/vidplay/)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments-true" class="md-nav__link">
-    comments: true
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -4872,8 +4806,7 @@
 
 
 <div><h1 id="vidplay">Vidplay</h1>
-<h2 id="play-vhi-video-some-are-located-in-usrsharevidplay">Play .vhi video (some are located in /usr/share/vidplay/)</h2>
-<h2 id="comments-true">comments: true</h2></div>
+<p>Play .vhi video (some are located in /usr/share/vidplay/)</p></div>
 
   <hr>
 <div class="md-source-file">
@@ -4888,6 +4821,59 @@
 
 
 
+
+  <h2 id="__comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+  data-repo="orix-software/support"
+  data-repo-id="R_kgDOKg7hYg"
+  data-category="General"
+  data-category-id="DIC_kwDOKg7hYs4CbRJI"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="dark"
+  data-lang="fr"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme)
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>

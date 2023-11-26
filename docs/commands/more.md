@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Command: more
 
 ### more utility
@@ -22,6 +25,3 @@ Any other keys: display next page.
 ## SOURCE
 https://github.com/orix-software/more
 
----
-comments: true
----

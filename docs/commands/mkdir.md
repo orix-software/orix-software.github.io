@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # mkdir
 
 ## Introduction
@@ -19,6 +22,3 @@ Create a folder. -p (recursive mode) option is not available
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/mkdir.asm
----
-comments: true
----

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # setfont
 
 ## Introduction
@@ -36,6 +39,3 @@ Font files are in /usr/share/fonts
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/setfont.asm
----
-comments: true
----

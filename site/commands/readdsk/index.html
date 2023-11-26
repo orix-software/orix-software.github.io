@@ -1308,20 +1308,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#readdsk-produces-a-rawfile-raw2dsk-must-be-launch-to-build-a-dsk-file" class="md-nav__link">
-    readdsk produces a rawfile. raw2dsk must be launch to build a .dsk file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments-true" class="md-nav__link">
-    comments: true
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -4856,20 +4842,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#readdsk-produces-a-rawfile-raw2dsk-must-be-launch-to-build-a-dsk-file" class="md-nav__link">
-    readdsk produces a rawfile. raw2dsk must be launch to build a .dsk file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments-true" class="md-nav__link">
-    comments: true
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -4895,8 +4867,7 @@
 <li>-h : this help</li>
 <li>-V : displays version</li>
 </ul>
-<h2 id="readdsk-produces-a-rawfile-raw2dsk-must-be-launch-to-build-a-dsk-file">readdsk produces a rawfile. raw2dsk must be launch to build a .dsk file</h2>
-<h2 id="comments-true">comments: true</h2></div>
+<p>readdsk produces a rawfile. raw2dsk must be launch to build a .dsk file</p></div>
 
   <hr>
 <div class="md-source-file">
@@ -4911,6 +4882,59 @@
 
 
 
+
+  <h2 id="__comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+  data-repo="orix-software/support"
+  data-repo-id="R_kgDOKg7hYg"
+  data-category="General"
+  data-category-id="DIC_kwDOKg7hYs4CbRJI"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="dark"
+  data-lang="fr"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme)
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>

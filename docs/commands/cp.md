@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # cp
 
 ## Introduction
@@ -19,6 +22,3 @@ Copy a file to another. Only 40KB can be copied. It's a software limit. cp tries
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/cp.asm
----
-comments: true
----

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Command: cksum
 
 ### checksum utility
@@ -22,6 +25,3 @@ checksum and count the bytes in a file
 ## SOURCE
 https://github.com/orix-software/cksum
 
----
-comments: true
----

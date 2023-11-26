@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Loader
 
 Uses funct + L to launch the menu or type "twiload" if you have Oric-1 keyboard
@@ -34,6 +37,3 @@ Number of software for each category since 15/5/2022
 * Tools : 142
 * Music : 80
 
----
-comments: true
----

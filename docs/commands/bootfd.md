@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Command: bootfd
 
 ## Starts microdisc bootsector
@@ -26,6 +29,3 @@ Boots only microdisc boot sector with the help of microdisc.rom. In this version
 
 ## SOURCE
 Src code : https://github.com/orix-software/bootfd.git (Assembly and C)
----
-comments: true
----

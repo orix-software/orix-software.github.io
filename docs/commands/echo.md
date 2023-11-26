@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # echo
 
 ## Introduction
@@ -15,6 +18,3 @@ Display a message
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/echo.asm
----
-comments: true
----

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Command: untar
 
 ### untar utility
@@ -21,6 +24,3 @@
 ## SOURCE
 https://github.com/orix-software/untar
 
----
-comments: true
----

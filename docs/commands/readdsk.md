@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Readdsk
 
 Dump a real floppy disk. It needs a real floppy drive controler to be attached with twilighte board
@@ -12,6 +15,3 @@ readdsk myfile.raw
 * -V : displays version
 
 readdsk produces a rawfile. raw2dsk must be launch to build a .dsk file
----
-comments: true
----

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Command: grep
 
 ### grep utility
@@ -30,6 +33,3 @@
 ## SOURCE
 https://github.com/orix-software/grep
 
----
-comments: true
----

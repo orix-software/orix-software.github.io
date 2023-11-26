@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # raw2dsk
 
 ### raw2dsk utility
@@ -17,6 +20,3 @@
 ## SOURCE
 https://github.com/orix-software/raw2dsk
 
----
-comments: true
----

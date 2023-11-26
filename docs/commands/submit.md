@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Command: submit
 
 ### submit utility
@@ -17,6 +20,3 @@
 ## SOURCE
 https://github.com/orix-software/submit
 
----
-comments: true
----

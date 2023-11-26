@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # pwd
 
 ## Introduction
@@ -11,6 +14,3 @@ Display the current path
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/pwd.asm
----
-comments: true
----

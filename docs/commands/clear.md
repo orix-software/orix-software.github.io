@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # clear
 
 ## Introduction
@@ -11,6 +14,3 @@ Clear the screen
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/clear.asm
----
-comments: true
----

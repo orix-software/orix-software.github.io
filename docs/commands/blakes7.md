@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Blakes7
 
 ![Blake's](startup_room.png)
@@ -22,6 +25,3 @@ If you want to remove your saved game :
 ```bash
 /#blakes7 -v
 ```
----
-comments: true
----

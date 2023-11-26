@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # ps
 
 ![ps](imgs/ps.png)
@@ -21,6 +24,3 @@ Displays process list
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/ps.asm
----
-comments: true
----

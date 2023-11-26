@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # df
 
 ## Description
@@ -11,6 +14,3 @@ Displays storage device informations.
 ```
 
 ![Screenshot](imgs/df.png)
----
-comments: true
----

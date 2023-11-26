@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # rm
 
 ## Introduction
@@ -19,6 +22,3 @@ rm file or directory. For instance, rm can only remove file in root folder, rela
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/rm.asm
----
-comments: true
----

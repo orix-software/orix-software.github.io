@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # env
 
 ## Introduction
@@ -15,6 +18,3 @@ Displays env variables. It can't be used in command line or shell script for ins
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/env.asm
----
-comments: true
----

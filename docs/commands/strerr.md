@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Command: strerr
 
 ### strerr utility
@@ -33,6 +36,3 @@
 ## SOURCE
 https://github.com/orix-software/strerr
 
----
-comments: true
----

@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Command: dsk-util
 
 ### Disk image utility
@@ -24,6 +27,3 @@
 ## SOURCE
 https://github.com/orix-software/dsk-util
 
----
-comments: true
----

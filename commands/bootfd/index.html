@@ -689,20 +689,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#src-code-httpsgithubcomorix-softwarebootfdgit-assembly-and-c" class="md-nav__link">
-    Src code : https://github.com/orix-software/bootfd.git (Assembly and C)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments-true" class="md-nav__link">
-    comments: true
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -4898,20 +4884,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#src-code-httpsgithubcomorix-softwarebootfdgit-assembly-and-c" class="md-nav__link">
-    Src code : https://github.com/orix-software/bootfd.git (Assembly and C)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments-true" class="md-nav__link">
-    comments: true
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -4948,8 +4920,7 @@ have firmware 2, all sedoric .dsk should start.</p>
 </ul>
 <p>Boots only microdisc boot sector with the help of microdisc.rom. In this version, we don't verify if a dsk is inserted or not. If there is no disk, the oric will crash</p>
 <h2 id="source">SOURCE</h2>
-<h2 id="src-code-httpsgithubcomorix-softwarebootfdgit-assembly-and-c">Src code : https://github.com/orix-software/bootfd.git (Assembly and C)</h2>
-<h2 id="comments-true">comments: true</h2></div>
+<p>Src code : https://github.com/orix-software/bootfd.git (Assembly and C)</p></div>
 
   <hr>
 <div class="md-source-file">
@@ -4964,6 +4935,59 @@ have firmware 2, all sedoric .dsk should start.</p>
 
 
 
+
+  <h2 id="__comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+  data-repo="orix-software/support"
+  data-repo-id="R_kgDOKg7hYg"
+  data-category="General"
+  data-category-id="DIC_kwDOKg7hYs4CbRJI"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="dark"
+  data-lang="fr"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme)
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>

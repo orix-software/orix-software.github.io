@@ -15,3 +15,6 @@ Displays content of the FILENAME
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/cat.asm
+---
+comments: true
+---

@@ -5,6 +5,7 @@ Get vars from kernel
 ## Get Free malloc table
 
 X = KERNEL_XVALUES_FREE_MALLOC_TABLE
+
 KERNEL_XVALUES_FREE_MALLOC_TABLE = $02
 
 Returns in A and Y a copy of free malloc table. This ptr must be free when the buffer is useless
@@ -20,12 +21,15 @@ Returns in A and Y a copy of free malloc table. This ptr must be free when the b
 
     BRK_TELEMON  $2D ; XVALUES
 
+    ; A and Y contains a ptr of free malloc table
+
     rts
 ```
 
 ## Get Busy malloc table
 
 X = KERNEL_XVALUES_BUSY_MALLOC_TABLE
+
 KERNEL_XVALUES_FREE_MALLOC_TABLE = $07
 
 Returns in A and Y a copy of busy malloc table. This ptr must be free when the buffer is useless
@@ -66,9 +70,10 @@ KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_PID = $08
     rts
 ```
 
-## Get the path of an opened file
+## Get the path of an opened file and mode of the opened file
 
 KERNEL_XVALUES_PATH_FROM_FD = $09
+
 Y must contains the fd.
 
 ```ca65
@@ -77,21 +82,37 @@ Y must contains the fd.
     KERNEL_XVALUES_PATH_FROM_FD = $09
 
     ldx     #KERNEL_XVALUES_PATH_FROM_FD
-    ldy     #03 ; Get the name of pid = 3
+    ldy     #$03 ; Get the name of pid = 3
 
     BRK_TELEMON  $2D ; XVALUES
     ; A and Y contains the ptr of path
-
+    ; X contains the mode of the file
     rts
 ```
 
-## Get the position in the opened file
+## Get the position in the opened file (ftell)
 
 KERNEL_XVALUES_GET_FTELL_FROM_FD = $0A
 
-X=KERNEL_XVALUES_GET_FTELL_FROM_FD
+Params : 
+* X = KERNEL_XVALUES_GET_FTELL_FROM_FD
+* A = FD
 
 It returns in A, X, Y and RES, the position in the file
+
+```ca65
+    .include "telestrat.inc"
+
+    KERNEL_XVALUES_PATH_FROM_FD = $0A
+
+    ldx     #KERNEL_XVALUES_GET_FTELL_FROM_FD
+    lda     myfd ; fd
+
+    BRK_TELEMON  $2D ; XVALUES
+    ; A, X, Y and RES contains the size
+    ; X contains the mode of the file
+    rts
+```
 
 ## Get the ptr of the pid list
 

@@ -4807,9 +4807,64 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsof" class="md-nav__link">
+    lsof
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#debug-command" class="md-nav__link">
     debug command
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cd-command" class="md-nav__link">
+    cd command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-command" class="md-nav__link">
+    help command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vi-command" class="md-nav__link">
+    vi command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kernel" class="md-nav__link">
+    Kernel
+  </a>
+  
+    <nav class="md-nav" aria-label="Kernel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xfseek" class="md-nav__link">
+    XFSEEK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xopen" class="md-nav__link">
+    XOPEN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4841,10 +4896,24 @@
 <p>viewhrs is again available (missing from shell 2023.3)</p>
 <h2 id="pstree">pstree</h2>
 <p>Fix bug with wrong string after init process</p>
+<h2 id="lsof">lsof</h2>
+<p>Displays path of opened files</p>
 <h2 id="debug-command">debug command</h2>
 <ul>
 <li>fix bug with 65C816 detection</li>
-</ul></div>
+</ul>
+<h2 id="cd-command">cd command</h2>
+<p>It's now impossible to put any char like - , + * ) &amp; ' (  $ # %' ' ! " in cd argument. It will write "Not supported"</p>
+<p>cd now accept many space between cd and arg. Ex : "cd     bin" will work</p>
+<h2 id="help-command">help command</h2>
+<p>help now accept many space between help and arg. Ex : "help     -b33" will work</p>
+<h2 id="vi-command">vi command</h2>
+<p>'vi' beta version</p>
+<h2 id="kernel">Kernel</h2>
+<h3 id="xfseek">XFSEEK</h3>
+<p>Fix a bug with SEEK_SET : wrong offset when SEEK_SET was used</p>
+<h3 id="xopen">XOPEN</h3>
+<p>Bugfix : If a file is not found, the first opened file works now</p></div>
 
   <hr>
 <div class="md-source-file">

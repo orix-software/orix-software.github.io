@@ -5,9 +5,19 @@
 ```ca65
   ldx #KERNEL_XVARS_KERNEL_MAX_PROCESS ; Value = 8
   BRK_KERNEL XVARS
-  ; A and Y contains the number max of the process available
-
+  ; A contain the number max of the process available
+  ; Y contains the max FP handled by kernel
 ```
+
+## Get the number max opened file
+
+```ca65
+  ldx #KERNEL_XVARS_KERNEL_MAX_PROCESS ; Value = 8
+  BRK_KERNEL XVARS
+  ; A contain the number max of the process available
+  ; Y contains the max FP handled by kernel
+```
+
 
 ## Get the list of the process
 

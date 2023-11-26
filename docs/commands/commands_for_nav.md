@@ -52,6 +52,7 @@
 - twiload: commands/twiload.md
 - uname: commands/uname.md
 - untar: commands/untar.md
+- vi: commands/vi.md
 - vidplay: commands/vidplay.md
 - viewscr: commands/viewscr.md
 - viewhrs: commands/viewhrs.md

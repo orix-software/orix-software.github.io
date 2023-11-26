@@ -22,3 +22,6 @@ If you want to remove your saved game :
 ```bash
 /#blakes7 -v
 ```
+---
+comments: true
+---

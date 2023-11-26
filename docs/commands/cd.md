@@ -21,3 +21,6 @@ https://github.com/orix-software/shell/blob/master/src/commands/cd.asm
 ## Images
 
 ![Screenshot cd](imgs/cd.png)
+---
+comments: true
+---

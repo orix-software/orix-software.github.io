@@ -4551,15 +4551,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-the-path-of-an-opened-file" class="md-nav__link">
-    Get the path of an opened file
+  <a href="#get-the-path-of-an-opened-file-and-mode-of-the-opened-file" class="md-nav__link">
+    Get the path of an opened file and mode of the opened file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-the-position-in-the-opened-file" class="md-nav__link">
-    Get the position in the opened file
+  <a href="#get-the-position-in-the-opened-file-ftell" class="md-nav__link">
+    Get the position in the opened file (ftell)
   </a>
   
 </li>
@@ -4966,15 +4966,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-the-path-of-an-opened-file" class="md-nav__link">
-    Get the path of an opened file
+  <a href="#get-the-path-of-an-opened-file-and-mode-of-the-opened-file" class="md-nav__link">
+    Get the path of an opened file and mode of the opened file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-the-position-in-the-opened-file" class="md-nav__link">
-    Get the position in the opened file
+  <a href="#get-the-position-in-the-opened-file-ftell" class="md-nav__link">
+    Get the position in the opened file (ftell)
   </a>
   
 </li>
@@ -5046,8 +5046,8 @@
 <div><h1 id="xvalues-routine">XVALUES ROUTINE</h1>
 <p>Get vars from kernel</p>
 <h2 id="get-free-malloc-table">Get Free malloc table</h2>
-<p>X = KERNEL_XVALUES_FREE_MALLOC_TABLE
-KERNEL_XVALUES_FREE_MALLOC_TABLE = $02</p>
+<p>X = KERNEL_XVALUES_FREE_MALLOC_TABLE</p>
+<p>KERNEL_XVALUES_FREE_MALLOC_TABLE = $02</p>
 <p>Returns in A and Y a copy of free malloc table. This ptr must be free when the buffer is useless</p>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
@@ -5058,11 +5058,13 @@ KERNEL_XVALUES_FREE_MALLOC_TABLE = $02</p>
 
 <span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span>
 
+<span class="w">    </span><span class="c1">; A and Y contains a ptr of free malloc table</span>
+
 <span class="w">    </span><span class="k">rts</span>
 </code></pre></div>
 <h2 id="get-busy-malloc-table">Get Busy malloc table</h2>
-<p>X = KERNEL_XVALUES_BUSY_MALLOC_TABLE
-KERNEL_XVALUES_FREE_MALLOC_TABLE = $07</p>
+<p>X = KERNEL_XVALUES_BUSY_MALLOC_TABLE</p>
+<p>KERNEL_XVALUES_FREE_MALLOC_TABLE = $07</p>
 <p>Returns in A and Y a copy of busy malloc table. This ptr must be free when the buffer is useless</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
 
@@ -5091,25 +5093,39 @@ X = 08</p>
 
 <span class="w">    </span><span class="k">rts</span>
 </code></pre></div>
-<h2 id="get-the-path-of-an-opened-file">Get the path of an opened file</h2>
-<p>KERNEL_XVALUES_PATH_FROM_FD = $09
-Y must contains the fd.</p>
+<h2 id="get-the-path-of-an-opened-file-and-mode-of-the-opened-file">Get the path of an opened file and mode of the opened file</h2>
+<p>KERNEL_XVALUES_PATH_FROM_FD = $09</p>
+<p>Y must contains the fd.</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
 
 <span class="w">    </span><span class="n">KERNEL_XVALUES_PATH_FROM_FD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$09</span>
 
 <span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">KERNEL_XVALUES_PATH_FROM_FD</span>
-<span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mi">03</span><span class="w"> </span><span class="c1">; Get the name of pid = 3</span>
+<span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="mh">$03</span><span class="w"> </span><span class="c1">; Get the name of pid = 3</span>
 
 <span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span>
 <span class="w">    </span><span class="c1">; A and Y contains the ptr of path</span>
-
+<span class="w">    </span><span class="c1">; X contains the mode of the file</span>
 <span class="w">    </span><span class="k">rts</span>
 </code></pre></div>
-<h2 id="get-the-position-in-the-opened-file">Get the position in the opened file</h2>
+<h2 id="get-the-position-in-the-opened-file-ftell">Get the position in the opened file (ftell)</h2>
 <p>KERNEL_XVALUES_GET_FTELL_FROM_FD = $0A</p>
-<p>X=KERNEL_XVALUES_GET_FTELL_FROM_FD</p>
+<p>Params : 
+* X = KERNEL_XVALUES_GET_FTELL_FROM_FD
+* A = FD</p>
 <p>It returns in A, X, Y and RES, the position in the file</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
+
+<span class="w">    </span><span class="n">KERNEL_XVALUES_PATH_FROM_FD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">$0A</span>
+
+<span class="w">    </span><span class="k">ldx</span><span class="w">     </span><span class="p">#</span><span class="n">KERNEL_XVALUES_GET_FTELL_FROM_FD</span>
+<span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="n">myfd</span><span class="w"> </span><span class="c1">; fd</span>
+
+<span class="w">    </span><span class="n">BRK_TELEMON</span><span class="w">  </span><span class="mh">$2D</span><span class="w"> </span><span class="c1">; XVALUES</span>
+<span class="w">    </span><span class="c1">; A, X, Y and RES contains the size</span>
+<span class="w">    </span><span class="c1">; X contains the mode of the file</span>
+<span class="w">    </span><span class="k">rts</span>
+</code></pre></div>
 <h2 id="get-the-ptr-of-the-pid-list">Get the ptr of the pid list</h2>
 <p>KERNEL_XVALUES_GET_PROCESS_ID_LIST=$0C</p>
 <p>; A and Y contains the ptr</p>

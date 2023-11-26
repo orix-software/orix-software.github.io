@@ -65,3 +65,6 @@ All dsk built with floppybuilder:
 ## Trouble shooting
 
 If sedoric is launched without any args, it will try to load by default '/usr/share/sedoric/sedoric3.dsk'. If this disk is not present, sedoric will failed.
+---
+comments: true
+---

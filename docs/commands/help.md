@@ -22,3 +22,6 @@ Display commands stored in a bank
 https://github.com/orix-software/shell/blob/master/src/commands/help.asm
 
 ![help screenshot](imgs/help.png)
+---
+comments: true
+---

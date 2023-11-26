@@ -85,3 +85,6 @@ Add .dsk into /usr/share/stratsed/[FIRST_LETTER_OF_MYDISK]/
 ## Kernel
 
 Need Oric kernel 2022.3 at least
+---
+comments: true
+---

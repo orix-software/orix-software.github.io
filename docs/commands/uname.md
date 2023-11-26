@@ -15,3 +15,6 @@ Display kernel info
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/uname.asm
+---
+comments: true
+---

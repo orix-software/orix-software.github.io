@@ -21,3 +21,6 @@ Displays cpu info
 https://github.com/orix-software/shell/blob/master/src/commands/lscpu.asm
 
 ![lscpu](imgs/lscpu.png)
+---
+comments: true
+---

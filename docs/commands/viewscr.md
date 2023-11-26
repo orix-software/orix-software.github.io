@@ -15,3 +15,6 @@ Display TEXT screen dump files like SCR files from FTDOS disks or HLP, WIN files
 ## SOURCE
 https://github.com/orix-software/viewscr
 
+---
+comments: true
+---

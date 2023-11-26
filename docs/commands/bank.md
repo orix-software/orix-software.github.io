@@ -48,3 +48,6 @@ bank -a : displauys all bank (empty bank too)
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/bank.asm
+---
+comments: true
+---

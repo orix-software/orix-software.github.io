@@ -4544,6 +4544,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#get-the-number-max-opened-file" class="md-nav__link">
+    Get the number max opened file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#get-the-list-of-the-process" class="md-nav__link">
     Get the list of the process
   </a>
@@ -4856,6 +4863,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#get-the-number-max-opened-file" class="md-nav__link">
+    Get the number max opened file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#get-the-list-of-the-process" class="md-nav__link">
     Get the list of the process
   </a>
@@ -4881,7 +4895,14 @@
 <h2 id="get-the-number-max-of-process">Get the number max of process</h2>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="k">ldx</span><span class="w"> </span><span class="p">#</span><span class="n">KERNEL_XVARS_KERNEL_MAX_PROCESS</span><span class="w"> </span><span class="c1">; Value = 8</span>
 <span class="w">  </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XVARS</span>
-<span class="w">  </span><span class="c1">; A and Y contains the number max of the process available</span>
+<span class="w">  </span><span class="c1">; A contain the number max of the process available</span>
+<span class="w">  </span><span class="c1">; Y contains the max FP handled by kernel</span>
+</code></pre></div>
+<h2 id="get-the-number-max-opened-file">Get the number max opened file</h2>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="k">ldx</span><span class="w"> </span><span class="p">#</span><span class="n">KERNEL_XVARS_KERNEL_MAX_PROCESS</span><span class="w"> </span><span class="c1">; Value = 8</span>
+<span class="w">  </span><span class="n">BRK_KERNEL</span><span class="w"> </span><span class="n">XVARS</span>
+<span class="w">  </span><span class="c1">; A contain the number max of the process available</span>
+<span class="w">  </span><span class="c1">; Y contains the max FP handled by kernel</span>
 </code></pre></div>
 <h2 id="get-the-list-of-the-process">Get the list of the process</h2>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>

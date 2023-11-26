@@ -35,3 +35,6 @@ CLOAD"ZORGONS => it will load zorgons.tap
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/basic10.asm
+---
+comments: true
+---

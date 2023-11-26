@@ -6,11 +6,15 @@
 
 ## Users profile
 
-### tape file launchers (oric1/atmos)
+### Tape file launchers (oric1/atmos)
 
 * [loader](../../commands/loader)
 * [basic11](../../commands/basic11)
 * [basic10](../../commands/basic10)
+
+## Text editor
+
+* [vi](../../commands/vi)
 
 ### Roms launchers
 
@@ -131,5 +135,6 @@
 * [viewscr](../../commands/viewscr)
 * [man](../../commands/man)
 * [more](../../commands/more)
+* [vi](../../commands/vi)
 
 ```

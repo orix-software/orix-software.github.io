@@ -13,14 +13,6 @@ submit 2022.4
 
 restore from /etc/orix/menu.cnf
 
-En PJ la version corrigée de submit.
-
-Bugfix: restore from: ne fonctionnait plus suite à l'optimisation de la lecture du script
-
-Modification: place la flèche au début de la variable et non à la fin (cas de if exists)
-
-Je ne sais pas si tu l'avais vu dans le manuel subdoc mais tu peux vérifier la valeur de errrorlevel après une commande restore ou save.
-
 # Restore (2/2)
 
 Apres execution errorlevel vaut:
@@ -32,8 +24,6 @@ Apres execution errorlevel vaut:
 - 4: trop de variables
 - 5: chaine trop longue
 - 6: erreur interne
-
-
 
 # Save
 
@@ -47,7 +37,7 @@ Donc tu peux faire:
 if errorlevel 1 goto erreur ou if errorlevel >=1 goto erreur qui est équivalent
 if errorlevel = 1 goto erreur pour ne détecter que le problème d'ouverture du fichier
 if errorlevel = 0 goto ok et mettre le traitement d'erreur juste après cette ligne.
-on error ne fonctionnera pas ici parce que j'ai considérer qu'il ne s'agissait d'erreurs fatales.
+on error ne fonctionnera pas ici parce que qu'il ne s'agissit d'erreurs fatales.
 
 ## Call
 
@@ -68,6 +58,3 @@ getkey wait for a key. The value of the key pressed is inserted in "key" variabl
 ## if
 
 ## variable
-
-
-

@@ -1,6 +1,6 @@
 # News
 
-!!! info "[29-11-2023] vi first version : [Download vi](https://repo.orix.oric.org/dists/official/tgz/6502/vi.tgz){:target="_blank"} and look at [Telstrat manual](./commands/vi.md)"
+!!! info "[29-11-2023] vi first version : [Download vi](https://repo.orix.oric.org/dists/official/tgz/6502/vi.tgz){:target="_blank"} and look at [vi manual](./commands/vi.md)"
 
 !!! info "[06-11-2023] Telestrat mode had been released : [Download telstrat](https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz){:target="_blank"}& [Download stratsed disks](https://repo.orix.oric.org/dists/official/tgz/6502/stratsed.tgz){:target="_blank"} and look at [Telstrat manual](./commands/telstrat.md)"
 

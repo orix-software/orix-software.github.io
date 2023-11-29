@@ -1824,6 +1824,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced_submit_part1" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Submit scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -4835,10 +4855,6 @@ submit 2022.4</p>
 </code></pre></div>
 <h2 id="restore-from">Restore from</h2>
 <p>restore from /etc/orix/menu.cnf</p>
-<p>En PJ la version corrigée de submit.</p>
-<p>Bugfix: restore from: ne fonctionnait plus suite à l'optimisation de la lecture du script</p>
-<p>Modification: place la flèche au début de la variable et non à la fin (cas de if exists)</p>
-<p>Je ne sais pas si tu l'avais vu dans le manuel subdoc mais tu peux vérifier la valeur de errrorlevel après une commande restore ou save.</p>
 <h1 id="restore-22">Restore (2/2)</h1>
 <p>Apres execution errorlevel vaut:</p>
 <ul>
@@ -4860,7 +4876,7 @@ submit 2022.4</p>
 <p>if errorlevel 1 goto erreur ou if errorlevel &gt;=1 goto erreur qui est équivalent
 if errorlevel = 1 goto erreur pour ne détecter que le problème d'ouverture du fichier
 if errorlevel = 0 goto ok et mettre le traitement d'erreur juste après cette ligne.
-on error ne fonctionnera pas ici parce que j'ai considérer qu'il ne s'agissait d'erreurs fatales.</p>
+on error ne fonctionnera pas ici parce que qu'il ne s'agissit d'erreurs fatales.</p>
 <h2 id="call">Call</h2>
 <h2 id="chain">Chain</h2>
 <p>Calls a new submit script. If chain is called, the main script is left and the one starts</p>

@@ -133,6 +133,7 @@ nav:
             - Hardware issues: hardware/hardware_issues.md
         - Tutorials:
             - Autoboot : tutorials/autoboot_fr.md
+            - Submit scripts: advanced_submit_part1
         - Updates:
             - 2023.3: update/2023_3.md
             - 2023.2: update/2023_2.md

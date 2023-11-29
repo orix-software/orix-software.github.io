@@ -45,7 +45,7 @@ echo "comments: true" >> docs/commands/tmp.md
 echo "---" >> docs/commands/tmp.md
 cat docs/commands/$VAL.md >> docs/commands/tmp.md
 mv docs/commands/tmp.md docs/commands/$VAL.md
-cat docs/commands/$VAL.md
+
 
 echo Checking screenshots
 SCREENSHOT=`cat docs/commands/$VAL.md | grep '\!\['`
@@ -79,5 +79,3 @@ done
 fi
 
 mkdocs build && cp site/* . -r  && git add * && git commit -m update && echo push &&  git push
-
-

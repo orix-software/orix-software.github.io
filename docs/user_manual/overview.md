@@ -12,7 +12,7 @@
 * [basic11](../../commands/basic11)
 * [basic10](../../commands/basic10)
 
-## Text editor
+### Text editor
 
 * [vi](../../commands/vi)
 

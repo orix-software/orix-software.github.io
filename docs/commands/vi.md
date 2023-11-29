@@ -15,12 +15,13 @@ USE AT YOUR OWN RISK
 
 ## Limits
 
-* crlf only
 * max length line : 79 chars
 * Max length of the file : 2000 chars
 * does not manage "tab"
 
 ## Install
+
+Can be loaded into a rom bank.
 
 ```bash
 /#cd /usr/share/vi

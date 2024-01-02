@@ -13,7 +13,7 @@ submit 2022.4
 
 restore from /etc/orix/menu.cnf
 
-# Restore (2/2)
+## Restore (2/2)
 
 Apres execution errorlevel vaut:
 
@@ -25,14 +25,12 @@ Apres execution errorlevel vaut:
 - 5: chaine trop longue
 - 6: erreur interne
 
-# Save
+## Save
 
 Apres execution errorlevel vaut:
 
 - 0: ok
 - 1: erreur d'ouverture du fichier
-
-Donc tu peux faire:
 
 if errorlevel 1 goto erreur ou if errorlevel >=1 goto erreur qui est équivalent
 if errorlevel = 1 goto erreur pour ne détecter que le problème d'ouverture du fichier

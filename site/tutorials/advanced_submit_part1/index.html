@@ -4832,6 +4832,62 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#restore-22" class="md-nav__link">
+    Restore (2/2)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#save" class="md-nav__link">
+    Save
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call" class="md-nav__link">
+    Call
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chain" class="md-nav__link">
+    Chain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-error" class="md-nav__link">
+    On error
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getkey" class="md-nav__link">
+    getkey
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if" class="md-nav__link">
+    if
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable" class="md-nav__link">
+    variable
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4855,7 +4911,7 @@ submit 2022.4</p>
 </code></pre></div>
 <h2 id="restore-from">Restore from</h2>
 <p>restore from /etc/orix/menu.cnf</p>
-<h1 id="restore-22">Restore (2/2)</h1>
+<h2 id="restore-22">Restore (2/2)</h2>
 <p>Apres execution errorlevel vaut:</p>
 <ul>
 <li>0: ok</li>
@@ -4866,13 +4922,12 @@ submit 2022.4</p>
 <li>5: chaine trop longue</li>
 <li>6: erreur interne</li>
 </ul>
-<h1 id="save">Save</h1>
+<h2 id="save">Save</h2>
 <p>Apres execution errorlevel vaut:</p>
 <ul>
 <li>0: ok</li>
 <li>1: erreur d'ouverture du fichier</li>
 </ul>
-<p>Donc tu peux faire:</p>
 <p>if errorlevel 1 goto erreur ou if errorlevel &gt;=1 goto erreur qui est équivalent
 if errorlevel = 1 goto erreur pour ne détecter que le problème d'ouverture du fichier
 if errorlevel = 0 goto ok et mettre le traitement d'erreur juste après cette ligne.
@@ -4893,7 +4948,7 @@ on error ne fonctionnera pas ici parce que qu'il ne s'agissit d'erreurs fatales.
   <small>
     
       Last update:
-      2023-09-08
+      2023-11-29
     
   </small>
 </div>

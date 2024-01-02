@@ -19,7 +19,7 @@ telstrat without binary starts hyperbasic mode with stratsed (Like -m 0 flag)
 
 [Download telstrat](https://repo.orix.oric.org/dists/official/tgz/6502/telstrat.tgz)
 
-[Download stratsed disks](https://repo.orix.oric.org/dists/official/tgz/6502/stratsed.tgz)
+[Update last software archive (unzip on Twilighte board storage device) ](https://repo.orix.oric.org/dists/official/tgz/6502/softwares.tgz)
 
 ## Modes
 

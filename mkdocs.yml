@@ -131,7 +131,7 @@ nav:
             - Plug voice synthetizer: hardware/synth_vocal_mea80900.md
             - Oric incompatibility: hardware/incompatibility_oric.md
             - Hardware issues: hardware/hardware_issues.md
-            - Sdcard over wifi: user_manual/sdcard_reader_over_wifi.md
+            - Sdcard over wifi: user_manual/devices/sdcard_reader_over_wifi.md
         - Tutorials:
             - Autoboot : tutorials/autoboot_fr.md
             - Submit scripts: advanced_submit_part1

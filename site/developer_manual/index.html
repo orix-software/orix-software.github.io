@@ -2178,7 +2178,7 @@
       
         <li class="md-nav__item">
   <a href="#step-1-download-the-oricutron-archive-with-all-things-set" class="md-nav__link">
-    Step 1 : Download the oricutron archive with all things set:
+    Step 1 : Download the oricutron archive with all things set
   </a>
   
 </li>
@@ -2191,15 +2191,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-start-oricutron" class="md-nav__link">
-    Step 3 : start oricutron
+  <a href="#step-3-configure-oricutron-with-twilighte-board-activated" class="md-nav__link">
+    Step 3 : Configure oricutron with twilighte board activated
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-downloadbuild-cc65" class="md-nav__link">
-    Step 4 : Download/build cc65
+  <a href="#step-4-start-oricutron" class="md-nav__link">
+    Step 4 : start oricutron
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-downloadbuild-cc65" class="md-nav__link">
+    Step 5 : Download/build cc65
   </a>
   
 </li>
@@ -2207,6 +2214,13 @@
         <li class="md-nav__item">
   <a href="#step-5-download-sdk-mainly-for-assembly" class="md-nav__link">
     Step 5 : Download SDK  (mainly for assembly)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-develop-a-binary" class="md-nav__link">
+    Step 6 : Develop a binary
   </a>
   
 </li>
@@ -4923,7 +4937,7 @@
       
         <li class="md-nav__item">
   <a href="#step-1-download-the-oricutron-archive-with-all-things-set" class="md-nav__link">
-    Step 1 : Download the oricutron archive with all things set:
+    Step 1 : Download the oricutron archive with all things set
   </a>
   
 </li>
@@ -4936,15 +4950,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-start-oricutron" class="md-nav__link">
-    Step 3 : start oricutron
+  <a href="#step-3-configure-oricutron-with-twilighte-board-activated" class="md-nav__link">
+    Step 3 : Configure oricutron with twilighte board activated
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-downloadbuild-cc65" class="md-nav__link">
-    Step 4 : Download/build cc65
+  <a href="#step-4-start-oricutron" class="md-nav__link">
+    Step 4 : start oricutron
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-downloadbuild-cc65" class="md-nav__link">
+    Step 5 : Download/build cc65
   </a>
   
 </li>
@@ -4952,6 +4973,13 @@
         <li class="md-nav__item">
   <a href="#step-5-download-sdk-mainly-for-assembly" class="md-nav__link">
     Step 5 : Download SDK  (mainly for assembly)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-develop-a-binary" class="md-nav__link">
+    Step 6 : Develop a binary
   </a>
   
 </li>
@@ -4973,26 +5001,37 @@
 
 <div><h1 id="installation-for-developpers">Installation for developpers</h1>
 <p>There is two ways to develop : Oricutron and cross dev with test on real computer</p>
-<h2 id="step-1-download-the-oricutron-archive-with-all-things-set">Step 1 : Download the oricutron archive with all things set:</h2>
-<p><a href="oricutron_twilighte_board_for_projects.zip">oricutron_twilighte_board_for_projects.zip</a></p>
-<p>or</p>
-<p>Configure and start oricutron with twilighte board</p>
-<p>Build from source code oricutron : <a href="https://github.com/pete-gordon/oricutron">https://github.com/pete-gordon/oricutron</a> or download last windows binaries : https://iss.sandacite.com/iss/oricutron/</p>
+<h2 id="step-1-download-the-oricutron-archive-with-all-things-set">Step 1 : Download the oricutron archive with all things set</h2>
+<p>Build from source code oricutron : <a href="https://github.com/pete-gordon/oricutron">https://github.com/pete-gordon/oricutron</a> or download last windows binaries : <a href="https://raxiss.com/article/id/25-Oricutron-For-Developers">https://raxiss.com/article/id/25-Oricutron-For-Developers</a></p>
+<h2 id="step-2-get-main-rom-kernel-and-shell">Step 2 : get main rom (kernel and shell)</h2>
+<ul>
+<li>Download kernel : <a href="%5Bhttp://repo.orix.oric.org/dists/official/tgz/6502/kernel.tgz%5D">http://repo.orix.oric.org/dists/official/tgz/6502/kernel.tgz</a> and store it in "roms/" oricutron folder</li>
+<li>Download shell : <a href="%5Bhttp://repo.orix.oric.org/dists/official/tgz/6502/shell.tgz%5D">http://repo.orix.oric.org/dists/official/tgz/6502/shell.tgz</a> and store it in "roms/" oricutron folder</li>
+<li>Download basic rom: <a href="%5Bhttp://repo.orix.oric.org/dists/official/tgz/6502/basic.tgz%5D">http://repo.orix.oric.org/dists/official/tgz/6502/shell.tgz</a> and store it in "roms/" oricutron folder</li>
+</ul>
+<h2 id="step-3-configure-oricutron-with-twilighte-board-activated">Step 3 : Configure oricutron with twilighte board activated</h2>
 <p>In oricutron.cfg, you have just to set the right parameter to start oric with the board emulated</p>
 <div class="highlight"><pre><span></span><code><span class="n">ch376</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">yes</span>
 <span class="n">twilighte_board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">yes</span>
 </code></pre></div>
-<p>plugins/twilighte_board/twilighte.cfg you can put any rom you want.</p>
-<h2 id="step-2-get-main-rom-kernel-and-shell">Step 2 : get main rom (kernel and shell)</h2>
-<p>Skip this step, if you downloaded "oricutron_twilighte_board_for_projects" arhive</p>
-<h2 id="step-3-start-oricutron">Step 3 : start oricutron</h2>
+<p>in "plugins/twilighte_board/twilighte.cfg", the minimal rom must be set as :</p>
+<div class="highlight"><pre><span></span><code><span class="nv">twilbankrom07</span><span class="o">=</span><span class="s1">'roms/kernel'</span>
+<span class="nv">twilbankrom06</span><span class="o">=</span><span class="s1">'roms/basicsd2'</span>
+<span class="nv">twilbankrom05</span><span class="o">=</span><span class="s1">'roms/shell'</span>
+</code></pre></div>
+<h2 id="step-4-start-oricutron">Step 4 : start oricutron</h2>
 <p>Starts oricutron, if everything is OK, Orix starts, if you have missing rom at boot, modify plugins/twilighte_board/twilighte.cfg in order to replace wrong ROM.</p>
 <p>there is 2 folders on oricutron: sdcard and usbdrive, in orix type "/#mount", if usb is shown, then "usbdrive/" folder is the main folder.</p>
 <p>Under Linux, all filenames must be uppercases (folder and files), it's mainly because emulation rescpect FAT32 specs in the sdcard/usbdrive chip</p>
-<h2 id="step-4-downloadbuild-cc65">Step 4 : Download/build cc65</h2>
+<div class="admonition info">
+<p class="admonition-title">SDCARD folder in oricutron is the root of the storage, under linux, all binary must be in uppercase!</p>
+</div>
+<h2 id="step-5-downloadbuild-cc65">Step 5 : Download/build cc65</h2>
 <p>Build it from cc65. You can build your first program in C with cc65 and telestrat target. It builds an Orix binary. This binary can be put in bin/ folder of the device (for oricutron : usbdrive or sdcard folder)</p>
 <h2 id="step-5-download-sdk-mainly-for-assembly">Step 5 : Download SDK  (mainly for assembly)</h2>
-<p>Clone <a href="https://github.com/assinie/orix-sdk">https://github.com/assinie/orix-sdk</a> in your project folder</p></div>
+<p>Clone <a href="https://github.com/assinie/orix-sdk">https://github.com/assinie/orix-sdk</a> in your project folder</p>
+<h2 id="step-6-develop-a-binary">Step 6 : Develop a binary</h2>
+<p>This link is a template project to start a binary in assembly : <a href="">https://github.com/assinie/new-project</a></p></div>
 
   <hr>
 <div class="md-source-file">

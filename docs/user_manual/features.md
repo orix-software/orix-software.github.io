@@ -27,7 +27,6 @@
 
 <iframe width="500" height="308" src="https://www.youtube.com/embed/G_DUKJe6wKA" title="Twilighte board : sedoric" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
 ## Start ftdos .dsk file
 
 <iframe width="500" height="308" src="https://www.youtube.com/embed/hDEc-BaCkZo" title="FTDOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -35,7 +34,6 @@
 ## Start telestrat mode
 
 <iframe width="500" height="308" src="https://www.youtube.com/embed/9n0x8EYgBJM" title="Telestrat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 
 ## Loader
 

@@ -49,4 +49,4 @@ Clone [https://github.com/assinie/orix-sdk](https://github.com/assinie/orix-sdk)
 
 ## Step 6 : Develop a binary
 
-This link is a template project to start a binary in assembly : [https://github.com/assinie/new-project]()
+This link is a template project to start a binary in assembly : [https://github.com/assinie/new-project](https://github.com/assinie/new-project)

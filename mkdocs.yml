@@ -59,7 +59,6 @@ nav:
     #     - User manual: user_manual/overview.md
     #     - Developer manual: developer_manual/index.md
     - User manual:
-        - Twilighte board: user_manual/hardware/index.md
         - Features: user_manual/features.md
         - Overview: user_manual/overview.md
         - Commands:
@@ -121,7 +120,7 @@ nav:
             - viewscr: commands/viewscr.md
             - viewhrs: commands/viewhrs.md
             - zerofx: commands/zerofx.md
-
+        - Twilighte board: user_manual/hardware/index.md
         # - Floppy drive commands:
         #     - Bootfd: user_manual/bootfd.md
         # - Shell guide :

@@ -474,8 +474,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#software-limits" class="md-nav__link">
-    Software limits
+  <a href="#information-about-joysticks-part" class="md-nav__link">
+    Information about joysticks part
   </a>
   
 </li>
@@ -485,7 +485,21 @@
     First boot : Initialize the storage
   </a>
   
-    <nav class="md-nav" aria-label="First boot : Initialize the storage">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-from-v20232-to-v20233" class="md-nav__link">
+    Upgrade from v2023.2 to v2023.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optionnal-step-for-upgrade" class="md-nav__link">
+    Optionnal step for upgrade
+  </a>
+  
+    <nav class="md-nav" aria-label="Optionnal step for upgrade">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -501,8 +515,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#important-informations" class="md-nav__link">
-    Important informations
+  <a href="#eeprom-update" class="md-nav__link">
+    EEPROM update
   </a>
   
 </li>
@@ -5151,8 +5165,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#software-limits" class="md-nav__link">
-    Software limits
+  <a href="#information-about-joysticks-part" class="md-nav__link">
+    Information about joysticks part
   </a>
   
 </li>
@@ -5162,7 +5176,21 @@
     First boot : Initialize the storage
   </a>
   
-    <nav class="md-nav" aria-label="First boot : Initialize the storage">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-from-v20232-to-v20233" class="md-nav__link">
+    Upgrade from v2023.2 to v2023.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optionnal-step-for-upgrade" class="md-nav__link">
+    Optionnal step for upgrade
+  </a>
+  
+    <nav class="md-nav" aria-label="Optionnal step for upgrade">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -5178,8 +5206,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#important-informations" class="md-nav__link">
-    Important informations
+  <a href="#eeprom-update" class="md-nav__link">
+    EEPROM update
   </a>
   
 </li>
@@ -5216,41 +5244,43 @@
 <div><h1 id="quick-start">Quick Start</h1>
 <p>The original URL of this manual  is here : https://orix-software.github.io/</p>
 <h2 id="general-information">General information</h2>
-<p>This documentation must be use when you have installed orix version 2023.3 (see at the top of the banner on the oric at boot).</p>
-<p>The board has a firmware version. This firmware can be upgraded see « Hardware and firmware upgrade » section (Advanced users).</p>
-<p>The card has a 512KB of eeprom, and 512KB of RAM. This RAM is saved with a battery (for some version).</p>
-<p>Some extra devices (TOM2, logitech joypad) are explained a bitIt explains some ways to use joystick, others hardware exists in the same way</p>
+<ul>
+<li>Twilighte board is the hardware, Orix is the OS</li>
+<li>The board always boots without any storage device (sdcard or usb). If it does not, it's probably a incompatibility with the Oric : add an amplibus before the board</li>
+<li>In order to work properly, Orix needs storage device connected (usb mass storage or sdcard) with all files from sdcard.tgz : http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz</li>
+</ul>
 <h2 id="features">Features</h2>
-<p>On this page : <a href="feature.md">feature</a>, some video are diplayed to show some features</p>
+<p>On this page : <a href="../eature.md">feature</a>, some video are diplayed to show some features</p>
 <h2 id="ports">Ports</h2>
 <p><img align="left" alt="Image" src="../img/sdcard_twil.jpg">
-<img alt="Image" src="../img/overview.jpg">
-<img alt="Image" src="../img/expansion_board.jpg">
-<img alt="Image" src="img/joystick_port.jpg"></p>
+<img alt="Image" src="../img/overview.jpg" width="300">
+<img alt="Image" src="../img/expansion_board.jpg" width="300">
+<img alt="Image" src="img/joystick_port.jpg" width="300"></p>
 <h2 id="hardware-limits">Hardware limits</h2>
 <p>The usb controler manage FAT32 only. Sdcard and usb key must be formatted with FAT32 filesystem.  If you want to use pi zero gadget trick, you need to do a mkfs to FAT32 file system.</p>
 <p>All tests had been done with <em>samsung evo</em> sdcard and sandisk usb key. A lot of sdcard works, and some incompatibility could be find.</p>
-<p>Sdcard controler and usb key controler can work with 32GB storage Max. But it can handle 64 GB sdcard (tested). It can handle larger sdcard/usb key reader, but only 32 and 64 GB devices was used.</p>
-<h2 id="software-limits">Software limits</h2>
-<p>The sdcard/usb controler can handle long filename, but Orix handles 8+3 filename only.
-Information about joysticks part
-The left port has only 1 button. The right port has 3 buttons. The joystick pinout is atari pinout. You can use standard DB9 joystick. You can also plug « TOM2 » hardware (not provided), it can connect a usb mouse or usb joypad (wireless) to theses ports.  For example, logitech joypad F710 (wireless) works with TOM2.
+<p>Sdcard controler and usb key controler can work with 32GB storage. But it can handle 64 GB sdcard (tested). It can handle larger sdcard/usb key reader, but only 32 and 64 GB devices was used.</p>
+<h2 id="information-about-joysticks-part">Information about joysticks part</h2>
+<p>The left port has only 1 button. The right port has 3 buttons. The joystick pinout is atari pinout. You can use standard DB9 joystick. You can also plug « TOM2 » hardware (not provided), it can connect a usb mouse or usb joypad (wireless) to theses ports.  For example, logitech joypad F710 (wireless) works with TOM2.
 Please note that TOM2 can only handle 2 buttons. It means that the third button can’t work with TOM2 connected.</p>
+<p><img alt="Image" src="img/joy_pinout.jpg"></p>
 <h2 id="first-boot-initialize-the-storage">First boot : Initialize the storage</h2>
 <p>When the card is sent, kernel is built with a default storage. In order to know which device is the default one, you can type « mount ».</p>
-<p>You can  only use one device at the same time, but you can swap easily theses devices from command line.</p>
+<p><img alt="Image" src="img/default_storage.jpg"></p>
+<p>You can only use one device at the same time, but you can swap easily theses devices from command line.</p>
 <p>If you see « sdcard », then sdcard will be read by default. You can change it, with a command : « twil -u », it will switch to usbdrive. If you want to have usb drive by default, you can program kernel with the tool « orixcfg ». See Orixcfg section.</p>
 <p>Now, if you know which device you will use by default, you can install all software on it.</p>
 <p>Plug the device on your PC (sdcard or usb key). If you have a pi zero w, you can do this with drag and drop solution from the PC.</p>
 <p>Download sdcard.tgz from this : <a href="http://repo.orix.oric.org/dists/official/tgz/6502/">http://repo.orix.oric.org/dists/official/tgz/6502/</a></p>
-<p>It contains all software for orix there is others which are not available in this archive.
-Now, use 7zip on your PC (or tar/gzip under linux), and unzip all files from this sdcard.tgz. Put all theses new files in your device root folder.
-Now, you can insert the device (sdcard or usbkey – or pi zero) in the twilighte board and play.
-Upgrade from v2021.4 to v2022.1
-If your card is below v2021.4 version, please go to annexes part at the end of this document, before you try to upgrade to v2022.1
-    • Download http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz
-    • untar/gunzip sdcard.tgz (use 7zip under windows) on your device usb or sdcard : It could require some time to copy because there is a lot of small files (tap, hlp etc)
-    • you can start orix on real machine, and type :</p>
+<p>This .tgz  contains all software for orix there is others which are not available in this archive.</p>
+<p>Now, use 7zip on your PC (or tar/gzip under linux), and unzip all files from this sdcard.tgz. Put all theses new files in your device root folder.</p>
+<p>Now, you can insert the device (sdcard or usbkey – or pi zero) in the twilighte board and play.</p>
+<h2 id="upgrade-from-v20232-to-v20233">Upgrade from v2023.2 to v2023.3</h2>
+<ul>
+<li>Download : http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz</li>
+<li>untar/gunzip sdcard.tgz (use 7zip under windows) on your device usb or sdcard : It could require some time to copy because there is a lot of small files (tap, hlp etc)</li>
+<li>you can start orix on real machine, and type :</li>
+</ul>
 <div class="highlight"><pre><span></span><code>/#cd<span class="w"> </span>usr
 /usr#cd<span class="w"> </span>share
 /usr/share#cd<span class="w"> </span>carts
@@ -5262,10 +5292,12 @@ If your card is below v2021.4 version, please go to annexes part at the end of t
 <p>For sdcard default device :</p>
 <div class="highlight"><pre><span></span><code><span class="w">      </span>/usr/share/carts/2022.1#orixcfg<span class="w"> </span>-r<span class="w"> </span>-s<span class="w"> </span><span class="m">4</span><span class="w"> </span>kernelsd.r64
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>• press ‘y’, and wait until Orix reboots *Don’t switch off the Oric at this step*
-</code></pre></div>
-<p>Optionnal step for upgrade
-Now bank displays all banks from l to 64. It means that you should have some strange bank signature for eeprom. Now an empty set is provided in /usr/share/carts/2021.3 folder. With Orixcfg you can initialize your set with this cart. Don’t use « -s 4 » flag for orixcfg when you want to load emptyset.
+<ul>
+<li><em>press ‘y’, and wait until Orix reboots </em>Don’t switch off the Oric at this step*</li>
+</ul>
+<p>If the card is below v2023.2 version, it's possible</p>
+<h2 id="optionnal-step-for-upgrade">Optionnal step for upgrade</h2>
+<p>Now bank displays all banks from l to 64. It means that you should have some strange bank signature for eeprom. Now an empty set is provided in /usr/share/carts/2021.3 folder. With Orixcfg you can initialize your set with this cart. Don’t use « -s 4 » flag for orixcfg when you want to load emptyset.
 First step : type a command</p>
 <h3 id="commands">Commands</h3>
 <p>Many commands are available</p>
@@ -5273,12 +5305,7 @@ First step : type a command</p>
 <li>From /bin folders, there is binary available on current device, ‘ls’ will show you available commands</li>
 <li>From banks : type « help -b5 » you will see available commands</li>
 </ul>
-<h2 id="important-informations">Important informations</h2>
-<ul>
-<li>Twilighte board is the hardware, Orix is the OS</li>
-<li>The board always boots without any storage device (sdcard or usb). If it does not, it's probably a incompatibility with the Oric : add an amplibus before the board</li>
-<li>In order to work properly, Orix needs storage device connected (usb mass storage or sdcard) with all files from sdcard.tgz : http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz</li>
-</ul>
+<h2 id="eeprom-update">EEPROM update</h2>
 <p>For board with 39SF040 eeprom, only use <em>orixcfg equal or greater than 2023.2</em>. Check version under Orix with :</p>
 <div class="highlight"><pre><span></span><code>orixcfg<span class="w"> </span>-v
 </code></pre></div>
@@ -5297,7 +5324,7 @@ First step : type a command</p>
   <small>
     
       Last update:
-      2023-10-01
+      2024-02-06
     
   </small>
 </div>

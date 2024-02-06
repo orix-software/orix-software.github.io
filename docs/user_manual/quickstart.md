@@ -48,15 +48,15 @@ Now, if you know which device you will use by default, you can install all softw
 
 Plug the device on your PC (sdcard or usb key). If you have a pi zero w, you can do this with drag and drop solution from the PC.
 
-Download sdcard.tgz from this : [http://repo.orix.oric.org/dists/official/tgz/6502/](http://repo.orix.oric.org/dists/official/tgz/6502/)
+Download "sdcard.tgz" from this : [http://repo.orix.oric.org/dists/official/tgz/6502/](http://repo.orix.oric.org/dists/official/tgz/6502/)
 
-This .tgz  contains all software for orix there is others which are not available in this archive.
+This ".tgz" contains all software for orix there is others which are not available in this archive.
 
-Now, use 7zip on a PC (or tar/gzip under linux), and unzip all files from this sdcard.tgz. Put all theses new files in your device root folder.
+Now, use "7zip" on a PC (or tar/gzip under linux), and unzip all files from this sdcard.tgz. Put all theses new files in your device root folder.
 
 The content should be like this if sdcard.tgz had been unzipped:
 
-![Image](img/default_storage.jpg)
+![Image](img/folder.png)
 
 Insert the device (sdcard or usbkey – or pi zero) in the twilighte board and play.
 
@@ -88,12 +88,7 @@ For sdcard default device :
 
 * press ‘y’, and wait until *Orix reboots*. Don’t switch off the Oric at this step
 
-If the card is below v2023.2 version, it's possible
-
-## Optionnal step for upgrade
-
-Now bank displays all banks from l to 64. It means that you should have some strange bank signature for eeprom. Now an empty set is provided in /usr/share/carts/2021.3 folder. With Orixcfg you can initialize your set with this cart. Don’t use « -s 4 » flag for orixcfg when you want to load emptyset.
-First step : type a command
+If the card is below v2023.2 version, it's possible to upgrade with the same method above.
 
 ### Commands
 

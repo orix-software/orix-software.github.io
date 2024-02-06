@@ -14,9 +14,6 @@ Get main args : get arg value
     .include "telestrat.inc"
     .include "../orix-sdk/macros/SDK_mainargs.mac"
 
-    XMAINARGS       = $2C
-    XGETARGV        = $2E
-
     argv            := userzp   ; 2 bytes
     argc            := userzp+2 ; 1 byte
     first_arg_ptr   := userzp+2 ; 1 byte
@@ -43,3 +40,5 @@ foo
 ```
 
 Call [XGETARGV](../../../kernel/primitives/xgetargv) kernel function.
+
+!!! warning "Since cc65 last version (2024 release), XMAINARGS and XGETARGV did not need to declare anymore"

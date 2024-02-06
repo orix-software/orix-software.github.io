@@ -1,5 +1,25 @@
 # Features
 
+## Hardware
+
+* .tap file fast loading (with multitap files)
+* Joysticks support for a lot of games on atmos mode without any patch
+* the hobbit, defence-force (and others games) works without any patch for loading.
+* in system : kernel update, roms and ram update (with orixcfg binary)
+* 2 DB9 Joysticks (atari pinout)
+* 512KB of EEPROM (banking mode)
+* 512KB of RAM (banking mode)
+* read/write from sdcard (MAX 64GB) or usb drive (mass storage)
+* drag and drop from the PC to the oric : It will be available on the oric (with WIFI connexion) : It requires extra hardware connected in usb port or sdcard port
+* fast loading : 46KB per second. A game requires less than one second to load and start
+* cumulus compatible with the help of an other amplibus board (not provided)
+
+The twilighte board has a firmware version. This firmware can be upgraded (Advanced users).
+
+The card has a 512KB of eeprom, and 512KB of RAM. Some board have a battery in order to backup RAM banks(for somes versions).
+
+Some extra devices (TOM2, logitech joypad) are explained a bitIt explains some ways to use joystick, others hardware exists in the same way
+
 ## Start atmos/oric-1 tape file, ftdos .dsk files, sedoric disk, stratsed disk and roms
 
 ### .tap file

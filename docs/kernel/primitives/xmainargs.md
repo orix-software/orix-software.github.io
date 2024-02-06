@@ -32,8 +32,6 @@ Mode 0 : parse command line and build argc/argv
 ```ca65
     .include "telestrat.inc"
 
-    XMAINARGS = $2C
-
     lda #$00 ; Mode 0
     BRK_TELEMON XMAINARGS
 
@@ -47,7 +45,6 @@ Mode 1 : return command line
 
 ```ca65
     .include "telestrat.inc"
-    XMAINARGS = $2C
 
     lda   #$01 ; Mode 0
     BRK_TELEMON XMAINARGS
@@ -62,5 +59,7 @@ Mode 1 : return command line
 !!! warning "XMAINARGS allocates a chunk in memory, it must be free at the end of the use of the parameters"
 
 !!! warning "Mode 0 is available since v2022.4"
+
+!!! warning "Since cc65 last version (2024 release), XMAINARGS does not need to declare anymore"
 
 !!! fail "XGETARGV does not handle "" yet and "\ in parameters"

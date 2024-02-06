@@ -59,6 +59,7 @@ nav:
     #     - User manual: user_manual/overview.md
     #     - Developer manual: developer_manual/index.md
     - User manual:
+        - Quick start : user_manual/quickstart.md
         - Features: user_manual/features.md
         - Overview: user_manual/overview.md
         - Commands:
@@ -252,8 +253,13 @@ nav:
             - Joysticks: hardware/joysticks.md
             - Eeprom structure: hardware/eeprom_structure.md
         - Extra Libs :
-            - Twilighte library : libs/twillib.md
-
+            - Twilighte library lib: "https://orix-software.github.io/twillib/api/"
+            - RTC lib: "https://orix-software.github.io/ds1501lib/api/"
+            - USB controler lib: "https://orix-software.github.io/ch376lib/api/"
+            - Ethernet Controler lib: "https://orix-software.github.io/ch395lib/api/"
+            - Progress bar lib: "https://orix-software.github.io/pbarlib/api/"
+            - Memcache lib: "https://orix-software.github.io/pbarlib/api/"
+            - Curl lib: "https://orix-software.github.io/curllib/api/"
 extra_css:
     - stylesheets/extra.css
 extra:

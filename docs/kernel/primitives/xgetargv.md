@@ -32,8 +32,6 @@ A & Y contains argv ptr from xmainargs struct. It returns a copy of the command 
 ```ca65
     .include "telestrat.inc"
 
-    XMAINARGS = $2C
-    XGETARGV  = $2E
     BRK_TELEMON XMAINARGS
     sta   debug_mainargs_ptr
     sty   debug_mainargs_ptr+1
@@ -47,3 +45,5 @@ A & Y contains argv ptr from xmainargs struct. It returns a copy of the command 
     ; A & Y contains ptr
     rts
 ```
+
+!!! warning "Since cc65 last version (2024 release), XMAINARGS and XGETARGV did not need to declare anymore"

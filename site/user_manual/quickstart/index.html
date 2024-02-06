@@ -5242,12 +5242,12 @@
 
 
 <div><h1 id="quick-start">Quick Start</h1>
-<p>The original URL of this manual  is here : <a href="https://orix-software.github.io/">[feature](https://orix-software.github.io/)</a></p>
+<p>The original URL of this manual  is here : <a href="https://orix-software.github.io/">https://orix-software.github.io/</a></p>
 <h2 id="general-information">General information</h2>
 <ul>
 <li>Twilighte board is the hardware, Orix is the OS</li>
 <li>The board always boots without any storage device (sdcard or usb). If it does not, it's probably a incompatibility with the Oric : add an amplibus before the board</li>
-<li>In order to work properly, Orix needs storage device connected (usb mass storage or sdcard) with all files from sdcard.tgz : http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz</li>
+<li>In order to work properly, Orix needs storage device connected (usb mass storage or sdcard) with all files from sdcard.tgz : <a href="http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz">http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz</a></li>
 </ul>
 <h2 id="features">Features</h2>
 <p>On this page : <a href="../feature.md">features</a>, some video are diplayed to show some features</p>
@@ -5255,7 +5255,7 @@
 <p><img align="left" alt="Image" src="../img/sdcard_twil.jpg">
 <img alt="Image" src="../img/overview.jpg" width="300">
 <img alt="Image" src="../img/expansion_board.jpg" width="300">
-<img alt="Image" src="img/joystick_port.jpg" width="300"></p>
+<img alt="Image" src="../img/joystick_ports.jpg" width="300"></p>
 <h2 id="hardware-limits">Hardware limits</h2>
 <p>The usb controler manage FAT32 only. Sdcard and usb key must be formatted with FAT32 filesystem.  If you want to use pi zero gadget trick, you need to do a mkfs to FAT32 file system.</p>
 <p>All tests had been done with <em>samsung evo</em> sdcard and sandisk usb key. A lot of sdcard works, and some incompatibility could be find.</p>
@@ -5263,10 +5263,10 @@
 <h2 id="information-about-joysticks-part">Information about joysticks part</h2>
 <p>The left port has only 1 button. The right port has 3 buttons. The joystick pinout is atari pinout. You can use standard DB9 joystick. You can also plug « TOM2 » hardware (not provided), it can connect a usb mouse or usb joypad (wireless) to theses ports.  For example, logitech joypad F710 (wireless) works with TOM2.
 Please note that TOM2 can only handle 2 buttons. It means that the third button can’t work with TOM2 connected.</p>
-<p><img alt="Image" src="img/joy_pinout.jpg"></p>
+<p><img alt="Image" src="../img/joy_pinout.png"></p>
 <h2 id="first-boot-initialize-the-storage">First boot : Initialize the storage</h2>
 <p>When the card is sent, kernel is built with a default storage. In order to know which device is the default one, you can type « mount ».</p>
-<p><img alt="Image" src="img/default_storage.jpg"></p>
+<p><img alt="Image" src="../img/default_storage.png"></p>
 <p>You can only use one device at the same time, but you can swap easily theses devices from command line.</p>
 <p>If you see « sdcard », then sdcard will be read by default. You can change it, with a command : « twil -u », it will switch to usbdrive. If you want to have usb drive by default, you can program kernel with the tool « orixcfg ». See Orixcfg section.</p>
 <p>Now, if you know which device you will use by default, you can install all software on it.</p>
@@ -5292,7 +5292,7 @@ Please note that TOM2 can only handle 2 buttons. It means that the third button 
 <div class="highlight"><pre><span></span><code>/usr/share/carts/2022.1#orixcfg<span class="w"> </span>-r<span class="w"> </span>-s<span class="w"> </span><span class="m">4</span><span class="w"> </span>kernelus.r64
 </code></pre></div>
 <p>For sdcard default device :</p>
-<div class="highlight"><pre><span></span><code><span class="w">      </span>/usr/share/carts/2022.1#orixcfg<span class="w"> </span>-r<span class="w"> </span>-s<span class="w"> </span><span class="m">4</span><span class="w"> </span>kernelsd.r64
+<div class="highlight"><pre><span></span><code>/usr/share/carts/2022.1#orixcfg<span class="w"> </span>-r<span class="w"> </span>-s<span class="w"> </span><span class="m">4</span><span class="w"> </span>kernelsd.r64
 </code></pre></div>
 <ul>
 <li><em>press ‘y’, and wait until Orix reboots </em>Don’t switch off the Oric at this step*</li>
@@ -5311,8 +5311,8 @@ First step : type a command</p>
 <p>For board with 39SF040 eeprom, only use <em>orixcfg equal or greater than 2023.2</em>. Check version under Orix with :</p>
 <div class="highlight"><pre><span></span><code>orixcfg<span class="w"> </span>-v
 </code></pre></div>
-<p>Beta version is here: http://repo.orix.oric.org/dists/alpha/tgz/6502/orixcfg.tgz</p>
-<p>To check which eeprom version is installed (Device Id fielld):</p>
+<p>Beta version is here: <a href="http://repo.orix.oric.org/dists/alpha/tgz/6502/orixcfg.tgz">http://repo.orix.oric.org/dists/alpha/tgz/6502/orixcfg.tgz</a></p>
+<p>To check which eeprom version is installed (Device Id field):</p>
 <div class="highlight"><pre><span></span><code>orixcfg<span class="w"> </span>-i
 </code></pre></div>
 <h2 id="how-the-board-must-be-plugged">How the board must be plugged</h2>

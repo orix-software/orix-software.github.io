@@ -17,7 +17,7 @@ On this page : [features](../feature.md), some video are diplayed to show some f
 ![Image](img/sdcard_twil.jpg){ align=left }
 ![Image](img/overview.jpg){ width="300" }
 ![Image](img/expansion_board.jpg){ width="300" }
-![Image](img/joystick_port.jpg){ width="300" }
+![Image](img/joystick_ports.jpg){ width="300" }
 
 ## Hardware limits
 
@@ -32,13 +32,13 @@ Sdcard controler and usb key controler can work with 32GB storage. But it can ha
 The left port has only 1 button. The right port has 3 buttons. The joystick pinout is atari pinout. You can use standard DB9 joystick. You can also plug « TOM2 » hardware (not provided), it can connect a usb mouse or usb joypad (wireless) to theses ports.  For example, logitech joypad F710 (wireless) works with TOM2.
 Please note that TOM2 can only handle 2 buttons. It means that the third button can’t work with TOM2 connected.
 
-![Image](img/joy_pinout.jpg)
+![Image](img/joy_pinout.png)
 
 ## First boot : Initialize the storage
 
 When the card is sent, kernel is built with a default storage. In order to know which device is the default one, you can type « mount ».
 
-![Image](img/default_storage.jpg)
+![Image](img/default_storage.png)
 
 You can only use one device at the same time, but you can swap easily theses devices from command line.
 
@@ -83,10 +83,10 @@ if the default device wanted is usb  :
 For sdcard default device :
 
 ```bash
-      /usr/share/carts/2022.1#orixcfg -r -s 4 kernelsd.r64
+/usr/share/carts/2022.1#orixcfg -r -s 4 kernelsd.r64
 ```
 
-* *press ‘y’, and wait until Orix reboots *Don’t switch off the Oric at this step*
+* press ‘y’, and wait until *Orix reboots*. Don’t switch off the Oric at this step
 
 If the card is below v2023.2 version, it's possible
 
@@ -104,16 +104,15 @@ Many commands are available
 
 ## EEPROM update
 
-
 For board with 39SF040 eeprom, only use *orixcfg equal or greater than 2023.2*. Check version under Orix with :
 
 ```bash
 orixcfg -v
 ```
 
-Beta version is here: http://repo.orix.oric.org/dists/alpha/tgz/6502/orixcfg.tgz
+Beta version is here: [http://repo.orix.oric.org/dists/alpha/tgz/6502/orixcfg.tgz](http://repo.orix.oric.org/dists/alpha/tgz/6502/orixcfg.tgz)
 
-To check which eeprom version is installed (Device Id fielld):
+To check which eeprom version is installed (Device Id field):
 
 ```bash
 orixcfg -i

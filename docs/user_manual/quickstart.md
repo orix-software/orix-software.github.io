@@ -1,16 +1,16 @@
 # Quick Start
 
-The original URL of this manual  is here : https://orix-software.github.io/
+The original URL of this manual  is here : [https://orix-software.github.io/](https://orix-software.github.io/)
 
 ## General information
 
 * Twilighte board is the hardware, Orix is the OS
 * The board always boots without any storage device (sdcard or usb). If it does not, it's probably a incompatibility with the Oric : add an amplibus before the board
-* In order to work properly, Orix needs storage device connected (usb mass storage or sdcard) with all files from sdcard.tgz : http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz
+* In order to work properly, Orix needs storage device connected (usb mass storage or sdcard) with all files from sdcard.tgz : [http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz)
 
 ## Features
 
-On this page : [feature](../eature.md), some video are diplayed to show some features
+On this page : [features](../feature.md), some video are diplayed to show some features
 
 ## Ports
 
@@ -52,15 +52,20 @@ Download sdcard.tgz from this : [http://repo.orix.oric.org/dists/official/tgz/6
 
 This .tgz  contains all software for orix there is others which are not available in this archive.
 
-Now, use 7zip on your PC (or tar/gzip under linux), and unzip all files from this sdcard.tgz. Put all theses new files in your device root folder.
+Now, use 7zip on a PC (or tar/gzip under linux), and unzip all files from this sdcard.tgz. Put all theses new files in your device root folder.
 
-Now, you can insert the device (sdcard or usbkey – or pi zero) in the twilighte board and play.
+The content should be like this if sdcard.tgz had been unzipped:
+
+![Image](img/default_storage.jpg)
+
+Insert the device (sdcard or usbkey – or pi zero) in the twilighte board and play.
 
 ## Upgrade from v2023.2 to v2023.3
 
 * Download : http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz
 * untar/gunzip sdcard.tgz (use 7zip under windows) on your device usb or sdcard : It could require some time to copy because there is a lot of small files (tap, hlp etc)
-* you can start orix on real machine, and type :
+
+Now start orix on real machine, and type :
 
 ```bash
 /#cd usr

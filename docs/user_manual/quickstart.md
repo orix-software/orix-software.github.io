@@ -62,7 +62,7 @@ Insert the device (sdcard or usbkey – or pi zero) in the twilighte board and p
 
 ## Upgrade from v2023.2 to v2023.3
 
-* Download : http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz
+* Download : [http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz)
 * untar/gunzip sdcard.tgz (use 7zip under windows) on your device usb or sdcard : It could require some time to copy because there is a lot of small files (tap, hlp etc)
 
 Now start orix on real machine, and type :

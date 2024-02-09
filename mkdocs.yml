@@ -55,7 +55,7 @@ nav:
         - Introduction: index.md
         - Hardware: hardware.md
         - Software: software.md
-    # - Getting started:
+
     #     - User manual: user_manual/overview.md
     #     - Developer manual: developer_manual/index.md
     - User manual:

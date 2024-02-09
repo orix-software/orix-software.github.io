@@ -18,7 +18,7 @@ The twilighte board has a firmware version. This firmware can be upgraded (Advan
 
 The card has a 512KB of eeprom, and 512KB of RAM. Some board have a battery in order to backup RAM banks(for somes versions).
 
-Some extra devices (TOM2, logitech joypad) are explained a bitIt explains some ways to use joystick, others hardware exists in the same way
+Some extra devices (TOM2, logitech joypad) are explained a bit in this documentation.It explains some ways to use joystick, others hardware exists in the same way
 
 ## Start atmos/oric-1 tape file, ftdos .dsk files, sedoric disk, stratsed disk and roms
 

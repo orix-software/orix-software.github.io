@@ -5228,7 +5228,7 @@
 
 
 <div><h1 id="quick-start">Quick Start</h1>
-<p>The original URL of this manual  is here : <a href="https://orix-software.github.io/">https://orix-software.github.io/</a></p>
+<p>The original URL of this manual  is here : <a href="https://orix-software.github.io/user_manual/quickstart/">https://orix-software.github.io/user_manual/quickstart/</a></p>
 <h2 id="general-information">General information</h2>
 <ul>
 <li>Twilighte board is the hardware, Orix is the OS</li>
@@ -5243,20 +5243,21 @@
 <img alt="Image" src="../img/expansion_board.jpg" width="300">
 <img alt="Image" src="../img/joystick_ports.jpg" width="300"></p>
 <h2 id="hardware-limits">Hardware limits</h2>
-<p>The usb controler manage FAT32 only. Sdcard and usb key must be formatted with FAT32 filesystem.  If you want to use pi zero gadget trick, you need to do a mkfs to FAT32 file system.</p>
-<p>All tests had been done with <em>samsung evo</em> sdcard and sandisk usb key. A lot of sdcard works, and some incompatibility could be find.</p>
-<p>Sdcard controler and usb key controler can work with 32GB storage. But it can handle 64 GB sdcard (tested). It can handle larger sdcard/usb key reader, but only 32 and 64 GB devices was used.</p>
+<p>The usb controler manages FAT32 only. Sdcard and usb key must be a FAT32 filesystem.  If you want to use pi zero gadget trick, you need to do a mkfs to FAT32 file system.</p>
+<p>All tests had been done with <em>samsung evo</em> sdcard and sandisk usb key (Others sdcard works).</p>
+<p>Sdcard controler and usb key controler can work with 32GB storage. It can handle larger sdcard/usb key reader, but only 32 and 64 GB devices was tested.</p>
 <h2 id="information-about-joysticks-part">Information about joysticks part</h2>
-<p>The left port has only 1 button. The right port has 3 buttons. The joystick pinout is atari pinout. You can use standard DB9 joystick. You can also plug « TOM2 » hardware (not provided), it can connect a usb mouse or usb joypad (wireless) to theses ports.  For example, logitech joypad F710 (wireless) works with TOM2.
-Please note that TOM2 can only handle 2 buttons. It means that the third button can’t work with TOM2 connected.</p>
+<p>The joystick pinout is atari pinout (standard DB9 joystick).</p>
+<p>The left port has only 1 button. The right port has 3 buttons.</p>
+<p>It's also possible to plug « TOM2 » hardware (not provided), it can connect a usb mouse or usb joypad (wireless) to theses ports. For example, logitech joypad F710 (wireless)  works with TOM2.</p>
+<p>TOM2 can only handle 2 buttons. It means that the third button can’t work with TOM2 connected.</p>
 <p><img alt="Image" src="../img/joy_pinout.png"></p>
 <h2 id="first-boot-initialize-the-storage">First boot : Initialize the storage</h2>
-<p>When the card is sent, kernel is built with a default storage. In order to know which device is the default one, you can type « mount ».</p>
+<p>When the card is sent, kernel is built with a default storage. In order to know which device is the default one, "mount" command can display which device is mount.</p>
 <p><img alt="Image" src="../img/default_storage.png"></p>
-<p>You can only use one device at the same time, but you can swap easily theses devices from command line.</p>
-<p>If you see « sdcard », then sdcard will be read by default. You can change it, with a command : « twil -u », it will switch to usbdrive. If you want to have usb drive by default, you can program kernel with the tool « orixcfg ». See Orixcfg section.</p>
-<p>Now, if you know which device you will use by default, you can install all software on it.</p>
-<p>Plug the device on your PC (sdcard or usb key). If you have a pi zero w, you can do this with drag and drop solution from the PC.</p>
+<p>One device can be used at the same time, but can be swap with "twil" command.</p>
+<p>If "sdcard" is displayed, it means sdcard will be read by default. You can change it, with a command : « twil -u », it will switch to usbdrive. If you want to have usb drive by default, you can program kernel with the tool « orixcfg ». See Orixcfg section.</p>
+<p>Plug the device on your PC (sdcard or usb key). If  a pi zero w is used, drag and drop can be done from the PC.</p>
 <p>Download "sdcard.tgz" from this : <a href="http://repo.orix.oric.org/dists/official/tgz/6502/">http://repo.orix.oric.org/dists/official/tgz/6502/</a></p>
 <p>This ".tgz" contains all software for orix there is others which are not available in this archive.</p>
 <p>Now, use "7zip" on a PC (or tar/gzip under linux), and unzip all files from this sdcard.tgz. Put all theses new files in your device root folder.</p>
@@ -5288,7 +5289,7 @@ Please note that TOM2 can only handle 2 buttons. It means that the third button 
 <p>Many commands are available</p>
 <ul>
 <li>From /bin folders, there is binary available on current device, ‘ls’ will show you available commands</li>
-<li>From banks : type « help -b5 » you will see available commands</li>
+<li>From banks : type "help -b5" you will see available commands</li>
 </ul>
 <h2 id="eeprom-update">EEPROM update</h2>
 <p>For board with 39SF040 eeprom, only use <em>orixcfg equal or greater than 2023.2</em>. Check version under Orix with :</p>

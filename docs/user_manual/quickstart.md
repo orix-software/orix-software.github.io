@@ -1,6 +1,6 @@
 # Quick Start
 
-The original URL of this manual  is here : [https://orix-software.github.io/](https://orix-software.github.io/)
+The original URL of this manual  is here : [https://orix-software.github.io/user_manual/quickstart/](https://orix-software.github.io/user_manual/quickstart/)
 
 ## General information
 
@@ -21,32 +21,35 @@ On this page : [features](../feature.md), some video are diplayed to show some f
 
 ## Hardware limits
 
-The usb controler manage FAT32 only. Sdcard and usb key must be formatted with FAT32 filesystem.  If you want to use pi zero gadget trick, you need to do a mkfs to FAT32 file system.
+The usb controler manages FAT32 only. Sdcard and usb key must be a FAT32 filesystem.  If you want to use pi zero gadget trick, you need to do a mkfs to FAT32 file system.
 
-All tests had been done with *samsung evo* sdcard and sandisk usb key. A lot of sdcard works, and some incompatibility could be find.
+All tests had been done with *samsung evo* sdcard and sandisk usb key (Others sdcard works).
 
-Sdcard controler and usb key controler can work with 32GB storage. But it can handle 64 GB sdcard (tested). It can handle larger sdcard/usb key reader, but only 32 and 64 GB devices was used.
+Sdcard controler and usb key controler can work with 32GB storage. It can handle larger sdcard/usb key reader, but only 32 and 64 GB devices was tested.
 
 ## Information about joysticks part
 
-The left port has only 1 button. The right port has 3 buttons. The joystick pinout is atari pinout. You can use standard DB9 joystick. You can also plug « TOM2 » hardware (not provided), it can connect a usb mouse or usb joypad (wireless) to theses ports.  For example, logitech joypad F710 (wireless) works with TOM2.
-Please note that TOM2 can only handle 2 buttons. It means that the third button can’t work with TOM2 connected.
+The joystick pinout is atari pinout (standard DB9 joystick).
+
+The left port has only 1 button. The right port has 3 buttons.
+
+It's also possible to plug « TOM2 » hardware (not provided), it can connect a usb mouse or usb joypad (wireless) to theses ports. For example, logitech joypad F710 (wireless)  works with TOM2.
+
+TOM2 can only handle 2 buttons. It means that the third button can’t work with TOM2 connected.
 
 ![Image](img/joy_pinout.png)
 
 ## First boot : Initialize the storage
 
-When the card is sent, kernel is built with a default storage. In order to know which device is the default one, you can type « mount ».
+When the card is sent, kernel is built with a default storage. In order to know which device is the default one, "mount" command can display which device is mount.
 
 ![Image](img/default_storage.png)
 
-You can only use one device at the same time, but you can swap easily theses devices from command line.
+One device can be used at the same time, but can be swap with "twil" command.
 
-If you see « sdcard », then sdcard will be read by default. You can change it, with a command : « twil -u », it will switch to usbdrive. If you want to have usb drive by default, you can program kernel with the tool « orixcfg ». See Orixcfg section.
+If "sdcard" is displayed, it means sdcard will be read by default. You can change it, with a command : « twil -u », it will switch to usbdrive. If you want to have usb drive by default, you can program kernel with the tool « orixcfg ». See Orixcfg section.
 
-Now, if you know which device you will use by default, you can install all software on it.
-
-Plug the device on your PC (sdcard or usb key). If you have a pi zero w, you can do this with drag and drop solution from the PC.
+Plug the device on your PC (sdcard or usb key). If  a pi zero w is used, drag and drop can be done from the PC.
 
 Download "sdcard.tgz" from this : [http://repo.orix.oric.org/dists/official/tgz/6502/](http://repo.orix.oric.org/dists/official/tgz/6502/)
 
@@ -95,7 +98,7 @@ If the card is below v2023.2 version, it's possible to upgrade with the same met
 Many commands are available
 
 * From /bin folders, there is binary available on current device, ‘ls’ will show you available commands
-* From banks : type « help -b5 » you will see available commands
+* From banks : type "help -b5" you will see available commands
 
 ## EEPROM update
 

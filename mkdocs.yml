@@ -134,6 +134,7 @@ nav:
             - Hardware issues: hardware/hardware_issues.md
             - Sdcard over wifi: user_manual/devices/sdcard_reader_over_wifi.md
         - Tutorials:
+            - Scripting (simple): tutorials/submit_scripts.md
             - Autoboot : tutorials/autoboot_fr.md
             - Submit scripts: advanced_submit_part1
         - Updates:

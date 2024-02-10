@@ -121,6 +121,7 @@ Avant d’aller plus loin, l’idéal est de lire la doc “subdoc” en utilisa
 ```
 
 Nous avons besoin de personnaliser un peu plus ce menu, et nous allons afficher un texte double hauteur avec quelques couleurs. Cela se fait avec les caractères de contrôle :
+
 ```bash
 ink_black = ^@
 ink_red = ^A

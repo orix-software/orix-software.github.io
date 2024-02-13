@@ -138,6 +138,7 @@ nav:
             - Autoboot : tutorials/autoboot_fr.md
             - Submit scripts: advanced_submit_part1
         - Updates:
+            - 2024.3: update/2024_1.md
             - 2023.3: update/2023_3.md
             - 2023.2: update/2023_2.md
             - 2023.1: update/2023_1.md

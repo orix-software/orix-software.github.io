@@ -1,5 +1,7 @@
 # News
 
+!!! info "[13-02-2024] Kernel and shell 2024.1 are available : [2024.1 notes](update/2024_1.md)"
+
 !!! info "[07-01-2024] Bug fix for 'file' : [Download file](https://repo.orix.oric.org/dists/official/tgz/6502/file.tgz){:target="_blank"}"
 
 !!! info "[29-11-2023] 'vi' first version : [Download vi](https://repo.orix.oric.org/dists/official/tgz/6502/vi.tgz){:target="_blank"} and look at [vi manual](./commands/vi.md)"

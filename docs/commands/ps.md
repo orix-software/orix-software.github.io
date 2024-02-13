@@ -3,8 +3,6 @@ comments: true
 ---
 # ps
 
-![ps](imgs/ps.png)
-
 ## Introduction
 
 Displays process list
@@ -24,3 +22,5 @@ Displays process list
 ## SOURCE
 
 https://github.com/orix-software/shell/blob/master/src/commands/ps.asm
+
+![ps](imgs/ps.png)

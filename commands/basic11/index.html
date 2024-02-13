@@ -622,6 +622,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     Introduction
   </a>
@@ -2099,6 +2106,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../../update/2024_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024.3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../update/2023_3/" class="md-nav__link">
         
   
@@ -2207,9 +2234,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9_7" >
         
-          <label class="md-nav__link" for="__nav_2_9_6" id="__nav_2_9_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_9_7" id="__nav_2_9_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2220,8 +2247,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_9_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_9_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_9_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9_7">
             <span class="md-nav__icon md-icon"></span>
             commands
           </label>
@@ -5146,6 +5173,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     Introduction
   </a>
@@ -5238,6 +5272,8 @@
 
 
 <div><h1 id="basic11">basic11</h1>
+<h2 id="usage">Usage</h2>
+<p>basic11 [-g] [-l] [-p defaultpath]</p>
 <h2 id="introduction">Introduction</h2>
 <p>basic11 starts Atmos rom. You can type basic11 or press FUNCT+B to start.</p>
 <p>Load a personal .tap file.
@@ -5342,9 +5378,7 @@ MARC : corrupted image</p>
 <h2 id="tape-with-altered-charset">Tape with altered charset</h2>
 <p>Fire flash, Scuba Dive, 3D fongus (i,f letters)</p>
 <h2 id="some-informations-to-start-tap-file">Some informations to start .tap file</h2>
-<ul>
-<li>Le trésor du pirate : check information on www.oric.org (on "Trésor du pirate" software page), it explains on to proceed when the games is CLOAD'ed</li>
-</ul>
+<p>Le tresor du pirate : check information on www.oric.org (on "Tresor du pirate" software page), it explains on to proceed when the games is CLOAD'ed</p>
 <h2 id="joysticks-issues">Joysticks issues</h2>
 <p>We did keyboard/joystick mapping for a lot of games, but we did not set the keyboard mapping for all software. If you want
 to help us, contact us.
@@ -5357,17 +5391,24 @@ could in the future.</p>
 <li>basic11</li>
 <li>basic11 -g</li>
 <li>basic11 -l</li>
+<li>basic11 -p path</li>
 <li>basic11 "MYTAPE</li>
 </ul>
 <h2 id="description">DESCRIPTION</h2>
 <p>This command starts the atmos rom. This rom did not test RAM and cload/csave are done on sdcard. It means that it calls file from sdcard.</p>
 <p>Cload works with .tap file. Multitap files works too.</p>
 <p>Get a tape file, and place it in the root folder of the sdcard.</p>
-<p>Starts basic11 :
-/#basic11
-or
-/#basic11 "DEFENDER"</p>
-<p>CLOAD"ZORGONS =&gt; it will load zorgons.tap</p>
+<p>Starts basic11 :</p>
+<div class="highlight"><pre><span></span><code>/#basic11
+</code></pre></div>
+<p>or</p>
+<div class="highlight"><pre><span></span><code>/#basic11<span class="w"> </span><span class="s2">"DEFENDER"</span>
+</code></pre></div>
+<p>A path can be specified :</p>
+<div class="highlight"><pre><span></span><code>/#basic11<span class="w"> </span>-p<span class="w"> </span>/home/jede
+</code></pre></div>
+<p>In basic rom :
+CLOAD "ZORGONS =&gt; it will load zorgons.tap</p>
 <h2 id="source">SOURCE</h2>
 <p>https://github.com/orix-software/shell/blob/master/src/commands/basic11.asm</p></div>
 

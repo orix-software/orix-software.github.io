@@ -9,9 +9,9 @@ USE AT YOUR OWN RISK
 
 ## Commands
 
-*:q* write and quit
-*:w* write
-*:w myfile* write into file
+* *:q* write and quit
+* *:w* write
+* *:w myfile* write into file
 
 ## Limits
 

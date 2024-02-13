@@ -62,7 +62,7 @@ type (where /home/myfolder is created, and will be your personnal folder):
 
 ```bash
 #!/bin/submit
-basic11 
+basic11 -p /home/myfolde
 exit
 ```
 

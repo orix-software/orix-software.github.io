@@ -9,7 +9,9 @@ Displays malloc table
 
 ## SYNOPSYS
 
-+ lsmem
+```bash
+lsmem
+```
 
 ## DESCRIPTION
 

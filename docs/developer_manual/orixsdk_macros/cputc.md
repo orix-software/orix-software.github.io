@@ -26,4 +26,4 @@ Alias for: [print](print.md) #'c'
     rts
 ```
 
-Call [XWR0](../../../developer_manual/kernel/primitives/XWR0.md) kernel function.
+Call [XWR0](../../../developer_manual/kernel/primitives/XWR0) kernel function.

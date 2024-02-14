@@ -19,4 +19,4 @@ explode
 
 ```
 
-Call [XEXPLODE](../../../developer_manual/kernel/primitives/xexplode.md) kernel function.
+Call [XEXPLODE](../../../developer_manual/kernel/primitives/xexplode) kernel function.

@@ -108,7 +108,7 @@ For board with 39SF040 eeprom, only use *orixcfg equal or greater than 2023.2*. 
 orixcfg -v
 ```
 
-Beta version is here: [http://repo.orix.oric.org/dists/alpha/tgz/6502/orixcfg.tgz](http://repo.orix.oric.org/dists/alpha/tgz/6502/orixcfg.tgz)
+Correct version is here: [http://repo.orix.oric.org/dists/official/tgz/6502/orixcfg.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/orixcfg.tgz)
 
 To check which eeprom version is installed (Device Id field):
 

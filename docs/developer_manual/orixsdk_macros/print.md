@@ -29,4 +29,4 @@ helloworld_str:
   .asciiz "Hello world!"
 ```
 
-Call [XWSTR0](../../../developer_manual/kernel/primitives/xwstr0.md) function.
+Call [XWSTR0](../../../developer_manual/kernel/primitives/xwstr0) function.

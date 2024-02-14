@@ -45,4 +45,4 @@ The value is from registers
 ```
 
 
-Call [XDECIM](../../../developer_manual/kernel/primitives/xdecim.md) xdecim
+Call [XDECIM](../../../developer_manual/kernel/primitives/xdecim) xdecim

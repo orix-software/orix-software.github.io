@@ -21,6 +21,7 @@ Returns an error if the binary is not found
 
 ## Example
 
+; Fork
 ```ca65
     .include "telestrat.inc"
 
@@ -32,6 +33,23 @@ Returns an error if the binary is not found
 str:
     .asciiz "mybin"
 ```
+
+; exec (replace in memory program)
+```ca65
+    .include "telestrat.inc"
+
+    lda #<str
+    ldy #>str
+    ldx #$01 ; Exec (replace)
+    BRK_TELEMON XEXEC
+    rts
+str:
+    .asciiz "mybin"
+```
+
+!!! tip "See [exec](../../../developer_manual/orixsdk_macros/exec) macro from orix-sdk to use it (exec mode as linux style)"
+
+!!! tip "See [system](../../../developer_manual/orixsdk_macros/system) macro from orix-sdk to use it (exec mode as linux style)"
 
 !!! info "If the command is executed Y contains 'EOK' code"
 

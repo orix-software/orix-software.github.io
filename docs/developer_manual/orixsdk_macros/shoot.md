@@ -19,4 +19,4 @@ shoot
 
 ```
 
-Call [XSHOOT](../../../developer_manual/kernel/primitives/xshoot.md) kernel function.
+Call [XSHOOT](../../../developer_manual/kernel/primitives/xshoot) kernel function.

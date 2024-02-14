@@ -18,5 +18,5 @@ cursor ON|OFF
     rts
 ```
 
-Call [XCSSCR](../../../developer_manual/kernel/primitives/xcsscr.md) or [XCOSCR](../../../developer_manual/kernel/primitives/xcoscr.md) kernel function.
+Call [XCSSCR](../../../developer_manual/kernel/primitives/xcsscr) or [XCOSCR](../../../developer_manual/kernel/primitives/xcoscr) kernel function.
 

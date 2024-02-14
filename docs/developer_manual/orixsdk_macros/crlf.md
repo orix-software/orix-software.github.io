@@ -18,4 +18,4 @@ crlf
     rts
 ```
 
-Call [XCRLF](../../../developer_manual/kernel/primitives/xcrlf.md) kernel function.
+Call [XCRLF](../../../developer_manual/kernel/primitives/xcrlf) kernel function.

@@ -211,7 +211,7 @@ nav:
         - Oricutron VS real hardware : developer_manual/oricutronvsreal.md
         - Kernel guide:
             - Kernel: developer_manual/kernel.md
-            - Memmap: kernel/memmap.md
+            - Memmap: developer_manual/kernel/memmap.md
             - Primitives:
                 - General list : developer_manual/kernel/primitives/index.md
                 - By category:

@@ -32,4 +32,4 @@ A and Y contains the ptr. If A and Y are equal to 0, the malloc had failed
     rts
 ```
 
-Call [XMALLOC](../../../developer_manual/kernel/primitives/xmalloc.md) function
+Call [XMALLOC](../../../developer_manual/kernel/primitives/xmalloc) function

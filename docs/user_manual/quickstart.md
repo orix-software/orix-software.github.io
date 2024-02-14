@@ -10,7 +10,7 @@ The original URL of this manual  is here : [https://orix-software.github.io/user
 
 ## Features
 
-On this page : [features](../feature.md), some video are diplayed to show some features
+On this page : [features](../features), some video are diplayed to show some features
 
 ## Ports
 

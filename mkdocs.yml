@@ -226,6 +226,8 @@ nav:
                         - XFSEEK: kernel/primitives/xfseek.md
                         - XRM: kernel/primitives/xrm.md
                         - XMKDIR: kernel/primitives/xmkdir.md
+                        - XCLOSEDIR: kernel/primitives/xclosedir.md
+                        - XOPENDIR: kernel/primitives/xopendir.md
                     - Memory operations:
                         - XMALLOC: kernel/primitives/xmalloc.md
                         - XFREE: kernel/primitives/xfree.md

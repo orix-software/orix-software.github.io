@@ -44,4 +44,4 @@ next:
 
 !!! tip "XFREAD returns the size in A & Y since kernel 2023.2"
 
-See [XFREAD](../../../kernel/primitives/xfread) kernel primitive.
+See [XFREAD](../../../developer_manual/kernel/primitives/xfread) kernel primitive.

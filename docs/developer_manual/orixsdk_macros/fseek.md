@@ -24,4 +24,4 @@ fseek fp, offset, whence
     rts
 ```
 
-See [XFSEEK](../../../kernel/primitives/xfseek.md) kernel primitive.
+See [XFSEEK](../../../developer_manual/kernel/primitives/xfseek.md) kernel primitive.

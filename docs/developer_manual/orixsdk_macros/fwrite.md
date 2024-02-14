@@ -29,4 +29,4 @@ Returns in A and X the length written
     rts
 ```
 
-See [XFWRITE](../../../kernel/primitives/xwrite/) kernel primitive
+See [XFWRITE](../../../developer_manual/kernel/primitives/xwrite/) kernel primitive

@@ -10,7 +10,7 @@ We can pass args to AXY or others memory location and the primitive can be calle
 
 ## Useful links
 
-* Documented primitives  [Primitives](../../kernel/primitives/)
+* Documented primitives  [Primitives](../../developer_manual/kernel/primitives/)
 
 * Orixsdk (sdk for assembly) : [Orixsdk](../orixsdk/)
 

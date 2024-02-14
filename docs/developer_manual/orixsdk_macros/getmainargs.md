@@ -39,6 +39,6 @@ Result (argbin) is binary in assembly with a parameter "foo"
 foo
 ```
 
-Call [XGETARGV](../../../kernel/primitives/xgetargv) kernel function.
+Call [XGETARGV](../../../developer_manual/kernel/primitives/xgetargv) kernel function.
 
 !!! warning "Since cc65 last version (2024 release), XMAINARGS and XGETARGV did not need to declare anymore"

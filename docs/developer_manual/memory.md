@@ -6,7 +6,7 @@ Twilighte board handles 512KB of RAM and 512KB of eeprom
 
 ## Orix Roms
 
-Kernel has [XMALLOC](../../kernel/primitives/xmalloc) and [XFREE](../../kernel/primitives/xfree) primitives to allocate memory dynamictly. [XMALLOC](../../kernel/primitives/xmalloc)  primitives only returns pointer from main memory.
+Kernel has [XMALLOC](../../developer_manual/kernel/primitives/xmalloc) and [XFREE](../../developer_manual/kernel/primitives/xfree) primitives to allocate memory dynamictly. [XMALLOC](../../developer_manual/kernel/primitives/xmalloc)  primitives only returns pointer from main memory.
 
 Kernel can't instanciate extra memory from bank for instance.
 

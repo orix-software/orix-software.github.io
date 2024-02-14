@@ -213,42 +213,42 @@ nav:
             - Kernel: developer_manual/kernel.md
             - Memmap: kernel/memmap.md
             - Primitives:
-                - General list : kernel/primitives/index.md
+                - General list : developer_manual/kernel/primitives/index.md
                 - By category:
                     - Command line args:
-                        - XMAINARGS: kernel/primitives/xmainargs.md
-                        - XGETARGV: kernel/primitives/xgetargv.md
+                        - XMAINARGS: developer_manual/kernel/primitives/xmainargs.md
+                        - XGETARGV: developer_manual/kernel/primitives/xgetargv.md
                     - Files operations:
-                        - XOPEN: kernel/primitives/xopen.md
-                        - XCLOSE: kernel/primitives/xclose.md
-                        - XFREAD: kernel/primitives/xfread.md
-                        - XWRITE: kernel/primitives/xwrite.md
-                        - XFSEEK: kernel/primitives/xfseek.md
-                        - XRM: kernel/primitives/xrm.md
-                        - XMKDIR: kernel/primitives/xmkdir.md
-                        - XCLOSEDIR: kernel/primitives/xclosedir.md
-                        - XOPENDIR: kernel/primitives/xopendir.md
+                        - XOPEN: developer_manual/kernel/primitives/xopen.md
+                        - XCLOSE: developer_manual/kernel/primitives/xclose.md
+                        - XFREAD: developer_manual/kernel/primitives/xfread.md
+                        - XWRITE: developer_manual/kernel/primitives/xwrite.md
+                        - XFSEEK: developer_manual/kernel/primitives/xfseek.md
+                        - XRM: developer_manual/kernel/primitives/xrm.md
+                        - XMKDIR: developer_manual/kernel/primitives/xmkdir.md
+                        - XCLOSEDIR: developer_manual/kernel/primitives/xclosedir.md
+                        - XOPENDIR: developer_manual/kernel/primitives/xopendir.md
                     - Memory operations:
-                        - XMALLOC: kernel/primitives/xmalloc.md
-                        - XFREE: kernel/primitives/xfree.md
+                        - XMALLOC: developer_manual/kernel/primitives/xmalloc.md
+                        - XFREE: developer_manual/kernel/primitives/xfree.md
                     - Process Operations:
-                        - XEXEC: kernel/primitives/xexec.md
+                        - XEXEC: developer_manual/kernel/primitives/xexec.md
                     - Keyboard Operations:
-                        - XRDW0: kernel/primitives/xrdw0.md
-                        - XRD0: kernel/primitives/xrd0.md
+                        - XRDW0: developer_manual/kernel/primitives/xrdw0.md
+                        - XRD0: developer_manual/kernel/primitives/xrd0.md
                     - Textmode Operations:
-                        - XSCROB: kernel/primitives/xscrob.md
-                        - XSCROH: kernel/primitives/xscroh.md
-                        - XCRLF: kernel/primitives/xcrlf.md
-                        - XWR0: kernel/primitives/xwr0.md
-                        - XWSTR0: kernel/primitives/xwstr0.md
+                        - XSCROB: developer_manual/kernel/primitives/xscrob.md
+                        - XSCROH: developer_manual/kernel/primitives/xscroh.md
+                        - XCRLF: developer_manual/kernel/primitives/xcrlf.md
+                        - XWR0: developer_manual/kernel/primitives/xwr0.md
+                        - XWSTR0: developer_manual/kernel/primitives/xwstr0.md
                     - Numbers Operations:
-                        - XBINDX: kernel/primitives/xbindx.md
-                        - XDECIM: kernel/primitives/xdecim.md
-                        - XHEXA: kernel/primitives/xhexa.md
+                        - XBINDX: developer_manual/kernel/primitives/xbindx.md
+                        - XDECIM: developer_manual/kernel/primitives/xdecim.md
+                        - XHEXA: developer_manual/kernel/primitives/xhexa.md
                     - Kernel variables Operations:
-                        - XVALUES: kernel/primitives/xvalues.md
-                        - XVARS: kernel/primitives/xvars.md
+                        - XVALUES: developer_manual/kernel/primitives/xvalues.md
+                        - XVARS: developer_manual/kernel/primitives/xvars.md
             - Binary boot sequence: developer_manual/binary_starts.md
         - Hardware guide :
             - Memory: hardware/memory.md

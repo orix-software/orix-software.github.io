@@ -20,4 +20,4 @@ myfile:
     .asciiz "toto.txt"
 ```
 
-Call [XRM](../../../kernel/primitives/xrm.md) kernel function.
+Call [XRM](../../../developer_manual/kernel/primitives/xrm.md) kernel function.

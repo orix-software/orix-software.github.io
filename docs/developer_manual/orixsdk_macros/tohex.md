@@ -37,4 +37,4 @@ mynumber:
     rts
 ```
 
-Call [XHEXA](../../../kernel/primitives/xhexa.md) kernel function.
+Call [XHEXA](../../../developer_manual/kernel/primitives/xhexa.md) kernel function.

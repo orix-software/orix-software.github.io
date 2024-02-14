@@ -1,4 +1,4 @@
-site_name: ORIX v2023.3 DOCUMENTATION
+site_name: ORIX v2024.1 DOCUMENTATION
 
 markdown_extensions:
     - pymdownx.highlight

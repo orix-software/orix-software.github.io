@@ -63,7 +63,7 @@ The content should be like this if sdcard.tgz had been unzipped:
 
 Insert the device (sdcard or usbkey – or pi zero) in the twilighte board and play.
 
-## Upgrade from v2023.2 to v2023.3
+## Upgrade from v2023.3 to v2024.1
 
 * Download : [http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz](http://repo.orix.oric.org/dists/official/tgz/6502/sdcard.tgz)
 * untar/gunzip sdcard.tgz (use 7zip under windows) on your device usb or sdcard : It could require some time to copy because there is a lot of small files (tap, hlp etc)
@@ -74,19 +74,19 @@ Now start orix on real machine, and type :
 /#cd usr
 /usr#cd share
 /usr/share#cd carts
-/usr/share/carts#cd 2023.3
+/usr/share/carts#cd 2024.1
 ```
 
 if the default device wanted is usb  :
 
 ```bash
-/usr/share/carts/2022.1#orixcfg -r -s 4 kernelus.r64
+/usr/share/carts/2024.1#orixcfg -r -s 4 kernelus.r64
 ```
 
 For sdcard default device :
 
 ```bash
-/usr/share/carts/2022.1#orixcfg -r -s 4 kernelsd.r64
+/usr/share/carts/2024.1#orixcfg -r -s 4 kernelsd.r64
 ```
 
 * press ‘y’, and wait until *Orix reboots*. Don’t switch off the Oric at this step
@@ -115,6 +115,10 @@ To check which eeprom version is installed (Device Id field):
 ```bash
 orixcfg -i
 ```
+
+## Trouble shooting
+
+* usb key and sdcard can be read under windows, but nothing is displayed on the oric with 'ls'. Format you storage device with 'fat32formatgui'
 
 ## How the board must be plugged
 

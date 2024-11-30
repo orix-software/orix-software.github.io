@@ -41,7 +41,7 @@ If it's not the right version, download [submit](http://repo.orix.oric.org/dists
 
 ![](img/vi_v.png)
 
-If it's not the right version, dowload [vi](http://repo.orix.oric.org/dists/official/tgz/6502/vi.tgz), and install it :
+If it's not the right version, download [vi](http://repo.orix.oric.org/dists/official/tgz/6502/vi.tgz), and install it :
 
 ```bash
 /#cd usr/share/vi

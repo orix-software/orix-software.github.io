@@ -25,3 +25,5 @@ XDECAY returns the value (16 bits) in AY and X contains the length of the decima
   mystring:
     .asciiz "125"
 ```
+
+!!! tip "See [atoi](../../../developer_manual/orixsdk_macros/atoi) macro from orix-sdk to use it"

@@ -26,7 +26,7 @@ Returns in A and Y a copy of free malloc table. This ptr must be free when the b
     rts
 ```
 
-## Get Busy malloc table
+## Get Busy malloc table ($07)
 
 X = KERNEL_XVALUES_BUSY_MALLOC_TABLE
 
@@ -46,7 +46,7 @@ Returns in A and Y a copy of busy malloc table. This ptr must be free when the b
     rts
 ```
 
-## Get processName of the current chunk
+## Get processName of the current chunk ($08)
 
 Y contains the id of the malloc busy table
 
@@ -70,7 +70,7 @@ KERNEL_XVALUES_GET_CURRENT_PROCESSNAME_FROM_PID = $08
     rts
 ```
 
-## Get the path of an opened file and mode of the opened file
+## Get the path of an opened file and mode of the opened file ($09)
 
 KERNEL_XVALUES_PATH_FROM_FD = $09
 
@@ -90,11 +90,12 @@ Y must contains the fd.
     rts
 ```
 
-## Get the position in the opened file (ftell)
+## Get the position in the opened file/ftell ($0A)
 
 KERNEL_XVALUES_GET_FTELL_FROM_FD = $0A
 
-Params : 
+Params :
+
 * X = KERNEL_XVALUES_GET_FTELL_FROM_FD
 * A = FD
 
@@ -114,7 +115,7 @@ It returns in A, X, Y and RES, the position in the file
     rts
 ```
 
-## Get the ptr of the pid list
+## Get the ptr of the pid list (KERNEL_XVALUES_GET_PROCESS_ID_LIST=$0C)
 
 KERNEL_XVALUES_GET_PROCESS_ID_LIST=$0C
 
@@ -122,7 +123,7 @@ KERNEL_XVALUES_GET_PROCESS_ID_LIST=$0C
 
 ## Get the processname with the PID
 
-A = contains the POD
+A = contains the POI
 
 X = KERNEL_XVALUES_GET_PROCESS_NAME_WITH_PID
 
@@ -163,7 +164,31 @@ A contains the max process
 
 !!! warning "It will be available in Kernel v2023.2"
 
-## Get an empty bank
+## Get an empty bank (KERNEL_XVALUES_GET_FREE_BANK = $10)
+
+Get an empty bank and register if the bank must be known by the kernel as a referenced type (Only Network is available in that case and is reserved, for any others cases, set A to KERNEL_BANK_UNDEFINED)
+
+All others cases, except network rom :
+
+```ca65
+    .include "telestrat.inc"
+
+    KERNEL_XVALUES_GET_FREE_BANK = $10
+    KERNEL_BANK_UNDEFINED = $FF
+
+    ldx     #KERNEL_XVALUES_GET_FREE_BANK
+    ldy     #$00 ; RAM type
+    lda     #KERNEL_BANK_UNDEFINED
+    BRK_TELEMON  $2D ; XVALUES
+    ; returns :
+    ; Y contains the id of the bank
+    ; X contains set ($343 register)
+    ; A the bank ($321 register)
+    ; If there is no available bank, Y=0
+    rts
+```
+
+For Network bank registering :
 
 ```ca65
     .include "telestrat.inc"
@@ -172,7 +197,9 @@ A contains the max process
 
     ldx     #KERNEL_XVALUES_GET_FREE_BANK
     ldy     #$00 ; RAM type
+    lda     #KERNEL_BANK_NETWORK
     BRK_TELEMON  $2D ; XVALUES
+    ; returns :
     ; Y contains the id of the bank
     ; X contains set ($343 register)
     ; A the bank ($321 register)
@@ -180,7 +207,7 @@ A contains the max process
     rts
 ```
 
-!!! warning "It will be available in Kernel v2023.2"
+!!! warning "It available since Kernel v2023.2"
 
 !!! warning "It can only allocate the first 8 banks"
 

@@ -15,3 +15,5 @@ Convert a number in A and returns hexadecimal to AY
     ; Y = 'F'
     rts
 ```
+
+!!! tip "See [tohex](../../../developer_manual/orixsdk_macros/tohex) macro from orix-sdk to use it"

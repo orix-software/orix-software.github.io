@@ -41,7 +41,9 @@ on error ne fonctionnera pas ici parce que qu'il ne s'agissit d'erreurs fatales.
 
 ## Chain
 
-Calls a new submit script. If chain is called, the main script is left and the one starts
+Calls a new submit script. If chain is called, the main script is left and the one starts.
+
+chain gets $0 to $09 arg from the script which launch chain. Chain accepts paramaters after submit but it's not handled 
 
 ```bash
 chain script.sub

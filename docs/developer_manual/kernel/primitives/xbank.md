@@ -78,7 +78,8 @@ str_bank:
     BRK_TELEMON XBANK ; GET free bank
 
     rts
-
+str_free_id:
+    .asciiz "Free bank id : "
 ```
 
 !!! warning "available in 2025.1 version"

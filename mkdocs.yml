@@ -148,7 +148,7 @@ nav:
             - commands:
                 - File: update/file/file.md
     - Developer manual:
-        - Changes: eveloper_manual/index.md
+        - Changes: developer_manual/index.md
         - Install: developer_manual/first_step.md
         - Tutorials:
             - hello world: developer_manual/tutorials/print_string.md

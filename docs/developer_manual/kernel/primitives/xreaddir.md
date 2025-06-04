@@ -19,4 +19,4 @@ It returns max : 100 entry (READDIR_MAX_LINE = 100 values in kernel)
     rts
 ```
 
-!!! tip "XREADDIR returns a ptr"
+!!! tip "XREADDIR returns a ptr in A and Y"

@@ -25,7 +25,7 @@ Orix and kernel handles devices : usbdrive (Usbkey) and sdcard. When a standalon
 If you are on Oricutron, you can put in bank 7, your rom and start Oricutron in twilighte board mode.
 On real computer, you need to
 
-* copy your ROM into a folder (ex : /usr/share/myroms/myrom.rom)
+* copy your ROM into a folder (ex : "/usr/share/myroms/myrom.rom")
 * Modify /etc/systemd/banks.cnf to add a new rom entry
 * Type funct + L and you will be able to start your standalone ROM
 

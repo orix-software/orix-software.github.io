@@ -8,9 +8,9 @@ Cela lance la ROM
 
 ## Si on tape : /#basic11 "TAPEFILE"
 
-* Cela va chercher la présence d'un fichier db dans /var/cache/basic11/[FIRSTLETTEROFTAPEFILE]/TAPEFILE.db
+* Cela va chercher la présence d'un fichier db dans "/var/cache/basic11/[FIRSTLETTEROFTAPEFILE]/TAPEFILE.db"
 
-* Si TAPEFILE.db est présent, il va lire les 1er octets du fichiers pour poker en $F1 les I/O des joysticks, sinon il va démarrer la banque 6 qui est la ROM par défaut qui contient le path courant : /home/basic11/
+* Si TAPEFILE.db est présent, il va lire les 1er octets du fichiers pour poker en $F1 les I/O des joysticks, sinon il va démarrer la banque 6 qui est la ROM par défaut qui contient le path courant : "/home/basic11/"
 
 * Le code va regarder l'id de la ROM (stockée en $F2 suite au load des confs au point précédent)
 
@@ -48,9 +48,7 @@ Si la rom est lancée sans .tap ou avec un .tap, systématiquement, les valeurs 
 * puis la liste des noms de fichiers puis le titre tels que :
 filenametap8bytesLength ;  name_software '\0'
 
-* en dernier octet à la fin du fichier, nous avons l'octet $ff qui signale la fin du fichier (ceci permettant de simplifier le code de lecture)
-
-
+* en dernier octet à la fin du fichier, nous avons l'octet $ff qui signale la fin du fichier (ceci permettant de simplifier le code de lecture).
 
 # Format du fichier .db d'un soft
 
@@ -71,5 +69,3 @@ filenametap8bytesLength ;  name_software '\0'
 * fire1_joy : keyboard fire2 matrix
 
 * up_joy : keyboard fire2 matrix
-
-

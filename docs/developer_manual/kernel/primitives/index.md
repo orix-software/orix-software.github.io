@@ -2,7 +2,7 @@
 
 Kernel calls are done with brk VALUE.
 
-Some parameter are set into A,X,Y and some others ones needs to be set in Kernel zp memory.
+Some parameter are set into A, X, Y and some others ones needs to be set in Kernel zp memory.
 
 Orix-sdk must be used in order to manage in the right way kernel calls
 

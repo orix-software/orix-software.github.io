@@ -138,7 +138,7 @@ nav:
             - Autoboot : tutorials/autoboot_fr.md
             - Submit scripts: advanced_submit_part1
         - Updates:
-            - 2024.4: update/2024_4.md
+            #- 2025.3: update/2025_3.md
             - 2024.1: update/2024_1.md
             - 2023.3: update/2023_3.md
             - 2023.2: update/2023_2.md
@@ -154,6 +154,7 @@ nav:
             - hello world: developer_manual/tutorials/print_string.md
         - Development guidelines: developer_manual/guidelines.md
         - Memory management : developer_manual/memory.md
+        - Dynamic libraries: developer_manual/dynamic_libraries.md
         - Build an Orix rom : developer_manual/buildrom.md
         - Build standalone Rom : developer_manual/buildstandalonerom.md
         - Generate a binary for sdcard/usb key: binaries/generateBinary.md
@@ -204,10 +205,9 @@ nav:
                 - ping: developer_manual/orixsdk_macros/ping.md
                 - zap: developer_manual/orixsdk_macros/zap.md
                 - explode: developer_manual/orixsdk_macros/explode.md
-
         - Generate man pages : developer_manual/buildman.md
         - cc65 : developer_manual/cc65.md
-        - Binary header format : developer_manual/header.md
+        - Binary and dynamic library header format : developer_manual/header.md
         - Joysticks management : developer_manual/joysticks.md
         - Cross development on real hardware : developer_manual/pizero_connection.md
         - Oricutron VS real hardware : developer_manual/oricutronvsreal.md

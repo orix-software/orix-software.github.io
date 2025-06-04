@@ -17,5 +17,3 @@ Under development
 ## Firmware 4
 
 It's under development but it will handles others hardware chips.
-
-

@@ -1,6 +1,6 @@
 # News
 
-!!! info "[13-02-2024] Kernel and shell 2025.3 are available for tests only : [2025.3 notes](update/2025_3.md)"
+!!! info "[30-07-2025] ! Kernel and shell 2025.3 are available for tests only (it must not programmed on real computer for instance): [2025.3 notes](update/2025_3.md)"
 
 !!! info "[13-02-2024] Kernel and shell 2024.1 are available : [2024.1 notes](update/2024_1.md)"
 

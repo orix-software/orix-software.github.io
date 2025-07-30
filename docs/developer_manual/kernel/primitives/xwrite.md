@@ -28,8 +28,11 @@ A & X contains the written length
     ldy #>12
     ldx fp
     BRK_KERNEL XFWRITE
+    ; Carry is set, if the fp is not found (since kernel 2022.4)
     rts
 ```
+
+!!! tip "XFWRITE can write 4GB file but only with 64KB block for each write, it's a software limit because A & Y are used to write 16 bits length"
 
 !!! tip "See [fwrite](/developer_manual/orixsdk_macros/fwrite) macro from orix-sdk to use it easily"
 

@@ -29,8 +29,12 @@ A & X contains the length read
     ldx fp
     BRK_KERNEL XFREAD
     ; A & X contains the length (since Kernel 2023.2)
+    ; Carry is set, if the fp is not found (since kernel 2022.4)
     rts
 ```
+
+!!! tip "XFREAD can write 4GB file but only with 64KB block for each read, it's a software limit because A & Y are used to read 16 bits length"
+
 
 !!! tip "See [fread](../../../developer_manual/orixsdk_macros/fread) macro from orix-sdk to use it"
 

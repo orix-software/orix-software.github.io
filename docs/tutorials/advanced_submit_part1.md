@@ -49,6 +49,22 @@ chain gets $0 to $09 arg from the script which launch chain. Chain accepts param
 chain script.sub
 ```
 
+## errorlevel
+
+It traps return code from previous command (like $? in bash script)
+
+```bash
+#! /bin/submit
+
+tfseek
+echo "err = $errorlevel"
+if errorlevel 1 exit
+```
+
+The commands *if errorlevel value instruction* and *if errorlevel==value* instruction do not actually do the same thing. In the first case, instruction is executed if errorlevel is greater than or equal to value; in the second case, it is executed if errorlevel is equal to value.
+
+It is the same behavior of MS-DOS in batch files.
+
 ## On error
 
 ## getkey

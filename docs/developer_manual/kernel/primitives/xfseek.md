@@ -4,7 +4,7 @@ Available in kernel 2022.2
 
 ## Description
 
-Seek into file
+Seek into file or can send the length of a file or the position into the file (With a 0 position for XFSEEK)
 
 ## Input
 
@@ -40,12 +40,16 @@ Seek into file
     lda   fp
     ldx   #SEEK_CUR
     BRK_TELEMON XFSEEK
+    ; A and X contains new position (0 to 15 bits)
+    ; RES (2 bytes) returns (16 to 31 bits, eg RES contains 16 to 23 bits and RES+1 contains 23 to 31 bits)
     rts
 
 ```
 
+!!! warning "XFSEEK now return position in AX and RES, it now never returns any error as EBADF or EINVAL, it returns -1 (#FFFFFFFF in AX and RES) since kernel v2025.4"
+
 !!! warning "XFSEEK is available since kernel v2022.2"
 
-!!! bug  "XFSEEK have bugs for SEEK_CUR in 2022.4.1 (fixed in kernel 2023.1)"
+!!! bug "XFSEEK have bugs for SEEK_CUR in 2022.4.1 (fixed in kernel 2023.1)"
 
-!!! bug  "XFSEEK does not manage SEEK_END"
+!!! bug "XFSEEK does not manage SEEK_END"

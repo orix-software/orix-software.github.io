@@ -1,8 +1,8 @@
 # News
 
-!!! info "[13-02-2024] Kernel and shell 2024.1 are available : [2024.1 notes](update/2024_1.md)"
+!!! info "[13-02-2024] Kernel and shell 2025.3 are available for tests only : [2025.3 notes](update/2025_3.md)"
 
-!!! info "[07-01-2024] Bug fix for 'file' : [Download file](https://repo.orix.oric.org/dists/official/tgz/6502/file.tgz){:target="_blank"}"
+!!! info "[13-02-2024] Kernel and shell 2024.1 are available : [2024.1 notes](update/2024_1.md)"
 
 !!! info "[29-11-2023] 'vi' first version : [Download vi](https://repo.orix.oric.org/dists/official/tgz/6502/vi.tgz){:target="_blank"} and look at [vi manual](./commands/vi.md)"
 
@@ -10,7 +10,6 @@
 
 !!! info "[15-10-2023] Sedoric mode had been released : [Download sedoric](https://repo.orix.oric.org/dists/official/tgz/6502/sedoric.tgz){:target="_blank"} & [Download dsk-bank](https://repo.orix.oric.org/dists/official/tgz/6502/dsk-bank.tgz){:target="_blank"} & [Download softwares](https://repo.orix.oric.org/dists/official/tgz/6502/softwares.tgz){:target="_blank"} and [Sedoric manual](./commands/sedoric.md)"
 
-!!! info "[25-09-2023] Kernel 2023.3 and Shell 2023.3 had been released  : [Notes](update/2023_3.md)"
 
 Contact to have a board : jede[at]oric[dot]org
 

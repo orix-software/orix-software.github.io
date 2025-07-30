@@ -154,6 +154,7 @@ nav:
             - hello world: developer_manual/tutorials/print_string.md
         - Development guidelines: developer_manual/guidelines.md
         - Memory management : developer_manual/memory.md
+        - Bank signature : developer_manual/bank_signature.md
         - Dynamic libraries: developer_manual/dynamic_libraries.md
         - Build an Orix rom : developer_manual/buildrom.md
         - Build standalone Rom : developer_manual/buildstandalonerom.md

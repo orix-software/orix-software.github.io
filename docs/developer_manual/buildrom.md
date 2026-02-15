@@ -56,13 +56,18 @@ If it's a rom which must be in a ram slot, the config file (twilighte.cfg) must 
 
 Rom can be loaded on eeprom easily, it will erase 4 banks :
 
+!!! abstract under orix prompt
+
 ``` bash
 /#orixcfg -r -s 0 myrom.rom
 ```
 
 Rom must be loaded into ram slot, it will erase only one bank :
 
-``` bash
+
+!!! abstract under orix prompt
+
+```bash
 /#orixcfg -w -s 0 -b 4 myrom.rom
 ```
 

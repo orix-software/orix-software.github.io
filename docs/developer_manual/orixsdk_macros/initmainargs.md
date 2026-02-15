@@ -24,14 +24,14 @@ initmainargs ptr, nb_of_paramter, 1
   argv            := userzp   ; 2 bytes -> ptr
   argc            := userzp+2 ; 1 byte -> value
 
-  initmainargs argv, argc, 0
+  initmainargs argv, argc, 0 ; 0, kernel will provide an array for argv, 1 argv will contains the full command line with EOS
   ...
 
   mfree(argv) ; Free argv copy
   rts
 ```
 
-!!! warning "initmainargs calls XMAINARGS kernel routine. It will returns in argv a ptr with a malloc performs by the kernel. It means that it must be free after the use of the mainargs (if there is no others uses after)"
+!!! warning "initmainargs calls XMAINARGS kernel routine. It will returns in argv a ptr with a malloc performed by  kernel. It means that it must be free after the use of the mainargs (if there is no others uses after)"
 
 Call [XMAINARGS](../../../developer_manual/kernel/primitives/xmainargs) function.
 

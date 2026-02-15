@@ -29,4 +29,6 @@ A&Y : ptr
 
 !!! tip "See [malloc](../../../developer_manual/orixsdk_macros/malloc) macro from orix-sdk to use it easily "
 
-!!! warning "Number of malloc are limited in kernel side for all programs running"
+!!! warning "Number of malloc are limited in kernel side for all running programs"
+
+!!! info "Since kernel 2026.1, malloc tried to use 'free slot' when the requested size is equal or less than a available free slot"

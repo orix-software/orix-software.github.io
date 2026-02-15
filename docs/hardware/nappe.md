@@ -41,4 +41,3 @@ if you have this one, you can not connect without a connector modification. The 
 Full overview :
 
 ![Ribbon](./img/full_amplibus_double.jpg)
-

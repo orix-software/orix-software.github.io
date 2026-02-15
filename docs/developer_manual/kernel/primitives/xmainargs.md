@@ -46,7 +46,7 @@ Mode 1 : return command line
 ```ca65
     .include "telestrat.inc"
 
-    lda   #$01 ; Mode 0
+    lda   #$01 ; Mode 1
     BRK_TELEMON XMAINARGS
 
     sta ptr_cmd

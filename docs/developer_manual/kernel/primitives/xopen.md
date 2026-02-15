@@ -57,6 +57,8 @@ str:
 
 !!! warning "Max 2 opened files are working since kernel 2022.2, it's a constant defined in kernel build"
 
+!!! bug "Bugfix when a file is not found, the file pointer was not allocated, fixed in kernel 2026.1"
+
 ??? info "Flags behaviors since kernel 2023.1"
     | Flag     | File exists                         |Behaviour|
     | ----------- | ------------------------------------ ||

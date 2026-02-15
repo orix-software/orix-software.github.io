@@ -5,4 +5,3 @@
 ![Second part](./img/tower_microdisc3.jpg)
 
 ![Third part](./img/tower_microdisc.jpg)
-

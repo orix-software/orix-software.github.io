@@ -1,12 +1,16 @@
 
         .res $FFF0-*
         .org $FFF0
+```c
 ; $fff0
+; bits
 ; $00 : empty ROM
 ; $01 : command ROM
 ; $02 : TMPFS
-; $03 : Drivers
-; $04 : filesystem drivers
+; $04 : bms type
+; 8 :  drivers
+; 16 :kernel module 
+
 type_of_rom:
 .byt $00
 ; $fff1
@@ -21,6 +25,7 @@ list_commands:
 ; $fff7
 number_of_commands:
         .byt 0
+; $fff8
 signature_address:
         .word   rom_signature
 
@@ -37,3 +42,4 @@ rom_reset:
 ; IRQ Vector
 empty_rom_irq_vector:
         .addr   IRQVECTOR ; from telestrat.inc (cc65)
+```

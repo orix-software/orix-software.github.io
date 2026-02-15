@@ -136,7 +136,7 @@ nav:
         - Tutorials:
             - Scripting (simple): tutorials/submit_scripts.md
             - Autoboot : tutorials/autoboot_fr.md
-            - Submit scripts: advanced_submit_part1
+            - Submit scripts: tutorials/advanced_submit_part1
         - Updates:
             - 2025.3: update/2025_3.md
             - 2024.1: update/2024_1.md

@@ -112,11 +112,9 @@ cpu_mode
 
   For 6502 with illegal opcodes (rockwell)
 
-## Orix dynamic lib format  "Link Library Object (llo)"
+## Orix kernel module
 
-### Orix dynamic lib v1 format
-
-This header defines the header for v1 dynamic lib, it's a relocated format. See how to build a dynamic lib (llo)
+### Orix kernel module (not relocatable)
 
 ``` ca65
   .byt $01,$00            ; non-C64 marker like o65 format

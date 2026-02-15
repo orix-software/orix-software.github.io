@@ -27,4 +27,3 @@
     str_hello:
         .byte "Hello world!",$0A,$0D,0
     ```
-

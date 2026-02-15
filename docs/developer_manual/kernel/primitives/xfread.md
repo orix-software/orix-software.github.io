@@ -33,8 +33,9 @@ A & X contains the length read
     rts
 ```
 
-!!! tip "XFREAD can write 4GB file but only with 64KB block for each read, it's a software limit because A & Y are used to read 16 bits length"
+!!! warning "XFREADS changes carry. If asl/lsr/sec/clc (etc) are used after XFREAD call, theses opcodes should have differents behaviors. To avoid any problem, php/plp can be used for example before and after XFREAD call (or sec/clc depending of the code.)"
 
+!!! tip "XFREAD can write 4GB file but only with 64KB block for each read, it's a software limit because A & Y are used to read 16 bits length"
 
 !!! tip "See [fread](../../../developer_manual/orixsdk_macros/fread) macro from orix-sdk to use it"
 

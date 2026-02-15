@@ -1,12 +1,17 @@
 # XVARS
 
-## Get the number max of process
+!!! info differences between XVARS and XVALUES
+
+    XVARS is a primitive which returns value or ptr without any compute for the kernel.
+    XVALUES do almost the same than XVARS, but all values returned by XVALUES are computed, and may return an allocated struct.
+
+## Get the max of process number
 
 ```ca65
   ldx #KERNEL_XVARS_KERNEL_MAX_PROCESS ; Value = 8
   BRK_KERNEL XVARS
-  ; A contain the number max of the process available
-  ; Y contains the max FP handled by kernel
+  ; 'A' contains the max process number managed by kernel
+  ; Also 'Y' contains the max FP handled by kernel
 ```
 
 ## Get the number max opened file
@@ -14,8 +19,9 @@
 ```ca65
   ldx #KERNEL_XVARS_KERNEL_MAX_PROCESS ; Value = 8
   BRK_KERNEL XVARS
-  ; A contain the number max of the process available
-  ; Y contains the max FP handled by kernel
+  ; 'Y' contains the max file pointer handled by kernel
+  ; and also in 'A' contain the number max of the process available
+
 ```
 
 ## Get the list of the process

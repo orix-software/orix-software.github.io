@@ -2,13 +2,17 @@
 
 ## Description
 
-Read byte from files
+Read byte from files. Kernel uses RES, PTR_READ_DEST, TR0 memory
 
 ## Input
 
 * AY contains the length to read
 * PTR_READ_DEST must be set because it's the ptr_dest
 * X contains the fd id
+
+## Modify
+
+RES, PTR_READ_DEST, TR0, HRS1, HRS3 + 1
 
 ## Output
 
@@ -18,6 +22,7 @@ A & X contains the length read
 
 ```ca65
     .include "telestrat.inc"
+
 
     lda #<$A000
     sta PTR_READ_DEST

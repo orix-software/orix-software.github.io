@@ -2,11 +2,16 @@
 
 ## Description
 
-Allocate memory. Use orix-sdk with macro to handle XMALLOC
+Allocate memory. Use orix-sdk with macro to handle XMALLOC. Kernel uses for malloc : TR6 & TR7
 
 ## Input
 
 A and Y : number of bytes
+
+## Modify
+
+*    TR6
+*    TR7
 
 ## Output
 

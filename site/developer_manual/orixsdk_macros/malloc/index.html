@@ -3457,11 +3457,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
+      Examples
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#malloc-with-direct-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Malloc with direct size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#malloc-with-size-in-ay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Malloc with size in AY
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6191,7 +6215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://orix-software.github.io/pbarlib/api/" class="md-nav__link">
+      <a href="https://orix-software.github.io/memcachelib/api/" class="md-nav__link">
         
   
   
@@ -6243,6 +6267,52 @@
   
   <span class="md-ellipsis">
     Socket lib
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://orix-software.github.io/sdllib/2026.3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SDL lib
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://orix-software.github.io/bmslib/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BMS lib
     
   </span>
   
@@ -6322,11 +6392,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
+      Examples
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#malloc-with-direct-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Malloc with direct size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#malloc-with-size-in-ay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Malloc with size in AY
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6351,20 +6445,36 @@
 <p>Performs a malloc</p>
 <h2 id="usage">usage</h2>
 <p>malloc size [,ptr] [,oom_msg_ptr] [,fail_value]</p>
-<p>malloc #$0100
-malloc (ptr)
-malloc value</p>
-<p>Note:
-    - if parameter 'ptr' is present, store resulting AY in ptr &amp;ptr+1
-    - if parameter 'oom_msg_ptr' is present, emit string pointed by
-        'oom_msg_ptr' and return if AY is null (ie malloc error)</p>
+<ul>
+<li>malloc #$0100</li>
+<li>malloc (ptr)</li>
+<li>malloc value</li>
+<li>malloc AY</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>if parameter 'ptr' is present, store resulting AY in ptr &amp;ptr+1</li>
+<li>if parameter 'oom_msg_ptr' is present, emit string pointed by
+   'oom_msg_ptr' and return if AY is null (ie malloc error)</li>
+<li>'malloc AY' waits size from AY</li>
+</ul>
 <h2 id="output">Output</h2>
-<p>A and Y contains the ptr. If A and Y are equal to 0, the malloc had failed</p>
-<h2 id="example">Example</h2>
+<p>A and Y contains the ptr. If A and Y are equal to 0 (NULL), the malloc had failed</p>
+<h2 id="examples">Examples</h2>
+<h3 id="malloc-with-direct-size">Malloc with direct size</h3>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_memory.mac"</span>
 
 <span class="w">    </span><span class="n">malloc</span><span class="w"> </span><span class="p">#</span><span class="mh">$100</span>
+<span class="w">    </span><span class="k">rts</span>
+</code></pre></div>
+<h3 id="malloc-with-size-in-ay">Malloc with size in AY</h3>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"../orix-sdk/macros/SDK_memory.mac"</span>
+
+<span class="w">    </span><span class="k">lda</span><span class="w">     </span><span class="p">#</span><span class="o">&lt;</span><span class="mi">1000</span>
+<span class="w">    </span><span class="k">ldy</span><span class="w">     </span><span class="p">#</span><span class="o">&gt;</span><span class="mi">1000</span>
+<span class="w">    </span><span class="n">malloc</span><span class="w"> </span><span class="n">AY</span>
 <span class="w">    </span><span class="k">rts</span>
 </code></pre></div>
 <p>Call <a href="../../../developer_manual/kernel/primitives/xmalloc">XMALLOC</a> function</p></div>

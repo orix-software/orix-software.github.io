@@ -18,7 +18,7 @@ This register is in firmware 2, and can mirror $314 calls to change to overlay m
 
 ## $342 : twilighte board register
 
-* b0,b1,b2 version number is equal to 1 or 2, but can be overwritten (There is not read only protection
+* b0, b1, b2 version number is equal to 1 or 2, but can be overwritten (There is no 'read only' protection)
 
 * b5 : if it's equal to 0 if we are on eeprom set, 1 if it's ram set
 

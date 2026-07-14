@@ -4823,6 +4823,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#modify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modify
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
     <span class="md-ellipsis">
       Output
@@ -6195,7 +6204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://orix-software.github.io/pbarlib/api/" class="md-nav__link">
+      <a href="https://orix-software.github.io/memcachelib/api/" class="md-nav__link">
         
   
   
@@ -6247,6 +6256,52 @@
   
   <span class="md-ellipsis">
     Socket lib
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://orix-software.github.io/sdllib/2026.3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SDL lib
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://orix-software.github.io/bmslib/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BMS lib
     
   </span>
   
@@ -6317,6 +6372,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#modify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modify
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
     <span class="md-ellipsis">
       Output
@@ -6351,7 +6415,7 @@
 
 
 <div><h1 id="xfseek">XFSEEK</h1>
-<p>Available in kernel 2022.2</p>
+<p>Available since kernel 2022.2</p>
 <h2 id="description">Description</h2>
 <p>Seek into file or can send the length of a file or the position into the file (With a 0 position for XFSEEK).</p>
 <p>It's not possible to send negative position to XFSEEK. It's always a long unsigned</p>
@@ -6361,6 +6425,13 @@
 <li>AY : position 0 to 15 bits (word) unsigned</li>
 <li>RESB : position 16 to 32 bits(word) unsied</li>
 <li>RES : fd (but only I byte is managed)</li>
+</ul>
+<h2 id="modify">Modify</h2>
+<ul>
+<li>RES5 (2 bytes) $0A &amp; $0B</li>
+<li>TR0</li>
+<li>TR4</li>
+<li>TR7</li>
 </ul>
 <h2 id="output">Output</h2>
 <p>Since kernel 2025.3</p>
@@ -6383,12 +6454,13 @@
 <span class="c1">; [IN] RES fd</span>
 
 <span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"telestrat.inc"</span>
+<span class="w">    </span><span class="kp">.include</span><span class="w"> </span><span class="s">"stdio.inc"</span>
 
 <span class="w">    </span><span class="k">ldy</span><span class="w">   </span><span class="p">#</span><span class="mh">$10</span>
 <span class="w">    </span><span class="k">lda</span><span class="w">   </span><span class="p">#</span><span class="mh">$00</span>
 <span class="w">    </span><span class="k">tax</span>
 <span class="w">    </span><span class="k">sta</span><span class="w">   </span><span class="n">RESB</span>
-<span class="w">    </span><span class="k">sta</span><span class="w">   </span><span class="n">RESB</span><span class="o">+</span><span class="mi">1</span>
+<span class="w">    </span><span class="k">sta</span><span class="w">   </span><span class="n">RESB</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
 
 <span class="w">    </span><span class="k">lda</span><span class="w">   </span><span class="n">fp</span>
 <span class="w">    </span><span class="k">ldx</span><span class="w">   </span><span class="p">#</span><span class="n">SEEK_CUR</span>

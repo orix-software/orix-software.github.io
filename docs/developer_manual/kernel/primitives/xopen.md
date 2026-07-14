@@ -39,6 +39,8 @@ O_CREAT  |    Yes      | open and return FD
 ## Usage
 
 ``` ca65
+    .include "telestrat.inc"
+    .include "fcntl.inc"
     lda #<str
     ldx #>str
     ldy #O_CREAT

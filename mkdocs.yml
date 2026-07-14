@@ -21,9 +21,9 @@ markdown_extensions:
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_code_format
     - tables
-    - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
+    # - pymdownx.emoji:
+    #     emoji_index: !!python/name:materialx.emoji.twemoji
+    #     emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
  - git-revision-date
@@ -275,9 +275,12 @@ nav:
             - Inetlib: "https://orix-software.github.io/inetlib/api/"
             - Ethernet Controler lib: "https://orix-software.github.io/ch395lib/api/"
             - Progress bar lib: "https://orix-software.github.io/pbarlib/api/"
-            - Memcache lib: "https://orix-software.github.io/pbarlib/api/"
+            - Memcache lib: "https://orix-software.github.io/memcachelib/api/"
             - Curl lib: "https://orix-software.github.io/curllib/api/"
             - Socket lib: "https://orix-software.github.io/socketlib/api/"
+            - SDL lib: "https://orix-software.github.io/sdllib/2026.3/"
+            - BMS lib: "https://orix-software.github.io/bmslib/api/"
+
 extra_css:
     - stylesheets/extra.css
 extra:

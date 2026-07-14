@@ -1,6 +1,6 @@
 # XFSEEK
 
-Available in kernel 2022.2
+Available since kernel 2022.2
 
 ## Description
 
@@ -14,6 +14,13 @@ It's not possible to send negative position to XFSEEK. It's always a long unsign
 * AY : position 0 to 15 bits (word) unsigned
 * RESB : position 16 to 32 bits(word) unsied
 * RES : fd (but only I byte is managed)
+
+## Modify
+
+* RES5 (2 bytes) $0A & $0B
+* TR0
+* TR4
+* TR7
 
 ## Output
 
@@ -39,12 +46,13 @@ Before kernel 2025.3
 ; [IN] RES fd
 
     .include "telestrat.inc"
+    .include "stdio.inc"
 
     ldy   #$10
     lda   #$00
     tax
     sta   RESB
-    sta   RESB+1
+    sta   RESB + 1
 
     lda   fp
     ldx   #SEEK_CUR

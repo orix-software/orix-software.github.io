@@ -76,3 +76,5 @@ Before kernel 2025.3
 !!! bug "XFSEEK have bugs for SEEK_CUR in 2022.4.1 (fixed in kernel 2023.1)"
 
 !!! bug "XFSEEK does not manage SEEK_END"
+
+!!! tip "See [mfree](../../../orixsdk_macros/fseek) macro from orix-sdk to use it"

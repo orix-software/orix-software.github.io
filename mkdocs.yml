@@ -189,6 +189,7 @@ nav:
                 - itoa: developer_manual/orixsdk_macros/itoa.md
             - Process operations:
                 - exec: developer_manual/orixsdk_macros/exec.md
+                - exec: developer_manual/orixsdk_macros/system.md
             - Sound operations:
                 - shoot: developer_manual/orixsdk_macros/shoot.md
                 - ping: developer_manual/orixsdk_macros/ping.md

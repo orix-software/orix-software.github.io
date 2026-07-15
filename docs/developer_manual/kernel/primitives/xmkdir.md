@@ -28,4 +28,4 @@ str:
     .asciiz "myfolder"
 ```
 
-!!! tip "See [mkdir](../../../developer_manual/orixsdk_macros/mkdir) macro from orix-sdk to use it"
+!!! tip "See [mkdir](../../../orixsdk_macros/mkdir) macro from orix-sdk to use it"

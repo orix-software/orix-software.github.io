@@ -32,7 +32,7 @@ A&Y : ptr
     rts
 ```
 
-!!! tip "See [malloc](../../../developer_manual/orixsdk_macros/malloc) macro from orix-sdk to use it easily "
+!!! tip "See [malloc](../../../orixsdk_macros/malloc) macro from orix-sdk to use it easily "
 
 !!! warning "Number of malloc are limited in kernel side for all running programs"
 

@@ -16,4 +16,4 @@ Convert a number in A and returns hexadecimal to AY
     rts
 ```
 
-!!! tip "See [tohex](../../../developer_manual/orixsdk_macros/tohex) macro from orix-sdk to use it"
+!!! tip "See [tohex](../../../orixsdk_macros/tohex) macro from orix-sdk to use it"

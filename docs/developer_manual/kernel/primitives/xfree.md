@@ -22,6 +22,6 @@ Free memory
     rts
 ```
 
-!!! tip "See [mfree](../../../developer_manual/orixsdk_macros/mfree) macro from orix-sdk to use it"
+!!! tip "See [mfree](../../../orixsdk_macros/mfree) macro from orix-sdk to use it"
 
 !!! fail "XFREE still have bugs for versions before kernel v2022.2"

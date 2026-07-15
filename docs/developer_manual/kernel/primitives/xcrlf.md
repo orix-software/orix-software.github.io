@@ -11,4 +11,4 @@ Returns to next line.
     rts
 ```
 
-!!! tip "See [crlf](../../../developer_manual/orixsdk_macros/crlf) macro from orix-sdk to use it"
+!!! tip "See [crlf](../../../orixsdk_macros/crlf) macro from orix-sdk to use it"

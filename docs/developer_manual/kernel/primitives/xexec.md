@@ -47,9 +47,9 @@ str:
     .asciiz "mybin"
 ```
 
-!!! tip "See [exec](../../../developer_manual/orixsdk_macros/exec) macro from orix-sdk to use it (exec mode as linux style)"
+!!! tip "See [exec](../../../orixsdk_macros/exec) macro from orix-sdk to use it (exec mode as linux style)"
 
-!!! tip "See [system](../../../developer_manual/orixsdk_macros/system) macro from orix-sdk to use it (exec mode as linux style)"
+!!! tip "See [system](../../../orixsdk_macros/system) macro from orix-sdk to use it (exec mode as linux style)"
 
 !!! info "If the command is executed Y contains 'EOK' code"
 

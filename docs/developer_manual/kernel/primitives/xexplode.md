@@ -2,6 +2,6 @@
 
 Produce explode sound
 
-```bash
-    BRK_KERNEL XSHOOT
+```ca65
+    BRK_KERNEL XEXPLODE
 ```

@@ -42,7 +42,7 @@ A & X contains the length read
 
 !!! tip "XFREAD can write 4GB file but only with 64KB block for each read, it's a software limit because A & Y are used to read 16 bits length"
 
-!!! tip "See [fread](../../../developer_manual/orixsdk_macros/fread) macro from orix-sdk to use it"
+!!! tip "See [fread](../../../orixsdk_macros/fread) macro from orix-sdk to use it"
 
 !!! tip "XFREAD returns the size in A & X since kernel 2023.2, previous versions the length must be compute from "
 

@@ -4,8 +4,8 @@ For Orix dvelopment, there is many ways to start.
 
 ## Easy way
 
-* Download and install [first_step](Oricutron for Orix)
-* Download and install bpm
-* Use bpm tutorial to start
+* Download and install [Oricutron for Orix](first_step)
+* Download and install [bpm](https://orix-software.github.io/bpm/)
+* Use [bpm tutorial](https://orix-software.github.io/bpm/tutorial/) to start
 
 

@@ -1,45 +1,46 @@
 
+```ca65
         .res $FFF0-*
         .org $FFF0
-```c
-; $fff0
-; bits
-; $00 : empty ROM
-; $01 : command ROM
-; $02 : TMPFS
-; $04 : bms type
-; 8 :  drivers
-; 16 :kernel module 
 
-type_of_rom:
-.byt $00
-; $fff1
-parse_vector:
-        .byt $00,$00
-; fff3
-adress_commands:
-        .addr commands_address
-; fff5
-list_commands:
-        .addr command1_str
-; $fff7
-number_of_commands:
-        .byt 0
-; $fff8
-signature_address:
-        .word   rom_signature
+        ; $fff0
+        ; bits
+        ; $00 : empty ROM
+        ; $01 : command ROM
+        ; $02 : TMPFS
+        ; $04 : bms type
+        ; 8 :  drivers
+        ; 16 :kernel module
 
-; ----------------------------------------------------------------------------
-; Version + ROM Type
-ROMDEF:
-        .addr rom_start
+        type_of_rom:
+                .byt $00
+        ; $fff1
+        parse_vector:
+                .byt $00,$00
+        ; fff3
+        adress_commands:
+                .addr commands_address
+        ; fff5
+        list_commands:
+                .addr command1_str
+        ; $fff7
+        number_of_commands:
+                .byt 0
+        ; $fff8
+        signature_address:
+                .word   rom_signature
 
-; ----------------------------------------------------------------------------
-; RESET
-rom_reset:
-        .addr   rom_start
-; ----------------------------------------------------------------------------
-; IRQ Vector
-empty_rom_irq_vector:
-        .addr   IRQVECTOR ; from telestrat.inc (cc65)
+        ; ----------------------------------------------------------------------------
+        ; Version + ROM Type
+        ROMDEF:
+                .addr rom_start
+
+        ; ----------------------------------------------------------------------------
+        ; RESET
+        rom_reset:
+                .addr   rom_start
+        ; ----------------------------------------------------------------------------
+        ; IRQ Vector
+        empty_rom_irq_vector:
+                .addr   IRQVECTOR ; from telestrat.inc (cc65)
 ```

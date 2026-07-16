@@ -43,10 +43,10 @@ Under Linux, all filenames must be uppercases (folder and files), it's mainly be
 
 Build it from cc65. You can build your first program in C with cc65 and telestrat target. It builds an Orix binary. This binary can be put in bin/ folder of the device (for oricutron : usbdrive or sdcard folder)
 
-## Step 5 : Download SDK  (mainly for assembly)
+## Step 5 : Download SDK  (mainly for assembly) SKIP this step, if bpm is used
 
 Clone [https://github.com/assinie/orix-sdk](https://github.com/assinie/orix-sdk) in your project folder
 
-## Step 6 : Develop a binary
+## Step 6 : Develop a binary skip this step, if bpm is used
 
 This link is a template project to start a binary in assembly : [https://github.com/assinie/new-project](https://github.com/assinie/new-project)

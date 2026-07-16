@@ -155,6 +155,7 @@ nav:
                 - hello world: developer_manual/tutorials/print_string.md
         - Intermediates:
             - Getting started: developer_manual/getting_started.md
+            - Install: developer_manual/first_step.md
             - Tutorials:
                 - hello world: developer_manual/tutorials/print_string.md
             - Development guidelines: developer_manual/guidelines.md
@@ -168,6 +169,7 @@ nav:
             - Cross development on real hardware : developer_manual/pizero_connection.md
             - Generate man pages : developer_manual/buildman.md
         - Advanced:
+            - Install: developer_manual/first_step.md
             - Development guidelines: developer_manual/guidelines.md
             - Memory management : developer_manual/memory.md
             - Bank signature : developer_manual/bank_signature.md
@@ -286,20 +288,19 @@ nav:
                 - Firmware informations : developer_manual/firmware.md
                 - Joysticks: hardware/joysticks.md
                 - Eeprom structure: hardware/eeprom_structure.md
-        - Extra Libs :
+        - Availables libraries :
             - Twilighte library lib: "https://orix-software.github.io/twillib/api/"
             - RTC lib: "https://orix-software.github.io/ds1501lib/api/"
             - USB controler lib: "https://orix-software.github.io/ch376lib/api/"
             - Inetlib: "https://orix-software.github.io/inetlib/api/"
             - Ethernet Controler lib: "https://orix-software.github.io/ch395lib/api/"
             - Progress bar lib: "https://orix-software.github.io/pbarlib/api/"
-            - Memcache lib: "https://orix-software.github.io/memcachelib/api/"
-            - Curl lib: "https://orix-software.github.io/curllib/api/"
+#            - Memcache lib: "https://orix-software.github.io/memcachelib/api/"
+            - Curl lib: "https://orix-software.github.io/curllib/"
             - Socket lib: "https://orix-software.github.io/socketlib/api/"
-            - SDL lib: "https://orix-software.github.io/sdllib/2026.3/"
-            - BMS lib: "https://orix-software.github.io/bmslib/api/"
-        - Changes: developer_manual/index.md
-        - Install: developer_manual/first_step.md
+            - SDL lib: "https://orix-software.github.io/sdllib/"
+            - BMS lib: "https://orix-software.github.io/bmslib/2025.4/api/"
+        - Tools changes: developer_manual/index.md
 extra_css:
     - stylesheets/extra.css
 extra:

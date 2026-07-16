@@ -149,122 +149,124 @@ nav:
             - commands:
                 - File: update/file/file.md
     - Developer manual:
-        - Getting started: developer_manual/getting_started.md
+        - Beginners:
+            - Getting started: developer_manual/getting_started.md
         - Changes: developer_manual/index.md
         - Install: developer_manual/first_step.md
         - Tutorials:
             - hello world: developer_manual/tutorials/print_string.md
         - Development guidelines: developer_manual/guidelines.md
-        - Memory management : developer_manual/memory.md
-        - Bank signature : developer_manual/bank_signature.md
-        - Dynamic libraries: developer_manual/dynamic_libraries.md
-        - Build an Orix rom : developer_manual/buildrom.md
-        - Build standalone Rom : developer_manual/buildstandalonerom.md
-        - Generate a binary for sdcard/usb key: binaries/generateBinary.md
-        - SDK for Assembly (Orixsdk):
-            - Overview: developer_manual/orixsdk_macros/overview.md
-            - Main usage: developer_manual/orixsdk.md
-            - Command line operations:
-                - initmainargs: developer_manual/orixsdk_macros/initmainargs.md
-                - getmainargs: developer_manual/orixsdk_macros/getmainargs.md
-            - File operations:
-                - fopen: developer_manual/orixsdk_macros/fopen.md
-                - fread: developer_manual/orixsdk_macros/fread.md
-                - fwrite: developer_manual/orixsdk_macros/fwrite.md
-                - fseek: developer_manual/orixsdk_macros/fseek.md
-                - fclose: developer_manual/orixsdk_macros/fclose.md
-                - mkdir: developer_manual/orixsdk_macros/mkdir.md
-                - chdir: developer_manual/orixsdk_macros/chdir.md
-                - getcwd: developer_manual/orixsdk_macros/getcwd.md
-                - unlink: developer_manual/orixsdk_macros/unlink.md
-            - Keyboards operations:
-                - cgetc: developer_manual/orixsdk_macros/cgetc.md
-            - Memory operations:
-                - malloc: developer_manual/orixsdk_macros/malloc.md
-                - mfree: developer_manual/orixsdk_macros/mfree.md
-                - memdecal: developer_manual/orixsdk_macros/memdecal.md
-                - memmove: developer_manual/orixsdk_macros/memmove.md
-            - Number operations:
-                - atoi: developer_manual/orixsdk_macros/atoi.md
-                - tohex: developer_manual/orixsdk_macros/tohex.md
-                - print_int: developer_manual/orixsdk_macros/print_int.md
-                - itoa: developer_manual/orixsdk_macros/itoa.md
-            - Process operations:
-                - exec: developer_manual/orixsdk_macros/exec.md
-                - exec: developer_manual/orixsdk_macros/system.md
-            - Sound operations:
-                - shoot: developer_manual/orixsdk_macros/shoot.md
-                - ping: developer_manual/orixsdk_macros/ping.md
-                - zap: developer_manual/orixsdk_macros/zap.md
-                - explode: developer_manual/orixsdk_macros/explode.md
-            - Strings operations:
-                - strncat: developer_manual/orixsdk_macros/strncat.md
-                - strncpy: developer_manual/orixsdk_macros/strncpy.md
-            - Text mode operations:
-                - print: developer_manual/orixsdk_macros/print.md
-                - prints: developer_manual/orixsdk_macros/prints.md
-                - print_int: developer_manual/orixsdk_macros/print_int.md
-                - cputc: developer_manual/orixsdk_macros/cputc.md
-                - crlf: developer_manual/orixsdk_macros/crlf.md
-                - scroll: developer_manual/orixsdk_macros/scroll.md
-                - cursor: developer_manual/orixsdk_macros/cursor.md
-                - setscreen: developer_manual/orixsdk_macros/setscreen.md
-        - Generate man pages : developer_manual/buildman.md
-        - cc65 : developer_manual/cc65.md
-        - Binary and dynamic library header format : developer_manual/header.md
-        - Joysticks management : developer_manual/joysticks.md
-        - Cross development on real hardware : developer_manual/pizero_connection.md
-        - Oricutron VS real hardware : developer_manual/oricutronvsreal.md
-        - Kernel guide:
-            - Kernel: developer_manual/kernel.md
-            - Memmap: developer_manual/kernel/memmap.md
-            - Notebook: developer_manual/notebook.md
-            - Primitives:
-                - General list : developer_manual/kernel/primitives/index.md
-                - By category:
-                    - Command line args:
-                        - XMAINARGS: developer_manual/kernel/primitives/xmainargs.md
-                        - XGETARGV: developer_manual/kernel/primitives/xgetargv.md
-                    - Files operations:
-                        - XOPEN: developer_manual/kernel/primitives/xopen.md
-                        - XCLOSE: developer_manual/kernel/primitives/xclose.md
-                        - XFREAD: developer_manual/kernel/primitives/xfread.md
-                        - XWRITE: developer_manual/kernel/primitives/xwrite.md
-                        - XFSEEK: developer_manual/kernel/primitives/xfseek.md
-                        - XRM: developer_manual/kernel/primitives/xrm.md
-                        - XMKDIR: developer_manual/kernel/primitives/xmkdir.md
-                        - XCLOSEDIR: developer_manual/kernel/primitives/xclosedir.md
-                        - XOPENDIR: developer_manual/kernel/primitives/xopendir.md
-                    - Keyboard Operations:
-                        - XRDW0: developer_manual/kernel/primitives/xrdw0.md
-                        - XRD0: developer_manual/kernel/primitives/xrd0.md
-                    - Memory operations:
-                        - XMALLOC: developer_manual/kernel/primitives/xmalloc.md
-                        - XFREE: developer_manual/kernel/primitives/xfree.md
-                        - XBANK: developer_manual/kernel/primitives/xbank.md
-                    - Network operations:
-                        - ksocket: developer_manual/orixsdk_macros/ksocket.md
-                        - kconnect: docs/developer_manual/kernel/primitives/kconnect.md
-                        - krecv: docs/developer_manual/kernel/primitives/krecv.md
-                        - ksend: docs/developer_manual/kernel/primitives/ksend.md
-                        - ksocketclose: docs/developer_manual/kernel/primitives/ksocketclose.md
-                    - Numbers Operations:
-                        - XBINDX: developer_manual/kernel/primitives/xbindx.md
-                        - XDECIM: developer_manual/kernel/primitives/xdecim.md
-                        - XDECAY: developer_manual/kernel/primitives/xdecay.md
-                        - XHEXA: developer_manual/kernel/primitives/xhexa.md
-                    - Process Operations:
-                        - XEXEC: developer_manual/kernel/primitives/xexec.md
-                    - Textmode Operations:
-                        - XSCROB: developer_manual/kernel/primitives/xscrob.md
-                        - XSCROH: developer_manual/kernel/primitives/xscroh.md
-                        - XCRLF: developer_manual/kernel/primitives/xcrlf.md
-                        - XWR0: developer_manual/kernel/primitives/xwr0.md
-                        - XWSTR0: developer_manual/kernel/primitives/xwstr0.md
-                    - Variables Operations:
-                        - XVALUES: developer_manual/kernel/primitives/xvalues.md
-                        - XVARS: developer_manual/kernel/primitives/xvars.md
-            - Binary boot sequence: developer_manual/binary_starts.md
+        - Medium:
+            - Memory management : developer_manual/memory.md
+            - Bank signature : developer_manual/bank_signature.md
+            - Dynamic libraries (under development): developer_manual/dynamic_libraries.md
+            - Build an Orix rom : developer_manual/buildrom.md
+            - Build standalone Rom : developer_manual/buildstandalonerom.md
+            - Generate a binary for sdcard/usb key: binaries/generateBinary.md
+            - SDK for Assembly (Orixsdk):
+                - Overview: developer_manual/orixsdk_macros/overview.md
+                - Main usage: developer_manual/orixsdk.md
+                - Command line operations:
+                    - initmainargs: developer_manual/orixsdk_macros/initmainargs.md
+                    - getmainargs: developer_manual/orixsdk_macros/getmainargs.md
+                - File operations:
+                    - fopen: developer_manual/orixsdk_macros/fopen.md
+                    - fread: developer_manual/orixsdk_macros/fread.md
+                    - fwrite: developer_manual/orixsdk_macros/fwrite.md
+                    - fseek: developer_manual/orixsdk_macros/fseek.md
+                    - fclose: developer_manual/orixsdk_macros/fclose.md
+                    - mkdir: developer_manual/orixsdk_macros/mkdir.md
+                    - chdir: developer_manual/orixsdk_macros/chdir.md
+                    - getcwd: developer_manual/orixsdk_macros/getcwd.md
+                    - unlink: developer_manual/orixsdk_macros/unlink.md
+                - Keyboards operations:
+                    - cgetc: developer_manual/orixsdk_macros/cgetc.md
+                - Memory operations:
+                    - malloc: developer_manual/orixsdk_macros/malloc.md
+                    - mfree: developer_manual/orixsdk_macros/mfree.md
+                    - memdecal: developer_manual/orixsdk_macros/memdecal.md
+                    - memmove: developer_manual/orixsdk_macros/memmove.md
+                - Number operations:
+                    - atoi: developer_manual/orixsdk_macros/atoi.md
+                    - tohex: developer_manual/orixsdk_macros/tohex.md
+                    - print_int: developer_manual/orixsdk_macros/print_int.md
+                    - itoa: developer_manual/orixsdk_macros/itoa.md
+                - Process operations:
+                    - exec: developer_manual/orixsdk_macros/exec.md
+                    - exec: developer_manual/orixsdk_macros/system.md
+                - Sound operations:
+                    - shoot: developer_manual/orixsdk_macros/shoot.md
+                    - ping: developer_manual/orixsdk_macros/ping.md
+                    - zap: developer_manual/orixsdk_macros/zap.md
+                    - explode: developer_manual/orixsdk_macros/explode.md
+                - Strings operations:
+                    - strncat: developer_manual/orixsdk_macros/strncat.md
+                    - strncpy: developer_manual/orixsdk_macros/strncpy.md
+                - Text mode operations:
+                    - print: developer_manual/orixsdk_macros/print.md
+                    - prints: developer_manual/orixsdk_macros/prints.md
+                    - print_int: developer_manual/orixsdk_macros/print_int.md
+                    - cputc: developer_manual/orixsdk_macros/cputc.md
+                    - crlf: developer_manual/orixsdk_macros/crlf.md
+                    - scroll: developer_manual/orixsdk_macros/scroll.md
+                    - cursor: developer_manual/orixsdk_macros/cursor.md
+                    - setscreen: developer_manual/orixsdk_macros/setscreen.md
+            - Generate man pages : developer_manual/buildman.md
+            - cc65 : developer_manual/cc65.md
+            - Binary and dynamic library header format : developer_manual/header.md
+            - Joysticks management : developer_manual/joysticks.md
+            - Cross development on real hardware : developer_manual/pizero_connection.md
+            - Oricutron VS real hardware : developer_manual/oricutronvsreal.md
+            - Kernel guide:
+                - Kernel: developer_manual/kernel.md
+                - Memmap: developer_manual/kernel/memmap.md
+                - Notebook: developer_manual/notebook.md
+                - Primitives:
+                    - General list : developer_manual/kernel/primitives/index.md
+                    - By category:
+                        - Command line args:
+                            - XMAINARGS: developer_manual/kernel/primitives/xmainargs.md
+                            - XGETARGV: developer_manual/kernel/primitives/xgetargv.md
+                        - Files operations:
+                            - XOPEN: developer_manual/kernel/primitives/xopen.md
+                            - XCLOSE: developer_manual/kernel/primitives/xclose.md
+                            - XFREAD: developer_manual/kernel/primitives/xfread.md
+                            - XWRITE: developer_manual/kernel/primitives/xwrite.md
+                            - XFSEEK: developer_manual/kernel/primitives/xfseek.md
+                            - XRM: developer_manual/kernel/primitives/xrm.md
+                            - XMKDIR: developer_manual/kernel/primitives/xmkdir.md
+                            - XCLOSEDIR: developer_manual/kernel/primitives/xclosedir.md
+                            - XOPENDIR: developer_manual/kernel/primitives/xopendir.md
+                        - Keyboard Operations:
+                            - XRDW0: developer_manual/kernel/primitives/xrdw0.md
+                            - XRD0: developer_manual/kernel/primitives/xrd0.md
+                        - Memory operations:
+                            - XMALLOC: developer_manual/kernel/primitives/xmalloc.md
+                            - XFREE: developer_manual/kernel/primitives/xfree.md
+                            - XBANK: developer_manual/kernel/primitives/xbank.md
+                        - Network operations:
+                            - ksocket: developer_manual/orixsdk_macros/ksocket.md
+                            - kconnect: docs/developer_manual/kernel/primitives/kconnect.md
+                            - krecv: docs/developer_manual/kernel/primitives/krecv.md
+                            - ksend: docs/developer_manual/kernel/primitives/ksend.md
+                            - ksocketclose: docs/developer_manual/kernel/primitives/ksocketclose.md
+                        - Numbers Operations:
+                            - XBINDX: developer_manual/kernel/primitives/xbindx.md
+                            - XDECIM: developer_manual/kernel/primitives/xdecim.md
+                            - XDECAY: developer_manual/kernel/primitives/xdecay.md
+                            - XHEXA: developer_manual/kernel/primitives/xhexa.md
+                        - Process Operations:
+                            - XEXEC: developer_manual/kernel/primitives/xexec.md
+                        - Textmode Operations:
+                            - XSCROB: developer_manual/kernel/primitives/xscrob.md
+                            - XSCROH: developer_manual/kernel/primitives/xscroh.md
+                            - XCRLF: developer_manual/kernel/primitives/xcrlf.md
+                            - XWR0: developer_manual/kernel/primitives/xwr0.md
+                            - XWSTR0: developer_manual/kernel/primitives/xwstr0.md
+                        - Variables Operations:
+                            - XVALUES: developer_manual/kernel/primitives/xvalues.md
+                            - XVARS: developer_manual/kernel/primitives/xvars.md
+                - Binary boot sequence: developer_manual/binary_starts.md
         - Hardware guide :
             - Memory: hardware/memory.md
             - I/O: hardware/i_o.md

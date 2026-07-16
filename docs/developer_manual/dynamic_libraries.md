@@ -1,4 +1,4 @@
-# Dynamic lib
+# Dynamic lib 'Under development'
 
 Orix manages dynamic lib. For instance, it allocate lib into ram bank memory.
 

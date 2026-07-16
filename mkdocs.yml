@@ -151,18 +151,32 @@ nav:
     - Developer manual:
         - Beginners:
             - Getting started: developer_manual/getting_started.md
-        - Changes: developer_manual/index.md
-        - Install: developer_manual/first_step.md
-        - Tutorials:
-            - hello world: developer_manual/tutorials/print_string.md
-        - Development guidelines: developer_manual/guidelines.md
-        - Medium:
+            - Tutorials:
+                - hello world: developer_manual/tutorials/print_string.md
+        - Intermediates:
+            - Getting started: developer_manual/getting_started.md
+            - Tutorials:
+                - hello world: developer_manual/tutorials/print_string.md
+            - Development guidelines: developer_manual/guidelines.md
             - Memory management : developer_manual/memory.md
             - Bank signature : developer_manual/bank_signature.md
             - Dynamic libraries (under development): developer_manual/dynamic_libraries.md
             - Build an Orix rom : developer_manual/buildrom.md
             - Build standalone Rom : developer_manual/buildstandalonerom.md
+            - Generate man pages : developer_manual/buildman.md
             - Generate a binary for sdcard/usb key: binaries/generateBinary.md
+            - Cross development on real hardware : developer_manual/pizero_connection.md
+            - Generate man pages : developer_manual/buildman.md
+        - Advanced:
+            - Development guidelines: developer_manual/guidelines.md
+            - Memory management : developer_manual/memory.md
+            - Bank signature : developer_manual/bank_signature.md
+            - Dynamic libraries (under development): developer_manual/dynamic_libraries.md
+            - Build an Orix rom : developer_manual/buildrom.md
+            - Build standalone Rom : developer_manual/buildstandalonerom.md
+            - Generate man pages : developer_manual/buildman.md
+            - Generate a binary for sdcard/usb key: binaries/generateBinary.md
+            - Cross development on real hardware : developer_manual/pizero_connection.md
             - SDK for Assembly (Orixsdk):
                 - Overview: developer_manual/orixsdk_macros/overview.md
                 - Main usage: developer_manual/orixsdk.md
@@ -215,7 +229,6 @@ nav:
             - cc65 : developer_manual/cc65.md
             - Binary and dynamic library header format : developer_manual/header.md
             - Joysticks management : developer_manual/joysticks.md
-            - Cross development on real hardware : developer_manual/pizero_connection.md
             - Oricutron VS real hardware : developer_manual/oricutronvsreal.md
             - Kernel guide:
                 - Kernel: developer_manual/kernel.md
@@ -267,12 +280,12 @@ nav:
                             - XVALUES: developer_manual/kernel/primitives/xvalues.md
                             - XVARS: developer_manual/kernel/primitives/xvars.md
                 - Binary boot sequence: developer_manual/binary_starts.md
-        - Hardware guide :
-            - Memory: hardware/memory.md
-            - I/O: hardware/i_o.md
-            - Firmware informations : developer_manual/firmware.md
-            - Joysticks: hardware/joysticks.md
-            - Eeprom structure: hardware/eeprom_structure.md
+            - Hardware guide :
+                - Memory: hardware/memory.md
+                - I/O: hardware/i_o.md
+                - Firmware informations : developer_manual/firmware.md
+                - Joysticks: hardware/joysticks.md
+                - Eeprom structure: hardware/eeprom_structure.md
         - Extra Libs :
             - Twilighte library lib: "https://orix-software.github.io/twillib/api/"
             - RTC lib: "https://orix-software.github.io/ds1501lib/api/"
@@ -285,7 +298,8 @@ nav:
             - Socket lib: "https://orix-software.github.io/socketlib/api/"
             - SDL lib: "https://orix-software.github.io/sdllib/2026.3/"
             - BMS lib: "https://orix-software.github.io/bmslib/api/"
-
+        - Changes: developer_manual/index.md
+        - Install: developer_manual/first_step.md
 extra_css:
     - stylesheets/extra.css
 extra:
